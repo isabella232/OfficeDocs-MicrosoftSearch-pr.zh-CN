@@ -14,18 +14,20 @@ search.appverid:
 - MOE150
 ms.assetid: 38569f03-db18-49ab-96ef-213a1f410935
 description: 了解 Microsoft 搜索为什么是智能企业级搜索的现代工作场所。
-ms.openlocfilehash: 79a2974d036ea71b7b2d17bc8598f6070209c8b5
-ms.sourcegitcommit: bf52cc63b75f2e0324a716fe65da47702956b722
+ms.openlocfilehash: c75670a14f2d5382aa7dccbf38d65584a291d93f
+ms.sourcegitcommit: 4e04137c6ca05b64157561bd14ead89485bafe1e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "29378549"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29442294"
 ---
 # <a name="why-microsoft-search"></a>为何提供 Microsoft 搜索
 
 转换的方式人员与 Microsoft 搜索您的组织所搜索的信息。 
   
 此企业级搜索体验通过提供更相关的搜索结果面对提高生产效率并节省时间。Microsoft Search 安全地从您的公司、 组织或学校，检索信息 — like 文件、 公司数据、 用户信息和网站 — 以及公共 web 结果，并将它们显示在单个体验。
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2EWQN?autoplay=false]
   
 ## <a name="save-time-with-intelligent-search"></a>使用智能搜索节省时间
 

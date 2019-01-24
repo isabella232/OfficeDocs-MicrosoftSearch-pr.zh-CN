@@ -1,12 +1,4 @@
----
-ms.openlocfilehash: 195160e7208366f761fa1dc17b28d0e5b100b090
-ms.sourcegitcommit: bf52cc63b75f2e0324a716fe65da47702956b722
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "29378528"
----
-# [Microsoft Search](microsoft-search.md)
+# Microsoft Search
 # [概述](why-microsoft-search.md)
 ## [功能](features.md)
 ## [安全性](security.md)
@@ -26,7 +18,7 @@ ms.locfileid: "29378528"
 ## [设置默认浏览器](set-default-browser.md)
 ## [将搜索框添加到您的 intranet 网站](add-a-search-box-to-your-intranet-site.md)
 ## [规划内容](plan-your-content.md)
-# [书签](create-and-manage-bookmarks.md)
+# 书签
 ## [创建书签](create-bookmarks.md)
 ## [管理书签](manage-bookmarks.md)
 ## [发布默认书签](publish-default-bookmarks.md)
@@ -37,17 +29,17 @@ ms.locfileid: "29378528"
 ## [创建 Q&As](create-qas.md)
 ## [管理 Q&As](manage-qas.md)
 ## [批量创建 Q&As](bulk-create-qas.md)
-# [位置](locations.md)
+# 位置
 ## [添加位置](add-a-location.md)
 ## [管理位置](manage-locations.md)
 ## [批量创建位置](bulk-create-locations.md)
 # [用户采用指南](user-adoption-guide.md)
 # [获取见解](get-insights.md)
-# [常见问题](faqs.md)
-# [获取支持](get-support.md)
+# 常见问题
+# 获取支持
 # [使用](use/about-microsoft-search.md)
 ## [Microsoft 搜索如何保留您的信息安全](use/how-microsoft-search-keeps-your-info-secure.md)
-## [登录](use/sign-in.md)
+## 登录
 ## [为什么我我自动登录？](use/why-am-i-automatically-signed-in.md)
 ## [建议的搜索](use/suggested-searches.md)
 ## [查找人员和组](use/find-people-and-groups.md)
@@ -56,4 +48,4 @@ ms.locfileid: "29378528"
 ## [查找文件](use/find-files.md)
 ## [查找对话](use/find-conversations.md)
 ## [查找位置](use/find-locations.md)
-## [发送反馈](use/send-feedback.md)
+## 发送反馈

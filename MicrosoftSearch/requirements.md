@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 ms.assetid: 41b9b33d-fcc4-470c-90ec-068211fbbb16
 description: Office 365 要求和，无需对订阅启用 Microsoft 搜索
-ms.openlocfilehash: 1e1ebd167ed91767d849187979cfe673273d9715
-ms.sourcegitcommit: bf52cc63b75f2e0324a716fe65da47702956b722
+ms.openlocfilehash: 1cab7b7617eb965e1130f6b56c3a0169259f5b8e
+ms.sourcegitcommit: 4e04137c6ca05b64157561bd14ead89485bafe1e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "29378512"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29442278"
 ---
 # <a name="requirements-for-microsoft-search"></a>Microsoft 搜索的要求
 
@@ -68,7 +68,25 @@ ms.locfileid: "29378512"
 - 法国
     
 - 德国
+  
+- 西班牙
     
+- 墨西哥
+    
+- 意大利
+    
+- 巴西
+    
+- 荷兰
+    
+- 俄罗斯
+    
+- 日本
+
+- 中国
+ 
+目前，Microsoft 搜索专为英语。完全支持的其他语言即将提供。
+
 启用产品后，没有位置要求 Microsoft 搜索管理员或用户。有关启用它的详细信息，请参阅[快速设置 Microsoft 搜索](quick-set-up.md)。 
 
   
