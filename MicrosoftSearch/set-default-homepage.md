@@ -7,19 +7,19 @@ ms.date: 12/20/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+localization_priority: Priority
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 ms.assetid: c020bd72-9906-4dfd-bc77-57287f5927ce
 description: 了解如何为 Microsoft 搜索与贵公司将 Bing 设置为默认主页。
-ms.openlocfilehash: 9190e607f5e17a0b898ab131886de12cb300a74c
-ms.sourcegitcommit: bf52cc63b75f2e0324a716fe65da47702956b722
+ms.openlocfilehash: db0611ebd7f4a8344664825bbb42025f3bb36486
+ms.sourcegitcommit: 1c038d87efab4840d97b1f367b39e2b9ecdfee4a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "29378505"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "29612487"
 ---
 # <a name="set-default-homepage"></a>设置默认主页
 

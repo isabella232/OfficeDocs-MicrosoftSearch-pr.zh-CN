@@ -7,19 +7,19 @@ ms.date: 12/11/2018
 ms.audience: Admin
 ms.topic: reference
 ms.service: mssearch
-localization_priority: Normal
+localization_priority: Priority
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 ms.assetid: 5861e462-faed-4c3d-824d-ed3aafd80714
 description: Microsoft 管理员和最终用户搜索的关键功能包括书签、 Q&As，以及管理和数据见解
-ms.openlocfilehash: a95d2727d6802041dd1cbd5498560dd17866f150
-ms.sourcegitcommit: bf52cc63b75f2e0324a716fe65da47702956b722
+ms.openlocfilehash: ca2c0de9fbed075a822989ab8b3bf881d5626cee
+ms.sourcegitcommit: 1c038d87efab4840d97b1f367b39e2b9ecdfee4a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "29378511"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "29612424"
 ---
 # <a name="features-of-microsoft-search"></a>Microsoft 搜索的功能
 

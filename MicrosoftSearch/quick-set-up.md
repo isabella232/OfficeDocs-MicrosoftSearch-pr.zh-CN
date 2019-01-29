@@ -7,19 +7,19 @@ ms.date: 12/18/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+localization_priority: Priority
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 ms.assetid: bc3d1d2a-a4d9-4a02-9d7d-deb492e79cd0
 description: 了解有关启用和使用 Microsoft 搜索所需的四个轻松步骤。
-ms.openlocfilehash: 853b60be8038ad0f1fb38ab90dfdb02b4213568b
-ms.sourcegitcommit: bf52cc63b75f2e0324a716fe65da47702956b722
+ms.openlocfilehash: fb5677a0acc896e593eae42c35111e0f744ef45d
+ms.sourcegitcommit: 1c038d87efab4840d97b1f367b39e2b9ecdfee4a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "29378525"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "29612346"
 ---
 # <a name="quick-set-up-for-microsoft-search"></a>快速为 Microsoft 搜索设置
 

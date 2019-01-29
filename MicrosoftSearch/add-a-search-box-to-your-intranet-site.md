@@ -1,5 +1,5 @@
 ---
-title: 将搜索框添加到您的 intranet 网站
+title: 将搜索框添加到 Intranet 站点
 ms.author: dawholl
 author: dawholl
 manager: kellis
@@ -7,21 +7,21 @@ ms.date: 10/31/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+localization_priority: Priority
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 ms.assetid: f980b90f-95e2-4b66-8b21-69f601ff4b50
 description: 获取相关搜索建议，并通过将一个 Microsoft 搜索搜索框添加到 intranet 网站或网页查找工作结果更快。
-ms.openlocfilehash: a27b4d79e8795cdd2749c12119709f97710061e7
-ms.sourcegitcommit: bf52cc63b75f2e0324a716fe65da47702956b722
+ms.openlocfilehash: 699cfd9c411c9b86f3a2f8742c425aaedef1ebc5
+ms.sourcegitcommit: 1c038d87efab4840d97b1f367b39e2b9ecdfee4a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "29378606"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "29612415"
 ---
-# <a name="add-a-search-box-to-your-intranet-site"></a>将搜索框添加到您的 intranet 网站
+# <a name="add-a-search-box-to-your-intranet-site"></a>将搜索框添加到 Intranet 站点
 
 用于快速访问相关搜索建议和工作结果，添加到任何 intranet 网站或页面的 Microsoft 搜索搜索框。
   

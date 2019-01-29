@@ -7,19 +7,19 @@ ms.date: 09/11/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+localization_priority: Priority
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 ms.assetid: a220c1bf-7cee-448a-90a3-310284d03e81
 description: 减少 Windows 10 用户提示您登录到 Microsoft 搜索和 Office 365 的次数
-ms.openlocfilehash: 4157707d58ead304449805c8fd16578690ac01a6
-ms.sourcegitcommit: bf52cc63b75f2e0324a716fe65da47702956b722
+ms.openlocfilehash: 55d359edac36020ec8cf2aad6b64ca9737ee1066
+ms.sourcegitcommit: 1c038d87efab4840d97b1f367b39e2b9ecdfee4a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "29378605"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "29612347"
 ---
 # <a name="test-single-sign-on"></a>测试单一登录
 

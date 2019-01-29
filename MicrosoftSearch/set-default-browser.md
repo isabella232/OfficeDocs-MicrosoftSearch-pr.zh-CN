@@ -7,19 +7,19 @@ ms.date: 12/20/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+localization_priority: Priority
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 ms.assetid: 53e2b71a-348b-4dfe-a504-6e97d573effe
 description: 了解如何为您的公司与 Microsoft 搜索配置默认浏览器。
-ms.openlocfilehash: 13a0a878b3288abeb7b07defdab839a158adc2ac
-ms.sourcegitcommit: bf52cc63b75f2e0324a716fe65da47702956b722
+ms.openlocfilehash: 160dbbef9981127b74c51f54f86428667ecd4471
+ms.sourcegitcommit: 1c038d87efab4840d97b1f367b39e2b9ecdfee4a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "29378546"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "29612471"
 ---
 # <a name="set-default-browser"></a>设置默认浏览器
 

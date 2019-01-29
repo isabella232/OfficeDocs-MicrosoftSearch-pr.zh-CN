@@ -8,13 +8,19 @@ ms.audience: Admin
 ms.topic: landing-page
 layout: LandingPage
 ms.service: mssearch
-localization_priority: Normal
+localization_priority: Priority
 search.appverid:
-  - BFB160
-  - MET150
-  - MOE150
+- BFB160
+- MET150
+- MOE150
 ms.assetid: 90d3190d-1add-490f-bef2-10b528252a2e
 description: Microsoft 搜索是企业搜索体验，有助于提高效率，节省时间通过提供您的组织的更多的相关搜索结果
+ms.openlocfilehash: 1a50ff7a0ae3c2b86f3051ad4eeecb38a8a602a9
+ms.sourcegitcommit: 1c038d87efab4840d97b1f367b39e2b9ecdfee4a
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "29612345"
 ---
 # <a name="microsoft-search"></a>Microsoft Search
 
@@ -148,7 +154,7 @@ description: Microsoft 搜索是企业搜索体验，有助于提高效率，节
                     <div class="cardText">
                         <p><a href="security.md">安全性</a></p>
                         <p><a href="requirements.md">要求</a></p>  
-                        <p><a href="about-the-admin-portal.md">有关管理门户</a></p>
+                        <p><a href="about-the-admin-portal.md">关于管理门户</a></p>
                     </div>
                 </div>
             </div>
@@ -173,7 +179,7 @@ description: Microsoft 搜索是企业搜索体验，有助于提高效率，节
                 <div class="card">
                     <div class="cardText">
                         <p><a href="create-bookmarks.md">创建书签</a></p>
-                        <p><a href="create-qas.md">创建 Q&As</a></p>
+                        <p><a href="create-qas.md">创建问答</a></p>
                         <p><a href="add-users.md">添加用户</a></p>
                     </div>
                 </div>
