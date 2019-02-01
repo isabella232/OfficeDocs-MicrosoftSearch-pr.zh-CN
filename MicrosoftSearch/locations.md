@@ -13,13 +13,13 @@ search.appverid:
 - MOE150
 - MED150
 ms.assetid: 2379e72c-a7da-4e3f-932a-12d431a0a284
-description: 您可以包括贵组织的位置 Microsoft 搜索工作结果的方式的所有概述 （英文)
-ms.openlocfilehash: 6b96fd405fc78d77f9b61408909b380cc45ec95e
-ms.sourcegitcommit: bf52cc63b75f2e0324a716fe65da47702956b722
+description: 可以在 Microsoft 搜索工作结果中包括您组织的位置的方式的所有概述 （英文)
+ms.openlocfilehash: 4ff30d7e346d609e9fddaca70caa1a85652fad3c
+ms.sourcegitcommit: 98fd5dd37a5b753cfa2fb81fc4bd6497ecc8ed30
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "29378499"
+ms.lasthandoff: 02/01/2019
+ms.locfileid: "29690656"
 ---
 # <a name="locations"></a>位置
 
