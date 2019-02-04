@@ -13,21 +13,21 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: f980b90f-95e2-4b66-8b21-69f601ff4b50
-description: 获取相关搜索建议，并通过将一个 Microsoft 搜索搜索框添加到 intranet 网站或网页查找工作结果更快。
+description: 通过将 Microsoft 搜索框添加到 Intranet 站点或页面来更快地获取相关搜索建议和查找工作结果。
 ms.openlocfilehash: 699cfd9c411c9b86f3a2f8742c425aaedef1ebc5
 ms.sourcegitcommit: 1c038d87efab4840d97b1f367b39e2b9ecdfee4a
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 01/29/2019
 ms.locfileid: "29612415"
 ---
 # <a name="add-a-search-box-to-your-intranet-site"></a>将搜索框添加到 Intranet 站点
 
-用于快速访问相关搜索建议和工作结果，添加到任何 intranet 网站或页面的 Microsoft 搜索搜索框。
+将 Microsoft 搜索框添加到 Intranet 站点或页面，以快速访问相关搜索建议和工作结果。
   
-## <a name="add-a-search-box-to-an-intranet-page"></a>将搜索框添加到 intranet 页
+## <a name="add-a-search-box-to-an-intranet-page"></a>将搜索框添加到 Intranet 页面
 
-您需要将两个元素添加到页: 搜索框和电源它的脚本的容器。
+需要将两个元素添加到页面：适合于搜索框的容器以及支持该搜索框的脚本。
   
 ```html
 <div id="bfb_searchbox"></div>
@@ -39,11 +39,11 @@ ms.locfileid: "29612415"
 <script async src="https://www.bing.com/business/s?k=sb"></script>
 ```
 
-在 SharePoint 经典网站上，添加脚本编辑器 Web 部件和空投脚本。
+在 SharePoint 经典网站上，添加脚本编辑器 Web 部件并将脚本拖动到其中。
   
-## <a name="enable-the-search-box-for-mobile"></a>启用 mobile 的搜索框
+## <a name="enable-the-search-box-for-mobile"></a>启用面向移动设备的搜索框
 
-对于 intranet 网站或页，可用于移动用户中，添加 isMobile： 为 true 则设置对象：
+在面向移动用户的 Intranet 网站或页面上，将 isMobile: true 添加到设置对象：
   
 ```html
 <div id="bfb_searchbox"></div>
@@ -56,9 +56,9 @@ ms.locfileid: "29612415"
 <script async src="https://www.bing.com/business/s?k=sb"></script>
 ```
 
-## <a name="put-focus-on-the-search-box-by-default"></a>将焦点放在搜索框中，默认情况下
+## <a name="put-focus-on-the-search-box-by-default"></a>默认情况下，已将焦点置于搜索框上
 
-可帮助用户更快、 搜索时页面或站点加载将光标放置在搜索框添加焦点： 为 true 则设置对象：
+为了帮助用户更快地进行搜索，在加载页面或网站时，通过将 focus: true 添加到设置对象来将光标置于搜索框中：
   
 ```html
 <div id="bfb_searchbox"></div>
@@ -71,9 +71,9 @@ ms.locfileid: "29612415"
 <script async src="https://www.bing.com/business/s?k=sb"></script>
 ```
 
-## <a name="use-an-iframe-to-embed-a-search-box"></a>使用 iFrame 嵌入的搜索框
+## <a name="use-an-iframe-to-embed-a-search-box"></a>使用 iFrame 嵌入搜索框
 
-如果嵌入脚本桌网站，使用 iFrame 添加搜索框：
+如果嵌入脚本并非网站上的一个选项，请使用 iFrame 添加搜索框：
   
 ```html
 <iframe width="564" height="400" src="https://www.bing.com/business/searchbox"></iframe>

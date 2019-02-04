@@ -1,5 +1,5 @@
 ---
-title: Microsoft 搜索的功能
+title: Microsoft 搜索功能
 ms.author: dawholl
 author: dawholl
 manager: kellis
@@ -13,80 +13,80 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 5861e462-faed-4c3d-824d-ed3aafd80714
-description: Microsoft 管理员和最终用户搜索的关键功能包括书签、 Q&As，以及管理和数据见解
+description: Microsoft 搜索（面向管理员和最终用户）的主要功能包括书签、问题解答和管理及数据见解
 ms.openlocfilehash: ca2c0de9fbed075a822989ab8b3bf881d5626cee
 ms.sourcegitcommit: 1c038d87efab4840d97b1f367b39e2b9ecdfee4a
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 01/29/2019
 ms.locfileid: "29612424"
 ---
-# <a name="features-of-microsoft-search"></a>Microsoft 搜索的功能
+# <a name="features-of-microsoft-search"></a>Microsoft 搜索功能
 
-## <a name="key-admin-features-include"></a>关键管理功能包括：
+## <a name="key-admin-features-include"></a>关键管理员功能包括：
 
 - [企业书签](create-and-manage-bookmarks.md)
     
-    查找站点、 工具和在企业内的其他信息
+    查找网站、工具以及企业中的其他信息
     
-- [企业 Q&As](create-and-manage-qas.md)
+- [企业问题解答](create-and-manage-qas.md)
     
-    应答您的组织中的最常见问题
+    回答组织中最常见的问题
     
-- 导入和导出[书签](bulk-create-bookmarks.md)和[Q&As](bulk-create-qas.md)
+- 导入和导出[书签](bulk-create-bookmarks.md)和[问题解答](bulk-create-qas.md)
     
-    简化创建和更新与批量导入、 导出和编辑
+    利用批量导入、导出和编辑，简化创建和更新
 
 - [位置](locations.md)
     
-    查找地址和定位贵组织的建筑、 办公室和地图上的其他工作区
+    在地图上查找地址并定位组织的大楼、办公室和其他工作区
     
 - [管理](set-up-microsoft-search.md)
     
-    配置、 创建内容，并定义搜索关键字和短语
+    配置、创建内容和定义搜索关键字和词语
     
 - [用户和权限](add-users.md)
     
-    您的全局管理员或 Microsoft 搜索管理员授予管理 Microsoft 搜索配置、 编辑器创建内容和最终用户有权访问 Microsoft 搜索其他管理员
+    全局管理员或 Microsoft 搜索管理员可以授权管理 Microsoft 搜索配置的其他管理员、创建内容的编辑者以及具有 Microsoft 搜索访问权限的最终用户
     
 - [分析](get-insights.md) 
     
-    了解您的组织如何使用 Microsoft 搜索 
+    了解组织如何使用 Microsoft 搜索 
     
-## <a name="key-end-user-features-include"></a>重要的最终用户功能包括：
+## <a name="key-end-user-features-include"></a>关键最终用户功能包括：
 
-- [人脉](use/find-people-and-groups.md)
+- [人员](use/find-people-and-groups.md)
     
-    查找联系人并了解其公司、 他们正在处理的和方式与他们联系中的角色
+    查找人员并了解其在公司内的角色、所从事的项目以及联系方式
     
 - [组织图表](use/find-people-and-groups.md)
     
-    了解在公司内的人员的位置和方便地浏览其对等方、 管理和直接下属
+    了解人员在公司内的位置，轻松浏览其同级、管理者和直接下属
     
 - [文件](use/find-files.md)
     
-    查找上下文和相关文件保存在 SharePoint 和 OneDrive for Business
+    查找保存在 SharePoint 和 OneDrive for Business 上的上下文相关文件
     
 - [Office 365 组](use/find-people-and-groups.md)
     
-    查找按其名称或成员组、 研究人员所属的组和浏览共享的内容
+    按名称或成员查找组，浏览某人所属的组，以及浏览共享内容
     
 - [资源和工具](use/find-resources-tools-and-more.md)
     
-    获取内部和外部资源、 工具和更轻松地找到所需的信息的链接
+    获取内部和外部资源、工具等的链接，以轻松找到所需的信息
     
 - [SharePoint 网站](use/find-sharepoint-sites.md)
     
-    按名称搜索网站或查看的个人或组的结果
+    按名称搜索网站或查看某人或组的结果
     
-- [团队和 Yammer 对话](use/find-conversations.md)
+- [Teams 和 Yammer 对话](use/find-conversations.md)
     
-    查找公用上下文和相关结果和组的对话
+    从公共和组对话中查找上下文相关结果
 
 - [位置](use/find-locations.md)
     
-    查找地址和映射结果建筑、 办公室、 校园和的详细信息
+    查找大楼、办公室、校园等的地址和地图结果
     
 - 首次运行体验
     
-    首次登录到 Microsoft 搜索用户，并转到 Bing，他们可以了解有关使用其和工作结果的类型信息他们会发现搜索
+    用户首次登录到 Microsoft 搜索并转至必应时，将获得与如何使用以及在搜索时将会获得的工作结果类型相关的信息
