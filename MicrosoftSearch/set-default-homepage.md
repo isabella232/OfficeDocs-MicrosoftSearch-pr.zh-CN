@@ -13,101 +13,101 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: c020bd72-9906-4dfd-bc77-57287f5927ce
-description: 了解如何为 Microsoft 搜索与贵公司将 Bing 设置为默认主页。
+description: 了解如何使用 Microsoft 搜索将必应设置为公司的默认主页。
 ms.openlocfilehash: db0611ebd7f4a8344664825bbb42025f3bb36486
 ms.sourcegitcommit: 1c038d87efab4840d97b1f367b39e2b9ecdfee4a
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 01/29/2019
 ms.locfileid: "29612487"
 ---
 # <a name="set-default-homepage"></a>设置默认主页
 
-配置默认浏览器、 默认搜索引擎和默认主页将帮助您发现 Microsoft 搜索功能，鼓励使用更多的并提供更流畅的用户。
+配置默认浏览器、默认搜索引擎和默认主页将帮助用户发现 Microsoft 搜索功能、鼓励更多用户使用，并提供更流畅的体验。
   
-若要设置您的组织的默认主页，按照以下步骤。
+若要为组织设置默认主页，请按照下面步骤操作。
   
 ## <a name="internet-explorer"></a>Internet Explorer
 
 ### <a name="internet-explorer-50-or-later"></a>Internet Explorer 5.0 或更高版本
 
-1. 打开组策略管理控制台 (gpmc.msc) 并切换到编辑现有的任何策略或创建一个新。
+1. 打开组策略管理控制台 (gpmc.msc) 并切换到编辑任何现有策略或新建一个策略。
     
-2. 导航到**用户 Configuration\Preferences\Control 面板 Settings\Internet 设置**。
+2. 导航到**用户配置\偏好设置\控制面板设置\Internet 设置**。
     
-3. 右键单击**Internet 设置**，然后选择**Internet Explorer 10**。
+3. 右键单击“Internet 设置”****，然后选择“Internet Explorer 10”****。
     
     > [!NOTE]
-    > 您需要选择的 Internet Explorer 10 相同的设置将应用于 Internet Explorer 11 应用 Internet Explorer 11 的设置的选项。 
+    > 需要选择 Internet Explorer 10 选项来应用 Internet Explorer 11 设置，就像应用于 Internet Explorer 11 的设置一样。 
   
-4. 带有红色下划线设置未配置在目标计算机，而在目标计算机配置设置绿色加下划线。若要更改下划线，请使用下面的功能键：
+4. 带红色下划线的设置不在目标计算机上配置，而带绿色下划线的设置在目标计算机上配置。若要更改下划线，请使用以下功能键：
     
-    F5-启用当前选项卡上的所有设置
+    F5 - 启用当前选项卡上的所有设置
     
-    F6-启用当前选择的设置
+    F6 - 启用当前选择的设置
     
-    F7-禁用当前选择的设置
+    F7 - 禁用当前选择的设置
     
-    F8-禁用当前选项卡上的所有设置
+    F8 - 禁用当前选项卡上的所有设置
     
-5. 按**F8**配置任何内容之前禁用所有设置。屏幕应如下所示： 
+5. 按 F8**** 在配置任何内容之前禁用所有设置。屏幕应如下所示： 
     
     ![Internet Explorer 10 属性对话框](media/2fd55755-5007-4e33-a795-c42ce2fcef4a.jpg)
   
-6. 在主页上设置按**F6** ，并输入`https://www.bing.com/business?form=BFBSPR`
+6. 在主页设置上按 **F6**，然后输入 `https://www.bing.com/business?form=BFBSPR`
     
-7. 通过将其链接到适当的域中强制产生的 GPO。
+7. 通过将生成的 GPO 链接到适当的域来强制执行此系列设置。
     
 > [!NOTE]
-> 此策略设置后，用户仍可以更改主页。 
+> 设置此策略后，用户仍可以更改主页。 
   
 ## <a name="microsoft-edge"></a>Microsoft Edge
 
-### <a name="windows-10-version-1511-or-later"></a>Windows 10，1511 或更高版本
+### <a name="windows-10-version-1511-or-later"></a>Windows 10 版本 1511 或更高版本
 
-1. 打开组策略管理控制台 (gpmc.msc) 并切换到编辑现有的任何策略或创建一个新。
+1. 打开组策略管理控制台 (gpmc.msc) 并切换到编辑任何现有策略或新建一个策略。
     
-2. 导航到**管理 \windows Components\Microsoft 边缘**
+2. 导航到**管理模板\Windows 组件\Microsoft Edge**
     
-1. 双击**配置起始页**，将其设置为**启用**，然后输入`https://www.bing.com/business`
+1. 双击“配置起始页”****，将其设置为“启用”****，并输入 `https://www.bing.com/business`
     
-3. 通过将其链接到适当的域中强制产生的 GPO。
+3. 通过将生成的 GPO 链接到适当的域来强制执行此系列设置。
     
 > [!CAUTION]
-> 用户将无法更改搜索提供程序后设置此策略。 
+> 用户无法在设置此策略后更改搜索提供程序。 
   
 ## <a name="google-chrome"></a>Google Chrome
 
 ### <a name="windows-xp-sp2-or-later"></a>Windows XP SP2 或更高版本
 
-上管理 ADMX 文件和最新的 ADMX 文件的不同版本的 Windows 可找到[Microsoft 支持](https://support.microsoft.com/en-us/help/3087759/how-to-create-and-manage-the-central-store-for-group-policy-administra)的 Windows 支持文章。
+有关为不同版本的 Windows 管理 ADMX 文件和最新 ADMX 文件的 Windows 支持文章，请参阅 [Microsoft 支持](https://support.microsoft.com/zh-CN/help/3087759/how-to-create-and-manage-the-central-store-for-group-policy-administra)。
 
-您还将需要的最新的 Google 策略文件，可以找到该上[Google Chrome 企业帮助](https://support.google.com/chrome/a/answer/187202)。
+还需要最新的 Google 策略文件，可在 [Google Chrome Enterprise 帮助](https://support.google.com/chrome/a/answer/187202)上找到。
   
-如果在 GPMC 找不到本节中所述的设置，请下载相应 ADMX 并将其复制到[中央存储](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-vista/cc748955%28v%3dws.10%29)。在控制器上的中央存储是具有以下命名约定的文件夹：
+如果在 GPMC 内找不到本部分中介绍的设置，下载相应 ADMX 并将其复制到[中央存储](https://docs.microsoft.com/zh-CN/previous-versions/windows/it-pro/windows-vista/cc748955%28v%3dws.10%29)。控制器上的中央存储是具有以下命名约定的文件夹：
   
  **%systemroot%\sysvol\\<domain\>\policies\PolicyDefinitions**
   
-每个域控制器处理应获得一个单独的文件夹。下面的命令可用于从命令提示符处复制 ADMX 文件：
+控制器处理的每个域都应有一个单独的文件夹。以下命令可用于从命令提示符复制 ADMX 文件：
   
  `Copy <path_to_ADMX.ADMX> %systemroot%\sysvol\<domain>\policies\PolicyDefinitions`
   
-1. 打开组策略管理控制台 (gpmc.msc) 并切换到编辑现有的任何策略或创建一个新。
+1. 打开组策略管理控制台 (gpmc.msc) 并切换到编辑任何现有策略或新建一个策略。
     
-2. 确保在两个*用户/计算机配置*的**管理模板**部分中显示以下文件夹： Google Chrome 和 Google Chrome-默认设置 （用户可以重写）。
+2. 请确保以下文件夹显示在*用户/计算机配置*的**管理模板**部分中：Google Chrome 和 Google Chrome - 默认设置（用户可以覆盖）。
     
-   - 已解决的第一节的设置和本地管理员不能更改它们。
+   - 第一个部分的设置是固定的，本地管理员无法进行更改。
     
-   - 可以由用户在其浏览器设置中更改的后一节的策略的设置。您应确定用户可以覆盖默认设置。在下列步骤中，向您的组织策略和需求更改中的设置相对应的文件夹中。执行以下步骤使用 Google Chrome 中的默认设置为默认值。
+   - 用户可以在其浏览器设置中更改后一部分策略的设置。应决定用户是否可以覆盖默认设置。在以下步骤中，更改文件夹中与组织策略和需求相对应的设置。下面的步骤使用 Google Chrome - 默认设置为默认值。
     
-3. 导航到**&lt;计算机/用户配置&gt;\Administrative Templates\Google Chrome-默认 Settings\Home 页**。
+3. 导航到**&lt;计算机/用户配置&gt;\管理模板\Google Chrome - 默认设置\主页**。
     
-4. 双击**主页以使用新选项卡页**上，并将其设置为**已启用**。
+4. 双击“使用新选项卡页作为主页”****，并将其设置为“启用”****。
     
-5. 导航到**&lt;计算机/用户配置&gt;\Administrative Templates\Google Chrome-默认 Settings\New 选项卡页**。
+5. 导航到**&lt;计算机/用户配置&gt;\管理模板\Google Chrome - 默认设置\新选项卡页**。
     
-6. 双击**配置新选项卡页的 URL**，将其设置为**启用**，然后输入`https://www.bing.com/business?form=BFBSPR`
+6. 双击“配置新选项卡页 URL”****，将其设置为“启用”****，并输入 `https://www.bing.com/business?form=BFBSPR`
     
-7. 通过将其链接到适当的域中强制产生的 GPO。
+7. 通过将生成的 GPO 链接到适当的域来强制执行此系列设置。
     
-用户将能够更改主页上后设置此策略。
+用户可以在设置此策略后更改主页。
