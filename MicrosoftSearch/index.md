@@ -1,5 +1,5 @@
 ---
-title: Microsoft Search
+title: Microsoft 搜索
 ms.author: dawholl
 author: dawholl
 manager: kellis
@@ -14,15 +14,15 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 90d3190d-1add-490f-bef2-10b528252a2e
-description: Microsoft 搜索是企业搜索体验，有助于提高效率，节省时间通过提供您的组织的更多的相关搜索结果
+description: Microsoft 搜索是一种企业搜索体验，通过为组织提供更多相关搜索结果来提高生产效率并节省时间
 ms.openlocfilehash: 1a50ff7a0ae3c2b86f3051ad4eeecb38a8a602a9
 ms.sourcegitcommit: 1c038d87efab4840d97b1f367b39e2b9ecdfee4a
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 01/29/2019
 ms.locfileid: "29612345"
 ---
-# <a name="microsoft-search"></a>Microsoft Search
+# <a name="microsoft-search"></a>Microsoft 搜索
 
 <ul class="panelContent cardsW cols cols2">
     <li>
@@ -45,9 +45,9 @@ ms.locfileid: "29612345"
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardText">
-                        <h2>为何提供 Microsoft 搜索</h2>
-                        <p>获取企业搜索体验，有助于提高效率，节省时间通过提供您的组织的更多的相关搜索结果</p>
-                        <p><a href="why-microsoft-search.md">了解如何操作</a></p>
+                        <h2>为什么选择 Microsoft 搜索</h2>
+                        <p>获取企业搜索体验，通过为组织提供更多相关搜索结果来提高生产效率并节省时间</p>
+                        <p><a href="why-microsoft-search.md">了解工作原理</a></p>
                     </div>
                 </div>
             </div>
@@ -55,7 +55,7 @@ ms.locfileid: "29612345"
     </li>
 </ul>
 
-<h2>特色的主题</h2>
+<h2>特色主题</h2>
 
 <ul class="panelContent cardsW">
     <li>
@@ -68,9 +68,9 @@ ms.locfileid: "29612345"
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>主要功能</h3>
-                        <p>查看可供管理员和用户，包括搜索时您将找到的功能</p>
-                        <p><a href="features.md">了解更多信息</a></p>
+                        <h3>关键功能</h3>
+                        <p>查看管理员和用户可以使用哪些功能，包括搜索时会发现的内容</p>
+                        <p><a href="features.md">详细了解</a></p>
                     </div>
                 </div>
             </div>
@@ -86,9 +86,9 @@ ms.locfileid: "29612345"
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>管理快速设置</h3>
-                        <p>找出如何打开 Microsoft 搜索并将其配置为组织的四个轻松步骤</p>
-                        <p><a href="quick-set-up.md">立即启动</a></p>
+                        <h3>管理员快速设置</h3>
+                        <p>通过四个简单步骤，了解如何启用 Microsoft 搜索并为组织配置它</p>
+                        <p><a href="quick-set-up.md">立即开始</a></p>
                     </div>
                 </div>
             </div>
@@ -105,7 +105,7 @@ ms.locfileid: "29612345"
                     </div>
                     <div class="cardText">
                         <h3>常见问题</h3>
-                        <p>获取某些 Microsoft 搜索有关的常见问题的答案</p>
+                        <p>获取有关 Microsoft 搜索的一些常见问题的解答</p>
                         <p><a href="faqs.md">浏览常见问题解答</a></p>
                     </div>
                 </div>
@@ -121,8 +121,8 @@ ms.locfileid: "29612345"
                 <div class="card">
                     <div class="cardText">
                         <h2>使用 Microsoft 搜索</h2>
-                        <p>Microsoft 搜索是一种在查找信息、 提高工作效率，和工作效率的简单，fast，和更安全的方式</p>
-                        <p><a href="use/about-microsoft-search.md">了解如何操作</a></p>
+                        <p>Microsoft 搜索是一种简单、快速、安全的查找信息的方法，可以提高工作效率，并更智能地完成工作</p>
+                        <p><a href="use/about-microsoft-search.md">了解工作原理</a></p>
                     </div>
                 </div>
             </div>
