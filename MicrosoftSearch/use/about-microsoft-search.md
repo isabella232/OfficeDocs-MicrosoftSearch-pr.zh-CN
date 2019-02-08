@@ -1,5 +1,5 @@
 ---
-title: 有关 Microsoft 搜索
+title: 关于 Microsoft 搜索
 ms.author: dawholl
 author: dawholl
 manager: kellis
@@ -12,57 +12,57 @@ search.appverid:
 - BFB160
 - MET150
 ms.assetid: b453e6f0-10cf-4384-9914-241f425cd5f9
-description: 获取所有使用 Microsoft 搜索时，可以看到的信息的概述
+description: 大致了解使用 Microsoft 搜索时可以找到的所有信息
 ms.openlocfilehash: f5a9656144efad8c6e146f6654ebc9f69f1b1843
 ms.sourcegitcommit: 1c038d87efab4840d97b1f367b39e2b9ecdfee4a
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 01/29/2019
 ms.locfileid: "29612368"
 ---
-# <a name="about-microsoft-search"></a>有关 Microsoft 搜索
+# <a name="about-microsoft-search"></a>关于 Microsoft 搜索
 
-Microsoft Search 可轻松将搜索工作和一个体验中共同 web。使用 Microsoft 提供了一种简单、 fast、 强大且更安全的方法，以获取在适当的时间正确的信息，在任何浏览器和任何设备上的搜索。
+Microsoft 搜索轻松地将搜索工作和 Web 结合在一起。使用 Microsoft 搜索，可以以一种简单、快速、强大和更安全的方式在任何浏览器和任何设备上在正确的时间获得正确的信息。
   
-是否要查找的人员、 文件、 组织结构图、 内部站点和资源或常见问题的解答，可以使用整个日常工作的 Microsoft 搜索以获取更快的解答，提高工作效率，并工作效率。若要获取工作结果，只需转到[bing.com/business](https://www.bing.com/business)，登录您的工作或学校帐户和搜索。 
+无论你是在搜索人员、文件、组织结构图、内部网站和资源，还是常见问题解答，都可以在工作中使用 Microsoft 搜索来更快、更高效、更智能地获得答案。若要获得工作结果，只需转到 [bing.com/business](https://www.bing.com/business)，使用工作或学校帐户登录，然后搜索。 
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2AA2W?autoplay=false]
 
-## <a name="what-you-can-find"></a>您可以找到
+## <a name="what-you-can-find"></a>可以找到的信息
   
-使用 Microsoft 搜索功能查找：
+使用 Microsoft 搜索查找：
   
-- [人脉](find-people-and-groups.md)
+- [人员](find-people-and-groups.md)
     
-    能够轻松找到联系人信息、 即将召开的会议，必须在一起，组织图表详细信息、 组成员身份和其他文件
+    轻松找到联系人信息、即将召开的会议、组织结构图详细信息、组成员身份和其他文件
     
 - [组](find-people-and-groups.md)
     
-    查找按其名称或成员组、 研究人员所属的组和浏览其共享的内容
+    按名称或成员查找组，浏览某人所属的组，以及浏览其共享内容
     
 - [资源和工具](find-resources-tools-and-more.md)
     
-    轻松地找到内部资源、 工具和详细信息
+    轻松找到内部资源、工具等
     
 - [SharePoint 网站](find-sharepoint-sites.md)
     
-    查找您的 SharePoint 网站或创建的组或有权查看同事的 SharePoint 网站
+    查找 SharePoint 网站或你有权限查看的由组或同事创建的 SharePoint 网站
     
 - [文件](find-files.md)
     
-    快速查找您自己的文件，或由同事有权查看或编辑创建内容
+    快速查找你自己的文件，或你有权限查看或编辑的由同事创建的内容
     
 - [对话](find-conversations.md)
     
-    查找您专用的 Microsoft 团队或 Microsoft Yammer 对话或同事有权查看之间的对话
+    查找你有权限查看的 Microsoft Teams 或 Microsoft Yammer 私人对话或同事之间的对话
     
 - [位置](find-locations.md)
     
-    查找地图结果和地址建筑、 办公室、 校园和详细信息，轻松获取方向，并请参阅 what's 附近    
+    查找建筑、办公室、校园等的地图结果和地址，轻松获得方向，并了解周边环境    
     
-您只能看到时与您工作或学校的帐户登录到 Bing 工作结果。这是您用于登录到 Outlook web、 SharePoint 和其他 Office 365 应用程序上的同一个帐户。 
+只有当使用工作或学校帐户登录必应时，才能看到工作结果。这是用来登录网页版 Outlook、SharePoint 和其他 Office 365 应用的相同帐户。 
   
-Microsoft 搜索将仅返回信息和有权查看的文件。您可能具有权限，因为您创建的文件或信息、 他们已与您共享或与较大的组，其中包括您或它们存储在文件夹或有权访问的位置。
+Microsoft 搜索只返回你有权查看的信息和文件。你可能有权限，因为你创建了文件或信息，它们已经与你或包括你在内的更大群组共享，或者存储在你有权访问的文件夹或位置中。
 
   
 

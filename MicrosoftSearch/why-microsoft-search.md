@@ -1,5 +1,5 @@
 ---
-title: 为何提供 Microsoft 搜索
+title: 为什么选择 Microsoft 搜索
 ms.author: dawholl
 author: dawholl
 manager: kellis
@@ -13,52 +13,52 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 38569f03-db18-49ab-96ef-213a1f410935
-description: 了解 Microsoft 搜索为什么是智能企业级搜索的现代工作场所。
+description: 了解为什么 Microsoft 搜索是面向现代工作场所的智能企业搜索。
 ms.openlocfilehash: f00622643aac867a83614fe613f8c8ef4bdb116b
 ms.sourcegitcommit: 1c038d87efab4840d97b1f367b39e2b9ecdfee4a
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 01/29/2019
 ms.locfileid: "29612375"
 ---
-# <a name="why-microsoft-search"></a>为何提供 Microsoft 搜索
+# <a name="why-microsoft-search"></a>为什么选择 Microsoft 搜索
 
-转换的方式人员与 Microsoft 搜索您的组织所搜索的信息。 
+使用 Microsoft 搜索可以改变组织人员搜索信息的方式。 
   
-此企业级搜索体验通过提供更相关的搜索结果面对提高生产效率并节省时间。Microsoft Search 安全地从您的公司、 组织或学校，检索信息 — like 文件、 公司数据、 用户信息和网站 — 以及公共 web 结果，并将它们显示在单个体验。
+此企业搜索体验通过为工作场所提供更多相关的搜索结果，来提高工作效率并节省时间。Microsoft 搜索安全地从公司、学校或组织检索信息（比如文件、公司数据、人员信息和站点）以及公共 Web 结果，并在单一体验中显示。
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2EWQN?autoplay=false]
   
 ## <a name="save-time-with-intelligent-search"></a>使用智能搜索节省时间
 
-Microsoft Search 利用 AI 提供上下文，无边框，以及相关的结果，将您从您的组织和用户体验 web 最佳的搜索结果。
+Microsoft 搜索利用 AI 提供与上下文相关的、无边界的相关结果，在单一体验中从组织和 Web 提供最佳搜索结果。
   
-## <a name="get-enterprise-grade-protection"></a>获取企业级保护
+## <a name="get-enterprise-grade-protection"></a>获得企业级保护
 
-Microsoft Search 需要 Azure Active Directory 身份验证，可从受信任云中访问结果。经过身份验证的用户只能看到他们有权访问的内容。搜索查询消除标识，日志分开公用 Bing 搜索通信。此级别的保护不可用 anywhere else 行业中。
+Microsoft 搜索需要 Azure Active Directory 身份验证来访问来自受信任云的结果。经过身份验证的用户只能看到其有权访问的内容。搜索查询被取消标识，日志与公共必应搜索流量分隔开来。此级别保护在业内的其他任意位置都不可用。
   
-## <a name="easy-to-administer-and-available-everywhere"></a>易于管理且可用无处不在
+## <a name="easy-to-administer-and-available-everywhere"></a>易于管理，随处可用
 
-部署 Microsoft 搜索是简单 — 仅启用从 Microsoft 365 管理中心和自定义设置，包括您的徽标、 名称、 颜色和详细信息。授权的用户可以访问其任何设备只通过登录到 Bing。
+部署 Microsoft 搜索很简单，只需从 Microsoft 365 管理中心启用并自定义设置，包括徽标、名称、颜色等。只要登录必应，授权用户就可以在任何设备上访问它。
   
-## <a name="one-place-to-search-across-office-365-apps"></a>跨 Office 365 应用程序搜索的一个位置
+## <a name="one-place-to-search-across-office-365-apps"></a>在一个位置即可跨 Office 365 应用搜索
 
-Microsoft Search 融合结果从 Office 365，包括 SharePoint 中的各种数据源的 OneDrive for Business、 团队、 Yammer、 组和详细信息。查找相关工作结果是搜索一样简单。
+Microsoft 搜索在 Office 365 中汇集了来自各种数据源的结果，包括 SharePoint、OneDrive for Business、Teams、Yammer、Groups 等。查找相关工作结果和搜索一样简单。
   
-## <a name="share-authoritative-information-and-answer-questions"></a>共享权威的信息和解答问题
+## <a name="share-authoritative-information-and-answer-questions"></a>分享权威信息，回答问题
 
-提供的信息和用户需要完成任务，如策略、 福利、 资源、 工具和工作结果中的更多的解答。您还可以针对特定组，如新雇用或远程工作者。
+提供用户完成任务所需的信息和答案，如策略、权益、资源、工具等工作结果。还可以以特定组为目标，如新员工或远程工作人员。
   
-## <a name="find-shared-files"></a>查找共享的文件
+## <a name="find-shared-files"></a>查找共享文件
 
-Microsoft Search 使用高级的查询了解进行查找简单的共享的文档和文件。找到正在协作的文档和有权访问的文件。 
+Microsoft 搜索使用高级查询理解使查找共享文档和文件变得简单。找到正在合作的文档和有权访问的文件。 
   
-## <a name="complete-tasks-faster"></a>更快地完成任务
+## <a name="complete-tasks-faster"></a>更快完成任务
 
-将 PowerApps 集成到您的内容，以确保工作结果中的任务完成。
+将 PowerApps 集成到内容中，以在工作结果中完成任务。
   
 ## <a name="reduce-support-costs"></a>降低支持成本
 
-降低成本和使用户通过嵌入自定义的一些常见问题解答自信，并将其联系技术支持，IT 部门或支持团队需要最小化。
+通过嵌入对常见问题的自定义答案来降低成本并使用户自给自足，并最大程度减少与支持人员、IT 部门或支持团队的联系需求。
   
 
