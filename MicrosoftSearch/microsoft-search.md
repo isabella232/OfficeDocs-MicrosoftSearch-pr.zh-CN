@@ -14,13 +14,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 90d3190d-1add-490f-bef2-10b528252a2e
-description: Microsoft 搜索是企业搜索体验，有助于提高效率，节省时间通过提供您的组织的更多的相关搜索结果
-ms.openlocfilehash: 9ef8153979a31bbcb2ed6014055e99dc8dbc793a
-ms.sourcegitcommit: bf52cc63b75f2e0324a716fe65da47702956b722
+description: Microsoft Search 是一种企业级搜索体验, 可通过为您的组织提供更多相关的搜索结果来提高工作效率并节省时间
+ms.openlocfilehash: 4d3e3edd64d527121c1e4aee30376b15ca0c2e60
+ms.sourcegitcommit: 1bc499c59b6ec9cbdf3db0fdcb8d1252e36cce0c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "29378514"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "31746396"
 ---
 # <a name="microsoft-search"></a>Microsoft Search
 
@@ -45,8 +45,8 @@ ms.locfileid: "29378514"
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardText">
-                        <h2>为何提供 Microsoft 搜索</h2>
-                        <p>获取企业搜索体验，有助于提高效率，节省时间通过提供您的组织的更多的相关搜索结果</p>
+                        <h2>为什么选择 Microsoft 搜索</h2>
+                        <p>获取企业级搜索体验, 通过为您的组织提供更多相关的搜索结果来提高工作效率并节省时间</p>
                         <p><a href="why-microsoft-search.md">了解如何操作</a></p>
                     </div>
                 </div>
@@ -55,7 +55,7 @@ ms.locfileid: "29378514"
     </li>
 </ul>
 
-<h2>特色的主题</h2>
+<h2>特色主题</h2>
 
 <ul class="panelContent cardsW">
     <li>
@@ -69,8 +69,8 @@ ms.locfileid: "29378514"
                     </div>
                     <div class="cardText">
                         <h3>主要功能</h3>
-                        <p>查看可供管理员和用户，包括搜索时您将找到的功能</p>
-                        <p><a href="features.md">了解更多信息</a></p>
+                        <p>查看可用于管理员和用户的功能, 包括搜索时可以找到的功能</p>
+                        <p><a href="features.md">获得更多信息</a></p>
                     </div>
                 </div>
             </div>
@@ -86,8 +86,8 @@ ms.locfileid: "29378514"
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>管理快速设置</h3>
-                        <p>找出如何打开 Microsoft 搜索并将其配置为组织的四个轻松步骤</p>
+                        <h3>管理员快速设置</h3>
+                        <p>了解如何通过四个简单的步骤为你的组织打开 Microsoft Search 和配置它</p>
                         <p><a href="quick-set-up.md">立即启动</a></p>
                     </div>
                 </div>
@@ -105,8 +105,8 @@ ms.locfileid: "29378514"
                     </div>
                     <div class="cardText">
                         <h3>常见问题</h3>
-                        <p>获取某些 Microsoft 搜索有关的常见问题的答案</p>
-                        <p><a href="faqs.md">浏览常见问题解答</a></p>
+                        <p>获取有关 Microsoft 搜索的一些常见问题的解答</p>
+                        <p><a href="faqs.md">浏览 FAQ</a></p>
                     </div>
                 </div>
             </div>
@@ -120,8 +120,8 @@ ms.locfileid: "29378514"
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardText">
-                        <h2>使用 Microsoft 搜索</h2>
-                        <p>Microsoft 搜索是一种在查找信息、 提高工作效率，和工作效率的简单，fast，和更安全的方式</p>
+                        <h2>使用 Microsoft Search</h2>
+                        <p>Microsoft Search 是一种简单、快速且更安全的方法来查找信息、提高工作效率以及更智能地工作</p>
                         <p><a href="use/about-microsoft-search.md">了解如何操作</a></p>
                     </div>
                 </div>
@@ -153,8 +153,8 @@ ms.locfileid: "29378514"
                 <div class="card">
                     <div class="cardText">
                         <p><a href="security.md">安全性</a></p>
-                        <p><a href="requirements.md">要求</a></p>  
-                        <p><a href="about-the-admin-portal.md">有关管理门户</a></p>
+                        <p><a href="requirements.md">Requirements</a></p>  
+                        <p><a href="about-the-admin-portal.md">关于管理门户</a></p>
                     </div>
                 </div>
             </div>
@@ -179,8 +179,8 @@ ms.locfileid: "29378514"
                 <div class="card">
                     <div class="cardText">
                         <p><a href="create-bookmarks.md">创建书签</a></p>
-                        <p><a href="create-qas.md">创建 Q&As</a></p>
-                        <p><a href="add-users.md">添加用户</a></p>
+                        <p><a href="create-qas.md">创建问答</a></p>
+                        <p><a href="add-users.md">管理用户</a></p>
                     </div>
                 </div>
             </div>
