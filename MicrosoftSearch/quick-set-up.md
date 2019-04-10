@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 ms.assetid: bc3d1d2a-a4d9-4a02-9d7d-deb492e79cd0
 description: 了解轻松启用和使用 Microsoft 搜索所需的四个步骤。
-ms.openlocfilehash: fb5677a0acc896e593eae42c35111e0f744ef45d
-ms.sourcegitcommit: 1c038d87efab4840d97b1f367b39e2b9ecdfee4a
+ms.openlocfilehash: 2a113cf10d944aea54d3fe6342599934e4b5ac45
+ms.sourcegitcommit: 1bc499c59b6ec9cbdf3db0fdcb8d1252e36cce0c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29612346"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "31746364"
 ---
 # <a name="quick-set-up-for-microsoft-search"></a>快速设置 Microsoft 搜索
 
@@ -73,7 +73,7 @@ ms.locfileid: "29612346"
     
 3. 有关详细信息，请参阅[管理门户工具](admin-portal-tools.md)
     
-完成此快速设置并[添加用户](add-users.md)后，他们可以访问 Bing.com 并搜索工作结果。 
+完成此快速设置后，用户可以访问 Bing.com 并搜索工作结果。 
   
 ## <a name="how-do-i-get-to-the-microsoft-search-admin-portal"></a>如何转到 Microsoft 搜索管理门户？
 
