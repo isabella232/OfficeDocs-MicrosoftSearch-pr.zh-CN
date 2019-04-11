@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 ms.assetid: 38569f03-db18-49ab-96ef-213a1f410935
 description: 了解为什么 Microsoft 搜索是面向现代工作场所的智能企业搜索。
-ms.openlocfilehash: f00622643aac867a83614fe613f8c8ef4bdb116b
-ms.sourcegitcommit: 1c038d87efab4840d97b1f367b39e2b9ecdfee4a
+ms.openlocfilehash: f7c65e13f18f6ea4fd38bc406653a37f85659d3e
+ms.sourcegitcommit: 1bc499c59b6ec9cbdf3db0fdcb8d1252e36cce0c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29612375"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "31746412"
 ---
 # <a name="why-microsoft-search"></a>为什么选择 Microsoft 搜索
 
@@ -39,7 +39,7 @@ Microsoft 搜索需要 Azure Active Directory 身份验证来访问来自受信�
   
 ## <a name="easy-to-administer-and-available-everywhere"></a>易于管理，随处可用
 
-部署 Microsoft 搜索很简单，只需从 Microsoft 365 管理中心启用并自定义设置，包括徽标、名称、颜色等。只要登录必应，授权用户就可以在任何设备上访问它。
+部署 Microsoft Search 非常简单：只需从 Microsoft 365 管理中心启用，再自定义徽标、名称和颜色等设置即可。 用户只需登录必应即可在任意设备上访问。
   
 ## <a name="one-place-to-search-across-office-365-apps"></a>在一个位置即可跨 Office 365 应用搜索
 

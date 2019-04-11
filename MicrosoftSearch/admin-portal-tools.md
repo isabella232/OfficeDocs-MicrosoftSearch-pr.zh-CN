@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 ms.assetid: 4a824483-2407-4bbd-8f7f-5ebb47817c7e
 description: 用于创建和导入结果、自动登录以及从任意位置搜索的 Microsoft 搜索工具概述
-ms.openlocfilehash: 3b7064fbd0d8f66149a91057be00611e23928ccc
-ms.sourcegitcommit: 1c038d87efab4840d97b1f367b39e2b9ecdfee4a
+ms.openlocfilehash: cae2612979673e086820fec78e4c1e085e38a749
+ms.sourcegitcommit: 1bc499c59b6ec9cbdf3db0fdcb8d1252e36cce0c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29612371"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "31746388"
 ---
 # <a name="admin-portal-tools"></a>管理门户工具
 
@@ -31,11 +31,11 @@ Microsoft 搜索管理门户包含专为管理员、编辑人员和用户设计�
     
 - 必应搜索扩展中的 Microsoft 搜索
     
-    可供授权用户使用，使用 Chrome 或 Microsoft Edge 扩展快速访问 Microsoft 搜索企业搜索，而无需离开当前页面或站点。
+    使用 Chrome 或 Microsoft Edge 扩展快速访问 Microsoft 搜索企业搜索，而无需离开当前页面或站点。
     
 - Windows 10 和 Chrome AAD 登录扩展
     
-    可供授权用户使用，在登录受支持的站点（包括 Office 365 和必应）时，使用 Chrome 扩展可轻松进行 Azure Active Directory 身份验证。建议在[测试单一登录](test-single-sign-on.md)时部署此扩展。
+    在登录支持的站点（包括 Office 365 和必应）时使用 Chrome 扩展轻松完成 Azure Active Directory 身份验证。 建议在[测试单一登录](test-single-sign-on.md)时部署此扩展。
     
 - 将 SharePoint 主要查询作为书签导入
     
