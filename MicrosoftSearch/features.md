@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 ms.assetid: 5861e462-faed-4c3d-824d-ed3aafd80714
 description: Microsoft 搜索（面向管理员和最终用户）的主要功能包括书签、问题解答和管理及数据见解
-ms.openlocfilehash: ca2c0de9fbed075a822989ab8b3bf881d5626cee
-ms.sourcegitcommit: 1c038d87efab4840d97b1f367b39e2b9ecdfee4a
+ms.openlocfilehash: 983a882fd42ae6f76a4b3db4f0f87dd8fbe7974d
+ms.sourcegitcommit: 1bc499c59b6ec9cbdf3db0fdcb8d1252e36cce0c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29612424"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "31746372"
 ---
 # <a name="features-of-microsoft-search"></a>Microsoft 搜索功能
 
@@ -47,9 +47,9 @@ ms.locfileid: "29612424"
     
 - [用户和权限](add-users.md)
     
-    全局管理员或 Microsoft 搜索管理员可以授权管理 Microsoft 搜索配置的其他管理员、创建内容的编辑者以及具有 Microsoft 搜索访问权限的最终用户
+    全局管理员或 Microsoft 搜索管理员可以授权管理 Microsoft 搜索配置的其他管理员和创建内容的编辑者
     
-- [分析](get-insights.md) 
+- [分析 ](get-insights.md) 
     
     了解组织如何使用 Microsoft 搜索 
     
