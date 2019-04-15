@@ -1,5 +1,5 @@
 ---
-title: 添加用户
+title: 管理用户
 ms.author: dawholl
 author: dawholl
 manager: kellis
@@ -13,17 +13,17 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 41723aec-435c-400e-a818-6b1e8a1324c0
-description: 在 Microsoft 搜索管理门户中将权限和角色分配给管理员、编辑人员和用户
-ms.openlocfilehash: c6c842a4337d218764c1969939e77e4abe91915c
-ms.sourcegitcommit: 1c038d87efab4840d97b1f367b39e2b9ecdfee4a
+description: 将权限和角色分配给 Microsoft 搜索管理员和编辑器
+ms.openlocfilehash: 7fa32c008fcbc1bb436f4e90ff0621ed87df8fc6
+ms.sourcegitcommit: 1bc499c59b6ec9cbdf3db0fdcb8d1252e36cce0c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29612391"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "31746404"
 ---
-# <a name="add-users"></a>添加用户
+# <a name="manage-users"></a>管理用户
 
-为整个组织启用 Microsoft 搜索或在 IT 部门之外添加安全组是添加 Microsoft 搜索用户的最快方法。
+编辑器可以添加内容，但不能更改设置
   
 ## <a name="add-admins-and-editors"></a>添加管理员和编辑人员
 
@@ -41,28 +41,4 @@ ms.locfileid: "29612391"
     
 ## <a name="add-users"></a>添加用户
 
-默认情况下，组织中的每个人都可以访问 Microsoft 搜索工作结果。如果希望限制对较小组的访问，请考虑以下识别用户的选项：
-  
-- 与组织内的业务发起人合作
-    
-- 标识早期采用者组
-    
-- 标识执行大量企业搜索的组
-    
-- 标识其他地理位置的用户，包括国际用户
-    
-若要为一个或多个用户启用 Microsoft 搜索：
-  
-1. 转到 Microsoft 搜索管理门户
-    
-2. 在导航窗格中，单击“用户”&amp;“权限”****
-    
-3. 在页面顶部，单击“管理预览访问权限”****
-    
-4. 清除“添加组织中的每个人”**** 选项 
-    
-5. 在“仅允许这些用户”**** 框中，搜索要添加的用户或组 
-    
-6. 单击“保存”****
-    
-提供预览访问权限两小时后，使用工作帐户登录必应的用户将在搜索时看到相关工作结果。有关登录必应的信息，请参阅[登录 Microsoft 搜索](use/sign-in.md)。
+默认情况下，Microsoft 搜索是向组织中的所有人提供。 若要修改访问权限，请使用 [Azure Active Directory 中的条件访问](https://docs.microsoft.com/zh-CN/azure/active-directory/conditional-access/overview)。
