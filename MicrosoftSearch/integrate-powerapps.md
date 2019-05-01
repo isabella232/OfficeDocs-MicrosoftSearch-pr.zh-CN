@@ -13,49 +13,49 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 1fadcba3-4a7f-4a55-8476-d4e64d49a15f
-description: Microsoft Search 书签结果中包含基于浏览器的应用程序
+description: 在 Microsoft Search 的书签结果中添加基于浏览器的应用程序
 ms.openlocfilehash: d8d9d099848e719c86e0f3cadee330263566d243
-ms.sourcegitcommit: bf52cc63b75f2e0324a716fe65da47702956b722
+ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "29378524"
+ms.lasthandoff: 05/01/2019
+ms.locfileid: "33508823"
 ---
 # <a name="integrate-powerapps"></a>集成 PowerApps
 
-帮助用户完成任务，如输入休假时间或通过将现有 PowerApps 集成到您的书签报告开支。集成的 PowerApps 显示中的书签结果，消除了需要转到不同的网站或打开一个单独的工具，哪些保存时间和精力。
+通过将现有 PowerApps 集成到您的书签中, 帮助您的用户完成任务, 例如输入休假时间或报告费用。 集成 PowerApps 显示在书签结果中, 无需转到其他网站或打开单独的工具来节省时间和精力。
   
-## <a name="what-are-powerapps"></a>PowerApps 有哪些？
+## <a name="what-are-powerapps"></a>什么是 PowerApps？
 
-PowerApps 是一种服务，可用于构建业务应用程序在浏览器或电话或平板电脑上运行与所需任何编码体验。了解更多信息：
+PowerApps 是一项服务, 它允许您构建在浏览器中或在手机或平板电脑上运行的业务应用程序, 无需任何编码体验。 了解详细信息：
   
-- [指导学习](https://docs.microsoft.com/en-us/learn/browse/?products=powerapps)
+- [引导式学习](https://docs.microsoft.com/en-us/learn/browse/?products=powerapps)
     
 - [文档](https://docs.microsoft.com/en-us/powerapps/)
     
-## <a name="add-a-powerapp-to-a-bookmark"></a>PowerApp 会议中添加书签
+## <a name="add-a-powerapp-to-a-bookmark"></a>向书签添加 PowerApp
 
-PowerApps 工作任何浏览器以及任何设备，并执行将小于一分钟。
+PowerApps 在任何浏览器和任何设备上工作, 要添加的时间不到一分钟。
   
-1. [查找应用程序 ID 的 PowerApp](https://docs.microsoft.com/en-us/powerapps/maker/canvas-apps/get-sessionid#get-an-app-id)要集成 
+1. [查找要集成的 PowerApp 的应用程序 ID](https://docs.microsoft.com/en-us/powerapps/maker/canvas-apps/get-sessionid#get-an-app-id) 
     
-2. 在 Microsoft SearchAdmin 门户中，转到**书签**
+2. 在 Microsoft SearchAdmin 门户中, 转到 "**书签**"
     
-3. 添加书签或查找要添加到 PowerApp 现有书签
+3. 添加书签或查找要向其添加 PowerApp 的现有书签
     
-4. 在书签设置中，单击**Power 应用程序**，，然后单击**添加 Power 应用程序**
+4. 在 "书签设置" 中, 单击 " **Power app**", 然后单击 "**添加电源应用程序**"
     
-5. 输入或粘贴应用程序 ID
+5. 输入或粘贴应用 ID
     
-    自动添加的高度和宽度。书签可以支持纵向和横向方向，但当前不能更改大小。
+    自动添加高度和宽度。 书签可以同时支持纵向和横向方向, 但当前大小不能更改。
     
-6. 书签预览显示 PowerApp 书签结果中的显示方式
+6. 书签预览显示 PowerApp 将在书签结果中的显示方式
     
-    在预览 PowerApp 是完善可轻松测试和使用。
+    预览中的 PowerApp 可充分发挥作用, 使其易于测试和使用。
     
-7. 单击**发布**
+7. 单击 "**发布**"
     
-当上的任何书签的关键字或保留的关键字的 Bing 搜索授权的 Microsoft 搜索用户时，PowerApp 将出现在书签结果。
+当授权的 Microsoft 搜索用户在 Bing 上搜索任何书签的关键字或保留关键字时, PowerApp 将显示在书签结果中。
 
   
 

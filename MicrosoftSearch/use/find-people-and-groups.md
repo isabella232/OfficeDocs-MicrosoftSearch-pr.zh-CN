@@ -12,39 +12,39 @@ search.appverid:
 - BFB160
 - MET150
 ms.assetid: 17c9982a-0fd9-4cf1-b010-69ae3440b41f
-description: 使用 Microsoft 搜索来查找任何人在您的公司和您将看到的信息
+description: 使用 Microsoft Search 查找你的公司中的任何人以及你将看到的信息
 ms.openlocfilehash: c9b71b8353e5ebc6e876a837424de8b74a7c20d5
-ms.sourcegitcommit: bf52cc63b75f2e0324a716fe65da47702956b722
+ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "29378518"
+ms.lasthandoff: 05/01/2019
+ms.locfileid: "33508916"
 ---
 # <a name="find-people-and-groups"></a>查找人员和组
 
-很容易地了解您的同事学会使用 Microsoft 搜索。只搜索其名称或别名的 Bing 来查找联系人信息、 即将召开的会议，必须在一起，组织图表详细信息、 组成员身份和他们已与您共享的文件。
+使用 Microsoft Search 可以轻松找到有关同事的信息。 只需搜索 Bing 的名称或别名即可查找联系人信息、即将举行的会议、组织结构图详细信息、组成员身份以及与您共享的文件。
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2AuTv?autoplay=false]
   
-## <a name="find-people"></a>“建议”
+## <a name="find-people"></a>查找人员
 
-您的 IT 部门决定 Microsoft 搜索结果中显示的内容。
+你的 IT 部门确定在 Microsoft 搜索结果中显示的内容。
   
-1. 登录到 Bing 上工作或学校的帐户
+1. 在 Bing 登录你的工作或学校帐户
     
-2. 搜索 me，您的姓名或别名，或同事的名称或别名工作
+2. 搜索 "me"、您的姓名或工作别名, 或者同事的姓名或别名
     
-    包括同时名字和姓氏名称将返回最佳结果，但如果您只知道其名称的一部分，Microsoft 搜索将显示您最符合您的搜索结果，如果可能，提供要显示更多结果。
+    同时包含姓和名将返回最佳结果, 但如果您仅知道其名称的一部分, Microsoft Search 将向您显示最符合搜索条件的结果, 如果可能, 还会显示更多结果。
     
-3. 在结果页的顶部或右侧栏的顶部将显示联系人卡片
+3. 人员卡片显示在结果页的顶部或右列的顶部
     
-    签出的详细信息和卡片上的操作，并通过单击获得更多的信息。
+    查看卡片上的详细信息和操作, 并单击了解更多详细信息。
     
-Web 结果显示在工作结果下。这些结果并不特定于您的组织。在某些情况下，例如，当名称是非常常见 web 搜索，联系人卡片可能不自动出现。若要查看您工作的结果可能需要单击组织的徽标旁边的**显示结果**链接。 
+Web 结果将显示在您的工作结果下。 这些结果不特定于您的组织。 在某些情况下, 例如, 当名称是一个非常常见的 web 搜索时, 人员卡片可能不会自动显示。 若要查看你的工作结果, 你可能需要单击组织徽标旁边的 "**显示结果**" 链接。 
   
 ## <a name="find-groups"></a>查找组
 
-就像您搜索自己或同事，输入组的名称或别名组查看联系人的详细信息、 组的所有者、 成员，文件他们已与您和共享对话。
+与搜索自己或同事的情况一样, 请输入组或组别名的名称, 以查看联系人详细信息、组所有者、成员、与您共享的文件以及对话。
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2AA2V?autoplay=false]
   

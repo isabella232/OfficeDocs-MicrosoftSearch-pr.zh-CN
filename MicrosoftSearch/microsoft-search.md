@@ -1,5 +1,5 @@
 ---
-title: Microsoft Search
+title: Microsoft 搜索
 ms.author: dawholl
 author: dawholl
 manager: kellis
@@ -14,15 +14,15 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 90d3190d-1add-490f-bef2-10b528252a2e
-description: Microsoft Search 是一种企业级搜索体验, 可通过为您的组织提供更多相关的搜索结果来提高工作效率并节省时间
-ms.openlocfilehash: 4d3e3edd64d527121c1e4aee30376b15ca0c2e60
-ms.sourcegitcommit: 1bc499c59b6ec9cbdf3db0fdcb8d1252e36cce0c
+description: Microsoft 搜索是一种企业搜索体验，通过为组织提供更多相关搜索结果来提高生产效率并节省时间
+ms.openlocfilehash: b9937dd91d6101386a781884917dab131ddc85e9
+ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "31746396"
+ms.lasthandoff: 05/01/2019
+ms.locfileid: "33509017"
 ---
-# <a name="microsoft-search"></a>Microsoft Search
+# <a name="microsoft-search"></a>Microsoft 搜索
 
 <ul class="panelContent cardsW cols cols2">
     <li>
@@ -45,9 +45,9 @@ ms.locfileid: "31746396"
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardText">
-                        <h2>为什么选择 Microsoft 搜索</h2>
-                        <p>获取企业级搜索体验, 通过为您的组织提供更多相关的搜索结果来提高工作效率并节省时间</p>
-                        <p><a href="why-microsoft-search.md">了解如何操作</a></p>
+                        <h2>为什么要进行 Microsoft 搜索？</h2>
+                        <p>获取企业搜索体验，通过为组织提供更多相关搜索结果来提高生产效率并节省时间</p>
+                        <p><a href="overview-microsoft-search.md">了解如何操作</a></p>
                     </div>
                 </div>
             </div>
@@ -68,9 +68,9 @@ ms.locfileid: "31746396"
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>主要功能</h3>
-                        <p>查看可用于管理员和用户的功能, 包括搜索时可以找到的功能</p>
-                        <p><a href="features.md">获得更多信息</a></p>
+                        <h3>使内容可搜索</h3>
+                        <p>查看管理员和用户可以使用哪些功能，包括搜索时会发现的内容</p>
+                        <p><a href="make-content-easy-to-find.md">了解更多信息</a></p>
                     </div>
                 </div>
             </div>
@@ -86,9 +86,9 @@ ms.locfileid: "31746396"
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>管理员快速设置</h3>
-                        <p>了解如何通过四个简单的步骤为你的组织打开 Microsoft Search 和配置它</p>
-                        <p><a href="quick-set-up.md">立即启动</a></p>
+                        <h3>入门</h3>
+                        <p>了解如何开始使用 Microsoft Search 并为你的组织配置它</p>
+                        <p><a href="setup-microsoft-search.md">立即开始</a></p>
                     </div>
                 </div>
             </div>
@@ -104,9 +104,9 @@ ms.locfileid: "31746396"
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>常见问题</h3>
-                        <p>获取有关 Microsoft 搜索的一些常见问题的解答</p>
-                        <p><a href="faqs.md">浏览 FAQ</a></p>
+                        <h3>SharePoint 中的搜索功能</h3>
+                        <p>想知道 SharePoint 和 Microsoft 搜索是如何协同工作的吗？</p>
+                        <p><a href="get-started-search-in-sharepoint-online.md">获取事实</a></p>
                     </div>
                 </div>
             </div>
@@ -120,9 +120,9 @@ ms.locfileid: "31746396"
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardText">
-                        <h2>使用 Microsoft Search</h2>
-                        <p>Microsoft Search 是一种简单、快速且更安全的方法来查找信息、提高工作效率以及更智能地工作</p>
-                        <p><a href="use/about-microsoft-search.md">了解如何操作</a></p>
+                        <h2>使用 Microsoft 搜索</h2>
+                        <p>查看文章和视频, 以使用 Microsoft 搜索帮助培训用户提高工作效率 </p>
+                        <p><a href="https://go.microsoft.com/fwlink/?linkid=2090946">将其签出</a></p>
                     </div>
                 </div>
             </div>
@@ -134,7 +134,7 @@ ms.locfileid: "31746396"
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="media/c8456838-c6db-41f7-9e84-eebfd9c5b0b8.png" alt="How work results appear on Bing" />
+                            <img src="media/c8456838-c6db-41f7-9e84-eebfd9c5b0b8.png" alt="How work results appear in Bing" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -144,46 +144,3 @@ ms.locfileid: "31746396"
         </div>
     </li>
 </ul>
-
-<h2>详细信息</h2>
-<ul class="panelContent cardsW">
-    <li>
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardText">
-                        <p><a href="security.md">安全性</a></p>
-                        <p><a href="requirements.md">Requirements</a></p>  
-                        <p><a href="about-the-admin-portal.md">关于管理门户</a></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </li>
-    <li>
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardText">
-                        <p><a href="quick-set-up.md">快速设置</a></p>
-                        <p><a href="connected-services.md">已连接的服务</a></p>
-                        <p><a href="set-up-microsoft-search.md">设置 Microsoft 搜索</a></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </li>
-    <li>
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardText">
-                        <p><a href="create-bookmarks.md">创建书签</a></p>
-                        <p><a href="create-qas.md">创建问答</a></p>
-                        <p><a href="add-users.md">管理用户</a></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </li>
-</ul>  

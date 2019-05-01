@@ -1,5 +1,5 @@
 ---
-title: 导入 SharePoint 升级结果和热门查询
+title: 导入 SharePoint 推荐结果和热门查询
 ms.author: dawholl
 author: dawholl
 manager: kellis
@@ -13,33 +13,33 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 3d2a1498-174e-4214-9cf1-8b58cce5a872
-description: 使用从 SharePoint 搜索查询创建 Microsoft 搜索工作结果
+description: 使用 SharePoint 中的搜索查询创建 Microsoft search 的工作结果
 ms.openlocfilehash: f4fa4354fed667800c1cdcf63c86f59d736c342a
-ms.sourcegitcommit: bf52cc63b75f2e0324a716fe65da47702956b722
+ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "29378529"
+ms.lasthandoff: 05/01/2019
+ms.locfileid: "33508751"
 ---
-# <a name="import-sharepoint-promoted-results-and-top-queries"></a>导入 SharePoint 升级结果和热门查询
+# <a name="import-sharepoint-promoted-results-and-top-queries"></a>导入 SharePoint 推荐结果和热门查询
 
-利用用户查询和已在 SharePoint 中创建的最佳匹配，Microsoft 搜索包含两个工具导入此建议的书签的信息： 
+为了利用用户在 SharePoint 中创建的查询和最佳匹配, Microsoft Search 包含两个工具, 可将此信息作为建议的书签导入: 
   
-## <a name="import-sharepoint-promoted-result-query-rules"></a>导入 SharePoint 升级结果查询规则
+## <a name="import-sharepoint-promoted-result-query-rules"></a>导入 SharePoint 升级的结果查询规则
 
-导入这些规则，以前称为最佳匹配，作为建议的书签。若要使其可供您的用户，发布它们。发布时间异您选择的书签的数目。
+将这些规则 (以前称为 "最佳匹配") 导入为建议的书签。 若要使其对用户可用, 请发布它们。 发布时间根据您选择的书签数而变化。
   
-## <a name="import-top-sharepoint-queries-using-powershell"></a>导入使用 PowerShell 的热门 SharePoint 查询
+## <a name="import-top-sharepoint-queries-using-powershell"></a>使用 PowerShell 导入热门 SharePoint 查询
 
-- 从 SharePoint 下载热门查询。PowerShell 脚本将提示您提供您的 SharePoint 管理员凭据。
+- 从你的 SharePoint 下载最热门的查询。 PowerShell 脚本将提示你输入 SharePoint 管理员凭据。
     
-- 运行 SharePoint 搜索的每个顶级查询以获取顶部的搜索结果。
+- 对每个最上面的查询运行 SharePoint 搜索, 以获取最主要的搜索结果。
     
 - 将建议的书签添加到管理门户。
     
-- 顶部 SharePoint 查询是优秀候选书签。使用 PowerShell 脚本进行导入作为建议的书签。此脚本将：
+- 首要的 SharePoint 查询是书签的理想候选项。 使用 PowerShell 脚本将其作为建议的书签导入。 此脚本将:
     
-有关要求、 示例和可用参数的信息，下载脚本和查看自述文件。PowerShell 脚本后运行、 管理或编辑器应查看建议的书签并进行任何必要的编辑之前在发布。
+若要了解有关要求、示例和可用参数的信息, 请下载脚本并查看自述文件。 运行 PowerShell 脚本后, 管理员或编辑器应查看建议的书签, 并在发布之前进行任何必要的编辑。
 
   
 

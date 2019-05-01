@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: def300e7-103c-4e92-a062-28ffa27561d7
 description: 使用 Microsoft Search administration portal 的导入工具一次创建大量书签
 ms.openlocfilehash: 7c134784f0ca0d4cc84d5bce3a98f7e75aa6f441
-ms.sourcegitcommit: c70dd5eae43abb775acc6fc4522c2e6be4f0bb67
+ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "31901790"
+ms.lasthandoff: 05/01/2019
+ms.locfileid: "33508616"
 ---
 # <a name="bulk-create-bookmarks"></a>批量创建书签
 

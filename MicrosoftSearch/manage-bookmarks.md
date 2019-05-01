@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: c0c814d0-f7e4-444e-b18e-09beb45c9322
 description: 查找需要更新的书签, 以及批量编辑 Microsoft 搜索的书签结果的方法
 ms.openlocfilehash: f87176c645e127e20edd9e70a74efe05dd381236
-ms.sourcegitcommit: c70dd5eae43abb775acc6fc4522c2e6be4f0bb67
+ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "31901798"
+ms.lasthandoff: 05/01/2019
+ms.locfileid: "33508607"
 ---
 # <a name="manage-bookmarks"></a>管理书签
 
@@ -62,7 +62,7 @@ Id 是每个书签的唯一标识符, 永远不应进行编辑。 "上次修改�
 3. 保存或打开 .csv 文件
     
 4. 编辑以下任一字段中的数据:
-   - Title
+   - 标题
     
    - URL
     

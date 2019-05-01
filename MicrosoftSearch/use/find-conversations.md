@@ -12,21 +12,21 @@ search.appverid:
 - BFB160
 - MET150
 ms.assetid: ecd31803-0b32-4ba3-8bb8-a0d1dfb8b856
-description: 使用 Microsoft 搜索以查找团队和 Yammer 对话以及您将看到的详细信息
+description: 使用 Microsoft Search 查找团队和 Yammer 对话以及你将看到的详细信息
 ms.openlocfilehash: b339242fbafc4cff0f6fe5960cb90b0d05493105
-ms.sourcegitcommit: bf52cc63b75f2e0324a716fe65da47702956b722
+ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "29378526"
+ms.lasthandoff: 05/01/2019
+ms.locfileid: "33508855"
 ---
 # <a name="find-conversations"></a>查找对话
 
-搜索您自己的专用 Microsoft 团队或 Microsoft Yammer 对话或有权访问的同事之间的对话。
+在你有权访问的同事之间搜索你自己的私人 Microsoft 团队或 Microsoft Yammer 对话或对话。
   
-对话结果包括：
+对话结果包括:
   
-- 发件人的名称
+- 发件人的姓名
     
 - 如果是团队或 Yammer 对话
     
@@ -34,21 +34,21 @@ ms.locfileid: "29378526"
     
 - 对话日期
     
-- 您可以访问的附件
+- 您有权访问的附件
     
-顶部的 30 对话结果显示在工作结果。有关结果的详细信息，只需单击邮件。在工作结果中，按日期排序 Yammer 对话，但它们在 Yammer 客户端中，按相关性排序。
+工作结果中将显示前30个对话结果。 若要了解详细信息或结果, 只需单击邮件。 在工作结果中, yammer 对话按日期排序, 但在 yammer 客户端中, 它们是按相关性进行排序的。
   
-如果您的组织不使用团队或 Yammer 或 IT 部门不会启用这些结果，您将不会看到对话结果。
+如果你的组织不使用团队或 Yammer 或你的 IT 部门未启用这些结果, 则将看不到对话结果。
   
-1. 登录到 Bing 上工作或学校的帐户
+1. 在 Bing 登录你的工作或学校帐户
     
-2. 搜索一个主题或一个联系人的姓名，然后单击**对话**选项卡 
+2. 搜索主题或某人的姓名, 然后单击 "**对话**" 选项卡 
     
-    例如，发送我图标或旋转器 Amy。
+    例如, "向我发送卡片组" 或 "张瑾 Turner"。
     
-3. 在结果页的顶部显示对话
+3. 对话显示在 "结果" 页的顶部
     
-    在其下出现其他 web 结果。他们不是特定于您的组织。
+    其他 web 结果将显示在其下方。 它们并不特定于您的组织。
     
 
 

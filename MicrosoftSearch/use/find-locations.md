@@ -1,5 +1,5 @@
 ---
-title: 查找位置
+title: 查找​​位置
 ms.author: dawholl
 author: dawholl
 manager: kellis
@@ -12,29 +12,29 @@ search.appverid:
 - BFB160
 - MET150
 ms.assetid: 3d34bfbc-d4a3-4ef2-85d3-cf92835382ac
-description: 使用 Microsoft 搜索来查找 office、 构建和其他工作区的位置，获取方向和详细信息
+description: 使用 Microsoft Search 查找 office、建筑物和其他工作区位置、获取方向等
 ms.openlocfilehash: 8264f223808750cab6c5117b3b3fa1adbee5a40a
-ms.sourcegitcommit: bf52cc63b75f2e0324a716fe65da47702956b722
+ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "29378507"
+ms.lasthandoff: 05/01/2019
+ms.locfileid: "33508959"
 ---
-# <a name="find-locations"></a>查找位置
+# <a name="find-locations"></a>查找​​位置
 
-搜索建筑物、 办公室、 校园和更多查看地图结果和地址。可以轻松地获取方向和请参阅 what's 附近 Bing 地图上。
+搜索建筑物、办公室、校园等, 以查看地图结果和地址。 您可以轻松地获取行车路线, 并查看 Bing 地图上的邻近内容。
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2ACDW?autoplay=false]
   
-1. 登录到 Bing 上工作或学校的帐户
+1. 在 Bing 登录你的工作或学校帐户
     
-2. 搜索位置的名称
+2. 搜索位置名称
     
-    例如，"构建 9"或者西吧。
+    例如, "建筑物 9" 或 "West Cafe"。
     
-3. 映射将出现在结果页上显示的位置和街道地址顶部
+3. 显示在显示位置和街道地址的结果页顶部的地图
     
-    在其下出现其他 web 结果。他们不是特定于您的组织。
+    其他 web 结果将显示在其下方。 它们并不特定于您的组织。
 
   
 

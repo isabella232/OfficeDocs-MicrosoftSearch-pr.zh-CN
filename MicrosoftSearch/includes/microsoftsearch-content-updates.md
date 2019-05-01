@@ -31,4 +31,17 @@
 | 4/9/2019 | [Microsoft 搜索](/MicrosoftSearch/microsoft-search) | 修改内容 |
 | 4/9/2019 | [快速设置 Microsoft 搜索](/MicrosoftSearch/quick-set-up) | 修改内容 |
 | 4/9/2019 | [设置 Microsoft 搜索](/MicrosoftSearch/set-up-microsoft-search) | 修改内容 |
-| 4/9/2019 | [为什么选择 Microsoft 搜索](/MicrosoftSearch/why-microsoft-search) | 修改时间 |
+| 4/9/2019 | [为什么选择 Microsoft 搜索](/MicrosoftSearch/why-microsoft-search) | 修改内容 |
+
+
+## <a name="week-of-april-15-2019"></a>2019 年 4 月 15 日所在周
+
+
+| 发布日期 |主题标题 | 更改 |
+|------|------------|--------|
+| 4/16/2019 | [批量创建书签](/MicrosoftSearch/bulk-create-bookmarks) | 修改内容 |
+| 4/16/2019 | [批量创建位置](/MicrosoftSearch/bulk-create-locations) | 修改内容 |
+| 4/16/2019 | [批量创建 Q&As](/MicrosoftSearch/bulk-create-qas) | 修改内容 |
+| 4/16/2019 | [管理书签](/MicrosoftSearch/manage-bookmarks) | 修改内容 |
+| 4/16/2019 | [管理位置](/MicrosoftSearch/manage-locations) | 修改内容 |
+| 4/16/2019 | [管理 Q&As](/MicrosoftSearch/manage-qas) | 修改内容 |
