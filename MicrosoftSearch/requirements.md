@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: 41b9b33d-fcc4-470c-90ec-068211fbbb16
 description: 启用 Microsoft 搜索所需的 Office 365 要求和订阅
 ms.openlocfilehash: e90013eb2b76a4a4f4fff2e8b91f3bc6e48a4f2b
-ms.sourcegitcommit: 1c038d87efab4840d97b1f367b39e2b9ecdfee4a
+ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29612461"
+ms.lasthandoff: 05/01/2019
+ms.locfileid: "33508647"
 ---
 # <a name="requirements-for-microsoft-search"></a>Microsoft 搜索要求
 

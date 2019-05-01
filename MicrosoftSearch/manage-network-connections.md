@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: 8ad58820-69e0-4ee0-88a7-d207ffa790b7
 description: 将这些 URL 和域添加到防火墙允许列表，以便用户轻松访问 Microsoft 搜索
 ms.openlocfilehash: 87a650bd0db17fbede2483c5e117cb03841f6378
-ms.sourcegitcommit: 1c038d87efab4840d97b1f367b39e2b9ecdfee4a
+ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29612543"
+ms.lasthandoff: 05/01/2019
+ms.locfileid: "33508733"
 ---
 # <a name="manage-network-connections"></a>管理网络连接
 

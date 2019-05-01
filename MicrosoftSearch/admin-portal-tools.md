@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: 4a824483-2407-4bbd-8f7f-5ebb47817c7e
 description: 用于创建和导入结果、自动登录以及从任意位置搜索的 Microsoft 搜索工具概述
 ms.openlocfilehash: cae2612979673e086820fec78e4c1e085e38a749
-ms.sourcegitcommit: 1bc499c59b6ec9cbdf3db0fdcb8d1252e36cce0c
+ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "31746388"
+ms.lasthandoff: 05/01/2019
+ms.locfileid: "33508719"
 ---
 # <a name="admin-portal-tools"></a>管理门户工具
 

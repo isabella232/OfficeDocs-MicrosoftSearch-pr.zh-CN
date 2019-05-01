@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: 41723aec-435c-400e-a818-6b1e8a1324c0
 description: 将权限和角色分配给 Microsoft 搜索管理员和编辑器
 ms.openlocfilehash: 7fa32c008fcbc1bb436f4e90ff0621ed87df8fc6
-ms.sourcegitcommit: 1bc499c59b6ec9cbdf3db0fdcb8d1252e36cce0c
+ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "31746404"
+ms.lasthandoff: 05/01/2019
+ms.locfileid: "33508479"
 ---
 # <a name="manage-users"></a>管理用户
 

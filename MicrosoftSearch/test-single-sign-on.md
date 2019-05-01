@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: a220c1bf-7cee-448a-90a3-310284d03e81
 description: 减少提示 Windows 10 用户登录 Microsoft 搜索和 Office 365 的次数
 ms.openlocfilehash: 55d359edac36020ec8cf2aad6b64ca9737ee1066
-ms.sourcegitcommit: 1c038d87efab4840d97b1f367b39e2b9ecdfee4a
+ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29612347"
+ms.lasthandoff: 05/01/2019
+ms.locfileid: "33508927"
 ---
 # <a name="test-single-sign-on"></a>测试单一登录
 
