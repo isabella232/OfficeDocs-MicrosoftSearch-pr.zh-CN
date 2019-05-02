@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: c989562e-525f-4922-b436-a885e7bf36ee
 description: 将 Microsoft 搜索部署到组织所需的所有信息
 ms.openlocfilehash: f4a6a5c6fa3765cd08935970178af8ac0d46421c
-ms.sourcegitcommit: 1bc499c59b6ec9cbdf3db0fdcb8d1252e36cce0c
+ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "31746348"
+ms.lasthandoff: 05/01/2019
+ms.locfileid: "33508951"
 ---
 # <a name="set-up-microsoft-search"></a>设置 Microsoft 搜索
 
@@ -41,7 +41,7 @@ ms.locfileid: "31746348"
     
     使用浏览器扩展和其他工具来创建和导入内容，最小化提示用户登录的次数，并在必应上查找工作结果
     
-- [测试单点登录](test-single-sign-on.md)
+- [测试单一登录](test-single-sign-on.md)
     
     减少提示用户登录的次数
     
@@ -57,7 +57,7 @@ ms.locfileid: "31746348"
 
     让用户快速访问相关搜索建议和结果
 
-- [规划你的内容](plan-your-content.md)
+- [规划内容](plan-your-content.md)
     
     发现最常搜索的网站、工具和资源，并为其确定最佳结果类型
 
