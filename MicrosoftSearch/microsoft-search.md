@@ -1,8 +1,8 @@
 ---
 title: Microsoft 搜索
-ms.author: dawholl
-author: dawholl
-manager: kellis
+ms.author: anfowler
+author: adefowler
+manager: mnirkhe
 ms.date: 09/20/2018
 ms.audience: Admin
 ms.topic: landing-page
@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 ms.assetid: 90d3190d-1add-490f-bef2-10b528252a2e
 description: Microsoft 搜索是一种企业搜索体验，通过为组织提供更多相关搜索结果来提高生产效率并节省时间
-ms.openlocfilehash: b9937dd91d6101386a781884917dab131ddc85e9
-ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
+ms.openlocfilehash: 37ee14c4d594f45e502a39b2c50d9cd4e283c88e
+ms.sourcegitcommit: b9ec3d10b3df3bf07c40c60c3ed580194ed445a6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/01/2019
-ms.locfileid: "33509017"
+ms.locfileid: "33513939"
 ---
 # <a name="microsoft-search"></a>Microsoft 搜索
 
