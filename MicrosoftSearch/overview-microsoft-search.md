@@ -13,25 +13,24 @@ search.appverid:
 - MET150
 - MOE150
 description: 简要了解 Microsoft 搜索是什么、它的优点以及当今的哪些应用拥有 Microsoft 搜索。
-ms.openlocfilehash: d8445ac414920588c9b253e8640b1707c9fd2626
-ms.sourcegitcommit: b9ec3d10b3df3bf07c40c60c3ed580194ed445a6
+ms.openlocfilehash: cbf372e9fa7ced4a5e23e7d80d566192ab703a49
+ms.sourcegitcommit: aeb44797427bd39c133fa899ab77277dd90fe47b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/01/2019
-ms.locfileid: "33513931"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "33970136"
 ---
 # <a name="overview-of-microsoft-search"></a>Microsoft 搜索概述
 
 Microsoft 搜索是 Microsoft 365 高效应用和更广泛的 Microsoft 生态系统中的统一搜索功能。 随着时间的推移，将在越来越多的 Microsoft 365 应用中提供 Microsoft 搜索。
 
-
-Microsoft 搜索可帮助用户找到正确的答案、人员和内容，以便在他们所使用的应用中完成其任务。 借助 Microsoft 搜索： 
+Microsoft 搜索可帮助用户找到正确的答案、人员和内容，以便在他们所使用的应用中完成其任务。 借助 Microsoft 搜索：
 - 用户可获得与其搜索的应用的**上下文**相关的结果。 例如，在 Outlook 中搜索时，他们可找到邮件，而不是 SharePoint 中的网站。 在 SharePoint 中搜索时，他们可找到网站、页面和文件，而不是邮件。
 - 无论用户使用哪种应用，Microsoft 搜索都提供**个人**结果。  Microsoft 搜索使用 Microsoft Graph 中的见解来显示与每个用户相关的结果。 每个用户可能会看到不同的结果，即使他们搜索相同的字词。 他们只能看到其有权访问的结果，Microsoft 搜索不会更改权限。   
 - 用户无需记住信息所在的位置。 例如，用户正在使用 Word，并希望重复使用某位同事通过 OneDrive 共享的演示文稿中的信息。 无需切换到 OneDrive 并搜索该演示文稿，他们只需从 Word 搜索即可。  
 - 在必应中，用户可以从公共网页和组织内部获得结果。 
 
-用户可在标题栏中找到 Microsoft 搜索框：
+用户可在标题栏中找到 Microsoft 搜索框，其外观如下：
 
 ![标题中带有 Microsoft 搜索栏的应用窗口的屏幕截图](media/Headings_400.png)
 
@@ -72,7 +71,6 @@ Microsoft 搜索可帮助用户找到正确的答案、人员和内容，以便�
 
 此外，用户可在以下对象中找到 Microsoft 搜索：
 - 必应 
-- Windows
 - Office.com
 - Word、Excel 和 PowerPoint Online 的起始页
 
@@ -94,9 +92,9 @@ Microsoft 搜索可帮助用户找到正确的答案、人员和内容，以便�
 ## <a name="what-can-users-find-with-microsoft-search"></a>用户可以通过 Microsoft 搜索查找哪些内容？ 
 Microsoft 搜索可搜索存储在 Outlook、OneDrive 和 SharePoint Online 中的内容，包括来自全局地址列表和 Office 365 组的人员。 如果使用云混合搜索来设置混合 SharePoint 环境，则 Microsoft 搜索的用户还可以从本地 SharePoint 内容获取结果，包括已连接到 SharePoint Server 环境的任何外部内容。 [详细了解混合搜索环境](https://docs.microsoft.com/zh-CN/sharepoint/hybrid/learn-about-cloud-hybrid-search-for-sharepoint)。
 
-当用户从 [SharePoint 主页](https://microsoft.sharepoint.com/_layouts/15/sharepoint.aspx)或 office.com 进行搜索时，Microsoft 搜索会在整个组织内进行搜索，并显示其找到的所有组织结果。 这称为全局搜索范围。
+当用户在 SharePoint 起始页或 office.com 进行搜索时，Microsoft Search 会在整个组织内进行搜索，并显示其找到的所有组织内搜索的结果。 这称为全局搜索范围。
 
-当他们从必应搜索时，Microsoft 搜索会在其组织和公共网页中进行搜索。 他们将从结果列表中嵌入的组织获得大量最相关的结果。 如果他们需要查看所有组织结果，只需单击一下即可获得通用搜索范围。
+当他们从必应搜索时，Microsoft 搜索会在其组织和公共网页中进行搜索。 他们将从结果列表中嵌入的组织获得大量最相关的结果。 如果他们需要查看所有组织内搜索的结果，只需单击一下即可获得常规搜索范围。
 
 当用户从应用中搜索时，他们会获得与所使用的上下文相关的结果。 例如，当他们从 Outlook 中搜索时，可找到电子邮件；从 SharePoint 中搜索时，可找到网站、新闻和列表内容，而从 PowerPoint 中搜索时，则可找到所使用的演示文稿中的操作或字词。
 
@@ -112,22 +110,17 @@ Microsoft 搜索可搜索存储在 Outlook、OneDrive 和 SharePoint Online 中�
 
 **必应**：公共网页上的内容、文件、Office 365 组、人员、Yammer 和 Teams 对话、组织图表、SharePoint 网站。 常见问题的答案、指向权威信息的书签、地图位置和工具（如果已定义）。  可以找到 Word、Excel、PowerPoint、OneNote 和 PDF 文件。
 
-**Windows**：文件和人员。
-
 **Office.com 和 Word、Excel 和 PowerPoint Online 起始页**：应用、文件、文件夹、人员、组织图表、SharePoint 网站、网站页面、列表和列表项。 常见问题的答案、指向权威信息的书签、地图位置和工具（如果已定义）。 可在此处找到与 SharePoint 中的文件具有相同类型的文件。
 
 ## <a name="tailoring-microsoft-search-to-your-organization"></a>为你的组织定制 Microsoft 搜索
 
-当用户从 SharePoint 主页、office.com 或必应进行搜索时，作为管理员，你可以使其轻松获得特定于组织的理想结果。
+当用户在 SharePoint 起始页、office.com 或必应进行搜索时，作为管理员，你可以使其轻松获得特定组织的理想结果。 可以在 Microsoft 365 管理中心的 Microsoft  Search 部分管理 Microsoft Search。
 
 **显示有用内容** - 通过为用户添加书签，帮助用户找到组织内的重要工具和资源。 如同你可以为公共网页创建书签一样，你可以为任何内部网页创建书签，以供用户搜索。 你还可以在书签中集成 Power App，以便用户能够直接通过书签完成任务。
 
 **提供常见问题的答案** – 为最常见的问题提供最佳答案。 当用户在搜索框中输入常见问题时，Microsoft 搜索会显示答案，而不是仅提供指向网页的链接。
 
 **显示有用位置** - 在地图上显示贵组织的大楼、办公室和其他工作空间的地图结果和地址信息。 用户可以使用地图获取路线、查看附近场所等。
-
-你可以从 Microsoft 搜索管理中心管理拥有 Microsoft 搜索框的所有应用的 Microsoft 搜索。 
-
 
 ## <a name="how-does-microsoft-search-work"></a>Microsoft 搜索如何工作？
 Microsoft 搜索会自动在 SharePoint Online、OneDrive for Business 和 Exchange 中查找相关内容。 如果你使用云混合搜索设置了混合 SharePoint Server 和 SharePoint Online 搜索环境，则 Microsoft 搜索还可以从本地 SharePoint 查找相关内容，包括通过本地连接器提供的内容。
@@ -139,10 +132,10 @@ Microsoft 搜索会自动在 SharePoint Online、OneDrive for Business 和 Excha
 ## <a name="microsoft-search-in-sharepoint"></a>SharePoint 中的 Microsoft 搜索 
 Microsoft Search 是 SharePoint Online 中的新式搜索体验。 SharePoint Online 还提供了经典搜索体验。 作为搜索管理员，你无法打开或关闭新式搜索体验或经典搜索体验。 默认情况下，它们都处于启用状态。 用户获得的搜索体验取决于他们搜索的位置：
 
-- 在 SharePoint 主页、中心网站、通信网站和新式团队网站上，用户可获得 Microsoft 搜索框。
+- 在 SharePoint 起始页、中心网站、通信网站和新式团队网站上，用户可获得 Microsoft 搜索框。
 - 用户可以在发布网站、经典团队网站和搜索中心获得经典搜索框。
 
-这两种搜索体验都可以从 SharePoint 和 OneDrive for Business 的内容中查找结果，并从 Office 365 中查找人员。 
+这两种搜索体验都可以从 SharePoint 和 OneDrive for Business 的内容中查找结果，并从 Office 365 中查找人员。
 
 如果你继续在 SharePoint 中使用经典搜索，则需要[了解如何避免影响 SharePoint 中的 Microsoft 搜索体验](https://docs.microsoft.com/zh-CN/sharepoint/differences-classic-modern-search)。  
 
