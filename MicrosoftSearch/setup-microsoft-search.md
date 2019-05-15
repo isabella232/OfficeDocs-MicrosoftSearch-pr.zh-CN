@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 首次设置 Microsoft 搜索。
-ms.openlocfilehash: f4648988563245f6a61169d7e62b48c456dfa8fa
-ms.sourcegitcommit: 06f995ae7696a8cafcd12d19ed16a35d059b6abb
+ms.openlocfilehash: 703b9c6ab1213fa06f3d959a0e29a9b757e2b2c9
+ms.sourcegitcommit: aeb44797427bd39c133fa899ab77277dd90fe47b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "33858270"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "33970128"
 ---
 # <a name="set-up-microsoft-search"></a>设置 Microsoft 搜索
 
@@ -30,7 +30,15 @@ ms.locfileid: "33858270"
 
 作为 Microsoft 365 的一部分，**Microsoft 搜索**将在默认情况下为所有支持它的 Microsoft 应用打开。 用户需要做的就是使用工作或学校帐户登录，并使用将必应设置为默认搜索提供程序的浏览器。
 
-但是，作为管理员，你应该考虑做一些可在组织内实现高效且用户友好的 **Microsoft 搜索**体验的事情。
+在 **Microsoft 365 管理中心**管理 **Microsoft Search**。 使用管理员凭据登录, 在**应用启动器**中选择**管理员**磁贴。 在 **Microsoft 365 管理中心**，左侧导航面板的 **Settings** 下选择 **Microsoft Search**。
+
+ 
+
+**注意：** 如果看到旧版管理门户并想要切换到新管理中心，请打开管理中心右上角的**请尝试预览**开关。
+
+ 
+
+作为管理员，你应该考虑一些可使 **Microsoft Search** 体验在组织内实现高效且用户友好的因素。
 
 ### <a name="step-1-check-access-level-of-your-users"></a>步骤 1：检查用户的访问级别
 
@@ -42,13 +50,13 @@ ms.locfileid: "33858270"
 
 **Microsoft 管理中心**有两个新角色 - 搜索管理员和搜索编辑人员。  拥有完整特权的全局管理员为用户分配管理员角色，包括搜索管理员角色。 搜索管理员可以将搜索管理员或搜索编辑人员角色委派给其他用户。 有关不同管理角色的详细信息，请参阅[关于 Office 365 管理员角色](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles?view=o365-worldwide)。
 
+**备注：** 这两个新角色 – 搜索管理员和搜索编辑人员 – 仅在 **Microsoft 365 管理中心**中提供，不在旧版管理门户中提供。 
+
 搜索管理员直接影响最终用户的搜索体验。 这包括选择要向用户显示的结果类型。 一个人可能很难针对用户在组织内搜索的许多不同主题选择和创建权威内容。 我们建议你通过将它们添加为编辑人员来利用 SME 和其他用户的专业技能和知识。 
 
 在 **Microsoft 搜索**中，你可以使用两个新角色来管理组织的搜索设置和内容：
 1. **搜索管理员：** 此角色可以创建和管理搜索结果内容，并定义查询设置，以改善组织内的搜索结果。 搜索管理员负责管理 **Microsoft 搜索**配置并指定创建内容的搜索编辑人员。
 2. **搜索编辑人员：** 在 Microsoft 365 管理中心中为 **Microsoft 搜索**创建、管理和删除内容。 此角色可以创建和管理编辑内容，例如常见问题和答案、重要的地点和位置、经常搜索和使用的网站和应用等。但是，他们无权管理搜索设置。
-
-**备注：** 这两个新角色 – 搜索管理员和搜索编辑人员 – 仅在 **Microsoft 365 管理中心**中提供，不在旧版管理门户中提供。
 
 有关分配管理员角色的信息，请参阅[在 Office 365 商业版中分配管理角色](https://docs.microsoft.com/en-us/office365/admin/add-users/assign-admin-roles?view=o365-worldwide)。
 
