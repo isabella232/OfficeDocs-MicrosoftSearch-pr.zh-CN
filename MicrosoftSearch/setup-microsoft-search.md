@@ -3,7 +3,7 @@ title: 设置 **Microsoft 搜索**
 ms.author: anfowler
 author: adefowler
 manager: mnirkhe
-ms.date: 12/11/2018
+ms.date: 04/30/2019
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 首次设置 Microsoft 搜索。
-ms.openlocfilehash: a83950f89258a0b3b376dac075684338552253b2
-ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
+ms.openlocfilehash: f4648988563245f6a61169d7e62b48c456dfa8fa
+ms.sourcegitcommit: 06f995ae7696a8cafcd12d19ed16a35d059b6abb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/01/2019
-ms.locfileid: "33511022"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "33858270"
 ---
 # <a name="set-up-microsoft-search"></a>设置 Microsoft 搜索
 
@@ -38,13 +38,17 @@ ms.locfileid: "33511022"
 
 详细了解[计划权限](https://docs.microsoft.com/zh-CN/sharepoint/plan-your-permissions-strategy)和[创建权限级别](https://docs.microsoft.com/zh-CN/sharepoint/how-to-create-and-edit-permission-levels)。
 
-### <a name="step-2-assign-search-administrator-and-search-editor"></a>步骤 2：分配搜索管理员和搜索编辑人员
+### <a name="step-2-assign-search-admin-and-search-editor"></a>步骤 2：分配搜索管理员和搜索编辑人员
+
+**Microsoft 管理中心**有两个新角色 - 搜索管理员和搜索编辑人员。  拥有完整特权的全局管理员为用户分配管理员角色，包括搜索管理员角色。 搜索管理员可以将搜索管理员或搜索编辑人员角色委派给其他用户。 有关不同管理角色的详细信息，请参阅[关于 Office 365 管理员角色](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles?view=o365-worldwide)。
 
 搜索管理员直接影响最终用户的搜索体验。 这包括选择要向用户显示的结果类型。 一个人可能很难针对用户在组织内搜索的许多不同主题选择和创建权威内容。 我们建议你通过将它们添加为编辑人员来利用 SME 和其他用户的专业技能和知识。 
 
 在 **Microsoft 搜索**中，你可以使用两个新角色来管理组织的搜索设置和内容：
 1. **搜索管理员：** 此角色可以创建和管理搜索结果内容，并定义查询设置，以改善组织内的搜索结果。 搜索管理员负责管理 **Microsoft 搜索**配置并指定创建内容的搜索编辑人员。
 2. **搜索编辑人员：** 在 Microsoft 365 管理中心中为 **Microsoft 搜索**创建、管理和删除内容。 此角色可以创建和管理编辑内容，例如常见问题和答案、重要的地点和位置、经常搜索和使用的网站和应用等。但是，他们无权管理搜索设置。
+
+**备注：** 这两个新角色 – 搜索管理员和搜索编辑人员 – 仅在 **Microsoft 365 管理中心**中提供，不在旧版管理门户中提供。
 
 有关分配管理员角色的信息，请参阅[在 Office 365 商业版中分配管理角色](https://docs.microsoft.com/en-us/office365/admin/add-users/assign-admin-roles?view=o365-worldwide)。
 
