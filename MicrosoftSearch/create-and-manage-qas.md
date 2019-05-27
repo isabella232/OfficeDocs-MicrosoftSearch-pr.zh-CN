@@ -1,5 +1,5 @@
 ---
-title: 创建和管理 Q&As
+title: 创建和管理问答
 ms.author: dawholl
 author: dawholl
 manager: kellis
@@ -13,55 +13,58 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: b40a575d-7727-4bb0-80da-e25131315790
-description: 在 Microsoft 搜索管理门户中创建对常见问题的答案的所有方法的概述
-ms.openlocfilehash: f30693b0943a34786c9e52859c8c5c680dc6e141
-ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
-ms.translationtype: MT
+description: 概览在 Microsoft 搜索管理门户中创建常见问题的答案的所有方式
+ms.openlocfilehash: 09c6747dafd5d2cf029f75fec210d308356c54fe
+ms.sourcegitcommit: 3e91a6e70b48a0100adfed1b62ba79f2fd1735d2
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/01/2019
-ms.locfileid: "33508743"
+ms.lasthandoff: 05/13/2019
+ms.locfileid: "33968429"
 ---
-# <a name="create-and-manage-qas"></a>创建和管理 Q&As
+# <a name="create-and-manage-qas"></a>创建和管理问答
 
+> [!IMPORTANT]
+> Microsoft 365 管理中心现提供有 Microsoft 必应搜索设置。 从在管理中心[分配搜索管理员](https://docs.microsoft.com/zh-CN/microsoftsearch/setup-microsoft-search#step-2-assign-search-admin-and-search-editor)开始入手。
+    
 ## <a name="create-qas"></a>创建问答
 
-Q&As 为您的用户的与工作相关的问题提供了尽可能好的答案。 当用户在 Bing 上输入你与其关联的关键字时, 可以轻松发现这些用户。
+对于用户提出的工作相关问题，问答能提供最可能的答案。 若在必应上为用户关联了关键字，则用户在输入这些关键字时可轻松查找它们。
   
-- [创建 Q&As](create-qas.md)
+- [创建问答](create-qas.md)
     
-    添加单个 Q&As。
+    添加单个问答。
     
-- [批量创建和导入 Q&As](bulk-create-qas.md)
+- [批量创建并导入问答](bulk-create-qas.md)
     
-    在 .csv 文件中创建 Q&As 并对其进行批量导入。
+    将问答创建为 .csv 文件并将它们批量导入。
     
 ## <a name="manage-qas"></a>管理问答
 
-使用 Q&A 状态、筛选工具和批量导出/导入工具来[查找和更新 Q&A 内容](manage-qas.md), 包括标题、答案、关键字和 url。
+使用问答状态、筛选工具和批量导出/导入工具来[查找并更新问答内容](manage-qas.md)，包括标题、答案、关键字和 URL。
   
-## <a name="qa-status"></a>Q&A 状态
+## <a name="qa-status"></a>问答状态
 
-在管理门户中, 可以按当前状态查看 Q&As:
+在管理门户中，可按当前状态查看问答：
   
-- Published
+- 已发布
     
-    当授权用户搜索关键字时, 已发布的 Q&As 将出现在 Bing 搜索结果中。
+    在得到授权的用户搜索某个关键字时，已发布的问答会出现在必应搜索结果中。
     
-- Draft
+- 草稿
     
-    如果 Q&A 未准备好发布, 请将其另存为草稿。 草稿 Q&As 不会显示在 Bing 中。
+    若还没有准备好发布某个问答，请将其保存为草稿。 草稿问答不会显示在必应上。
     
-- Scheduled
+- 已计划
     
-    计划的 Q&As 将在将来的某个日期自动发布。
+    已计划了发布时间的问答会在未来某个日期自动发布。
     
 - 已过期
     
-    过期的 Q&As 根据过期日期自动从已发布内容中删除。
+    已过期的问答会根据自己的到期日期自动从已发布的内容中删除。
     
-- 提出
+- 推荐
     
-    建议的 Q&As 基于用户的反馈。
+    推荐的问答基于用户反馈。
 
   
 

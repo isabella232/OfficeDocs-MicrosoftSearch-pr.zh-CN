@@ -14,46 +14,49 @@ search.appverid:
 - MOE150
 ms.assetid: d49a0b97-e4ca-47cf-ad52-6113787b8402
 description: Microsoft 搜索管理门户中提供的默认书签
-ms.openlocfilehash: 0105cf33fdf274a6a856615b992e5bc0e0cc02e8
-ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
-ms.translationtype: MT
+ms.openlocfilehash: 03cc7030498558fd23375297504b0a33012e9b7d
+ms.sourcegitcommit: 3e91a6e70b48a0100adfed1b62ba79f2fd1735d2
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/01/2019
-ms.locfileid: "33508679"
+ms.lasthandoff: 05/13/2019
+ms.locfileid: "33968350"
 ---
 # <a name="publish-default-bookmarks"></a>发布默认书签
 
-若要快速查看 Bing 中的书签显示方式, 请发布提供的默认值。 将其用作参考以了解如何命名书签并创建正确的关键字。
+> [!IMPORTANT]
+> Microsoft 365 管理中心现提供有 Microsoft 必应搜索设置。 从在管理中心[分配搜索管理员](https://docs.microsoft.com/zh-CN/microsoftsearch/setup-microsoft-search#step-2-assign-search-admin-and-search-editor)开始入手。
+    
+若要快速查看书签在必应上的显示方式，请发布提供的默认内容。 将其作为参考，了解如何命名书签和创建合适的关键字。
   
-我们建议您查看两组默认书签:
+建议查看两组默认书签：
   
-- 默认已发布书签
+- 默认的已发布书签
     
-    其中包括有关 Microsoft Search 和 Windows 和 Office 应用的帮助的结果。 在 microsoft 365 管理中心中启用 microsoft Search 后, 这些将自动发布并显示在 Bing 中。 您可以随时编辑或删除它们。
+    它们包含关于 Microsoft 搜索的结果以及 Windows 和 Office 应用的帮助。 在 Microsoft 365 管理中心启用 Microsoft 搜索后，会自动发布并在必应上显示这些书签。 可随时编辑或删除它们。
     
-- 默认建议书签
+- 默认推荐书签
     
-    其中包括与工作相关的常见搜索结果, 包括员工福利、时间和支出报告、提交采购订单和从 IT 服务获取帮助。
+    它们包含工作相关搜索的结果，包括福利、时间和费用报告、提交采购订单以及从 IT 服务获取帮助。
     
-如果找到的现有书签与默认书签具有相同的标题或 URL, 则默认值将被丢弃。 我们不会以任何方式修改现有书签, 也不会发布默认书签, 也不会在建议列表中包含默认书签。
+若我们找到与默认书签标题或 URL 相同的现有书签，会弃用默认书签。 我们不会以任何方式修改现有书签、发布默认书签或将默认书签包含在推荐列表中。
   
-## <a name="update-and-publish-a-default-suggested-bookmark"></a>更新并发布默认建议书签
+## <a name="update-and-publish-a-default-suggested-bookmark"></a>更新并发布默认的推荐书签
 
 1. 转到 Microsoft 搜索管理门户
     
 2. 在导航窗格中，单击“书签”****
     
-3. 在 Bookmarkspage 上, 单击 "**建议**"
+3. 在“书签”页面上单击“**推荐**”
     
-4. 选择了建议的书签并单击 "**编辑**"
+4. 选择一个推荐书签并单击“**编辑**”
     
-5. 查看书签内容并进行必要的编辑
+5. 查看书签内容并完成必要的编辑
     
-6. 添加缺少的信息, 如 URL 或说明
+6. 添加缺失的信息，例如 URL 或说明
     
-7. 单击 "**发布**"
+7. 单击“**发布**”
     
-目前, 默认书签仅提供英文版本。 
+目前默认书签仅提供英文版。 
 
   
 
