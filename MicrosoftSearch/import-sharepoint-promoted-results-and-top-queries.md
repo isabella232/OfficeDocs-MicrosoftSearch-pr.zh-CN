@@ -13,33 +13,36 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 3d2a1498-174e-4214-9cf1-8b58cce5a872
-description: 使用 SharePoint 中的搜索查询创建 Microsoft search 的工作结果
-ms.openlocfilehash: f4fa4354fed667800c1cdcf63c86f59d736c342a
-ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
-ms.translationtype: MT
+description: 使用 SharePoint 中的搜索查询为 Microsoft 搜索创建工作结果
+ms.openlocfilehash: 6e55e2000792bdb576a18a0efeb353dc3ea13605
+ms.sourcegitcommit: 3e91a6e70b48a0100adfed1b62ba79f2fd1735d2
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/01/2019
-ms.locfileid: "33508751"
+ms.lasthandoff: 05/13/2019
+ms.locfileid: "33968449"
 ---
-# <a name="import-sharepoint-promoted-results-and-top-queries"></a><span data-ttu-id="4cc70-103">导入 SharePoint 推荐结果和热门查询</span><span class="sxs-lookup"><span data-stu-id="4cc70-103">Import SharePoint promoted results and top queries</span></span>
+# <a name="import-sharepoint-promoted-results-and-top-queries"></a><span data-ttu-id="d3a6b-103">导入 SharePoint 推荐结果和热门查询</span><span class="sxs-lookup"><span data-stu-id="d3a6b-103">Import SharePoint promoted results and top queries</span></span>
 
-<span data-ttu-id="4cc70-104">为了利用用户在 SharePoint 中创建的查询和最佳匹配, Microsoft Search 包含两个工具, 可将此信息作为建议的书签导入:</span><span class="sxs-lookup"><span data-stu-id="4cc70-104">To leverage users' queries and Best Bets you've created in SharePoint, Microsoft Search includes two tools to import this information as suggested bookmarks:</span></span> 
+> [!IMPORTANT]
+> <span data-ttu-id="d3a6b-104">Microsoft 365 管理中心现提供有 Microsoft 必应搜索设置。</span><span class="sxs-lookup"><span data-stu-id="d3a6b-104">Microsoft Search in Bing settings are now available in the Microsoft 365 admin center.</span></span> <span data-ttu-id="d3a6b-105">从在管理中心[分配搜索管理员](https://docs.microsoft.com/zh-CN/microsoftsearch/setup-microsoft-search#step-2-assign-search-admin-and-search-editor)开始入手。</span><span class="sxs-lookup"><span data-stu-id="d3a6b-105">Get started by [assigning search admins](https://docs.microsoft.com/en-us/microsoftsearch/setup-microsoft-search#step-2-assign-search-admin-and-search-editor) in your admin center.</span></span>
+    
+<span data-ttu-id="d3a6b-106">为了利用用户的查询和 SharePoint​​ 中已创建的最佳匹配，Microsoft 搜索包含两种工具，以便将此类信息导入为推荐书签：</span><span class="sxs-lookup"><span data-stu-id="d3a6b-106">To leverage users' queries and Best Bets you've created in SharePoint, Microsoft Search includes two tools to import this information as suggested bookmarks:</span></span> 
   
-## <a name="import-sharepoint-promoted-result-query-rules"></a><span data-ttu-id="4cc70-105">导入 SharePoint 升级的结果查询规则</span><span class="sxs-lookup"><span data-stu-id="4cc70-105">Import SharePoint promoted result query rules</span></span>
+## <a name="import-sharepoint-promoted-result-query-rules"></a><span data-ttu-id="d3a6b-107">导入 SharePoint​​ 推荐结果查询规则</span><span class="sxs-lookup"><span data-stu-id="d3a6b-107">Import SharePoint promoted result query rules</span></span>
 
-<span data-ttu-id="4cc70-106">将这些规则 (以前称为 "最佳匹配") 导入为建议的书签。</span><span class="sxs-lookup"><span data-stu-id="4cc70-106">Import these rules, previously called Best Bets, as suggested bookmarks.</span></span> <span data-ttu-id="4cc70-107">若要使其对用户可用, 请发布它们。</span><span class="sxs-lookup"><span data-stu-id="4cc70-107">To make them available to your users, publish them.</span></span> <span data-ttu-id="4cc70-108">发布时间根据您选择的书签数而变化。</span><span class="sxs-lookup"><span data-stu-id="4cc70-108">Publishing time varies based on the number of bookmarks you select.</span></span>
+<span data-ttu-id="d3a6b-108">将这些规则（之前称为“最佳匹配”）导入为推荐书签。</span><span class="sxs-lookup"><span data-stu-id="d3a6b-108">Import these rules, previously called Best Bets, as suggested bookmarks.</span></span> <span data-ttu-id="d3a6b-109">要让用户能使用这些书签，需发布书签。</span><span class="sxs-lookup"><span data-stu-id="d3a6b-109">To make them available to your users, publish them.</span></span> <span data-ttu-id="d3a6b-110">发布时间取决于选择的书签数量。</span><span class="sxs-lookup"><span data-stu-id="d3a6b-110">Publishing time varies based on the number of bookmarks you select.</span></span>
   
-## <a name="import-top-sharepoint-queries-using-powershell"></a><span data-ttu-id="4cc70-109">使用 PowerShell 导入热门 SharePoint 查询</span><span class="sxs-lookup"><span data-stu-id="4cc70-109">Import top SharePoint queries using PowerShell</span></span>
+## <a name="import-top-sharepoint-queries-using-powershell"></a><span data-ttu-id="d3a6b-111">使用 PowerShell 导入热门 SharePoint​​ 查询</span><span class="sxs-lookup"><span data-stu-id="d3a6b-111">Import top SharePoint queries using PowerShell</span></span>
 
-- <span data-ttu-id="4cc70-110">从你的 SharePoint 下载最热门的查询。</span><span class="sxs-lookup"><span data-stu-id="4cc70-110">Download the top queries from your SharePoint.</span></span> <span data-ttu-id="4cc70-111">PowerShell 脚本将提示你输入 SharePoint 管理员凭据。</span><span class="sxs-lookup"><span data-stu-id="4cc70-111">The PowerShell script will prompt you for your SharePoint administrator credentials.</span></span>
+- <span data-ttu-id="d3a6b-112">从 SharePoint​​ 下载热门查询。</span><span class="sxs-lookup"><span data-stu-id="d3a6b-112">Download the top queries from your SharePoint.</span></span> <span data-ttu-id="d3a6b-113">PowerShell 脚本会提示提供 SharePoint​​ 管理员凭据。</span><span class="sxs-lookup"><span data-stu-id="d3a6b-113">The PowerShell script will prompt you for your SharePoint administrator credentials.</span></span>
     
-- <span data-ttu-id="4cc70-112">对每个最上面的查询运行 SharePoint 搜索, 以获取最主要的搜索结果。</span><span class="sxs-lookup"><span data-stu-id="4cc70-112">Run a SharePoint search for each of the top queries to get the top search result.</span></span>
+- <span data-ttu-id="d3a6b-114">为每个热门查询运行 SharePoint 搜索以获取热门搜索结果。</span><span class="sxs-lookup"><span data-stu-id="d3a6b-114">Run a SharePoint search for each of the top queries to get the top search result.</span></span>
     
-- <span data-ttu-id="4cc70-113">将建议的书签添加到管理门户。</span><span class="sxs-lookup"><span data-stu-id="4cc70-113">Add suggested bookmarks to the Admin portal.</span></span>
+- <span data-ttu-id="d3a6b-115">将推荐书签添加至管理门户。</span><span class="sxs-lookup"><span data-stu-id="d3a6b-115">Add suggested bookmarks to the Admin portal.</span></span>
     
-- <span data-ttu-id="4cc70-114">首要的 SharePoint 查询是书签的理想候选项。</span><span class="sxs-lookup"><span data-stu-id="4cc70-114">Your top SharePoint queries are excellent candidates for bookmarks.</span></span> <span data-ttu-id="4cc70-115">使用 PowerShell 脚本将其作为建议的书签导入。</span><span class="sxs-lookup"><span data-stu-id="4cc70-115">Use the PowerShell script to import them as suggested bookmarks.</span></span> <span data-ttu-id="4cc70-116">此脚本将:</span><span class="sxs-lookup"><span data-stu-id="4cc70-116">This script will:</span></span>
+- <span data-ttu-id="d3a6b-116">热门 SharePoint 查询是最佳备选书签。</span><span class="sxs-lookup"><span data-stu-id="d3a6b-116">Your top SharePoint queries are excellent candidates for bookmarks.</span></span> <span data-ttu-id="d3a6b-117">使用 PowerShell 脚本将它们导入为推荐书签。</span><span class="sxs-lookup"><span data-stu-id="d3a6b-117">Use the PowerShell script to import them as suggested bookmarks.</span></span> <span data-ttu-id="d3a6b-118">此脚本将起到以下作用：</span><span class="sxs-lookup"><span data-stu-id="d3a6b-118">This script will:</span></span>
     
-<span data-ttu-id="4cc70-117">若要了解有关要求、示例和可用参数的信息, 请下载脚本并查看自述文件。</span><span class="sxs-lookup"><span data-stu-id="4cc70-117">For information about requirements, examples, and available parameters, download the script and review the README file.</span></span> <span data-ttu-id="4cc70-118">运行 PowerShell 脚本后, 管理员或编辑器应查看建议的书签, 并在发布之前进行任何必要的编辑。</span><span class="sxs-lookup"><span data-stu-id="4cc70-118">After the PowerShell script runs, an admin or editor should review the suggested bookmarks and make any necessary edits before they're published.</span></span>
+<span data-ttu-id="d3a6b-119">若要详细了解要求、示例和可用参数，请下载该脚本并查看自述文件。</span><span class="sxs-lookup"><span data-stu-id="d3a6b-119">For information about requirements, examples, and available parameters, download the script and review the README file.</span></span> <span data-ttu-id="d3a6b-120">在 PowerShell 脚本运行后，管理员或编辑者应查看推荐书签，并在发布之前完成必要的编辑。</span><span class="sxs-lookup"><span data-stu-id="d3a6b-120">After the PowerShell script runs, an admin or editor should review the suggested bookmarks and make any necessary edits before they're published.</span></span>
 
   
 

@@ -13,53 +13,56 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 7bada218-8908-4956-aae3-6ffaeef384ca
-description: 使用 Microsoft Search administration portal 中的导入工具快速添加对常见问题的解答
-ms.openlocfilehash: 28fcf57c44f809e7f9b0c1b27042f4549067a0f8
-ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
-ms.translationtype: MT
+description: 使用 Microsoft 搜索管理门户中的导入工具，快速添加常见问题的答案
+ms.openlocfilehash: f535cb7ae843def536976cb1f05c8601de592cbb
+ms.sourcegitcommit: 3e91a6e70b48a0100adfed1b62ba79f2fd1735d2
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/01/2019
-ms.locfileid: "33508671"
+ms.lasthandoff: 05/13/2019
+ms.locfileid: "33968299"
 ---
-# <a name="bulk-create-qas"></a><span data-ttu-id="df7b7-103">批量创建问答</span><span class="sxs-lookup"><span data-stu-id="df7b7-103">Bulk create Q&As</span></span>
+# <a name="bulk-create-qas"></a><span data-ttu-id="c0a99-103">批量创建问答</span><span class="sxs-lookup"><span data-stu-id="c0a99-103">Bulk create Q&As</span></span>
 
-<span data-ttu-id="df7b7-104">下载并使用 .csv 模板批量创建或批量编辑 Q&As。</span><span class="sxs-lookup"><span data-stu-id="df7b7-104">Download and use the .csv template to bulk create or bulk edit Q&As.</span></span> <span data-ttu-id="df7b7-105">这也是批量保存草稿 Q&As 的简单方法, 需要进行其他编辑或更新。</span><span class="sxs-lookup"><span data-stu-id="df7b7-105">It's also a simple way to bulk save draft Q&As that need additional edits or updates.</span></span> <span data-ttu-id="df7b7-106">如果需要批量编辑现有 Q&As, 请将其从管理门户中导出, 进行必要的编辑, 然后将其导入。</span><span class="sxs-lookup"><span data-stu-id="df7b7-106">If you need to bulk edit existing Q&As, export them from the Admin portal, make the necessary edits, and then import them.</span></span>
+> [!IMPORTANT]
+> <span data-ttu-id="c0a99-104">Microsoft 365 管理中心现提供有 Microsoft 必应搜索设置。</span><span class="sxs-lookup"><span data-stu-id="c0a99-104">Microsoft Search in Bing settings are now available in the Microsoft 365 admin center.</span></span> <span data-ttu-id="c0a99-105">从在管理中心[分配搜索管理员](https://docs.microsoft.com/zh-CN/microsoftsearch/setup-microsoft-search#step-2-assign-search-admin-and-search-editor)开始入手。</span><span class="sxs-lookup"><span data-stu-id="c0a99-105">Get started by [assigning search admins](https://docs.microsoft.com/en-us/microsoftsearch/setup-microsoft-search#step-2-assign-search-admin-and-search-editor) in your admin center.</span></span>
+    
+<span data-ttu-id="c0a99-106">下载和使用 .csv 模板批量创建或批量编辑问答。</span><span class="sxs-lookup"><span data-stu-id="c0a99-106">Download and use the .csv template to bulk create or bulk edit Q&As.</span></span> <span data-ttu-id="c0a99-107">使用该模板也可轻松批量保存需要进一步编辑或更新的草稿问答。</span><span class="sxs-lookup"><span data-stu-id="c0a99-107">It's also a simple way to bulk save draft Q&As that need additional edits or updates.</span></span> <span data-ttu-id="c0a99-108">若要批量编辑现有问答，请将它们从管理门户导出，完成必要的编辑，然后再导入它们。</span><span class="sxs-lookup"><span data-stu-id="c0a99-108">If you need to bulk edit existing Q&As, export them from the Admin portal, make the necessary edits, and then import them.</span></span>
   
-1. <span data-ttu-id="df7b7-107">在 "Q&As" 部分的右上角, 单击 "**导入**"</span><span class="sxs-lookup"><span data-stu-id="df7b7-107">In the upper-right corner of the Q&As section, click **Import**</span></span>
+1. <span data-ttu-id="c0a99-109">在“问答”部分的右上角，单击“**导入**”</span><span class="sxs-lookup"><span data-stu-id="c0a99-109">In the upper-right corner of the Q&As section, click **Import**</span></span>
     
-2. <span data-ttu-id="df7b7-108">单击 "**下载 Q&A 模板 (.csv)** "</span><span class="sxs-lookup"><span data-stu-id="df7b7-108">Click **Download Q&A template (.csv)**</span></span>
+2. <span data-ttu-id="c0a99-110">单击“**下载问答模板 (.csv)**”</span><span class="sxs-lookup"><span data-stu-id="c0a99-110">Click **Download Q&A template (.csv)**</span></span>
     
-3. <span data-ttu-id="df7b7-109">保存并打开 .csv 文件</span><span class="sxs-lookup"><span data-stu-id="df7b7-109">Save and open the .csv file</span></span>
+3. <span data-ttu-id="c0a99-111">保存并打开该 .csv 文件</span><span class="sxs-lookup"><span data-stu-id="c0a99-111">Save and open the .csv file</span></span>
     
-4. <span data-ttu-id="df7b7-110">添加 Q&A 内容和设置并保存文件</span><span class="sxs-lookup"><span data-stu-id="df7b7-110">Add the Q&A content and settings and save the file</span></span>
+4. <span data-ttu-id="c0a99-112">添加问答内容和设置，并保存文件</span><span class="sxs-lookup"><span data-stu-id="c0a99-112">Add the Q&A content and settings and save the file</span></span>
 
-    <span data-ttu-id="df7b7-111">.csv 文件应保存为 csv utf-8 文件, 其他文件类型和或编码可能导致导入错误</span><span class="sxs-lookup"><span data-stu-id="df7b7-111">The .csv file should be saved as a CSV UTF-8 file, other file types and or encodings may cause import errors</span></span>
+    <span data-ttu-id="c0a99-113">.csv 文件应保存为 CSV UTF-8 文件，其他文件类型和/或编码可能会导致导入错误</span><span class="sxs-lookup"><span data-stu-id="c0a99-113">The .csv file should be saved as a CSV UTF-8 file, other file types and or encodings may cause import errors</span></span>
     
-5. <span data-ttu-id="df7b7-112">在 "Q&As" 部分的右上角, 单击 "**导入**"</span><span class="sxs-lookup"><span data-stu-id="df7b7-112">In the upper-right corner of the Q&As section, click **Import**</span></span>
+5. <span data-ttu-id="c0a99-114">在“问答”部分的右上角，单击“**导入**”</span><span class="sxs-lookup"><span data-stu-id="c0a99-114">In the upper-right corner of the Q&As section, click **Import**</span></span>
     
-6. <span data-ttu-id="df7b7-113">在 "导入 Q&As" 窗格中, 单击 "**浏览**" 并导航到要导入的 .csv 文件</span><span class="sxs-lookup"><span data-stu-id="df7b7-113">In the Import Q&As pane, click **Browse** and navigate to the .csv file you want to import</span></span> 
+6. <span data-ttu-id="c0a99-115">在导入问答窗格中，单击“**浏览**”并导航至想要导入的 .csv 文件</span><span class="sxs-lookup"><span data-stu-id="c0a99-115">In the Import locations pane, select **Browse**, and then the .csv file that you want to import.</span></span> 
     
-7. <span data-ttu-id="df7b7-114">单击 "**导入**</span><span class="sxs-lookup"><span data-stu-id="df7b7-114">Click **Import**</span></span>
+7. <span data-ttu-id="c0a99-116">单击“**导入**”</span><span class="sxs-lookup"><span data-stu-id="c0a99-116">Click **Import**.</span></span>
 
-# <a name="prevent-import-errors"></a><span data-ttu-id="df7b7-115">阻止导入错误</span><span class="sxs-lookup"><span data-stu-id="df7b7-115">Prevent import errors</span></span>      
-<span data-ttu-id="df7b7-116">如果任何必需的数据丢失或无效, 则会出现错误。</span><span class="sxs-lookup"><span data-stu-id="df7b7-116">You'll get an error if any required data is missing or invalid.</span></span> <span data-ttu-id="df7b7-117">根据错误的不同, 可能会生成日志文件, 其中包含有关需要更正的行和列的详细信息。</span><span class="sxs-lookup"><span data-stu-id="df7b7-117">Depending on the error, a log file may be generated with more information about the rows and columns that need to be corrected.</span></span> <span data-ttu-id="df7b7-118">进行必要的编辑, 然后再次尝试导入文件。</span><span class="sxs-lookup"><span data-stu-id="df7b7-118">Make any necessary edits, and try importing the file again.</span></span>
+# <a name="prevent-import-errors"></a><span data-ttu-id="c0a99-117">防止导入错误</span><span class="sxs-lookup"><span data-stu-id="c0a99-117">Prevent import errors</span></span>      
+<span data-ttu-id="c0a99-118">若所需的任何数据缺失或无效，则会出现错误。</span><span class="sxs-lookup"><span data-stu-id="c0a99-118">You'll get an error if any required data is missing or invalid.</span></span> <span data-ttu-id="c0a99-119">出错时，视具体错误而定，可能会生成包含详细信息的日志文件，其中指出需要更正的行和列。</span><span class="sxs-lookup"><span data-stu-id="c0a99-119">Depending on the error, a log file may be generated with more information about the rows and columns that need to be corrected.</span></span> <span data-ttu-id="c0a99-120">完成必要的编辑，并再次尝试导入该文件。</span><span class="sxs-lookup"><span data-stu-id="c0a99-120">Make necessary edits and try importing the file again.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="df7b7-119">在解决所有错误之前, 不能创建或编辑任何 Q&As。</span><span class="sxs-lookup"><span data-stu-id="df7b7-119">Until all errors are resolved, you can't create or edit any Q&As.</span></span> 
+> <span data-ttu-id="c0a99-121">更正所有错误后才能创建或编辑任何问答。</span><span class="sxs-lookup"><span data-stu-id="c0a99-121">Until all errors are resolved, you can't create or edit any Q&As.</span></span> 
 
-<span data-ttu-id="df7b7-120">若要帮助防止错误, 请确保导入文件格式正确:</span><span class="sxs-lookup"><span data-stu-id="df7b7-120">To help prevent errors, make sure your import file is properly formatted:</span></span>
-- <span data-ttu-id="df7b7-121">包含导入模板中的标题行</span><span class="sxs-lookup"><span data-stu-id="df7b7-121">Includes the header row that was in the import template</span></span>
-- <span data-ttu-id="df7b7-122">包含导入模板中的所有列</span><span class="sxs-lookup"><span data-stu-id="df7b7-122">Includes all columns that were in the import template</span></span>
-- <span data-ttu-id="df7b7-123">列顺序与导入模板相同</span><span class="sxs-lookup"><span data-stu-id="df7b7-123">The column order is the same as the import template</span></span>
-- <span data-ttu-id="df7b7-124">这些列可能为空: Id、上次修改时间和上次修改者</span><span class="sxs-lookup"><span data-stu-id="df7b7-124">These columns can be empty: Id, Last Modified, and Last Modified By</span></span>
-- <span data-ttu-id="df7b7-125">"状态" 列不能为空, 此信息是必需的</span><span class="sxs-lookup"><span data-stu-id="df7b7-125">The State column can't be empty, this information is required</span></span>  
-<span data-ttu-id="df7b7-126">根据 "省/市/自治区" 字段, Q&As 将保存为草稿、建议、计划或将自动发布。</span><span class="sxs-lookup"><span data-stu-id="df7b7-126">Based on the State field, Q&As will be saved as draft, suggested, scheduled, or they will be published automatically.</span></span>
+<span data-ttu-id="c0a99-122">为了帮助防止出错，请确保导入文件具有正确格式：</span><span class="sxs-lookup"><span data-stu-id="c0a99-122">To prevent errors, make sure your import file is properly formatted and:</span></span>
+- <span data-ttu-id="c0a99-123">包含导入模板中的标题行</span><span class="sxs-lookup"><span data-stu-id="c0a99-123">Includes the header row and all the columns that were in the import template</span></span>
+- <span data-ttu-id="c0a99-124">包含导入模板中的所有列</span><span class="sxs-lookup"><span data-stu-id="c0a99-124">Includes the header row and all the columns that were in the import template</span></span>
+- <span data-ttu-id="c0a99-125">列顺序与导入模板相同</span><span class="sxs-lookup"><span data-stu-id="c0a99-125">The column order is the same as the import template</span></span>
+- <span data-ttu-id="c0a99-126">这些列可能为空：ID、上次修改时间和上次修改者</span><span class="sxs-lookup"><span data-stu-id="c0a99-126">All columns have values, except the three that can be empty: Id, Last Modified, and Last Modified By</span></span>
+- <span data-ttu-id="c0a99-127">“状态”列不能为空，因为此信息是必需的</span><span class="sxs-lookup"><span data-stu-id="c0a99-127">The State column is not empty, as this information is required</span></span>  
+<span data-ttu-id="c0a99-128">基于状态字段，问答会保存为草稿问答、推荐问答、已计划问答或自动发布的问答。</span><span class="sxs-lookup"><span data-stu-id="c0a99-128">Based on the State field, bookmarks will be saved as draft, suggested, scheduled, or they will be published automatically.</span></span>
 
-<span data-ttu-id="df7b7-127">此外, 如果包括现有 Q&A 的 Id, 则会将其替换为导入文件中的信息。</span><span class="sxs-lookup"><span data-stu-id="df7b7-127">Also, if you include the Id of an existing Q&A, it will be replaced with the information in the import file.</span></span>
+<span data-ttu-id="c0a99-129">此外，如果包含现有问答的 ID，则会将其替换为导入文件中的信息。</span><span class="sxs-lookup"><span data-stu-id="c0a99-129">If you include the Id of an existing bookmark, it will be replaced with the information in the import file.</span></span>
 
-<span data-ttu-id="df7b7-128">对于具有多个租户的组织, 您可以从一个租户导出您的 Q&As, 然后将其导入到另一个租户。</span><span class="sxs-lookup"><span data-stu-id="df7b7-128">For organizations with mulitple tenants, you can export your Q&As from one tenant and import it into another.</span></span> <span data-ttu-id="df7b7-129">但您必须在导入前删除 Id 列中的所有数据。</span><span class="sxs-lookup"><span data-stu-id="df7b7-129">But you must remove all of the data in the Id column before you import.</span></span>
+<span data-ttu-id="c0a99-130">对于拥有多个租户的组织，你可以从某个租户导出问答并将其导入另一个租户。</span><span class="sxs-lookup"><span data-stu-id="c0a99-130">For organizations with multiple tenants, you can export your bookmarks from one tenant and import it into another.</span></span> <span data-ttu-id="c0a99-131">但是，在导入之前，你必须删除 ID 列中的数据。</span><span class="sxs-lookup"><span data-stu-id="c0a99-131">But you must remove the data in the Id column before you import.</span></span>
 
-<span data-ttu-id="df7b7-130">若要了解有关必需字段和推荐字段的详细信息, 请参阅[Create Q&As](create-qas.md)。</span><span class="sxs-lookup"><span data-stu-id="df7b7-130">To find out more about required and recommended fields, see [Create Q&As](create-qas.md).</span></span>
+<span data-ttu-id="c0a99-132">若要详细了解必填字段和建议填写的字段，请参阅[创建问答](create-qas.md)。</span><span class="sxs-lookup"><span data-stu-id="c0a99-132">To find out more about required and recommended fields, see [Create Q&As](create-qas.md).</span></span>
 
   
 
