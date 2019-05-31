@@ -3,22 +3,23 @@ title: 使用 Microsoft 搜索轻松查找内容
 ms.author: anfowler
 author: adefowler
 manager: mnirkhe
-ms.date: 12/11/2018
+ms.date: 05/30/2019
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
 localization_priority: Priority
+ROBOTS: NOINDEX
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 description: 创建书签、位置和问答项目，让用户轻松查找组织的内容。
-ms.openlocfilehash: e7f65715faf71165549cb1af7f15a4d3ac918f19
-ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
+ms.openlocfilehash: 851f88206d7f8e0330497c9706b02ad98e0f8e6c
+ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/01/2019
-ms.locfileid: "33511026"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "34591563"
 ---
 # <a name="make-content-easy-to-find"></a>使内容易于查找
 ****Microsoft 搜索****可帮助用户查找相关内容。 **Microsoft 搜索**是一种搜索你的 Intranet 和 Web 内容的安全方式。 这种跨 Web 和企业的集成仅适用于 Microsoft。 
@@ -156,8 +157,9 @@ ms.locfileid: "33511026"
 #### <a name="what-are-powerapps"></a>什么是 PowerApps？
 PowerApps 是一种服务，通过该服务可生成在浏览器、手机或平板电脑上运行的商业应用，且无需编码经验。 PowerApps 可在任何浏览器和任何设备上运行，且添加该服务所需时间不到一分钟。 有关 PowerApps 的详细信息，请参阅：
 - 
-  [引导学习](https://docs.microsoft.com/en-us/learn/browse/?products=powerapps)
-- [文档](https://docs.microsoft.com/zh-CN/powerapps/maker/canvas-apps/get-sessionid)
+  [引导学习](https://docs.microsoft.com/zh-CN/learn/browse/?products=powerapps)
+- 
+  [文档](https://docs.microsoft.com/zh-CN/powerapps/maker/canvas-apps/get-sessionid)
 - [PowerApps 主页](https://make.preview.powerapps.com/environments/839eace6-59ab-4243-97ec-a5b8fcc104e4/home)
 
 #### <a name="add-a-powerapp-to-a-bookmark"></a>将 PowerApp 添加到书签

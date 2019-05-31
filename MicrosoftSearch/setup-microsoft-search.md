@@ -3,7 +3,7 @@ title: 设置 **Microsoft 搜索**
 ms.author: anfowler
 author: adefowler
 manager: mnirkhe
-ms.date: 04/30/2019
+ms.date: 05/30/2019
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 首次设置 Microsoft 搜索。
-ms.openlocfilehash: 703b9c6ab1213fa06f3d959a0e29a9b757e2b2c9
-ms.sourcegitcommit: aeb44797427bd39c133fa899ab77277dd90fe47b
+ms.openlocfilehash: 3b872370dc2058c56637b836f8f78b7ed8e6680e
+ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "33970128"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "34591050"
 ---
 # <a name="set-up-microsoft-search"></a>设置 Microsoft 搜索
 
@@ -30,13 +30,11 @@ ms.locfileid: "33970128"
 
 作为 Microsoft 365 的一部分，**Microsoft 搜索**将在默认情况下为所有支持它的 Microsoft 应用打开。 用户需要做的就是使用工作或学校帐户登录，并使用将必应设置为默认搜索提供程序的浏览器。
 
-在 **Microsoft 365 管理中心**管理 **Microsoft Search**。 使用管理员凭据登录, 在**应用启动器**中选择**管理员**磁贴。 在 **Microsoft 365 管理中心**，左侧导航面板的 **Settings** 下选择 **Microsoft Search**。
+在 **Microsoft 365 管理中心**管理 **Microsoft Search**。 使用管理员凭据登录，然后从 Office 365 应用列表中选择“**管理员**”磁贴（单击引用列表左上角的“**应用启动器**”图标）。 在 **Microsoft 365 管理中心**，左侧导航面板的 **Settings** 下选择 **Microsoft Search**。
 
  
 
-**注意：** 如果看到旧版管理门户并想要切换到新管理中心，请打开管理中心右上角的**请尝试预览**开关。
-
- 
+**注意：** 如果在“**Microsoft 365 管理中心**”的“**设置**”下看到“**Microsoft 搜索**”，请打开管理中心右上角的“**请尝试预览**”开关。 
 
 作为管理员，你应该考虑一些可使 **Microsoft Search** 体验在组织内实现高效且用户友好的因素。
 
@@ -58,7 +56,7 @@ ms.locfileid: "33970128"
 1. **搜索管理员：** 此角色可以创建和管理搜索结果内容，并定义查询设置，以改善组织内的搜索结果。 搜索管理员负责管理 **Microsoft 搜索**配置并指定创建内容的搜索编辑人员。
 2. **搜索编辑人员：** 在 Microsoft 365 管理中心中为 **Microsoft 搜索**创建、管理和删除内容。 此角色可以创建和管理编辑内容，例如常见问题和答案、重要的地点和位置、经常搜索和使用的网站和应用等。但是，他们无权管理搜索设置。
 
-有关分配管理员角色的信息，请参阅[在 Office 365 商业版中分配管理角色](https://docs.microsoft.com/en-us/office365/admin/add-users/assign-admin-roles?view=o365-worldwide)。
+有关分配管理员角色的信息，请参阅[在 Office 365 商业版中分配管理角色](https://docs.microsoft.com/zh-CN/office365/admin/add-users/assign-admin-roles?view=o365-worldwide)。
 
 ### <a name="step-3-make-content-easy-to-find"></a>步骤 3：使内容易于查找 
 
@@ -90,7 +88,7 @@ ms.locfileid: "33970128"
 - [了解在 Office 中需要 Microsoft 搜索做什么](https://support.office.com/article/find-what-you-need-with-microsoft-search-in-office-2457d4d8-48a8-4ad4-ab89-5a0657aa8446?ui=en-US&rs=en-US&ad=US)
 - [Office 365 培训中心](https://support.office.com/office-training-center)
 - 
-  [Microsoft 搜索中心](https://support.office.com/en-us/article/-working-title-microsoft-search-center-b8bf5a2c-7515-40a9-9a6a-b8ed382c86bc?ui=en-US&rs=en-US&ad=US)
+  [Microsoft 搜索中心](https://support.office.com/zh-CN/article/-working-title-microsoft-search-center-b8bf5a2c-7515-40a9-9a6a-b8ed382c86bc?ui=en-US&rs=en-US&ad=US)
 
 ### <a name="trying-out-microsoft-search-in-bing"></a>在必应中尝试 **Microsoft 搜索** 
 **Microsoft 搜索**管理员可以在必应中关闭 **Microsoft 搜索**。 如果关闭，用户将无法在必应搜索中看到组织内容。 默认情况下，已在必应中打开 **Microsoft 搜索**。 我们建议你在必应中打开 **Microsoft 搜索**以获得更好的用户体验。 

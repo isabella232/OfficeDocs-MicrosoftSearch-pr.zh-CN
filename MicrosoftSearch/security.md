@@ -13,17 +13,21 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 50461cb9-8707-46c1-935a-1b9608a98800
+ROBOTS: NOINDEX
 description: 在使用 Microsoft 搜索向授权用户提供信息的同时保护企业数据和用户
-ms.openlocfilehash: 5f59e0e2969ef829d7c14b07ecb47d645cc63013
-ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
+ms.openlocfilehash: c8444c5c265e109d379fdfffbb033c703040a74c
+ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/01/2019
-ms.locfileid: "33508705"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "34591194"
 ---
 # <a name="security-for-microsoft-search"></a>Microsoft 搜索安全性
 
 使用企业级安全性，Microsoft 搜索可以始终保护用户和数据。
+
+> [!IMPORTANT]
+> 本文适用于 Microsoft 必应搜索管理门户。 我们正在将该门户迁移至 Microsoft 365 管理中心，并且会在迁移后将其删除。 我们建议你使用 Microsoft 365 管理中心快速开始。 [Microsoft 搜索概述](overview-microsoft-search.md)。
   
 ## <a name="secure-by-default"></a>默认处于保护状态
 
@@ -77,6 +81,6 @@ Microsoft 搜索的身份验证绑定到 Azure Active Directory。当 Microsoft 
     
 ## <a name="gdpr"></a>GDPR
 
-Microsoft [ 2018 年 5 月 21 日，博客文章](https://blogs.microsoft.com/on-the-issues/2018/05/21/microsofts-commitment-to-gdpr-privacy-and-putting-customers-in-control-of-their-own-data/)反映了我们对遵守 GDPR 的承诺，以及 Microsoft 如何帮助企业和组织履行自己的 GDPR 合规义务。可以在 Microsoft [信任中心常见问题](https://www.microsoft.com/zh-CN/trustcenter/privacy/gdpr/gdpr-faqs)中找到更多详细信息。在 Online Services 中对组织客户的客户数据进行操作的 Microsoft 搜索查询也将满足第 28 条中列出的处理者承诺，如[信任中心常见问题](https://www.microsoft.com/zh-CN/trustcenter/privacy/gdpr/gdpr-faqs)所述。对于从 Microsoft 搜索到公共必应的查询，Microsoft 是一个数据控制器，它已实施一些措施来取消识别 GDPR 下列出的查询。
+Microsoft [ 2018 年 5 月 21 日，博客文章](https://blogs.microsoft.com/on-the-issues/2018/05/21/microsofts-commitment-to-gdpr-privacy-and-putting-customers-in-control-of-their-own-data/)反映了我们对遵守 GDPR 的承诺，以及 Microsoft 如何帮助企业和组织履行自己的 GDPR 合规义务。可以在 Microsoft [信任中心常见问题](https://www.microsoft.com/en-us/trustcenter/privacy/gdpr/gdpr-faqs)中找到更多详细信息。在 Online Services 中对组织客户的客户数据进行操作的 Microsoft 搜索查询也将满足第 28 条中列出的处理者承诺，如[信任中心常见问题](https://www.microsoft.com/en-us/trustcenter/privacy/gdpr/gdpr-faqs)所述。对于从 Microsoft 搜索到公共必应的查询，Microsoft 是一个数据控制器，它已实施一些措施来取消识别 GDPR 下列出的查询。
 
 

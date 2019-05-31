@@ -13,16 +13,20 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 53e2b71a-348b-4dfe-a504-6e97d573effe
+ROBOTS: NOINDEX
 description: 了解如何使用 Microsoft 搜索为公司配置默认浏览器。
-ms.openlocfilehash: 160dbbef9981127b74c51f54f86428667ecd4471
-ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
+ms.openlocfilehash: daff7f66bd38bdd56179e44c36092a2c4fd42b42
+ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/01/2019
-ms.locfileid: "33508987"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "34591158"
 ---
 # <a name="set-default-browser"></a>设置默认浏览器
 
+> [!IMPORTANT]
+> 本文适用于 Microsoft 必应搜索管理门户。 我们正在将该门户迁移至 Microsoft 365 管理中心，并且会在迁移后将其删除。 我们建议你使用 Microsoft 365 管理中心快速开始。 [Microsoft 搜索概述](overview-microsoft-search.md)。
+    
 配置默认浏览器、默认搜索引擎和默认主页将帮助用户发现 Microsoft 搜索功能、鼓励更多用户使用，并提供更流畅的体验。
   
 若要为组织设置默认浏览器，请按照下面步骤操作。

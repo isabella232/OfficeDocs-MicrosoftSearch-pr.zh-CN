@@ -13,17 +13,21 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 38569f03-db18-49ab-96ef-213a1f410935
+ROBOTS: NOINDEX
 description: 了解为什么 Microsoft 搜索是面向现代工作场所的智能企业搜索。
-ms.openlocfilehash: f7c65e13f18f6ea4fd38bc406653a37f85659d3e
-ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
+ms.openlocfilehash: f2cf9c3e4d80bc17fd74bf0ae34b7886b4b69d33
+ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/01/2019
-ms.locfileid: "33508872"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "34590744"
 ---
 # <a name="why-microsoft-search"></a>为什么选择 Microsoft 搜索
 
 使用 Microsoft 搜索可以改变组织人员搜索信息的方式。 
+
+> [!IMPORTANT]
+> 本文适用于 Microsoft 必应搜索管理门户。 我们正在将该门户迁移至 Microsoft 365 管理中心，并且会在迁移后将其删除。 我们建议你使用 Microsoft 365 管理中心快速开始。 [Microsoft 搜索概述](overview-microsoft-search.md)。
   
 此企业搜索体验通过为工作场所提供更多相关的搜索结果，来提高工作效率并节省时间。Microsoft 搜索安全地从公司、学校或组织检索信息（比如文件、公司数据、人员信息和站点）以及公共 Web 结果，并在单一体验中显示。
 

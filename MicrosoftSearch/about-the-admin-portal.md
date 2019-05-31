@@ -13,16 +13,21 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: fee131cf-c82f-4f4b-b288-6fa98a99b793
+ROBOTS: NoIndex
 description: 大致了解 Microsoft 搜索提供的管理门户功能和访问权限
-ms.openlocfilehash: 28706ada22b1523c8a89101d673fdbea8f752cb2
-ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
+ms.openlocfilehash: 4edfbce7b5858a3e8cd3aad30109177d71d45d7b
+ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/01/2019
-ms.locfileid: "33508527"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "34590717"
 ---
 # <a name="about-the-admin-portal"></a>关于管理门户
 
+> [!IMPORTANT]
+> 本文适用于 Microsoft 必应搜索管理门户。 我们正在将该门户迁移至 Microsoft 365 管理中心，并且会在迁移后将其删除。 我们建议你使用 Microsoft 365 管理中心快速开始。 [Microsoft 搜索概述](overview-microsoft-search.md)。
+
+    
 Microsoft 搜索允许你使用必应搜索组织中的 SharePoint 网站和文件、内部网站、人员、Office 365 组等。使用管理门户管理 Microsoft 搜索的各个方面。
   
 Microsoft 搜索管理门户围绕以下领域组织：
