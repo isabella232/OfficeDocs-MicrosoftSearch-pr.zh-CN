@@ -1,9 +1,9 @@
 ---
 title: 管理问答
-ms.author: dawholl
-author: dawholl
-manager: kellis
-ms.date: 12/18/2018
+ms.author: anfowler
+author: adefowler
+manager: mnirkhe
+ms.date: 05/30/2019
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -14,98 +14,70 @@ search.appverid:
 - MOE150
 ms.assetid: 7e3432e6-5317-4d63-90b0-52da6fddd343
 description: 查找和更新单个解答或使用可用的 Microsoft 搜索工具同时编辑所有解答
-ms.openlocfilehash: ee239aa73d4e650289f39d33c63c3e2df4f100cc
-ms.sourcegitcommit: 3e91a6e70b48a0100adfed1b62ba79f2fd1735d2
+ms.openlocfilehash: 8620842e64a40eb32467c42a289bdec3b67d303b
+ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2019
-ms.locfileid: "33968465"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "34591518"
 ---
-# <a name="manage-qas"></a><span data-ttu-id="08095-103">管理问答</span><span class="sxs-lookup"><span data-stu-id="08095-103">Manage Q&As</span></span>
+# <a name="manage-qas"></a><span data-ttu-id="e19a7-103">管理问答</span><span class="sxs-lookup"><span data-stu-id="e19a7-103">Manage Q&As</span></span>
 
-> [!IMPORTANT]
-> <span data-ttu-id="08095-104">Microsoft 365 管理中心现提供有 Microsoft 必应搜索设置。</span><span class="sxs-lookup"><span data-stu-id="08095-104">Microsoft Search in Bing settings are now available in the Microsoft 365 admin center.</span></span> <span data-ttu-id="08095-105">从在管理中心[分配搜索管理员](https://docs.microsoft.com/zh-CN/microsoftsearch/setup-microsoft-search#step-2-assign-search-admin-and-search-editor)开始入手。</span><span class="sxs-lookup"><span data-stu-id="08095-105">Get started by [assigning search admins](https://docs.microsoft.com/en-us/microsoftsearch/setup-microsoft-search#step-2-assign-search-admin-and-search-editor) in your admin center.</span></span>
-    
-<span data-ttu-id="08095-106">随着时间推移，你可能需要更新问答的状态和内容以保持它的相关性。</span><span class="sxs-lookup"><span data-stu-id="08095-106">Over time, you may need to update a Q&A's status and content to keep it relevant.</span></span>
-  
-## <a name="filter-qas"></a><span data-ttu-id="08095-107">筛选问答</span><span class="sxs-lookup"><span data-stu-id="08095-107">Filter Q&As</span></span>
+<span data-ttu-id="e19a7-104">创建问答类似于创建书签。</span><span class="sxs-lookup"><span data-stu-id="e19a7-104">Creating a Q&A is similar to creating bookmarks.</span></span> <span data-ttu-id="e19a7-105">问答可以让你回答用户的问题，而不仅仅是提供网页链接。</span><span class="sxs-lookup"><span data-stu-id="e19a7-105">Q&A allows you to answer the user's question instead of just providing a link to webpage.</span></span> <span data-ttu-id="e19a7-106">你可以使用可用工具以富文本形式来格式化答案。</span><span class="sxs-lookup"><span data-stu-id="e19a7-106">You can format the answer in rich text using the available tools.</span></span> <span data-ttu-id="e19a7-107">如果书签和问答共享同一个关键字，则会先显示书签结果。</span><span class="sxs-lookup"><span data-stu-id="e19a7-107">If a Bookmark and a Q&A share the same keyword, the Bookmark result is shown first.</span></span> <span data-ttu-id="e19a7-108">与书签一样，在添加或更改问答后将立即刷新问答索引。</span><span class="sxs-lookup"><span data-stu-id="e19a7-108">Like Bookmarks, the Q&A index is refreshed immediately after a Q&A is added or changed.</span></span> 
 
-<span data-ttu-id="08095-108">使用“问答”页面右上角的筛选器选项，可以按日期和修改人来查找问答。</span><span class="sxs-lookup"><span data-stu-id="08095-108">Use the filter option in the upper-right corner of the Q&As page to find Q&As by date and who modified them.</span></span> <span data-ttu-id="08095-109">例如，将日期滑块设置为 30 天并选择一位管理员或编辑者，即可查看他在该时间段内创建或更改过的问答列表。</span><span class="sxs-lookup"><span data-stu-id="08095-109">For example, set the date slider to 30 days and select an admin or editor to see the list of Q&As they've created or changed in that time.</span></span>
-  
-## <a name="change-qa-content-or-settings"></a><span data-ttu-id="08095-110">更改问答内容或设置</span><span class="sxs-lookup"><span data-stu-id="08095-110">Change Q&A content or settings</span></span>
+## <a name="add-or-edit-a-single-qa"></a><span data-ttu-id="e19a7-109">添加或编辑单个问答</span><span class="sxs-lookup"><span data-stu-id="e19a7-109">Add or edit a single Q&A</span></span>
+1. <span data-ttu-id="e19a7-110">转到 **Microsoft 365 管理中心**。</span><span class="sxs-lookup"><span data-stu-id="e19a7-110">Go to **Microsoft 365 admin center**.</span></span>
+1. <span data-ttu-id="e19a7-111">在导航窗格中，转到“**设置**”，然后选择“**Microsoft 搜索**”。</span><span class="sxs-lookup"><span data-stu-id="e19a7-111">In the navigation pane, go to **Settings** and select **Microsoft Search**.</span></span>
+1. <span data-ttu-id="e19a7-112">选择“**问答**”选项卡。默认情况下，第一个选项卡（**书签**）处于选中状态。</span><span class="sxs-lookup"><span data-stu-id="e19a7-112">Select **Q&A** tab. By default, the first tab (**Bookmarks**) is selected.</span></span>
+1. <span data-ttu-id="e19a7-113">若要添加问答，请选择“**新增**”。</span><span class="sxs-lookup"><span data-stu-id="e19a7-113">To add a Q&A, select **Add new**.</span></span>
+<span data-ttu-id="e19a7-114">若要编辑问答，请在相关问答列表中选择问答。</span><span class="sxs-lookup"><span data-stu-id="e19a7-114">To edit a Q&A, select the Q&A in the relevant Q&A list.</span></span>
+1. <span data-ttu-id="e19a7-115">在你添加或编辑信息时，预览将随之自动更新。</span><span class="sxs-lookup"><span data-stu-id="e19a7-115">As you add or edit the information, the preview automatically updates.</span></span>
+1. <span data-ttu-id="e19a7-116">保存所做的更改。</span><span class="sxs-lookup"><span data-stu-id="e19a7-116">Save your changes.</span></span>
 
-1. <span data-ttu-id="08095-111">转到 Microsoft 搜索管理门户</span><span class="sxs-lookup"><span data-stu-id="08095-111">Go to the Microsoft Search Admin portal</span></span>
-    
-2. <span data-ttu-id="08095-112">在导航窗格中，单击“问答”\*\*\*\*</span><span class="sxs-lookup"><span data-stu-id="08095-112">In the navigation pane, click **Q&As**</span></span>
-    
-3. <span data-ttu-id="08095-113">若要查找问答，请搜索、筛选或单击某个问答状态来细化自己的结果</span><span class="sxs-lookup"><span data-stu-id="08095-113">To find a Q&A, search, filter, or click a Q&A status to narrow your results</span></span>
-    
-4. <span data-ttu-id="08095-114">若要更改或更新问答，请单击其标题</span><span class="sxs-lookup"><span data-stu-id="08095-114">To change or update a Q&A, click the title</span></span>
-    
-5. <span data-ttu-id="08095-115">更改或更新内容或设置，并预览其显示效果</span><span class="sxs-lookup"><span data-stu-id="08095-115">Make any changes or updates to the content or settings and preview how they'll appear</span></span>
-    
-6. <span data-ttu-id="08095-116">单击“**保存**”</span><span class="sxs-lookup"><span data-stu-id="08095-116">Click **Save**</span></span>
-    
-## <a name="bulk-export-and-edit-qas"></a><span data-ttu-id="08095-117">批量导出和编辑问答</span><span class="sxs-lookup"><span data-stu-id="08095-117">Bulk export and edit Q&As</span></span>
+### <a name="supported-html-tags"></a><span data-ttu-id="e19a7-117">受支持的 HTML 标记</span><span class="sxs-lookup"><span data-stu-id="e19a7-117">Supported HTML tags</span></span>
+<span data-ttu-id="e19a7-118">可以使用现有的 HTML 内容或为答案（说明）添加 HTML 标记。</span><span class="sxs-lookup"><span data-stu-id="e19a7-118">You can use existing HTML content or add HTML tags to your answer (description).</span></span> <span data-ttu-id="e19a7-119">不支持的标记将被忽略。</span><span class="sxs-lookup"><span data-stu-id="e19a7-119">Unsupported tags are ignored.</span></span>  
+<span data-ttu-id="e19a7-120">支持以下 HTML 标记：</span><span class="sxs-lookup"><span data-stu-id="e19a7-120">The following HTML tags are supported:</span></span>
+- <span data-ttu-id="e19a7-121">blockquote</span><span class="sxs-lookup"><span data-stu-id="e19a7-121">blockquote</span></span>
+- <span data-ttu-id="e19a7-122">div</span><span class="sxs-lookup"><span data-stu-id="e19a7-122">div</span></span>
+- <span data-ttu-id="e19a7-123">em</span><span class="sxs-lookup"><span data-stu-id="e19a7-123">em</span></span>
+- <span data-ttu-id="e19a7-124">h1、h2、h3 和 h4</span><span class="sxs-lookup"><span data-stu-id="e19a7-124">h1, h2, h3, and h4</span></span>
+- <span data-ttu-id="e19a7-125">ol、ul 和 li</span><span class="sxs-lookup"><span data-stu-id="e19a7-125">ol, ul, and li</span></span>
+- <span data-ttu-id="e19a7-126">p</span><span class="sxs-lookup"><span data-stu-id="e19a7-126">p</span></span>
+- <span data-ttu-id="e19a7-127">pre</span><span class="sxs-lookup"><span data-stu-id="e19a7-127">pre</span></span>
+- <span data-ttu-id="e19a7-128">span</span><span class="sxs-lookup"><span data-stu-id="e19a7-128">span</span></span>
+- <span data-ttu-id="e19a7-129">strong</span><span class="sxs-lookup"><span data-stu-id="e19a7-129">strong</span></span>
+- <span data-ttu-id="e19a7-130">table、thead、tbody、tr、th 和 td</span><span class="sxs-lookup"><span data-stu-id="e19a7-130">table, thead, tbody, tr, th, and td</span></span>
+- <span data-ttu-id="e19a7-131">u</span><span class="sxs-lookup"><span data-stu-id="e19a7-131">u</span></span>
+- <span data-ttu-id="e19a7-132">a</span><span class="sxs-lookup"><span data-stu-id="e19a7-132">a</span></span>
+- <span data-ttu-id="e19a7-133">code</span><span class="sxs-lookup"><span data-stu-id="e19a7-133">code</span></span>
+- <span data-ttu-id="e19a7-134">br</span><span class="sxs-lookup"><span data-stu-id="e19a7-134">br</span></span>
+- <span data-ttu-id="e19a7-135">hr</span><span class="sxs-lookup"><span data-stu-id="e19a7-135">hr</span></span>
+- <span data-ttu-id="e19a7-136">img</span><span class="sxs-lookup"><span data-stu-id="e19a7-136">img</span></span>
 
-<span data-ttu-id="08095-118">请勿编辑以下字段中的数据：</span><span class="sxs-lookup"><span data-stu-id="08095-118">Never edit data in these fields: Id, Last Modified, and Last Modified By</span></span>
-  
-- <span data-ttu-id="08095-119">ID</span><span class="sxs-lookup"><span data-stu-id="08095-119">Id</span></span>
-    
-- <span data-ttu-id="08095-120">上次修改时间</span><span class="sxs-lookup"><span data-stu-id="08095-120">Last modified</span></span>
-    
-- <span data-ttu-id="08095-121">上次修改者</span><span class="sxs-lookup"><span data-stu-id="08095-121">Last modified by</span></span>
-    
-<span data-ttu-id="08095-122">ID 是每个问答的唯一标识符，请勿编辑。</span><span class="sxs-lookup"><span data-stu-id="08095-122">Id is a unique identifier for each Q&A and should never be edited.</span></span> <span data-ttu-id="08095-123">上次修改时间和上次修改者应仅用于排序和查找问答。</span><span class="sxs-lookup"><span data-stu-id="08095-123">The Last Modified and Last Modified By fields should only be used to sort and find Q&As.</span></span>
-  
-1. <span data-ttu-id="08095-124">若想导出问答的子集，请对它们进行筛选</span><span class="sxs-lookup"><span data-stu-id="08095-124">If you want to export a subset of your Q&As, filter them</span></span>
-    
-2. <span data-ttu-id="08095-125">在“问答”页面的右上角，单击“**导出**”</span><span class="sxs-lookup"><span data-stu-id="08095-125">In the upper-right corner of the Q&As page, click **Export**</span></span>
-    
-3. <span data-ttu-id="08095-126">保存或打开该 .csv 文件</span><span class="sxs-lookup"><span data-stu-id="08095-126">Save or open the .csv file</span></span>
-    
-4. <span data-ttu-id="08095-127">可编辑以下字段中的数据：</span><span class="sxs-lookup"><span data-stu-id="08095-127">Edit data in any of these fields:</span></span>
-    
-   - <span data-ttu-id="08095-128">问题</span><span class="sxs-lookup"><span data-stu-id="08095-128">Question</span></span>
-    
-   - <span data-ttu-id="08095-129">URL</span><span class="sxs-lookup"><span data-stu-id="08095-129">URL</span></span>
-      
-   - <span data-ttu-id="08095-130">关键字</span><span class="sxs-lookup"><span data-stu-id="08095-130">Keywords</span></span>
-    
-   - <span data-ttu-id="08095-131">状态</span><span class="sxs-lookup"><span data-stu-id="08095-131">State</span></span>
-    
-   - <span data-ttu-id="08095-132">解答说明</span><span class="sxs-lookup"><span data-stu-id="08095-132">Answer Description</span></span>
-    
-   - <span data-ttu-id="08095-133">保留关键字</span><span class="sxs-lookup"><span data-stu-id="08095-133">Reserved keywords</span></span>
-    
-   - <span data-ttu-id="08095-134">开始日期</span><span class="sxs-lookup"><span data-stu-id="08095-134">Start Date</span></span>
-    
-   - <span data-ttu-id="08095-135">结束日期</span><span class="sxs-lookup"><span data-stu-id="08095-135">End Date</span></span>
-    
-   - <span data-ttu-id="08095-136">国家/地区</span><span class="sxs-lookup"><span data-stu-id="08095-136">Country/Region</span></span>
-    
-   - <span data-ttu-id="08095-137">组</span><span class="sxs-lookup"><span data-stu-id="08095-137">Groups</span></span>
-    
-   - <span data-ttu-id="08095-138">设备&amp;操作系统</span><span class="sxs-lookup"><span data-stu-id="08095-138">Device&amp;OS</span></span>
-    
-   - <span data-ttu-id="08095-139">目标变体</span><span class="sxs-lookup"><span data-stu-id="08095-139">Targeted variations</span></span>
-    
-5. <span data-ttu-id="08095-140">保存 .csv 文件</span><span class="sxs-lookup"><span data-stu-id="08095-140">Save the file as a .csv file.</span></span>
+## <a name="bulk-add-or-edit-qas"></a><span data-ttu-id="e19a7-137">批量添加或编辑问答</span><span class="sxs-lookup"><span data-stu-id="e19a7-137">Bulk add or edit Q&A</span></span>
+<span data-ttu-id="e19a7-138">管理员可以使用导入和导出功能批量创建或编辑问答。</span><span class="sxs-lookup"><span data-stu-id="e19a7-138">Administrators can use the Import and Export features to bulk create or edit Q&A.</span></span> <span data-ttu-id="e19a7-139">当管理员需要添加或编辑大量问答时，这是一项非常有用的功能。</span><span class="sxs-lookup"><span data-stu-id="e19a7-139">This is a useful feature when administrators need to add or edit a large number of Q&A.</span></span> 
 
-    <span data-ttu-id="08095-141">.csv 文件应保存为 CSV UTF-8 文件，其他文件类型和/或编码可能会导致导入错误</span><span class="sxs-lookup"><span data-stu-id="08095-141">The .csv file should be saved as a CSV UTF-8 file, other file types and or encodings may cause import errors</span></span>
-    
-6. <span data-ttu-id="08095-142">在“问答”页面的右上角，单击“**导入**”</span><span class="sxs-lookup"><span data-stu-id="08095-142">In the upper-right corner of the Q&As page, click **Import**</span></span>
-    
-7. <span data-ttu-id="08095-143">在“导入问答”窗格中，单击“**浏览**”并选择编辑过的 .csv 文件</span><span class="sxs-lookup"><span data-stu-id="08095-143">In the Import Q&As pane, click **Browse** and select the edited .csv file</span></span> 
-    
-8. <span data-ttu-id="08095-144">单击“**导入**”</span><span class="sxs-lookup"><span data-stu-id="08095-144">Click **Import**.</span></span>
-    
-<span data-ttu-id="08095-145">若所需的任何数据缺失或无效，则会出现错误。</span><span class="sxs-lookup"><span data-stu-id="08095-145">You'll get an error if any required data is missing or invalid.</span></span> <span data-ttu-id="08095-146">出错时，视具体错误而定，可能会生成包含详细信息的日志文件，其中指出需要更正的行和列。</span><span class="sxs-lookup"><span data-stu-id="08095-146">Depending on the error, a log file may be generated with more information about the rows and columns that need to be corrected.</span></span> <span data-ttu-id="08095-147">完成必要的编辑，并再次尝试导入该文件。</span><span class="sxs-lookup"><span data-stu-id="08095-147">Make necessary edits and try importing the file again.</span></span>
-  
-> [!NOTE]
-> <span data-ttu-id="08095-148">更正所有错误后才能创建或编辑任何问答。</span><span class="sxs-lookup"><span data-stu-id="08095-148">Until all errors are resolved, you can't create or edit any Q&As.</span></span> 
-  
-<span data-ttu-id="08095-149">无需填写所有字段，且必填字段会因问答的状态而有所不同。</span><span class="sxs-lookup"><span data-stu-id="08095-149">Not all fields in the template file are required and required fields vary depending on the bookmark state.</span></span> <span data-ttu-id="08095-150">基于状态字段，问答会保存为草稿问答、推荐问答、已计划问答或自动发布的问答。</span><span class="sxs-lookup"><span data-stu-id="08095-150">Based on the State field, bookmarks will be saved as draft, suggested, scheduled, or they will be published automatically.</span></span> <span data-ttu-id="08095-151">若要详细了解必填字段和建议填写的字段，请参阅[创建问答](create-qas.md)。</span><span class="sxs-lookup"><span data-stu-id="08095-151">Find out more about required and recommended fields in [create Q&As](create-qas.md).</span></span>
+<span data-ttu-id="e19a7-140">使用导入/导出功能可以：</span><span class="sxs-lookup"><span data-stu-id="e19a7-140">Use the import/export feature to:</span></span>
+1. <span data-ttu-id="e19a7-141">批量添加问答 - 在问答模板文件中添加详细信息，然后导入它。</span><span class="sxs-lookup"><span data-stu-id="e19a7-141">Bulk add Q&A - Add details in the Q&A template file, and then import it.</span></span>
+1. <span data-ttu-id="e19a7-142">批量编辑问答 - 将问答导出到 .csv 文件，编辑导出的 .csv 文件中的问答详细信息，然后导入更新的 .csv 文件。</span><span class="sxs-lookup"><span data-stu-id="e19a7-142">Bulk edit Q&A - Export Q&A to a .csv file, then edit the Q&A details in the exported .csv file, and then import the .csv file.</span></span>
+1. <span data-ttu-id="e19a7-143">备份问答 - 将问答导出到 .csv 文件。</span><span class="sxs-lookup"><span data-stu-id="e19a7-143">Backup Q&A - Export Q&A to a .csv file.</span></span>
 
-  
+<span data-ttu-id="e19a7-144">若要导入或导出问答：</span><span class="sxs-lookup"><span data-stu-id="e19a7-144">To import or export Q&A:</span></span>
+1. <span data-ttu-id="e19a7-145">在“问答”选项卡的右上角，选择“**导入**”。</span><span class="sxs-lookup"><span data-stu-id="e19a7-145">In the upper-right corner of the Q&A tab, select **Import**.</span></span> <span data-ttu-id="e19a7-146">选择“**导出**”以将所有现有的问答下载到 .csv 文件中。</span><span class="sxs-lookup"><span data-stu-id="e19a7-146">Select **Export** to download all the existing Q&A in a .csv file.</span></span>
+1. <span data-ttu-id="e19a7-147">在右侧窗格中，选择使用 .csv 文件导入的选项。</span><span class="sxs-lookup"><span data-stu-id="e19a7-147">In the right pane, choose the option to import using a .csv file.</span></span>
+<span data-ttu-id="e19a7-148">下载模板文件以获取必填字段和详细信息的列表。</span><span class="sxs-lookup"><span data-stu-id="e19a7-148">Download the template file for a list of the required fields and details.</span></span> 
+1. <span data-ttu-id="e19a7-149">在模板文件中添加或编辑问答详细信息，然后将其保存在你的计算机上。</span><span class="sxs-lookup"><span data-stu-id="e19a7-149">Add or edit Q&A details in the template file and save it on your computer.</span></span> 
+1. <span data-ttu-id="e19a7-150">在“**导入问答**”窗格中，选择“**浏览**”，然后选择要导入的 .csv 文件。</span><span class="sxs-lookup"><span data-stu-id="e19a7-150">In the **Import Q&A** pane, select **Browse**, and then the .csv file that you want to import.</span></span>
+1. <span data-ttu-id="e19a7-151">选择“**导入**”。</span><span class="sxs-lookup"><span data-stu-id="e19a7-151">Select **Import**.</span></span>
 
+<span data-ttu-id="e19a7-152">以下是关于模板文件的一些要点：</span><span class="sxs-lookup"><span data-stu-id="e19a7-152">Here are some important points regarding the template file:</span></span>
+- <span data-ttu-id="e19a7-153">请勿编辑以下字段中的数据：*Id*、*上次修改时间*和*上次修改者*</span><span class="sxs-lookup"><span data-stu-id="e19a7-153">Never edit data in these fields: *Id*, *Last Modified*, and *Last Modified By*</span></span>
+- <span data-ttu-id="e19a7-154">如果包含现有书签的 *Id*，则会将其替换为导入文件中的信息。</span><span class="sxs-lookup"><span data-stu-id="e19a7-154">If you include the *Id* of an existing bookmark, it will be replaced with the information in the import file.</span></span>
+- <span data-ttu-id="e19a7-155">如果存在具有相同标题或 URL 的现有书签，则将使用导入文件中的信息更新该书签。</span><span class="sxs-lookup"><span data-stu-id="e19a7-155">If there is an existing bookmark with the same title or URL, the bookmark will be updated with information in the import file.</span></span>
+- <span data-ttu-id="e19a7-156">在模板文件中，并非所有字段都是必填的，并且必填字段因书签状态而异。</span><span class="sxs-lookup"><span data-stu-id="e19a7-156">Not all fields in the template file are required and required fields vary depending on the bookmark state.</span></span>
+- <span data-ttu-id="e19a7-157">基于“状态”字段，书签会保存为草稿书签、推荐书签、已计划书签或自动发布的书签。</span><span class="sxs-lookup"><span data-stu-id="e19a7-157">Based on the State field, bookmarks will be saved as draft, suggested, scheduled, or they will be published automatically.</span></span>
+- <span data-ttu-id="e19a7-158">对于拥有多个租户的组织，你可以从某个租户导出书签并将其导入另一个租户。</span><span class="sxs-lookup"><span data-stu-id="e19a7-158">For organizations with multiple tenants, you can export your bookmarks from one tenant and import it into another.</span></span> <span data-ttu-id="e19a7-159">但是，在导入之前，你必须删除 *Id* 列中的数据。</span><span class="sxs-lookup"><span data-stu-id="e19a7-159">But you must remove the data in the *Id* column before you import.</span></span>
+
+<span data-ttu-id="e19a7-160">**注意：** 如果模板文件中有任何错误，则无法导入问答。</span><span class="sxs-lookup"><span data-stu-id="e19a7-160">**Note:** You cannot import Q&A if there are any errors in the template file.</span></span> <span data-ttu-id="e19a7-161">为防止出错，请确保导入文件具有正确格式，并且包含所有必需信息。</span><span class="sxs-lookup"><span data-stu-id="e19a7-161">To prevent errors, make sure your import file is properly formatted and include all the required information.</span></span> 
+
+<span data-ttu-id="e19a7-162">有关如何防止错误的详细信息，请参阅[防止导入错误](manage-bookmarks.md#prevent-import-errors)。</span><span class="sxs-lookup"><span data-stu-id="e19a7-162">For more information on how to prevent error, see [Prevent import errors](manage-bookmarks.md#prevent-import-errors).</span></span>
