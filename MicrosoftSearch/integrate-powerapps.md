@@ -13,18 +13,19 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 1fadcba3-4a7f-4a55-8476-d4e64d49a15f
+ROBOTS: NOINDEX
 description: 将基于浏览器的应用包括在 Microsoft 搜索的书签结果中
-ms.openlocfilehash: 96b409274e3fa06cef7dcc6f1c43360a3e6b9d34
-ms.sourcegitcommit: 3e91a6e70b48a0100adfed1b62ba79f2fd1735d2
+ms.openlocfilehash: 655b8c8c6f4a9729461447112b21ca7c6c7864f9
+ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2019
-ms.locfileid: "33968374"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "34591608"
 ---
 # <a name="integrate-powerapps"></a>集成 PowerApps
 
 > [!IMPORTANT]
-> Microsoft 365 管理中心现提供有 Microsoft 必应搜索设置。 从在管理中心[分配搜索管理员](https://docs.microsoft.com/zh-CN/microsoftsearch/setup-microsoft-search#step-2-assign-search-admin-and-search-editor)开始入手。
+> 本文适用于 Microsoft 必应搜索管理门户。 我们正在将该门户迁移至 Microsoft 365 管理中心，并且会在迁移后将其删除。 我们建议你使用 Microsoft 365 管理中心快速开始。 [Microsoft 搜索概述](overview-microsoft-search.md)。
     
 帮助用户完成任务，例如通过将现有的 PowerApps 集成进书签来输入休假时间或上报费用。 集成的 PowerApps 显示在书签结果中，不需要转至另一个站点或打开单独的工具，省时又省力。
   

@@ -13,18 +13,19 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 3d2a1498-174e-4214-9cf1-8b58cce5a872
+ROBOTS: NOINDEX
 description: 使用 SharePoint 中的搜索查询为 Microsoft 搜索创建工作结果
-ms.openlocfilehash: 6e55e2000792bdb576a18a0efeb353dc3ea13605
-ms.sourcegitcommit: 3e91a6e70b48a0100adfed1b62ba79f2fd1735d2
+ms.openlocfilehash: 1538c57a7b4138b36fe62e3076feb58d746b2b3e
+ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2019
-ms.locfileid: "33968449"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "34591599"
 ---
 # <a name="import-sharepoint-promoted-results-and-top-queries"></a>导入 SharePoint 推荐结果和热门查询
 
 > [!IMPORTANT]
-> Microsoft 365 管理中心现提供有 Microsoft 必应搜索设置。 从在管理中心[分配搜索管理员](https://docs.microsoft.com/zh-CN/microsoftsearch/setup-microsoft-search#step-2-assign-search-admin-and-search-editor)开始入手。
+> 本文适用于 Microsoft 必应搜索管理门户。 我们正在将该门户迁移至 Microsoft 365 管理中心，并且会在迁移后将其删除。 我们建议你使用 Microsoft 365 管理中心快速开始。 [Microsoft 搜索概述](overview-microsoft-search.md)。
     
 为了利用用户的查询和 SharePoint​​ 中已创建的最佳匹配，Microsoft 搜索包含两种工具，以便将此类信息导入为推荐书签： 
   

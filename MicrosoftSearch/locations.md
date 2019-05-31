@@ -13,18 +13,19 @@ search.appverid:
 - MOE150
 - MED150
 ms.assetid: 2379e72c-a7da-4e3f-932a-12d431a0a284
+ROBOTS: NOINDEX
 description: 可以在 Microsoft 搜索工作结果中保护你组织位置的所有方法概述
-ms.openlocfilehash: bcda64315f85b9770f47d1b6c08fd90296063487
-ms.sourcegitcommit: 3e91a6e70b48a0100adfed1b62ba79f2fd1735d2
+ms.openlocfilehash: 9eb61d206852759ade3cb668a3d9c0dee83c424f
+ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2019
-ms.locfileid: "33968457"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "34591572"
 ---
 # <a name="locations"></a>位置
 
 > [!IMPORTANT]
-> Microsoft 365 管理中心现提供有 Microsoft 必应搜索设置。 从在管理中心[分配搜索管理员](https://docs.microsoft.com/zh-CN/microsoftsearch/setup-microsoft-search#step-2-assign-search-admin-and-search-editor)开始入手。
+> 本文适用于 Microsoft 必应搜索管理门户。 我们正在将该门户迁移至 Microsoft 365 管理中心，并且会在迁移后将其删除。 我们建议你使用 Microsoft 365 管理中心快速开始。 [Microsoft 搜索概述](overview-microsoft-search.md)。
     
 ## <a name="add-locations"></a>添加位置
 
