@@ -1,9 +1,9 @@
 ---
 title: 规划内容
-ms.author: dawholl
-author: dawholl
-manager: kellis
-ms.date: 12/18/2018
+ms.author: anfowler
+author: adefowler
+manager: mnirkhe
+ms.date: 05/30/2019
 ms.audience: Admin
 ms.topic: reference
 ms.service: mssearch
@@ -14,130 +14,106 @@ search.appverid:
 - MOE150
 ms.assetid: bb9d90b6-6c86-4b19-9235-3bd9b19826ab
 description: 使用 Microsoft 搜索时，无需额外资源便可提供高质量内容
-ms.openlocfilehash: 898ba99ebf4751c47da96b23d6cb9bac058f6ffd
-ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
+ms.openlocfilehash: 88c2af543be02f8e17937e36a81fd28d862e8fb0
+ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/01/2019
-ms.locfileid: "33508599"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "34591203"
 ---
-# <a name="plan-your-content"></a><span data-ttu-id="9be00-103">规划内容</span><span class="sxs-lookup"><span data-stu-id="9be00-103">Plan your content</span></span>
+# <a name="plan-your-content"></a><span data-ttu-id="9883b-103">规划内容</span><span class="sxs-lookup"><span data-stu-id="9883b-103">Plan your content</span></span>
 
-<span data-ttu-id="9be00-104">在规划内容之前，了解可以添加到 Microsoft 搜索的内容将有所帮助：</span><span class="sxs-lookup"><span data-stu-id="9be00-104">Before planning your content, understanding what you can add to Microsoft Search will be helpful:</span></span>
-  
-- <span data-ttu-id="9be00-105">书签</span><span class="sxs-lookup"><span data-stu-id="9be00-105">Bookmarks</span></span>
-    
-    <span data-ttu-id="9be00-106">快速向用户提供一个指向内部网站、页面或工具的链接，可以在其中获得额外信息。</span><span class="sxs-lookup"><span data-stu-id="9be00-106">Quickly give users a link to an internal site, page, or tool where they can get additional information.</span></span>
-    
-- <span data-ttu-id="9be00-107">问答</span><span class="sxs-lookup"><span data-stu-id="9be00-107">Q&As</span></span>
-    
-    <span data-ttu-id="9be00-p101">向用户提供包含可选链接的答案或信息。理想情况下，问答包括用户查找的所有详细信息，这样他们就不需要访问源。可以对问答内容进行格式设置，包括图像、列表和表格。</span><span class="sxs-lookup"><span data-stu-id="9be00-p101">Provide an answer or info to users including an optional link. Ideally, a Q&A includes all the details your users are looking for so they don't need to go to the source. You can format your Q&A content and include images, lists, and tables.</span></span>
-    
-## <a name="identify-information-your-users-need"></a><span data-ttu-id="9be00-111">识别用户需要的信息</span><span class="sxs-lookup"><span data-stu-id="9be00-111">Identify information your users need</span></span>
+<span data-ttu-id="9883b-104">\*\*\*\*Microsoft 搜索\*\*\*\*可帮助用户查找相关内容。</span><span class="sxs-lookup"><span data-stu-id="9883b-104">\*\*\*\*Microsoft Search\*\*\*\* helps users find relevant content.</span></span> <span data-ttu-id="9883b-105">**Microsoft 搜索**是一种搜索你的 Intranet 和 Web 内容的安全方式。</span><span class="sxs-lookup"><span data-stu-id="9883b-105">**Microsoft Search** is a secure way to search both your intranet and web content.</span></span> <span data-ttu-id="9883b-106">这种跨 Web 和企业的集成仅适用于 Microsoft。</span><span class="sxs-lookup"><span data-stu-id="9883b-106">This kind of integration across web and organization is available only with Microsoft.</span></span> 
 
-<span data-ttu-id="9be00-112">考虑采用以下方案：</span><span class="sxs-lookup"><span data-stu-id="9be00-112">Consider these ideas:</span></span>
-  
-- <span data-ttu-id="9be00-113">[导入 SharePoint 升级的结果和主要查询](import-sharepoint-promoted-results-and-top-queries.md)作为书签</span><span class="sxs-lookup"><span data-stu-id="9be00-113">[Import SharePoint promoted results and top queries](import-sharepoint-promoted-results-and-top-queries.md) as bookmarks</span></span> 
-    
-- <span data-ttu-id="9be00-114">使用 Intranet 搜索日志，来确定获得最多流量的网站和页面</span><span class="sxs-lookup"><span data-stu-id="9be00-114">Use intranet search logs to determine sites and pages that get the most traffic</span></span>
-    
-- <span data-ttu-id="9be00-115">确定每天或每周使用的应用、网站和工具</span><span class="sxs-lookup"><span data-stu-id="9be00-115">Determine apps, sites, and tools that are used on a daily or weekly basis</span></span>
-    
-- <span data-ttu-id="9be00-116">收集关键员工权益的信息并直接链接到这些信息</span><span class="sxs-lookup"><span data-stu-id="9be00-116">Gather information about key employee benefits and direct link to them</span></span>
-    
-- <span data-ttu-id="9be00-117">查找用户需要了解的策略和流程</span><span class="sxs-lookup"><span data-stu-id="9be00-117">Find policies and processes users need to be aware of</span></span>
-    
-- <span data-ttu-id="9be00-118">决定用户应联系的人员以及如何联系技术支持</span><span class="sxs-lookup"><span data-stu-id="9be00-118">Decide who and how users should contact support</span></span>
-    
-- <span data-ttu-id="9be00-119">获取季节性或基于业务周期的需要重复使用的信息</span><span class="sxs-lookup"><span data-stu-id="9be00-119">Get information that's needed on a recurring basis, either seasonally or based on business cycles</span></span>
-  
-<span data-ttu-id="9be00-120">例如，用户寻找工具来预订休假或季度财务更新</span><span class="sxs-lookup"><span data-stu-id="9be00-120">For example, people looking for tools to book time off or quarterly financial updates</span></span>
-    
-- <span data-ttu-id="9be00-121">收集针对区域用户或移动用户的策略，如不同位置的不同权益</span><span class="sxs-lookup"><span data-stu-id="9be00-121">Collect policies for regional or mobile users like benefits that vary by location</span></span>
-    
-- <span data-ttu-id="9be00-122">确定常用 Web 搜索的内部网站和信息</span><span class="sxs-lookup"><span data-stu-id="9be00-122">Determine internal sites and information for common web searches</span></span>
-  
-<span data-ttu-id="9be00-123">例如，交通、公共交通信息、当地天气、企业合作伙伴提供的折扣以及健康和健身项目</span><span class="sxs-lookup"><span data-stu-id="9be00-123">For example, traffic, public transit information, local weather, discounts available from corporate partners, and health and fitness programs</span></span>
-    
-- <span data-ttu-id="9be00-124">查找有关公司赞助的活动、会议或聚餐的信息</span><span class="sxs-lookup"><span data-stu-id="9be00-124">Find information about company-sponsored events, conferences, or retreats</span></span>
-    
-- <span data-ttu-id="9be00-125">研究常见 IT、人力资源和支持问题以及常见的问题和答案</span><span class="sxs-lookup"><span data-stu-id="9be00-125">Research common IT, HR, and support issues and frequently asked questions and answers</span></span>
-    
-## <a name="build-a-support-team"></a><span data-ttu-id="9be00-126">构建支持团队</span><span class="sxs-lookup"><span data-stu-id="9be00-126">Build a support team</span></span>
+<span data-ttu-id="9883b-107">搜索管理员通过对组织及其用户的了解，使用户能够轻松查找相关内容。</span><span class="sxs-lookup"><span data-stu-id="9883b-107">Search administrators use their knowledge of the organization and its users to make it easy for users to find the relevant content.</span></span> 
 
- <span data-ttu-id="9be00-127">**利用行业专家**</span><span class="sxs-lookup"><span data-stu-id="9be00-127">**Leverage subject matter experts**</span></span>
-  
-<span data-ttu-id="9be00-p102">建立一个支持团队，包括来自人力资源、支持、销售和其他关键领域的专家。要允许 SME 直接提供内容，请将他们作为编辑人员添加到管理门户中。这还允许你扩展可用内容的数量，而不需要额外的人员资源。</span><span class="sxs-lookup"><span data-stu-id="9be00-p102">Build a support team that includes experts from HR, support, sales, and other key areas. To allow your SMEs to contribute content directly, add them as editors in the Admin portal. This also allows you to scale the amount of available content without needing additional staff resources.</span></span>
-  
- <span data-ttu-id="9be00-131">**让用户参与进来**</span><span class="sxs-lookup"><span data-stu-id="9be00-131">**Involve your users**</span></span>
-  
-<span data-ttu-id="9be00-p103">让用户参与内容创建过程将鼓励用户使用 Microsoft 搜索。让他们在工作结果或 Microsoft Edge 或 Chrome 搜索扩展中使用反馈链接来建议书签和问答。除了建议内容之外，他们还可以报告错误（如损坏或无效链接），并提供其他反馈。</span><span class="sxs-lookup"><span data-stu-id="9be00-p103">Involving users in the content creation process encourages them to use Microsoft Search. Ask them to use the feedback link in work results or the Edge or Chrome search extension to suggest bookmarks and Q&As. In addition to suggesting content, they can report errors, like broken or invalid links, and provide other feedback.</span></span>
-  
-## <a name="create-high-quality-content"></a><span data-ttu-id="9be00-135">创建高质量内容</span><span class="sxs-lookup"><span data-stu-id="9be00-135">Create high-quality content</span></span>
+## <a name="step-1-identify-information-your-users-need"></a><span data-ttu-id="9883b-108">步骤 1：识别用户需要的信息</span><span class="sxs-lookup"><span data-stu-id="9883b-108">Step 1: Identify information your users need</span></span>
+<span data-ttu-id="9883b-109">了解用户所搜索的内容并使其易于发现。</span><span class="sxs-lookup"><span data-stu-id="9883b-109">Find out what your users are searching for and make that easily discoverable.</span></span> <span data-ttu-id="9883b-110">以下是关于了解用户需要哪些信息的一些思路：</span><span class="sxs-lookup"><span data-stu-id="9883b-110">Here are some ideas for finding out what information users need:</span></span> 
+- <span data-ttu-id="9883b-111">使用 Intranet 搜索日志，来确定获得最多流量的网站和页面。</span><span class="sxs-lookup"><span data-stu-id="9883b-111">Use intranet search logs to determine sites and pages that get the most traffic.</span></span>
+- <span data-ttu-id="9883b-112">确定每天或每周使用的应用、网站和工具。</span><span class="sxs-lookup"><span data-stu-id="9883b-112">Determine apps, sites, and tools that are used on a daily or weekly basis.</span></span>
+- <span data-ttu-id="9883b-113">查找员工福利的直接链接。</span><span class="sxs-lookup"><span data-stu-id="9883b-113">Find direct links for employee benefits.</span></span>
+- <span data-ttu-id="9883b-114">查找用户需要了解的策略和流程。</span><span class="sxs-lookup"><span data-stu-id="9883b-114">Find policies and processes that users need to be aware of.</span></span>
+- <span data-ttu-id="9883b-115">决定用户应联系的人员以及如何联系客户支持。</span><span class="sxs-lookup"><span data-stu-id="9883b-115">Decide ‘who’ and ‘how’ users should contact Support.</span></span>
+- <span data-ttu-id="9883b-116">获取在重复基础上（季节性或业务周期）需要的信息；例如，人们寻找工具来预约休假时间或季度财务更新。</span><span class="sxs-lookup"><span data-stu-id="9883b-116">Get information that is needed on a recurring basis, either seasonally or based on business cycles; for example, people looking for tools to book time off or quarterly financial updates.</span></span>
+- <span data-ttu-id="9883b-117">收集针对区域用户或移动用户的策略，如不同位置的不同权益。</span><span class="sxs-lookup"><span data-stu-id="9883b-117">Collect policies for regional or mobile users, like benefits that vary by location.</span></span>
+- <span data-ttu-id="9883b-118">确定常用 Web 搜索的内部站点和信息；例如，路况、公共交通信息、当地天气、公司合作伙伴提供的折扣以及健康与健身计划。</span><span class="sxs-lookup"><span data-stu-id="9883b-118">Determine internal sites and information for common web searches; for example, traffic, public transit information, local weather, discounts available from corporate partners, and health and fitness programs.</span></span>
+- <span data-ttu-id="9883b-119">查找有关公司赞助的活动、会议或聚餐的信息。</span><span class="sxs-lookup"><span data-stu-id="9883b-119">Find information about company-sponsored events, conferences, or retreats.</span></span>
+- <span data-ttu-id="9883b-120">研究常见 IT、人力资源和支持问题以及常见问题 (FAQ) 和答案。</span><span class="sxs-lookup"><span data-stu-id="9883b-120">Research common IT, HR, and support issues and frequently asked questions (FAQs) and answers.</span></span>
 
- <span data-ttu-id="9be00-136">**标题和说明**</span><span class="sxs-lookup"><span data-stu-id="9be00-136">**Titles and descriptions**</span></span>
-  
-<span data-ttu-id="9be00-p104">用户使用书签或问答标题和说明来确定它们是否满足自己的搜索意图，或者是否需要尝试不同的搜索。标题和说明应反映结果的核心目的。</span><span class="sxs-lookup"><span data-stu-id="9be00-p104">People use bookmarks or Q&A titles and descriptions to determine if they address their search intent or if they need to try a different search. Titles and descriptions should reflect the core purpose of the result.</span></span>
-  
-<span data-ttu-id="9be00-p105">“托儿权益”可能是一个很好的标题示例，包含说明“了解帮助支付托儿费的权益”。这让那些搜索“托儿”的用户知道，他们可以获得资金支持，并为其提供一个链接来了解更多信息。</span><span class="sxs-lookup"><span data-stu-id="9be00-p105">A good example of a title might be 'Childcare benefits,' with a description of 'Learn about benefits to help pay child care costs.' This informs users who search for 'childcare' that monetary support benefits are available and provides them a link to find out more.</span></span>
-  
-<span data-ttu-id="9be00-p106">问答标题应提出问题，说明应提供简短但有用的答案。如果有其他有用信息，请链接到它。</span><span class="sxs-lookup"><span data-stu-id="9be00-p106">Q&A titles should pose a question and the description should provide a short but useful answer. If there's additional information that would be helpful, link to it.</span></span>
-  
- <span data-ttu-id="9be00-143">**关键字**</span><span class="sxs-lookup"><span data-stu-id="9be00-143">**Keywords**</span></span>
-  
-<span data-ttu-id="9be00-p107">关键字是组织中的人员在必应上搜索以发现工作结果的术语。通过包含正确的关键字，使书签和问答更容易找到。要识别这些关键字，首先回答以下问题：</span><span class="sxs-lookup"><span data-stu-id="9be00-p107">Keywords are the terms people in your organization search for on Bing to discover work results. Make your bookmarks and Q&As easier to find by including the right keywords. To identify these keywords, start by answering these questions:</span></span>
-  
-- <span data-ttu-id="9be00-147">使用哪些搜索词来查找已识别的信息？</span><span class="sxs-lookup"><span data-stu-id="9be00-147">Which search terms are used to find the information you've identified?</span></span>
-    
-    <span data-ttu-id="9be00-148">利用组织使用的任何现有分类，以及相关变体、首字母缩写、主题和话题。</span><span class="sxs-lookup"><span data-stu-id="9be00-148">Leverage any existing taxonomy your organization uses, as well as related variations, acronyms, subjects, and topics.</span></span>
-    
-- <span data-ttu-id="9be00-149">用户用哪些其他变体或词来讨论这些信息？</span><span class="sxs-lookup"><span data-stu-id="9be00-149">Which other variations or words do people use to talk about this information?</span></span>
-    
-    <span data-ttu-id="9be00-150">利用支持团队来确定这些关键字。</span><span class="sxs-lookup"><span data-stu-id="9be00-150">Leverage your support team to determine these keywords.</span></span>
-    
-<span data-ttu-id="9be00-p108">例如，如果你正在创建一个链接到提交休假申请的工具的结果，那么“休假”和“提交休假申请”等关键字是很好的选择。你可能还会发现，组织人员会使用“假日”或“休假”来描述或搜索与假期相关的信息。添加“假日”、“休假”、“提交休假申请”和“申请休假”等关键字，可以让更多用户轻松发现结果。</span><span class="sxs-lookup"><span data-stu-id="9be00-p108">For example, if you're creating a result that links to a tool for submitting vacation requests, keywords such as 'vacation' and 'submit vacation request' are good options to include. You may also find that people in your organization use 'holiday' or 'time off' to describe or search for vacation-related information. Adding keywords like 'holiday,' 'time off,' 'submit holiday request,' and 'request time off' as keywords makes the result easier for more of your users to discover.</span></span>
-  
- <span data-ttu-id="9be00-154">**保留的关键字**</span><span class="sxs-lookup"><span data-stu-id="9be00-154">**Reserved keywords**</span></span>
-  
-<span data-ttu-id="9be00-p109">Microsoft 搜索根据使用情况确定哪些书签显示为最重要的工作结果。当需要显示一个特定结果作为顶部结果，请使用保留的关键字。保留的关键字是标识书签或问答结果的唯一字词或短语。当用户在搜索框中输入保留的关键字时，该书签或问答将是出现的第一个结果。尽量少用保留的关键字，让 Microsoft 搜索能够根据使用情况进行学习。</span><span class="sxs-lookup"><span data-stu-id="9be00-p109">Microsoft Search determines which bookmarks appear as the top work results based on usage. When you need a specific result to appear as the top result, use reserved keywords. A reserved keyword is a unique word or phrase that identifies a bookmark or Q&A result. When a user enters a reserved keyword in the search box, that bookmark or Q&A will be the first result that appears. Use reserved keywords sparingly to allow Microsoft Search to learn based on usage.</span></span>
-  
- <span data-ttu-id="9be00-160">**建议的关键字**</span><span class="sxs-lookup"><span data-stu-id="9be00-160">**Suggested keywords**</span></span>
-  
-<span data-ttu-id="9be00-p110">使用自动关键字建议为结果创建一组初始关键字。这些建议基于书签或问答的标题和 URL。</span><span class="sxs-lookup"><span data-stu-id="9be00-p110">Create an initial set of keywords for a result by using automatic keyword suggestions. These suggestions are based on the title and URL for your bookmark or Q&A.</span></span>
-  
- <span data-ttu-id="9be00-163">**组主题**</span><span class="sxs-lookup"><span data-stu-id="9be00-163">**Group topics**</span></span>
-  
-<span data-ttu-id="9be00-p111">如果希望用户在搜索时找到相关内容集，请尝试对所有与该主题相关的书签和问答使用相同的关键字。例如，如果正在添加关于生命状态更改的流程和工具的结果，可以向它们添加“marriage”这样的关键字，以便将关于更新权益、税务信息以及名称和别名更改的结果组合在一起。</span><span class="sxs-lookup"><span data-stu-id="9be00-p111">If you want users to find sets of related content when they search, try using the same keyword for all the bookmarks and Q&As about that topic. For example, if you're adding results about processes and tools around life status changes, you could include a keyword like 'marriage' to them to group together results about updating benefits, tax information, and name and alias changes.</span></span>
-  
-## <a name="test-your-content-and-search-experience"></a><span data-ttu-id="9be00-166">测试内容和搜索体验</span><span class="sxs-lookup"><span data-stu-id="9be00-166">Test your content and search experience</span></span>
+## <a name="step-2-leverage-subject-matter-experts-smes-and-users"></a><span data-ttu-id="9883b-121">步骤 2：利用行业专家 (SME) 和用户</span><span class="sxs-lookup"><span data-stu-id="9883b-121">Step 2: Leverage Subject Matter Experts (SMEs) and users</span></span>
+<span data-ttu-id="9883b-122">在组织内，用户会搜索各种主题 — 从简单主题（如办公地点、员工福利）到复杂主题（如新的工作流程、技术信息和操作方法等内容）。</span><span class="sxs-lookup"><span data-stu-id="9883b-122">In an organization, users search for a wide range of topics ranging from simple such as office addresses, employee benefits to complex topics such as new work processes, technical information, and how-to-do content.</span></span> <span data-ttu-id="9883b-123">创建或查找如此广泛的内容要求在不同领域、主题和技术等方面具备相关知识和专业技术，而搜索管理员可能不具备必要的专业技术或知识。</span><span class="sxs-lookup"><span data-stu-id="9883b-123">Creating or finding such wide range of content requires knowledge and expertise in different fields, subjects, technologies etc. and a Search administrator may not have the requisite expertise or knowledge.</span></span> <span data-ttu-id="9883b-124">管理员应利用组织内其他员工的专业技术和知识来扩展可用内容的数量，而无需额外的资源。</span><span class="sxs-lookup"><span data-stu-id="9883b-124">Administrators should leverage expertise and knowledge of others in the organization to scale the amount of available content without additional resources.</span></span>
 
-<span data-ttu-id="9be00-167">发布结果后，请务必进行验证：</span><span class="sxs-lookup"><span data-stu-id="9be00-167">After you've published results, it's important to verify:</span></span>
-  
-- <span data-ttu-id="9be00-168">正确的书签或问答会出现在结果顶部</span><span class="sxs-lookup"><span data-stu-id="9be00-168">The correct bookmark or Q&A appears as the top result</span></span>
-    
-- <span data-ttu-id="9be00-169">所有相关书签或问答都是相关的</span><span class="sxs-lookup"><span data-stu-id="9be00-169">All related bookmarks or Q&As are relevant</span></span>
-    
-- <span data-ttu-id="9be00-170">不包括意外结果</span><span class="sxs-lookup"><span data-stu-id="9be00-170">No unexpected results are included</span></span>
-    
-- <span data-ttu-id="9be00-171">结果标题和说明提供了用户正在查找的信息和详情</span><span class="sxs-lookup"><span data-stu-id="9be00-171">Result titles and descriptions provide the information and details your users are looking for</span></span>
-    
-<span data-ttu-id="9be00-172">支持团队是帮助测试和验证内容和搜索体验的重要资源。</span><span class="sxs-lookup"><span data-stu-id="9be00-172">Your support team is a great resource to help test and validate the content and search experience.</span></span>
-  
-## <a name="review-and-update-periodically"></a><span data-ttu-id="9be00-173">定期查看并更新</span><span class="sxs-lookup"><span data-stu-id="9be00-173">Review and update periodically</span></span>
+### <a name="leverage-smes"></a><span data-ttu-id="9883b-125">利用 SME</span><span class="sxs-lookup"><span data-stu-id="9883b-125">Leverage SMEs</span></span>
+<span data-ttu-id="9883b-126">利用组织内的 SME，包括人力资源、支持、销售、技术和其他关键领域的专家。</span><span class="sxs-lookup"><span data-stu-id="9883b-126">Leverage SMEs in the organization including experts from HR, support, sales, technology, and other key areas.</span></span> <span data-ttu-id="9883b-127">若要允许 SME 直接提供内容，需要将其添加为搜索编辑人员。</span><span class="sxs-lookup"><span data-stu-id="9883b-127">To allow your SMEs to contribute content directly, add them as Search editors.</span></span> 
 
-<span data-ttu-id="9be00-p112">向组织提供权威信息时，保持结果的准确性和新鲜度至关重要。实施定期检查：</span><span class="sxs-lookup"><span data-stu-id="9be00-p112">Maintaining the accuracy and freshness of your results is critical when you're providing authoritative information to your organization. Conduct periodic reviews to:</span></span>
-  
-- <span data-ttu-id="9be00-176">修复或删除损坏或无效 URL</span><span class="sxs-lookup"><span data-stu-id="9be00-176">Fix or remove broken or invalid URLs</span></span>
-    
-- <span data-ttu-id="9be00-177">删除不再相关的内容</span><span class="sxs-lookup"><span data-stu-id="9be00-177">Remove content that's no longer relevant</span></span>
-    
-- <span data-ttu-id="9be00-178">更新不准确或过期的标题和说明，包括工具、网站或团队名称更改</span><span class="sxs-lookup"><span data-stu-id="9be00-178">Update inaccurate or out of date titles and descriptions, including tool, site, or team name changes</span></span>
-    
-- <span data-ttu-id="9be00-179">查看低点击率查询，确定是否需要更新书签或问答内容</span><span class="sxs-lookup"><span data-stu-id="9be00-179">Review queries with low click-through rates and determine if the bookmark or Q&A content needs to be updated</span></span>
-    
-- <span data-ttu-id="9be00-180">审阅 SharePoint Online 和本地搜索查询，包括热门或主要查询、弃用的查询，没有查询可用于了解用户搜索内容和存在的差距</span><span class="sxs-lookup"><span data-stu-id="9be00-180">Review SharePoint Online and on-premises search queries, including popular or top queries, abandoned queries, and no queries to understand what users search for and where there are gaps</span></span>
-    
-<span data-ttu-id="9be00-181">要快速批量编辑结果，请使用管理门户中的导出和导入功能。</span><span class="sxs-lookup"><span data-stu-id="9be00-181">To quickly bulk edit your results, use the export and import features in the Admin portal.</span></span>
+### <a name="involve-your-users"></a><span data-ttu-id="9883b-128">让用户参与进来</span><span class="sxs-lookup"><span data-stu-id="9883b-128">Involve your users</span></span>
+<span data-ttu-id="9883b-129">让用户推荐要设为书签的资源。</span><span class="sxs-lookup"><span data-stu-id="9883b-129">Ask users to suggest resources to bookmark.</span></span> <span data-ttu-id="9883b-130">除了推荐相关内容以外，还要求用户报告错误，例如损坏或无效的链接。</span><span class="sxs-lookup"><span data-stu-id="9883b-130">In addition to suggesting content, ask users to report errors, like broken or invalid links.</span></span>
 
-  
+## <a name="step-3-improve-findability-of-content"></a><span data-ttu-id="9883b-131">步骤 3：提高内容的可检索性</span><span class="sxs-lookup"><span data-stu-id="9883b-131">Step 3: Improve findability of content</span></span> 
+<span data-ttu-id="9883b-132">在 **Microsoft 搜索**中，搜索管理员可创建书签、问答、位置和 PowerApps，以便提高内容的可检索性。</span><span class="sxs-lookup"><span data-stu-id="9883b-132">In **Microsoft Search**, Search administrator creates Bookmarks, Q&A, Locations, and PowerApps to improve the findability of content.</span></span> <span data-ttu-id="9883b-133">每个搜索组件都包括标题、URL 和一组触发关键字。</span><span class="sxs-lookup"><span data-stu-id="9883b-133">Each of these search components includes a title, a URL, and a set of keywords that trigger it.</span></span>
 
+### <a name="titles-and-descriptions"></a><span data-ttu-id="9883b-134">标题和说明</span><span class="sxs-lookup"><span data-stu-id="9883b-134">Titles and descriptions</span></span>
+<span data-ttu-id="9883b-135">人们使用标题和说明来确定搜索结果是否回答了他们的搜索查询，或者他们是否需要尝试不同的搜索。</span><span class="sxs-lookup"><span data-stu-id="9883b-135">People use titles and descriptions to determine if the result answers their search query, or if they need to try a different search.</span></span> <span data-ttu-id="9883b-136">标题和说明应反映结果的核心目的。</span><span class="sxs-lookup"><span data-stu-id="9883b-136">Titles and descriptions should reflect the core purpose of the result.</span></span> <span data-ttu-id="9883b-137">例如，标题为“幼托津贴”，说明为“了解用以帮助支付托儿费的津贴”便是一个不错的例子。</span><span class="sxs-lookup"><span data-stu-id="9883b-137">A good example of a title might be 'Childcare benefits,' with a description - 'Learn about benefits to help pay childcare costs.'</span></span> <span data-ttu-id="9883b-138">这将告知搜索“幼托”的用户这方面具有财政支持津贴，并为他们提供可了解更多信息的链接。</span><span class="sxs-lookup"><span data-stu-id="9883b-138">This informs the users who search 'childcare' that monetary support benefits are available, and provides them a link to find out more.</span></span> 
+
+### <a name="keywords"></a><span data-ttu-id="9883b-139">关键字</span><span class="sxs-lookup"><span data-stu-id="9883b-139">Keywords</span></span>
+<span data-ttu-id="9883b-140">关键字是组织中的人员用于查找相关内容的词条。</span><span class="sxs-lookup"><span data-stu-id="9883b-140">Keywords are the terms that people in your organization use to find relevant content.</span></span> <span data-ttu-id="9883b-141">将相应的关键字与搜索结果相关联，让查找相关内容变得更轻松。</span><span class="sxs-lookup"><span data-stu-id="9883b-141">Associating the appropriate keywords with search results makes it easier to find the relevant content.</span></span> <span data-ttu-id="9883b-142">**Microsoft 搜索**根据内容的标题和 URL 提供建议的关键字。</span><span class="sxs-lookup"><span data-stu-id="9883b-142">**Microsoft Search** suggests keyword based on the title and URL for your content.</span></span> <span data-ttu-id="9883b-143">若要确定其他关键字，请首先回答以下问题：</span><span class="sxs-lookup"><span data-stu-id="9883b-143">To identify additional keywords, start by answering these questions:</span></span>
+
+1. <span data-ttu-id="9883b-144">使用哪些搜索词来查找已识别的信息？</span><span class="sxs-lookup"><span data-stu-id="9883b-144">Which search terms are used to find the information you've identified?</span></span>
+1. <span data-ttu-id="9883b-145">利用组织使用的任何现有分类，以及相关变体、首字母缩写、主题和话题。</span><span class="sxs-lookup"><span data-stu-id="9883b-145">Leverage any existing taxonomy your organization uses, as well as related variations, acronyms, subjects, and topics.</span></span>
+1. <span data-ttu-id="9883b-146">用户用哪些其他变体或词来讨论这些信息？</span><span class="sxs-lookup"><span data-stu-id="9883b-146">Which other variations or words do people use to talk about this information?</span></span>
+1. <span data-ttu-id="9883b-147">利用支持团队来确定这些关键字。</span><span class="sxs-lookup"><span data-stu-id="9883b-147">Leverage your support team to determine these keywords.</span></span>
+
+<span data-ttu-id="9883b-148">例如，如果你要创建一个要链接到用于提交休假请求的工具的结果，那么最好包含“休假”和“提交休假申请”等关键字。</span><span class="sxs-lookup"><span data-stu-id="9883b-148">For example, if you're creating a result that links to a tool for submitting vacation requests, keywords such as 'vacation' and 'submit vacation request' are good options to include.</span></span> <span data-ttu-id="9883b-149">你可能还会发现，组织内的人员使用“度假”或“休假时间”来描述或搜索与休假相关的信息。</span><span class="sxs-lookup"><span data-stu-id="9883b-149">You may also find that people in your organization use 'holiday' or 'time off' to describe or search vacation related information.</span></span> <span data-ttu-id="9883b-150">通过添加“度假”、“休假时间”、“提交度假申请”和“申请休假时间”等关键字，可让更多的用户更轻松地查找相关内容。</span><span class="sxs-lookup"><span data-stu-id="9883b-150">Adding keywords like 'holiday,' 'time off,' 'submit holiday request,' and 'request time off' will make it easier for more of your users to find the relevant content.</span></span>
+
+### <a name="reserved-keywords"></a><span data-ttu-id="9883b-151">保留关键字</span><span class="sxs-lookup"><span data-stu-id="9883b-151">Reserved keywords</span></span>
+ <span data-ttu-id="9883b-152">保留关键字是用于触发结果的唯一词条或短语。</span><span class="sxs-lookup"><span data-stu-id="9883b-152">A reserved keyword is a unique term or phrase that triggers a result.</span></span> <span data-ttu-id="9883b-153">与其他关键字不同，保留关键字只能与一个结果相关联。</span><span class="sxs-lookup"><span data-stu-id="9883b-153">Unlike other keywords, a reserved keyword can be associated with one result only.</span></span> <span data-ttu-id="9883b-154">请慎用保留关键字，以便 **Microsoft 搜索**能够基于使用情况进行学习。</span><span class="sxs-lookup"><span data-stu-id="9883b-154">Use reserved keywords sparingly to allow **Microsoft Search** to learn based on usage.</span></span>
+
+<span data-ttu-id="9883b-155">例如，如果你为用于提交工时的网站创建书签并将“日志时间”添加为保留关键字，则组织中搜索“日志时间”的用户会看到用于提交工时的网站为“**Microsoft 搜索**”框中的唯一书签。</span><span class="sxs-lookup"><span data-stu-id="9883b-155">For example, if you create a bookmark for a site for submitting your hours and add “log time” as a reserved keyword, users in your organization who search “log time” see the site for submitting your hours as the only bookmark in the **Microsoft Search** box.</span></span> 
+
+### <a name="using-keyword-to-group-related-content"></a><span data-ttu-id="9883b-156">使用关键字对相关内容进行分组</span><span class="sxs-lookup"><span data-stu-id="9883b-156">Using keyword to group related content</span></span>
+<span data-ttu-id="9883b-157">如果希望用户在搜索词条时找到相关内容的集合，请尝试对所有相关内容使用相同的关键字。</span><span class="sxs-lookup"><span data-stu-id="9883b-157">If you want users to find sets of related content when they search for a term, then try using the same keyword for all related content.</span></span> <span data-ttu-id="9883b-158">例如，如果要添加有关生活状态变更流程和工具的结果，则可以向它们添加“结婚”等关键字，以便将可更新福利、税务信息以及名称和别名的结果分组在一起。</span><span class="sxs-lookup"><span data-stu-id="9883b-158">For example, if you're adding results about processes and tools around life status changes, you could include a keyword like 'marriage' to group together results about updating benefits, tax information, and name and alias changes.</span></span>
+
+### <a name="search-settings"></a><span data-ttu-id="9883b-159">搜索设置</span><span class="sxs-lookup"><span data-stu-id="9883b-159">Search settings</span></span>
+<span data-ttu-id="9883b-160">使用搜索设置来定制你的内容并定位特定的用户组。</span><span class="sxs-lookup"><span data-stu-id="9883b-160">Use search settings to tailor your content and target specific groups of users.</span></span> <span data-ttu-id="9883b-161">**Microsoft 搜索**具有以下设置，可让你进一步控制何时显示搜索结果以及谁可以查看它。</span><span class="sxs-lookup"><span data-stu-id="9883b-161">**Microsoft Search** has the following settings that give you additional control over when a search result appears and who sees it.</span></span>
+
+- <span data-ttu-id="9883b-162">**日期：** 设置开始日期和结束日期，以控制内容可用或不可用的时间。</span><span class="sxs-lookup"><span data-stu-id="9883b-162">**Dates:** Set a start date as well as an end date to control when content will be made available or unavailable.</span></span> <span data-ttu-id="9883b-163">例如，相关的时间敏感型材料将显示在搜索结果中。</span><span class="sxs-lookup"><span data-stu-id="9883b-163">For example, time sensitive material appears in search result when it is relevant.</span></span>
+- <span data-ttu-id="9883b-164">**国家/地区：** 选择国家或地区，以便只有这些位置的用户才能看到内容。</span><span class="sxs-lookup"><span data-stu-id="9883b-164">**Country/region:** Select countries or regions so that only users in those locations will see the content.</span></span> <span data-ttu-id="9883b-165">例如，特定于国家/地区的信息仅显示在这些国家/地区的搜索结果中。</span><span class="sxs-lookup"><span data-stu-id="9883b-165">For example, country specific information appears in search results in those countries only.</span></span>
+- <span data-ttu-id="9883b-166">**组：** 通过“组”设置，可使结果仅对所选组的成员可用。</span><span class="sxs-lookup"><span data-stu-id="9883b-166">**Groups:** Use the Groups settings to make a result available only to members of a selected group.</span></span> <span data-ttu-id="9883b-167">例如，如果你要创建仅适用于 HR 部门的员工的网站，则可以将此设置映射到相应 HR 安全组。</span><span class="sxs-lookup"><span data-stu-id="9883b-167">For example, if you're creating sites that pertain only to employees in the HR department, you could map this setting to the appropriate HR security group.</span></span>
+- <span data-ttu-id="9883b-168">**设备和 OS：** 选择设备类型或操作系统，以便只有在该类设备上搜索或使用这些系统的用户才能看到该书签。</span><span class="sxs-lookup"><span data-stu-id="9883b-168">**Device & OS:** Select device types or operating systems so that only users searching on those devices or using those systems will see that bookmark.</span></span>
+- <span data-ttu-id="9883b-169">**目标变体：** 通过此设置，你可以基于用户的设备和位置改变书签内容。</span><span class="sxs-lookup"><span data-stu-id="9883b-169">**Targeted variations:** Use this setting to vary the content of the bookmark based on a user's device and location.</span></span>
+
+## <a name="step-4-test-your-content"></a><span data-ttu-id="9883b-170">步骤 4：测试内容</span><span class="sxs-lookup"><span data-stu-id="9883b-170">Step 4: Test your content</span></span>
+<span data-ttu-id="9883b-171">在创建书签和问答后，请务必确保：</span><span class="sxs-lookup"><span data-stu-id="9883b-171">After you've created Bookmarks and Q&A, it's important to verify that:</span></span>
+- <span data-ttu-id="9883b-172">显示正确的书签或问答。</span><span class="sxs-lookup"><span data-stu-id="9883b-172">The correct Bookmark or Q&A appears.</span></span>
+- <span data-ttu-id="9883b-173">使用关键字组合在一起的所有内容均按计划一起显示。</span><span class="sxs-lookup"><span data-stu-id="9883b-173">All content grouped together using keywords appear together as planned.</span></span>
+- <span data-ttu-id="9883b-174">搜索结果中未显示意外结果。</span><span class="sxs-lookup"><span data-stu-id="9883b-174">No unexpected results appear in search result.</span></span>
+- <span data-ttu-id="9883b-175">查看书签或问答是否有足够的信息。</span><span class="sxs-lookup"><span data-stu-id="9883b-175">Review whether the Bookmark or Q&A has enough information.</span></span>
+
+<span data-ttu-id="9883b-176">为内容创建做出贡献的用户和 SME 可以帮助测试和验证搜索结果。</span><span class="sxs-lookup"><span data-stu-id="9883b-176">Users and SMEs who contributed to content creation can help test and validate the search result.</span></span>
+
+## <a name="step-5-review-and-update-periodically"></a><span data-ttu-id="9883b-177">步骤 5：定期查看并更新</span><span class="sxs-lookup"><span data-stu-id="9883b-177">Step 5: Review and update periodically</span></span>
+<span data-ttu-id="9883b-178">务必确保书签和问答等权威信息是最新的。</span><span class="sxs-lookup"><span data-stu-id="9883b-178">It is important that authoritative information such as Bookmarks and Q&A are up to date.</span></span> <span data-ttu-id="9883b-179">定期：</span><span class="sxs-lookup"><span data-stu-id="9883b-179">Regularly:</span></span>
+- <span data-ttu-id="9883b-180">修复或删除损坏或无效的 URL。</span><span class="sxs-lookup"><span data-stu-id="9883b-180">Fix or remove broken or invalid URL.</span></span>
+- <span data-ttu-id="9883b-181">删除不再相关的书签或问答。</span><span class="sxs-lookup"><span data-stu-id="9883b-181">Remove Bookmarks or Q&A that are no longer relevant.</span></span>
+- <span data-ttu-id="9883b-182">检查工具、网站名称或团队名称更改。</span><span class="sxs-lookup"><span data-stu-id="9883b-182">Check for tool, site name, or team name changes.</span></span>
+- <span data-ttu-id="9883b-183">考虑书签或问答是否有足够的权威或需要更清晰的描述。</span><span class="sxs-lookup"><span data-stu-id="9883b-183">Consider whether the Bookmark or Q&A is authoritative enough or needs a clearer description.</span></span>
+
+<span data-ttu-id="9883b-184">**Microsoft 搜索**提供了书签、问答和位置的使用情况统计信息。</span><span class="sxs-lookup"><span data-stu-id="9883b-184">**Microsoft Search** provides usage statistics for Bookmarks, Q&A, and Locations.</span></span> <span data-ttu-id="9883b-185">使用情况统计信息显示用户如何与搜索结果交互以及用户是否找到他们所查找的内容，或者可用内容是否存在差距？</span><span class="sxs-lookup"><span data-stu-id="9883b-185">The usage statistics shows how users are engaging with your search results and whether users are finding what they are looking for, or are there any gaps in the available content?</span></span> <span data-ttu-id="9883b-186">它可以帮助管理员监控性能并采取适当的措施来微调搜索结果。</span><span class="sxs-lookup"><span data-stu-id="9883b-186">It helps administrator monitor performance and take appropriate actions to fine tune the search results.</span></span> 
+
+### <a name="get-details-about-bookmarks-qa-and-locations"></a><span data-ttu-id="9883b-187">获取有关书签、问答和位置的详细信息</span><span class="sxs-lookup"><span data-stu-id="9883b-187">Get details about Bookmarks, Q&A and Locations</span></span>
+<span data-ttu-id="9883b-188">查看已发布、规划或推荐了多少个书签、问答和位置。</span><span class="sxs-lookup"><span data-stu-id="9883b-188">See how many Bookmarks, Q&A, and Locations have been published, scheduled, or suggested.</span></span> <span data-ttu-id="9883b-189">使用仪表板来按状态查看书签、问答和位置总计：</span><span class="sxs-lookup"><span data-stu-id="9883b-189">Use the dashboard to see Bookmark, Q&A, or Location totals by status:</span></span>
+- <span data-ttu-id="9883b-190">**已发布：** 向用户推出的已发布结果数。</span><span class="sxs-lookup"><span data-stu-id="9883b-190">**Published:** The number of published results that are available to users.</span></span>
+- <span data-ttu-id="9883b-191">**已计划：** 发布管道中的已计划结果数。</span><span class="sxs-lookup"><span data-stu-id="9883b-191">**Scheduled:** The number of scheduled results in the publish pipeline.</span></span>
+- <span data-ttu-id="9883b-192">**已建议：** 来自用户的建议数。</span><span class="sxs-lookup"><span data-stu-id="9883b-192">**Suggested:** The number of suggestions from users.</span></span>
+
+<span data-ttu-id="9883b-193">建议的书签、问答和位置是体现内容差距的良好指标。</span><span class="sxs-lookup"><span data-stu-id="9883b-193">Suggested Bookmarks, Q&A, and Locations are a good indicator of gaps in your content.</span></span> <span data-ttu-id="9883b-194">它将帮助你了解用户所查找以及未找到的内容。</span><span class="sxs-lookup"><span data-stu-id="9883b-194">It will help you understand what your users are looking for, and not finding.</span></span> <span data-ttu-id="9883b-195">这可能表示你需要创建更多书签、问答和位置，或者你需要使用更好的关键字、保留关键字和搜索字符串来更新现有内容，以提高内容的可发现性。</span><span class="sxs-lookup"><span data-stu-id="9883b-195">This could indicate that you need to create more Bookmarks, Q&A, or Locations or you need to update your existing content by using better keywords, reserved keywords, and search strings to improve the discoverability of content.</span></span>
+
+### <a name="review-top-search-queries"></a><span data-ttu-id="9883b-196">查看热门搜索查询</span><span class="sxs-lookup"><span data-stu-id="9883b-196">Review top search queries</span></span>
+<span data-ttu-id="9883b-197">了解哪些搜索在过去的 90 天中产生了最多的展示次数。</span><span class="sxs-lookup"><span data-stu-id="9883b-197">Find out which searches have generated the most impressions over the last 90 days.</span></span> <span data-ttu-id="9883b-198">展示次数是指在搜索结果中查看页面的次数。</span><span class="sxs-lookup"><span data-stu-id="9883b-198">Impression refers to how many times a page was viewed in search result.</span></span> <span data-ttu-id="9883b-199">**热门查询**卡片将会显示每个结果类型的前 25 个最热门用户搜索及其总搜索次数和点击率 (CTR)。</span><span class="sxs-lookup"><span data-stu-id="9883b-199">The **Top Queries** card shows the top 25 user searches for each result type with the total number of searches and their click-through rate (CTR).</span></span> <span data-ttu-id="9883b-200">使用此报告可确定搜索查询量，并确定较高和较低搜索活动的查询。</span><span class="sxs-lookup"><span data-stu-id="9883b-200">Use this report to identify search query volume and to determine queries with high and low search activity.</span></span> 
+
+<span data-ttu-id="9883b-201">低搜索计数可能表示用户不满意，因为用户未查找这些搜索内容，或者在使用其他关键字来查找这些内容。</span><span class="sxs-lookup"><span data-stu-id="9883b-201">Low search count may indicate user dissatisfaction either because users are not looking for those search content or are using different keywords to find that content.</span></span> <span data-ttu-id="9883b-202">CTR 可显示用户选择升级结果的频率以及查询规则和结果对用户的有用程度。</span><span class="sxs-lookup"><span data-stu-id="9883b-202">CTR shows how often users select the promoted results and how useful your query rules and results are to users.</span></span> <span data-ttu-id="9883b-203">低 CTR 表示用户正在查找内容，但确定该内容不符合其搜索要求。</span><span class="sxs-lookup"><span data-stu-id="9883b-203">A low CTR indicates that users are finding the content but are making the determination that the content does not meet their search.</span></span> <span data-ttu-id="9883b-204">在这种情况下，管理员可能会决定审查内容并确保其与用户的搜索和更新标题、说明和关键字相对应，从而使其与用户搜索查询保持一致。</span><span class="sxs-lookup"><span data-stu-id="9883b-204">In such cases, administrators may decide to review the content and ensure that it corresponds with the user’s search and update titles, descriptions, and keywords to align them with the user search queries.</span></span> 
+
+### <a name="analyze-impressions-by-result-type"></a><span data-ttu-id="9883b-205">按结果类型分析展示次数</span><span class="sxs-lookup"><span data-stu-id="9883b-205">Analyze impressions by result type</span></span>
+<span data-ttu-id="9883b-206">在“**展示次数分布(按结果类型)**”卡片中，简单易懂的图形将会显示各个时间段的展示次数。</span><span class="sxs-lookup"><span data-stu-id="9883b-206">Easy-to-read graphs in the **Impression Distribution by Result Type** card show impressions over various timeframes.</span></span> <span data-ttu-id="9883b-207">时间轴将会显示结果类型的每日展示次数。</span><span class="sxs-lookup"><span data-stu-id="9883b-207">The timeline shows the daily number of impressions for a result type.</span></span> <span data-ttu-id="9883b-208">确定最常使用或不经常使用的结果类型。</span><span class="sxs-lookup"><span data-stu-id="9883b-208">Determine which result type is most frequently, or infrequently, used.</span></span> <span data-ttu-id="9883b-209">不经常使用的特定结果类型并不一定意味着该结果类型不好。</span><span class="sxs-lookup"><span data-stu-id="9883b-209">Infrequent use of particular result type does not necessarily mean that the result types are not good.</span></span> <span data-ttu-id="9883b-210">它只显示用户如何使用搜索结果。</span><span class="sxs-lookup"><span data-stu-id="9883b-210">It just shows how users are using the search result.</span></span>
+
+<span data-ttu-id="9883b-211">使用此报告可以了解用户使用的结果类型以及一段时间内用户行为的任何更改。</span><span class="sxs-lookup"><span data-stu-id="9883b-211">Use this report to understand what result types users are using and any changes in user behavior over a period of time.</span></span> <span data-ttu-id="9883b-212">如果用户首选某个特定结果类型，则管理员可能会决定创建相同类型的更多搜索结果，或者审查用户未使用的结果类型的关键字，以确保关键字是合适的。</span><span class="sxs-lookup"><span data-stu-id="9883b-212">If a particular result type is preferred by users, administrators may decide to create more search results of the same types or  to review the keywords of results types not used by users to ensure that keywords are appropriate.</span></span>
