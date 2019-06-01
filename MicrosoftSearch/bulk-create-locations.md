@@ -13,18 +13,19 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 15c9fada-f7a6-4210-aa6b-028b32217830
+ROBOTS: NoIndex
 description: 利用 Microsoft 搜索管理门户中的导入工具一次添加多个位置
-ms.openlocfilehash: 1d360fda2851083def0bcbd8fcffd77cfa15240e
-ms.sourcegitcommit: 3e91a6e70b48a0100adfed1b62ba79f2fd1735d2
+ms.openlocfilehash: 186f6973de1ff87b62b5f07a47eb41acdd842010
+ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2019
-ms.locfileid: "33968289"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "34591392"
 ---
 # <a name="bulk-create-locations"></a>批量创建位置
 
 > [!IMPORTANT]
-> Microsoft 365 管理中心现提供有 Microsoft 必应搜索设置。 从在管理中心[分配搜索管理员](https://docs.microsoft.com/zh-CN/microsoftsearch/setup-microsoft-search#step-2-assign-search-admin-and-search-editor)开始入手。
+> 本文适用于 Microsoft 必应搜索管理门户。 我们正在将该门户迁移至 Microsoft 365 管理中心，并且会在迁移后将其删除。 我们建议你使用 Microsoft 365 管理中心快速开始。 [Microsoft 搜索概述](overview-microsoft-search.md)。
     
 下载和使用 .csv 模板，批量创建、编辑并保存位置。 
   

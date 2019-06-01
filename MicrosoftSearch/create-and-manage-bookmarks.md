@@ -13,18 +13,19 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 5479dc34-3de0-41c5-94a7-ba87069e6b43
+ROBOTS: NoIndex
 description: 有关为 Microsoft 搜索工作结果添加和创建书签的所有方式的概述
-ms.openlocfilehash: a7243d43eb5132c8096115852a4ebd8bd4dc3305
-ms.sourcegitcommit: 3e91a6e70b48a0100adfed1b62ba79f2fd1735d2
+ms.openlocfilehash: 5e79fdb892e02673c08c62402e6fa0fea25f70f7
+ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2019
-ms.locfileid: "33968369"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "34591455"
 ---
 # <a name="create-and-manage-bookmarks"></a>创建和管理书签
 
 > [!IMPORTANT]
-> Microsoft 365 管理中心现提供有 Microsoft 必应搜索设置。 从在管理中心[分配搜索管理员](https://docs.microsoft.com/zh-CN/microsoftsearch/setup-microsoft-search#step-2-assign-search-admin-and-search-editor)开始入手。
+> 本文适用于 Microsoft 必应搜索管理门户。 我们正在将该门户迁移至 Microsoft 365 管理中心，并且会在迁移后将其删除。 我们建议你使用 Microsoft 365 管理中心快速开始。 [Microsoft 搜索概述](overview-microsoft-search.md)。
     
 ## <a name="create-bookmarks"></a>创建书签
 

@@ -13,16 +13,21 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 161ea667-9b27-4695-b7a8-e8e063141795
+ROBOTS: NoIndex
 description: 了解如何自定义使用 Microsoft 搜索时显示的工作结果。
-ms.openlocfilehash: 0990b8362b01a2173f87e541bc1ea86aadcbb506
-ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
+ms.openlocfilehash: 9054febab2626097762a80f093affb1e3351fe1a
+ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/01/2019
-ms.locfileid: "33508704"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "34591257"
 ---
 # <a name="connected-services"></a>已连接的服务
 
+> [!IMPORTANT]
+> 本文适用于 Microsoft 必应搜索管理门户。 我们正在将该门户迁移至 Microsoft 365 管理中心，并且会在迁移后将其删除。 我们建议你使用 Microsoft 365 管理中心快速开始。 [Microsoft 搜索概述](overview-microsoft-search.md)。
+     
+     
 Microsoft 搜索允许使用强大的必应搜索引擎搜索 Office 365 组织的 SharePoint 文件、带书签的内部网站、全球地址列表中的人员和 Office 365 组。
   
 ## <a name="search-for-sites-and-documents"></a>搜索网站和文档

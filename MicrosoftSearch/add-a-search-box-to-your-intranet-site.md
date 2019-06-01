@@ -13,15 +13,19 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: f980b90f-95e2-4b66-8b21-69f601ff4b50
+ROBOTS: NoIndex
 description: 通过将 Microsoft 搜索框添加到 Intranet 站点或页面来更快地获取相关搜索建议和查找工作结果。
-ms.openlocfilehash: a66c0cea71cf637209d298f49542864755e92ec9
-ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
+ms.openlocfilehash: 867282393c7a4bffa63363a3455e4f1543c7f8a1
+ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/01/2019
-ms.locfileid: "33508519"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "34590690"
 ---
 # <a name="add-a-search-box-to-your-intranet-site"></a>将搜索框添加到 Intranet 站点
+
+> [!IMPORTANT]
+> 本文适用于 Microsoft 必应搜索管理门户。 我们正在将该门户迁移至 Microsoft 365 管理中心，并且会在迁移后将其删除。 我们建议你使用 Microsoft 365 管理中心快速开始。 [Microsoft 搜索概述](overview-microsoft-search.md)。
 
 将 Microsoft 搜索框添加到 Intranet 站点或页面，以快速访问相关搜索建议和工作结果。
   

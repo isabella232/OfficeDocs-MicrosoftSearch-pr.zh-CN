@@ -13,18 +13,19 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: b40a575d-7727-4bb0-80da-e25131315790
+ROBOTS: NoIndex
 description: 概览在 Microsoft 搜索管理门户中创建常见问题的答案的所有方式
-ms.openlocfilehash: 09c6747dafd5d2cf029f75fec210d308356c54fe
-ms.sourcegitcommit: 3e91a6e70b48a0100adfed1b62ba79f2fd1735d2
+ms.openlocfilehash: 2d58d8b7bdec69f2f1d5078283ee1fb939e84e32
+ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2019
-ms.locfileid: "33968429"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "34591446"
 ---
 # <a name="create-and-manage-qas"></a>创建和管理问答
 
 > [!IMPORTANT]
-> Microsoft 365 管理中心现提供有 Microsoft 必应搜索设置。 从在管理中心[分配搜索管理员](https://docs.microsoft.com/zh-CN/microsoftsearch/setup-microsoft-search#step-2-assign-search-admin-and-search-editor)开始入手。
+> 本文适用于 Microsoft 必应搜索管理门户。 我们正在将该门户迁移至 Microsoft 365 管理中心，并且会在迁移后将其删除。 我们建议你使用 Microsoft 365 管理中心快速开始。 [Microsoft 搜索概述](overview-microsoft-search.md)。
     
 ## <a name="create-qas"></a>创建问答
 

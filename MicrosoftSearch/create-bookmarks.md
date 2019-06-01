@@ -13,16 +13,20 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 40a556e1-61c2-4bd3-b80e-5ad62af77454
+ROBOTS: NoIndex
 description: 创建书签或使用浏览器扩展将其添加到 Microsoft 搜索工作结果
-ms.openlocfilehash: 71e5ae48bb8812e5222a4d6075292f3b85bed441
-ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
+ms.openlocfilehash: 6f6efd10b360547bb0cde47f35510433bf6f90cc
+ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/01/2019
-ms.locfileid: "33508728"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "34590708"
 ---
 # <a name="create-bookmarks"></a>创建书签
 
+> [!IMPORTANT]
+> 本文适用于 Microsoft 必应搜索管理门户。 我们正在将该门户迁移至 Microsoft 365 管理中心，并且会在迁移后将其删除。 我们建议你使用 Microsoft 365 管理中心快速开始。 [Microsoft 搜索概述](overview-microsoft-search.md)。
+    
 书签可帮助用户快速找到重要资源、网站和工具。每个书签都包括一个标题、一个 URL 和一组触发它的关键字。
   
 ## <a name="create-a-bookmark"></a>创建书签

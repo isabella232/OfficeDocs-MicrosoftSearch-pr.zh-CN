@@ -13,16 +13,20 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 41723aec-435c-400e-a818-6b1e8a1324c0
+ROBOTS: NoIndex
 description: 将权限和角色分配给 Microsoft 搜索管理员和编辑器
-ms.openlocfilehash: 7fa32c008fcbc1bb436f4e90ff0621ed87df8fc6
-ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
+ms.openlocfilehash: e29de1b38c0014d282168b4771f8400b2deb6ee3
+ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/01/2019
-ms.locfileid: "33508479"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "34591374"
 ---
 # <a name="manage-users"></a>管理用户
 
+> [!IMPORTANT]
+> 本文适用于 Microsoft 必应搜索管理门户。 我们正在将该门户迁移至 Microsoft 365 管理中心，并且会在迁移后将其删除。 我们建议你使用 Microsoft 365 管理中心快速开始。 [Microsoft 搜索概述](overview-microsoft-search.md)。
+    
 编辑器可以添加内容，但不能更改设置
   
 ## <a name="add-admins-and-editors"></a>添加管理员和编辑人员

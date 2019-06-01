@@ -13,17 +13,21 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: cd3ee09d-58ab-4b8a-8822-fa11a1399672
+ROBOTS: NoIndex
 description: 获取有关企业搜索和 Microsoft 搜索的常见问题解答
-ms.openlocfilehash: ed4179262dc20a441ce5e3acadc895bacb271fa9
-ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
+ms.openlocfilehash: 58fb45eec5cc354a6228fb552a3dcda28c2b2367
+ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/01/2019
-ms.locfileid: "33508695"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "34591500"
 ---
 # <a name="faqs"></a>常见问题
 
 这些是组织和用户关于管理和使用 Microsoft 搜索的常见问题。
+
+> [!IMPORTANT]
+> 本文适用于 Microsoft 必应搜索管理门户。 我们正在将该门户迁移至 Microsoft 365 管理中心，并且会在迁移后将其删除。 我们建议你使用 Microsoft 365 管理中心快速开始。 [Microsoft 搜索概述](overview-microsoft-search.md)。
   
 ## <a name="whats-the-value-proposition-for-microsoft-search"></a>Microsoft 搜索的价值主张是什么？
 

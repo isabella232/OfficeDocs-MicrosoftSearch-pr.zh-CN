@@ -13,16 +13,20 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 4a824483-2407-4bbd-8f7f-5ebb47817c7e
+ROBOTS: NoIndex
 description: 用于创建和导入结果、自动登录以及从任意位置搜索的 Microsoft 搜索工具概述
-ms.openlocfilehash: cae2612979673e086820fec78e4c1e085e38a749
-ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
+ms.openlocfilehash: 16beaf5ae2945df19b32b65ae4e65b4989217f9f
+ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/01/2019
-ms.locfileid: "33508719"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "34591347"
 ---
 # <a name="admin-portal-tools"></a>管理门户工具
 
+> [!IMPORTANT]
+> 本文适用于 Microsoft 必应搜索管理门户。 我们正在将该门户迁移至 Microsoft 365 管理中心，并且会在迁移后将其删除。 我们建议你使用 Microsoft 365 管理中心快速开始。 [Microsoft 搜索概述](overview-microsoft-search.md)。
+    
 Microsoft 搜索管理门户包含专为管理员、编辑人员和用户设计的工具和资源，包括：
   
 - 内容创建者浏览器扩展

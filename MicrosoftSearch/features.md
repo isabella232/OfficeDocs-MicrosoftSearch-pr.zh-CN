@@ -13,15 +13,19 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 5861e462-faed-4c3d-824d-ed3aafd80714
+ROBOTS: NoIndex
 description: Microsoft 搜索（面向管理员和最终用户）的主要功能包括书签、问题解答和管理及数据见解
-ms.openlocfilehash: 983a882fd42ae6f76a4b3db4f0f87dd8fbe7974d
-ms.sourcegitcommit: a5fd9d4f46bbb7c539630735ac16e0c786939e5d
+ms.openlocfilehash: a0c9dc773ce7e11c446437cbcbcdc56014a4fe5e
+ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/01/2019
-ms.locfileid: "33508591"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "34591482"
 ---
 # <a name="features-of-microsoft-search"></a>Microsoft 搜索功能
+
+> [!IMPORTANT]
+> 本文适用于 Microsoft 必应搜索管理门户。 我们正在将该门户迁移至 Microsoft 365 管理中心，并且会在迁移后将其删除。 我们建议你使用 Microsoft 365 管理中心快速开始。 [Microsoft 搜索概述](overview-microsoft-search.md)。
 
 ## <a name="key-admin-features-include"></a>关键管理员功能包括：
 

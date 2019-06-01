@@ -13,18 +13,19 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 7bada218-8908-4956-aae3-6ffaeef384ca
+ROBOTS: NoIndex
 description: 使用 Microsoft 搜索管理门户中的导入工具，快速添加常见问题的答案
-ms.openlocfilehash: f535cb7ae843def536976cb1f05c8601de592cbb
-ms.sourcegitcommit: 3e91a6e70b48a0100adfed1b62ba79f2fd1735d2
+ms.openlocfilehash: 7368014f3bc2f21a788625f0bf826af963366e1b
+ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2019
-ms.locfileid: "33968299"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "34591365"
 ---
 # <a name="bulk-create-qas"></a>批量创建问答
 
 > [!IMPORTANT]
-> Microsoft 365 管理中心现提供有 Microsoft 必应搜索设置。 从在管理中心[分配搜索管理员](https://docs.microsoft.com/zh-CN/microsoftsearch/setup-microsoft-search#step-2-assign-search-admin-and-search-editor)开始入手。
+> 本文适用于 Microsoft 必应搜索管理门户。 我们正在将该门户迁移至 Microsoft 365 管理中心，并且会在迁移后将其删除。 我们建议你使用 Microsoft 365 管理中心快速开始。 [Microsoft 搜索概述](overview-microsoft-search.md)。
     
 下载和使用 .csv 模板批量创建或批量编辑问答。 使用该模板也可轻松批量保存需要进一步编辑或更新的草稿问答。 若要批量编辑现有问答，请将它们从管理门户导出，完成必要的编辑，然后再导入它们。
   

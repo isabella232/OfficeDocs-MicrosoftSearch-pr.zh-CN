@@ -13,18 +13,19 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: def300e7-103c-4e92-a062-28ffa27561d7
+ROBOTS: NoIndex
 description: 使用 Microsoft 搜索管理门户的导入工具一次性创建大量书签
-ms.openlocfilehash: 560cda6f94060d428f2d18cc61bd2430cb31b474
-ms.sourcegitcommit: 3e91a6e70b48a0100adfed1b62ba79f2fd1735d2
+ms.openlocfilehash: 1b3922215534391c65547a4ece22310261626036
+ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2019
-ms.locfileid: "33968345"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "34591419"
 ---
 # <a name="bulk-create-bookmarks"></a>批量创建书签
 
 > [!IMPORTANT]
-> Microsoft 365 管理中心现提供有 Microsoft 必应搜索设置。 从在管理中心[分配搜索管理员](https://docs.microsoft.com/zh-CN/microsoftsearch/setup-microsoft-search#step-2-assign-search-admin-and-search-editor)开始入手。
+> 本文适用于 Microsoft 必应搜索管理门户。 我们正在将该门户迁移至 Microsoft 365 管理中心，并且会在迁移后将其删除。 我们建议你使用 Microsoft 365 管理中心快速开始。 [Microsoft 搜索概述](overview-microsoft-search.md)。
     
 下载和使用 .csv 模板，批量创建、编辑并保存书签。 若要批量编辑现有书签，请从管理门户将其导出，完成必要的编辑，然后再将其导入。
   
