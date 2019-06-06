@@ -15,17 +15,14 @@ search.appverid:
 ms.assetid: 9e8c9323-4ff9-42dd-8052-2bc9e0d6d0e7
 ROBOTS: NOINDEX
 description: 了解有关方法和过程, 帮助您成功将 Microsoft 搜索部署到您的组织
-ms.openlocfilehash: 967c5876fe1a559041ec88d5d038d5739fd77280
-ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
+ms.openlocfilehash: 8fd7003426ad10e105ef427db5688b2a459d4f01
+ms.sourcegitcommit: fe7f3dae4edba97071a4d127e8a27bdf4fa00d81
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "34590834"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "34727903"
 ---
 # <a name="user-adoption-guide"></a>用户采用指南
-
-> [!IMPORTANT]
-> 本文适用于 Bing 管理门户中的 Microsoft 搜索。 我们正在将门户移动到 Microsoft 365 管理中心, 然后将其删除。 建议使用 Microsoft 365 管理中心开始。 [Microsoft Search 概述](overview-microsoft-search.md)。
 
 此信息适用于 Microsoft 搜索管理员、更改管理领导者和业务所有者。
   
@@ -88,9 +85,9 @@ ms.locfileid: "34590834"
   
 管理员直接影响最终用户的搜索体验, 并确定 Microsoft 搜索对组织的外观。 这包括选择要向用户显示的结果类型。 通过打开或关闭文档、网站、人员、组或对话的结果来对此进行控制。
   
-有关详细信息, 请参阅[设置 Microsoft Search](set-up-microsoft-search.md)。
+有关详细信息, 请参阅[设置 Microsoft Search](setup-microsoft-search.md)。
   
-编辑者是帮助管理其专业领域中的书签和 Q&As 的主题专家。 编辑器应创建用于解决您之前标识的用户方案的内容。
+编辑者是一种主题专家, 可帮助管理书签和 Q 在其专业领域中&。 编辑器应创建用于解决您之前标识的用户方案的内容。
   
 有关详细信息, 请参阅[规划内容](plan-your-content.md)。
   
@@ -196,7 +193,4 @@ Microsoft Search 用户必须使用工作或学校帐户登录 Bing。 若要尽
     
 3. 执行调查、关注团队和反馈会话, 以了解用户对 Microsoft 搜索、提高采用和确定改进方面的看法
     
-教育和反馈是一个反复的过程。 在用户采用 Microsoft Search 时, 可能需要对内容和通信进行更改。 
-
-  
-
+教育和反馈是一个反复的过程。 在用户采用 Microsoft Search 时, 可能需要对内容和通信进行更改。
