@@ -15,18 +15,16 @@ search.appverid:
 ms.assetid: ee40010e-5d7f-4ba8-a3f8-d240dab3af6d
 ROBOTS: NOINDEX
 description: 了解如何使用 Microsoft 搜索将必应设置为公司的默认搜索引擎。
-ms.openlocfilehash: 77a8ea884f4df26fc8f7661fb9a9b8791b2f0f18
-ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
+ms.openlocfilehash: 36e8a50a7b6acda553b82d4b95a57a378818f7ec
+ms.sourcegitcommit: fe7f3dae4edba97071a4d127e8a27bdf4fa00d81
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "34591113"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "34727984"
 ---
 # <a name="set-default-search-engine"></a>设置默认搜索引擎
 
-> [!IMPORTANT]
-> 本文适用于 Microsoft 必应搜索管理门户。 我们正在将该门户迁移至 Microsoft 365 管理中心，并且会在迁移后将其删除。 我们建议你使用 Microsoft 365 管理中心快速开始。 [Microsoft 搜索概述](overview-microsoft-search.md)。
-    
+  
 配置默认浏览器、默认搜索引擎和默认主页将帮助用户发现 Microsoft 搜索功能、鼓励更多用户使用，并提供更流畅的体验。
   
 若要为组织设置默认搜索引擎，请按照下面步骤操作。

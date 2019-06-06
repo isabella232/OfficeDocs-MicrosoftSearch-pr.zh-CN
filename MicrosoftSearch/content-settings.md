@@ -15,18 +15,16 @@ search.appverid:
 ms.assetid: d1432d64-7a97-4b1b-a99f-11291814d361
 ROBOTS: NoIndex
 description: 在 Microsoft 搜索工作结果中添加徽标、公司名称和更多内容
-ms.openlocfilehash: d3989422c4bd38236241984c1f9beb67d12a0847
-ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
+ms.openlocfilehash: 0ae26acd0e0114b83c022e0a0b4ad082d495cd1c
+ms.sourcegitcommit: fe7f3dae4edba97071a4d127e8a27bdf4fa00d81
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "34591239"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "34727975"
 ---
 # <a name="content-settings"></a>内容设置
 
-> [!IMPORTANT]
-> 本文适用于 Microsoft 必应搜索管理门户。 我们正在将该门户迁移至 Microsoft 365 管理中心，并且会在迁移后将其删除。 我们建议你使用 Microsoft 365 管理中心快速开始。 [Microsoft 搜索概述](overview-microsoft-search.md)。
-    
+ 
 使用 Microsoft 搜索，可以确保来自组织内容源（如 SharePoint、OneDrive for Business 或公司 Intranet）的结果具有熟悉的外观。 
   
 - 组织名称

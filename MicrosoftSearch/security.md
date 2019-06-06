@@ -15,20 +15,18 @@ search.appverid:
 ms.assetid: 50461cb9-8707-46c1-935a-1b9608a98800
 ROBOTS: NOINDEX
 description: 在使用 Microsoft 搜索向授权用户提供信息的同时保护企业数据和用户
-ms.openlocfilehash: c8444c5c265e109d379fdfffbb033c703040a74c
-ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
+ms.openlocfilehash: 4e5e23e5e1389c95d28ede66e06707f9856a3770
+ms.sourcegitcommit: fe7f3dae4edba97071a4d127e8a27bdf4fa00d81
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "34591194"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "34727934"
 ---
 # <a name="security-for-microsoft-search"></a>Microsoft 搜索安全性
 
 使用企业级安全性，Microsoft 搜索可以始终保护用户和数据。
 
-> [!IMPORTANT]
-> 本文适用于 Microsoft 必应搜索管理门户。 我们正在将该门户迁移至 Microsoft 365 管理中心，并且会在迁移后将其删除。 我们建议你使用 Microsoft 365 管理中心快速开始。 [Microsoft 搜索概述](overview-microsoft-search.md)。
-  
+
 ## <a name="secure-by-default"></a>默认处于保护状态
 
 Microsoft 搜索始终确保通过 HTTPS 发出请求。这一安全措施确保连接是端到端加密的，以增强安全性。

@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 首次设置 Microsoft 搜索。
-ms.openlocfilehash: 3b872370dc2058c56637b836f8f78b7ed8e6680e
-ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
+ms.openlocfilehash: 5b686d34375453fd98bdb0915ee49016e71da20d
+ms.sourcegitcommit: fe7f3dae4edba97071a4d127e8a27bdf4fa00d81
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "34591050"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "34728002"
 ---
 # <a name="set-up-microsoft-search"></a>设置 Microsoft 搜索
 
@@ -38,13 +38,13 @@ ms.locfileid: "34591050"
 
 作为管理员，你应该考虑一些可使 **Microsoft Search** 体验在组织内实现高效且用户友好的因素。
 
-### <a name="step-1-check-access-level-of-your-users"></a>步骤 1：检查用户的访问级别
+## <a name="step-1-check-access-level-of-your-users"></a>步骤 1：检查用户的访问级别
 
 **Microsoft 搜索**尊重内容源的安全设置。 用户在搜索结果中看到的内容取决于他们的权限和访问级别。 查看组织内的用户访问级别，以确保用户仅查找允许他们访问的内容。
 
 详细了解[计划权限](https://docs.microsoft.com/zh-CN/sharepoint/plan-your-permissions-strategy)和[创建权限级别](https://docs.microsoft.com/zh-CN/sharepoint/how-to-create-and-edit-permission-levels)。
 
-### <a name="step-2-assign-search-admin-and-search-editor"></a>步骤 2：分配搜索管理员和搜索编辑人员
+## <a name="step-2-assign-search-admin-and-search-editor"></a>步骤 2：分配搜索管理员和搜索编辑人员
 
 **Microsoft 管理中心**有两个新角色 - 搜索管理员和搜索编辑人员。  拥有完整特权的全局管理员为用户分配管理员角色，包括搜索管理员角色。 搜索管理员可以将搜索管理员或搜索编辑人员角色委派给其他用户。 有关不同管理角色的详细信息，请参阅[关于 Office 365 管理员角色](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles?view=o365-worldwide)。
 
@@ -58,7 +58,7 @@ ms.locfileid: "34591050"
 
 有关分配管理员角色的信息，请参阅[在 Office 365 商业版中分配管理角色](https://docs.microsoft.com/zh-CN/office365/admin/add-users/assign-admin-roles?view=o365-worldwide)。
 
-### <a name="step-3-make-content-easy-to-find"></a>步骤 3：使内容易于查找 
+## <a name="step-3-make-content-easy-to-find"></a>步骤 3：使内容易于查找 
 
 **Microsoft 搜索**为管理员提供了可用于为其用户构建强大搜索体验的工具。 在 **Microsoft 搜索**中，管理员可以创建三种不同的搜索内容，以获得更好的搜索体验并提高内容的可查找性：
 - **书签：** 书签类似于 SharePoint 中的升级结果，有助于将用户查询的尽可能最佳结果提升到搜索结果的顶部，并使用户能够轻松查找重要的内部网站。 
@@ -74,7 +74,7 @@ ms.locfileid: "34591050"
 
 有关创建和管理搜索内容的信息，请参阅[轻使内容易于查找](make-content-easy-to-find.md)。
 
-### <a name="step-4-test-single-sign-on"></a>步骤 4：测试单一登录
+## <a name="step-4-test-single-sign-on"></a>步骤 4：测试单一登录
 **Microsoft 搜索**使用 Azure Active Directory (AAD) 对组织的数据进行身份验证和授权访问。  这意味着当你登录 Office 365 应用或 Windows 10 时，用户将自动使用你的工作或学校帐户登录。
 
 我们建议 **Microsoft 搜索**用户使用单一登录，因为它会减少提示用户登录的次数。 管理员应该用一小组用户来测试单一登录，以帮助排查任何导致配置受阻的问题。 
@@ -83,14 +83,14 @@ ms.locfileid: "34591050"
 
 若要下载并安装适用于 Chrome 的 Windows 10 和 AAD 登录扩展，请转到 [Chrome 网上应用商店](https://go.microsoft.com/fwlink/?linkid=2090961)。
 
-### <a name="step-5-training-and-communication"></a>步骤 5：培训和沟通
+## <a name="step-5-training-and-communication"></a>步骤 5：培训和沟通
 建立员工可以轻松访问的自助服务资源。 这将有助于减轻你和团队的总体负担，以便不断推动沟通、协助展开自我培训和教育员工。 为用户提供沟通、常见问题、视频以及录制的培训或网络研讨会。 以下是一些有用的链接：
 - [了解在 Office 中需要 Microsoft 搜索做什么](https://support.office.com/article/find-what-you-need-with-microsoft-search-in-office-2457d4d8-48a8-4ad4-ab89-5a0657aa8446?ui=en-US&rs=en-US&ad=US)
 - [Office 365 培训中心](https://support.office.com/office-training-center)
 - 
   [Microsoft 搜索中心](https://support.office.com/zh-CN/article/-working-title-microsoft-search-center-b8bf5a2c-7515-40a9-9a6a-b8ed382c86bc?ui=en-US&rs=en-US&ad=US)
 
-### <a name="trying-out-microsoft-search-in-bing"></a>在必应中尝试 **Microsoft 搜索** 
+## <a name="trying-out-microsoft-search-in-bing"></a>在必应中尝试 **Microsoft 搜索** 
 **Microsoft 搜索**管理员可以在必应中关闭 **Microsoft 搜索**。 如果关闭，用户将无法在必应搜索中看到组织内容。 默认情况下，已在必应中打开 **Microsoft 搜索**。 我们建议你在必应中打开 **Microsoft 搜索**以获得更好的用户体验。 
 
 如果你想在测试租户上试用 **Microsoft 搜索**，或者你希望在将搜索体验提供给所有用户之前测试搜索体验，则可以关闭 **Microsoft 搜索**。
