@@ -14,14 +14,14 @@ search.appverid:
 ms.assetid: b453e6f0-10cf-4384-9914-241f425cd5f9
 ROBOTS: NOINDEX
 description: 大致了解使用 Microsoft 搜索时可以找到的所有信息
-ms.openlocfilehash: bc8d53610d125aba57b2c2c8a8c6d1077e2f012a
-ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
+ms.openlocfilehash: a6bda23da00ac302287787b1c48a3e578f0bb335
+ms.sourcegitcommit: fe7f3dae4edba97071a4d127e8a27bdf4fa00d81
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "34590978"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "34727931"
 ---
-# <a name="about-microsoft-search"></a>关于 Microsoft 搜索
+# <a name="using-microsoft-search"></a>使用 Microsoft 搜索
 
 Microsoft 搜索轻松地将搜索工作和 Web 结合在一起。使用 Microsoft 搜索，可以以一种简单、快速、强大和更安全的方式在任何浏览器和任何设备上在正确的时间获得正确的信息。
   
