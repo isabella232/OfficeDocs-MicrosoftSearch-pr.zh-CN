@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 简要了解 Microsoft 搜索是什么、它的优点以及哪些应用目前拥有 Microsoft 搜索。
-ms.openlocfilehash: 7fc58204b17fbe8274655756bd8e041c921a063e
-ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
+ms.openlocfilehash: c60ece3778db4696437d8ed0c5cefd0bfaa39142
+ms.sourcegitcommit: 9345523f0143f613c702cd3dcc084b5f7bd6a0b5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "34591303"
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "34767187"
 ---
 # <a name="overview-of-microsoft-search"></a>Microsoft 搜索概述
 
@@ -26,7 +26,7 @@ Microsoft 搜索是 Microsoft 365 高效应用和更广泛的 Microsoft 生态�
 
 Microsoft 搜索可帮助用户找到正确的答案、人员和内容，以便在他们所使用的应用中完成其任务。
 
-- 用户可获得与其搜索的应用的**上下文**相关的结果。 例如，在 Outlook 中搜索时，他们可找到电子邮件，而不是 SharePoint 中的网站。 在 SharePoint 中搜索时，他们可找到网站、页面和文件，而不是电子邮件。
+- 用户可获得与其搜索的应用的**上下文**相关的结果。 例如，在 Outlook 中搜索时，他们可找到电子邮件，而不是 SharePoint 中的网站。 在 SharePoint 中搜索时，他们可找到网站、页面和文件。
 - 无论用户使用哪种应用，Microsoft 搜索都提供**个人**结果。  Microsoft 搜索使用 Microsoft Graph 中的见解来显示与每个用户相关的结果。 每个用户可能会看到不同的结果，即使他们搜索相同的字词。 他们只能看到其有权访问的结果，Microsoft 搜索不会更改权限。
 - 用户无需记住信息所在的位置。 例如，用户正在使用 Word，并希望重复使用某位同事通过 OneDrive 共享的演示文稿中的信息。 无需切换到 OneDrive 并搜索该演示文稿，他们只需从 Word 搜索即可。  
 - 在必应中，除了公共网页结果之外，用户还可以从组织内部获得结果。
@@ -58,12 +58,11 @@ Microsoft 搜索可帮助用户找到正确的答案、人员和内容，以便�
 
 **Microsoft 搜索的演进** – 用户可以搜索的内容类型集和搜索框的智能水平将随着时间的推移而增长。
 
-**跨所有应用进行管理** - 默认情况下，Microsoft 搜索处于启用状态，你所做的任何管理都将应用于所有应用中的 Microsoft 搜索。
+**跨所有应用进行管理** - 默认情况下，Microsoft 搜索处于**启用状态**，你所做的任何管理都将应用于所有应用中的 Microsoft 搜索。
 
 ## <a name="apps-that-currently-have-microsoft-search"></a>目前拥有 Microsoft 搜索的应用
 
-
-随着时间的推移，将在越来越多的 Microsoft 365 应用中提供 Microsoft 搜索。 以下 Office 365 应用目前提供 Microsoft 搜索：
+ 以下 Office 365 应用目前提供 Microsoft 搜索：
 
 - SharePoint Online
 - OneDrive for Business
@@ -105,7 +104,7 @@ Microsoft 搜索可帮助用户找到正确的答案、人员和内容，以便�
 
 ## <a name="what-content-is-searched"></a>搜索哪些内容？
 
-Microsoft 搜索可搜索存储在 SharePoint Online、OneDrive for Business 和 Exchange 中的内容，包括来自全局地址列表和 Office 365 组的人员。 如果你的组织已使用云混合搜索设置了混合 SharePoint 环境，则 Microsoft 搜索的用户还可以从本地 SharePoint 内容获取结果，包括已连接到 SharePoint Server 环境的任何外部内容。 [详细了解混合搜索环境](https://docs.microsoft.com/sharepoint/hybrid/learn-about-cloud-hybrid-search-for-sharepoint)。
+Microsoft 搜索可搜索存储在 SharePoint Online、OneDrive for Business 和 Exchange 中的内容，包括来自全局地址列表和 Office 365 组的人员。 如果你的组织已使用云混合搜索设置了混合 SharePoint 环境，则 Microsoft 搜索将同时返回来自在线和本地 SharePoint 内容（包括已连接到 SharePoint Server 环境的任何外部内容）的搜索结果。 [详细了解混合搜索环境](https://docs.microsoft.com/sharepoint/hybrid/learn-about-cloud-hybrid-search-for-sharepoint)。
 
 当用户从 SharePoint 起始页或 Office.com 进行搜索时，Microsoft 搜索会搜索组织内的所有内容，并显示其找到的所有结果。 这称为**全局搜索范围**。
 
