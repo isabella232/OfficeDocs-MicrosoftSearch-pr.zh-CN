@@ -3,17 +3,6 @@
 
 
 
-## <a name="week-of-april-29-2019"></a>2019年4月29日一周
-
-
-| 发布日期 |主题标题 | 更改 |
-|------|------------|--------|
-| 2019/4/30 | [Microsoft 搜索](/MicrosoftSearch/microsoft-search) | 修改内容 |
-| 2019/4/30 | [用户采用指南](/MicrosoftSearch/user-adoption-guide) | 修改内容 |
-| 5/1/2019 | [Microsoft 搜索](/MicrosoftSearch/microsoft-search) | 修改内容 |
-| 5/1/2019 | [Microsoft 搜索概述](/MicrosoftSearch/overview-microsoft-search) | 修改内容 |
-
-
 ## <a name="week-of-may-06-2019"></a>2019年5月6日的某一周
 
 
@@ -123,3 +112,23 @@
 | 5/30/2019 | [为何我已自动登录？](/MicrosoftSearch/use/why-am-i-automatically-signed-in) | 修改内容 |
 | 5/30/2019 | [用户采用指南](/MicrosoftSearch/user-adoption-guide) | 修改内容 |
 | 5/30/2019 | [Microsoft 搜索的原因](/MicrosoftSearch/why-microsoft-search) | 修改内容 |
+
+
+## <a name="week-of-june-03-2019"></a>2019年6月3日一周
+
+
+| 发布日期 |主题标题 | 更改 |
+|------|------------|--------|
+| 6/5/2019 | [将搜索框添加到 Intranet 站点](/MicrosoftSearch/add-a-search-box-to-your-intranet-site) | 修改内容 |
+| 6/5/2019 | [高级 DNS 配置](/MicrosoftSearch/advanced-dns-configuration) | 修改内容 |
+| 6/5/2019 | [内容设置](/MicrosoftSearch/content-settings) | 修改内容 |
+| 6/5/2019 | [集成 PowerApps](/MicrosoftSearch/integrate-powerapps) | 修改内容 |
+| 6/5/2019 | [Microsoft 搜索安全性](/MicrosoftSearch/security) | 修改内容 |
+| 6/5/2019 | [设置默认浏览器](/MicrosoftSearch/set-default-browser) | 修改内容 |
+| 6/5/2019 | [设置默认主页](/MicrosoftSearch/set-default-homepage) | 修改内容 |
+| 6/5/2019 | [设置默认搜索引擎](/MicrosoftSearch/set-default-search-engine) | 修改内容 |
+| 6/5/2019 | [设置**Microsoft Search**](/MicrosoftSearch/setup-microsoft-search) | 修改内容 |
+| 6/5/2019 | [关于 Microsoft 搜索](/MicrosoftSearch/use/about-microsoft-search) | 修改内容 |
+| 6/5/2019 | [用户采用指南](/MicrosoftSearch/user-adoption-guide) | 修改内容 |
+| 6/7/2019 | [开始在 SharePoint Online 中使用 Microsoft 搜索](/MicrosoftSearch/get-started-search-in-sharepoint-online) | 修改内容 |
+| 6/7/2019 | [Microsoft 搜索概述](/MicrosoftSearch/overview-microsoft-search) | 修改内容 |
