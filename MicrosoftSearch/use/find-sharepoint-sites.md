@@ -14,26 +14,23 @@ search.appverid:
 ms.assetid: 3388bdc7-1ee0-497e-b110-fba4a082eb08
 ROBOTS: NOINDEX
 description: 使用 Microsoft Search 查找 SharePoint 网站以及你将看到的详细信息
-ms.openlocfilehash: 821391635b9cb304f46fde8cabadfa29510631bb
-ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
+ms.openlocfilehash: f88422d1df54b9750d91b584c026c35ff0e67736
+ms.sourcegitcommit: a7ca4c38d37fbdec58e002e42d865188939d0483
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "34590915"
+ms.lasthandoff: 06/15/2019
+ms.locfileid: "35003125"
 ---
-# <a name="find-sharepoint-sites"></a><span data-ttu-id="9bb56-103">查找 SharePoint 网站</span><span class="sxs-lookup"><span data-stu-id="9bb56-103">Find SharePoint sites</span></span>
+# <a name="find-sharepoint-sites"></a><span data-ttu-id="16ffc-103">查找 SharePoint 网站</span><span class="sxs-lookup"><span data-stu-id="16ffc-103">Find SharePoint sites</span></span>
 
-<span data-ttu-id="9bb56-104">搜索您拥有的或查找您有权访问的组或同事创建的 SharePoint 网站。</span><span class="sxs-lookup"><span data-stu-id="9bb56-104">Search for SharePoint sites you own or look for ones created by groups or co-workers that you have access to.</span></span> <span data-ttu-id="9bb56-105">您将在 Bing (而不是网站中的单个页面) 上看到网站结果。</span><span class="sxs-lookup"><span data-stu-id="9bb56-105">You'll see site results on Bing, but not individual pages within a site.</span></span> <span data-ttu-id="9bb56-106">SharePoint 网站结果包括网站名称和位置。</span><span class="sxs-lookup"><span data-stu-id="9bb56-106">SharePoint site results include the site name and location.</span></span>
+<span data-ttu-id="16ffc-104">搜索您拥有的或查找您有权访问的组或同事创建的 SharePoint 网站。</span><span class="sxs-lookup"><span data-stu-id="16ffc-104">Search for SharePoint sites you own or look for ones created by groups or co-workers that you have access to.</span></span> <span data-ttu-id="16ffc-105">您将在 Bing (而不是网站中的单个页面) 上看到网站结果。</span><span class="sxs-lookup"><span data-stu-id="16ffc-105">You'll see site results on Bing, but not individual pages within a site.</span></span> <span data-ttu-id="16ffc-106">SharePoint 网站结果包括网站名称和位置。</span><span class="sxs-lookup"><span data-stu-id="16ffc-106">SharePoint site results include the site name and location.</span></span>
   
-1. <span data-ttu-id="9bb56-107">在 Bing 登录你的工作或学校帐户</span><span class="sxs-lookup"><span data-stu-id="9bb56-107">Sign in to your work or school account on Bing</span></span>
+1. <span data-ttu-id="16ffc-107">在 Bing 登录你的工作或学校帐户</span><span class="sxs-lookup"><span data-stu-id="16ffc-107">Sign in to your work or school account on Bing</span></span>
     
-2. <span data-ttu-id="9bb56-108">搜索网站名称或主题</span><span class="sxs-lookup"><span data-stu-id="9bb56-108">Search for a site name or topic</span></span>
+2. <span data-ttu-id="16ffc-108">搜索网站名称或主题</span><span class="sxs-lookup"><span data-stu-id="16ffc-108">Search for a site name or topic</span></span>
     
-3. <span data-ttu-id="9bb56-109">网站结果显示在结果页的顶部</span><span class="sxs-lookup"><span data-stu-id="9bb56-109">Site result appears at the top of the results page</span></span>
+3. <span data-ttu-id="16ffc-109">网站结果显示在结果页的顶部</span><span class="sxs-lookup"><span data-stu-id="16ffc-109">Site result appears at the top of the results page</span></span>
     
-    <span data-ttu-id="9bb56-110">若要仅查看网站结果, 请单击 "**网站**" 选项卡。</span><span class="sxs-lookup"><span data-stu-id="9bb56-110">To only see site results, click the **Sites** tab.</span></span> 
+    <span data-ttu-id="16ffc-110">若要仅查看网站结果, 请单击 "**网站**" 选项卡。</span><span class="sxs-lookup"><span data-stu-id="16ffc-110">To only see site results, click the **Sites** tab.</span></span> 
     
-<span data-ttu-id="9bb56-111">Web 结果将显示在您的工作结果下。</span><span class="sxs-lookup"><span data-stu-id="9bb56-111">Web results appear under your work results.</span></span> <span data-ttu-id="9bb56-112">它们并不特定于您的组织。</span><span class="sxs-lookup"><span data-stu-id="9bb56-112">They aren't specific to your organization.</span></span>
-
-  
-
+<span data-ttu-id="16ffc-111">Web 结果将显示在您的工作结果下。</span><span class="sxs-lookup"><span data-stu-id="16ffc-111">Web results appear under your work results.</span></span> <span data-ttu-id="16ffc-112">它们并不特定于您的组织。</span><span class="sxs-lookup"><span data-stu-id="16ffc-112">They aren't specific to your organization.</span></span>
