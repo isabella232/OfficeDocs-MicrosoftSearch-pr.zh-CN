@@ -14,12 +14,12 @@ search.appverid:
 ms.assetid: 3388bdc7-1ee0-497e-b110-fba4a082eb08
 ROBOTS: NOINDEX
 description: 使用 Microsoft Search 查找 SharePoint 网站以及你将看到的详细信息
-ms.openlocfilehash: 821391635b9cb304f46fde8cabadfa29510631bb
-ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
+ms.openlocfilehash: f88422d1df54b9750d91b584c026c35ff0e67736
+ms.sourcegitcommit: a7ca4c38d37fbdec58e002e42d865188939d0483
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "34590915"
+ms.lasthandoff: 06/15/2019
+ms.locfileid: "35003125"
 ---
 # <a name="find-sharepoint-sites"></a>查找 SharePoint 网站
 
@@ -34,6 +34,3 @@ ms.locfileid: "34590915"
     若要仅查看网站结果, 请单击 "**网站**" 选项卡。 
     
 Web 结果将显示在您的工作结果下。 它们并不特定于您的组织。
-
-  
-
