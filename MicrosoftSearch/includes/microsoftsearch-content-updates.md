@@ -3,15 +3,6 @@
 
 
 
-## <a name="week-of-may-06-2019"></a>2019年5月6日的某一周
-
-
-| 发布日期 |主题标题 | 更改 |
-|------|------------|--------|
-| 5/9/2019 | [Microsoft 搜索](/MicrosoftSearch/index) | 修改内容 |
-| 5/9/2019 | [设置**Microsoft Search**](/MicrosoftSearch/setup-microsoft-search) | 修改内容 |
-
-
 ## <a name="week-of-may-13-2019"></a>5月13日 (2019) 的一周
 
 
@@ -132,3 +123,17 @@
 | 6/5/2019 | [用户采用指南](/MicrosoftSearch/user-adoption-guide) | 修改内容 |
 | 6/7/2019 | [开始在 SharePoint Online 中使用 Microsoft 搜索](/MicrosoftSearch/get-started-search-in-sharepoint-online) | 修改内容 |
 | 6/7/2019 | [Microsoft 搜索概述](/MicrosoftSearch/overview-microsoft-search) | 修改内容 |
+
+
+## <a name="week-of-june-10-2019"></a>2019年6月10日一周
+
+
+| 发布日期 |主题标题 | 更改 |
+|------|------------|--------|
+| 6/10/2019 | [导入 SharePoint 升级的结果和主要查询](/MicrosoftSearch/import-sharepoint-promoted-results-and-top-queries) | 修改内容 |
+| 6/14/2019 | [规划内容](/MicrosoftSearch/plan-your-content) | 修改内容 |
+| 6/14/2019 | [设置**Microsoft Search**](/MicrosoftSearch/setup-microsoft-search) | 修改内容 |
+| 6/14/2019 | [集成 PowerApps](/MicrosoftSearch/integrate-powerapps) | 修改内容 |
+| 6/14/2019 | [Microsoft 搜索概述](/MicrosoftSearch/overview-microsoft-search) | 修改内容 |
+| 6/14/2019 | [查找 SharePoint 网站](/MicrosoftSearch/use/find-sharepoint-sites) | 修改内容 |
+| 6/14/2019 | [Microsoft 搜索安全性](/MicrosoftSearch/security) | 修改内容 |
