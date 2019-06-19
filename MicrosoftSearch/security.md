@@ -15,12 +15,12 @@ search.appverid:
 ms.assetid: 50461cb9-8707-46c1-935a-1b9608a98800
 ROBOTS: NOINDEX
 description: 在使用 Microsoft 搜索向授权用户提供信息的同时保护企业数据和用户
-ms.openlocfilehash: 4e5e23e5e1389c95d28ede66e06707f9856a3770
-ms.sourcegitcommit: fe7f3dae4edba97071a4d127e8a27bdf4fa00d81
+ms.openlocfilehash: 72f45097ebdc97a03d6016d4cac9a19327c68f30
+ms.sourcegitcommit: a7ca4c38d37fbdec58e002e42d865188939d0483
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "34727934"
+ms.lasthandoff: 06/15/2019
+ms.locfileid: "35003107"
 ---
 # <a name="security-for-microsoft-search"></a>Microsoft 搜索安全性
 
@@ -59,26 +59,15 @@ Microsoft 搜索的身份验证绑定到 Azure Active Directory。当 Microsoft 
   
 - 日志记录
     
-  - 与 Microsoft 搜索流量相关的所有搜索日志都被取消标识，并与公共、非 Microsoft 搜索流量分开存储。它们将保留 18 个月，并且访问权限仅限于调试目的。
-    
-  - 这些日志中的查询不用于对公共 Web 的自动建议或相关搜索等公共功能进行建模或训练。
-    
+  - 已取消标识所有与 Microsoft 搜索流量相关的搜索日志。这些日志将保留 18 个月。
+  - 存储在这些系统日志中的查询将仅用于在满足一组限制和频率阈值时对公共功能（如针对公共网络结果的自动建议或相关搜索）进行建模和培训，这使我们相信这些查询是常见的，而不是特定于某个组织。 相应查询必须在非 Microsoft 搜索用户的共同相关数据中出现过很多次，并且该查询不能仅触发企业搜索结果。 不满足这些要求的查询将与公共的非 Microsoft 搜索流量分开存储。
   - 受限访问通过各种安全机制进行管理，包括工程系统中的安全组和其他层。
-    
-- 搜索历史记录
-    
-  - 当用户使用工作或学校帐户登录时，用户的搜索历史记录将无法在其他计算机或设备上使用。
     
 - 广告
     
   - 企业搜索查询从不与广告商共享或推荐给广告商。
-    
-  - 与 Microsoft 搜索相关的搜索广告日志与公共流量是分开存储的。
-    
   - 广告永远不会以基于工作身份或组织的用户为目标。
     
 ## <a name="gdpr"></a>GDPR
 
 Microsoft [ 2018 年 5 月 21 日，博客文章](https://blogs.microsoft.com/on-the-issues/2018/05/21/microsofts-commitment-to-gdpr-privacy-and-putting-customers-in-control-of-their-own-data/)反映了我们对遵守 GDPR 的承诺，以及 Microsoft 如何帮助企业和组织履行自己的 GDPR 合规义务。可以在 Microsoft [信任中心常见问题](https://www.microsoft.com/en-us/trustcenter/privacy/gdpr/gdpr-faqs)中找到更多详细信息。在 Online Services 中对组织客户的客户数据进行操作的 Microsoft 搜索查询也将满足第 28 条中列出的处理者承诺，如[信任中心常见问题](https://www.microsoft.com/en-us/trustcenter/privacy/gdpr/gdpr-faqs)所述。对于从 Microsoft 搜索到公共必应的查询，Microsoft 是一个数据控制器，它已实施一些措施来取消识别 GDPR 下列出的查询。
-
-

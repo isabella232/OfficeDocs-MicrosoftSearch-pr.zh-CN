@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 简要了解 Microsoft 搜索是什么、它的优点以及哪些应用目前拥有 Microsoft 搜索。
-ms.openlocfilehash: c60ece3778db4696437d8ed0c5cefd0bfaa39142
-ms.sourcegitcommit: 9345523f0143f613c702cd3dcc084b5f7bd6a0b5
+ms.openlocfilehash: d16066c941bb5c3619d7fd50e9cf33952216fb87
+ms.sourcegitcommit: a7ca4c38d37fbdec58e002e42d865188939d0483
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/07/2019
-ms.locfileid: "34767187"
+ms.lasthandoff: 06/15/2019
+ms.locfileid: "35003134"
 ---
 # <a name="overview-of-microsoft-search"></a>Microsoft 搜索概述
 
@@ -147,12 +147,11 @@ SharePoint 中的 Microsoft 搜索是 SharePoint Online 中的新式搜索体验
 
 无论用户查询在返回的响应中是包含一个还是多个工作相关结果，都要采取以下措施：
 
-**日志记录** - 所有与 Microsoft 搜索流量有关的搜索日志都会被取消标识并与公共的非 Microsoft 搜索流量分开存储。 这些内容会保留 18 个月，且访问将仅限于调试目的。 这些日志中的查询不用于对公共 Web 的自动建议或相关搜索等公共功能进行建模或训练。 受限访问通过各种安全机制进行管理，包括工程系统中的安全组和其他层。
+**日志记录** - 已取消标识所有与 Microsoft 搜索流量相关的搜索日志，这些日志将保留 18 个月。 存储在这些系统日志中的查询将仅用于在满足一组限制和频率阈值时对公共功能（如针对公共网络结果的自动建议或相关搜索）进行建模和培训，这使我们相信这些查询是常见的，而不是特定于某个组织。 相应查询必须在非 Microsoft 搜索用户的共同相关数据中出现过很多次，并且该查询不能仅触发企业搜索结果。 不满足这些要求的查询将与公共的非 Microsoft 搜索流量分开存储。 受限访问通过各种安全机制进行管理，包括工程系统中的安全组和其他层。
 
 **搜索历史记录** - 当用户使用工作或学校帐户登录时，用户的搜索历史记录将无法在其他计算机或设备上使用。
 
 **广告** - 企业搜索查询从不与广告商共享或推荐给广告商。
-与 Microsoft 搜索相关的搜索广告日志与公共流量是分开存储的。
 广告永远不会以基于工作身份或组织的用户为目标。
 
 ## <a name="see-also"></a>另请参阅

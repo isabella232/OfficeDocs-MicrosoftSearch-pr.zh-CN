@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 ms.assetid: bb9d90b6-6c86-4b19-9235-3bd9b19826ab
 description: 使用 Microsoft 搜索时，无需额外资源便可提供高质量内容
-ms.openlocfilehash: 88c2af543be02f8e17937e36a81fd28d862e8fb0
-ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
+ms.openlocfilehash: 90774f8606f5582338c12b4f123153b6f3f4de74
+ms.sourcegitcommit: 9df9b1a5f83c9fbe62900df183bee239a8ea6d91
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "34591203"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34947749"
 ---
 # <a name="plan-your-content"></a>规划内容
 
@@ -91,7 +91,7 @@ ms.locfileid: "34591203"
 
 为内容创建做出贡献的用户和 SME 可以帮助测试和验证搜索结果。
 
-## <a name="step-5-review-and-update-periodically"></a>步骤 5：定期查看并更新
+## <a name="step-5-use-insights-to-review-and-update-periodically"></a>步骤 5：使用见解定期进行查看和更新
 务必确保书签和问答等权威信息是最新的。 定期：
 - 修复或删除损坏或无效的 URL。
 - 删除不再相关的书签或问答。

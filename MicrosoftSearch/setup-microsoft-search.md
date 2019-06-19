@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 首次设置 Microsoft 搜索。
-ms.openlocfilehash: 5b686d34375453fd98bdb0915ee49016e71da20d
-ms.sourcegitcommit: fe7f3dae4edba97071a4d127e8a27bdf4fa00d81
+ms.openlocfilehash: c95cc0d11d60e3d4d9a509dc691c01858ede7262
+ms.sourcegitcommit: 9df9b1a5f83c9fbe62900df183bee239a8ea6d91
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "34728002"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34947740"
 ---
 # <a name="set-up-microsoft-search"></a>设置 Microsoft 搜索
 
@@ -34,7 +34,7 @@ ms.locfileid: "34728002"
 
  
 
-**注意：** 如果在“**Microsoft 365 管理中心**”的“**设置**”下看到“**Microsoft 搜索**”，请打开管理中心右上角的“**请尝试预览**”开关。 
+**注意：** 如果没有在 **Microsoft 365 管理中心**的“**设置**”下看到 **Microsoft 搜索**，请打开管理中心右上角的“**试用预览版**”开关。 
 
 作为管理员，你应该考虑一些可使 **Microsoft Search** 体验在组织内实现高效且用户友好的因素。
 
