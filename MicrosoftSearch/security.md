@@ -15,12 +15,12 @@ search.appverid:
 ms.assetid: 50461cb9-8707-46c1-935a-1b9608a98800
 ROBOTS: NOINDEX
 description: 在使用 Microsoft 搜索向授权用户提供信息的同时保护企业数据和用户
-ms.openlocfilehash: 72f45097ebdc97a03d6016d4cac9a19327c68f30
-ms.sourcegitcommit: a7ca4c38d37fbdec58e002e42d865188939d0483
+ms.openlocfilehash: b079a693f7289977c9f7545ec049828f76939ee0
+ms.sourcegitcommit: 6f4756d2887c66030c5e7b81fb936d673bb594a8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/15/2019
-ms.locfileid: "35003107"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "35009092"
 ---
 # <a name="security-for-microsoft-search"></a>Microsoft 搜索安全性
 
@@ -33,7 +33,7 @@ Microsoft 搜索始终确保通过 HTTPS 发出请求。这一安全措施确保
   
 ## <a name="authentication-and-authorization-with-azure-active-directory"></a>Azure Active Directory 身份验证和授权
 
-Microsoft 搜索的身份验证绑定到 Azure Active Directory。当 Microsoft 搜索用户访问必应时，必应标题将显示 Microsoft 帐户以及工作或学校帐户的登录选项。如果必应无法确定用户是否是符合条件的参与者，用户可以转到[了解 Microsoft 搜索](https://www.bing.com/business/explore)页，在那里他们将被自动重定向到组织的登录页。 
+Microsoft 搜索的身份验证绑定到 Azure Active Directory。当 Microsoft 搜索用户访问必应时，必应标题将显示 Microsoft 帐户以及工作或学校帐户的登录选项。如果必应无法确定用户是否是符合条件的参与者，用户可以转到[了解 Microsoft 搜索](https://www.bing.com/business/explore)页，在那里他们将被自动重定向到组织的登录页。
   
 用户只能通过工作或学校帐户访问 Microsoft 搜索。他们需要使用与用于访问 SharePoint 或 Outlook 等 Office 365 服务相同的凭据登录。Microsoft 个人帐户不能用于登录 Microsoft 搜索。
   
@@ -57,14 +57,14 @@ Microsoft 搜索的身份验证绑定到 Azure Active Directory。当 Microsoft 
   
 无论用户查询在返回的响应中是包含一个还是多个工作结果，都要采取以下措施：
   
-- 日志记录
-    
+- 日志记录 
   - 已取消标识所有与 Microsoft 搜索流量相关的搜索日志。这些日志将保留 18 个月。
   - 存储在这些系统日志中的查询将仅用于在满足一组限制和频率阈值时对公共功能（如针对公共网络结果的自动建议或相关搜索）进行建模和培训，这使我们相信这些查询是常见的，而不是特定于某个组织。 相应查询必须在非 Microsoft 搜索用户的共同相关数据中出现过很多次，并且该查询不能仅触发企业搜索结果。 不满足这些要求的查询将与公共的非 Microsoft 搜索流量分开存储。
   - 受限访问通过各种安全机制进行管理，包括工程系统中的安全组和其他层。
-    
-- 广告
-    
+- 搜索历史记录    
+  - 当用户使用工作或学校帐户登录时，用户的搜索历史记录将无法在其他计算机或设备上使用。
+ 
+- 广告   
   - 企业搜索查询从不与广告商共享或推荐给广告商。
   - 广告永远不会以基于工作身份或组织的用户为目标。
     
