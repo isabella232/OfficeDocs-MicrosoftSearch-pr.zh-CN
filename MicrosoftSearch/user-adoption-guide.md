@@ -15,12 +15,12 @@ search.appverid:
 ms.assetid: 9e8c9323-4ff9-42dd-8052-2bc9e0d6d0e7
 ROBOTS: NOINDEX
 description: 了解有关方法和过程, 帮助您成功将 Microsoft 搜索部署到您的组织
-ms.openlocfilehash: 8fd7003426ad10e105ef427db5688b2a459d4f01
-ms.sourcegitcommit: fe7f3dae4edba97071a4d127e8a27bdf4fa00d81
+ms.openlocfilehash: 2b4dafa4168dfd4c3bbb78ba40e860186ff3d9e3
+ms.sourcegitcommit: f9760d027637cc0d2e5c3a9e47928422cb6e452a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "34727903"
+ms.lasthandoff: 08/03/2019
+ms.locfileid: "36170308"
 ---
 # <a name="user-adoption-guide"></a>用户采用指南
 
@@ -79,11 +79,11 @@ ms.locfileid: "34727903"
     
 ## <a name="stage-3-readiness"></a>第3阶段: 准备情况
 
-为 Microsoft Search 部署做准备的投资时间将导致您的组织产生积极影响。 
+为 Microsoft Search 部署做准备的投资时间将导致您的组织产生积极影响。 Microsoft 提供了<a href="https://aka.ms/MicrosoftSearch/Adoption">采用工具包</a>, 其中包含规划指南、可自定义的电子邮件通知、调查模板、执行演示等。 还有<a href="https://resources.techcommunity.microsoft.com/microsoft-search/#adoption">Microsoft 搜索资源中心</a>, IT 实施者可以在其中找到其他培训和采用资源, 旨在帮助 Microsoft 搜索首次部署成功。
   
  **产品和内容准备情况**
   
-管理员直接影响最终用户的搜索体验, 并确定 Microsoft 搜索对组织的外观。 这包括选择要向用户显示的结果类型。 通过打开或关闭文档、网站、人员、组或对话的结果来对此进行控制。
+管理员直接影响最终用户的搜索体验, 并确定 Microsoft 搜索对组织的外观。 这包括选择要向用户显示的结果类型。 这些结果可能包含链接 (也称为书签) 到文档、网站、人员、组、位置、对话和其他工作区资源。
   
 有关详细信息, 请参阅[设置 Microsoft Search](setup-microsoft-search.md)。
   
