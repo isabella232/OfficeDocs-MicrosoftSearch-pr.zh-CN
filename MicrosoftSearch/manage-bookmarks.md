@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 ms.assetid: c0c814d0-f7e4-444e-b18e-09beb45c9322
 description: 创建和更新书签以及批量编辑 Microsoft 搜索的书签结果的方式
-ms.openlocfilehash: fb1be0bc137891a54e370fef1e4b5628963c5ad9
-ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
+ms.openlocfilehash: 0cd37ebcd7cd3ea7bbe55064fd41a3c42b2e4725
+ms.sourcegitcommit: f9760d027637cc0d2e5c3a9e47928422cb6e452a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "34591617"
+ms.lasthandoff: 08/03/2019
+ms.locfileid: "36170317"
 ---
 # <a name="manage-bookmarks"></a>管理书签
 
@@ -29,7 +29,7 @@ ms.locfileid: "34591617"
 
 ## <a name="add-or-edit-a-single-bookmark"></a>添加或编辑单个书签
 1. 转到 **Microsoft 365 管理中心**。
-1. 在导航窗格中，转到“**设置**”，然后选择**** Microsoft 搜索****。
+1. 在导航窗格中，转到**设置**，然后选择**Microsoft 搜索**。
 默认情况下，“**书签**”选项卡处于选中状态。
 1. 若要添加书签，请选择“**新增**”。 若要编辑书签，请从相关书签列表中选择书签。 
 1. 在你添加或编辑信息时，预览将随之自动更新。
