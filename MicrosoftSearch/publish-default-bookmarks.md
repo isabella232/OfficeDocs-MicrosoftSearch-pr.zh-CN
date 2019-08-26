@@ -13,19 +13,20 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: d49a0b97-e4ca-47cf-ad52-6113787b8402
+ROBOTS: NOINDEX
 description: Microsoft 搜索管理门户中提供的默认书签
-ms.openlocfilehash: 03cc7030498558fd23375297504b0a33012e9b7d
-ms.sourcegitcommit: 3e91a6e70b48a0100adfed1b62ba79f2fd1735d2
+ms.openlocfilehash: 06d4ee1eccacc288982d3824c5c0aab7bcfdbe55
+ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2019
-ms.locfileid: "33968350"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "34591185"
 ---
 # <a name="publish-default-bookmarks"></a>发布默认书签
 
 > [!IMPORTANT]
-> Microsoft 365 管理中心现提供有 Microsoft 必应搜索设置。 从在管理中心[分配搜索管理员](https://docs.microsoft.com/zh-CN/microsoftsearch/setup-microsoft-search#step-2-assign-search-admin-and-search-editor)开始入手。
-    
+> 本文适用于 Microsoft 必应搜索管理门户。 我们正在将该门户迁移至 Microsoft 365 管理中心，并且会在迁移后将其删除。 我们建议你使用 Microsoft 365 管理中心快速开始。 [Microsoft 搜索概述](overview-microsoft-search.md)。
+
 若要快速查看书签在必应上的显示方式，请发布提供的默认内容。 将其作为参考，了解如何命名书签和创建合适的关键字。
   
 建议查看两组默认书签：

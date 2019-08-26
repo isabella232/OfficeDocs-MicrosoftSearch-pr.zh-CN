@@ -13,18 +13,19 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: c37cf1b1-5915-4eb1-9f78-72c48cad3b4b
+ROBOTS: NoIndex
 description: 添加位置，以便组织的办公室、大楼和其他工作区显示在 Microsoft 搜索工作结果中
-ms.openlocfilehash: 37cc56a733bb6395325ab4baf7885084d956938b
-ms.sourcegitcommit: 3e91a6e70b48a0100adfed1b62ba79f2fd1735d2
+ms.openlocfilehash: be55112453289a3cb10736750ecdf1c706fe5458
+ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2019
-ms.locfileid: "33968177"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "34591338"
 ---
 # <a name="add-a-location"></a>添加位置
 
 > [!IMPORTANT]
-> Microsoft 365 管理中心现提供有 Microsoft 必应搜索设置。 从在管理中心[分配搜索管理员](https://docs.microsoft.com/zh-CN/microsoftsearch/setup-microsoft-search#step-2-assign-search-admin-and-search-editor)开始入手。
+> 本文适用于 Microsoft 必应搜索管理门户。 我们正在将该门户迁移至 Microsoft 365 管理中心，并且会在迁移后将其删除。 我们建议你使用 Microsoft 365 管理中心快速开始。 [Microsoft 搜索概述](overview-microsoft-search.md)。
     
 添加一个位置，当你的用户进行搜索时，他们将在地图上看到某个建筑、办公室或者地点的地址以及其所在位置。 他们可以使用必应地图来辨别方向以及查看附近的情况等等。
   
