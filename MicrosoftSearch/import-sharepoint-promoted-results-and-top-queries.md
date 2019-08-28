@@ -15,17 +15,17 @@ search.appverid:
 ms.assetid: 3d2a1498-174e-4214-9cf1-8b58cce5a872
 ROBOTS: NOINDEX
 description: 使用 SharePoint 中的搜索查询创建 Microsoft Search 的工作结果
-ms.openlocfilehash: 59d133aceb15c8f1fa75ecc3f35522def4201d0a
-ms.sourcegitcommit: 9a9d24b4b7a6f3e80b89086d29fd369ebded0619
+ms.openlocfilehash: ebfd10f8705ce5b9a36b9c13d549e28a3f1c6b91
+ms.sourcegitcommit: c2c9e66af1038efd2849d578f846680851f9e5d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "34810643"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36639799"
 ---
 # <a name="import-sharepoint-promoted-results-and-top-queries"></a>导入 SharePoint 推荐结果和热门查询
 
 > [!IMPORTANT]
-> 本文适用于 Bing 管理门户中的 Microsoft 搜索。 我们正在将门户移动到 Microsoft 365 管理中心, 然后将其删除。 建议使用 Microsoft 365 管理中心开始。 [Microsoft Search 概述](overview-microsoft-search.md)。
+> 本文适用于 Bing 管理门户中的 Microsoft 搜索。 我们正在将门户移动到 Microsoft 365 管理中心, 然后将删除 Bing 门户中的 Microsoft 搜索。 建议使用 Microsoft 365 管理中心开始。 [Microsoft Search 概述](overview-microsoft-search.md)。
     
 为了利用用户在 SharePoint 中创建的查询和最佳匹配, Microsoft Search 包含两个工具, 可将此信息作为建议的书签导入: 
   

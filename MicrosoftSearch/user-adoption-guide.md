@@ -15,12 +15,12 @@ search.appverid:
 ms.assetid: 9e8c9323-4ff9-42dd-8052-2bc9e0d6d0e7
 ROBOTS: NOINDEX
 description: 了解有关方法和过程, 帮助您成功将 Microsoft 搜索部署到您的组织
-ms.openlocfilehash: 2b4dafa4168dfd4c3bbb78ba40e860186ff3d9e3
-ms.sourcegitcommit: f9760d027637cc0d2e5c3a9e47928422cb6e452a
+ms.openlocfilehash: 3bca460fe4d764fd1fee1eac16faa467c66cd4b9
+ms.sourcegitcommit: c2c9e66af1038efd2849d578f846680851f9e5d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2019
-ms.locfileid: "36170308"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36639880"
 ---
 # <a name="user-adoption-guide"></a>用户采用指南
 
@@ -79,7 +79,7 @@ ms.locfileid: "36170308"
     
 ## <a name="stage-3-readiness"></a>第3阶段: 准备情况
 
-为 Microsoft Search 部署做准备的投资时间将导致您的组织产生积极影响。 Microsoft 提供了<a href="https://aka.ms/MicrosoftSearch/Adoption">采用工具包</a>, 其中包含规划指南、可自定义的电子邮件通知、调查模板、执行演示等。 还有<a href="https://resources.techcommunity.microsoft.com/microsoft-search/#adoption">Microsoft 搜索资源中心</a>, IT 实施者可以在其中找到其他培训和采用资源, 旨在帮助 Microsoft 搜索首次部署成功。
+为 Microsoft Search 部署做准备的投资时间将导致您的组织产生积极影响。 Microsoft 提供了<a href="https://resources.techcommunity.microsoft.com/microsoft-search-in-bing-adoption-kit/">采用工具包</a>, 其中包含规划指南、可自定义的电子邮件通知、调查模板、执行演示等。 还有<a href="https://resources.techcommunity.microsoft.com/microsoft-search/#adoption">Microsoft 搜索资源中心</a>, IT 实施者可以在其中找到其他培训和采用资源, 旨在帮助 Microsoft 搜索首次部署成功。
   
  **产品和内容准备情况**
   
