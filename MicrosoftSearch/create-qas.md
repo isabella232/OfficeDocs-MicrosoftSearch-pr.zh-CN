@@ -15,17 +15,17 @@ search.appverid:
 ms.assetid: d432b9d9-3792-47a0-9a13-30a1a83caabc
 ROBOTS: NoIndex
 description: 为 Microsoft 搜索工作结果创建常见问题解答的方法
-ms.openlocfilehash: 9b4d63490c95ec9d5468abbae281c9cc84ab25ca
-ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
+ms.openlocfilehash: 78bbd6aa64c9bc2e1890e33beee645b0a9c61ef3
+ms.sourcegitcommit: c2c9e66af1038efd2849d578f846680851f9e5d2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "34591491"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36639781"
 ---
 # <a name="create-qas"></a>创建问答
 
 > [!IMPORTANT]
-> 本文适用于 Microsoft 必应搜索管理门户。 我们正在将该门户迁移至 Microsoft 365 管理中心，并且会在迁移后将其删除。 我们建议你使用 Microsoft 365 管理中心快速开始。 [Microsoft 搜索概述](overview-microsoft-search.md)。
+> 本文适用于必应中的 Microsoft 搜索管理门户。 我们正在将该门户迁移至 Microsoft 365 管理中心，并且会在迁移后将必应中的 Microsoft 搜索门户删除。 我们建议你使用 Microsoft 365 管理中心快速开始。 [Microsoft 搜索概述](overview-microsoft-search.md)。
 
 问答向用户提供包含可选链接的答案或信息。理想情况下，问答包括用户查找的所有详细信息，这样他们就不需要访问源。可以对问答内容进行格式设置，包括图像、列表和表格。
   

@@ -15,17 +15,17 @@ search.appverid:
 ms.assetid: bc3d1d2a-a4d9-4a02-9d7d-deb492e79cd0
 ROBOTS: NOINDEX
 description: 了解轻松启用和使用 Microsoft 搜索所需的四个步骤。
-ms.openlocfilehash: fe6e01c866ca99357ce8bdd5e9cb1b6cee1a2333
-ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
+ms.openlocfilehash: 170f798273dae51f447d32f98f458d0154ea9c86
+ms.sourcegitcommit: c2c9e66af1038efd2849d578f846680851f9e5d2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "34591536"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36639754"
 ---
 # <a name="quick-set-up-for-microsoft-search"></a>快速设置 Microsoft 搜索
 
 > [!IMPORTANT]
-> 本文适用于 Microsoft 必应搜索管理门户。 我们正在将该门户迁移至 Microsoft 365 管理中心，并且会在迁移后将其删除。 我们建议你使用 Microsoft 365 管理中心快速开始。 [Microsoft 搜索概述](overview-microsoft-search.md)。
+> 本文适用于必应中的 Microsoft 搜索管理门户。 我们正在将该门户迁移至 Microsoft 365 管理中心，并且会在迁移后将必应中的 Microsoft 搜索门户删除。 我们建议你使用 Microsoft 365 管理中心快速开始。 [Microsoft 搜索概述](overview-microsoft-search.md)。
     
 通过在组织中充分发挥 Web 的作用和提高工作效率来节省时间。
   
