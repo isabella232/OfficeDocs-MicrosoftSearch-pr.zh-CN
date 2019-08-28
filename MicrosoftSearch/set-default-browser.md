@@ -1,8 +1,8 @@
 ---
 title: 设置默认浏览器
-ms.author: dawholl
-author: dawholl
-manager: kellis
+ms.author: anfowler
+author: adefowler
+manager: shohara
 ms.date: 12/20/2018
 ms.audience: Admin
 ms.topic: article
@@ -14,70 +14,55 @@ search.appverid:
 - MOE150
 ms.assetid: 53e2b71a-348b-4dfe-a504-6e97d573effe
 ROBOTS: NOINDEX
-description: 了解如何使用 Microsoft 搜索为公司配置默认浏览器。
-ms.openlocfilehash: 08c61bf6dd68f8044f3f79a0b22829a8f7f6b8ef
-ms.sourcegitcommit: fe7f3dae4edba97071a4d127e8a27bdf4fa00d81
+description: 对于 Microsoft 搜索用户，将默认浏览器设置为 Microsoft Edge 或 Internet Explorer。
+ms.openlocfilehash: ed145a1811aba0b58158ed04dd3bf8dc089a0682
+ms.sourcegitcommit: c2c9e66af1038efd2849d578f846680851f9e5d2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "34727840"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36639736"
 ---
-# <a name="set-default-browser"></a>设置默认浏览器
+# <a name="make-microsoft-edge-the-default-browser"></a>将 Microsoft Edge 设为默认浏览器
+  
+为了向用户提供最佳的 Microsoft 搜索体验，可将 Microsoft Edge 设为默认浏览器。 这仅对组织内部用户将 Microsoft Edge 设为默认浏览器，单独的用户仍可选择其他浏览器。
+  
+  
+## <a name="windows-8-and-later"></a>Windows 8 及更高版本
 
+这些说明介绍了如何针对运行 Windows 8 或更高版本的计算机将 Microsoft Edge 或 Internet Explorer 设为默认浏览器。 用户将能够在设置此策略后更改浏览器。
   
-配置默认浏览器、默认搜索引擎和默认主页将帮助用户发现 Microsoft 搜索功能、鼓励更多用户使用，并提供更流畅的体验。
-  
-若要为组织设置默认浏览器，请按照下面步骤操作。
-  
-## <a name="windows-8-and-above"></a>Windows 8 及更高版本
-
-要将 Internet Explorer 或 Microsoft Edge 设置为默认浏览器，请按以下步骤操作：
-  
-### <a name="create-default-associations-file"></a>创建默认关联文件
+### <a name="step-1-create-the-default-associations-file"></a>第 1 步：添加默认关联文件
+在域控制器的 SYSVOL 文件夹中创建默认关联文件。
 
 1. 打开 PowerShell 管理控制台。
+1. `New-Item -Path "\\$env:USERDOMAIN\SYSVOL\$env:USERDNSDOMAIN" -Type Directory -Name "Settings"`
+1. `$SettingsPath="\\$env:USERDOMAIN\SYSVOL\$env:USERDNSDOMAIN\Settings"`
+1. `Start-Process Dism.exe -PassThru "/Online /Export-DefaultAppAssociations:$SettingsPath\AppAssoc.xml"`
     
-2.  `New-Item -Path "\\$env:USERDOMAIN\SYSVOL\$env:USERDNSDOMAIN" -Type Directory -Name "Settings"`
-    
-3.  `$SettingsPath="\\$env:USERDOMAIN\SYSVOL\$env:USERDNSDOMAIN\Settings"`
-    
-4.  `Start-Process Dism.exe -PassThru "/Online /Export-DefaultAppAssociations:$SettingsPath\AppAssoc.xml"`
-    
-这些步骤尝试在域控制器的 SYSVOL 文件夹中创建默认关联文件。
   
-### <a name="add-or-edit-the-default-associations-file"></a>添加或编辑默认关联文件
+### <a name="step-2-add-or-edit-the-default-associations-file"></a>第 2 步： 添加或编辑默认关联文件
 
 1. `Notepad "$SettingsPath\AppAssoc.xml"`
-    
-2. 编辑以下条目（.htm、.html、http、https），如果不需要，则删除其他条目。
-    
+1. 编辑以下条目（.htm、.html、http、https），如果不需要，则删除其他条目。
   - **Microsoft Edge**
-    
-     `<Association Identifier=".htm" ProgId="AppX4hxtad77fbk3jkkeerkrm0ze94wjf3s9" ApplicationName="Microsoft Edge" />`
-  
-     `<Association Identifier=".html" ProgId="AppX4hxtad77fbk3jkkeerkrm0ze94wjf3s9" ApplicationName="Microsoft Edge" />`
-  
-     `<Association Identifier="http" ProgId="AppXq0fevzme2pys62n3e0fbqa7peapykr8v" ApplicationName="Microsoft Edge" />`
+    - `<Association Identifier=".htm" ProgId="AppX4hxtad77fbk3jkkeerkrm0ze94wjf3s9" ApplicationName="Microsoft Edge" />`
+              
+    - `<Association Identifier=".html" ProgId="AppX4hxtad77fbk3jkkeerkrm0ze94wjf3s9" ApplicationName="Microsoft Edge" />`
+    - `<Association Identifier="http" ProgId="AppXq0fevzme2pys62n3e0fbqa7peapykr8v" ApplicationName="Microsoft Edge" />`
     
   - **Internet Explorer**
     
-     `<Association Identifier=".htm" ProgId="htmlfile" ApplicationName="Internet Explorer" />`
-  
-     `<Association Identifier=".html" ProgId="htmlfile" ApplicationName="Internet Explorer" />`
-  
-     `<Association Identifier="http" ProgId="IE.HTTP" ApplicationName="Internet Explorer" />`
-  
-     `<Association Identifier="https" ProgId="IE.HTTPS" ApplicationName="Internet Explorer" />`
-    
-3. 打开组策略管理控制台 (gpmc.msc) 并切换到编辑任何现有策略或新建一个策略。
-    
-1. 导航到**计算机配置\管理模板\Windows 组件\文件资源管理器**
-    
-2. 双击“设置默认关联配置文件”****，将其设置为“已启用”****，并输入访问 AppAssoc.xml 的路径（例如 %USERDOMAIN%\SYSVOL\%USERDNSDOMAIN%\Settings\AppAssoc.xml）
-    
-4. 通过将生成的 GPO 链接到适当的域来强制执行。
-    
-用户将能够在设置此策略后更改浏览器。
+    - `<Association Identifier=".htm" ProgId="htmlfile" ApplicationName="Internet Explorer" />`        
+    - `<Association Identifier=".html" ProgId="htmlfile" ApplicationName="Internet Explorer" />`
+    - `<Association Identifier="http" ProgId="IE.HTTP" ApplicationName="Internet Explorer" />`
+    - `<Association Identifier="https" ProgId="IE.HTTPS" ApplicationName="Internet Explorer" />`
+
+### <a name="step-3-edit-the-group-policy"></a>第 3 步： 编辑组策略
+
+1. 打开**组策略管理控制台** (gpmc.msc)，并切换到编辑任何现有策略或新建一个策略。
+1. 导航到**计算机配置\管理模板\Windows 组件\文件资源管理器**。
+1. 双击“**设置默认关联配置文件**”，将其设置为“**已启用**”，并输入访问 AppAssoc.xml 的路径（例如 %USERDOMAIN%\SYSVOL\%USERDNSDOMAIN%\Settings\AppAssoc.xml）。通过将生成的 GPO 链接到适当的域来强制执行它。
+
   
 ## <a name="windows-7"></a>Windows 7
 
@@ -101,6 +86,5 @@ ms.locfileid: "34727840"
     
     ![在编辑字符串中选择 HTTPS 的 ProgId](media/3519e13b-4fe7-4d15-946c-82fd50fc49bb.png)
   
-3. 通过将生成的 GPO 链接到适当的域来强制执行。
+3. 通过将生成的 GPO 链接到适当的域来强制执行此系列设置。
     
-用户将能够在设置此策略后更改浏览器。
