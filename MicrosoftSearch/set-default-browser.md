@@ -1,8 +1,8 @@
 ---
 title: 设置默认浏览器
-ms.author: dawholl
-author: dawholl
-manager: kellis
+ms.author: anfowler
+author: adefowler
+manager: shohara
 ms.date: 12/20/2018
 ms.audience: Admin
 ms.topic: article
@@ -14,93 +14,77 @@ search.appverid:
 - MOE150
 ms.assetid: 53e2b71a-348b-4dfe-a504-6e97d573effe
 ROBOTS: NOINDEX
-description: 了解如何使用 Microsoft 搜索为公司配置默认浏览器。
-ms.openlocfilehash: 08c61bf6dd68f8044f3f79a0b22829a8f7f6b8ef
-ms.sourcegitcommit: fe7f3dae4edba97071a4d127e8a27bdf4fa00d81
+description: 对于 Microsoft 搜索用户，将默认浏览器设置为 Microsoft Edge 或 Internet Explorer。
+ms.openlocfilehash: ed145a1811aba0b58158ed04dd3bf8dc089a0682
+ms.sourcegitcommit: c2c9e66af1038efd2849d578f846680851f9e5d2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "34727840"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36639736"
 ---
-# <a name="set-default-browser"></a><span data-ttu-id="3f5b3-103">设置默认浏览器</span><span class="sxs-lookup"><span data-stu-id="3f5b3-103">Set default browser</span></span>
+# <a name="make-microsoft-edge-the-default-browser"></a><span data-ttu-id="fc67a-103">将 Microsoft Edge 设为默认浏览器</span><span class="sxs-lookup"><span data-stu-id="fc67a-103">Make Microsoft Edge the default browser</span></span>
+  
+<span data-ttu-id="fc67a-104">为了向用户提供最佳的 Microsoft 搜索体验，可将 Microsoft Edge 设为默认浏览器。</span><span class="sxs-lookup"><span data-stu-id="fc67a-104">To give your users the best experience with Microsoft Search, you can make Microsoft Edge the default browser.</span></span> <span data-ttu-id="fc67a-105">这仅对组织内部用户将 Microsoft Edge 设为默认浏览器，单独的用户仍可选择其他浏览器。</span><span class="sxs-lookup"><span data-stu-id="fc67a-105">This will only set Microsoft Edge as the default browser for users in your org, individual users can still select a different browser.</span></span>
+  
+  
+## <a name="windows-8-and-later"></a><span data-ttu-id="fc67a-106">Windows 8 及更高版本</span><span class="sxs-lookup"><span data-stu-id="fc67a-106">Windows 8 and above</span></span>
 
+<span data-ttu-id="fc67a-107">这些说明介绍了如何针对运行 Windows 8 或更高版本的计算机将 Microsoft Edge 或 Internet Explorer 设为默认浏览器。</span><span class="sxs-lookup"><span data-stu-id="fc67a-107">These instructions show you how to make Microsoft Edge or Internet Explorer as the default browser for computers running Windows 8 or later.</span></span> <span data-ttu-id="fc67a-108">用户将能够在设置此策略后更改浏览器。</span><span class="sxs-lookup"><span data-stu-id="fc67a-108">Users will be able to change the browser after this policy is set.</span></span>
   
-<span data-ttu-id="3f5b3-104">配置默认浏览器、默认搜索引擎和默认主页将帮助用户发现 Microsoft 搜索功能、鼓励更多用户使用，并提供更流畅的体验。</span><span class="sxs-lookup"><span data-stu-id="3f5b3-104">Configuring the default browser, default search engine, and default homepage will help your users discover Microsoft Search capabilities, encourage more usage, and provide a smoother experience.</span></span>
-  
-<span data-ttu-id="3f5b3-105">若要为组织设置默认浏览器，请按照下面步骤操作。</span><span class="sxs-lookup"><span data-stu-id="3f5b3-105">To set the default browser for your organization, follow the steps below.</span></span>
-  
-## <a name="windows-8-and-above"></a><span data-ttu-id="3f5b3-106">Windows 8 及更高版本</span><span class="sxs-lookup"><span data-stu-id="3f5b3-106">Windows 8 and above</span></span>
+### <a name="step-1-create-the-default-associations-file"></a><span data-ttu-id="fc67a-109">第 1 步：添加默认关联文件</span><span class="sxs-lookup"><span data-stu-id="fc67a-109">STEP 1: Create the default associations file</span></span>
+<span data-ttu-id="fc67a-110">在域控制器的 SYSVOL 文件夹中创建默认关联文件。</span><span class="sxs-lookup"><span data-stu-id="fc67a-110">These steps try and create the default associations file in the SYSVOL folder of the domain controller.</span></span>
 
-<span data-ttu-id="3f5b3-107">要将 Internet Explorer 或 Microsoft Edge 设置为默认浏览器，请按以下步骤操作：</span><span class="sxs-lookup"><span data-stu-id="3f5b3-107">To set Internet Explorer or Microsoft Edge as the default browser, follow these steps:</span></span>
+1. <span data-ttu-id="fc67a-111">打开 PowerShell 管理控制台。</span><span class="sxs-lookup"><span data-stu-id="fc67a-111">Open an administrative PowerShell console.</span></span>
+1. `New-Item -Path "\\$env:USERDOMAIN\SYSVOL\$env:USERDNSDOMAIN" -Type Directory -Name "Settings"`
+1. `$SettingsPath="\\$env:USERDOMAIN\SYSVOL\$env:USERDNSDOMAIN\Settings"`
+1. `Start-Process Dism.exe -PassThru "/Online /Export-DefaultAppAssociations:$SettingsPath\AppAssoc.xml"`
+    
   
-### <a name="create-default-associations-file"></a><span data-ttu-id="3f5b3-108">创建默认关联文件</span><span class="sxs-lookup"><span data-stu-id="3f5b3-108">Create default associations file</span></span>
-
-1. <span data-ttu-id="3f5b3-109">打开 PowerShell 管理控制台。</span><span class="sxs-lookup"><span data-stu-id="3f5b3-109">Open an administrative PowerShell console.</span></span>
-    
-2.  `New-Item -Path "\\$env:USERDOMAIN\SYSVOL\$env:USERDNSDOMAIN" -Type Directory -Name "Settings"`
-    
-3.  `$SettingsPath="\\$env:USERDOMAIN\SYSVOL\$env:USERDNSDOMAIN\Settings"`
-    
-4.  `Start-Process Dism.exe -PassThru "/Online /Export-DefaultAppAssociations:$SettingsPath\AppAssoc.xml"`
-    
-<span data-ttu-id="3f5b3-110">这些步骤尝试在域控制器的 SYSVOL 文件夹中创建默认关联文件。</span><span class="sxs-lookup"><span data-stu-id="3f5b3-110">These steps try and create the default associations file in the SYSVOL folder of the domain controller.</span></span>
-  
-### <a name="add-or-edit-the-default-associations-file"></a><span data-ttu-id="3f5b3-111">添加或编辑默认关联文件</span><span class="sxs-lookup"><span data-stu-id="3f5b3-111">Add or edit the default associations file</span></span>
+### <a name="step-2-add-or-edit-the-default-associations-file"></a><span data-ttu-id="fc67a-112">第 2 步：</span><span class="sxs-lookup"><span data-stu-id="fc67a-112">Step 2</span></span> <span data-ttu-id="fc67a-113">添加或编辑默认关联文件</span><span class="sxs-lookup"><span data-stu-id="fc67a-113">Add or edit the default associations file</span></span>
 
 1. `Notepad "$SettingsPath\AppAssoc.xml"`
+1. <span data-ttu-id="fc67a-114">编辑以下条目（.htm、.html、http、https），如果不需要，则删除其他条目。</span><span class="sxs-lookup"><span data-stu-id="fc67a-114">Edit the following entries (.htm, .html, http, https), and remove other entries if they're not needed.</span></span>
+  - <span data-ttu-id="fc67a-115">**Microsoft Edge**</span><span class="sxs-lookup"><span data-stu-id="fc67a-115">**Microsoft Edge**</span></span>
+    - `<Association Identifier=".htm" ProgId="AppX4hxtad77fbk3jkkeerkrm0ze94wjf3s9" ApplicationName="Microsoft Edge" />`
+              
+    - `<Association Identifier=".html" ProgId="AppX4hxtad77fbk3jkkeerkrm0ze94wjf3s9" ApplicationName="Microsoft Edge" />`
+    - `<Association Identifier="http" ProgId="AppXq0fevzme2pys62n3e0fbqa7peapykr8v" ApplicationName="Microsoft Edge" />`
     
-2. <span data-ttu-id="3f5b3-112">编辑以下条目（.htm、.html、http、https），如果不需要，则删除其他条目。</span><span class="sxs-lookup"><span data-stu-id="3f5b3-112">Edit the following entries (.htm, .html, http, https), and remove other entries if they're not needed.</span></span>
+  - <span data-ttu-id="fc67a-116">**Internet Explorer**</span><span class="sxs-lookup"><span data-stu-id="fc67a-116">**Internet Explorer**</span></span>
     
-  - <span data-ttu-id="3f5b3-113">**Microsoft Edge**</span><span class="sxs-lookup"><span data-stu-id="3f5b3-113">**Microsoft Edge**</span></span>
-    
-     `<Association Identifier=".htm" ProgId="AppX4hxtad77fbk3jkkeerkrm0ze94wjf3s9" ApplicationName="Microsoft Edge" />`
-  
-     `<Association Identifier=".html" ProgId="AppX4hxtad77fbk3jkkeerkrm0ze94wjf3s9" ApplicationName="Microsoft Edge" />`
-  
-     `<Association Identifier="http" ProgId="AppXq0fevzme2pys62n3e0fbqa7peapykr8v" ApplicationName="Microsoft Edge" />`
-    
-  - <span data-ttu-id="3f5b3-114">**Internet Explorer**</span><span class="sxs-lookup"><span data-stu-id="3f5b3-114">**Internet Explorer**</span></span>
-    
-     `<Association Identifier=".htm" ProgId="htmlfile" ApplicationName="Internet Explorer" />`
-  
-     `<Association Identifier=".html" ProgId="htmlfile" ApplicationName="Internet Explorer" />`
-  
-     `<Association Identifier="http" ProgId="IE.HTTP" ApplicationName="Internet Explorer" />`
-  
-     `<Association Identifier="https" ProgId="IE.HTTPS" ApplicationName="Internet Explorer" />`
-    
-3. <span data-ttu-id="3f5b3-115">打开组策略管理控制台 (gpmc.msc) 并切换到编辑任何现有策略或新建一个策略。</span><span class="sxs-lookup"><span data-stu-id="3f5b3-115">Open Group Policy Management Console (gpmc.msc) and switch to editing any existing policy or creating a new one.</span></span>
-    
-1. <span data-ttu-id="3f5b3-116">导航到**计算机配置\管理模板\Windows 组件\文件资源管理器**</span><span class="sxs-lookup"><span data-stu-id="3f5b3-116">Navigate to **Computer Configuration\Administrative Templates\Windows Components\File Explorer**</span></span>
-    
-2. <span data-ttu-id="3f5b3-117">双击“设置默认关联配置文件”\*\*\*\*，将其设置为“已启用”\*\*\*\*，并输入访问 AppAssoc.xml 的路径（例如 %USERDOMAIN%\SYSVOL\%USERDNSDOMAIN%\Settings\AppAssoc.xml）</span><span class="sxs-lookup"><span data-stu-id="3f5b3-117">Double-click **Set a default associations configuration file**, set it to **Enabled**, and enter the path to AppAssoc.xml (for example %USERDOMAIN%\SYSVOL\%USERDNSDOMAIN%\Settings\AppAssoc.xml)</span></span>
-    
-4. <span data-ttu-id="3f5b3-118">通过将生成的 GPO 链接到适当的域来强制执行。</span><span class="sxs-lookup"><span data-stu-id="3f5b3-118">Enforce the resultant GPO by linking it to the appropriate domain.</span></span>
-    
-<span data-ttu-id="3f5b3-119">用户将能够在设置此策略后更改浏览器。</span><span class="sxs-lookup"><span data-stu-id="3f5b3-119">Users will be able to change the browser after this policy is set.</span></span>
-  
-## <a name="windows-7"></a><span data-ttu-id="3f5b3-120">Windows 7</span><span class="sxs-lookup"><span data-stu-id="3f5b3-120">Windows 7</span></span>
+    - `<Association Identifier=".htm" ProgId="htmlfile" ApplicationName="Internet Explorer" />`        
+    - `<Association Identifier=".html" ProgId="htmlfile" ApplicationName="Internet Explorer" />`
+    - `<Association Identifier="http" ProgId="IE.HTTP" ApplicationName="Internet Explorer" />`
+    - `<Association Identifier="https" ProgId="IE.HTTPS" ApplicationName="Internet Explorer" />`
 
-1. <span data-ttu-id="3f5b3-121">配置将用于设置 GPO 的本地计算机。</span><span class="sxs-lookup"><span data-stu-id="3f5b3-121">Configure the local machine that will be used to set the GPO.</span></span>
+### <a name="step-3-edit-the-group-policy"></a><span data-ttu-id="fc67a-117">第 3 步：</span><span class="sxs-lookup"><span data-stu-id="fc67a-117">Step 3.</span></span> <span data-ttu-id="fc67a-118">编辑组策略</span><span class="sxs-lookup"><span data-stu-id="fc67a-118">Edit the Group Policy</span></span>
+
+1. <span data-ttu-id="fc67a-119">打开**组策略管理控制台** (gpmc.msc)，并切换到编辑任何现有策略或新建一个策略。</span><span class="sxs-lookup"><span data-stu-id="fc67a-119">Open Group Policy Management Console (gpmc.msc) and switch to editing any existing policy or creating a new one.</span></span>
+1. <span data-ttu-id="fc67a-120">导航到**计算机配置\管理模板\Windows 组件\文件资源管理器**。</span><span class="sxs-lookup"><span data-stu-id="fc67a-120">Navigate to **Computer Configuration\Administrative Templates\Windows Components\File Explorer**</span></span>
+1. <span data-ttu-id="fc67a-121">双击“**设置默认关联配置文件**”，将其设置为“**已启用**”，并输入访问 AppAssoc.xml 的路径（例如 %USERDOMAIN%\SYSVOL\%USERDNSDOMAIN%\Settings\AppAssoc.xml）。通过将生成的 GPO 链接到适当的域来强制执行它。</span><span class="sxs-lookup"><span data-stu-id="fc67a-121">Double-click **Set a default associations configuration file**, set it to **Enabled**, and enter the path to AppAssoc.xml (for example %USERDOMAIN%\SYSVOL\%USERDNSDOMAIN%\Settings\AppAssoc.xml) Enforce the resultant GPO by linking it to the appropriate domain.</span></span>
+
+  
+## <a name="windows-7"></a><span data-ttu-id="fc67a-122">Windows 7</span><span class="sxs-lookup"><span data-stu-id="fc67a-122">Windows 7</span></span>
+
+1. <span data-ttu-id="fc67a-123">配置将用于设置 GPO 的本地计算机。</span><span class="sxs-lookup"><span data-stu-id="fc67a-123">Configure the local machine that will be used to set the GPO.</span></span>
     
-1. <span data-ttu-id="3f5b3-122">打开“控制面板\程序\默认程序\设置默认程序”\*\*\*\* 并将 Internet Explorer 设置为默认程序。</span><span class="sxs-lookup"><span data-stu-id="3f5b3-122">Open **Control Panel\Programs\Default Programs\Set Default Programs** and set Internet Explorer as the default.</span></span> 
+1. <span data-ttu-id="fc67a-124">打开“控制面板\程序\默认程序\设置默认程序”\*\*\*\* 并将 Internet Explorer 设置为默认程序。</span><span class="sxs-lookup"><span data-stu-id="fc67a-124">Open **Control Panel\Programs\Default Programs\Set Default Programs** and set Internet Explorer as the default.</span></span> 
     
-2. <span data-ttu-id="3f5b3-123">打开组策略管理控制台 (gpmc.msc) 并切换到编辑任何现有策略或新建一个策略。</span><span class="sxs-lookup"><span data-stu-id="3f5b3-123">Open Group Policy Management Console (gpmc.msc) and switch to editing any existing policy or creating a new one.</span></span>
+2. <span data-ttu-id="fc67a-125">打开组策略管理控制台 (gpmc.msc) 并切换到编辑任何现有策略或新建一个策略。</span><span class="sxs-lookup"><span data-stu-id="fc67a-125">Open Group Policy Management Console (gpmc.msc) and switch to editing any existing policy or creating a new one.</span></span>
     
-1. <span data-ttu-id="3f5b3-124">导航到**\<计算机/用户\>配置\策略\偏好设置\Windows 设置**。</span><span class="sxs-lookup"><span data-stu-id="3f5b3-124">Navigate to **\<Computer/User\> Configuration\Policies\Preferences\Windows Settings**.</span></span>
+1. <span data-ttu-id="fc67a-126">导航到**\<计算机/用户\>配置\策略\偏好设置\Windows 设置**。</span><span class="sxs-lookup"><span data-stu-id="fc67a-126">Navigate to **\<Computer/User\> Configuration\Policies\Preferences\Windows Settings**.</span></span>
     
-2. <span data-ttu-id="3f5b3-125">右键单击“注册表\新建”\*\*\*\* 然后选择“注册表向导”\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="3f5b3-125">Right-click on **Registry\New** and select **Registry Wizard**.</span></span>
+2. <span data-ttu-id="fc67a-127">右键单击“注册表\新建”\*\*\*\* 然后选择“注册表向导”\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="fc67a-127">Right-click on **Registry\New** and select **Registry Wizard**.</span></span>
     
-3. <span data-ttu-id="3f5b3-126">从注册表浏览器窗口中，选择“本地计算机”\*\*\*\*，然后单击“下一步”\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="3f5b3-126">From the Registry Browser window, select **Local Computer** and click **Next**.</span></span>
+3. <span data-ttu-id="fc67a-128">从注册表浏览器窗口中，选择“本地计算机”\*\*\*\*，然后单击“下一步”\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="fc67a-128">From the Registry Browser window, select **Local Computer** and click **Next**.</span></span>
     
-4. <span data-ttu-id="3f5b3-p101">导航到 **HKEY_CURRENT_USER\Software\Microsoft\Windows\Shell\Associations\UrlAssociations\https** 并选择 ProgId 值。请确保值如下所示：</span><span class="sxs-lookup"><span data-stu-id="3f5b3-p101">Navigate to **HKEY_CURRENT_USER\Software\Microsoft\Windows\Shell\Associations\UrlAssociations\https** and select the ProgId value. Make sure the value looks like the one below:</span></span> 
+4. <span data-ttu-id="fc67a-p105">导航到 **HKEY_CURRENT_USER\Software\Microsoft\Windows\Shell\Associations\UrlAssociations\https** 并选择 ProgId 值。请确保值如下所示：</span><span class="sxs-lookup"><span data-stu-id="fc67a-p105">Navigate to **HKEY_CURRENT_USER\Software\Microsoft\Windows\Shell\Associations\UrlAssociations\https** and select the ProgId value. Make sure the value looks like the one below:</span></span> 
     
     ![在编辑字符串中选择 ProgID 值](media/f6173dcc-b898-4967-8c40-4b0fe411a92b.png)
   
-5. <span data-ttu-id="3f5b3-p102">导航到 **HKEY_CURRENT_USER\Software\Microsoft\Windows\Shell\Associations\UrlAssociations\https** 并选择 ProgId 值。请确保值如下所示：</span><span class="sxs-lookup"><span data-stu-id="3f5b3-p102">Navigate to **HKEY_CURRENT_USER\Software\Microsoft\Windows\Shell\Associations\UrlAssociations\https** and select the ProgId value. Make sure that the value looks like the one below:</span></span> 
+5. <span data-ttu-id="fc67a-p106">导航到 **HKEY_CURRENT_USER\Software\Microsoft\Windows\Shell\Associations\UrlAssociations\https** 并选择 ProgId 值。请确保值如下所示：</span><span class="sxs-lookup"><span data-stu-id="fc67a-p106">Navigate to **HKEY_CURRENT_USER\Software\Microsoft\Windows\Shell\Associations\UrlAssociations\https** and select the ProgId value. Make sure that the value looks like the one below:</span></span> 
     
     ![在编辑字符串中选择 HTTPS 的 ProgId](media/3519e13b-4fe7-4d15-946c-82fd50fc49bb.png)
   
-3. <span data-ttu-id="3f5b3-133">通过将生成的 GPO 链接到适当的域来强制执行。</span><span class="sxs-lookup"><span data-stu-id="3f5b3-133">Enforce the resultant GPO by linking it to the appropriate domain.</span></span>
+3. <span data-ttu-id="fc67a-135">通过将生成的 GPO 链接到适当的域来强制执行此系列设置。</span><span class="sxs-lookup"><span data-stu-id="fc67a-135">Enforce the resultant GPO by linking it to the appropriate domain.</span></span>
     
-<span data-ttu-id="3f5b3-134">用户将能够在设置此策略后更改浏览器。</span><span class="sxs-lookup"><span data-stu-id="3f5b3-134">Users will be able to change the browser after this policy is set.</span></span>
