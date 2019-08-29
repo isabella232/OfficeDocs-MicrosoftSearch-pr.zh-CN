@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 简要了解 Microsoft 搜索是什么、它的优点以及哪些应用目前拥有 Microsoft 搜索。
-ms.openlocfilehash: d16066c941bb5c3619d7fd50e9cf33952216fb87
-ms.sourcegitcommit: a7ca4c38d37fbdec58e002e42d865188939d0483
+ms.openlocfilehash: 339b3d6350fa059ddc4dc24685e18739777bf932
+ms.sourcegitcommit: c2c9e66af1038efd2849d578f846680851f9e5d2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/15/2019
-ms.locfileid: "35003134"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36639583"
 ---
 # <a name="overview-of-microsoft-search"></a>Microsoft 搜索概述
 
@@ -62,24 +62,25 @@ Microsoft 搜索可帮助用户找到正确的答案、人员和内容，以便�
 
 ## <a name="apps-that-currently-have-microsoft-search"></a>目前拥有 Microsoft 搜索的应用
 
- 以下 Office 365 应用目前提供 Microsoft 搜索：
+ 默认情况下，所有支持 Microsoft 搜索的 Microsoft 应用都会将其打开。 用户只需使用工作或学校帐户登录即可。
 
+以下应用目前提供 Microsoft 搜索：
 - SharePoint Online
 - OneDrive for Business
 - Outlook 网页版
 - Windows 上的 Office 应用
 
-此外，用户可在以下对象中找到 Microsoft 搜索：
+此外，已登录的用户可在以下对象中找到 Microsoft 搜索：
 
-- 必应
+- 必应主页
 - Office.com
 - Word、Excel 和 PowerPoint Online 的起始页
 
-用户还可以从 Microsoft Edge 地址栏的必应中启动搜索。
+如果用户使用必应作为默认搜索引擎，则还可以在必应中从 Edge 地址栏启动搜索。
 
 ## <a name="requirements"></a>要求
 
-你的组织必须拥有具有以下订阅之一的 Office 365 租户：
+必须拥有以下 Office 365 或 Microsoft 365 订阅之一：
 
 - Office 365 商业协作版和商业高级版
 - Office 365 A1/A3/A5
@@ -90,11 +91,11 @@ Microsoft 搜索可帮助用户找到正确的答案、人员和内容，以便�
 - Microsoft 365 A3/A5
 - Microsoft 365 F1/E3/E5
 
-用户和搜索管理员都必须通过其中一个订阅获得许可。 只有拥有活动帐户的用户才能使用 Microsoft 搜索，并且必须**登录**。
+用户和管理员必须都分配获得以上许可证之一。 只有拥有活动帐户的用户才可使用 Microsoft 搜索，并且必须**已登录**，因为 Microsoft 搜索需要 Azure active Directory
 
 ## <a name="tailoring-microsoft-search-to-your-organization"></a>为你的组织定制 Microsoft 搜索
 
-当用户在 SharePoint 起始页、office.com 或必应进行搜索时，作为管理员，你可以使其轻松获得特定组织的理想结果。 在 Microsoft 365 管理中心管理 Microsoft 搜索。
+当用户在 SharePoint 起始页、office.com 或必应进行搜索时，作为管理员，你可以使其轻松获得特定组织的理想结果。 可通过定义 Microsoft 搜索响应查询中某些关键字时显示的答案来实现此操作。 你可以定义多种类型的答案： 
 
 **显示有用内容** - 通过为用户添加书签，帮助用户找到组织内的重要工具和资源。 如同你可以为公共网页创建书签一样，你可以为任何内部网页创建书签，以供用户搜索。 你还可以在书签中集成 Power App，以便用户能够直接通过书签完成任务。
 
@@ -102,11 +103,15 @@ Microsoft 搜索可帮助用户找到正确的答案、人员和内容，以便�
 
 **显示有用位置** - 在地图上显示贵组织的大楼、办公室和其他工作空间的地图结果和地址信息。 用户可以使用地图获取路线、查看附近场所等。
 
+你可以查看使用情况统计信息，这些统计信息显示用户如何使用你的答案，以及用户是否找到了所需内容。 基于此项，你可以微调答案或添加新的答案。
+
+有关使用关键字和保留关键字的详细信息，请参阅[使内容易于查找](make-content-easy-to-find.md)。
+
 ## <a name="what-content-is-searched"></a>搜索哪些内容？
 
-Microsoft 搜索可搜索存储在 SharePoint Online、OneDrive for Business 和 Exchange 中的内容，包括来自全局地址列表和 Office 365 组的人员。 如果你的组织已使用云混合搜索设置了混合 SharePoint 环境，则 Microsoft 搜索将同时返回来自在线和本地 SharePoint 内容（包括已连接到 SharePoint Server 环境的任何外部内容）的搜索结果。 [详细了解混合搜索环境](https://docs.microsoft.com/sharepoint/hybrid/learn-about-cloud-hybrid-search-for-sharepoint)。
+Microsoft 搜索可搜索你的组织存储在 SharePoint Online、OneDrive for Business 和 Exchange 中的内容，包括全局地址列表和 Office 365 组。 Microsoft 搜索不会跨租户搜索，也不会显示来自组织共享的内容的结果。 如果你的组织已设置了使用云混合搜索的混合 SharePoint 环境，则 Microsoft 搜索将同时返回来自在线和本地 SharePoint 内容（包括已连接到 SharePoint Server 环境的任何外部内容）的搜索结果。 [详细了解混合搜索环境](https://docs.microsoft.com/sharepoint/hybrid/learn-about-cloud-hybrid-search-for-sharepoint)。
 
-当用户从 SharePoint 起始页或 Office.com 进行搜索时，Microsoft 搜索会搜索组织内的所有内容，并显示其找到的所有结果。 这称为**全局搜索范围**。
+当用户从 SharePoint 起始页或 Office.com 进行搜索时，Microsoft 搜索会搜索组织内的所有内容，并显示该用户有权查看的结果。 这称为**全局搜索范围**。
 
 当用户从必应搜索时，用户可以从组织内的所有内容获得最相关的结果，该组织嵌入在来自 **Web** 的结果列表中。 如果他们需要查看**所有**组织结果，只需单击一下即可获得全局搜索范围。
 
@@ -130,6 +135,8 @@ Microsoft 搜索可搜索存储在 SharePoint Online、OneDrive for Business 和
 
 当用户进行搜索时，Microsoft 搜索会处理查询并从较长的短语解析搜索意图，使用人工智能 (AI) 来了解用户添加到查询的常见多余短语，这些短语不影响他们的搜索意图。 例如，当用户搜索“如何更改密码”时，我们会从查询中提取不太重要的字词，并根据“更改密码”等相关字词进行触发。  
 
+Microsoft 搜索并不会创建新的索引，而是搜索 SharePoint Online、OneDrive for Business 和 Exchange 内容的现有索引。
+
 用户**有权**查看的搜索结果将显示在搜索结果页面上。 Microsoft 搜索使用智能排名算法根据相关性对结果进行排序。
 
 ## <a name="microsoft-search-in-sharepoint"></a>SharePoint 中的 Microsoft 搜索
@@ -144,6 +151,8 @@ SharePoint 中的 Microsoft 搜索是 SharePoint Online 中的新式搜索体验
 ## <a name="microsoft-search-in-bing"></a>Microsoft 必应搜索
 
 因为与工作相关的搜索可能是敏感的，Microsoft 搜索为必应的公共 Web 结果部分如何处理这些搜索使用了一套信任措施。
+
+Microsoft 搜索请求通过 HTTPS 提出。 这一点可确保连接经过端到端加密，从而增强了安全性。 此外，所有与 Microsoft 搜索流量有关的搜索日志都会被取消标识并与公共的非 Microsoft 搜索流量分开存储。
 
 无论用户查询在返回的响应中是包含一个还是多个工作相关结果，都要采取以下措施：
 

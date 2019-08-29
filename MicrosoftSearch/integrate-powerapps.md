@@ -15,29 +15,24 @@ search.appverid:
 ms.assetid: 1fadcba3-4a7f-4a55-8476-d4e64d49a15f
 ROBOTS: NOINDEX
 description: 将基于浏览器的应用包括在 Microsoft 搜索的书签结果中
-ms.openlocfilehash: d818ab8149032b4664adb90098700d4432a6fbb7
-ms.sourcegitcommit: a7ca4c38d37fbdec58e002e42d865188939d0483
+ms.openlocfilehash: f68b3c2b74f0a5c1712f0e86e86826e1f2c94b58
+ms.sourcegitcommit: c2c9e66af1038efd2849d578f846680851f9e5d2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/15/2019
-ms.locfileid: "35003116"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36639844"
 ---
 # <a name="integrate-powerapps"></a>集成 PowerApps
-
-> [!IMPORTANT]
-> 本文适用于 Microsoft 必应搜索管理门户。 我们正在将该门户迁移至 Microsoft 365 管理中心，并且会在迁移后将其删除。 我们建议你使用 Microsoft 365 管理中心快速开始。 [Microsoft 搜索概述](overview-microsoft-search.md)。
-    
+   
 帮助用户完成任务，例如通过将现有的 PowerApps 集成进书签来输入休假时间或上报费用。 集成的 PowerApps 显示在书签结果中，不需要转至另一个站点或打开单独的工具，省时又省力。
   
 ## <a name="what-are-powerapps"></a>什么是 PowerApps？
 
 PowerApps 是一种服务，通过该服务可生成在浏览器、手机或平板电脑上运行的商业应用，且无需编码经验。 了解详细信息：
   
-- 
-  [引导学习](https://docs.microsoft.com/zh-CN/learn/browse/?products=powerapps)
+- [引导学习](https://docs.microsoft.com/learn/browse/?products=powerapps)
     
-- 
-  [文档](https://docs.microsoft.com/zh-CN/powerapps/)
+- [文档](https://docs.microsoft.com/powerapps/)
     
 ## <a name="add-a-powerapp-to-a-bookmark"></a>将 PowerApp 添加到书签
 

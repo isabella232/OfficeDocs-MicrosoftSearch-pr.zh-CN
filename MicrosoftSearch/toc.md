@@ -1,10 +1,15 @@
-#[Microsoft 搜索概述](overview-microsoft-search.md)
-#[设置 Microsoft 搜索](setup-microsoft-search.md)
+#Microsoft 搜索计划
+##[概述](overview-microsoft-search.md)
+##[设置](setup-microsoft-search.md)
+##[将 Microsoft Edge 设置为默认浏览器](set-default-browser.md)
+##[将必应设置为默认搜索引擎](set-default-search-engine.md)
+##[将 Bing.com 设置为默认主页](set-default-homepage.md)
+##[开始在 SharePoint 中使用 Microsoft 搜索](get-started-search-in-sharepoint-online.md)
 #使内容易于查找
 ##[规划内容](plan-your-content.md)
 ##[管理书签](manage-bookmarks.md)
 ##[管理问答](manage-qas.md)
 ##[管理位置](manage-locations.md)
-#[SharePoint Online 中的 Microsoft 搜索](get-started-search-in-sharepoint-online.md)
 #[用户采用指南](user-adoption-guide.md)
+#[常见问题](faqs.md)
 #[使用 Microsoft 搜索](use/about-microsoft-search.md)

@@ -15,17 +15,17 @@ search.appverid:
 ms.assetid: a220c1bf-7cee-448a-90a3-310284d03e81
 ROBOTS: NOINDEX
 description: 减少提示 Windows 10 用户登录 Microsoft 搜索和 Office 365 的次数
-ms.openlocfilehash: c05a8ffcc973926add551bdbb20273b41ea23bc0
-ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
+ms.openlocfilehash: 5dbceb070a469d1a8b3808a07a0972978a909f8a
+ms.sourcegitcommit: c2c9e66af1038efd2849d578f846680851f9e5d2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "34591041"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36639368"
 ---
 # <a name="test-single-sign-on"></a>测试单一登录
 
 > [!IMPORTANT]
-> 本文适用于 Microsoft 必应搜索管理门户。 我们正在将该门户迁移至 Microsoft 365 管理中心，并且会在迁移后将其删除。 我们建议你使用 Microsoft 365 管理中心快速开始。 [Microsoft 搜索概述](overview-microsoft-search.md)。
+> 本文适用于必应中的 Microsoft 搜索管理门户。 我们正在将该门户迁移至 Microsoft 365 管理中心，并且会在迁移后将必应中的 Microsoft 搜索门户删除。 我们建议你使用 Microsoft 365 管理中心快速开始。 [Microsoft 搜索概述](overview-microsoft-search.md)。
     
 单一登录可减少提示用户登录的次数。通过一小群用户测试单一登录将有助于识别任何阻止配置问题。 
   

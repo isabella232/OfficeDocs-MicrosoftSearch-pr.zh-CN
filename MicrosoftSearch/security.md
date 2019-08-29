@@ -14,14 +14,17 @@ search.appverid:
 - MOE150
 ms.assetid: 50461cb9-8707-46c1-935a-1b9608a98800
 description: 在使用 Microsoft 搜索向授权用户提供信息的同时保护企业数据和用户
-ms.openlocfilehash: b7b62173dc61d271a4953adbf20a6cf48b122694
-ms.sourcegitcommit: 4eeb78066fd13e906daed3add003398bd9d0f6ca
+ms.openlocfilehash: 7aef4acad9f387e50fb03478a7c00d57fa451c00
+ms.sourcegitcommit: c2c9e66af1038efd2849d578f846680851f9e5d2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/27/2019
-ms.locfileid: "35917566"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36639610"
 ---
 # <a name="security-for-microsoft-search"></a>Microsoft 搜索安全性
+
+> [!IMPORTANT]
+> 本文适用于必应中的 Microsoft 搜索管理门户。 我们正在将该门户迁移至 Microsoft 365 管理中心，并且会在迁移后将必应中的 Microsoft 搜索门户删除。 我们建议你使用 Microsoft 365 管理中心快速开始。 [Microsoft 搜索概述](overview-microsoft-search.md)。
 
 使用企业级安全性，Microsoft 搜索可以始终保护用户和数据。
 
@@ -57,7 +60,7 @@ Microsoft 搜索的身份验证绑定到 Azure Active Directory。当 Microsoft 
 无论用户查询在返回的响应中是包含一个还是多个工作结果，都要采取以下措施：
   
 - 日志记录 
-  - 已取消标识所有与 Microsoft 搜索流量相关的搜索日志。这些日志将保留 18 个月。
+  - 所有与 Microsoft 搜索流量有关的搜索日志都会被取消标识。 这些日志将保留 18 个月。
   - 存储在这些系统日志中的查询将仅用于在满足一组限制和频率阈值时对公共功能（如针对公共网络结果的自动建议或相关搜索）进行建模和培训，这使我们相信这些查询是常见的，而不是特定于某个组织。 相应查询必须在非 Microsoft 搜索用户的共同相关数据中出现过很多次，并且该查询不能仅触发企业搜索结果。 不满足这些要求的查询将与公共的非 Microsoft 搜索流量分开存储。
   - 受限访问通过各种安全机制进行管理，包括工程系统中的安全组和其他层。
 - 搜索历史记录    
