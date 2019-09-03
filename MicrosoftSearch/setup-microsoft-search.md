@@ -48,9 +48,7 @@ Microsoft 搜索尊重内容源的安全设置。 用户在搜索结果中看到
 | 人员          | 通过使用 [Set-User](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/set-user) cmdlet 将 `HiddenFromAddressListEnabled` 参数设置为 `true`，可以隐藏地址列表中的某些用户，使其不被搜索到。 |
 | Microsoft Teams | [管理 Microsoft Teams 的用户访问](https://docs.microsoft.com/microsoftteams/user-access)                                                                                                                                                      |
 | OneDrive        | [管理共享](https://docs.microsoft.com/OneDrive/manage-sharing)                                                                                                                                                                                |
-| SharePoint      | 
-  [规划权限](https://docs.microsoft.com/zh-CN/sharepoint/plan-your-permissions-strategy)<br> 
-  [创建权限级别](https://docs.microsoft.com/zh-CN/sharepoint/how-to-create-and-edit-permission-levels)                          |
+| SharePoint      | [规划权限](https://docs.microsoft.com/zh-CN/sharepoint/plan-your-permissions-strategy)<br> [创建权限级别](https://docs.microsoft.com/zh-CN/sharepoint/how-to-create-and-edit-permission-levels)                          |
 | OneNote         | 无法搜索嵌入在 OneNote 中的文件。 [更改 OneDrive 上的笔记本的权限](https://support.office.com/article/B9600CCF-045A-40E6-9913-4A7EB02869A5)                                                                    |
 | Yammer          | [Yammer 安全设置](https://docs.microsoft.com/Yammer/manage-security-and-compliance/yammer-security-settings)                                                                                                                               |
 
@@ -89,5 +87,4 @@ Microsoft 搜索为管理员提供了可用于为其用户构建强大搜索体�
 
 - [了解在 Office 中需要 Microsoft 搜索做什么](https://support.office.com/article/find-what-you-need-with-microsoft-search-in-office-2457d4d8-48a8-4ad4-ab89-5a0657aa8446?ui=en-US&rs=en-US&ad=US)
 - [Office 365 培训中心](https://support.office.com/office-training-center)
-- 
-  [Microsoft 搜索中心](https://support.office.com/zh-CN/article/-working-title-microsoft-search-center-b8bf5a2c-7515-40a9-9a6a-b8ed382c86bc?ui=en-US&rs=en-US&ad=US)
+- [Microsoft 搜索中心](https://support.office.com/zh-CN/article/-working-title-microsoft-search-center-b8bf5a2c-7515-40a9-9a6a-b8ed382c86bc?ui=en-US&rs=en-US&ad=US)

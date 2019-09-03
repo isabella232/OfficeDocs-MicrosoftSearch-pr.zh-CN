@@ -118,8 +118,7 @@ Microsoft 搜索可搜索你的组织存储在 SharePoint Online、OneDrive for 
 ## <a name="what-types-of-results-can-users-find"></a>用户可以找到哪些类型的结果？
 用户在搜索时可找到以下类型的结果：
 
-**SharePoint**：文件、文件夹、组织内的人员、组织图表、网站、网站页面、新闻、列表和列表项。 常见问题的答案、指向权威信息的书签、位置和工具（如果已定义）。 
-  [了解可以找到哪些类型的文件](https://docs.microsoft.com/zh-CN/SharePoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types)。
+**SharePoint**：文件、文件夹、组织内的人员、组织图表、网站、网站页面、新闻、列表和列表项。 常见问题的答案、指向权威信息的书签、位置和工具（如果已定义）。 [了解可以找到哪些类型的文件](https://docs.microsoft.com/zh-CN/SharePoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types)。
 
 **Office.com 和 Word、Excel 和 PowerPoint Online 起始页**：应用、文件、文件夹、人员、组织图表、SharePoint 网站、网站页面、列表和列表项。 常见问题的答案、指向权威信息的书签、位置和工具（如果已定义）。 可以找到与 SharePoint 中的文件具有相同类型的文件。
 

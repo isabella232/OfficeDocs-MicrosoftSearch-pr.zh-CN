@@ -38,8 +38,7 @@ PowerApps 是一种服务，通过该服务可生成在浏览器、手机或平�
 
 PowerApps 可在任何浏览器和任何设备上运行，且添加该服务所需时间不到一分钟。
   
-1. 
-  [查找要集成的 PowerApp 的应用 ID](https://docs.microsoft.com/zh-CN/powerapps/maker/canvas-apps/get-sessionid#get-an-app-id) 
+1. [查找要集成的 PowerApp 的应用 ID](https://docs.microsoft.com/zh-CN/powerapps/maker/canvas-apps/get-sessionid#get-an-app-id) 
     
 2. 在 Microsoft 搜索管理门户中，转至“**书签**”
     

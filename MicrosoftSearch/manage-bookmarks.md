@@ -81,10 +81,8 @@ ms.locfileid: "36170317"
 
 ### <a name="what-are-powerapps"></a>什么是 PowerApps？
 PowerApps 是一种服务，通过该服务可生成在浏览器、手机或平板电脑上运行的商业应用，且无需编码经验。 PowerApps 可在任何浏览器和任何设备上运行，且添加该服务所需时间不到一分钟。 有关 PowerApps 的详细信息，请参阅：
-- 
-  [引导学习](https://docs.microsoft.com/zh-CN/learn/browse/?products=powerapps)
-- 
-  [文档](https://docs.microsoft.com/zh-CN/powerapps/maker/canvas-apps/get-sessionid)
+- [引导学习](https://docs.microsoft.com/zh-CN/learn/browse/?products=powerapps)
+- [文档](https://docs.microsoft.com/zh-CN/powerapps/maker/canvas-apps/get-sessionid)
 - [PowerApps 主页](https://make.preview.powerapps.com/environments/839eace6-59ab-4243-97ec-a5b8fcc104e4/home)
 
 ### <a name="add-a-powerapp-to-a-bookmark"></a>将 PowerApp 添加到书签
