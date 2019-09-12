@@ -47,7 +47,6 @@ SharePoint 中的 Microsoft 搜索是 SharePoint Online 中的新式搜索体验
 ## <a name="see-also"></a>另请参阅
 [Microsoft 搜索概述](overview-microsoft-search.md)
 
-
-  [了解 SharePoint 中的搜索体验](https://docs.microsoft.com/zh-CN/sharepoint/overview-of-search)
+[了解 SharePoint 中的搜索体验](https://docs.microsoft.com/zh-CN/sharepoint/overview-of-search)
 
 [何时在 SharePoint 中使用何种搜索体验](https://docs.microsoft.com/sharepoint/get-started-with-modern-search-experience)
