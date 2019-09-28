@@ -14,46 +14,47 @@ search.appverid:
 - MOE150
 ms.assetid: 1fadcba3-4a7f-4a55-8476-d4e64d49a15f
 ROBOTS: NOINDEX
-description: 将基于浏览器的应用包括在 Microsoft 搜索的书签结果中
-ms.openlocfilehash: f68b3c2b74f0a5c1712f0e86e86826e1f2c94b58
-ms.sourcegitcommit: c2c9e66af1038efd2849d578f846680851f9e5d2
-ms.translationtype: HT
+description: 在 Microsoft Search 的书签结果中添加基于浏览器的应用程序
+ms.openlocfilehash: 36389a8b53390c7dd18cf98285b0faa6df73c8b4
+ms.sourcegitcommit: 3da22a2e09830672ebf199e05a32fa89b75c083b
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36639844"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "37288925"
 ---
-# <a name="integrate-powerapps"></a><span data-ttu-id="63de7-103">集成 PowerApps</span><span class="sxs-lookup"><span data-stu-id="63de7-103">Integrate PowerApps</span></span>
+# <a name="integrate-powerapps"></a><span data-ttu-id="be44b-103">集成 PowerApps</span><span class="sxs-lookup"><span data-stu-id="be44b-103">Integrate PowerApps</span></span>
    
-<span data-ttu-id="63de7-104">帮助用户完成任务，例如通过将现有的 PowerApps 集成进书签来输入休假时间或上报费用。</span><span class="sxs-lookup"><span data-stu-id="63de7-104">Help your users complete tasks, such as entering vacation time or reporting expenses, by adding existing PowerApps to your bookmarks.</span></span> <span data-ttu-id="63de7-105">集成的 PowerApps 显示在书签结果中，不需要转至另一个站点或打开单独的工具，省时又省力。</span><span class="sxs-lookup"><span data-stu-id="63de7-105">Integrated PowerApps appear within a bookmark result, eliminating the need to go to a different site or open a separate tool, which saves times and effort.</span></span>
+<span data-ttu-id="be44b-104">通过将现有 PowerApps 集成到您的书签中，帮助您的用户完成任务，例如输入休假时间或报告费用。</span><span class="sxs-lookup"><span data-stu-id="be44b-104">Help your users complete tasks, such as entering vacation time or reporting expenses by integrating existing PowerApps into your bookmarks.</span></span> <span data-ttu-id="be44b-105">集成 PowerApps 显示在书签结果中，无需转到其他网站或打开单独的工具来节省时间和精力。</span><span class="sxs-lookup"><span data-stu-id="be44b-105">Integrated PowerApps appear within a bookmark result, eliminating the need to go to a different site or open a separate tool, which saves times and effort.</span></span>
   
-## <a name="what-are-powerapps"></a><span data-ttu-id="63de7-106">什么是 PowerApps？</span><span class="sxs-lookup"><span data-stu-id="63de7-106">What are PowerApps?</span></span>
+## <a name="what-are-powerapps"></a><span data-ttu-id="be44b-106">什么是 PowerApps？</span><span class="sxs-lookup"><span data-stu-id="be44b-106">What are PowerApps?</span></span>
 
-<span data-ttu-id="63de7-107">PowerApps 是一种服务，通过该服务可生成在浏览器、手机或平板电脑上运行的商业应用，且无需编码经验。</span><span class="sxs-lookup"><span data-stu-id="63de7-107">PowerApps is a service that lets you build business apps that run in a browser or on a phone or tablet with no coding experience required.</span></span> <span data-ttu-id="63de7-108">了解详细信息：</span><span class="sxs-lookup"><span data-stu-id="63de7-108">Learn more:</span></span>
+<span data-ttu-id="be44b-107">PowerApps 是一种服务，通过该服务可生成在浏览器、手机或平板电脑上运行的商业应用，且无需编码经验。</span><span class="sxs-lookup"><span data-stu-id="be44b-107">PowerApps is a service that lets you build business apps that run in a browser or on a phone or tablet with no coding experience required.</span></span> <span data-ttu-id="be44b-108">了解详细信息：</span><span class="sxs-lookup"><span data-stu-id="be44b-108">Learn more:</span></span>
   
-- [<span data-ttu-id="63de7-109">引导学习</span><span class="sxs-lookup"><span data-stu-id="63de7-109">Guided Learning</span></span>](https://docs.microsoft.com/learn/browse/?products=powerapps)
+- <span data-ttu-id="be44b-109">
+  [引导学习](https://docs.microsoft.com/learn/browse/?products=powerapps)</span><span class="sxs-lookup"><span data-stu-id="be44b-109">[Guided Learning](https://docs.microsoft.com/learn/browse/?products=powerapps)</span></span>
     
-- [<span data-ttu-id="63de7-110">文档</span><span class="sxs-lookup"><span data-stu-id="63de7-110">Documentation</span></span>](https://docs.microsoft.com/powerapps/)
+- [<span data-ttu-id="be44b-110">文档</span><span class="sxs-lookup"><span data-stu-id="be44b-110">Documentation</span></span>](https://docs.microsoft.com/powerapps/)
     
-## <a name="add-a-powerapp-to-a-bookmark"></a><span data-ttu-id="63de7-111">将 PowerApp 添加到书签</span><span class="sxs-lookup"><span data-stu-id="63de7-111">Add a PowerApp to a bookmark</span></span>
+## <a name="add-a-powerapp-to-a-bookmark"></a><span data-ttu-id="be44b-111">将 PowerApp 添加到书签</span><span class="sxs-lookup"><span data-stu-id="be44b-111">Add a PowerApp to a bookmark</span></span>
 
-<span data-ttu-id="63de7-112">PowerApps 可在任何浏览器和任何设备上运行，且添加该服务所需时间不到一分钟。</span><span class="sxs-lookup"><span data-stu-id="63de7-112">PowerApps work in any browser and on any device and take less than a minute to add.</span></span>
+<span data-ttu-id="be44b-112">PowerApps 可在任何浏览器和任何设备上运行，且添加该服务所需时间不到一分钟。</span><span class="sxs-lookup"><span data-stu-id="be44b-112">PowerApps work in any browser and on any device and take less than a minute to add.</span></span>
   
-1. <span data-ttu-id="63de7-113">[查找要集成的 PowerApp 的应用 ID](https://docs.microsoft.com/zh-CN/powerapps/maker/canvas-apps/get-sessionid#get-an-app-id)</span><span class="sxs-lookup"><span data-stu-id="63de7-113">Find the [App ID for the PowerApp](https://docs.microsoft.com/zh-CN/powerapps/maker/canvas-apps/get-sessionid#get-an-app-id) that you want to add.</span></span> 
+1. <span data-ttu-id="be44b-113">[查找要集成的 PowerApp 的应用程序 ID](https://docs.microsoft.com/powerapps/maker/canvas-apps/get-sessionid#get-an-app-id) 。</span><span class="sxs-lookup"><span data-stu-id="be44b-113">[Find the App ID for the PowerApp](https://docs.microsoft.com/powerapps/maker/canvas-apps/get-sessionid#get-an-app-id) you want to integrate.</span></span>
     
-2. <span data-ttu-id="63de7-114">在 Microsoft 搜索管理门户中，转至“**书签**”</span><span class="sxs-lookup"><span data-stu-id="63de7-114">In the Microsoft Search Admin portal, go to **Bookmarks**</span></span>
+2. <span data-ttu-id="be44b-114">在 Microsoft Search 管理门户中，转到 "**书签**"</span><span class="sxs-lookup"><span data-stu-id="be44b-114">In the Microsoft Search Admin portal, go to **Bookmarks**</span></span>
     
-3. <span data-ttu-id="63de7-115">添加或查找一个要向其添加 PowerApp 的书签</span><span class="sxs-lookup"><span data-stu-id="63de7-115">Add a bookmark or find an existing bookmark that you want to add a PowerApp to.</span></span>
+3. <span data-ttu-id="be44b-115">添加书签或查找要向其添加 PowerApp 的现有书签</span><span class="sxs-lookup"><span data-stu-id="be44b-115">Add a bookmark or find an existing bookmark that you want to add a PowerApp to</span></span>
     
-4. <span data-ttu-id="63de7-116">在书签设置中单击“**Power 应用**”，然后单击“**添加 Power 应用**”</span><span class="sxs-lookup"><span data-stu-id="63de7-116">In Bookmark settings, select Power App, and then Add a Power App.</span></span>
+4. <span data-ttu-id="be44b-116">在 "书签设置" 中，单击 " **Power app**"，然后单击 "**添加电源应用程序**"</span><span class="sxs-lookup"><span data-stu-id="be44b-116">In the bookmark settings, click **Power App**, and then click **Add a Power App**</span></span>
     
-5. <span data-ttu-id="63de7-117">输入或粘贴应用 ID。</span><span class="sxs-lookup"><span data-stu-id="63de7-117">Enter or paste the App ID.</span></span>
+5. <span data-ttu-id="be44b-117">输入或粘贴应用 ID</span><span class="sxs-lookup"><span data-stu-id="be44b-117">Enter or paste the App ID</span></span>
     
-    <span data-ttu-id="63de7-118">将自动添加高度和宽度。</span><span class="sxs-lookup"><span data-stu-id="63de7-118">The height and width are automatically adjusted.</span></span> <span data-ttu-id="63de7-119">书签支持纵向和横向设置，但是目前无法改变大小。</span><span class="sxs-lookup"><span data-stu-id="63de7-119">Bookmarks can support both portrait and landscape orientations, but currently the size can't be changed.</span></span>
+    <span data-ttu-id="be44b-118">自动添加高度和宽度。</span><span class="sxs-lookup"><span data-stu-id="be44b-118">The height and width are automatically added.</span></span> <span data-ttu-id="be44b-119">书签支持纵向和横向设置，但是目前无法改变大小。</span><span class="sxs-lookup"><span data-stu-id="be44b-119">Bookmarks can support both portrait and landscape orientations, but currently the size can't be changed.</span></span>
     
-6. <span data-ttu-id="63de7-120">书签预览会展示 PowerApp 在书签结果中的显示方式</span><span class="sxs-lookup"><span data-stu-id="63de7-120">The bookmark preview shows how the PowerApp will appear in the bookmark result</span></span>
+6. <span data-ttu-id="be44b-120">书签预览显示 PowerApp 将在书签结果中的显示方式</span><span class="sxs-lookup"><span data-stu-id="be44b-120">The bookmark preview shows how the PowerApp will appear in the bookmark result</span></span>
     
-    <span data-ttu-id="63de7-121">预览中的 PowerApp 功能完备，可轻松地测试和使用。</span><span class="sxs-lookup"><span data-stu-id="63de7-121">The PowerApp in the preview is fully functional to make it easy to test and use.</span></span>
+    <span data-ttu-id="be44b-121">预览中的 PowerApp 可充分发挥作用，使其易于测试和使用。</span><span class="sxs-lookup"><span data-stu-id="be44b-121">The PowerApp in the preview is fully functional to make it easy to test and use.</span></span>
     
-7. <span data-ttu-id="63de7-122">单击“**发布**”</span><span class="sxs-lookup"><span data-stu-id="63de7-122">Click **Publish**.</span></span>
+7. <span data-ttu-id="be44b-122">单击 "**发布**"</span><span class="sxs-lookup"><span data-stu-id="be44b-122">Click **Publish**</span></span>
     
-<span data-ttu-id="63de7-123">当有权限的 Microsoft 搜索用户在必应上搜索该书签的任何关键字或保留关键字时，该 PowerApp 都会出现在书签结果中。</span><span class="sxs-lookup"><span data-stu-id="63de7-123">When an authorized Microsoft Search user searches on Bing for any of the bookmark's keywords or reserved keywords, the PowerApp will appear in the bookmark result.</span></span>
+<span data-ttu-id="be44b-123">当授权的 Microsoft 搜索用户在 Bing 上搜索任何书签的关键字或保留关键字时，PowerApp 将显示在书签结果中。</span><span class="sxs-lookup"><span data-stu-id="be44b-123">When an authorized Microsoft Search user searches on Bing for any of the bookmark's keywords or reserved keywords, the PowerApp will appear in the bookmark result.</span></span>
