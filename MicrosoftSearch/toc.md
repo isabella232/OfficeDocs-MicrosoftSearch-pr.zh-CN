@@ -10,6 +10,7 @@
 ##[管理书签](manage-bookmarks.md)
 ##[管理问答](manage-qas.md)
 ##[管理位置](manage-locations.md)
+##[管理平面布置图](manage-floorplans.md)
 #[用户采用指南](user-adoption-guide.md)
 #[常见问题](faqs.md)
 #[使用 Microsoft 搜索](use/about-microsoft-search.md)

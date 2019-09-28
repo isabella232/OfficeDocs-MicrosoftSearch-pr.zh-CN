@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 首次设置 Microsoft 搜索。
-ms.openlocfilehash: 7c80701e83fea7b9b93e4e01f98fd1eeedbfa749
-ms.sourcegitcommit: c2c9e66af1038efd2849d578f846680851f9e5d2
+ms.openlocfilehash: 3b3df3e3b3cb3e94abdf57bbb2c7e2db5f174898
+ms.sourcegitcommit: 3da22a2e09830672ebf199e05a32fa89b75c083b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36639494"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "37288988"
 ---
 # <a name="set-up-microsoft-search"></a>设置 Microsoft 搜索
 
@@ -32,7 +32,7 @@ Microsoft 搜索提供了一个用户友好界面，可帮助用户通过安全�
 
 在 Microsoft 365 管理中心管理 Microsoft 搜索。
 
-1. 在 Microsoft 365 管理中心中，转到“**设置**” > “**Microsoft**”。
+1. 在 Microsoft 365 管理中心中，转到“**设置**” > “**Microsoft 搜索**”。
 
 **注意：** 如果没有在“**设置**”下看到 Microsoft 搜索，请打开任意管理中心页面右上角的“**试用预览版**”开关。
 
@@ -48,7 +48,7 @@ Microsoft 搜索尊重内容源的安全设置。 用户在搜索结果中看到
 | 人员          | 通过使用 [Set-User](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/set-user) cmdlet 将 `HiddenFromAddressListEnabled` 参数设置为 `true`，可以隐藏地址列表中的某些用户，使其不被搜索到。 |
 | Microsoft Teams | [管理 Microsoft Teams 的用户访问](https://docs.microsoft.com/microsoftteams/user-access)                                                                                                                                                      |
 | OneDrive        | [管理共享](https://docs.microsoft.com/OneDrive/manage-sharing)                                                                                                                                                                                |
-| SharePoint      | [规划权限](https://docs.microsoft.com/zh-CN/sharepoint/plan-your-permissions-strategy)<br> [创建权限级别](https://docs.microsoft.com/zh-CN/sharepoint/how-to-create-and-edit-permission-levels)                          |
+| SharePoint      | [规划权限](https://docs.microsoft.com/sharepoint/plan-your-permissions-strategy)<br> [创建权限级别](https://docs.microsoft.com/sharepoint/how-to-create-and-edit-permission-levels)                          |
 | OneNote         | 无法搜索嵌入在 OneNote 中的文件。 [更改 OneDrive 上的笔记本的权限](https://support.office.com/article/B9600CCF-045A-40E6-9913-4A7EB02869A5)                                                                    |
 | Yammer          | [Yammer 安全设置](https://docs.microsoft.com/Yammer/manage-security-and-compliance/yammer-security-settings)                                                                                                                               |
 
@@ -59,7 +59,7 @@ Microsoft 搜索尊重内容源的安全设置。 用户在搜索结果中看到
 1. **搜索管理员：** 此角色可以创建和管理搜索结果内容，并定义查询设置，以改善组织内的搜索结果。 搜索管理员管理 Microsoft 搜索配置，并且可以执行搜索编辑者可以执行的所有内容管理任务。
 2. **搜索编辑者：** 在 Microsoft 365 管理中心中为 Microsoft 搜索创建、管理和删除内容。 此角色可以创建和管理编辑内容，例如常见问题和答案、重要的地点和位置、经常搜索和使用的网站和应用。
 
-目前，搜索管理员和搜索编辑者角色必须由全局管理员分配。有关详细信息，请参阅[分配管理员角色](https://docs.microsoft.com/zh-CN/office365/admin/add-users/assign-admin-roles?view=o365-worldwide)。
+目前，搜索管理员和搜索编辑者角色必须由全局管理员分配。有关详细信息，请参阅[分配管理员角色](https://docs.microsoft.com/office365/admin/add-users/assign-admin-roles?view=o365-worldwide)。
 
 搜索管理员直接影响最终用户的搜索体验。 这包括选择要向用户显示的结果类型。 一个人可能很难针对用户在组织内搜索的许多不同主题选择和创建权威内容。 我们建议你通过将行业专家 (SME) 和其他用户添加为搜索编辑者来利用他们的专业技能和知识。
 
@@ -85,6 +85,6 @@ Microsoft 搜索为管理员提供了可用于为其用户构建强大搜索体�
 
 建立员工可以轻松访问的自助服务资源。 这将有助于减轻你和团队的总体负担，以便不断推动沟通、协助展开自我培训和教育员工。 为用户提供沟通、常见问题、视频以及录制的培训或网络研讨会。 以下是一些有用的链接：
 
-- [了解在 Office 中需要 Microsoft 搜索做什么](https://support.office.com/article/find-what-you-need-with-microsoft-search-in-office-2457d4d8-48a8-4ad4-ab89-5a0657aa8446?ui=en-US&rs=en-US&ad=US)
+- [了解在 Office 中需要 Microsoft 搜索做什么](https://support.office.com/article/find-what-you-need-with-microsoft-search-in-office-2457d4d8-48a8-4ad4-ab89-5a0657aa8446)
 - [Office 365 培训中心](https://support.office.com/office-training-center)
-- [Microsoft 搜索中心](https://support.office.com/zh-CN/article/-working-title-microsoft-search-center-b8bf5a2c-7515-40a9-9a6a-b8ed382c86bc?ui=en-US&rs=en-US&ad=US)
+- [Microsoft 搜索中心](https://support.office.com/article/-working-title-microsoft-search-center-b8bf5a2c-7515-40a9-9a6a-b8ed382c86bc)
