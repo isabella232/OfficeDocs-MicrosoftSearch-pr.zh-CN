@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 ms.assetid: 50461cb9-8707-46c1-935a-1b9608a98800
 description: 在使用 Microsoft 搜索向授权用户提供信息的同时保护企业数据和用户
-ms.openlocfilehash: 7aef4acad9f387e50fb03478a7c00d57fa451c00
-ms.sourcegitcommit: c2c9e66af1038efd2849d578f846680851f9e5d2
+ms.openlocfilehash: 759fc49a4196e336d3a6016a91aa588fa1278b4d
+ms.sourcegitcommit: 3da22a2e09830672ebf199e05a32fa89b75c083b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36639610"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "37288997"
 ---
 # <a name="security-for-microsoft-search"></a>Microsoft 搜索安全性
 
@@ -72,4 +72,4 @@ Microsoft 搜索的身份验证绑定到 Azure Active Directory。当 Microsoft 
     
 ## <a name="gdpr"></a>GDPR
 
-Microsoft [ 2018 年 5 月 21 日，博客文章](https://blogs.microsoft.com/on-the-issues/2018/05/21/microsofts-commitment-to-gdpr-privacy-and-putting-customers-in-control-of-their-own-data/)反映了我们对遵守 GDPR 的承诺，以及 Microsoft 如何帮助企业和组织履行自己的 GDPR 合规义务。可以在 Microsoft [信任中心常见问题](https://www.microsoft.com/en-us/trustcenter/privacy/gdpr/gdpr-faqs)中找到更多详细信息。在 Online Services 中对组织客户的客户数据进行操作的 Microsoft 搜索查询也将满足第 28 条中列出的处理者承诺，如[信任中心常见问题](https://www.microsoft.com/en-us/trustcenter/privacy/gdpr/gdpr-faqs)所述。对于从 Microsoft 搜索到公共必应的查询，Microsoft 是一个数据控制器，它已实施一些措施来取消识别 GDPR 下列出的查询。
+Microsoft [ 2018 年 5 月 21 日，博客文章](https://blogs.microsoft.com/on-the-issues/2018/05/21/microsofts-commitment-to-gdpr-privacy-and-putting-customers-in-control-of-their-own-data/)反映了我们对遵守 GDPR 的承诺，以及 Microsoft 如何帮助企业和组织履行自己的 GDPR 合规义务。可以在 Microsoft [信任中心常见问题](https://www.microsoft.com/trustcenter/privacy/gdpr/gdpr-faqs)中找到更多详细信息。在 Online Services 中对组织客户的客户数据进行操作的 Microsoft 搜索查询也将满足第 28 条中列出的处理者承诺，如[信任中心常见问题](https://www.microsoft.com/trustcenter/privacy/gdpr/gdpr-faqs)所述。对于从 Microsoft 搜索到公共必应的查询，Microsoft 是一个数据控制器，它已实施一些措施来取消识别 GDPR 下列出的查询。

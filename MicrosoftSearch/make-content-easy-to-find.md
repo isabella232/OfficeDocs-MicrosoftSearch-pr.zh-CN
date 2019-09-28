@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 创建书签、位置和问答项目，让用户轻松查找组织的内容。
-ms.openlocfilehash: a2f8018a85d792473f268a735abb368babfc582c
-ms.sourcegitcommit: c2c9e66af1038efd2849d578f846680851f9e5d2
+ms.openlocfilehash: 2ed18cf8dcb855725a7cf3d51737e767000e9e83
+ms.sourcegitcommit: 3da22a2e09830672ebf199e05a32fa89b75c083b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36639853"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "37288916"
 ---
 # <a name="make-content-easy-to-find"></a>使内容易于查找
 
@@ -116,7 +116,7 @@ Microsoft 搜索可帮助用户查找相关内容。 Microsoft 搜索是一种�
 搜索管理员可以使用浏览器扩展轻松创建搜索内容。 安装浏览器扩展，然后转到要添加为书签的网站，并将该网站添加为书签。
 
 目前，为 Microsoft Edge 和 Chrome 提供了浏览器扩展。 
-- 若要下载 Microsoft Edge 扩展，请转到 [Microsoft 官方商城](https://www.microsoft.com/en-us/p/microsoft-search-content-creator/9nrqdbcbwq55?activetab=pivot:overviewtab)并下载应用。
+- 若要下载 Microsoft Edge 扩展，请转到 [Microsoft 官方商城](https://www.microsoft.com/p/microsoft-search-content-creator/9nrqdbcbwq55?activetab=pivot:overviewtab)并下载应用。
 - 若要下载 Chrom 扩展，请转到 [Chrome 网上应用商店](https://chrome.google.com/webstore/detail/microsoft-search-content/nocnablpaoeecfmfnjoheefkogmleipm)并下载应用。
 
 ### <a name="bulk-add-or-edit-bookmarks"></a>批量添加或编辑书签
@@ -161,13 +161,13 @@ Microsoft 搜索可帮助用户查找相关内容。 Microsoft 搜索是一种�
 #### <a name="what-are-powerapps"></a>什么是 PowerApps？
 
 PowerApps 是一种服务，通过该服务可生成在浏览器、手机或平板电脑上运行的商业应用，且无需编码经验。 PowerApps 可在任何浏览器和任何设备上运行，且添加该服务所需时间不到一分钟。 有关 PowerApps 的详细信息，请参阅：
-- [引导学习](https://docs.microsoft.com/zh-CN/learn/browse/?products=powerapps)
-- [文档](https://docs.microsoft.com/zh-CN/powerapps/maker/canvas-apps/get-sessionid)
+- [引导学习](https://docs.microsoft.com/learn/browse/?products=powerapps)
+- [文档](https://docs.microsoft.com/powerapps/maker/canvas-apps/get-sessionid)
 - [PowerApps 主页](https://make.preview.powerapps.com/environments/839eace6-59ab-4243-97ec-a5b8fcc104e4/home)
 
 #### <a name="add-a-powerapp-to-a-bookmark"></a>将 PowerApp 添加到书签
 
-1. 查找要添加的 [PowerApp 的应用 ID](https://docs.microsoft.com/zh-CN/powerapps/maker/canvas-apps/get-sessionid#get-an-app-id)。
+1. 查找要添加的 [PowerApp 的应用 ID](https://docs.microsoft.com/powerapps/maker/canvas-apps/get-sessionid#get-an-app-id)。
 1. 登录并转到 **Microsoft 365 管理中心**。
 1. 在导航窗格中，转到“**设置**”，然后选择“**Microsoft 搜索**”。
 1. 添加或查找一个要向其添加 **PowerApp** 的书签。

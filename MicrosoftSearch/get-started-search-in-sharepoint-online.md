@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 让组织开始在 SharePoint Online 中使用 Microsoft 搜索
-ms.openlocfilehash: cff89b29b06d1592db15642a697cd414c011ecbc
-ms.sourcegitcommit: 9345523f0143f613c702cd3dcc084b5f7bd6a0b5
+ms.openlocfilehash: 7651339d4c531139522d844cef238d6dc90a2496
+ms.sourcegitcommit: 3da22a2e09830672ebf199e05a32fa89b75c083b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/07/2019
-ms.locfileid: "34767178"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "37288979"
 ---
 # <a name="get-started-with-microsoft-search-in-sharepoint"></a>开始在 SharePoint 中使用 Microsoft 搜索
 
@@ -47,6 +47,6 @@ SharePoint 中的 Microsoft 搜索是 SharePoint Online 中的新式搜索体验
 ## <a name="see-also"></a>另请参阅
 [Microsoft 搜索概述](overview-microsoft-search.md)
 
-[了解 SharePoint 中的搜索体验](https://docs.microsoft.com/zh-CN/sharepoint/overview-of-search)
+[了解 SharePoint 中的搜索体验](https://docs.microsoft.com/sharepoint/overview-of-search)
 
 [何时在 SharePoint 中使用何种搜索体验](https://docs.microsoft.com/sharepoint/get-started-with-modern-search-experience)

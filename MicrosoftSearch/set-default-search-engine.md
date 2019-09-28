@@ -15,12 +15,12 @@ search.appverid:
 ms.assetid: ee40010e-5d7f-4ba8-a3f8-d240dab3af6d
 ROBOTS: NOINDEX
 description: 了解如何使用 Microsoft 搜索将必应设置为公司的默认搜索引擎。
-ms.openlocfilehash: cc03e3aa280ea621702ce99c2cc8eb530b310251
-ms.sourcegitcommit: c2c9e66af1038efd2849d578f846680851f9e5d2
+ms.openlocfilehash: 7c7ec8be726f2ac12a0e07f3d70c4b6515366bf3
+ms.sourcegitcommit: 3da22a2e09830672ebf199e05a32fa89b75c083b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36639835"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "37289015"
 ---
 # <a name="make-bing-the-default-search-engine"></a>将必应设置为默认搜索引擎
   
@@ -30,9 +30,9 @@ ms.locfileid: "36639835"
 
 虽然你将把必应设置为默认搜索引擎，但 Microsoft Edge 允许用户将其设置更改为使用其他搜索引擎。
   
-有关各种 Windows 版本的最新 ADMX 文件，请参阅[如何在 Windows 中为组策略管理模板创建和管理中央存储](https://support.microsoft.com/zh-CN/help/3087759/how-to-create-and-manage-the-central-store-for-group-policy-administra)。
+有关各种 Windows 版本的最新 ADMX 文件，请参阅[如何在 Windows 中为组策略管理模板创建和管理中央存储](https://support.microsoft.com/help/3087759/how-to-create-and-manage-the-central-store-for-group-policy-administra)。
   
-如果在 GPMC 内找不到本部分中介绍的设置，下载相应 ADMX 并将其复制到中央存储。有关详细信息，请参阅[使用 ADMX 文件编辑基于域的 GPO](https://docs.microsoft.com/zh-CN/previous-versions/windows/it-pro/windows-vista/cc748955%28v%3dws.10%29)。控制器上的中央存储是具有以下命名约定的文件夹：
+如果在 GPMC 内找不到本部分中介绍的设置，下载相应 ADMX 并将其复制到中央存储。有关详细信息，请参阅[使用 ADMX 文件编辑基于域的 GPO](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-vista/cc748955%28v%3dws.10%29)。控制器上的中央存储是具有以下命名约定的文件夹：
   
  **%systemroot%\sysvol\\<domain\>\policies\PolicyDefinitions**
   
@@ -55,7 +55,7 @@ ms.locfileid: "36639835"
   
 Chrome 自带一组组策略设置，可以从 [Google Chrome Enterprise 帮助](https://support.google.com/chrome/a/answer/187202)以 ADMX 文件格式下载。如果使用操作系统 Windows Vista/Server 2008 或更高版本来管理域的 GPO，此包中提供的 ADMX 文件将负责 Windows XP SP2 或更高版本上的 Chrome 设置。
   
-将模板文件复制到域控制器上 ADMX 文件的中央存储。有关详细信息，请参阅[使用 ADMX 文件编辑基于域的 GPO](https://docs.microsoft.com/zh-CN/previous-versions/windows/it-pro/windows-vista/cc748955%28v%3dws.10%29)。控制器上的中央存储是具有以下命名约定的文件夹：
+将模板文件复制到域控制器上 ADMX 文件的中央存储。有关详细信息，请参阅[使用 ADMX 文件编辑基于域的 GPO](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-vista/cc748955%28v%3dws.10%29)。控制器上的中央存储是具有以下命名约定的文件夹：
   
  **%systemroot%\sysvol\\<domain\>\policies\PolicyDefinitions**
   

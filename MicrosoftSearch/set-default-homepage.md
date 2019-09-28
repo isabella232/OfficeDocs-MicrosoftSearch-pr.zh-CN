@@ -15,12 +15,12 @@ search.appverid:
 ms.assetid: c020bd72-9906-4dfd-bc77-57287f5927ce
 ROBOTS: NOINDEX
 description: 了解如何使用 Microsoft 搜索将必应设置为公司的默认主页。
-ms.openlocfilehash: 707b6fefe1bd3e096f758df92fedca28f3f1530a
-ms.sourcegitcommit: c2c9e66af1038efd2849d578f846680851f9e5d2
+ms.openlocfilehash: c3302863fab8888b8304b909c2c74ce71b391ade
+ms.sourcegitcommit: 3da22a2e09830672ebf199e05a32fa89b75c083b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36639826"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "37289006"
 ---
 # <a name="make-bingcom-the-default-home-page"></a>将 Bing.com 设置为默认主页
 
@@ -40,11 +40,11 @@ ms.locfileid: "36639826"
 ## <a name="google-chrome-on-windows-xp-sp2-or-later"></a>Windows XP SP2 或更高版本上的 Google Chrome
 
 
-有关为不同版本的 Windows 管理 ADMX 文件和最新 ADMX 文件的 Windows 支持文章，请参阅 [Microsoft 支持](https://support.microsoft.com/zh-CN/help/3087759/how-to-create-and-manage-the-central-store-for-group-policy-administra)。
+有关为不同版本的 Windows 管理 ADMX 文件和最新 ADMX 文件的 Windows 支持文章，请参阅 [Microsoft 支持](https://support.microsoft.com/help/3087759/how-to-create-and-manage-the-central-store-for-group-policy-administra)。
 
 还需要最新的 Google 策略文件，可在 [Google Chrome Enterprise 帮助](https://support.google.com/chrome/a/answer/187202)上找到。
   
-如果在 GPMC 内找不到本部分中介绍的设置，下载相应 ADMX 并将其复制到[中央存储](https://docs.microsoft.com/zh-CN/previous-versions/windows/it-pro/windows-vista/cc748955%28v%3dws.10%29)。控制器上的中央存储是具有以下命名约定的文件夹：
+如果在 GPMC 内找不到本部分中介绍的设置，下载相应 ADMX 并将其复制到[中央存储](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-vista/cc748955%28v%3dws.10%29)。控制器上的中央存储是具有以下命名约定的文件夹：
   
  **%systemroot%\sysvol\\<domain\>\policies\PolicyDefinitions**
   
