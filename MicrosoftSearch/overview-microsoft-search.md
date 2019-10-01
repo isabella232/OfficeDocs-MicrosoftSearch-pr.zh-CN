@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 简要了解 Microsoft 搜索是什么、它的优点以及哪些应用目前拥有 Microsoft 搜索。
-ms.openlocfilehash: 339b3d6350fa059ddc4dc24685e18739777bf932
-ms.sourcegitcommit: c2c9e66af1038efd2849d578f846680851f9e5d2
+ms.openlocfilehash: 55b6cad9f871eb1eb8d103c51e7cfeda02e6a452
+ms.sourcegitcommit: 3da22a2e09830672ebf199e05a32fa89b75c083b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36639583"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "37289042"
 ---
 # <a name="overview-of-microsoft-search"></a>Microsoft 搜索概述
 
@@ -50,15 +50,15 @@ Microsoft 搜索可帮助用户找到正确的答案、人员和内容，以便�
 
 **从任何 Microsoft 搜索框对整个 Microsoft 365 进行搜索** – 用户可以从任何 Microsoft 搜索框进行搜索，并快速回到正在执行的任务。 Microsoft 搜索将来自 Office 365（包括 SharePoint、OneDrive for Business 和 Exchange）中的数据源的结果汇集在一起。
 
-**易于搜索** - Microsoft 搜索会在搜索框中根据用户以前在 Office 365 中的活动提供建议结果。
+**易于搜索** – Microsoft 搜索会在搜索框中根据用户以前在 Office 365 中的活动提供建议结果。
 
-**查找共享文件** - Microsoft 搜索使用高级查询理解功能让查找共享文件变得更简单。 用户可以轻松找到他们正在协作的文件。
+**查找共享文件** – Microsoft 搜索使用高级查询理解功能让查找共享文件变得更简单。 用户可以轻松找到他们正在协作的文件。
 
-**显示相关内容** - 提供用户完成任务所需的信息和答案，例如策略、权益、资源、工具等。 还可聚焦特定群组，例如新雇员或远程工作人员。
+**显示相关内容** – 提供用户完成任务所需的信息和答案，例如策略、权益、资源、工具等。 还可聚焦特定群组，例如新雇员或远程工作人员。
 
 **Microsoft 搜索的演进** – 用户可以搜索的内容类型集和搜索框的智能水平将随着时间的推移而增长。
 
-**跨所有应用进行管理** - 默认情况下，Microsoft 搜索处于**启用状态**，你所做的任何管理都将应用于所有应用中的 Microsoft 搜索。
+**跨所有应用进行管理** – 默认情况下，Microsoft 搜索处于**启用状态**，你所做的任何管理都将应用于所有应用中的 Microsoft 搜索。
 
 ## <a name="apps-that-currently-have-microsoft-search"></a>目前拥有 Microsoft 搜索的应用
 
@@ -97,11 +97,11 @@ Microsoft 搜索可帮助用户找到正确的答案、人员和内容，以便�
 
 当用户在 SharePoint 起始页、office.com 或必应进行搜索时，作为管理员，你可以使其轻松获得特定组织的理想结果。 可通过定义 Microsoft 搜索响应查询中某些关键字时显示的答案来实现此操作。 你可以定义多种类型的答案： 
 
-**显示有用内容** - 通过为用户添加书签，帮助用户找到组织内的重要工具和资源。 如同你可以为公共网页创建书签一样，你可以为任何内部网页创建书签，以供用户搜索。 你还可以在书签中集成 Power App，以便用户能够直接通过书签完成任务。
+**显示有用内容** – 通过为用户添加书签，帮助用户找到组织内的重要工具和资源。 如同你可以为公共网页创建书签一样，你可以为任何内部网页创建书签，以供用户搜索。 你还可以在书签中集成 Power App，以便用户能够直接通过书签完成任务。
 
 **提供常见问题的答案** – 为组织内的最常见问题提供最佳答案。 当用户在搜索框中输入常见问题时，Microsoft 搜索会显示答案，而不是仅提供指向网页的链接。
 
-**显示有用位置** - 在地图上显示贵组织的大楼、办公室和其他工作空间的地图结果和地址信息。 用户可以使用地图获取路线、查看附近场所等。
+**显示有用位置** – 在地图上显示贵组织的大楼、办公室和其他工作空间的地图结果和地址信息。 用户可以使用地图获取路线、查看附近场所等。
 
 你可以查看使用情况统计信息，这些统计信息显示用户如何使用你的答案，以及用户是否找到了所需内容。 基于此项，你可以微调答案或添加新的答案。
 
@@ -118,7 +118,7 @@ Microsoft 搜索可搜索你的组织存储在 SharePoint Online、OneDrive for 
 ## <a name="what-types-of-results-can-users-find"></a>用户可以找到哪些类型的结果？
 用户在搜索时可找到以下类型的结果：
 
-**SharePoint**：文件、文件夹、组织内的人员、组织图表、网站、网站页面、新闻、列表和列表项。 常见问题的答案、指向权威信息的书签、位置和工具（如果已定义）。 [了解可以找到哪些类型的文件](https://docs.microsoft.com/zh-CN/SharePoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types)。
+**SharePoint**：文件、文件夹、组织内的人员、组织图表、网站、网站页面、新闻、列表和列表项。 常见问题的答案、指向权威信息的书签、位置和工具（如果已定义）。 [了解可以找到哪些类型的文件](https://docs.microsoft.com/SharePoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types)。
 
 **Office.com 和 Word、Excel 和 PowerPoint Online 起始页**：应用、文件、文件夹、人员、组织图表、SharePoint 网站、网站页面、列表和列表项。 常见问题的答案、指向权威信息的书签、位置和工具（如果已定义）。 可以找到与 SharePoint 中的文件具有相同类型的文件。
 
@@ -145,7 +145,7 @@ SharePoint 中的 Microsoft 搜索是 SharePoint Online 中的新式搜索体验
 - 在 SharePoint 起始页、中心网站、通信网站和新式团队网站上，用户可获得 Microsoft 搜索框。
 - 用户可以在发布网站、经典团队网站和搜索中心获得经典搜索框。
 
-你可以自定义经典搜索体验，例如向搜索结果页面添加自定义精简程序或以不同方式显示某种类型的结果。 你不能按照这种方式在 SharePoint 中自定义 Microsoft 搜索体验。 你对经典搜索所做的某些自定义可能会影响 SharePoint 中的 Microsoft 搜索。 如果你的组织将同时在 SharePoint 中使用这两种搜索体验，请[了解有关这些差异的信息以及如何避免影响 SharePoint 中的 Microsoft 搜索](https://docs.microsoft.com/zh-CN/sharepoint/differences-classic-modern-search)。
+你可以自定义经典搜索体验，例如向搜索结果页面添加自定义精简程序或以不同方式显示某种类型的结果。 你不能按照这种方式在 SharePoint 中自定义 Microsoft 搜索体验。 你对经典搜索所做的某些自定义可能会影响 SharePoint 中的 Microsoft 搜索。 如果你的组织将同时在 SharePoint 中使用这两种搜索体验，请[了解有关这些差异的信息以及如何避免影响 SharePoint 中的 Microsoft 搜索](https://docs.microsoft.com/sharepoint/differences-classic-modern-search)。
 
 ## <a name="microsoft-search-in-bing"></a>Microsoft 必应搜索
 
@@ -155,11 +155,11 @@ Microsoft 搜索请求通过 HTTPS 提出。 这一点可确保连接经过端�
 
 无论用户查询在返回的响应中是包含一个还是多个工作相关结果，都要采取以下措施：
 
-**日志记录** - 已取消标识所有与 Microsoft 搜索流量相关的搜索日志，这些日志将保留 18 个月。 存储在这些系统日志中的查询将仅用于在满足一组限制和频率阈值时对公共功能（如针对公共网络结果的自动建议或相关搜索）进行建模和培训，这使我们相信这些查询是常见的，而不是特定于某个组织。 相应查询必须在非 Microsoft 搜索用户的共同相关数据中出现过很多次，并且该查询不能仅触发企业搜索结果。 不满足这些要求的查询将与公共的非 Microsoft 搜索流量分开存储。 受限访问通过各种安全机制进行管理，包括工程系统中的安全组和其他层。
+**日志记录** – 已取消标识所有与 Microsoft 搜索流量相关的搜索日志，这些日志将保留 18 个月。 存储在这些系统日志中的查询将仅用于在满足一组限制和频率阈值时对公共功能（如针对公共网络结果的自动建议或相关搜索）进行建模和培训，这使我们相信这些查询是常见的，而不是特定于某个组织。 相应查询必须在非 Microsoft 搜索用户的共同相关数据中出现过很多次，并且该查询不能仅触发企业搜索结果。 不满足这些要求的查询将与公共的非 Microsoft 搜索流量分开存储。 受限访问通过各种安全机制进行管理，包括工程系统中的安全组和其他层。
 
-**搜索历史记录** - 当用户使用工作或学校帐户登录时，用户的搜索历史记录将无法在其他计算机或设备上使用。
+**搜索历史记录** – 当用户使用工作或学校帐户登录时，用户的搜索历史记录将无法在其他计算机或设备上使用。
 
-**广告** - 企业搜索查询从不与广告商共享或推荐给广告商。
+**广告** – 企业搜索查询从不与广告商共享或推荐给广告商。
 广告永远不会以基于工作身份或组织的用户为目标。
 
 ## <a name="see-also"></a>另请参阅
