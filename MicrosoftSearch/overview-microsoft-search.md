@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 简要了解 Microsoft 搜索是什么、它的优点以及哪些应用目前拥有 Microsoft 搜索。
-ms.openlocfilehash: 55b6cad9f871eb1eb8d103c51e7cfeda02e6a452
-ms.sourcegitcommit: 3da22a2e09830672ebf199e05a32fa89b75c083b
+ms.openlocfilehash: c0599a09b2018062b1181762c2ce3c93cb16367a
+ms.sourcegitcommit: 5204b3c85e2fc190a8807d5268fb87145624a969
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "37289042"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "37502935"
 ---
 # <a name="overview-of-microsoft-search"></a>Microsoft 搜索概述
 
@@ -29,7 +29,7 @@ Microsoft 搜索可帮助用户找到正确的答案、人员和内容，以便�
 - 用户可获得与其搜索的应用的**上下文**相关的结果。 例如，在 Outlook 中搜索时，他们可找到电子邮件，而不是 SharePoint 中的网站。 在 SharePoint 中搜索时，他们可找到网站、页面和文件。
 - 无论用户使用哪种应用，Microsoft 搜索都提供**个人**结果。  Microsoft 搜索使用 Microsoft Graph 中的见解来显示与每个用户相关的结果。 每个用户可能会看到不同的结果，即使他们搜索相同的字词。 他们只能看到其有权访问的结果，Microsoft 搜索不会更改权限。
 - 用户无需记住信息所在的位置。 例如，用户正在使用 Word，并希望重复使用某位同事通过 OneDrive 共享的演示文稿中的信息。 无需切换到 OneDrive 并搜索该演示文稿，他们只需从 Word 搜索即可。  
-- 在必应中，除了公共网页结果之外，用户还可以从组织内部获得结果。
+- 在[必应](https://bing.com)中，除了公共网页结果之外，用户还可以从组织内部获得结果。
 
 ## <a name="what-users-see"></a>用户看到的内容
 
@@ -147,20 +147,14 @@ SharePoint 中的 Microsoft 搜索是 SharePoint Online 中的新式搜索体验
 
 你可以自定义经典搜索体验，例如向搜索结果页面添加自定义精简程序或以不同方式显示某种类型的结果。 你不能按照这种方式在 SharePoint 中自定义 Microsoft 搜索体验。 你对经典搜索所做的某些自定义可能会影响 SharePoint 中的 Microsoft 搜索。 如果你的组织将同时在 SharePoint 中使用这两种搜索体验，请[了解有关这些差异的信息以及如何避免影响 SharePoint 中的 Microsoft 搜索](https://docs.microsoft.com/sharepoint/differences-classic-modern-search)。
 
-## <a name="microsoft-search-in-bing"></a>Microsoft 必应搜索
-
-因为与工作相关的搜索可能是敏感的，Microsoft 搜索为必应的公共 Web 结果部分如何处理这些搜索使用了一套信任措施。
-
-Microsoft 搜索请求通过 HTTPS 提出。 这一点可确保连接经过端到端加密，从而增强了安全性。 此外，所有与 Microsoft 搜索流量有关的搜索日志都会被取消标识并与公共的非 Microsoft 搜索流量分开存储。
-
-无论用户查询在返回的响应中是包含一个还是多个工作相关结果，都要采取以下措施：
-
-**日志记录** – 已取消标识所有与 Microsoft 搜索流量相关的搜索日志，这些日志将保留 18 个月。 存储在这些系统日志中的查询将仅用于在满足一组限制和频率阈值时对公共功能（如针对公共网络结果的自动建议或相关搜索）进行建模和培训，这使我们相信这些查询是常见的，而不是特定于某个组织。 相应查询必须在非 Microsoft 搜索用户的共同相关数据中出现过很多次，并且该查询不能仅触发企业搜索结果。 不满足这些要求的查询将与公共的非 Microsoft 搜索流量分开存储。 受限访问通过各种安全机制进行管理，包括工程系统中的安全组和其他层。
-
-**搜索历史记录** – 当用户使用工作或学校帐户登录时，用户的搜索历史记录将无法在其他计算机或设备上使用。
-
-**广告** – 企业搜索查询从不与广告商共享或推荐给广告商。
-广告永远不会以基于工作身份或组织的用户为目标。
+## <a name="microsoft-search-in-bing-protects-enterprise-searches"></a>必应中的 Microsoft 搜索可以保护企业搜搜 
+当用户在 Microsoft 搜索中输入企业搜索查询时，将会发生两个同时搜索请求：(1) 搜索企业的内部资源，(2) 单独搜索 Bing.com 上的公共结果。 企业搜索可能非常敏感，因此，Microsoft 搜索已实施一组信任措施，用于说明如何处理对 Bing.com 上的公共结果的单独搜索。 
+-   **日志记录**
+    - 与 Microsoft 搜索流量相关的所有搜索日志均与工作区标识解除关联。
+    - 如果满足一组限制或频率阈值，让我们相信查询并不特定于特定组织，则将按照[隐私声明](https://privacy.microsoft.com/privacystatement)的必应服务部分中所述对查询进行处理。 例如，此类查询用于自动建议或相关搜索之类的公共功能建模和定型。 
+    - 不满足限制或频率阈值的查询将与公共的非 Microsoft 搜索流量分开存储。
+-   **广告**
+    - Bing.com 上显示的与企业搜索相关的广告仅与搜索查询的内容相关。 绝对不会基于用户的工作区标识向其定向发布广告。
 
 ## <a name="see-also"></a>另请参阅
 

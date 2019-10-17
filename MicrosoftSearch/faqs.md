@@ -12,15 +12,14 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-ms.assetid: cd3ee09d-58ab-4b8a-8822-fa11a1399672
 ROBOTS: NoIndex
 description: 获取有关企业搜索和 Microsoft 搜索的常见问题解答
-ms.openlocfilehash: 3b30980c76915405767381fb3b6397468bdd1b68
-ms.sourcegitcommit: c2c9e66af1038efd2849d578f846680851f9e5d2
+ms.openlocfilehash: d3cf7e4a6f252711f94e90a4e6561c8f25769c27
+ms.sourcegitcommit: 5204b3c85e2fc190a8807d5268fb87145624a969
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36639495"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "37502926"
 ---
 # <a name="frequently-asked-questions"></a>常见问题
 
@@ -59,3 +58,8 @@ ms.locfileid: "36639495"
 ## <a name="where-can-i-get-info-about-office-365-and-microsoft-365-compliance-tiers-and-categories"></a>从哪里可以获得有关 Office 365 和 Microsoft 365 合规性层和类别的信息？
 
 可在[针对行业标准和法规的合规性框架](https://download.microsoft.com/download/B/2/7/B27B3EF3-8849-4C18-8BA4-5AD755728620/Compliance%20Framework_customer%20guidance.pdf)（PDF 下载）中找到详细信息。
+
+## <a name="can-users-earn-microsoft-rewards-points-with-their-work-or-school-account"></a>用户能否通过其工作或学校帐户获得 Microsoft 奖励积分？
+
+Microsoft 搜索需要企业用户使用工作或学校帐户登录。 但是，用户无法通过这些帐户登录到 Microsoft 奖励计划。 不过，也存在企业用户可能看到奖励积分累积的实例。 当 Microsoft 搜索用户拥有通过 <a href="https://www.microsoft.com/en-us/welcome?rtc=1">Microsoft 帐户</a>创建的奖励帐户时，可能会出现此情况。 （与 Microsoft 帐户关联的电子邮件地址可以来自 Outlook.com、Hotmail.com、Gmail、Yahoo 或其他提供商。）如果用户在相同浏览器规划中使用其工作帐户和 Microsoft 帐户交替登录，则积分可能会累积到期奖励帐户。 通过清除 cookie，用户可以在使用 Microsoft 搜索进行搜索时停止累积积分。 
+
