@@ -22,17 +22,17 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 06/05/2019
 ms.locfileid: "34727894"
 ---
-# <a name="advanced-dns-configuration"></a><span data-ttu-id="8bbc2-103">高级 DNS 配置</span><span class="sxs-lookup"><span data-stu-id="8bbc2-103">Advanced DNS configuration</span></span>
+# <a name="advanced-dns-configuration"></a><span data-ttu-id="1da06-103">高级 DNS 配置</span><span class="sxs-lookup"><span data-stu-id="1da06-103">Advanced DNS configuration</span></span>
 
 
-<span data-ttu-id="8bbc2-p101">为了确保必应始终能够识别组织中的用户并使他们成功登录到其工作或学校帐户，请配置内部 DNS 服务器或代理服务器，以从 `www.bing.com` 解析到 `ms.bing.com`。若要执行此操作，为 `www.bing.com`创建一个 DNS 条目，使其成为 `ms.bing.com` 的 CNAME。</span><span class="sxs-lookup"><span data-stu-id="8bbc2-p101">To ensure Bing can always identify users within your organization and successfully sign them in to their work or school account, configure your internal DNS server or proxy server to resolve from `www.bing.com` to `ms.bing.com`. To do this, create a DNS entry for `www.bing.com` to be a CNAME for `ms.bing.com`.</span></span>
+<span data-ttu-id="1da06-p101">为了确保必应始终能够识别组织中的用户并使他们成功登录到其工作或学校帐户，请配置内部 DNS 服务器或代理服务器，以从 `www.bing.com` 解析到 `ms.bing.com`。若要执行此操作，为 `www.bing.com`创建一个 DNS 条目，使其成为 `ms.bing.com` 的 CNAME。</span><span class="sxs-lookup"><span data-stu-id="1da06-p101">To ensure Bing can always identify users within your organization and successfully sign them in to their work or school account, configure your internal DNS server or proxy server to resolve from `www.bing.com` to `ms.bing.com`. To do this, create a DNS entry for `www.bing.com` to be a CNAME for `ms.bing.com`.</span></span>
   
 ****
 
-|<span data-ttu-id="8bbc2-106">**名称**</span><span class="sxs-lookup"><span data-stu-id="8bbc2-106">**Name**</span></span>|<span data-ttu-id="8bbc2-107">**Type**</span><span class="sxs-lookup"><span data-stu-id="8bbc2-107">**Type**</span></span>|<span data-ttu-id="8bbc2-108">**值**</span><span class="sxs-lookup"><span data-stu-id="8bbc2-108">**Value**</span></span>|
+|<span data-ttu-id="1da06-106">**名称**</span><span class="sxs-lookup"><span data-stu-id="1da06-106">**Name**</span></span>|<span data-ttu-id="1da06-107">**Type**</span><span class="sxs-lookup"><span data-stu-id="1da06-107">**Type**</span></span>|<span data-ttu-id="1da06-108">**值**</span><span class="sxs-lookup"><span data-stu-id="1da06-108">**Value**</span></span>|
 |:-----|:-----|:-----|
-|`www.bing.com`  <br/> |<span data-ttu-id="8bbc2-109">CNAME</span><span class="sxs-lookup"><span data-stu-id="8bbc2-109">CNAME</span></span>  <br/> |`ms.bing.com`  <br/> |
+|`www.bing.com`  <br/> |<span data-ttu-id="1da06-109">CNAME</span><span class="sxs-lookup"><span data-stu-id="1da06-109">CNAME</span></span>  <br/> |`ms.bing.com`  <br/> |
    
-<span data-ttu-id="8bbc2-p102">首选使用 CNAME 而不是 IP 地址，因为如果 IP 地址发生变化，CNAME 将继续工作。更改 DNS 之后，结果将继续显示给用户，就像来自 `www.bing.com` 一样。</span><span class="sxs-lookup"><span data-stu-id="8bbc2-p102">Using a CNAME rather than the IP address is preferred since a CNAME will continue to work if the IP address changes. After you make this DNS change, results will continue to appear to your users as if they are coming from `www.bing.com`.</span></span> 
+<span data-ttu-id="1da06-p102">首选使用 CNAME 而不是 IP 地址，因为如果 IP 地址发生变化，CNAME 将继续工作。更改 DNS 之后，结果将继续显示给用户，就像来自 `www.bing.com` 一样。</span><span class="sxs-lookup"><span data-stu-id="1da06-p102">Using a CNAME rather than the IP address is preferred since a CNAME will continue to work if the IP address changes. After you make this DNS change, results will continue to appear to your users as if they are coming from `www.bing.com`.</span></span> 
   
-<span data-ttu-id="8bbc2-p103">这不需要在客户端上进行额外的配置，并为用户提供无缝体验。当用户访问 `bing.com` 时，他们会更一致地自动登录，如果无法自动登录，则会提示他们执行此操作。</span><span class="sxs-lookup"><span data-stu-id="8bbc2-p103">This requires no additional configuration on client machines and provides a seamless experience for your users. When they go to `bing.com`, they'll be automatically signed in more consistently, and if they can't be signed in automatically, they'll be prompted to do so.</span></span>
+<span data-ttu-id="1da06-p103">这不需要在客户端上进行额外的配置，并为用户提供无缝体验。当用户访问 `bing.com` 时，他们会更一致地自动登录，如果无法自动登录，则会提示他们执行此操作。</span><span class="sxs-lookup"><span data-stu-id="1da06-p103">This requires no additional configuration on client machines and provides a seamless experience for your users. When they go to `bing.com`, they'll be automatically signed in more consistently, and if they can't be signed in automatically, they'll be prompted to do so.</span></span>

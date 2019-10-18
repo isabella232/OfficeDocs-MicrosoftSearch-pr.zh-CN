@@ -22,9 +22,9 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 05/30/2019
 ms.locfileid: "34591590"
 ---
-# <a name="get-support"></a><span data-ttu-id="58122-103">获取支持</span><span class="sxs-lookup"><span data-stu-id="58122-103">Get support</span></span>
+# <a name="get-support"></a><span data-ttu-id="ce399-103">获取支持</span><span class="sxs-lookup"><span data-stu-id="ce399-103">Get support</span></span>
 
-<span data-ttu-id="58122-104">探索 Microsoft 搜索管理员们的集体智慧、与其他人员和专家交流和学习，并在 [Microsoft 技术社区网站](https://techcommunity.microsoft.com/t5/Microsoft-Search/ct-p/MicrosoftSearch)的 Microsoft 搜索部分共享自己的经验。</span><span class="sxs-lookup"><span data-stu-id="58122-104">Tap into the collective wisdom of other Microsoft Search admins, learn from each other and experts, and share your experiences on the Microsoft Search section of the [Microsoft Tech Community site](https://techcommunity.microsoft.com/t5/Microsoft-Search/ct-p/MicrosoftSearch).</span></span>
+<span data-ttu-id="ce399-104">探索 Microsoft 搜索管理员们的集体智慧、与其他人员和专家交流和学习，并在 [Microsoft 技术社区网站](https://techcommunity.microsoft.com/t5/Microsoft-Search/ct-p/MicrosoftSearch)的 Microsoft 搜索部分共享自己的经验。</span><span class="sxs-lookup"><span data-stu-id="ce399-104">Tap into the collective wisdom of other Microsoft Search admins, learn from each other and experts, and share your experiences on the Microsoft Search section of the [Microsoft Tech Community site](https://techcommunity.microsoft.com/t5/Microsoft-Search/ct-p/MicrosoftSearch).</span></span>
 
   
 
