@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 ms.assetid: c0c814d0-f7e4-444e-b18e-09beb45c9322
 description: 创建和更新书签以及用于批量编辑 Microsoft 搜索的书签结果的方法
-ms.openlocfilehash: 02b9bfecd97210ba8cd5b46bf3bc108bf66b6f01
-ms.sourcegitcommit: 3da22a2e09830672ebf199e05a32fa89b75c083b
+ms.openlocfilehash: fa1da7d120522ea76d68c1a84f7bee7590701c88
+ms.sourcegitcommit: bfcab9d42e93addccd1e3875b41bc9cc1b6986cc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "37288970"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "37949218"
 ---
 # <a name="manage-bookmarks"></a>管理书签
 
@@ -29,7 +29,7 @@ ms.locfileid: "37288970"
 
 ## <a name="add-or-edit-a-single-bookmark"></a>添加或编辑单个书签
 1. 转到 **Microsoft 365 管理中心**。
-1. 在导航窗格中，转到“**设置**”，然后选择“**Microsoft 搜索**”。
+1. 在导航窗格中，转到**设置**，然后选择**Microsoft 搜索**。
 默认情况下，“**书签**”选项卡处于选中状态。
 1. 若要添加书签，请选择“**新增**”。 若要编辑书签，请从相关书签列表中选择书签。 
 1. 在你添加或编辑信息时，预览将随之自动更新。
@@ -65,7 +65,7 @@ ms.locfileid: "37288970"
 - 如果存在具有相同标题或 URL 的现有书签，则将使用导入文件中的信息更新该书签。
 - 在模板文件中，并非所有字段都是必填的，并且必填字段因书签状态而异。
 - 基于“*状态*”字段，书签会保存为草稿书签、推荐书签、已计划书签或自动发布的书签。
-- 对于拥有多个租户的组织，你可以从某个租户导出书签并将其导入另一个租户。 但是，在导入之前，你必须删除 *Id* 列中的数据。
+- 对于管理多个组织的合作伙伴，您可以从一个组织中导出您的书签并将其导入到另一个组织中。 但是，在导入之前，你必须删除 *Id* 列中的数据。
 
 ### <a name="prevent-import-errors"></a>防止导入错误
 如果任何所需数据缺失或无效，你将收到错误，并且系统会生成一个日志文件，其中包含有关要更正的行和列的详细信息。 完成必要的编辑，并再次尝试导入该文件。 在解决所有错误之前，你无法导入或保存任何书签。
@@ -81,8 +81,7 @@ ms.locfileid: "37288970"
 
 ### <a name="what-are-powerapps"></a>什么是 PowerApps？
 PowerApps 是一种服务，通过该服务可生成在浏览器、手机或平板电脑上运行的商业应用，且无需编码经验。 PowerApps 可在任何浏览器和任何设备上运行，且添加该服务所需时间不到一分钟。 有关 PowerApps 的详细信息，请参阅：
-- 
-  [引导学习](https://docs.microsoft.com/learn/browse/?products=powerapps)
+- [引导学习](https://docs.microsoft.com/learn/browse/?products=powerapps)
 - [文档](https://docs.microsoft.com/powerapps/maker/canvas-apps/get-sessionid)
 - [PowerApps 主页](https://make.preview.powerapps.com/environments/839eace6-59ab-4243-97ec-a5b8fcc104e4/home)
 

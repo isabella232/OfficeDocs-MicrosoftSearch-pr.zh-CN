@@ -15,12 +15,12 @@ search.appverid:
 ms.assetid: 7bada218-8908-4956-aae3-6ffaeef384ca
 ROBOTS: NoIndex
 description: 使用 Microsoft 搜索管理门户中的导入工具，快速添加常见问题的答案
-ms.openlocfilehash: c0ec4aaa0ee93e94c8569dc383456018ccc6679d
-ms.sourcegitcommit: c2c9e66af1038efd2849d578f846680851f9e5d2
-ms.translationtype: HT
+ms.openlocfilehash: 660f5663ff6238f4ab59dab36d51f1311d5c7260
+ms.sourcegitcommit: bfcab9d42e93addccd1e3875b41bc9cc1b6986cc
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36639772"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "37949029"
 ---
 # <a name="bulk-create-qas"></a>批量创建问答
 
@@ -45,7 +45,7 @@ ms.locfileid: "36639772"
     
 7. 单击“**导入**”
 
-# <a name="prevent-import-errors"></a>防止导入错误      
+## <a name="prevent-import-errors"></a>防止导入错误      
 若所需的任何数据缺失或无效，则会出现错误。 出错时，视具体错误而定，可能会生成包含详细信息的日志文件，其中指出需要更正的行和列。 完成必要的编辑，并再次尝试导入该文件。
 
 > [!NOTE]
@@ -61,7 +61,7 @@ ms.locfileid: "36639772"
 
 此外，如果包含现有问答的 ID，则会将其替换为导入文件中的信息。
 
-对于拥有多个租户的组织，你可以从某个租户导出问答并将其导入另一个租户。 但是，在导入之前，你必须删除 ID 列中的数据。
+对于管理多个组织的合作伙伴，可以从一个组织中导出 Q&，并将其导入到另一个组织中。 但是，在导入之前，你必须删除 ID 列中的数据。
 
 若要详细了解必填字段和建议填写的字段，请参阅[创建问答](create-qas.md)。
 
