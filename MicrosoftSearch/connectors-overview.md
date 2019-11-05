@@ -12,26 +12,26 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft Graph 连接器的 Microsfot 搜索概述
-ms.openlocfilehash: c60154e5769e96cf8a6a4a399d344da259f4e7b0
-ms.sourcegitcommit: bfcab9d42e93addccd1e3875b41bc9cc1b6986cc
+ms.openlocfilehash: c372d4750c6644f0f98054a2531b6431fb8cd334
+ms.sourcegitcommit: 90f82efc3671c477536cbe8d8846132910b64600
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/04/2019
-ms.locfileid: "37949610"
+ms.locfileid: "37961947"
 ---
 # <a name="overview-of-microsoft-graph-connectors"></a>Microsoft Graph 连接器概述
 
 Microsoft Search 将对所有 Microsoft 365 数据编制索引，使其可供用户搜索。 使用 Microsoft Graph 连接器，您的组织可以将第三方数据编入索引，以显示在 Microsoft 搜索结果中。 第三方数据可以在内部部署或公共或私有云承载。 连接器扩展了可在 Microsoft 365 生产力应用和更广泛的 Microsoft 生态系统中搜索的内容源的类型。
 
 > [!IMPORTANT]
-> **免责声明**： Microsoft Graph 连接器、索引 api 和搜索 api 当前处于预览阶段。 若要了解有关预览的详细信息，请参阅[连接器预览](connectors-preview.md)。 若要参与预览，必须先提交[Microsoft Graph 连接器预览注册表单](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbRxWYgu82J_RFnMMATAS6_chUNVYwNU1CMDNZUDBSSDZKWVo2RDJDRjRLQi4u)。
+> **免责声明**： microsoft Graph 连接器和 Microsoft Search api （索引和搜索）当前处于预览阶段。 若要了解有关预览的详细信息，请参阅[Microsoft Graph 连接器预览](connectors-preview.md)。 若要参与预览，必须先提交[Microsoft Graph 连接器预览注册表单](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbRxWYgu82J_RFnMMATAS6_chUNVYwNU1CMDNZUDBSSDZKWVo2RDJDRjRLQi4u)。
 
 ## <a name="architecture"></a>体系结构
 下面的 Microsoft Graph 平台体系结构图表显示了连接器内容如何通过内容索引传递到[Microsoft Search](https://docs.microsoft.com/microsoftsearch/overview-microsoft-search)客户端中的用户结果。 本文介绍 Microsoft Graph 连接器数据流过程中的每个关键构建基块。
 
-[请参阅下面的临时关系图]![](media/highlevel-connectors_FINAL.jpg)
+![](media/highlevel-connectors_FINAL.png)
 
-API 为每个数据源实例化一个连接。 然后，源数据流通过 Microsoft 的内容索引 API 进行索引和存储。 已建立的连接将与 Microsoft 搜索进行交互，以便用户可以获取搜索结果。
+API 为每个数据源实例化一个连接。 然后，API 将对数据进行索引和存储。 已建立的连接将与 Microsoft 搜索进行交互，以便用户可以获取搜索结果。
 
 您可以在[microsoft 365 管理中心](https://admin.microsoft.com)中配置所有 microsoft 构建的连接器。 管理中心简化了使用简单用户界面配置连接器的工作。
 
@@ -42,7 +42,7 @@ API 为每个数据源实例化一个连接。 然后，源数据流通过 Micro
 
 若要从我们的生态系统合作伙伴之一预览连接器，请直接与他们联系。 有关详细信息，请参阅[Microsoft Graph 连接器库](connectors-gallery.md)。
 
-您还可以使用[Microsoft Graph 索引 API](/graph/search-index-overview)生成自己的连接器。
+您还可以[生成自己的连接器](https://docs.microsoft.com/graph/search-concept-overview)。
 
 ### <a name="connectors-by-microsoft"></a>Microsoft 连接器
 Microsoft Graph 连接器预览版本包含6个 Microsoft 构建的连接器。 您可以在[microsoft 365 管理中心](https://admin.microsoft.com)中进行设置，并了解如何[设置 microsoft 构建的连接器](configure-connector.md)。
@@ -72,10 +72,10 @@ Microsoft Graph 连接器预览版本包含6个 Microsoft 构建的连接器。 
 了解有关来自[Microsoft Graph 连接器库](connectors-gallery.md)中合作伙伴的连接器的详细信息。
 
 ### <a name="build-your-own-connector"></a>生成自己的连接器
-若要对自定义数据类型或文件编制索引，开发人员可以在[Microsoft Graph](https://developer.microsoft.com/graph/)中创建连接器。 连接器是一个应用程序，它使用 Microsoft Graph 索引 API 创建连接，并将项目推送到 Microsoft Search 索引中。 有关详细信息，请参阅[Microsoft Graph 索引 API 概述](https://docs.microsoft.com/graph/search-index-overview)。
+若要对自定义数据类型或文件编制索引，开发人员可以在[Microsoft Graph](https://developer.microsoft.com/graph/)中创建连接器。 连接器是[创建连接](https://docs.microsoft.com/graph/search-index-manage-connections)并将项目推送到 Microsoft 搜索索引的应用程序。 有关详细信息，请参阅[为 Microsoft Graph 中的应用程序扩展 Microsoft 搜索体验的概述](https://docs.microsoft.com/graph/search-concept-overview)。
 
 ### <a name="search-results-with-your-custom-built-connector"></a>使用自定义内置连接器的搜索结果
-自定义数据编制索引后，开发人员可以使用 Microsoft Graph 中的搜索 API 查询此数据。 您可以在任何应用程序中查看数据。 有关详细信息，请参阅[Microsoft Graph 搜索 API 概述](https://docs.microsoft.com/graph/api/resources/indexing-api-overview)。
+自定义数据编制索引后，开发人员就可以[查询此数据](https://docs.microsoft.com/graph/search-concept-custom-types)。 您可以在任何应用程序中查看数据。 有关详细信息，请参阅[为 Microsoft Graph 中的应用程序扩展 Microsoft 搜索体验的概述](https://docs.microsoft.com/graph/search-concept-overview)。
 
 ## <a name="license-requirements"></a>许可要求
 若要在搜索结果中查看连接器中的数据，用户必须具有以下 Microsoft 365 订阅之一：
