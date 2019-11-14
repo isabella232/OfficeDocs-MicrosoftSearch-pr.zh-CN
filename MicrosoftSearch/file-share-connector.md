@@ -3,7 +3,6 @@ title: Microsoft Search 的文件共享连接器
 ms.author: v-pamcn
 author: TrishaMc1
 manager: mnirkhe
-ms.date: 10/08/2019
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -13,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 设置用于 Microsoft 搜索的文件共享连接器。
-ms.openlocfilehash: d5fbc1af2868ce7baa70017f617a9731340fb19a
-ms.sourcegitcommit: bfcab9d42e93addccd1e3875b41bc9cc1b6986cc
+ms.openlocfilehash: 9791ee3460eb174fd7a478baa6a9beb45f1b1aab
+ms.sourcegitcommit: 6b531b2ce7253c16251c7089795dedf1d2f3fc33
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "37949597"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "38310713"
 ---
 # <a name="file-share-connector"></a>文件共享连接器
 
@@ -27,13 +26,15 @@ ms.locfileid: "37949597"
 本文适用于 Microsoft 365 管理员或任何配置、运行和监视文件共享连接器的人。 它说明了如何配置连接器和连接器功能、限制和故障排除技术。
 
 ## <a name="install-a-data-gateway"></a>安装 data gateway
-为了访问第三方数据，您必须安装和配置 Microsoft Power BI 网关。 若要了解详细信息，请参阅[Install 和本地网关](https://docs.microsoft.com/data-integration/gateway/service-gateway-install)。  
+为了访问第三方数据，您必须安装和配置 Microsoft Power BI 网关。 若要了解详细信息，请参阅[安装本地网关](https://docs.microsoft.com/data-integration/gateway/service-gateway-install)。  
+
+## <a name="content-requirements"></a>内容要求
+**文件类型**。 只有这些格式的文件可以编制索引和搜索： DOC、.DOCM、.DOCX、DOT、.DOTX、.EML、GIF、HTML、JPEG、MHT、MHTML、MSG、NWS、.OBD、.OBT、ODP、ODS、ODT、、、、、XLS、.XLSX、.XLT、.pptm、XML、XPS 和 ZIP。 仅对这些格式的文本内容编制索引。 忽略所有多媒体内容。
+ 
+**文件大小限制**。 支持的最大文件大小为 100 MB。 将从索引中跳过超过 100 MB 的文件。 后处理的最大大小限制为 4 MB。 当文件的大小达到 4 MB 时处理停止。 因此，文件中存在的某些短语可能不适用于搜索。
 
 ## <a name="connect-to-a-data-source"></a>连接到数据源
-在 "**连接到数据源**" 页上，创建一个文件夹并提供文件共享的路径。 然后选择以前安装的网关。 输入具有对共享中所有文件的**读取访问权限**的 Windows 用户帐户的凭据。 然后，您可以验证共享中存在的文件，并查看所有获取的元数据。
-
-## <a name="manage-search-permissions"></a>管理搜索权限
-文件共享连接器仅支持**所有人都**能看到的搜索权限。 索引数据显示在搜索结果中，并对组织中的所有用户可见。
+在 "**连接到数据源**" 页上，选择 "**文件共享**" 并提供名称、连接 ID 和说明。 在下一页中，提供文件共享的路径，然后选择您以前安装的网关。 输入具有对共享中所有文件的读取访问权限的 Windows 用户帐户的凭据。 请浏览其余设置并发布连接。
 
 ## <a name="set-the-refresh-schedule"></a>设置刷新计划
 建议的默认刷新计划间隔为15分钟，但您可以将其更改为您喜欢的其他间隔。
@@ -102,7 +103,7 @@ Read-Host -Prompt 'Press enter to exit'
 
 ![使用 "复制链接" 对话框打开 SharePoint 搜索。](media/fileshare-search.png)
 
-## <a name="troubleshooting"></a>疑难解答
+## <a name="troubleshooting"></a>故障排除
 如果连接出现严重错误，其状态将显示为 "**失败**"。 若要获取有关三种错误类型的详细信息，请转到**错误详细信息**页面，然后选择 "失败的连接"。 请参阅[管理连接器](manage-connector.md)以了解详细信息。
 1. **网关不可访问（错误代码：11）**。 连接的网关计算机已关闭。 验证 Microsoft Power BI 进程是否在网关计算机上运行。
 2. **身份验证错误（错误代码：12）**。 用于创建连接的凭据已过期或已不再有效。 若要解决此错误，请输入有效的凭据。
@@ -111,5 +112,5 @@ Read-Host -Prompt 'Press enter to exit'
 ## <a name="limitations"></a>限制
 文件共享连接器在预览版本中具有以下限制：
 * 只能使用固定属性（而不是使用自定义属性的文件）对文件编制索引。
-* 目前不支持文件共享访问控制列表（Acl）。
+* 目前不支持文件共享访问控制列表（Acl）。 仅支持文件 NTFS Acl。
 * 不支持外部标识。 它们必须映射到 Azure Active Directory 标识。

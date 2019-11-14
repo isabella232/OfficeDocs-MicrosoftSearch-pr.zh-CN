@@ -1,0 +1,43 @@
+---
+title: 查找资源、工具和更多内容
+ms.author: dawholl
+author: dawholl
+manager: kellis
+ms.date: 12/18/2018
+ms.audience: Consumer/IW
+ms.topic: article
+ms.service: mssearch
+localization_priority: Normal
+search.appverid:
+- BFB160
+- MET150
+ms.assetid: a67e015a-e10a-442a-b1c9-511136d54d1f
+ROBOTS: NOINDEX
+description: 使用 Microsoft Search 查找 intranet 网站、资源、工具和指向内部信息的链接
+ms.openlocfilehash: 986da96bd0d3964bd0ceff839d015e83df927fd2
+ms.sourcegitcommit: 6b531b2ce7253c16251c7089795dedf1d2f3fc33
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "38311427"
+---
+# <a name="find-resources-tools-and-more"></a>查找资源、工具和更多内容
+
+你的 IT 部门创建并将书签发布到内部和外部资源、工具和页面等，以帮助你查找所需的信息。
+  
+书签结果包括网站或资源的简短说明以及指向该网站或资源的链接。 例如，大多数组织将创建福利、HR、职业信息、IT 支持和报告时间的书签。
+  
+问：通常情况下&，结果中将包含此相同的信息以及可能包含所需信息的简短答案和链接（如果您想要了解详细信息）。
+  
+1. 在 Bing 登录你的工作或学校帐户 
+    
+2. 搜索内容
+    
+    例如，尝试搜索 "福利"、"HR"、"职业信息"、"IT 支持" 或 "报告休息时间"。
+    
+3. 在页面或右列的顶部显示一个书签或 Q&结果
+    
+    其他 web 结果将显示在其下方。 它们并不特定于您的组织。
+
+  
+
