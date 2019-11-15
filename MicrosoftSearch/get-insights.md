@@ -1,9 +1,8 @@
 ---
-title: 使用见解仪表板
-ms.author: dawholl
-author: dawholl
-manager: kellis
-ms.date: 9/11/2018
+title: Microsoft Search Insights 仪表板报告
+ms.author: anfowler
+author: adefowler
+manager: shohara
 ms.audience: Admin
 ms.topic: reference
 ms.service: mssearch
@@ -13,65 +12,43 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: ebce7fdc-e89b-473c-8131-67e659bb3f73
-ROBOTS: NOINDEX
-description: 使用 Microsoft 搜索管理门户中简单好用的仪表板分析指标并管理内容
-ms.openlocfilehash: 9323ad97a2baffc3bdc1794049f6933335b298b2
-ms.sourcegitcommit: c2c9e66af1038efd2849d578f846680851f9e5d2
-ms.translationtype: HT
+description: 在 Microsoft Search 中分析指标并管理见解仪表板中的内容
+ms.openlocfilehash: d75622ad8c414f225615ea14082c8197e2947dd4
+ms.sourcegitcommit: 21361af7c244ffd6ff8689fd0ff0daa359bf4129
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36639817"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38626870"
 ---
-# <a name="use-the-insights-dashboard"></a><span data-ttu-id="826a1-103">使用见解仪表板</span><span class="sxs-lookup"><span data-stu-id="826a1-103">Use the Insights Dashboard</span></span>
+# <a name="microsoft-search-insights-dashboard-reports"></a><span data-ttu-id="0eea8-103">Microsoft Search Insights 仪表板报告</span><span class="sxs-lookup"><span data-stu-id="0eea8-103">Microsoft Search Insights dashboard reports</span></span>
 
-> [!IMPORTANT]
-> <span data-ttu-id="826a1-104">本文适用于必应中的 Microsoft 搜索管理门户。</span><span class="sxs-lookup"><span data-stu-id="826a1-104">This article applies to the Microsoft Search in Bing admin portal.</span></span> <span data-ttu-id="826a1-105">我们正在将该门户迁移至 Microsoft 365 管理中心，并且会在迁移后将必应中的 Microsoft 搜索门户删除。</span><span class="sxs-lookup"><span data-stu-id="826a1-105">We’re moving the portal to the Microsoft 365 admin center, and then the Microsoft Search in Bing portal will be removed.</span></span> <span data-ttu-id="826a1-106">我们建议你使用 Microsoft 365 管理中心快速开始。</span><span class="sxs-lookup"><span data-stu-id="826a1-106">We recommend that you use the Microsoft 365 admin center to get started.</span></span> <span data-ttu-id="826a1-107">[Microsoft 搜索概述](overview-microsoft-search.md)。</span><span class="sxs-lookup"><span data-stu-id="826a1-107">Overview of Microsoft Search</span></span>
-    
-<span data-ttu-id="826a1-108">获取数据见解并查看用户是如何使用你的结果的。</span><span class="sxs-lookup"><span data-stu-id="826a1-108">Get data insights and see how users are engaging with your results.</span></span> <span data-ttu-id="826a1-109">使用管理门户仪表板来执行以下操作：</span><span class="sxs-lookup"><span data-stu-id="826a1-109">User the Admin portal Dashboard to:</span></span>
-  
-- <span data-ttu-id="826a1-110">查看发布、计划或推荐了多少个书签和问答</span><span class="sxs-lookup"><span data-stu-id="826a1-110">See how many Bookmarks, Q&A, and Locations have been published, scheduled, or suggested.</span></span>
-    
-- <span data-ttu-id="826a1-111">查看展示工作结果的热门搜索查询的展示次数</span><span class="sxs-lookup"><span data-stu-id="826a1-111">See impressions for top search queries that show work results</span></span>
-    
-- <span data-ttu-id="826a1-112">分析书签和问答的展示次数分布</span><span class="sxs-lookup"><span data-stu-id="826a1-112">Analyze impression distributions for bookmarks and Q&As</span></span>
-    
-## <a name="get-details-about-bookmarks-and-qas"></a><span data-ttu-id="826a1-113">获取有关书签和问答的详细信息</span><span class="sxs-lookup"><span data-stu-id="826a1-113">Get details about bookmarks and Q&As</span></span>
+<span data-ttu-id="0eea8-104">您可以使用 Microsoft Search insights 仪表板来管理已发布的答案的必应数据。</span><span class="sxs-lookup"><span data-stu-id="0eea8-104">You can use the Microsoft Search insights dashboard to manage the Bing data for your published answers.</span></span> <span data-ttu-id="0eea8-105">这只是[使内容易于查找](make-content-easy-to-find.md)您的用户所需的步骤之一。</span><span class="sxs-lookup"><span data-stu-id="0eea8-105">This is just one of the steps needed to [make content easy to find](make-content-easy-to-find.md) for your users.</span></span>
 
-<span data-ttu-id="826a1-114">使用仪表板来按状态查看书签或问答总计：</span><span class="sxs-lookup"><span data-stu-id="826a1-114">Use the Dashboard to see bookmark or Q&A totals by status:</span></span>
-  
-- <span data-ttu-id="826a1-115">已发布：向用户推出的已发布结果数</span><span class="sxs-lookup"><span data-stu-id="826a1-115">Published: The number of published results that are available to users.</span></span>
-    
-- <span data-ttu-id="826a1-116">已计划：发布管道中的已计划结果数</span><span class="sxs-lookup"><span data-stu-id="826a1-116">Scheduled: The number of scheduled results in the publish pipeline.</span></span>
-    
-- <span data-ttu-id="826a1-117">推荐：来自用户的推荐数</span><span class="sxs-lookup"><span data-stu-id="826a1-117">Suggested: The number of suggestions from users.</span></span>
-    
-<span data-ttu-id="826a1-118">仪表板中的书签和问答见解卡片还可用于完成常见任务：</span><span class="sxs-lookup"><span data-stu-id="826a1-118">Bookmarks and Q&A insight cards in the Dashboard also provide easy access to common tasks:</span></span>
-  
-- <span data-ttu-id="826a1-119">若要查看书签或问答结果，请单击卡片标题上的“书签”或“问答”</span><span class="sxs-lookup"><span data-stu-id="826a1-119">To view bookmark or Q&A results, click Bookmarks or Q&As on the card title</span></span>
-    
-- <span data-ttu-id="826a1-120">若要添加书签或问答，请单击创建选项</span><span class="sxs-lookup"><span data-stu-id="826a1-120">To add a bookmark or Q&A, click the create option</span></span>
-    
-- <span data-ttu-id="826a1-121">若要批量添加书签或问答，请单击导入选项</span><span class="sxs-lookup"><span data-stu-id="826a1-121">To bulk add bookmarks or Q&As, click the import option</span></span>
-    
-## <a name="review-top-search-queries"></a><span data-ttu-id="826a1-122">查看热门搜索查询</span><span class="sxs-lookup"><span data-stu-id="826a1-122">Review top search queries</span></span>
+<span data-ttu-id="0eea8-106">当您首次转到 Microsoft 365 管理中心中的 Microsoft 搜索时，您将在 "见解" 仪表板中输入。</span><span class="sxs-lookup"><span data-stu-id="0eea8-106">When you first go to Microsoft Search in the Microsoft 365 admin center, you'll enter on the Insights dashboard.</span></span>
 
-<span data-ttu-id="826a1-123">了解哪些搜索在过去的 90 天中产生了最多的展示次数。</span><span class="sxs-lookup"><span data-stu-id="826a1-123">Find out which searches have generated the most impressions over the last 90 days.</span></span> <span data-ttu-id="826a1-124">系统将会显示每个结果类型的前 25 个最热门用户搜索及其总展示次数和点击率 (CTR)。</span><span class="sxs-lookup"><span data-stu-id="826a1-124">The Top Queries card shows the top 25 user searches for each result type with the total number of searches and their click-through rate (CTR).</span></span> <span data-ttu-id="826a1-125">在热门搜索查询卡片上，你可以：</span><span class="sxs-lookup"><span data-stu-id="826a1-125">On the Top search queries card you can:</span></span>
-  
-- <span data-ttu-id="826a1-126">若要按结果类型进行筛选，请单击菜单上的“所有结果”，然后选择不同的结果类型</span><span class="sxs-lookup"><span data-stu-id="826a1-126">To filter by result type, click All results on the menu and select a different result type</span></span>
-    
-- <span data-ttu-id="826a1-127">若要查看结果如何在必应上显示，请单击某个查询，搜索结果页面将在新选项卡中打开</span><span class="sxs-lookup"><span data-stu-id="826a1-127">To see how a result appears on Bing, click a query and the search results page opens in a new tab</span></span>
-    
-- <span data-ttu-id="826a1-128">若要查看其他搜索查询，请单击卡片底部的向左或向右箭头</span><span class="sxs-lookup"><span data-stu-id="826a1-128">To see additional search queries, click the left or right arrows on the bottom of the card</span></span>
-    
-## <a name="analyze-impressions-by-result-type"></a><span data-ttu-id="826a1-129">按结果类型分析展示次数</span><span class="sxs-lookup"><span data-stu-id="826a1-129">Analyze impressions by result type</span></span>
+![Insights-dashboard](media/Insights-dashboard.png)
 
-<span data-ttu-id="826a1-130">在“展示次数分布(按结果类型)”卡片中，简单易懂的图形将会显示各个时间段的数据。</span><span class="sxs-lookup"><span data-stu-id="826a1-130">Easy-to-read graphs in the Impression distribution by result type card show data over various time frames.</span></span> <span data-ttu-id="826a1-131">摘要将会显示展示次数分布及其百分比（结果类型展示次数 x 100 / 总展示次数）</span><span class="sxs-lookup"><span data-stu-id="826a1-131">The summary shows the number of impressions with a percentage calculation for the distribution (number of result type impressions x 100 / total number of impressions).</span></span> <span data-ttu-id="826a1-132">时间轴将会显示结果类型的每日展示次数。</span><span class="sxs-lookup"><span data-stu-id="826a1-132">The timeline shows the daily number of impressions for a result type.</span></span> <span data-ttu-id="826a1-133">你还可以更改这两种视图的时间范围并获得更多详细信息：</span><span class="sxs-lookup"><span data-stu-id="826a1-133">You can also change the time range for both views and get more details:</span></span>
-  
-- <span data-ttu-id="826a1-134">在卡片顶部，单击 7 天、30 天或 90 天</span><span class="sxs-lookup"><span data-stu-id="826a1-134">On the top of the card, click 7 days, 30 days, or 90 days</span></span>
-    
-- <span data-ttu-id="826a1-135">若要查看 0 至 90 天之间的自定义范围，请单击“自定义范围”，然后输入开始和结束日期</span><span class="sxs-lookup"><span data-stu-id="826a1-135">To see a custom range between 0 and 90 days, click Custom range and enter the start and end dates</span></span>
-    
-- <span data-ttu-id="826a1-136">在时间轴中，将鼠标悬停在对应一天的结果类型展示次数的数据点上</span><span class="sxs-lookup"><span data-stu-id="826a1-136">In the timeline, hover on a data point for impressions by result type for a single day</span></span>
+<span data-ttu-id="0eea8-108">以下是可用于真知灼见仪表板的报告。</span><span class="sxs-lookup"><span data-stu-id="0eea8-108">Here are the reports that are available on the insights dashboard.</span></span>
 
-  
+> [!NOTE]
+> <span data-ttu-id="0eea8-109">报告中的数据仅表示必应数据。</span><span class="sxs-lookup"><span data-stu-id="0eea8-109">The data in the reports only represents Bing data.</span></span>
 
+## <a name="top-queries"></a><span data-ttu-id="0eea8-110">热门查询</span><span class="sxs-lookup"><span data-stu-id="0eea8-110">Top queries</span></span>
+
+<span data-ttu-id="0eea8-111">此报告提供用户运行的前2000必应搜索查询的详细信息。</span><span class="sxs-lookup"><span data-stu-id="0eea8-111">This report gives details about the top 2000 Bing search queries that users run.</span></span> <span data-ttu-id="0eea8-112">若要在**Top 查询**中显示查询，查询必须至少有三次单击。</span><span class="sxs-lookup"><span data-stu-id="0eea8-112">For a query to appear in **Top queries**, the query must get at least three clicks.</span></span>
+
+![包含表格标题的 Top 查询报告：查询、查询总数，然后单击 "速率"。](media/Insights-topqueries.png)
+
+<span data-ttu-id="0eea8-114">较低的即点即用速率（CTR）意味着用户找不到要查找的内容。</span><span class="sxs-lookup"><span data-stu-id="0eea8-114">A low click-through rate (CTR) means that users aren’t finding what they’re looking for.</span></span>
+
+<span data-ttu-id="0eea8-115">您可以通过筛选答案的类型来选择报告的不同视图。</span><span class="sxs-lookup"><span data-stu-id="0eea8-115">You can choose different views of the report by filtering on the type of answer.</span></span> <span data-ttu-id="0eea8-116">例如，如果只想查看书签的顶部查询，请选择报表右上角的下拉箭头，然后选择 "**书签**"。</span><span class="sxs-lookup"><span data-stu-id="0eea8-116">For example if you just want to view the top queries for Bookmarks, select the drop-down in the upper-right corner of the report, and then select **Bookmarks**.</span></span> <span data-ttu-id="0eea8-117">默认情况下，将显示**所有**答案类型。</span><span class="sxs-lookup"><span data-stu-id="0eea8-117">By default, **All** answer types are shown.</span></span>
+
+![按书签、人员、问答&、文件、组、位置、对话和网站筛选热门查询报告](media/Insights-topqueries-dropdown.png)
+
+## <a name="impression-distribution"></a><span data-ttu-id="0eea8-119">印记分布</span><span class="sxs-lookup"><span data-stu-id="0eea8-119">Impression distribution</span></span>
+
+<span data-ttu-id="0eea8-120">此报告显示必应 Bing 分布在 Bing 一段时间内的各种答案。</span><span class="sxs-lookup"><span data-stu-id="0eea8-120">This report shows impression distribution in Bing over time for various answers.</span></span> <span data-ttu-id="0eea8-121">示例包括书签、人员、问答&、文件、位置、文件网站、组和对话。</span><span class="sxs-lookup"><span data-stu-id="0eea8-121">Examples are bookmarks, people, Q&A, files, locations, file sites, groups, and conversations.</span></span> 
+
+![选择为 "时间段" 的90天的印记报告。](media/Insights-impressions.png)
+
+<span data-ttu-id="0eea8-123">"印象分布" 可帮助管理员了解在指定时间段内用户查找的内容。</span><span class="sxs-lookup"><span data-stu-id="0eea8-123">Impression Distribution can help admins understand what users look for during a specified period.</span></span>
