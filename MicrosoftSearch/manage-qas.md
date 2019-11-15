@@ -3,7 +3,6 @@ title: 管理问答
 ms.author: anfowler
 author: adefowler
 manager: mnirkhe
-ms.date: 05/30/2019
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -14,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7e3432e6-5317-4d63-90b0-52da6fddd343
 description: 查找和更新单个解答或使用可用的 Microsoft 搜索工具同时编辑所有解答
-ms.openlocfilehash: 8620842e64a40eb32467c42a289bdec3b67d303b
-ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
-ms.translationtype: HT
+ms.openlocfilehash: 903aab52e8d51e45588a390b5ccdccbaae2cf04a
+ms.sourcegitcommit: 21361af7c244ffd6ff8689fd0ff0daa359bf4129
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "34591518"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38626771"
 ---
 # <a name="manage-qas"></a>管理问答
 
@@ -76,7 +75,7 @@ ms.locfileid: "34591518"
 - 如果存在具有相同标题或 URL 的现有书签，则将使用导入文件中的信息更新该书签。
 - 在模板文件中，并非所有字段都是必填的，并且必填字段因书签状态而异。
 - 基于“状态”字段，书签会保存为草稿书签、推荐书签、已计划书签或自动发布的书签。
-- 对于拥有多个租户的组织，你可以从某个租户导出书签并将其导入另一个租户。 但是，在导入之前，你必须删除 *Id* 列中的数据。
+- 对于管理多个组织的合作伙伴，您可以从一个组织中导出您的书签并将其导入到另一个组织中。 但是，在导入之前，你必须删除 *Id* 列中的数据。
 
 **注意：** 如果模板文件中有任何错误，则无法导入问答。 为防止出错，请确保导入文件具有正确格式，并且包含所有必需信息。 
 

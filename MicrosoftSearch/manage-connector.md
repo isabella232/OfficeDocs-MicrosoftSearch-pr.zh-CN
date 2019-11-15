@@ -1,9 +1,8 @@
 ---
 title: 为 Microsoft Search 管理 Microsoft Graph 连接器
-ms.author: v-pamcn
+ms.author: mounika.narayanan
 author: monaray
 manager: mnirkhe
-ms.date: 11/04/2019
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -13,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 为 Microsoft Search 管理 Microsoft Graph 连接器。
-ms.openlocfilehash: 5aab310a05d073221918a8aaa80ea1e06c818e51
-ms.sourcegitcommit: bfcab9d42e93addccd1e3875b41bc9cc1b6986cc
+ms.openlocfilehash: c74dc8f6d08519860e757b0ebe19e83dcf42159b
+ms.sourcegitcommit: 21361af7c244ffd6ff8689fd0ff0daa359bf4129
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "37949637"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38626798"
 ---
 # <a name="manage-your-connector-for-microsoft-search"></a>管理你的连接器以进行 Microsoft Search
 
@@ -33,10 +32,10 @@ ms.locfileid: "37949637"
 
 **操作** | **Microsoft 构建的连接器** | **合作伙伴或自定义生成的连接器**
 --- | --- | ---
-添加连接 | ： heavy_check_mark：（请参阅[Configure a Microsoft 内置的连接器](configure-connector.md)） | ： x：（请参阅合作伙伴或自定义内置连接器管理员 UX）
-删除连接 | :heavy_check_mark: | :heavy_check_mark:
-编辑已发布的连接 | ： heavy_check_mark： Name<br></br> ： heavy_check_mark： Description<br></br> ： heavy_check_mark：外部数据源的身份验证凭据<br></br> ： heavy_check_mark：本地数据源的网关凭据<br></br> ： heavy_check_mark： Refresh schedule<br></br> | ： heavy_check_mark： Name<br></br> ： heavy_check_mark： Description
-编辑拔模连接 | :heavy_check_mark: | 版
+添加连接 | ： heavy_check_mark：（请参阅[配置 Microsoft 构建的连接器](configure-connector.md)） | ： x：（请参阅合作伙伴或自定义内置连接器管理员 UX）
+删除连接 | ： heavy_check_mark： | ： heavy_check_mark：
+编辑已发布的连接 | ： heavy_check_mark： Name<br></br> ： heavy_check_mark：说明<br></br> ： heavy_check_mark：外部数据源的身份验证凭据<br></br> ： heavy_check_mark：本地数据源的网关凭据<br></br> ： heavy_check_mark：刷新计划<br></br> | ： heavy_check_mark： Name<br></br> ： heavy_check_mark：说明
+编辑拔模连接 | ： heavy_check_mark： | 版
 
 ## <a name="monitor-your-connection-status"></a>监视连接状态
 创建连接后，已处理的项目数显示在**Microsoft 搜索**页面上的 "**连接器**" 选项卡上。 成功完成初始完全爬网后，会显示定期增量爬网的进度。 此页面提供有关连接器的日常操作的信息，以及日志和错误历史记录的概述。

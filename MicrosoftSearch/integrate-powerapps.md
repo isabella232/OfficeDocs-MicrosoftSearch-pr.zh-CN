@@ -3,7 +3,6 @@ title: 集成 PowerApps
 ms.author: dawholl
 author: dawholl
 manager: kellis
-ms.date: 12/18/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -13,14 +12,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 1fadcba3-4a7f-4a55-8476-d4e64d49a15f
-ROBOTS: NOINDEX
 description: 在 Microsoft Search 的书签结果中添加基于浏览器的应用程序
-ms.openlocfilehash: 36389a8b53390c7dd18cf98285b0faa6df73c8b4
-ms.sourcegitcommit: 3da22a2e09830672ebf199e05a32fa89b75c083b
+ms.openlocfilehash: e3fda45bbc7bef5634fb08a7dd6fc0143d6da054
+ms.sourcegitcommit: 21361af7c244ffd6ff8689fd0ff0daa359bf4129
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "37288925"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38626834"
 ---
 # <a name="integrate-powerapps"></a>集成 PowerApps
    
@@ -30,8 +28,7 @@ ms.locfileid: "37288925"
 
 PowerApps 是一种服务，通过该服务可生成在浏览器、手机或平板电脑上运行的商业应用，且无需编码经验。 了解详细信息：
   
-- 
-  [引导学习](https://docs.microsoft.com/learn/browse/?products=powerapps)
+- [引导学习](https://docs.microsoft.com/learn/browse/?products=powerapps)
     
 - [文档](https://docs.microsoft.com/powerapps/)
     
@@ -55,6 +52,6 @@ PowerApps 可在任何浏览器和任何设备上运行，且添加该服务所�
     
     预览中的 PowerApp 可充分发挥作用，使其易于测试和使用。
     
-7. 单击 "**发布**"
+7. 单击“**发布**”
     
 当授权的 Microsoft 搜索用户在 Bing 上搜索任何书签的关键字或保留关键字时，PowerApp 将显示在书签结果中。

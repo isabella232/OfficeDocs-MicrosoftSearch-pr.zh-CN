@@ -1,6 +1,6 @@
 ---
 title: 为 Microsoft Search 配置 Microsoft 构建的连接器
-ms.author: v-pamcn
+ms.author: mounika.narayanan
 author: monaray
 manager: shohara
 ms.audience: Admin
@@ -12,17 +12,17 @@ search.appverid:
 - MET150
 - MOE150
 description: 为 Microsoft Search 配置 Microsoft 构建的连接器
-ms.openlocfilehash: aee7c142e8cf04349076030cdedde0cea7344906
-ms.sourcegitcommit: bfcab9d42e93addccd1e3875b41bc9cc1b6986cc
+ms.openlocfilehash: 1a3affebc754595eabc40a13402aae6bbb7a1e1c
+ms.sourcegitcommit: 21361af7c244ffd6ff8689fd0ff0daa359bf4129
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "37949612"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38626522"
 ---
 # <a name="set-up-your-microsoft-built-connector-for-microsoft-search"></a>将 Microsoft 构建的连接器设置为 Microsoft Search
 
-本文将指导您完成配置 Microsoft 构建的连接器的步骤。 概述了在[Microsoft 365 管理中心](https://admin.microsoft.com)中设置连接的流程。 有关如何设置特定 Microsoft 构建的连接器的更多详细信息，请参阅以下文章：
-* [Azure Data Lake 存储 Gen2](azure-data-lake-connector.md)
+本文将指导您完成配置 Microsoft 构建的连接器的步骤。 概述了在 Microsoft 365[管理中心](https://admin.microsoft.com)中设置连接的流程。 有关如何设置特定 Microsoft 构建的连接器的更多详细信息，请参阅以下文章：
+* [Azure Data Lake Storage Gen2](azure-data-lake-connector.md)
 * [企业网站](enterprise-web-connector.md)
 * [文件共享](file-share-connector.md)
 * [MediaWiki](mediawiki-connector.md)
@@ -30,13 +30,13 @@ ms.locfileid: "37949612"
 * [ServiceNow](servicenow-connector.md)
 
 ## <a name="set-up"></a>设置
-若要配置任何 Microsoft 构建的连接器，请转到[microsoft 365 管理中心](https://admin.microsoft.com)：
-1. 使用 Microsoft 365 测试租户的凭据登录你的帐户。
+若要配置任何 Microsoft 构建的连接器，请转到[管理中心](https://admin.microsoft.com)：
+1. 使用[Microsoft 365](https://www.microsoft.com/microsoft-365)测试租户的凭据登录你的帐户。
 2. 转到 "**设置** > **Microsoft Search** > **连接器**"。
 3. 选择 "**添加连接器**"。
 4. 从可用连接器列表中，选择所选的连接器。
 
-![](media/addconnector_final.png)
+![可用的数据源包括： ADLS Gen2 连接器、企业网站、ServiceNow、文件共享、Microsoft SQL server 和 MediaWiki。](media/addconnector_final.png)
 
 ### <a name="name-the-connector"></a>命名连接器
 若要创建连接，请先指定以下属性：
@@ -59,16 +59,16 @@ ms.locfileid: "37949612"
 
 **搜索架构属性** | **Function** | **示例**
 --- | --- | ---
-外面 | 将属性的文本内容设为可搜索的。 属性内容包含在全文本索引中。 | 如果属性为 "title"，则 "Enterprise" 查询将返回任何文本或标题中包含 "Enterprise" 一词的答案。
-可 | 按查询搜索特定属性的匹配项。 然后可以通过编程方式或逐字方式在查询中指定属性名称。 |  如果 "Title" 属性是可查询的，则支持查询 "Title： Enterprise"。
-可检索 | 只能在搜索结果类型中使用可检索的属性，并可在搜索结果中显示这些属性。 | 
+外面 | 将属性的文本内容设为可搜索的。 属性内容包含在全文本索引中。 | 如果属性为**title**，则针对**企业**的查询返回包含任何文本或标题中的 word **Enterprise**的答案。
+可 | 按查询搜索特定属性的匹配项。 然后可以通过编程方式或逐字方式在查询中指定属性名称。 |  如果**Title**属性是可查询的，则支持查询**标题： Enterprise** 。
+可检索 | 只能在结果类型中使用可检索的属性并显示在搜索结果中。 | 
 
-对于除文件共享连接器之外的所有连接器，必须手动设置自定义类型。 若要激活每个字段的搜索功能，您需要映射到属性列表的搜索架构。 "连接向导" 将根据您选择的源属性集自动选择搜索架构。 您可以通过单击 "搜索架构" 页中每个属性和属性的复选框来修改此架构。
+对于除文件共享连接器之外的所有连接器，必须手动设置自定义类型。 若要激活每个字段的搜索功能，您需要映射到属性列表的搜索架构。 "连接向导" 将根据您选择的源属性集自动选择搜索架构。 您可以通过选中 "搜索架构" 页中每个属性和属性的复选框来修改此架构。
 
 ![可以通过添加或删除查询、搜索和检索函数来自定义连接器的架构。](media/manageschema.png)
 
 这些限制和建议适用于搜索架构设置：
-* 对于索引自定义类型的连接器，我们建议您**不要标记包含**主要内容可**检索**的字段。 使用该搜索属性呈现搜索结果时，会出现重大性能问题。 例如，ServiceNow 知识库文章的**文本**内容字段。
+* 对于索引自定义类型的连接器，我们建议您**不要标记包含**主要内容可**检索**的字段。 使用该搜索属性呈现搜索结果时，会出现重大性能问题。 例如， [ServiceNow](https://www.servicenow.com)知识库文章的**文本**内容字段。
 * 仅属性在搜索结果中标记为可检索的，并可用于创建新式结果类型（MRTs）。
 * 只能将字符串属性标记为可搜索。
 
@@ -97,14 +97,14 @@ ms.locfileid: "37949612"
 ![增量爬网和完全爬网间隔设置，显示15分钟的增量和一周的完全爬网。](media/refreshschedule.png)
 
 ### <a name="review-connector-settings"></a>查看连接器设置
-配置连接器后， [Microsoft 365 管理中心](https://admin.microsoft.com)会将您带到可查看您的设置的页面。 您可以在确认连接之前，通过配置过程来编辑任何设置。 若要了解详细信息，请参阅[管理连接器](manage-connector.md)。
+配置连接器后，[管理员中心](https://admin.microsoft.com)将转到可查看您的设置的页面。 您可以在确认连接之前，通过配置过程来编辑任何设置。 若要了解详细信息，请参阅[管理连接器](manage-connector.md)。
 
 ## <a name="next-steps-customize-the-search-results-page"></a>后续步骤：自定义搜索结果页
-通过 Microsoft Search 用户界面（UI），最终用户可以从你的 Microsoft 365 生产力应用和更广泛的 Microsoft 生态系统中搜索内容。 "垂直搜索" 是指当用户在 Bing 中的 SharePoint、Office.com 和 Microsoft 搜索中查看其搜索结果时显示的选项卡。 您可以自定义搜索纵向以缩小结果范围，以便只显示特定类型的搜索结果。 这些纵向显示为搜索结果页顶部的选项卡。 新式结果类型（MRT.LOG）是指定如何显示结果的 UI。
+通过 Microsoft Search 用户界面（UI），最终用户可以从你的[microsoft 365](https://www.microsoft.com/microsoft-365)生产力应用和更广泛的 microsoft 生态系统中搜索内容。 垂直搜索是指当用户在[Bing](https://Bing.com)中的[SharePoint](http://sharepoint.com/)、 [microsoft Office](https://Office.com)和 microsoft 搜索中查看搜索结果时显示的选项卡。 您可以自定义搜索纵向以缩小结果范围，以便只显示特定类型的搜索结果。 这些纵向显示为搜索结果页顶部的选项卡。 新式结果类型（MRT.LOG）是指定如何显示结果的 UI。
 
 您必须创建自己的纵向和结果类型，以便最终用户可以查看来自新连接的搜索结果。 如果不执行此步骤，则连接中的数据不会显示在搜索结果页上。
 
 若要了解有关如何创建您的纵向和 MRTs 的详细信息，请参阅[搜索结果页面自定义](customize-search-page.md)。
 
 ## <a name="how-do-i-know-this-worked"></a>我如何知道这有效？
-转到[Microsoft 365 管理中心](https://admin.microsoft.com)中 "**连接器**" 选项卡下的已发布连接列表。 若要了解如何进行更新和删除，请参阅[管理连接器](manage-connector.md)。
+转到 "[管理中心](https://admin.microsoft.com)" 的 "**连接器**" 选项卡下的已发布连接列表。 若要了解如何进行更新和删除，请参阅[管理连接器](manage-connector.md)。

@@ -3,7 +3,6 @@ title: 管理位置
 ms.author: dawholl
 author: dawholl
 manager: kellis
-ms.date: 05/30/2019
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -14,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8ab9aa00-cd74-405f-8410-9a1c3cfacdb9
 description: 随着时间推移，可能需要更新位置状态和内容以保持其相关性。
-ms.openlocfilehash: d026e518011f3b3739beb2b6aaa044f8a5e9c0d4
-ms.sourcegitcommit: be2e837d9b087bffe6ce40d72d7ae58a8fcdf3fe
-ms.translationtype: HT
+ms.openlocfilehash: 25fa6fdb8f95c04332e8df16c7589286ecaefdb0
+ms.sourcegitcommit: 21361af7c244ffd6ff8689fd0ff0daa359bf4129
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "34591554"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38626780"
 ---
 # <a name="manage-locations"></a>管理位置
 
@@ -57,7 +56,7 @@ ms.locfileid: "34591554"
 - 如果存在具有相同标题或 URL 的现有书签，则将使用导入文件中的信息更新该书签。
 - 在模板文件中，并非所有字段都是必填的，并且必填字段因书签状态而异。
 - 基于“*状态*”字段，书签会保存为草稿书签、推荐书签、已计划书签或自动发布的书签。
-- 对于拥有多个租户的组织，你可以从某个租户导出书签并将其导入另一个租户。 但是，在导入之前，你必须删除 *Id* 列中的数据。
+- 对于管理多个组织的合作伙伴，您可以从一个组织中导出您的书签并将其导入到另一个组织中。 但是，在导入之前，你必须删除 *Id* 列中的数据。
 
 **注意：** 如果模板文件中有任何错误，则无法导入位置。 为防止出错，请确保导入文件具有正确格式，并且包含所有必需信息。 
 

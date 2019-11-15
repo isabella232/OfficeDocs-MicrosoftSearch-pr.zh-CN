@@ -1,22 +1,23 @@
 ---
 title: 连接器库
-description: 列出 Microsoft 搜索的所有 Microsoft Graph 连接器
-services: microsoft-search
+ms.author: mounika.narayanan
 author: monaray
-manager: samanro
-layout: LandingPage
-ms.assetid: ''
-ms.service: mssearch
-ms.tgt_pltfrm: na
-ms.devlang: na
+manager: shohara
+ms.audience: Admin
 ms.topic: landing-page
-ms.author: samanro
-ms.openlocfilehash: 87fc858f702940afd5a943d05287aab15fd33d1e
-ms.sourcegitcommit: bfcab9d42e93addccd1e3875b41bc9cc1b6986cc
+ms.service: mssearch
+localization_priority: Normal
+search.appverid:
+- BFB160
+- MET150
+- MOE150
+description: 列出 Microsoft 搜索的所有 Microsoft Graph 连接器
+ms.openlocfilehash: 6ae3ef26fc80997c9698b3fc5bd47cfceef6a32a
+ms.sourcegitcommit: 21361af7c244ffd6ff8689fd0ff0daa359bf4129
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "37949621"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38626549"
 ---
 # <a name="microsoft-graph-connectors-gallery"></a>Microsoft Graph 连接器库
 
@@ -32,7 +33,7 @@ ms.locfileid: "37949621"
             <div class="cardPadding">
                 <div class="card" style="overflow: hidden; height: 235px;">
                     <div class="cardText">
-                        <h3>Azure Data Lake 存储 Gen2</h3>
+                        <h3>Azure Data Lake Storage Gen2</h3>
                         <p>由<a href="https://www.microsoft.com" target="_blank" data-linktype="external">Microsoft</a></p>
                         <p style="min-height: 100px; overflow: hidden; height: 100px;" onmouseover="this.style.height='auto'" onmouseout="this.style.height='100px'">使用此 Microsoft Graph 连接器，组织中的用户可以搜索存储在 Azure Blob 容器中的文件和内容。 Azure Data Lake Storage Gen2 连接器还会在指定的 Azure Data Lake 存储 Gen2 帐户中为已启用层次结构的文件夹编制索引。</p>
                         <div style="margin-top:20px;bottom:15px;position:absolute;display:block">

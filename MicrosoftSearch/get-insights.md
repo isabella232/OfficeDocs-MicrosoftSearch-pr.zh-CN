@@ -1,9 +1,8 @@
 ---
-title: 使用见解仪表板
-ms.author: dawholl
-author: dawholl
-manager: kellis
-ms.date: 9/11/2018
+title: Microsoft Search Insights 仪表板报告
+ms.author: anfowler
+author: adefowler
+manager: shohara
 ms.audience: Admin
 ms.topic: reference
 ms.service: mssearch
@@ -13,65 +12,43 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: ebce7fdc-e89b-473c-8131-67e659bb3f73
-ROBOTS: NOINDEX
-description: 使用 Microsoft 搜索管理门户中简单好用的仪表板分析指标并管理内容
-ms.openlocfilehash: 9323ad97a2baffc3bdc1794049f6933335b298b2
-ms.sourcegitcommit: c2c9e66af1038efd2849d578f846680851f9e5d2
-ms.translationtype: HT
+description: 在 Microsoft Search 中分析指标并管理见解仪表板中的内容
+ms.openlocfilehash: d75622ad8c414f225615ea14082c8197e2947dd4
+ms.sourcegitcommit: 21361af7c244ffd6ff8689fd0ff0daa359bf4129
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36639817"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38626870"
 ---
-# <a name="use-the-insights-dashboard"></a>使用见解仪表板
+# <a name="microsoft-search-insights-dashboard-reports"></a>Microsoft Search Insights 仪表板报告
 
-> [!IMPORTANT]
-> 本文适用于必应中的 Microsoft 搜索管理门户。 我们正在将该门户迁移至 Microsoft 365 管理中心，并且会在迁移后将必应中的 Microsoft 搜索门户删除。 我们建议你使用 Microsoft 365 管理中心快速开始。 [Microsoft 搜索概述](overview-microsoft-search.md)。
-    
-获取数据见解并查看用户是如何使用你的结果的。 使用管理门户仪表板来执行以下操作：
-  
-- 查看发布、计划或推荐了多少个书签和问答
-    
-- 查看展示工作结果的热门搜索查询的展示次数
-    
-- 分析书签和问答的展示次数分布
-    
-## <a name="get-details-about-bookmarks-and-qas"></a>获取有关书签和问答的详细信息
+您可以使用 Microsoft Search insights 仪表板来管理已发布的答案的必应数据。 这只是[使内容易于查找](make-content-easy-to-find.md)您的用户所需的步骤之一。
 
-使用仪表板来按状态查看书签或问答总计：
-  
-- 已发布：向用户推出的已发布结果数
-    
-- 已计划：发布管道中的已计划结果数
-    
-- 推荐：来自用户的推荐数
-    
-仪表板中的书签和问答见解卡片还可用于完成常见任务：
-  
-- 若要查看书签或问答结果，请单击卡片标题上的“书签”或“问答”
-    
-- 若要添加书签或问答，请单击创建选项
-    
-- 若要批量添加书签或问答，请单击导入选项
-    
-## <a name="review-top-search-queries"></a>查看热门搜索查询
+当您首次转到 Microsoft 365 管理中心中的 Microsoft 搜索时，您将在 "见解" 仪表板中输入。
 
-了解哪些搜索在过去的 90 天中产生了最多的展示次数。 系统将会显示每个结果类型的前 25 个最热门用户搜索及其总展示次数和点击率 (CTR)。 在热门搜索查询卡片上，你可以：
-  
-- 若要按结果类型进行筛选，请单击菜单上的“所有结果”，然后选择不同的结果类型
-    
-- 若要查看结果如何在必应上显示，请单击某个查询，搜索结果页面将在新选项卡中打开
-    
-- 若要查看其他搜索查询，请单击卡片底部的向左或向右箭头
-    
-## <a name="analyze-impressions-by-result-type"></a>按结果类型分析展示次数
+![Insights-dashboard](media/Insights-dashboard.png)
 
-在“展示次数分布(按结果类型)”卡片中，简单易懂的图形将会显示各个时间段的数据。 摘要将会显示展示次数分布及其百分比（结果类型展示次数 x 100 / 总展示次数） 时间轴将会显示结果类型的每日展示次数。 你还可以更改这两种视图的时间范围并获得更多详细信息：
-  
-- 在卡片顶部，单击 7 天、30 天或 90 天
-    
-- 若要查看 0 至 90 天之间的自定义范围，请单击“自定义范围”，然后输入开始和结束日期
-    
-- 在时间轴中，将鼠标悬停在对应一天的结果类型展示次数的数据点上
+以下是可用于真知灼见仪表板的报告。
 
-  
+> [!NOTE]
+> 报告中的数据仅表示必应数据。
 
+## <a name="top-queries"></a>热门查询
+
+此报告提供用户运行的前2000必应搜索查询的详细信息。 若要在**Top 查询**中显示查询，查询必须至少有三次单击。
+
+![包含表格标题的 Top 查询报告：查询、查询总数，然后单击 "速率"。](media/Insights-topqueries.png)
+
+较低的即点即用速率（CTR）意味着用户找不到要查找的内容。
+
+您可以通过筛选答案的类型来选择报告的不同视图。 例如，如果只想查看书签的顶部查询，请选择报表右上角的下拉箭头，然后选择 "**书签**"。 默认情况下，将显示**所有**答案类型。
+
+![按书签、人员、问答&、文件、组、位置、对话和网站筛选热门查询报告](media/Insights-topqueries-dropdown.png)
+
+## <a name="impression-distribution"></a>印记分布
+
+此报告显示必应 Bing 分布在 Bing 一段时间内的各种答案。 示例包括书签、人员、问答&、文件、位置、文件网站、组和对话。 
+
+![选择为 "时间段" 的90天的印记报告。](media/Insights-impressions.png)
+
+"印象分布" 可帮助管理员了解在指定时间段内用户查找的内容。

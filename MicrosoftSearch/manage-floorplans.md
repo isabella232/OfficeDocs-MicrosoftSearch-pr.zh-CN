@@ -3,7 +3,6 @@ title: 管理基底计划
 ms.author: rasrivas
 author: rasrivas
 manager: tonytha
-ms.date: 11/01/2019
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -13,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft Search 中的平面布置图功能可帮助用户在大楼中查找人员、办公室和其他有用的功能。
-ms.openlocfilehash: 68912a8f440443c14cbc27019c7b30dc2d7a34c6
-ms.sourcegitcommit: bfcab9d42e93addccd1e3875b41bc9cc1b6986cc
+ms.openlocfilehash: 9871cda3790f210dc0c406d1d29abe2c571c1085
+ms.sourcegitcommit: 21361af7c244ffd6ff8689fd0ff0daa359bf4129
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "37949618"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38626789"
 ---
 # <a name="manage-floor-plans"></a>管理基底计划
 
@@ -90,12 +89,12 @@ Microsoft Search 平面图计划可帮助用户在大楼中查找人员和会议
 
 ## <a name="troubleshoot-errors"></a>错误疑难解答
 
-在解决所有错误之前，不能转到下一步来定义楼层、翼形和会议室信息。 下表文件上载错误消息和用于修复问题的操作。
+在解决所有错误之前，不能转到下一步来定义楼层、翼形和会议室信息。 下表列出了用于修复问题的文件上载错误消息和操作。
 
 | 错误消息   | 类型    | Action       |
 |:----------------| :--------- | :-------------- |
-| 无法读取 CC_1。 请重新上载或删除楼面计划。 | Error |  请再次尝试上载文件。 如果不起作用，请删除该文件，然后再试一次。 |
+| 无法读取 CC_1 dwg。 请重新上载或删除楼面计划。 | Error |  请再次尝试上载文件。 如果不起作用，请删除该文件，然后再试一次。 |
 | 有两个名为 CC_1 的文件。 请删除其中一个名称，或使用另一个名称重新上载。| Error | 如果文件名不正确，请通过添加 floor 或翼形信息来使文件名成为唯一的，然后重新上传文件。 <br><br>如果意外添加了同一文件两次，只需将其删除即可。 |
 | 找不到数据。 | Error | 请检查您的文件以确保其正确无误，然后重新上传，或将其删除。 |
-| 此文件中缺少外部引用。 请上载 "CC_1_furniture" 或删除此文件。 | 警告 | 上载外部引用文件或删除。|
+| 此文件中缺少外部引用。 请上载 "CC_1_furniture dwg" 或删除此文件。 | 警告 | 上载外部引用文件或删除。|
 | 无法读取 DWG 文件中的会议室编号或标签。 请删除此文件。 | 警告 | 请检查 DWG 文件以确保包含数据，然后删除该文件，然后重试。 |
