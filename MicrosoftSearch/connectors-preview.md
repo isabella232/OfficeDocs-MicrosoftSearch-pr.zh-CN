@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解 microsoft Search 的 Microsoft Graph 连接器预览。
-ms.openlocfilehash: 3ac27bd1e859f9ffc825e5e77d96f0de56b13647
-ms.sourcegitcommit: 21361af7c244ffd6ff8689fd0ff0daa359bf4129
+ms.openlocfilehash: 6080674e1a6b789cbe5b3492f93f5f932b536e53
+ms.sourcegitcommit: 68087149c769a7cdde80944dd9c9933d2bf4a23f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38626261"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "38699365"
 ---
 # <a name="microsoft-graph-connectors-preview"></a>Microsoft Graph 连接器预览
 
@@ -38,4 +38,4 @@ Microsoft Graph 连接器、索引 Api 和搜索 Api 当前处于预览阶段。
 * 不支持架构更新。 创建连接设置后，无法更新架构。 您只能删除并重新创建连接。
 * 索引内容仅在 "自定义垂直" 下的 "搜索结果" 页面中显示。 此限制适用于具有自定义类型的内容。
 * 在正式发行之前，您在预览期间设置的任何连接可能需要删除并重新创建。 如果这些连接与改进产品所做的更改不兼容，这些连接将不再起作用。
-* 连接限制。 每个租户最长可创建10个连接。
+* 有一个连接限制。 每个租户最长可创建10个连接。

@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9e8c9323-4ff9-42dd-8052-2bc9e0d6d0e7
 description: 了解有关方法和过程，帮助您成功将 Microsoft 搜索部署到您的组织
-ms.openlocfilehash: 59fbc5ea629d385fbdc01f56a8bca3f5c6e7626f
-ms.sourcegitcommit: 21361af7c244ffd6ff8689fd0ff0daa359bf4129
+ms.openlocfilehash: 135b07b7dd4e26eaaebd0c09d0d94689b83f2b16
+ms.sourcegitcommit: 68087149c769a7cdde80944dd9c9933d2bf4a23f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38626879"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "38699527"
 ---
 # <a name="user-adoption-guide"></a>用户采用指南
 
@@ -121,7 +121,7 @@ Microsoft Search 用户必须使用工作或学校帐户登录[Bing](https://Bin
   
 作为[microsoft 365](https://www.microsoft.com/microsoft-365)不可或缺的一部分，microsoft SEARCH 遵循 GDPR 和第3层指南。 根据您的组织，可能需要与您的隐私和安全团队共享有关 Microsoft 搜索的信息。 有关详细信息，请参阅[Microsoft Search 安全性](overview-microsoft-search.md#microsoft-search-in-bing-protects-enterprise-searches)。
   
-确保您的技术支持人员了解 Microsoft Search 的特性和功能，以及用户对登录的要求，以便它们可以更有效地支持用户。 有关详细信息，请参阅[在 microsoft 365 和 faq 中了解 Microsoft Search](https://support.office.com/en-us/article/Learn-about-Microsoft-Search-in-Microsoft-365-b8bf5a2c-7515-40a9-9a6a-b8ed382c86bc) 。 [](faqs.md)
+确保您的技术支持人员了解 Microsoft Search 的特性和功能，以及用户对登录的要求，以便它们可以更有效地支持用户。 有关详细信息，请参阅[在 microsoft 365 和 faq 中了解 Microsoft Search](https://support.office.com/article/Learn-about-Microsoft-Search-in-Microsoft-365-b8bf5a2c-7515-40a9-9a6a-b8ed382c86bc) 。 [](faqs.md)
   
 ### <a name="evaluate-with-pilot-users"></a>试用用户评估
   
