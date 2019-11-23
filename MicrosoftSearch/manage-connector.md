@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 为 Microsoft Search 管理 Microsoft Graph 连接器。
-ms.openlocfilehash: c74dc8f6d08519860e757b0ebe19e83dcf42159b
-ms.sourcegitcommit: 21361af7c244ffd6ff8689fd0ff0daa359bf4129
+ms.openlocfilehash: 962ceb488fa308eb31a98a8fad33d628f3590e89
+ms.sourcegitcommit: 1255c2612aec290ae117bdc24c3b4dabd1e5ca11
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38626798"
+ms.lasthandoff: 11/23/2019
+ms.locfileid: "39205864"
 ---
 # <a name="manage-your-connector-for-microsoft-search"></a>管理你的连接器以进行 Microsoft Search
 
@@ -54,6 +54,23 @@ ms.locfileid: "38626798"
 若要查看错误的特定详细信息，请选择其错误代码。 屏幕上会显示错误详细信息和链接。 最新错误显示在顶部。 请参阅下表中的示例。
 
 ![连接器列表，选择了一个连接器，详细信息窗格显示了连接器的错误列表。 ](media/errormonitoring2.png)
+
+下面列出了可针对任何连接显示的不同错误。 如果这些解决方案不起作用，请联系支持人员或向我们发送（反馈） [连接器-feedback.md]。 
+
+**错误代码** | **错误消息** | **解决方案**
+--- | --- | ---
+1000 | 数据源不可用。 请检查 internet 连接或确保该连接器仍可访问该数据源。 | 当数据源由于网络问题或数据源本身被删除、移动或重命名而无法访问时，将发生此错误。 检查提供的数据源详细信息是否仍然有效。
+1001 | 无法更新数据，因为数据源正在限制连接器。 | 若要 unthrottle 数据源，请检查其规模限制是否可以增加，或等待一天内的流量较长的时间。
+1002 | 无法对数据源进行身份验证。 验证与此数据源关联的凭据是否正确。 | 单击 "**编辑**" 以更新身份验证凭据。
+1003 | 与连接器关联的帐户无权访问该项目。 |  确保正确的帐户具有对要编制索引的项目的访问权限。
+1004 | 无法访问本地数据网关。 请确保网关服务正在运行。 | 转到具有网关的计算机，并通过打开 Power BI 网关应用程序检查 Power BI 网关是否正在运行。 验证网关是否使用用于 Microsoft 搜索的管理员帐户登录。 
+1005 | 与此数据源关联的凭据已过期。 续订凭据并更新连接。 | 单击 "**编辑**" 以更新身份验证凭据。 
+1006 | 您的网关版本已过期，不会再支持此连接器。 你将需要更新网关。 | 请访问（安装本地数据网关） [https://docs.microsoft.com/en-us/data-integration/gateway/service-gateway-install] 以在包含网关的计算机上下载并安装最新版本的 Power BI 网关。
+2001 | 由于队列中的更新数过多，索引被限制。 根据队列的不同，可能需要一段时间才能完成更新。 | 请等待队列被清除。
+2002 | 由于不受支持的项格式设置而导致索引失败。 | 有关详细信息，请参阅连接器特定文档。
+2003 | 由于不受支持的项目内容而导致索引失败。 | 有关详细信息，请参阅连接器特定文档。 
+2004 | [文件大小](https://docs.microsoft.com/en-us/microsoftsearch/file-share-connector#content-requirements)太大，无法编制索引。 在处理之前，它必须小于或等于 100 MB，且处理后不大于 4 MB。 在这种情况下，将对文件编制部分索引。 文件中存在的短语数可能不会返回搜索结果。 |  
+5000 | 出现问题。 如果这种情况继续存在，请与支持人员联系。 | 
 
 ## <a name="preview-limitations"></a>预览限制
 * **发布**Microsoft 构建的连接器时，可能需要几分钟的时间才能创建连接。 在这段时间内，连接会将其状态显示为 "挂起"。 此外，也不会进行自动刷新，因此需要手动刷新。

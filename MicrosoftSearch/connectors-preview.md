@@ -12,16 +12,16 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解 microsoft Search 的 Microsoft Graph 连接器预览。
-ms.openlocfilehash: 6080674e1a6b789cbe5b3492f93f5f932b536e53
-ms.sourcegitcommit: 68087149c769a7cdde80944dd9c9933d2bf4a23f
+ms.openlocfilehash: 054dc00bcb5cc0c110858fd329fbf2dbf16fb38b
+ms.sourcegitcommit: 1255c2612aec290ae117bdc24c3b4dabd1e5ca11
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "38699365"
+ms.lasthandoff: 11/23/2019
+ms.locfileid: "39205873"
 ---
 # <a name="microsoft-graph-connectors-preview"></a>Microsoft Graph 连接器预览
 
-Microsoft Graph 连接器、索引 Api 和搜索 Api 当前处于预览阶段。 若要获取对连接器功能的访问权限，您必须通过提交<a href="https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbRxWYgu82J_RFnMMATAS6_chUNVYwNU1CMDNZUDBSSDZKWVo2RDJDRjRLQi4u" target="_blank">Microsoft Graph 连接器预览注册表单</a>来请求加入预览计划。 这是一个早期预览，没有服务级别保证。 我们鼓励客户尝试连接器功能并提供反馈。 在预览期间，我们不建议使用连接器来实现生产目的。
+Microsoft Graph 连接器和 Microsoft 搜索 Api （查询和索引）当前处于预览状态。 若要获取对连接器功能的访问权限，您必须通过提交<a href="https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbRxWYgu82J_RFnMMATAS6_chUNVYwNU1CMDNZUDBSSDZKWVo2RDJDRjRLQi4u" target="_blank">Microsoft Graph 连接器预览注册表单</a>来请求加入预览计划。 这是一个早期预览，没有服务级别保证。 我们鼓励客户尝试连接器功能并提供反馈。 在预览期间，我们不建议使用连接器来实现生产目的。
 
 ## <a name="set-up-targeted-release"></a>设置目标版本
 若要尝试连接器，必须为组织中的所有用户设置**目标 "发布**" 选项。 无论您选择以下哪种预览环境，目标发布要求均适用。
