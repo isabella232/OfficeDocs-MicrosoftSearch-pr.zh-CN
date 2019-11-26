@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: c0c814d0-f7e4-444e-b18e-09beb45c9322
 description: 创建和更新书签以及用于批量编辑 Microsoft 搜索的书签结果的方法
-ms.openlocfilehash: 94e24db6643307a83ffae21e03b2ea354e209f53
-ms.sourcegitcommit: 21361af7c244ffd6ff8689fd0ff0daa359bf4129
+ms.openlocfilehash: a50be90e9590086762df7c6b0fd2e0ad3349ec5d
+ms.sourcegitcommit: 897b92bae1b905d7c47566e31c4c07cd16d44b17
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38626807"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "39254736"
 ---
 # <a name="manage-bookmarks"></a>管理书签
 
@@ -70,10 +70,17 @@ ms.locfileid: "38626807"
 如果任何所需数据缺失或无效，你将收到错误，并且系统会生成一个日志文件，其中包含有关要更正的行和列的详细信息。 完成必要的编辑，并再次尝试导入该文件。 在解决所有错误之前，你无法导入或保存任何书签。
 
 为防止出错，请确保导入文件具有正确格式，并且：
+
 - 包含导入模板中的标题行和所有列
 - 列顺序与导入模板相同
 - 所有列都包含值，但三个可以为空的列除外：*Id*、*上次修改时间*和*上次修改者* 
 - “*状态*”列不能为空，因为此信息是必需的
+
+若要防止书签到书签复制错误，请遵循以下最佳实践：
+
+- 请勿对不同的书签使用重复的 URL。 如果已将某个 URL 分配给另一个书签，并且您正在从导入文件中再次添加它，则会收到错误消息。 这也适用于其他类型的答案的重复 Url。
+- 更新现有书签时使用 "书签 ID" 列。 您可以更新现有书签的任何其他属性（如关键字或说明），但应确保导入文件的相应列中的书签 ID。 如果存在书签 ID，服务不会将其视为新的添加，并将处理一个错误。
+
 
 ## <a name="powerapps"></a>PowerApps
 帮助用户完成任务，例如通过将现有的 PowerApps 添加到书签来输入休假时间或上报费用。 

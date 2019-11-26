@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 为 Microsoft Search 管理 Microsoft Graph 连接器。
-ms.openlocfilehash: 962ceb488fa308eb31a98a8fad33d628f3590e89
-ms.sourcegitcommit: 1255c2612aec290ae117bdc24c3b4dabd1e5ca11
+ms.openlocfilehash: d7bd094fdc5cea521d1ee600eea3cd70067a0386
+ms.sourcegitcommit: 897b92bae1b905d7c47566e31c4c07cd16d44b17
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "39205864"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "39254718"
 ---
 # <a name="manage-your-connector-for-microsoft-search"></a>管理你的连接器以进行 Microsoft Search
 
@@ -65,11 +65,11 @@ ms.locfileid: "39205864"
 1003 | 与连接器关联的帐户无权访问该项目。 |  确保正确的帐户具有对要编制索引的项目的访问权限。
 1004 | 无法访问本地数据网关。 请确保网关服务正在运行。 | 转到具有网关的计算机，并通过打开 Power BI 网关应用程序检查 Power BI 网关是否正在运行。 验证网关是否使用用于 Microsoft 搜索的管理员帐户登录。 
 1005 | 与此数据源关联的凭据已过期。 续订凭据并更新连接。 | 单击 "**编辑**" 以更新身份验证凭据。 
-1006 | 您的网关版本已过期，不会再支持此连接器。 你将需要更新网关。 | 请访问（安装本地数据网关） [https://docs.microsoft.com/en-us/data-integration/gateway/service-gateway-install] 以在包含网关的计算机上下载并安装最新版本的 Power BI 网关。
+1006 | 您的网关版本已过期，不会再支持此连接器。 你将需要更新网关。 | 请访问（安装本地数据网关） [https://docs.microsoft.com/data-integration/gateway/service-gateway-install] 以在包含网关的计算机上下载并安装最新版本的 Power BI 网关。
 2001 | 由于队列中的更新数过多，索引被限制。 根据队列的不同，可能需要一段时间才能完成更新。 | 请等待队列被清除。
 2002 | 由于不受支持的项格式设置而导致索引失败。 | 有关详细信息，请参阅连接器特定文档。
 2003 | 由于不受支持的项目内容而导致索引失败。 | 有关详细信息，请参阅连接器特定文档。 
-2004 | [文件大小](https://docs.microsoft.com/en-us/microsoftsearch/file-share-connector#content-requirements)太大，无法编制索引。 在处理之前，它必须小于或等于 100 MB，且处理后不大于 4 MB。 在这种情况下，将对文件编制部分索引。 文件中存在的短语数可能不会返回搜索结果。 |  
+2004 | [文件大小](https://docs.microsoft.com/microsoftsearch/file-share-connector#content-requirements)太大，无法编制索引。 在处理之前，它必须小于或等于 100 MB，且处理后不大于 4 MB。 在这种情况下，将对文件编制部分索引。 文件中存在的短语数可能不会返回搜索结果。 |  
 5000 | 出现问题。 如果这种情况继续存在，请与支持人员联系。 | 
 
 ## <a name="preview-limitations"></a>预览限制
