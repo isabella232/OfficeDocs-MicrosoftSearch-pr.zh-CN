@@ -12,19 +12,19 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 搜索的 Microsoft Graph 连接器概述
-ms.openlocfilehash: f08393d5696466af72ed7b8f3e141c62adb61728
-ms.sourcegitcommit: 1255c2612aec290ae117bdc24c3b4dabd1e5ca11
+ms.openlocfilehash: 8b02eadac099d75174fe849f7f2f97c26bf6c3af
+ms.sourcegitcommit: ef1eb2bdf31dccd34f0fdc4aa7a0841ebd44f211
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "39205855"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "39663132"
 ---
 # <a name="overview-of-microsoft-graph-connectors"></a>Microsoft Graph 连接器概述
 
 Microsoft Search 将对所有[Microsoft 365](https://www.microsoft.com/microsoft-365)数据编制索引，使其可供用户搜索。 使用 Microsoft Graph 连接器，您的组织可以将第三方数据编入索引，以显示在 Microsoft 搜索结果中。 第三方数据可以在内部部署或公共或私有云承载。 连接器扩展了可在 Microsoft 365 生产力应用和更广泛的 Microsoft 生态系统中搜索的内容源的类型。
 
 > [!IMPORTANT]
-> **免责声明**： microsoft Graph 连接器和 Microsoft 搜索 api （查询和索引）当前处于预览阶段。 若要了解有关预览计划的详细信息，请参阅[Microsoft Graph 连接器 preview](connectors-preview.md)。 若要加入预览计划，请提交[Microsoft Graph 连接器预览注册表单](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbRxWYgu82J_RFnMMATAS6_chUNVYwNU1CMDNZUDBSSDZKWVo2RDJDRjRLQi4u)。
+> **免责声明**： microsoft Graph 连接器和 Microsoft 搜索 api （查询和索引）当前处于预览状态。 若要将连接器与 Microsoft 搜索结合使用或构建连接器，必须注册[连接器预览计划](connectors-preview.md)。 若要加入预览计划，请提交[Microsoft Graph 连接器预览注册表单](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbRxWYgu82J_RFnMMATAS6_chUNVYwNU1CMDNZUDBSSDZKWVo2RDJDRjRLQi4u)。
 
 ## <a name="architecture"></a>体系结构
 下面的 Microsoft Graph 平台体系结构图表显示了连接器内容如何通过内容索引传递到[Microsoft Search](https://docs.microsoft.com/microsoftsearch/overview-microsoft-search)客户端中的用户结果。 本文介绍 Microsoft Graph 连接器数据流过程中的每个关键构建基块。

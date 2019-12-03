@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 概述 Microsoft Search 的内容、它的优势以及哪些应用支持 Microsoft 搜索。
-ms.openlocfilehash: 28bd561e53bb1878c601a08e919e37f524a6470c
-ms.sourcegitcommit: 21361af7c244ffd6ff8689fd0ff0daa359bf4129
+ms.openlocfilehash: 938cf8875d9cc707041b950c6c13bab27e366670
+ms.sourcegitcommit: ef1eb2bdf31dccd34f0fdc4aa7a0841ebd44f211
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38626969"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "39663066"
 ---
 # <a name="overview-of-microsoft-search"></a>Microsoft 搜索概述
 
@@ -46,7 +46,7 @@ Microsoft 搜索可帮助用户找到正确的答案、人员和内容，以便�
 
 ## <a name="benefits-of-microsoft-search"></a>Microsoft 搜索的优点
 
-**从任何 Microsoft 搜索框对整个 Microsoft 365 进行搜索** – 用户可以从任何 Microsoft 搜索框进行搜索，并快速回到正在执行的任务。 Microsoft Search 通过 Office 365 中的数据源（包括[SharePoint](http://sharepoint.com/)、 [Microsoft OneDrive For Business](https://onedrive.live.com/about/en-us/business/)和[microsoft Exchange Server](https://products.office.com/en-us/exchange/microsoft-exchange-server)）将结果汇集在一起。
+**从任何 Microsoft 搜索框对整个 Microsoft 365 进行搜索** – 用户可以从任何 Microsoft 搜索框进行搜索，并快速回到正在执行的任务。 Microsoft Search 通过 Office 365 中的数据源（包括[SharePoint](http://sharepoint.com/)、 [Microsoft OneDrive For Business](https://onedrive.live.com/about/business/)和[microsoft Exchange Server](https://products.office.com/exchange/microsoft-exchange-server)）将结果汇集在一起。
 
 **易于搜索**– Microsoft search 根据用户在 Office 365 中的前一个活动，在**搜索**框中直接提供建议结果。
 
@@ -58,13 +58,13 @@ Microsoft 搜索可帮助用户找到正确的答案、人员和内容，以便�
 
 ## <a name="tailoring-microsoft-search-to-your-organization"></a>为你的组织定制 Microsoft 搜索
 
-作为管理员，你可以为你的用户创建和奇妙的 Microsoft 搜索体验。 
+作为管理员，你可以为你的用户创建令人惊叹的 Microsoft 搜索体验。 
 
 **显示有用的内容**–答案提供快速、权威的结果，以根据关键字搜索查询。 [使内容易于查找](make-content-easy-to-find.md)。
 
-**添加外部内容**-Microsoft Graph 连接器允许您将外部内容引入索引。 使用连接器丰富来自 Microsoft 365 外部的数据和文件的搜索体验。 [Microsoft Graph 连接器概述](connectors-overview.md)
+**添加外部内容**– Microsoft Graph 连接器允许您将外部内容引入索引。 使用连接器丰富来自 Microsoft 365 之外的数据和文件的搜索体验。 [Microsoft Graph 连接器概述](connectors-overview.md)
 
-**自定义用户体验**-您可以通过使用纵向和其他配置来自定义用户体验。 [自定义 Microsoft Search 页面](customize-search-page.md)
+**自定义用户体验**–您可以通过使用纵向和其他配置来自定义用户体验。 [自定义 Microsoft Search 页面](customize-search-page.md)
 
 ## <a name="what-content-is-searched"></a>搜索哪些内容？
 
@@ -87,7 +87,7 @@ Microsoft Search 显示您的组织已存储在 Microsoft 365 或通过连接器
 由于企业级搜索可能是敏感的，Microsoft Search 实现了一组信任措施，用于描述如何处理单独搜索的公共`Bing.com`结果。
 
 ### <a name="logging"></a>日志记录
- - 所有`Bing.com`与 Bing 流量中的 Microsoft 搜索相关的搜索日志都与工作区标识不关联。
+- 所有`Bing.com`与 Bing 流量中的 Microsoft 搜索相关的搜索日志都与工作区标识不关联。
 - 如果满足一组限制或频率阈值，让我们相信查询并不特定于特定组织，则将按照[隐私声明](https://privacy.microsoft.com/privacystatement)的必应服务部分中所述对查询进行处理。 例如，此类查询将用于对公共功能（如 autosuggest 或相关搜索）进行建模和定型。
 - 不满足限制或频率阈值的查询将与公共的非 Microsoft 搜索流量分开存储。
 ### <a name="advertising"></a>广告 

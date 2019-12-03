@@ -12,16 +12,16 @@ search.appverid:
 - MET150
 - MOE150
 description: 首次设置 Microsoft 搜索。
-ms.openlocfilehash: 94ee7ece8a56d599778b151d5b836240d8832762
-ms.sourcegitcommit: 21361af7c244ffd6ff8689fd0ff0daa359bf4129
+ms.openlocfilehash: d8b796e0ff61972f3e244c1a5af98319884769dc
+ms.sourcegitcommit: ef1eb2bdf31dccd34f0fdc4aa7a0841ebd44f211
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38626906"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "39663057"
 ---
 # <a name="set-up-microsoft-search"></a>设置 Microsoft 搜索
 
-Microsoft 搜索提供了一个用户友好界面，可帮助用户通过安全访问所有数据源（包括电子邮件、文件、SharePoint 文件、OneDrive 内容和其他共享资源以及用户组织中的 Internet）来查找文件和文档、内部网站和业务工具、人员和组、位置和方向、对话和答案等信息。
+Microsoft Search 提供了一个用户友好的界面，可帮助用户查找诸如文件和文档、内部网站和业务工具、人员和组、位置和说明、对话和答案等信息。 它通过安全地访问所有数据源，包括电子邮件、文件、SharePoint 文件、OneDrive 内容以及用户组织中的 internet，从而实现此功能。
 
 若要了解有关 Microsoft 搜索功能的详细信息，请参阅 [Microsoft 搜索概述](overview-microsoft-search.md)。
 

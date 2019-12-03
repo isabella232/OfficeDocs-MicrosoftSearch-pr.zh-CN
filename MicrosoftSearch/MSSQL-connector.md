@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 设置 Microsoft SQL connector for Microsoft Search。
-ms.openlocfilehash: a073a6d3f226e5f8b0ea297494a8889f1f50bab1
-ms.sourcegitcommit: 21361af7c244ffd6ff8689fd0ff0daa359bf4129
+ms.openlocfilehash: c31399e65bd4bfc154d10d2e6057fa23d11f030d
+ms.sourcegitcommit: ef1eb2bdf31dccd34f0fdc4aa7a0841ebd44f211
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38626753"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "39663152"
 ---
 # <a name="microsoft-sql-server-connector"></a>Microsoft SQL server 连接器
 
@@ -48,6 +48,16 @@ ms.locfileid: "38626753"
 该示例演示如何选择包含用于搜索的数据的五个数据列：订单 Id、OrderTitle、OrderDesc、CreatedDateTime 和 IsDeleted。 若要设置每个数据行的查看权限，可以选择以下 ACL 列： AllowedUsers、AllowedGroups、DeniedUsers 和 DeniedGroups。 所有这些数据列都可以进行**查询**、**搜索**或**检索**。
 
 选择数据列，如以下示例查询所示：`SELECT OrderId, OrderTitle, OrderDesc, AllowedUsers, AllowedGroups, DeniedUsers, DeniedGroups, CreatedDateTime, IsDeleted`
+ 
+若要管理对搜索结果的访问权限，您可以指定查询中的一个或多个 ACL 列。 SQL 连接器允许您控制每个记录级别的访问权限。 您可以选择对表中的所有记录具有相同的访问控制。 如果 ACL 信息存储在单独的表中，则可能必须在查询中执行与这些表的联接。
+
+下面介绍了上述查询中的每个 ACL 列的用法。 下面的列表介绍了4种**访问控制机制**。 
+* **AllowedUsers**：此选项指定将能够访问搜索结果的用户 id 的列表。 在下面的示例中，用户列表为： john@contoso.com、keith@contoso.com 和 lisa@contoso.com 只能访问订单 Id 为12的记录。 
+* **AllowedGroups**：此选项指定将能够访问搜索结果的用户组。 在下面的示例中，group sales-team@contoso.com 将只有具有订单 Id = 12 的记录可供访问。
+* **DeniedUsers**：此选项指定**不**具有对搜索结果的访问权限的用户的列表。 在以下示例中，用户 john@contoso.com 和 keith@contoso.com 无权使用订单 Id 为13的记录访问权限，而其他所有人都有权访问此记录。 
+* **DeniedGroups**：此选项指定**不**具有对搜索结果的访问权限的用户组。 在以下示例中，组 engg-team@contoso.com 和 pm-team@contoso.com 无权访问订单 Id 为15的记录，而其他人有权访问此记录。  
+
+![](media/MSSQL-ACL1.png)
 
 ### <a name="watermark-required"></a>水印（必需）
 为了防止对数据库进行过载，连接器使用完全爬网水印列为批次批处理和恢复完全爬网查询。 通过使用 "水印" 列的值，将提取每个后续批处理，并从最后一个检查点恢复查询。 实际上，这是一种控制完全爬网的数据刷新的机制。
@@ -67,6 +77,18 @@ ms.locfileid: "38626753"
 
 ![软删除设置： "软删除列" 和 "软删除列的值，表示删除的行"](media/MSSQL-softdelete.png)
 
+### <a name="full-crawl-manage-search-permissions"></a>完全爬网：管理搜索权限
+单击 "**管理权限**" 以选择用于指定访问控制机制的各种访问控制（ACL）列。 选择您在完全爬网 SQL 查询中指定的列名称。 
+
+每个 ACL 列都应为多值列。 可以通过分隔符（如分号（;)、逗号（，）等）分隔这些多个 ID 值。 您需要在 "**值分隔符**" 字段中指定此分隔符。
+ 
+支持使用以下 ID 类型作为 Acl： 
+* **用户主体名称（upn）**：用户主体名称（upn）是电子邮件地址格式的系统用户的名称。 UPN （例如： john.doe@domain.com）由用户名（登录名）、分隔符（@ 符号）和域名（UPN 后缀）组成。 
+* **Azure Active Directory （AAD） ID**：在 AAD 中，每个用户或组都有一个对象 ID，它看起来像 "e0d3ad3d-0000-1111-2222-3c5f5c52ab9b" 这样的内容。 
+* **Active Directory （AD）安全 ID**：在本地 AD 安装中，每个用户和组都有一个不可变的唯一安全标识符，其外观类似于-1-5-21-3878594291-2115959936-132693609-65242。 '
+
+![](media/MSSQL-ACL2.png)
+
 ## <a name="incremental-crawl-optional"></a>增量爬网（可选）
 在此可选步骤中，提供用于运行数据库的增量爬网的 SQL 查询。 使用此查询，Microsoft SQL server 连接器将对自上次增量爬网以来的数据进行任何更改。 在完全爬网中，选择要使其成为可**查询**、可**搜索**或可**检索**的所有列。 指定在完全爬网查询中指定的一组相同的 ACL 列。
 
@@ -74,9 +96,11 @@ ms.locfileid: "38626753"
 
 ![增量爬网脚本，显示可使用的 OrderTable、AclTable 和示例属性。](media/MSSQL-incrcrawl.png)
 
+## <a name="manage-search-permissions"></a>管理搜索权限 
+您可以选择使用[完全爬网屏幕中指定的 acl](#full-crawl-manage-search-permissions) ，也可以将其覆盖以使您的内容对所有人可见。
+
 ## <a name="limitations"></a>限制
 在预览版本中，Microsoft SQL server 连接器具有以下限制：
 * 本地数据库必须运行 SQL server 版本2008或更高版本。
-* 仅通过使用用户主体名称（UPN）、Azure Active Directory （Azure AD）或 Active Directory 安全性来支持 Acl。
+* 仅通过使用用户主体名称（UPN）、Azure Active Directory （Azure AD）或 Active Directory 安全性来支持 Acl。 
 * 不支持在数据库列中对多信息内容编制索引。 此类内容的示例包括 HTML、JSON、XML、blob 和文档 parsings，它们作为数据库列中的链接存在。
-
