@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 设置 Microsoft SQL connector for Microsoft Search。
-ms.openlocfilehash: c31399e65bd4bfc154d10d2e6057fa23d11f030d
-ms.sourcegitcommit: ef1eb2bdf31dccd34f0fdc4aa7a0841ebd44f211
+ms.openlocfilehash: b48fece5fccaf2a82ac343cd13130073ee6b3c21
+ms.sourcegitcommit: f4cb37fdf85b895337caee827fb72b5b7fcaa8ad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "39663152"
+ms.lasthandoff: 12/12/2019
+ms.locfileid: "39995047"
 ---
 # <a name="microsoft-sql-server-connector"></a>Microsoft SQL server 连接器
 
@@ -26,7 +26,7 @@ ms.locfileid: "39663152"
 本文适用于 Microsoft 365 管理员或任何配置、运行和监控 Microsoft SQL server 连接器的人。 它说明了如何配置连接器和连接器功能、限制和故障排除技术。
 
 ## <a name="install-a-data-gateway"></a>安装 data gateway
-为了访问第三方数据，您必须安装和配置 Microsoft Power BI 网关。 若要了解详细信息，请参阅[Install 和本地网关](https://docs.microsoft.com/data-integration/gateway/service-gateway-install)。  
+为了访问第三方数据，您必须安装和配置 Microsoft Power BI 网关。 若要了解详细信息，请参阅[安装本地网关](https://docs.microsoft.com/data-integration/gateway/service-gateway-install)。  
 
 ## <a name="connect-to-a-data-source"></a>连接到数据源
 若要将 Microsoft SQL server 连接器连接到数据源，必须配置要爬网的数据库服务器和本地网关。 然后，您可以使用所需的身份验证方法连接到数据库。

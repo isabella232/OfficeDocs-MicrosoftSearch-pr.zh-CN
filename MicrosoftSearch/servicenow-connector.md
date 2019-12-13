@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 设置用于 Microsoft 搜索的 ServiceNow 连接器
-ms.openlocfilehash: 78b2831e9a52b6bf0204b5a6b2aba147b529b3f5
-ms.sourcegitcommit: 21361af7c244ffd6ff8689fd0ff0daa359bf4129
+ms.openlocfilehash: 75e07eb82dd63e95ce17a0506f96c853a7bcea2f
+ms.sourcegitcommit: 398b9847e3041732c32af9e6087d8e6c2e96c1cf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38626951"
+ms.lasthandoff: 12/12/2019
+ms.locfileid: "39998563"
 ---
 # <a name="servicenow-connector"></a>ServiceNow 连接器
 
@@ -42,10 +42,10 @@ ms.locfileid: "38626951"
 **Field** | **说明** | **推荐值**
 --- | --- | ---
 名称 | 此唯一值标识您需要 OAuth 访问的应用程序。 | Microsoft 搜索
-客户端 ID | 应用程序的只读、自动生成的唯一 ID。 实例在请求访问令牌时使用客户端 ID。 | NA
+客户端 ID | 应用程序的只读、自动生成的唯一 ID。 实例在请求访问令牌时使用客户端 ID。 | 不适用
 客户端密码 | 使用此共享机密字符串，ServiceNow 实例和 Microsoft Search 授权相互之间的通信。 | 将此视为密码，以遵循安全性最佳实践。
-重定向 URL | 授权服务器重定向到的必需回调 URL。 | 请参阅[OAuth 回调](https://gcs.office.com/v1.0/admin/oauth/callback)。
-徽标 URL | 包含应用程序徽标的图像的 URL。 | NA
+重定向 URL | 授权服务器重定向到的必需回调 URL。 | https://gcs.office.com/v1.0/admin/oauth/callback
+徽标 URL | 包含应用程序徽标的图像的 URL。 | 不适用
 活动 | 选中此复选框可使应用程序注册表处于活动状态。 | 设置为活动
 刷新令牌生命期 | 刷新令牌有效的秒数。 默认情况下，刷新令牌在100天后过期（8640000秒）。 | 31536000（1年）
 访问令牌生命周期 | 访问令牌有效的秒数。 | 43200（12个小时）

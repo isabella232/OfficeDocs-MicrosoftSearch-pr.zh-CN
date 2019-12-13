@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 概述 Microsoft Search 的内容、它的优势以及哪些应用支持 Microsoft 搜索。
-ms.openlocfilehash: 938cf8875d9cc707041b950c6c13bab27e366670
-ms.sourcegitcommit: ef1eb2bdf31dccd34f0fdc4aa7a0841ebd44f211
+ms.openlocfilehash: 4acc3b9fcb7453f84db256cc20e839066dc94af5
+ms.sourcegitcommit: f4cb37fdf85b895337caee827fb72b5b7fcaa8ad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "39663066"
+ms.lasthandoff: 12/12/2019
+ms.locfileid: "39995029"
 ---
 # <a name="overview-of-microsoft-search"></a>Microsoft 搜索概述
 
@@ -70,28 +70,16 @@ Microsoft 搜索可帮助用户找到正确的答案、人员和内容，以便�
 
 Microsoft Search 显示您的组织已存储在 Microsoft 365 或通过连接器编制索引的内容。 Microsoft Search 不会跨租户搜索，也不会显示由其他组织共享的内容的结果。 如果你的组织已设置了使用云混合搜索的混合 SharePoint 环境，则 Microsoft 搜索将同时返回来自在线和本地 SharePoint 内容（包括已连接到 SharePoint Server 环境的任何外部内容）的搜索结果。 [详细了解混合搜索环境](https://docs.microsoft.com/sharepoint/hybrid/learn-about-cloud-hybrid-search-for-sharepoint)。
 
-用户将获得从其他位置获取的相同企业级搜索结果，也会从 internet 获取结果。
+用户将获得从其他位置获取的相同搜索结果，也会从 internet 获取结果。
 
 ## <a name="how-does-microsoft-search-work"></a>Microsoft 搜索如何工作？
 
 当用户进行搜索时，Microsoft 搜索会处理查询并从较长的短语解析搜索意图，使用人工智能 (AI) 来了解用户添加到查询的常见多余短语，这些短语不影响他们的搜索意图。 例如，当用户搜索“如何更改密码”时，我们会从查询中提取不太重要的字词，并根据“更改密码”等相关字词进行触发。  
 用户**有权**查看的搜索结果将显示在搜索结果页面上。 Microsoft 搜索使用智能排名算法根据相关性对结果进行排序。
 
-## <a name="microsoft-search-in-bing-protects-enterprise-searches"></a>必应中的 Microsoft 搜索可以保护企业搜搜
+## <a name="how-does-microsoft-search-in-bing-help-protect-my-company-data"></a>必应 Bing 中的 Microsoft 搜索如何帮助保护我的公司数据？
 
-当用户在 Bing 的 Microsoft Search 中输入搜索查询时，将发生两个同时进行的搜索请求：
-
-- 组织内部资源的搜索。
-- 从 Bing.com 中单独搜索公共结果。 
-
-由于企业级搜索可能是敏感的，Microsoft Search 实现了一组信任措施，用于描述如何处理单独搜索的公共`Bing.com`结果。
-
-### <a name="logging"></a>日志记录
-- 所有`Bing.com`与 Bing 流量中的 Microsoft 搜索相关的搜索日志都与工作区标识不关联。
-- 如果满足一组限制或频率阈值，让我们相信查询并不特定于特定组织，则将按照[隐私声明](https://privacy.microsoft.com/privacystatement)的必应服务部分中所述对查询进行处理。 例如，此类查询将用于对公共功能（如 autosuggest 或相关搜索）进行建模和定型。
-- 不满足限制或频率阈值的查询将与公共的非 Microsoft 搜索流量分开存储。
-### <a name="advertising"></a>广告 
-与企业级`Bing.com`搜索一起显示在中的广告与搜索查询的内容完全相关。 绝对不会基于用户的工作区标识向其定向发布广告。
+[必应 Bing 中的 Microsoft 搜索的安全性和隐私](security-for-search.md)
 
 ## <a name="see-also"></a>另请参阅
 
