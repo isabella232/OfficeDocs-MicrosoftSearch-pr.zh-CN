@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: ebce7fdc-e89b-473c-8131-67e659bb3f73
 description: 在 Microsoft Search 中分析指标并管理见解仪表板中的内容
-ms.openlocfilehash: bbfc8b230690eeef1f7a23d70d7af29b88924e7d
-ms.sourcegitcommit: 68087149c769a7cdde80944dd9c9933d2bf4a23f
+ms.openlocfilehash: 8ed0e13b53f61c699e8cf5628341adba3b96be9c
+ms.sourcegitcommit: 26481c00963d836de4ed64a454fb6c5b49c5075d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "38699859"
+ms.lasthandoff: 12/18/2019
+ms.locfileid: "40738050"
 ---
 # <a name="microsoft-search-insights-dashboard-reports"></a>Microsoft Search Insights 仪表板报告
 
@@ -47,7 +47,7 @@ ms.locfileid: "38699859"
 
 ## <a name="impression-distribution"></a>印记分布
 
-此报告显示[必应 Bing](https://Bing.com)分布在 Bing 一段时间内的各种答案。 示例包括书签、人员、问答&、文件、位置、文件网站、组和对话。 
+此报告显示[必应 Bing](https://Bing.com)分布在 Bing 一段时间内的各种答案。 示例包括书签、人员、问答&、文件、位置、文件网站、组和对话。
 
 ![选择为 "时间段" 的90天的印记报告。](media/Insights-impressions.png)
 
