@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 在 SharePoint Online 中使用 Microsoft Search 启动你的组织
-ms.openlocfilehash: 662dc2b69f02857327cd95b0f7c162e92800ce1c
-ms.sourcegitcommit: 21361af7c244ffd6ff8689fd0ff0daa359bf4129
+ms.openlocfilehash: 43cd9bce3d3d5c6f60214fcc1023bc4b8b9bfe91
+ms.sourcegitcommit: 26481c00963d836de4ed64a454fb6c5b49c5075d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38626852"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "38699491"
 ---
 # <a name="get-started-with-microsoft-search-in-sharepoint"></a>开始在 SharePoint 中使用 Microsoft 搜索
 
@@ -30,7 +30,7 @@ SharePoint 中的 Microsoft Search 是[Sharepoint Online](https://products.offic
 
 ## <a name="prepare-for-microsoft-search-in-sharepoint"></a>在 SharePoint 中准备 Microsoft Search
 
-用户仅可查找已编入索引的 SharePoint 内容。 Microsoft Search 和经典搜索为 SharePoint 内容共享相同的索引，该索引将自动进行爬网和编制索引。 
+用户只能查找已编制索引的[SharePoint](http://sharepoint.com/)内容。 Microsoft Search 和经典搜索为 SharePoint 内容共享相同的索引，该索引将自动进行爬网和编制索引。 
 
 有些组织在 SharePoint 中使用经典搜索和 Microsoft 搜索。 若要了解如何避免 SharePoint 中 Microsoft 搜索的经典搜索设置的影响，请参阅[Sharepoint Online 中的经典搜索体验和新式搜索体验之间的差异](https://docs.microsoft.com/sharepoint/differences-classic-modern-search)。
 
