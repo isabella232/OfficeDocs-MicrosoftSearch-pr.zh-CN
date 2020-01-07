@@ -12,14 +12,14 @@ search.appverid:
 - MET150
 - MOE150
 description: 添加搜索纵向和自定义搜索结果
-ms.openlocfilehash: 28e8fdc7fe7f08abe265c53772a161b8a7095503
-ms.sourcegitcommit: 68087149c769a7cdde80944dd9c9933d2bf4a23f
+ms.openlocfilehash: 852622c0c66afb996f941c609980a0d792af7364
+ms.sourcegitcommit: c41334350654daef3a4cd45b5b18ea4401286997
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "38699554"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "40947023"
 ---
-# <a name="customize-the-microsoft-search-page"></a>自定义 Microsoft Search 页面
+# <a name="customize-the-search-results-page"></a>自定义搜索结果页
 
 通过创建搜索纵向和结果类型，可以自定义在[Bing](https://Bing.com)中的[SharePoint](http://sharepoint.com/)、 [microsoft Office](https://Office.com)和 microsoft 搜索中搜索时向用户显示的搜索结果。 纵向使用户能够更轻松地查找他们有权查看的信息。 例如，您可以为市场营销部门的用户从第三方软件为市场营销分析数据创建纵向搜索。 您还可以定义结果类型并自定义此数据的布局。  
 
