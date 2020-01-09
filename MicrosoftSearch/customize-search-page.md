@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 添加搜索纵向和自定义搜索结果
-ms.openlocfilehash: 852622c0c66afb996f941c609980a0d792af7364
-ms.sourcegitcommit: c41334350654daef3a4cd45b5b18ea4401286997
+ms.openlocfilehash: 198e5c85c1544b05cdc622f7b617e8bddbcd6a00
+ms.sourcegitcommit: 78dc72e99e148898455e016b4ccb110d16b3d81c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "40947023"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40987673"
 ---
 # <a name="customize-the-search-results-page"></a>自定义搜索结果页
 
@@ -101,7 +101,7 @@ ms.locfileid: "40947023"
 ### <a name="view-the-vertical-after-enabling"></a>启用后查看垂直
 
 在启用垂直后，可能需要一段时间才能进行查看。
-如果要在启用后等待，请将**cacheClear = true**追加到[SharePoint](http://sharepoint.com/)和[Office](https://Office.com)中的 URL，以便立即查看垂直方向。
+如果您不希望在启用后等待，则可以将**cacheClear = true**追加到[SharePoint](http://sharepoint.com/)和[Office](https://Office.com)中的 URL，以便立即查看垂直方向。
 
 ## <a name="troubleshooting"></a>故障排除
 
