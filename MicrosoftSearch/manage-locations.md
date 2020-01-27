@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8ab9aa00-cd74-405f-8410-9a1c3cfacdb9
 description: 随着时间推移，可能需要更新位置状态和内容以保持其相关性。
-ms.openlocfilehash: 25fa6fdb8f95c04332e8df16c7589286ecaefdb0
-ms.sourcegitcommit: 21361af7c244ffd6ff8689fd0ff0daa359bf4129
+ms.openlocfilehash: 44214cc1be22c5e9e49276c69c6c4132559f7c8d
+ms.sourcegitcommit: 9784c8a99138c2f333a9fed8b71df9c4f28b2bee
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38626780"
+ms.lasthandoff: 01/24/2020
+ms.locfileid: "41519132"
 ---
 # <a name="manage-locations"></a>管理位置
 
@@ -40,7 +40,7 @@ ms.locfileid: "38626780"
 使用导入/导出功能可以：
 1. 批量添加位置 - 在位置模板文件中添加详细信息，然后导入它。 
 1. 批量编辑位置 - 将书签导出到 .csv 文件，编辑导出的 .csv 文件中的位置详细信息，然后导入更新的 .csv 文件。
-1. 备份位置 – 将现有位置导出到 .csv 文件。
+1. 备份位置–将现有位置导出到 .csv 文件。
 
 若要导出或导入位置：
 1. 在“**位置**”选项卡的右上角，选择“**导入**”。
