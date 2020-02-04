@@ -2,7 +2,7 @@
 title: 必应 Bing 中的 Microsoft 搜索的安全性和隐私
 ms.author: jeffkizn
 author: jeffkizn
-manager: pmanek
+manager: parulm
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 在 Bing 中向具有 Microsoft 搜索的授权用户提供信息，保护贵公司的数据和最终用户
-ms.openlocfilehash: 7f19327f3d62f68ed876875596610181b5f1bc0e
-ms.sourcegitcommit: ac1209d11b8cc265d2224917fbe2a2bb0f65ef84
+ms.openlocfilehash: 1cc00a3b14b1918903c9aa34a24f13b1761b64b6
+ms.sourcegitcommit: 5946fe6aad2331c023bedda8faf826c0248651f8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "41005618"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "41711747"
 ---
 # <a name="security-and-privacy-for-microsoft-search-in-bing"></a>必应 Bing 中的 Microsoft 搜索的安全性和隐私
 
@@ -39,7 +39,7 @@ Bing 中 Microsoft Search 的身份验证绑定到 Azure Active Directory。 当
   
 ## <a name="communicates-with-the-microsoft-cloud-from-the-browser"></a>从浏览器与 Microsoft 云通信
 
-当用户登录其工作或学校帐户时，必应会将必要的客户端库下载到浏览器中，以支持 Microsoft 搜索结果。然后，当他们搜索时，浏览器内的代码会调用 Office 365 云来获得工作结果。为此，Microsoft 搜索使用一个专用 API，该 API 根据 Office 365 [行业标准和法规的合规性框架](https://download.microsoft.com/download/1/4/3/1434ABAB-B8E9-412D-8C3A-187B5FCB7A2F/Compliance%20Framework%20document.pdf)（PDF 下载）符合 Tier C (SOC2 Type 1)。这意味着工作结果和工作数据永远不会流经不符合的必应系统。
+当用户使用其工作或学校帐户登录时，Bing 将向浏览器下载所需的客户端库，以启用 Microsoft 搜索结果。 然后，在搜索时，浏览器中的代码会调用 Office 365 云以获取工作结果。 为此，Microsoft Search 使用一个专用 API，该 API 按照 SSAE 18 SOC2 类型1的控制目标进行操作。 这意味着，工作结果和工作数据不会流经 Bing 系统，这些目标受到的数据处理控制目标的要求低于在 Office 365 Core Online Services 中进行处理时的工作结果本身所遵循的要求。
   
 ## <a name="permissions"></a>权限
 
