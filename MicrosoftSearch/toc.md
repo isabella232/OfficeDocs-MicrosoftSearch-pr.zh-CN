@@ -8,7 +8,6 @@
 ## [首字母缩略词](manage-acronyms.md)
 ## [书签](manage-bookmarks.md)
 ## [平面图](manage-floorplans.md)
-### [最佳做法](floorplans-bestpractices.md)
 ## [位置](manage-locations.md)
 ## [问答](manage-qas.md)
 # 连接器（预览版）
