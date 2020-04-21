@@ -1,8 +1,8 @@
 ---
 title: Microsoft 搜索层计划的最佳实践
-ms.author: anfowler
-author: adefowler
-manager: shohara
+ms.author: jeffkizn
+author: jeffkizn
+manager: parulm
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -12,13 +12,14 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 搜索层计划的最佳实践
-ms.openlocfilehash: ddad671592ab3cf05400faa1261ee7258f3868bb
-ms.sourcegitcommit: 68087149c769a7cdde80944dd9c9933d2bf4a23f
+ms.openlocfilehash: 47eb46df48f1871f6d34d4b00787cf11ccbac1ea
+ms.sourcegitcommit: 6b1c6a4e502d95b42a030a963f9452c387d8a5cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "38699849"
+ms.lasthandoff: 04/20/2020
+ms.locfileid: "43571011"
 ---
+<!-- markdownlint-disable no-inline-html -->
 # <a name="best-practices-for-microsoft-search-floor-plans"></a>Microsoft 搜索层计划的最佳实践
 
 若要成功实现 Microsoft Search 平面图计划，您需要协调三个数据片段：
@@ -30,6 +31,7 @@ ms.locfileid: "38699849"
 以下各节也介绍了部署 Microsoft 搜索平面布置图的最佳做法。
 
 ## <a name="building-location-data"></a>生成位置数据
+
 在添加平面布置图之前，需要将建筑物添加到 Microsoft 搜索位置。 提供以下所需的生成数据：
 
 |生成数据所需  |示例  |
@@ -42,7 +44,8 @@ ms.locfileid: "38699849"
 您可以通过使用 "**位置**" 选项卡中的 "**导入**" 功能，而不是一次添加一个位置，来一次添加多个建筑物。 使用**导入**功能，可以指定纬度-经度。 有关详细信息，请参阅[管理位置](manage-locations.md)。
 
 ## <a name="floor-plan-map-in-dwg-format"></a>DWG 格式的楼面平面图地图
-若要在 Microsoft Search 中构建地图，需要在 DWG 格式中上载包含特定信息的平面布置图。 若要了解如何创建和查看 DWG 格式的文件，请参阅[Dwg 查看](https://www.autodesk.in/products/dwg)器。 
+
+若要在 Microsoft Search 中构建地图，需要在 DWG 格式中上载包含特定信息的平面布置图。 若要了解如何创建和查看 DWG 格式的文件，请参阅[Dwg 查看](https://www.autodesk.in/products/dwg)器。
 
 楼面平面图地图显示四个元素：
 
@@ -60,6 +63,7 @@ ms.locfileid: "38699849"
 此信息存储在[AZURE AD](https://azure.microsoft.com/services/active-directory/)中的**PhysicalDeliveryOfficeName**属性中。 在 Microsoft 365[管理中心](https://admin.microsoft.com)，它称为**Office**属性，可在**活动用户**中添加。
 
 ### <a name="dwg-files"></a>DWG 文件
+
 Microsoft Search 需要 DWG 中的平面布置图文件，这是[AutoCAD](https://www.autodesk.com/autocad)绘图格式。 这些文件必须包含**布局**和**标签**数据。 **房间号码**是平面布置图最重要的标签。
 
 建议使用下表中所示的完全匹配方法创建 office 编号系统。 但您并不局限于该标记。 例如，如果用户在[AZURE AD](https://azure.microsoft.com/services/active-directory/)中的办公室位置是**B1 1001**，则可以使用下面的任意选项在 DWG 文件中标记房间号码。
@@ -71,6 +75,7 @@ Microsoft Search 需要 DWG 中的平面布置图文件，这是[AutoCAD](https:
 |仅匹配会议室号码 <br> **1**<br>会议室编号：1        |    ![Office 编号为 "1" 的单一办公室楼面地图](media/floorplans-layoutroomonly.png)     |
 
 ## <a name="user-account-office-location"></a>用户帐户办公地点
+
 若要映射员工的位置，DWG 文件中的房间号码将映射到[AZURE AD](https://azure.microsoft.com/services/active-directory/)中的用户帐户中的办公室位置。 **Office location**属性需要与 DWG 文件中的 office 位置信息相匹配。
 
 下表介绍了映射位置数据的最佳做法：
@@ -83,5 +88,6 @@ Microsoft Search 需要 DWG 中的平面布置图文件，这是[AutoCAD](https:
 |
 
 ## <a name="next-steps"></a>后续步骤
+
 [管理位置](manage-locations.md)<br>
 [管理基底计划](manage-floorplans.md)
