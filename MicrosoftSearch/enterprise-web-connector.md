@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 设置企业网站连接器以进行 Microsoft Search
-ms.openlocfilehash: de466d4cc1156f520bb6a5fe3117389bd29f3e78
-ms.sourcegitcommit: 8ccbf0ea4463d17f810c2f5b484882869a74a996
+ms.openlocfilehash: 4ed926cfdacca66d90854147afdc3c7932d1bd5f
+ms.sourcegitcommit: 49659ecd2ac47c85acc297b21e9e34701213862c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2020
-ms.locfileid: "43793546"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43803949"
 ---
 # <a name="enterprise-websites-connector"></a>企业网站连接器
 
@@ -60,7 +60,7 @@ ms.locfileid: "43793546"
 企业网站连接器仅支持完全爬网。 这意味着，在每次爬网期间，连接器都会读取网站的所有内容。 若要确保连接器获取足够的时间来读取内容，我们建议您设置一个较大的刷新计划间隔。 建议在三天和两周之间计划刷新。 
 
 ## <a name="troubleshooting"></a>疑难解答
-如果连接出现严重错误，其状态将显示为 "失败"。 若要获取有关错误类型的详细信息，请在选择失败的连接后转到 "错误详细信息" 页。  单击错误代码以查看更多详细错误。 此外，请参阅[管理连接器](https://docs.microsoft.com/microsoftsearch/manage-connector)以了解详细信息。
+阅读网站的内容时，爬网可能会遇到下面的详细错误代码所表示的一些源错误。 若要获取有关错误类型的详细信息，请在选择该连接后转到 "**错误详细**信息" 页。 单击**错误代码**以查看更多详细错误。 此外，请参阅[管理连接器](https://docs.microsoft.com/microsoftsearch/manage-connector)以了解详细信息。
 
  **详细错误代码** | **错误消息**
  --- | --- 
@@ -75,7 +75,7 @@ ms.locfileid: "43793546"
  6024 | 尝试索引的源页面包含不受支持的内容。
 
 * 当数据源由于网络问题或数据源本身被删除、移动或重命名而无法访问时，将发生错误6001-6013。 检查提供的数据源详细信息是否仍然有效。
-* 如果数据源在页面上包含非文本内容或页面不是 HTML，则会出现错误6021-24 错误。 请检查数据源并在排除列表中添加此页面或忽略错误。
+* 如果数据源在页面上包含非文本内容或页面不是 HTML，则会出现错误6021-6024 错误。 请检查数据源并在排除列表中添加此页面或忽略错误。
 
 ## <a name="limitations"></a>限制
-企业网站连接器不支持搜索动态网页上的数据。 这些网页的示例如[Confluence](https://www.atlassian.com/software/confluence)和[Unily](https://www.unily.com/)之类的内容管理系统中所示，或存储网站内容的数据库。
+企业网站连接器不支持搜索**动态网页**上的数据。 这些网页的示例如[Confluence](https://www.atlassian.com/software/confluence)和[Unily](https://www.unily.com/)之类的内容管理系统中所示，或存储网站内容的数据库。
