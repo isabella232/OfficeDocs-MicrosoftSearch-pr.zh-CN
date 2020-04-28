@@ -1,8 +1,8 @@
 ---
 title: Microsoft 搜索概述
-ms.author: anfowler
-author: adefowler
-manager: shohara
+ms.author: jeffkizn
+author: jeffkizn
+manager: parulm
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 概述 Microsoft Search 的内容、它的优势以及哪些应用支持 Microsoft 搜索。
-ms.openlocfilehash: 4acc3b9fcb7453f84db256cc20e839066dc94af5
-ms.sourcegitcommit: f4cb37fdf85b895337caee827fb72b5b7fcaa8ad
+ms.openlocfilehash: fc21328f9a72ac77e37ae366bd138770509d6080
+ms.sourcegitcommit: d40d44d01b27dfed92577446fe7a30008b28deb4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/12/2019
-ms.locfileid: "39995029"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43914486"
 ---
 # <a name="overview-of-microsoft-search"></a>Microsoft 搜索概述
 
@@ -58,31 +58,29 @@ Microsoft 搜索可帮助用户找到正确的答案、人员和内容，以便�
 
 ## <a name="tailoring-microsoft-search-to-your-organization"></a>为你的组织定制 Microsoft 搜索
 
-作为管理员，你可以为你的用户创建令人惊叹的 Microsoft 搜索体验。 
+作为管理员，你可以为你的用户创建令人惊叹的 Microsoft 搜索体验。
 
-**显示有用的内容**–答案提供快速、权威的结果，以根据关键字搜索查询。 [使内容易于查找](make-content-easy-to-find.md)。
+**显示有用的内容**–答案提供快速、权威的结果，以根据关键字搜索查询。 [规划内容](plan-your-content.md)。
 
 **添加外部内容**– Microsoft Graph 连接器允许您将外部内容引入索引。 使用连接器丰富来自 Microsoft 365 之外的数据和文件的搜索体验。 [Microsoft Graph 连接器概述](connectors-overview.md)
 
 **自定义用户体验**–您可以通过使用纵向和其他配置来自定义用户体验。 [自定义 Microsoft Search 页面](customize-search-page.md)
 
-## <a name="what-content-is-searched"></a>搜索哪些内容？
+## <a name="what-content-is-searched"></a>搜索内容
 
 Microsoft Search 显示您的组织已存储在 Microsoft 365 或通过连接器编制索引的内容。 Microsoft Search 不会跨租户搜索，也不会显示由其他组织共享的内容的结果。 如果你的组织已设置了使用云混合搜索的混合 SharePoint 环境，则 Microsoft 搜索将同时返回来自在线和本地 SharePoint 内容（包括已连接到 SharePoint Server 环境的任何外部内容）的搜索结果。 [详细了解混合搜索环境](https://docs.microsoft.com/sharepoint/hybrid/learn-about-cloud-hybrid-search-for-sharepoint)。
 
 用户将获得从其他位置获取的相同搜索结果，也会从 internet 获取结果。
 
-## <a name="how-does-microsoft-search-work"></a>Microsoft 搜索如何工作？
+## <a name="how-microsoft-search-works"></a>Microsoft 搜索的工作原理
 
 当用户进行搜索时，Microsoft 搜索会处理查询并从较长的短语解析搜索意图，使用人工智能 (AI) 来了解用户添加到查询的常见多余短语，这些短语不影响他们的搜索意图。 例如，当用户搜索“如何更改密码”时，我们会从查询中提取不太重要的字词，并根据“更改密码”等相关字词进行触发。  
 用户**有权**查看的搜索结果将显示在搜索结果页面上。 Microsoft 搜索使用智能排名算法根据相关性对结果进行排序。
 
-## <a name="how-does-microsoft-search-in-bing-help-protect-my-company-data"></a>必应 Bing 中的 Microsoft 搜索如何帮助保护我的公司数据？
+## <a name="how-microsoft-search-in-bing-protects-your-company-data"></a>Microsoft 在 Bing 中搜索如何保护公司数据
 
 [必应 Bing 中的 Microsoft 搜索的安全性和隐私](security-for-search.md)
 
 ## <a name="see-also"></a>另请参阅
 
 [设置 Microsoft 搜索](setup-microsoft-search.md)
-
-[使内容易于查找](make-content-easy-to-find.md)
