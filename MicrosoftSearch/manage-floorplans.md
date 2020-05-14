@@ -12,89 +12,157 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft Search 中的平面布置图功能可帮助用户在大楼中查找人员、办公室和其他有用的功能。
-ms.openlocfilehash: 9871cda3790f210dc0c406d1d29abe2c571c1085
-ms.sourcegitcommit: 21361af7c244ffd6ff8689fd0ff0daa359bf4129
+ms.openlocfilehash: c2b148ab1bdb7ff425d5f2b4524e9770f489a92a
+ms.sourcegitcommit: d40d44d01b27dfed92577446fe7a30008b28deb4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38626789"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "42824795"
 ---
 # <a name="manage-floor-plans"></a>管理基底计划
 
-Microsoft Search 平面图计划可帮助用户在大楼中查找人员和会议室。 平面图计划回答以下问题：
+**Microsoft Search**中的平面布置图可帮助用户在大楼中查找人员和会议室。 平面布置图回答以下问题：
+
 - Allan Deyoung 的办公室在哪里？
-- 会议室 C1 在什么位置？
+- 建筑物2第3层
+- 查找2/11173
 
-![平面图在大楼中对用户的办公室位置进行了分布规划。](media/floorplans-officelocation.png)
+## <a name="add-floor-plans"></a>添加楼面计划
 
-为了便于查找类似这些问题的答案，有关组织建筑物、办公室和设施的信息需要提供，并可供搜索。 大型组织通常具有设施或空间管理团队，并且可能已提供此信息。 在小型组织中，搜索管理员可能需要创建并添加它。
+按照以下步骤在**Microsoft Search**中设置平面布置图的答案。
 
-## <a name="48-hours-before-you-begin"></a>开始之前的48小时
-开始上载平面布置图之前，需要为用户的办公室位置编制索引。 根据组织的规模，最长可能需要48个小时才能完成。 如果忽略此步骤，则会在执行过程时收到错误。
+### <a name="step-1-determine-your-building-codes"></a>步骤1：确定建筑物代码
 
-!["平面布置图" 页面的屏幕截图，其中包含 "Microsoft 需要先收集和组织办公室位置，然后才能上载平面布置图" 通知。](media/floorplans_hydrationstep.png)
+生成代码用作用户办公室位置的一部分。 更新用户配置文件时，将使用这些代码。 假设您的组织在此位置有一个建筑物：*建筑物2、350/5 号、纽约城市、纽约州 10016*
 
-在 microsoft 365[管理中心](https://admin.microsoft.com)，转到 "**设置** > **Microsoft Search** > **平面计划**"，然后选择 "**开始**"。
+下面是此建筑物代码的一些很棒的示例：2、B2、Building2、大楼2或 NYCB2。 每个建筑物都必须具有唯一的代码。
 
-如果看不到此通知，则你或你的组织中的某个人已启动此步骤。
+### <a name="step-2-review-your-floor-plans"></a>步骤2：查看你的平面图
 
-## <a name="things-to-consider"></a>注意事项
-若要帮助用户查找有关办公室和建筑设施的信息，您需要添加以下内容：
+平面布置图文件必须采用 DWG 格式;DWG 文件可以包含文本标签。 当文本标签标记聊天室时，它称为会议室标签。 DWG 文件必须至少有**10 个会议室**标记有标签。 下面是具有不同标签类型的 DWG 文件的一些示例：
 
-|方面     |这一点为什么重要？  |
-|---------|---------|
-|建筑物位置    |    你需要将每个建筑物添加到 Microsoft 搜索位置。 应为每个建筑物提供标准命名格式。 您可以使用街道地址或地图坐标添加建筑物。     |
-|所有用户帐户上的**Office**属性     |    每个用户帐户都需要将**office**属性与其办公室位置相关。 并且办公室位置应遵循标准格式，包括建筑物、楼层和会议室信息。   <br> 在 Azure AD 中，此属性称为 " **PhysicalDeliveryOfficeName**"。    |
-|DWG 格式的楼面平面图文件     |   您需要对建筑物的每个楼层或翼形使用单独的平面图，并将 office 信息包含在用户的 Office 属性中使用的相同格式。 文件必须采用 AutoCAD 绘图 DWG 格式。 |
+|**包含会议室标签的文本标签**|**文本标签但无会议室标签**|**无文本标签**|
+|:-----:|:-----:|:-----:|
+|![floorplans-textandroomlabels](media/floorplans-textandroomlabels.png)|![floorplans-textnoroomlabels](media/floorplans-textnoroomlabels.png)|![floorplans-nolabels](media/floorplans-nolabels.png)|
 
-有关详细信息，请参阅[Microsoft Search 平面图计划的最佳实践](floorplans-bestpractices.md)。
+有关查看和更新 DWG 文件的信息，请参阅[FAQ](#frequently-asked-questions)部分。
 
-## <a name="building-location"></a>建筑物位置
+### <a name="step-3-update-office-locations-on-user-profiles"></a>步骤3：更新用户配置文件上的 office 位置
 
-确定需要作为位置添加的建筑物。 建筑物的位置地址和映射坐标是第一个标识点。 如果尚未将建筑物添加为位置，管理员需要添加它。 有关详细信息，请参阅[管理位置](manage-locations.md)。
+用户的办公室位置是建筑物代码和会议室标签的组合。 例如，如果生成代码为*2* ，而房间标签是*1173*，则办公室位置将为*2/1173*。
 
-## <a name="floor-plans-files"></a>平面布置图文件
+为组织中的每个用户添加或更新办公地点。 您可以更改 Microsoft 365[管理中心](https://admin.microsoft.com)中的用户配置文件上的 office 位置，也可以在本地 Active directory 中更改为同步到 Azure Active directory。 *PhysicalDeliveryOfficeName*是用于办公地点的域。 如果你的会议室标签不包括楼层号，请参阅提示的常见问题解答。
 
-在构建已确定后，您可以添加其楼面计划。 所有平面布置图的文件必须采用 DWG 格式。 如果您的组织尚不具备这些计划，则需要在与 DWG 兼容的应用中创建平面布置图。 平面布置图必须正确映射所有聊天室，包括会议或会议室、restrooms、kitchens、邮件室和建筑物的每个基底的其他设施，以启用搜索。
+在此示例中，Allan 的办公室位于建筑物2的第1层的会议室1173。
+![floorplans-userlestview](media/floorplans-userlistview.png)
 
-### <a name="office-locations"></a>办公室位置
+> [!NOTE]
+> 若要在搜索平面布置图时查看更新的办公室位置，必须在每个楼层更新**至少10个人**的办公室位置。
 
-若要映射到平面布置图，所有办公地点和员工办公室数据都必须在用户帐户中。 在平面图中，办公室位置必须是唯一的，并且不能重复。 例如，如果两个人共享 office 2/1173，则**2/1173**在你的平面布置图中只能有一个唯一的实例，但 Azure AD 中的用户帐户将具有相同的办公室位置。
+### <a name="step-4-verify-office-location"></a>步骤4：验证办公地点
+
+使用**Microsoft Search**查找用户并验证其 office 位置是否正确显示。 如果你刚更新了位置，你可能需要等待**72 小时**，以使更新显示在搜索结果中。
 
 ![floorplans-peoplecard](media/floorplans-peoplecard.png)
 
- > [!Note] 
- > 当用户搜索同事的会议室或办公地点时，平面布置图中的房间号码将与 Azure AD 中的 office 位置相匹配。 如果找到匹配项，则显示地图。
+### <a name="step-5-add-building-locations"></a>步骤5：添加建筑物位置
 
-## <a name="add-floor-plan"></a>添加楼面计划
+建筑平面图使用[位置](manage-locations.md)来定义建筑物。 在 microsoft 365[管理中心](https://admin.microsoft.com)，转到 "**设置**  >  **Microsoft Search**  >  **位置**"，然后选择 "**添加**"。 输入建筑物的名称、地址和关键字。 根据需要添加任意数量的建筑物。
 
- 第一次转到平面图时，您可能会在页面顶部看到一条注释，指出， *Microsoft 需要先收集和组织办公室位置，然后才能上载平面布置图*。 选择 "**开始**"，为 Azure AD 办事处位置编制索引。 
+![floorplans-locations](media/floorplans-locations.png)
 
-1. 在[管理中心](https://admin.microsoft.com)中，转到 "**设置** > **Microsoft Search** >**平面计划**"，然后选择 "**添加平面图**"。
-4. 在下拉箭头中选择建筑物，然后选择 "**下一步**"。 如果未列出建筑物，则需要将其添加到 "位置"。 有关详细信息，请参阅[管理位置](manage-locations.md)。
-6. 选择 "**上载文件**"，然后选择要上传的平面布置图。 
-1. 文件上载成功后，您需要确定楼层号或翼号如何表示。 
-7. 输入标识建筑物的代码。 可以在**Office location**属性中的用户帐户上找到生成代码。 例如，如果用户的办公室位置是**2/1173**，则生成代码为**2**。 
-9. 查看并确定所有上载的平面布置图的位置模式，然后选择 "**下一步**"。
-10. 准备就绪后，请选择 "**发布**" 以使平面布置图可供搜索。
+有关位置的更多详细信息，请参阅[管理位置](manage-locations.md)
 
-> [!Note] 
-> 当平面图处于草稿状态时，该计划不完整。 草稿允许风险承担者在上载和创建平面布置图时进行协调。 它还允许您分阶段部署平面布置计划。
+### <a name="step-6-gather-and-organize-office-locations"></a>步骤6：收集和组织办公地点
+
+在可以使用平面布置图之前，必须对 office 位置编制索引。 这是一项一次性操作，可能需要长达48小时才能完成。 总时间将取决于组织的规模。
+
+在[管理中心](https://admin.microsoft.com)中，转到 "**设置**  >  **Microsoft Search**  >  **平面计划**"，然后选择 "**开始**"。 如果你看不到此通知，则表示你的组织已完成此步骤
+
+![floorplans_hydrationstep .png](media/floorplans_hydrationstep.png)
+
+### <a name="step-7-upload-floor-plans"></a>步骤7：上传平面图计划
+
+1. 在[管理中心](https://admin.microsoft.com)中，转到 "**设置**  >  **Microsoft Search**  >  **平面图计划**"，然后选择 "**添加**"。
+2. 在下拉列表中选择一个建筑物，然后选择 "**下一步**"。 如果未列出建筑物，请返回并[添加建筑物位置](#step-5-add-building-locations)。
+3. 选择 "**上载文件**"，然后选择您要上载的平面布置图。
+4. 上载完成后，必须输入在平面图文件中表示的楼层号。 然后选择“**下一步**”。
+5. Optional如果你的基底有翅膀或区域，请输入该详细信息。
+6. 输入此平面布置图的构建代码。 可以在用户的 office location 属性中找到生成代码。 例如，如果用户的办公室位置是**2/1173**，则生成代码为**2**。
+7. Optional查看并确定所有上载的平面布置图的位置模式，然后选择 "**下一步**"。
+8. 你将看到一个 "查看" 屏幕，其中列出了映射到平面图的办公室位置数。 选择 "**详细信息**" 以确保映射正确。
+9. 准备就绪后，请选择 "**发布**" 以使平面图在**Microsoft Search**中可用。
+
+> [!NOTE]
+> **发布平面图计划需要48小时。** 之后，在搜索同事的办公室时，您的用户将看到类似下面的平面布置图结果。
+
+![floorplans-officelocation](media/floorplans-officelocation.png)
+
+### <a name="step-8-optional-specify-location-patterns"></a>步骤8：（可选）指定位置模式
+
+上载平面布置图后，文本标签将与用户配置文件中的办公室位置进行比较。 如果匹配项少于10个，则将显示 "**指定位置模式**" 屏幕。 位置模式用于从办公室位置提取楼面、翼和会议室信息。
+
+![floorplans-locationpattern](media/floorplans-locationpattern.png)
+
+只有会议室是必需的，楼层和翼形是可选的，您可以根据需要跳过位置。
 
 ## <a name="edit-floor-plans"></a>编辑平面布置图
 
-1. 在[管理中心](https://admin.microsoft.com)中，转到 "**设置** > **Microsoft Search** > **平面计划**"。 
-1. 选择 "**已发布**" 或 "**草稿**"，选择要更改的平面布置图，然后选择 "**编辑**"。
-5. 进行更改，然后选择 "**保存**"。
+若要更新现有的平面布置图，请选择要更改的平面布置图，然后选择 "**编辑**"。 进行更改并保存它们。
 
-## <a name="troubleshoot-errors"></a>错误疑难解答
+## <a name="troubleshooting"></a>疑难解答
 
-在解决所有错误之前，不能转到下一步来定义楼层、翼形和会议室信息。 下表列出了用于修复问题的文件上载错误消息和操作。
+|**步骤**|**错误消息**|**类型**|**Action**|
+|:-----|:-----|:-----|:-----|
+|上载基底计划|无法读取 CC_1 dwg。 请重新上载或删除楼面计划。|Error|请再次尝试上载文件。 如果这不起作用，请删除该文件，然后重试。|
+|上载基底计划|有两个名为 CC_1 的文件。 请删除其中一个名称，或使用另一个名称重新上载。|Error|如果文件名不正确，请通过添加基底或翼形信息来使文件名成为唯一的，然后重新上传文件。 如果意外添加了同一个文件，则只需将其删除即可。|
+|上载基底计划|找不到数据。|Error|检查您的文件以确保它是正确的文件，然后再次上传或将其删除。|
+|上载基底计划|此文件中缺少外部引用。 上载 CC_1_furniture dwg 或删除此文件。|警告|上载外部引用文件或删除。|
+|上载基底计划|无法读取 DWG 文件中的会议室编号或标签。 请删除此文件。|警告|请检查 DWG 文件以确保包含数据，然后删除该文件，然后重试。|
+|链接办公室位置|AAD 中找不到任何 office 位置。 在设置平面布置图之前，将位置数据添加到 AAD。|Error|[更新用户配置文件上的 office 位置](#step-3-update-office-locations-on-user-profiles) |
 
-| 错误消息   | 类型    | Action       |
-|:----------------| :--------- | :-------------- |
-| 无法读取 CC_1 dwg。 请重新上载或删除楼面计划。 | Error |  请再次尝试上载文件。 如果不起作用，请删除该文件，然后再试一次。 |
-| 有两个名为 CC_1 的文件。 请删除其中一个名称，或使用另一个名称重新上载。| Error | 如果文件名不正确，请通过添加 floor 或翼形信息来使文件名成为唯一的，然后重新上传文件。 <br><br>如果意外添加了同一文件两次，只需将其删除即可。 |
-| 找不到数据。 | Error | 请检查您的文件以确保其正确无误，然后重新上传，或将其删除。 |
-| 此文件中缺少外部引用。 请上载 "CC_1_furniture dwg" 或删除此文件。 | 警告 | 上载外部引用文件或删除。|
-| 无法读取 DWG 文件中的会议室编号或标签。 请删除此文件。 | 警告 | 请检查 DWG 文件以确保包含数据，然后删除该文件，然后重试。 |
+## <a name="frequently-asked-questions"></a>常见问题解答
+
+**问：** 如何查看和编辑 DWG 文件？
+
+**A：** 使用以下任一选项可查看 DWG 文件：
+
+- 将文件上传到 SharePoint 并打开它。
+- 在[Microsoft Visio](https://support.office.com/article/Open-insert-convert-and-save-DWG-and-DXF-AutoCAD-drawings-60cab691-0f4c-4fc9-b775-583273c8dac5)或[Autodesk DWG TrueView](https://www.autodesk.com/products/dwg)中打开文件。
+- 将文件上传到[Autodesk Online Viewer](https://viewer.autodesk.com/)。
+
+**问：** 如何向未标记的聊天室添加文本标签？
+
+**A：** 在编辑器中打开 DWG 文件并[添加会议室标签](https://knowledge.autodesk.com/support/autocad-map-3d/learn-explore/caas/CloudHelp/cloudhelp/2019/ENU/MAP3D-Learn/files/GUID-4854F184-6279-4E0C-9487-34A4759017F6-htm.html)。
+
+**问：** 如何创建或编辑用于测试目的的 DWG 文件？
+
+**A：** 在 Microsoft Visio、Autodesk AutoCAD 或任何其他 DWG 编辑器中创建 DWG 文件。 请确保文件中标记了10个或更多聊天室。
+
+**问：** * DWG 文件中的文本标签的最佳格式是什么？
+
+**A：** 为获得最佳结果，文本标签应包含楼层号和房间号码。 下面的示例对建筑物代码使用2或 SC。
+<!-- markdownlint-disable no-inline-html -->
+|会议室标签类型|Floor|房间|示例文本标签|办公室位置（构建代码/文本标签）|
+|:-----|:-----|:-----|:-----|:-----|
+|具有楼层号和房间号|1 |173|1173|2/1173|
+|| 21|45|21045|2/21045|
+||上午|100，000名|23-100K|2/23-100K|
+||1 |G06-07|1G06-07|2/1G06-07|
+||2 |1024A|02.1024 a|2/02.1024 a|
+||2 |1024A|02.1024 a|2/02.1024 a|
+||2 |105.01|2105.01|2/2105.01|
+|生成代码、基底和房间号|0|X-11-M-12|2-0-X-11-M-12|2/2-0-X-11-M-12<br/>2-0-X-11-M-12|
+||2 |128A|22128A|2/22128A<br/>22128A|
+||1 |B2-11|21-B2-11|2/21-B2-11<br/>21-B2-11|
+||2 |45|SC2045|SC/SC2045<br/>SC2045|
+
+**问：** 我是否可以使用不包含楼层号的 DWG 文件？
+
+**A：** 是的，可以。 当您更新用户的 AAD 配置文件中的办公室位置时，应将楼层号作为房间号的一部分包括在内，即使 DWG 文件中缺少它也是如此。 上载文件后，将显示 "指定位置模式" 屏幕，并且您可以同时指示这两个值。
+
+例如，包含房间号但不含楼层号的 DWG 文件可能如下所示：
+
+![floorplans-nofloors](media/floorplans-nofloors.png)
+
+用户配置文件中的办公室位置应为2/1175，其中 ' 2 ' 是建筑物代码，' 1 ' 是楼层号，' 175 ' 是房间号码。
