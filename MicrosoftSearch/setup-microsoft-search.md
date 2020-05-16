@@ -1,8 +1,8 @@
 ---
 title: 设置 Microsoft 搜索
-ms.author: anfowler
-author: adefowler
-manager: mnirkhe
+ms.author: jeffkizn
+author: jeffkizn
+manager: parulm
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -12,16 +12,16 @@ search.appverid:
 - MET150
 - MOE150
 description: 首次设置 Microsoft 搜索。
-ms.openlocfilehash: d8b796e0ff61972f3e244c1a5af98319884769dc
-ms.sourcegitcommit: ef1eb2bdf31dccd34f0fdc4aa7a0841ebd44f211
+ms.openlocfilehash: 37b5f33fe7b49a11c4558debac5b9acae4cc40cd
+ms.sourcegitcommit: aa48b6510883e1617aa13a50b1056fb149c47586
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "39663057"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "44256634"
 ---
 # <a name="set-up-microsoft-search"></a>设置 Microsoft 搜索
 
-Microsoft Search 提供了一个用户友好的界面，可帮助用户查找诸如文件和文档、内部网站和业务工具、人员和组、位置和说明、对话和答案等信息。 它通过安全地访问所有数据源，包括电子邮件、文件、SharePoint 文件、OneDrive 内容以及用户组织中的 internet，从而实现此功能。
+Microsoft Search 提供了一个用户友好的界面，可帮助用户查找诸如文件和文档、内部网站和业务工具、人员和组、位置和说明、对话和答案等信息。 它通过安全地访问所有数据源（包括电子邮件、文件、SharePoint 文件、OneDrive 内容和其他共享资源）来实现此功能。 在 Bing 中使用 Microsoft Search，你也可以从 internet 获取搜索结果。
 
 若要了解有关 Microsoft 搜索功能的详细信息，请参阅 [Microsoft 搜索概述](overview-microsoft-search.md)。
 
