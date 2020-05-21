@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 列出 Microsoft 搜索的所有 Microsoft Graph 连接器
-ms.openlocfilehash: b1b2c99c57d0a5d2df909f24019446c0ee07b7a4
-ms.sourcegitcommit: 37fc4a833885c2f3329b729cc3c79ccbb9213a77
+ms.openlocfilehash: a5c3cb0090361e16456b01646b2a0dec46602d88
+ms.sourcegitcommit: 924bcf4dd1b4bfa5684d43a3f8e784d869c659e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "43097476"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44326836"
 ---
 # <a name="microsoft-graph-connectors-gallery"></a>Microsoft Graph 连接器库
 
@@ -1995,6 +1995,25 @@ ms.locfileid: "43097476"
             <div class="cardPadding">
                 <div class="card" style="min-height:240px;">
                     <div class="cardText">
+                       <h3>时差</h3>
+                        <p>按<a href="https://www.raytion.com">Raytion</a></p>
+                        <p>可宽延时间的连接器，并可有效地将可宽延时间内容与 Microsoft Search 同步。 它会从所有公共通道中始终索引邮件、线程和共享文件。 所有这些都是近实时的。 连接器可确保所有文档都具有一组全面的元数据，从而可以开发最佳搜索体验。 即使在鲜艳的环境中，可宽延时间连接器仍会跟踪所有更改并保证更新的搜索索引。</p>
+                        <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
+                            <a href="https://www.raytion.com/connectors/raytion-slack-connector"><font color="0065BA">更多详细信息</font></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+</ul>
+<!--- 37 ROW --->
+<ul class="panelContent cardsZ">
+    <li>
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card" style="min-height:240px;">
+                    <div class="cardText">
                         <h3>SMB</h3>
                         <p>按<a href="https://www.accenture.com">Accenture</a></p>
                         <p>SMB 连接器跨共享驱动器的文件和目录进行爬网。 它为每个项目生成一个签名，以允许仅增量更新的项目。 将使用每个文件的元数据（大小、位置、上次访问等）和访问控制列表进行提交。</p>
@@ -2006,9 +2025,6 @@ ms.locfileid: "43097476"
             </div>
         </div>
     </li>
-</ul>
-<!--- 37 ROW --->
-<ul class="panelContent cardsZ">
     <li>
         <div class="cardSize">
             <div class="cardPadding">
@@ -2041,6 +2057,9 @@ ms.locfileid: "43097476"
             </div>
         </div>
     </li>
+</ul>
+<!--- 38 ROW --->
+<ul class="panelContent cardsZ">
     <li>
         <div class="cardSize">
             <div class="cardPadding">
@@ -2057,10 +2076,6 @@ ms.locfileid: "43097476"
             </div>
         </div>
     </li>
-
-</ul>
-<!--- 38 ROW --->
-<ul class="panelContent cardsZ">
     <li>
         <div class="cardSize">
             <div class="cardPadding">
@@ -2093,6 +2108,9 @@ ms.locfileid: "43097476"
             </div>
         </div>
     </li>
+</ul>
+<!--- 39 ROW --->
+<ul class="panelContent cardsZ">
     <li>
         <div class="cardSize">
             <div class="cardPadding">
@@ -2109,9 +2127,6 @@ ms.locfileid: "43097476"
             </div>
         </div>
     </li>
-</ul>
-<!--- 39 ROW --->
-<ul class="panelContent cardsZ">
     <li>
         <div class="cardSize">
             <div class="cardPadding">
@@ -2144,6 +2159,9 @@ ms.locfileid: "43097476"
             </div>
         </div>
     </li>
+</ul>
+<!--- 40 ROW --->
+<ul class="panelContent cardsZ">
     <li>
         <div class="cardSize">
             <div class="cardPadding">
@@ -2160,9 +2178,6 @@ ms.locfileid: "43097476"
             </div>
         </div>
     </li>
-</ul>
-<!--- 40 ROW --->
-<ul class="panelContent cardsZ">
     <li>
         <div class="cardSize">
             <div class="cardPadding">
@@ -2195,6 +2210,9 @@ ms.locfileid: "43097476"
             </div>
         </div>
     </li>
+</ul>
+<!--- 41 ROW --->
+<ul class="panelContent cardsZ">
         <li>
         <div class="cardSize">
             <div class="cardPadding">
@@ -2211,9 +2229,6 @@ ms.locfileid: "43097476"
             </div>
         </div>
     </li>
-</ul>
-<!--- 41 ROW --->
-<ul class="panelContent cardsZ">
     <li>
         <div class="cardSize">
             <div class="cardPadding">
@@ -2246,6 +2261,9 @@ ms.locfileid: "43097476"
             </div>
         </div>
     </li>
+</ul>
+<!--- 42 ROW --->
+<ul class="panelContent cardsZ">
     <li>
         <div class="cardSize">
             <div class="cardPadding">
@@ -2262,9 +2280,6 @@ ms.locfileid: "43097476"
             </div>
         </div>
     </li>
-</ul>
-<!--- 42 ROW --->
-<ul class="panelContent cardsZ">
     <li>
         <div class="cardSize">
             <div class="cardPadding">
@@ -2298,4 +2313,3 @@ ms.locfileid: "43097476"
         </div>
     </li>
 </ul>
-

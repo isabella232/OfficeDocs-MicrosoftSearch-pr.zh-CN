@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 设置企业网站连接器以进行 Microsoft Search
-ms.openlocfilehash: 4ed926cfdacca66d90854147afdc3c7932d1bd5f
-ms.sourcegitcommit: 49659ecd2ac47c85acc297b21e9e34701213862c
+ms.openlocfilehash: 66fd0804bf26d70208cdaca519f91dba3a1ba166
+ms.sourcegitcommit: 924bcf4dd1b4bfa5684d43a3f8e784d869c659e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "43803949"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44326827"
 ---
 # <a name="enterprise-websites-connector"></a>企业网站连接器
 
@@ -26,7 +26,7 @@ ms.locfileid: "43803949"
 本文适用于[Microsoft 365](https://www.microsoft.com/microsoft-365)管理员或任何配置、运行和监视企业网站连接器的人。 它说明了如何配置连接器和连接器功能、限制和故障排除技术。  
 
 ## <a name="connect-to-a-data-source"></a>连接到数据源 
-若要连接到数据源，您需要根 URL 和一种身份验证形式：基本身份验证或使用[Azure Active Directory （AZURE AD）](https://docs.microsoft.com/azure/active-directory/)的 OAuth 2.0。
+若要连接到数据源，您需要根 URL 和基本身份验证。
 
 ### <a name="root-url"></a>根 URL
 根 URL 是启动爬网并用于身份验证的。 您可以从要对其进行爬网的网站的主页中获取 URL。
@@ -59,7 +59,7 @@ ms.locfileid: "43803949"
 ## <a name="set-the-refresh-schedule"></a>设置刷新计划
 企业网站连接器仅支持完全爬网。 这意味着，在每次爬网期间，连接器都会读取网站的所有内容。 若要确保连接器获取足够的时间来读取内容，我们建议您设置一个较大的刷新计划间隔。 建议在三天和两周之间计划刷新。 
 
-## <a name="troubleshooting"></a>疑难解答
+## <a name="troubleshooting"></a>故障排除
 阅读网站的内容时，爬网可能会遇到下面的详细错误代码所表示的一些源错误。 若要获取有关错误类型的详细信息，请在选择该连接后转到 "**错误详细**信息" 页。 单击**错误代码**以查看更多详细错误。 此外，请参阅[管理连接器](https://docs.microsoft.com/microsoftsearch/manage-connector)以了解详细信息。
 
  **详细错误代码** | **错误消息**
