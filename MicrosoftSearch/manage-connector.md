@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 为 Microsoft Search 管理 Microsoft Graph 连接器。
-ms.openlocfilehash: d7bd094fdc5cea521d1ee600eea3cd70067a0386
-ms.sourcegitcommit: 897b92bae1b905d7c47566e31c4c07cd16d44b17
+ms.openlocfilehash: 04e4635a67ea35381b95c1c753a35eb640d655d4
+ms.sourcegitcommit: 1524ae5fe97350ce4294d74e381872b5b7a9f645
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "39254718"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "44371305"
 ---
 # <a name="manage-your-connector-for-microsoft-search"></a>管理你的连接器以进行 Microsoft Search
 
@@ -25,8 +25,8 @@ ms.locfileid: "39254718"
 
 ## <a name="get-started"></a>入门
 
-1. 登录到[Microsoft 365 管理中心](https://admin.microsoft.com)。
-2. 转到 "**设置** > **Microsoft Search** > **连接器**"。
+1. 登录到 [Microsoft 365 管理中心](https://admin.microsoft.com)。
+2. 转到 "**设置**  >  **Microsoft Search**  >  **连接器**"。
 
 对于每种连接器类型， [Microsoft 365 管理中心](https://admin.microsoft.com)支持下表中所示的操作：
 
@@ -63,13 +63,15 @@ ms.locfileid: "39254718"
 1001 | 无法更新数据，因为数据源正在限制连接器。 | 若要 unthrottle 数据源，请检查其规模限制是否可以增加，或等待一天内的流量较长的时间。
 1002 | 无法对数据源进行身份验证。 验证与此数据源关联的凭据是否正确。 | 单击 "**编辑**" 以更新身份验证凭据。
 1003 | 与连接器关联的帐户无权访问该项目。 |  确保正确的帐户具有对要编制索引的项目的访问权限。
-1004 | 无法访问本地数据网关。 请确保网关服务正在运行。 | 转到具有网关的计算机，并通过打开 Power BI 网关应用程序检查 Power BI 网关是否正在运行。 验证网关是否使用用于 Microsoft 搜索的管理员帐户登录。 
+1004 | 无法访问本地数据网关。 请确保网关服务正在运行，并且在连接配置中更新了网关详细信息。 | 使用网关检查计算机，打开 Power BI 网关应用程序，并确保网关正在运行。 验证网关使用的是与 Microsoft 搜索相同的管理员帐户，然后确保连接配置中的所有网关详细信息都已更新。 
 1005 | 与此数据源关联的凭据已过期。 续订凭据并更新连接。 | 单击 "**编辑**" 以更新身份验证凭据。 
-1006 | 您的网关版本已过期，不会再支持此连接器。 你将需要更新网关。 | 请访问（安装本地数据网关） [https://docs.microsoft.com/data-integration/gateway/service-gateway-install] 以在包含网关的计算机上下载并安装最新版本的 Power BI 网关。
+1006 | 您的网关版本已过期，不会再支持此连接器。 你将需要更新网关。 | 请访问[安装本地 data gateway](https://docs.microsoft.com/data-integration/gateway/service-gateway-install) ，以在包含网关的计算机上下载并安装最新版本的 Power BI 网关。
+1007 | 未检测到有效的 Power BI 许可证。 您需要有效的 Power BI 许可证来执行此爬网。 | 您需要有效的 Power BI 许可证来执行此爬网。 请检查您的组织是否具有有效的许可证。 如果是，请再试一次。 如果不是，请获取许可证，然后重试。
+1008 | 租户的总配额使用率已达到其限制。 尝试删除连接以释放一些配额，或调整摄取筛选器以引入较少的数据。 | 尝试删除连接以释放一些配额，或调整摄取筛选器以引入较少的数据。 如果不能解决问题，请联系 Microsoft 支持部门。
 2001 | 由于队列中的更新数过多，索引被限制。 根据队列的不同，可能需要一段时间才能完成更新。 | 请等待队列被清除。
 2002 | 由于不受支持的项格式设置而导致索引失败。 | 有关详细信息，请参阅连接器特定文档。
 2003 | 由于不受支持的项目内容而导致索引失败。 | 有关详细信息，请参阅连接器特定文档。 
-2004 | [文件大小](https://docs.microsoft.com/microsoftsearch/file-share-connector#content-requirements)太大，无法编制索引。 在处理之前，它必须小于或等于 100 MB，且处理后不大于 4 MB。 在这种情况下，将对文件编制部分索引。 文件中存在的短语数可能不会返回搜索结果。 |  
+2004 | [文件大小](https://docs.microsoft.com/microsoftsearch/file-share-connector#content-requirements)太大，无法编制索引。 在处理之前，它必须小于或等于 100 MB，且处理后不大于 4 MB。 在这种情况下，将对文件编制部分索引。 文件中存在的短语数可能不会返回搜索结果。 | 有关详细信息，请参阅[文件共享特定文档](https://docs.microsoft.com/MicrosoftSearch/file-share-connector#content-requirements)。
 5000 | 出现问题。 如果这种情况继续存在，请与支持人员联系。 | 
 
 ## <a name="preview-limitations"></a>预览限制
