@@ -1,8 +1,8 @@
 ---
 title: 规划内容
-ms.author: anfowler
-author: adefowler
-manager: mnirkhe
+ms.author: jeffkizn
+author: jeffkizn
+manager: parulm
 ms.audience: Admin
 ms.topic: reference
 ms.service: mssearch
@@ -13,18 +13,18 @@ search.appverid:
 - MOE150
 ms.assetid: bb9d90b6-6c86-4b19-9235-3bd9b19826ab
 description: 使用 Microsoft 搜索时，无需额外资源便可提供高质量内容
-ms.openlocfilehash: d51fb15199a4c1aedd4af0932ce9bb5683d8abc6
-ms.sourcegitcommit: 21361af7c244ffd6ff8689fd0ff0daa359bf4129
+ms.openlocfilehash: 65cc9fbec655ec849e32d7b6e14c6947ab30bbc2
+ms.sourcegitcommit: 46303c60e905c89c133278fa41e87055f81a8637
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38626942"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44535344"
 ---
 # <a name="plan-your-content"></a>规划内容
 
-**Microsoft 搜索**可帮助用户查找相关内容。 **Microsoft 搜索**是一种搜索你的 Intranet 和 Web 内容的安全方式。 这种跨 Web 和企业的集成仅适用于 Microsoft。 
+**Microsoft 搜索**可帮助用户查找相关内容。 **Microsoft 搜索**是一种搜索你的 Intranet 和 Web 内容的安全方式。 这种跨 Web 和企业的集成仅适用于 Microsoft。
 
-搜索管理员通过对组织及其用户的了解，使用户能够轻松查找相关内容。 
+搜索管理员通过对组织及其用户的了解，使用户能够轻松查找相关内容。
 
 ## <a name="step-1-identify-information-your-users-need"></a>步骤 1：识别用户需要的信息
 
@@ -47,19 +47,19 @@ ms.locfileid: "38626942"
 
 ### <a name="leverage-smes"></a>利用 SME
 
-利用组织内的 SME，包括人力资源、支持、销售、技术和其他关键领域的专家。 若要允许 SME 直接提供内容，需要将其添加为搜索编辑人员。 
+利用组织内的 SME，包括人力资源、支持、销售、技术和其他关键领域的专家。 若要允许 SME 直接提供内容，需要将其添加为搜索编辑人员。
 
 ### <a name="involve-your-users"></a>让用户参与进来
 
 让用户推荐要设为书签的资源。 除了推荐相关内容以外，还要求用户报告错误，例如损坏或无效的链接。
 
-## <a name="step-3-improve-findability-of-content"></a>步骤 3：提高内容的可检索性 
+## <a name="step-3-improve-findability-of-content"></a>步骤 3：提高内容的可检索性
 
 在 **Microsoft 搜索**中，搜索管理员可创建书签、问答、位置和 PowerApps，以便提高内容的可检索性。 每个搜索组件都包括标题、URL 和一组触发关键字。
 
 ### <a name="titles-and-descriptions"></a>标题和说明
 
-人们使用标题和说明来确定搜索结果是否回答了他们的搜索查询，或者他们是否需要尝试不同的搜索。 标题和说明应反映结果的核心目的。 例如，标题为“幼托津贴”，说明为“了解用以帮助支付托儿费的津贴”便是一个不错的例子。 这将告知搜索“幼托”的用户这方面具有财政支持津贴，并为他们提供可了解更多信息的链接。 
+人们使用标题和说明来确定搜索结果是否回答了他们的搜索查询，或者他们是否需要尝试不同的搜索。 标题和说明应反映结果的核心目的。 例如，标题为“幼托津贴”，说明为“了解用以帮助支付托儿费的津贴”便是一个不错的例子。 这将告知搜索“幼托”的用户这方面具有财政支持津贴，并为他们提供可了解更多信息的链接。
 
 ### <a name="keywords"></a>关键字
 
@@ -112,7 +112,7 @@ ms.locfileid: "38626942"
 - 检查工具、网站名称或团队名称更改。
 - 考虑书签或问答是否有足够的权威或需要更清晰的描述。
 
-**Microsoft 搜索**提供了书签、问答和位置的使用情况统计信息。 使用情况统计信息显示用户如何与搜索结果交互以及用户是否找到他们所查找的内容，或者可用内容是否存在差距？ 它可以帮助管理员监控性能并采取适当的措施来微调搜索结果。 
+**Microsoft 搜索**提供了书签、问答和位置的使用情况统计信息。 使用情况统计信息显示用户如何与搜索结果交互以及用户是否找到他们所查找的内容，或者可用内容是否存在差距？ 它可以帮助管理员监控性能并采取适当的措施来微调搜索结果。
 
 ### <a name="get-details-about-bookmarks-qa-and-locations"></a>获取有关书签、问答和位置的详细信息
 
@@ -126,9 +126,9 @@ ms.locfileid: "38626942"
 
 ### <a name="review-top-search-queries"></a>查看热门搜索查询
 
-了解哪些搜索在过去的 90 天中产生了最多的展示次数。 展示次数是指在搜索结果中查看页面的次数。 **热门查询**卡片将会显示每个结果类型的前 25 个最热门用户搜索及其总搜索次数和点击率 (CTR)。 使用此报告可确定搜索查询量，并确定较高和较低搜索活动的查询。 
+了解哪些搜索在过去的 90 天中产生了最多的展示次数。 展示次数是指在搜索结果中查看页面的次数。 **热门查询**卡片将会显示每个结果类型的前 25 个最热门用户搜索及其总搜索次数和点击率 (CTR)。 使用此报告可确定搜索查询量，并确定较高和较低搜索活动的查询。
 
-低搜索计数可能表示用户不满意，因为用户未查找这些搜索内容，或者在使用其他关键字来查找这些内容。 CTR 可显示用户选择升级结果的频率以及查询规则和结果对用户的有用程度。 低 CTR 表示用户正在查找内容，但确定该内容不符合其搜索要求。 在这种情况下，管理员可能会决定审查内容并确保其与用户的搜索和更新标题、说明和关键字相对应，从而使其与用户搜索查询保持一致。 
+低搜索计数可能表示用户不满意，因为用户未查找这些搜索内容，或者在使用其他关键字来查找这些内容。 CTR 可显示用户选择升级结果的频率以及查询规则和结果对用户的有用程度。 低 CTR 表示用户正在查找内容，但确定该内容不符合其搜索要求。 在这种情况下，管理员可能会决定审查内容并确保其与用户的搜索和更新标题、说明和关键字相对应，从而使其与用户搜索查询保持一致。
 
 ### <a name="analyze-impressions-by-result-type"></a>按结果类型分析展示次数
 
