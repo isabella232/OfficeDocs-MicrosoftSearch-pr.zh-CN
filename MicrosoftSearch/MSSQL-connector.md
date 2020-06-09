@@ -1,5 +1,5 @@
 ---
-title: Microsoft SQL connector for Microsoft Search
+title: Microsoft SQL server 和 Azure SQL connector for Microsoft Search
 ms.author: mounika.narayanan
 author: monaray
 manager: mnirkhe
@@ -11,30 +11,32 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: 设置 Microsoft SQL connector for Microsoft Search。
-ms.openlocfilehash: b48fece5fccaf2a82ac343cd13130073ee6b3c21
-ms.sourcegitcommit: f4cb37fdf85b895337caee827fb72b5b7fcaa8ad
+description: 设置 Microsoft SQL server 或 Azure SQL connector for Microsoft Search。
+ms.openlocfilehash: adb923527576a72663efe3a069918f38a5e89526
+ms.sourcegitcommit: 64eea81f8c1db9ee955013462a7b51612fb7d0b7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/12/2019
-ms.locfileid: "39995047"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "44604398"
 ---
-# <a name="microsoft-sql-server-connector"></a>Microsoft SQL server 连接器
+# <a name="microsoft-sql-server-and-azure-sql-connector"></a>Microsoft SQL server 和 Azure SQL 连接器
 
-通过 Microsoft SQL server 连接器，您的组织可以发现并索引本地 SQL Server 数据库中的数据。 连接器将指定的内容索引到 Microsoft Search 中。 若要使索引保持对源数据的最新，它支持定期完全爬网和增量爬网。 使用 SQL Server 连接器，您还可以限制对特定用户的搜索结果的访问。
+通过 Microsoft SQL server 或 Azure SQL 连接器，你的组织可以发现内部部署 SQL Server 数据库中的数据，也可以从云中的 Azure SQL 实例承载的数据库中对数据进行索引。 连接器将指定的内容索引到 Microsoft Search 中。 若要使索引保持对源数据的最新，它支持定期完全爬网和增量爬网。 使用这些 SQL 连接器，您还可以限制对特定用户的搜索结果的访问。
 
 本文适用于 Microsoft 365 管理员或任何配置、运行和监控 Microsoft SQL server 连接器的人。 它说明了如何配置连接器和连接器功能、限制和故障排除技术。
 
-## <a name="install-a-data-gateway"></a>安装 data gateway
+## <a name="install-a-data-gateway-required-for-on-premises-microsoft-sql-server-connector-only"></a>安装 data gateway （仅在本地 Microsoft SQL server 连接器中为必需）
 为了访问第三方数据，您必须安装和配置 Microsoft Power BI 网关。 若要了解详细信息，请参阅[安装本地网关](https://docs.microsoft.com/data-integration/gateway/service-gateway-install)。  
 
 ## <a name="connect-to-a-data-source"></a>连接到数据源
 若要将 Microsoft SQL server 连接器连接到数据源，必须配置要爬网的数据库服务器和本地网关。 然后，您可以使用所需的身份验证方法连接到数据库。
 
-> [!NOTE]
-> 您的数据库必须运行 SQL server 版本2008或更高版本。
+对于 Azure SQL 连接器，只需指定要连接到的服务器名称或 IP 地址。 Azure SQL 连接器仅支持 Azure Active Directory Open ID connect （OIDC）身份验证以连接到数据库。
 
-若要搜索数据库内容，您必须在配置连接器时指定 SQL 查询。 这些 SQL 查询需要对要编制索引的所有数据库列（即源属性）进行命名，包括要获取所有列需要执行的任何 SQL 联接。 若要限制对搜索结果的访问权限，您必须在配置 Microsoft SQL server 连接器时指定具有 SQL 查询的访问控制列表（Acl）。
+> [!NOTE]
+> 您的数据库必须运行 SQL server 版本2008或更高版本，Microsoft SQL server 连接器才能连接到它
+
+若要搜索数据库内容，您必须在配置连接器时指定 SQL 查询。 这些 SQL 查询需要对要编制索引的所有数据库列（即源属性）进行命名，包括要获取所有列需要执行的任何 SQL 联接。 若要限制对搜索结果的访问权限，您必须在配置连接器时指定 SQL 查询中的访问控制列表（Acl）。
 
 ## <a name="full-crawl-required"></a>完全爬网（必需）
 在此步骤中，将配置运行对数据库的完全爬网的 SQL 查询。 完全爬网将选择要使其成为可**查询**、可**搜索**或可**检索**的所有列或属性。 您还可以指定 ACL 列，以限制对特定用户或组的搜索结果访问。
@@ -63,14 +65,14 @@ ms.locfileid: "39995047"
 为了防止对数据库进行过载，连接器使用完全爬网水印列为批次批处理和恢复完全爬网查询。 通过使用 "水印" 列的值，将提取每个后续批处理，并从最后一个检查点恢复查询。 实际上，这是一种控制完全爬网的数据刷新的机制。
 
 创建水印的查询代码段，如以下示例所示：
-* `WHERE (CreatedDateTime > @watermark)`. 使用保留关键字`@watermark`引用水印列名称。 如果水印列的排序次序为升序，请使用`>`;否则，请`<`使用。
+* `WHERE (CreatedDateTime > @watermark)`. 使用保留关键字引用水印列名称 `@watermark` 。 如果水印列的排序顺序是升序，请使用 `>` ; 否则，使用 `<` 。
 * `ORDER BY CreatedDateTime ASC`. 在 "水印" 列上按升序或降序进行排序。
 
-在下图所示的配置中， `CreatedDateTime`是选定的水印列。 若要提取第一批行，请指定水印列的数据类型。 在这种情况下，数据类型`DateTime`为。
+在下图所示的配置中， `CreatedDateTime` 是选定的水印列。 若要提取第一批行，请指定水印列的数据类型。 在这种情况下，数据类型为 `DateTime` 。
 
 ![](media/MSSQL-watermark.png)
 
-第一个查询使用： "CreatedDateTime > 1 月1日，1753 00:00:00" （DateTime 数据类型的最小值）提取前**N**行量。 在提取第一个批处理后，如果按升序对`CreatedDateTime`行进行排序，则在批处理中返回的最大值将保存为检查点。 例如，2019 03:00:00 至3月1日。 然后，通过使用查询中的 "CreatedDateTime > 3 月1日，2019 03:00:00" 获取下一批**N**行。
+第一个查询使用： "CreatedDateTime > 1 月1日，1753 00:00:00" （DateTime 数据类型的最小值）提取前**N**行量。 在提取第一个批处理后，如果按升序对 `CreatedDateTime` 行进行排序，则在批处理中返回的最大值将保存为检查点。 例如，2019 03:00:00 至3月1日。 然后，通过使用查询中的 "CreatedDateTime > 3 月1日，2019 03:00:00" 获取下一批**N**行。
 
 ### <a name="skipping-soft-deleted-rows-optional"></a>跳过软删除行（可选）
 若要在数据库中排除软删除的行的索引，请指定软删除的列名称和值，该值指示行已删除。
@@ -90,7 +92,7 @@ ms.locfileid: "39995047"
 ![](media/MSSQL-ACL2.png)
 
 ## <a name="incremental-crawl-optional"></a>增量爬网（可选）
-在此可选步骤中，提供用于运行数据库的增量爬网的 SQL 查询。 使用此查询，Microsoft SQL server 连接器将对自上次增量爬网以来的数据进行任何更改。 在完全爬网中，选择要使其成为可**查询**、可**搜索**或可**检索**的所有列。 指定在完全爬网查询中指定的一组相同的 ACL 列。
+在此可选步骤中，提供用于运行数据库的增量爬网的 SQL 查询。 使用此查询，SQL 连接器可确定自上次增量爬网以来对数据所做的任何更改。 在完全爬网中，选择要使其成为可**查询**、可**搜索**或可**检索**的所有列。 指定在完全爬网查询中指定的一组相同的 ACL 列。
 
 下图中的组件与完全爬网组件类似，但有一个例外。 在这种情况下，"ModifiedDateTime" 是选定的水印列。 查看[完整的爬网步骤](#full-crawl-required)，了解如何编写增量爬网查询，并查看以下图像作为示例。
 
@@ -100,7 +102,7 @@ ms.locfileid: "39995047"
 您可以选择使用[完全爬网屏幕中指定的 acl](#full-crawl-manage-search-permissions) ，也可以将其覆盖以使您的内容对所有人可见。
 
 ## <a name="limitations"></a>限制
-在预览版本中，Microsoft SQL server 连接器具有以下限制：
-* 本地数据库必须运行 SQL server 版本2008或更高版本。
+在预览版本中，SQL 连接器具有以下限制：
+* Microsoft SQL server 连接器：本地数据库必须运行 SQL server 版本2008或更高版本。
 * 仅通过使用用户主体名称（UPN）、Azure Active Directory （Azure AD）或 Active Directory 安全性来支持 Acl。 
 * 不支持在数据库列中对多信息内容编制索引。 此类内容的示例包括 HTML、JSON、XML、blob 和文档 parsings，它们作为数据库列中的链接存在。
