@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 为 Microsoft Search 配置 Microsoft 构建的连接器
-ms.openlocfilehash: 3c54f04c1ac6cc42eef2e27a2b40b6ce92357630
-ms.sourcegitcommit: 46303c60e905c89c133278fa41e87055f81a8637
+ms.openlocfilehash: eb81f9cdc9caf2020bae64984f11ae7e1b87dae9
+ms.sourcegitcommit: a8a6c949f249d106f37103e127d2ea7df730f7a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44535306"
+ms.lasthandoff: 06/11/2020
+ms.locfileid: "44702755"
 ---
 <!-- markdownlint-disable no-trailing-punctuation -->
 
@@ -34,10 +34,10 @@ ms.locfileid: "44535306"
 
 ## <a name="set-up"></a>设置
 
-若要配置任何 Microsoft 构建的连接器，请转到[管理中心](https://admin.microsoft.com)：
+完成以下步骤以配置任何 Microsoft 构建的连接器。
 
-1. 使用[Microsoft 365](https://www.microsoft.com/microsoft-365)测试租户的凭据登录你的帐户。
-2. 转到 "**设置**  >  **Microsoft Search**  >  **连接器**"。
+1. 转到[Microsoft 365 管理中心](https://admin.microsoft.com)中的 "[连接器" 选项卡](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/Connectors)。
+2. 使用[Microsoft 365](https://www.microsoft.com/microsoft-365)租户的凭据登录你的帐户。
 3. 选择 "**添加连接器**"。
 4. 从可用连接器列表中，选择所选的连接器。
 
@@ -67,7 +67,7 @@ ms.locfileid: "44535306"
 
 搜索架构属性包括可**搜索**、可**查询**和可**检索**。 下表列出了 Microsoft Graph 连接器支持和解释其功能的每个属性。
 
-**搜索架构属性** | **Function** | **示例**
+搜索架构属性 | 函数 | 示例
 --- | --- | ---
 外面 | 将属性的文本内容设为可搜索的。 属性内容包含在全文本索引中。 | 如果属性为**title**，则针对**企业**的查询返回包含任何文本或标题中的 word **Enterprise**的答案。
 可 | 按查询搜索特定属性的匹配项。 然后可以通过编程方式或逐字方式在查询中指定属性名称。 |  如果**Title**属性是可查询的，则支持查询**标题： Enterprise** 。
