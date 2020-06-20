@@ -15,16 +15,22 @@ search.appverid:
 ms.assetid: f980b90f-95e2-4b66-8b21-69f601ff4b50
 ROBOTS: NoIndex
 description: 通过将 Microsoft 搜索框添加到 Intranet 站点或页面来更快地获取相关搜索建议和查找工作结果。
-ms.openlocfilehash: bcf1c6890415fdd9ae22f28cdf6d3dec1ffcaac4
-ms.sourcegitcommit: bfcab9d42e93addccd1e3875b41bc9cc1b6986cc
+ms.openlocfilehash: af12ce4d17c2695e196f8e4d79ccd515f002f238
+ms.sourcegitcommit: 92206ea179ec00b22496f6fd2866b5406449cf40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "37948903"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44798222"
 ---
 # <a name="add-a-search-box-to-your-intranet-site"></a>将搜索框添加到 Intranet 站点
 
-将 Microsoft 搜索框添加到 Intranet 站点或页面，以快速访问相关搜索建议和工作结果。
+若要使用户能够轻松访问组织中的结果，请在 Bing 搜索框中向任意 intranet 网站或页面添加 Microsoft 搜索。 以下是一些优点：
+
+- SharePoint 或 intranet 门户中的搜索框提供了一个熟悉的受信任入口点，可开始搜索
+- 支持所有主要的 web 浏览器，包括 Google Chrome 和 Microsoft Edge
+- 仅显示你的组织的搜索建议，永远不会包含 web 建议
+- 将用户带到 Bing 工作结果页面中的 Microsoft 搜索，这将排除广告和 web 结果
+- 控制搜索框的外观和行为
   
 ## <a name="add-a-search-box-to-an-intranet-page"></a>将搜索框添加到 Intranet 页面
 
@@ -88,8 +94,8 @@ ms.locfileid: "37948903"
         dropShadow: true,                       // default: true
         iconColor: "#067FA6",                   // default: #067FA6
         companyNameInGhostText: "Contoso"       // default: not specified
-                                                // when absent, ghost text will be "Search work and the web"
-                                                // when specified, text will be "Search the web and [Contoso]"
+                                                // when absent, ghost text will be "Search work"
+                                                // when specified, text will be "Search <companyNameInGhostText>"
     };
 </script>
 <script async src="https://www.bing.com/business/s?k=sb"></script>
