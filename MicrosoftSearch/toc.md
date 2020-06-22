@@ -31,6 +31,7 @@
 ## [SharePoint 中的 Microsoft 搜索](get-started-search-in-sharepoint-online.md)
 ## Microsoft 必应搜索
 ### [安全和隐私](security-for-search.md)
+### [将搜索框添加到 Intranet 站点](add-a-search-box-to-your-intranet-site.md)
 ### [将 Microsoft Edge 设置为默认浏览器](set-default-browser.md)
 ### [将必应设置为默认搜索引擎](set-default-search-engine.md)
 ### [将 Bing.com 设置为默认主页](set-default-homepage.md)
