@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 为 Microsoft Search 配置 Microsoft 构建的连接器
-ms.openlocfilehash: eb81f9cdc9caf2020bae64984f11ae7e1b87dae9
-ms.sourcegitcommit: a8a6c949f249d106f37103e127d2ea7df730f7a3
+ms.openlocfilehash: e5b40326bdd83f461e7ce9a45889ad82245e20aa
+ms.sourcegitcommit: 68cd28a84df120473270f27e4eb62de9eae455f9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/11/2020
-ms.locfileid: "44702755"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44850886"
 ---
 <!-- markdownlint-disable no-trailing-punctuation -->
 
@@ -26,6 +26,8 @@ ms.locfileid: "44702755"
 本文将指导您完成配置 Microsoft 构建的连接器的步骤。 概述了在 Microsoft 365[管理中心](https://admin.microsoft.com)中设置连接的流程。 有关如何设置特定 Microsoft 构建的连接器的更多详细信息，请参阅以下文章：
 
 * [Azure Data Lake Storage Gen2](azure-data-lake-connector.md)
+* [Azure DevOps](azure-devops-connector.md)
+* [Azure SQL](MSSQL-connector.md)
 * [企业网站](enterprise-web-connector.md)
 * [文件共享](file-share-connector.md)
 * [MediaWiki](mediawiki-connector.md)

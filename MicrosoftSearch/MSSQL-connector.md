@@ -12,14 +12,14 @@ search.appverid:
 - MET150
 - MOE150
 description: 设置 Microsoft SQL server 或 Azure SQL connector for Microsoft Search。
-ms.openlocfilehash: adb923527576a72663efe3a069918f38a5e89526
-ms.sourcegitcommit: 64eea81f8c1db9ee955013462a7b51612fb7d0b7
+ms.openlocfilehash: e664a9a6e389531f8b5735673150839a1b106ce1
+ms.sourcegitcommit: 68cd28a84df120473270f27e4eb62de9eae455f9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "44604398"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44850895"
 ---
-# <a name="microsoft-sql-server-and-azure-sql-connector"></a>Microsoft SQL server 和 Azure SQL 连接器
+# <a name="azure-sql-and-microsoft-sql-server-connectors"></a>Azure SQL 和 Microsoft SQL server 连接器
 
 通过 Microsoft SQL server 或 Azure SQL 连接器，你的组织可以发现内部部署 SQL Server 数据库中的数据，也可以从云中的 Azure SQL 实例承载的数据库中对数据进行索引。 连接器将指定的内容索引到 Microsoft Search 中。 若要使索引保持对源数据的最新，它支持定期完全爬网和增量爬网。 使用这些 SQL 连接器，您还可以限制对特定用户的搜索结果的访问。
 
@@ -34,7 +34,7 @@ ms.locfileid: "44604398"
 对于 Azure SQL 连接器，只需指定要连接到的服务器名称或 IP 地址。 Azure SQL 连接器仅支持 Azure Active Directory Open ID connect （OIDC）身份验证以连接到数据库。
 
 > [!NOTE]
-> 您的数据库必须运行 SQL server 版本2008或更高版本，Microsoft SQL server 连接器才能连接到它
+> 您的数据库必须运行 SQL server 版本2008或更高版本，Microsoft SQL server 连接器才能连接。
 
 若要搜索数据库内容，您必须在配置连接器时指定 SQL 查询。 这些 SQL 查询需要对要编制索引的所有数据库列（即源属性）进行命名，包括要获取所有列需要执行的任何 SQL 联接。 若要限制对搜索结果的访问权限，您必须在配置连接器时指定 SQL 查询中的访问控制列表（Acl）。
 

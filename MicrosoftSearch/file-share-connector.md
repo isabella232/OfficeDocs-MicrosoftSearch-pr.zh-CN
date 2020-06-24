@@ -12,14 +12,14 @@ search.appverid:
 - MET150
 - MOE150
 description: 设置用于 Microsoft 搜索的文件共享连接器。
-ms.openlocfilehash: ece8997138182c1cd4ac7230aa2a3501af912933
-ms.sourcegitcommit: 68087149c769a7cdde80944dd9c9933d2bf4a23f
+ms.openlocfilehash: 2349ad753508d5f19a70648d9cbf1df495b27108
+ms.sourcegitcommit: 7eda9b621def0659d7e7bc8b989f8adc929cce93
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "38699773"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "44861091"
 ---
-# <a name="the-file-share-connector-for-microsoft-search"></a>Microsoft Search 的文件共享连接器
+# <a name="file-share-connector"></a>文件共享连接器
 
 使用文件共享连接器，组织中的用户可以搜索内部部署文件共享。 这些共享中的搜索结果将与[SharePoint](http://sharepoint.com/)和[Microsoft OneDrive for business](https://onedrive.live.com/about/business/)中的结果合并。
 
@@ -50,7 +50,7 @@ ms.locfileid: "38699773"
 
 2. 安装[SharePoint Online 命令行管理](https://www.microsoft.com/download/details.aspx?id=35588)程序。
 
-3. 以管理员身份打开 SharePoint Online 命令行管理程序，并导入位于`C:\Windows\Microsoft.NET\assembly\GAC_MSIL\Microsoft.SharePoint.Client\v4.0_16.0.0.0__71e9bce111e9429c\Microsoft.SharePoint.Client.dll`的**Microsoft. .dll**模块。
+3. 以管理员身份打开 SharePoint Online 命令行管理程序，并导入现有的**Microsoft.SharePoint.Client.dll**模块 `C:\Windows\Microsoft.NET\assembly\GAC_MSIL\Microsoft.SharePoint.Client\v4.0_16.0.0.0__71e9bce111e9429c\Microsoft.SharePoint.Client.dll` 。
 
 > [!NOTE]
 > 对于所有用户而言，此路径可能不相同。
@@ -89,7 +89,7 @@ Write-Host "Success" -ForegroundColor Cyan
 Read-Host -Prompt 'Press enter to exit'
 ```
 
-5. 在[Microsoft PowerShell](https://microsoft.com/powershell)中输入所需的值，例如 "组织名称"、"用户名"、"密码" 和 "网站 URL"。 **例如**，如果您的管理员凭据为`admin@a830edad9050849823J19081300.onmicrosoft.com`，则您的组织名称为**a830edad9050849823J19081300**，而您的网站 URL `https:// a830edad9050849823J19081300.sharepoint.com`为。
+5. 在[Microsoft PowerShell](https://microsoft.com/powershell)中输入所需的值，例如 "组织名称"、"用户名"、"密码" 和 "网站 URL"。 **例如**，如果您的管理员凭据为 `admin@a830edad9050849823J19081300.onmicrosoft.com` ，则您的组织名称为**a830edad9050849823J19081300**，而您的网站 URL 为 `https:// a830edad9050849823J19081300.sharepoint.com` 。
 
 > [!NOTE]
 > 仅可在网站集级别（团队/Comms 网站）上执行**AllProperties**设置。
