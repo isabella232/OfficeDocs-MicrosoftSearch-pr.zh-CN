@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7e3432e6-5317-4d63-90b0-52da6fddd343
 description: 单独查找和更新答案，或使用 Microsoft Search tools 以一次性编辑 Q&。
-ms.openlocfilehash: af966cfaae6680a063feb25d2736303106c19978
-ms.sourcegitcommit: 0050e113517a36e3ca26028a04ac5c236caaf524
+ms.openlocfilehash: 2ec06fb0940172621255946283290450c1f2e036
+ms.sourcegitcommit: 7ad6f4b0ab6cd7b912862273a8b4d48a6507bc29
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "44470269"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "44878230"
 ---
 # <a name="manage-qas"></a>管理问答
 
@@ -62,8 +62,8 @@ ms.locfileid: "44470269"
 
 目前，浏览器扩展适用于 Microsoft Edge 和 Chrome。
 
-- 若要下载边缘扩展，请转到[Microsoft Store](https://www.microsoft.com/p/microsoft-search-content-creator/9nrqdbcbwq55?activetab=pivot:overviewtab)。
-- 若要下载 Chrome 扩展，请转到[chrome web store](https://chrome.google.com/webstore/detail/microsoft-search-content/nocnablpaoeecfmfnjoheefkogmleipm)。
+- 若要下载边缘（旧版）的扩展，请转到[Microsoft Store](https://www.microsoft.com/p/microsoft-search-content-creator/9nrqdbcbwq55?activetab=pivot:overviewtab)。
+- 若要下载分机版式或边缘（Chromium），请转到[Chrome web store](https://chrome.google.com/webstore/detail/microsoft-search-content/nocnablpaoeecfmfnjoheefkogmleipm)。
 
 ## <a name="bulk-add-or-edit-qas"></a>批量添加或编辑问答
 
