@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7e3432e6-5317-4d63-90b0-52da6fddd343
 description: 单独查找和更新答案，或使用 Microsoft Search tools 以一次性编辑 Q&。
-ms.openlocfilehash: 2ec06fb0940172621255946283290450c1f2e036
-ms.sourcegitcommit: 7ad6f4b0ab6cd7b912862273a8b4d48a6507bc29
+ms.openlocfilehash: 78a6ee0ff14f3347b0b2e2a65cc1ee0f68500981
+ms.sourcegitcommit: 9ba062f8b632a74e56ad7ec4dffaa1d8dab57614
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "44878230"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44996082"
 ---
 # <a name="manage-qas"></a>管理问答
 
@@ -27,8 +27,7 @@ ms.locfileid: "44878230"
 ## <a name="add-or-edit-a-single-qa"></a>添加或编辑单个问答
 
 1. 转到 **Microsoft 365 管理中心**。
-1. 在导航窗格中，转到“**设置**”，然后选择“**Microsoft 搜索**”。
-1. 选择 " **Q&一个**选项卡。
+1. 在导航窗格中，转到 "**设置**  >  **Microsoft Search**  >  **问答**  >  [**问答"&**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/qnas)
 1. 若要添加问答，请选择“**新增**”。
 若要编辑问答，请在相关问答列表中选择问答。 在你添加或编辑信息时，预览将随之自动更新。
 1. 保存所做的更改。

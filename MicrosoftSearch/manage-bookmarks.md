@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: c0c814d0-f7e4-444e-b18e-09beb45c9322
 description: 创建和更新书签以及用于批量编辑 Microsoft 搜索的书签结果的方法
-ms.openlocfilehash: 292a04714f4baa115473df86bfbeb2f3c8860114
-ms.sourcegitcommit: c22e8c3dcc53857da677db98a1a2b7d5ca2c6170
+ms.openlocfilehash: 64e430309ef1969ab804e8d757b987332f0a6006
+ms.sourcegitcommit: 9ba062f8b632a74e56ad7ec4dffaa1d8dab57614
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41721747"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44996100"
 ---
 # <a name="manage-bookmarks"></a>管理书签
 
@@ -29,8 +29,7 @@ ms.locfileid: "41721747"
 ## <a name="add-or-edit-a-single-bookmark"></a>添加或编辑单个书签
 
 1. 转到 **Microsoft 365 管理中心**。
-1. 在导航窗格中，转到**设置**，然后选择**Microsoft 搜索**。
-默认情况下，“**书签**”选项卡处于选中状态。
+1. 在导航窗格中，转到**Settings**"  >  **Microsoft Search**  >  **解答**  >  [**书签**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/bookmarks)" "设置"。
 1. 若要添加书签，请选择“**新增**”。
 若要编辑书签，请从相关书签列表中选择书签。
 1. 在你添加或编辑信息时，预览将随之自动更新。
@@ -106,8 +105,8 @@ Power Apps 是一项服务，允许您构建在浏览器中或在手机或平板
 ### <a name="add-a-power-app-to-a-bookmark"></a>向书签添加电源应用程序
 
 1. 查找要添加的[电源应用程序的应用程序 ID](https://docs.microsoft.com/powerapps/maker/canvas-apps/get-sessionid#get-an-app-id) 。
-1. 登录并转到 **Microsoft 365 管理中心**。
-1. 在导航窗格中，转到“**设置**”，然后选择“**Microsoft 搜索**”。
+1. 登录到[**Microsoft 365 管理中心**](https://admin.microsoft.com)。
+1. 在导航窗格中，转到**Settings**"  >  **Microsoft Search**  >  **解答**  >  [**书签**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/bookmarks)" "设置"。
 1. 添加或查找一个要向其添加 **PowerApp** 的书签。
 1. 在“**书签设置**”中，选择“**Power 应用**”，然后选择“**添加 Power 应用**”。
 1. 输入或粘贴“**应用 ID**”。

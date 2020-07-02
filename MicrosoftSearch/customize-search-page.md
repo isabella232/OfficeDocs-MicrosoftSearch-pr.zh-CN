@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 添加搜索纵向和自定义搜索结果
-ms.openlocfilehash: 44b1b9ff211a65313f5c5cf532334335994c486d
-ms.sourcegitcommit: 0050e113517a36e3ca26028a04ac5c236caaf524
+ms.openlocfilehash: 60ab3423db0a86982df9c4332f0f22267c49dc04
+ms.sourcegitcommit: 9ba062f8b632a74e56ad7ec4dffaa1d8dab57614
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "44470278"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44996055"
 ---
 # <a name="customize-the-search-results-page"></a>自定义搜索结果页
 
@@ -59,7 +59,7 @@ ms.locfileid: "44470278"
 
 若要在[SharePoint](https://sharepoint.com/)主页、 [Office](https://office.com)或[Bing](https://bing.com)中的 Microsoft 搜索上创建垂直，请按照以下步骤操作：
 
-1. 在 microsoft 365 [管理中心](https://admin.microsoft.com)，转到 " **设置**   >  **Microsoft Search**   >  **纵向**"。
+1. 在 microsoft 365 [管理中心](https://admin.microsoft.com)，转到 " **设置**   >  **Microsoft Search**   >  **自定义**  >  [**纵向**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/verticals)"。
 1. 选择 " **添加**" 以开始。  
 
 ### <a name="create-a-vertical-at-the-site-level"></a>在网站级别创建垂直
@@ -77,7 +77,7 @@ ms.locfileid: "44470278"
 
 您可以通过使用结果类型设计布局来定义结果在垂直方向的显示方式。 结果布局可让您直接在搜索结果中显示重要信息，因此用户无需选择每个结果即可查看他们是否找到了要查找的内容。
 
-搜索结果类型是使不同类型的搜索结果以不同方式显示的规则。它包含以下几个方面：
+A search result type is a rule that causes distinct kinds of search results to be displayed in different ways. It consists of the following:
 
 - 用于比较每个搜索结果的**一个或多个条件**，例如搜索结果的内容源。  
 - 要用于满足条件的搜索结果的**结果布局**。 结果布局控制满足条件的所有结果在搜索结果页面上的显示和行为方式。
@@ -88,7 +88,7 @@ ms.locfileid: "44470278"
   
 ### <a name="create-a-result-type-at-the-organization-level"></a>在组织级别创建结果类型
 
-1. 在[管理中心](https://admin.microsoft.com)中，转到 "**设置**  >  **Microsoft Search**"，然后选择 "**结果类型**"。
+1. 在[管理中心](https://admin.microsoft.com)中，转到 "**设置**  >  **Microsoft Search**  >  **自定义项**  >  [**结果类型**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/resulttypes)"。
 1. 若要添加**结果类型**，请选择 " **添加**"。 若要编辑结果类型，请选择相关列表中的 "结果类型"。
 
 ### <a name="create-a-results-type-at-the-site-level"></a>在网站级别创建结果类型
@@ -103,7 +103,7 @@ ms.locfileid: "44470278"
 
 在启用垂直后，可能需要一段时间才能进行查看。 如果您不希望在启用后等待，则可以将**cacheClear = true**追加到[SharePoint](https://sharepoint.com/)和[Office](https://office.com)中的 URL，以便立即查看垂直方向。
 
-## <a name="troubleshooting"></a>故障排除
+## <a name="troubleshooting"></a>疑难解答
 
 下面列出了你可能遇到的常见问题和解决这些问题的措施。
 

@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8ab9aa00-cd74-405f-8410-9a1c3cfacdb9
 description: 随着时间推移，可能需要更新位置状态和内容以保持其相关性。
-ms.openlocfilehash: bb229086f7dd8c1b8d17a0b8335bb618850106be
-ms.sourcegitcommit: 063fec4a336b6b3118d4769a4bd0cc2d568ea7e2
+ms.openlocfilehash: a5d3209e2b6e9269ff2e5986cf81de705ae1cc4d
+ms.sourcegitcommit: 9ba062f8b632a74e56ad7ec4dffaa1d8dab57614
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "42276985"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44996064"
 ---
 # <a name="manage-locations"></a>管理位置
 
@@ -29,8 +29,7 @@ ms.locfileid: "42276985"
 ### <a name="add-or-edit-a-single-location"></a>添加或编辑单个位置
 
 1. 转到 **Microsoft 365 管理中心**。
-1. 在导航窗格中，转到“**设置**”，然后选择“**Microsoft 搜索**”。
-1. 选择“**位置**”选项卡。默认情况下，在“**Microsoft 搜索**”页面上，“**书签**”选项卡处于选中状态。
+1. 在导航窗格中，转到 "**设置**  >  **Microsoft Search**  >  **解答**  >  [**位置**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/locations)"
 1. 若要添加新位置，请选择“**新增**”。
 1. 若要编辑位置，请在相关位置列表中选择该位置。
 1. 在你添加或编辑信息时，预览将随之自动更新。
@@ -65,6 +64,7 @@ ms.locfileid: "42276985"
 - 根据 "*省/市/自治区*" 字段，位置将保存为草稿、建议、计划或将自动发布。
 - 对于管理多个组织的合作伙伴，您可以从一个组织中导出位置并将其导入到另一个组织中。 但是，在导入之前，你必须删除 *Id* 列中的数据。
 
-**注意：** 如果模板文件中有任何错误，则无法导入位置。 为防止出错，请确保导入文件具有正确格式，并且包含所有必需信息。
+> [!NOTE]
+> 如果模板文件中有任何错误，则无法导入位置。 为防止出错，请确保导入文件具有正确格式，并且包含所有必需信息。
 
 有关如何防止错误的详细信息，请参阅[防止导入错误](manage-bookmarks.md#prevent-import-errors)。

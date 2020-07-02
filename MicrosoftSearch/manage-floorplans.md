@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft Search 中的平面布置图功能可帮助用户在大楼中查找人员、办公室和其他有用的功能。
-ms.openlocfilehash: e005767c255cb899793b6b4849882c7ec0561256
-ms.sourcegitcommit: 7ad6f4b0ab6cd7b912862273a8b4d48a6507bc29
+ms.openlocfilehash: 95941e57946f49de3a0558dc2d2c59b999151b37
+ms.sourcegitcommit: 9ba062f8b632a74e56ad7ec4dffaa1d8dab57614
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "44878239"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44996109"
 ---
 # <a name="manage-floor-plans"></a>管理基底计划
 
@@ -67,7 +67,7 @@ ms.locfileid: "44878239"
 
 ### <a name="step-5-add-building-locations"></a>步骤5：添加建筑物位置
 
-建筑平面图使用[位置](manage-locations.md)来定义建筑物。 在 microsoft 365[管理中心](https://admin.microsoft.com)，转到 "**设置**  >  **Microsoft Search**  >  **位置**"，然后选择 "**添加**"。 输入建筑物的名称、地址和关键字。 根据需要添加任意数量的建筑物。
+建筑平面图使用[位置](manage-locations.md)来定义建筑物。 在 Microsoft 365[管理中心](https://admin.microsoft.com)，转到 "**设置**  >  **Microsoft 搜索**  >  **应答**  >  [**位置**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/locations)"，然后选择 "**添加**"。 输入建筑物的名称、地址和关键字。 根据需要添加任意数量的建筑物。
 
 ![floorplans-locations.png](media/floorplans-locations.png)
 
@@ -77,13 +77,13 @@ ms.locfileid: "44878239"
 
 在可以使用平面布置图之前，必须对 office 位置编制索引。 这是一项一次性操作，可能需要长达48小时才能完成。 总时间将取决于组织的规模。
 
-在[管理中心](https://admin.microsoft.com)中，转到 "**设置**  >  **Microsoft Search**  >  **平面计划**"，然后选择 "**开始**"。 如果你看不到此通知，则表示你的组织已完成此步骤
+在[管理中心](https://admin.microsoft.com)中，转到 "**设置**  >  **Microsoft Search**  >  **解答**  >  [**平面图**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/floorplans)"，然后选择 "**开始**"。 如果你看不到此通知，则表示你的组织已完成此步骤
 
 ![floorplans_hydrationstep.png](media/floorplans_hydrationstep.png)
 
 ### <a name="step-7-upload-floor-plans"></a>步骤7：上传平面图计划
 
-1. 在[管理中心](https://admin.microsoft.com)中，转到 "**设置**  >  **Microsoft Search**  >  **平面图计划**"，然后选择 "**添加**"。
+1. 在[管理中心](https://admin.microsoft.com)中，转到 "**设置**  >  **Microsoft 搜索**  >  **答案**  >  [**基底计划**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/floorplans)"。
 2. 在下拉列表中选择一个建筑物，然后选择 "**下一步**"。 如果未列出建筑物，请返回并[添加建筑物位置](#step-5-add-building-locations)。
 3. 选择 "**上载文件**"，然后选择您要上载的平面布置图。
 4. 上载完成后，必须输入在平面图文件中表示的楼层号。 然后选择“**下一步**”。
@@ -113,7 +113,7 @@ ms.locfileid: "44878239"
 
 若要更新现有的平面布置图，请选择要更改的平面布置图，然后选择 "**编辑**"。 进行更改并保存它们。
 
-## <a name="troubleshooting"></a>故障排除
+## <a name="troubleshooting"></a>疑难解答
 
 |**步骤**|**错误消息**|**类型**|**Action**|
 |:-----|:-----|:-----|:-----|
@@ -142,7 +142,7 @@ ms.locfileid: "44878239"
 
 **A：** 在 Microsoft Visio、Autodesk AutoCAD 或任何其他 DWG 编辑器中创建 DWG 文件。 请确保文件中标记了10个或更多聊天室。
 
-**问：** * DWG 文件中的文本标签的最佳格式是什么？
+**问：** DWG 文件中的文本标签的最佳格式是什么？
 
 **A：** 为获得最佳结果，文本标签应包含楼层号和房间号码。 下面的示例对建筑物代码使用2或 SC。
 <!-- markdownlint-disable no-inline-html -->
