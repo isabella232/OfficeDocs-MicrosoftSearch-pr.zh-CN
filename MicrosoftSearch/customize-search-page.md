@@ -77,7 +77,7 @@ ms.locfileid: "44996055"
 
 您可以通过使用结果类型设计布局来定义结果在垂直方向的显示方式。 结果布局可让您直接在搜索结果中显示重要信息，因此用户无需选择每个结果即可查看他们是否找到了要查找的内容。
 
-A search result type is a rule that causes distinct kinds of search results to be displayed in different ways. It consists of the following:
+搜索结果类型是使不同类型的搜索结果以不同方式显示的规则。它包含以下几个方面：
 
 - 用于比较每个搜索结果的**一个或多个条件**，例如搜索结果的内容源。  
 - 要用于满足条件的搜索结果的**结果布局**。 结果布局控制满足条件的所有结果在搜索结果页面上的显示和行为方式。
