@@ -13,16 +13,16 @@ search.appverid:
 - MOE150
 ms.assetid: c0c814d0-f7e4-444e-b18e-09beb45c9322
 description: 创建和更新书签以及用于批量编辑 Microsoft 搜索的书签结果的方法
-ms.openlocfilehash: 64e430309ef1969ab804e8d757b987332f0a6006
-ms.sourcegitcommit: 9ba062f8b632a74e56ad7ec4dffaa1d8dab57614
+ms.openlocfilehash: 926fae2a4bd6bb6a436a3b5ea46f21077a23dcab
+ms.sourcegitcommit: 996b2c0538e28b71441461a371a62339cb6d476f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44996100"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "45167454"
 ---
 # <a name="manage-bookmarks"></a>管理书签
 
-你只需几步即可创建书签。 每个书签都包括标题、URL 和一组触发关键字。 书签可以具有多个关键字，多个书签可以共享同一个关键字，但保留关键字不能共享。 创建或修改书签时，搜索索引将立即刷新，并立即向用户提供书签。
+你只需几步即可创建书签。 每个书签都包括标题、URL 和一组触发关键字。 您还可以将类别添加到可用于在管理门户中进行排序和筛选的书签。 书签可以具有多个关键字，多个书签可以共享同一个关键字，但保留关键字不能共享。 创建或修改书签时，搜索索引将立即刷新，并立即向用户提供书签。
 
 如果您的组织已在 SharePoint 中设置了提升的结果，则可以将升级后的结果导入**Microsoft Search**并将导入的内容提供给用户。 只要你设置了 **Microsoft 搜索**，就可以轻松快速地填充搜索结果，并提高用户效率。 我们建议你使用 SharePoint 中的升级结果作为参考，以了解如何命名和创建相关的搜索结果。
 
