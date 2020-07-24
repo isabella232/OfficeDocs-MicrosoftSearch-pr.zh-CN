@@ -21,7 +21,6 @@
 ### [Azure DevOps](azure-devops-connector.md)
 ### [Azure SQL 和 Microsoft SQL server](MSSQL-connector.md)
 ### [企业网站](enterprise-web-connector.md)
-### [文件共享](file-share-connector.md)
 ### [MediaWiki](mediawiki-connector.md)
 ### [ServiceNow](servicenow-connector.md)
 ## [反馈](connectors-feedback.md)
