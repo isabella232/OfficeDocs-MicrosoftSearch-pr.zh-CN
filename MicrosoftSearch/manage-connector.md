@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 为 Microsoft Search 管理 Microsoft Graph 连接器。
-ms.openlocfilehash: 3e652b9afad78f784ff4c726ecab34bef883d4c3
-ms.sourcegitcommit: a8a6c949f249d106f37103e127d2ea7df730f7a3
+ms.openlocfilehash: dfbc58d7e51fca0491dc7e4452ba4312ff3dfd69
+ms.sourcegitcommit: f2323c43fc732890213223efac32006df5b92c28
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/11/2020
-ms.locfileid: "44702764"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "45388000"
 ---
 # <a name="manage-your-connector-for-microsoft-search"></a>管理你的连接器以进行 Microsoft Search
 
@@ -29,7 +29,7 @@ ms.locfileid: "44702764"
 
 对于每种连接器类型， [Microsoft 365 管理中心](https://admin.microsoft.com)支持下表中所示的操作：
 
-操作 | Microsoft 构建的连接器 | 合作伙伴或自定义生成的连接器
+Operation | Microsoft 构建的连接器 | 合作伙伴或自定义生成的连接器
 --- | --- | ---
 添加连接 | ： heavy_check_mark：（请参阅[配置 Microsoft 构建的连接器](configure-connector.md)） | ： x：（请参阅合作伙伴或自定义内置连接器管理员 UX）
 删除连接 | ： heavy_check_mark： | ： heavy_check_mark：
@@ -76,7 +76,6 @@ ms.locfileid: "44702764"
 2001 | 由于队列中的更新数过多，索引被限制。 根据队列的不同，可能需要一段时间才能完成更新。 | 请等待队列被清除。
 2002 | 由于不受支持的项格式设置而导致索引失败。 | 有关详细信息，请参阅连接器特定文档。
 2003 | 由于不受支持的项目内容而导致索引失败。 | 有关详细信息，请参阅连接器特定文档。
-2004 | [文件大小](https://docs.microsoft.com/microsoftsearch/file-share-connector#content-requirements)太大，无法编制索引。 在处理之前，它必须小于或等于 100 MB，且处理后不大于 4 MB。 在这种情况下，将对文件编制部分索引。 文件中存在的短语数可能不会返回搜索结果。 | 有关详细信息，请参阅[文件共享特定文档](https://docs.microsoft.com/MicrosoftSearch/file-share-connector#content-requirements)。
 5000 | 出现问题。 如果这种情况继续存在，请与支持人员联系。 |
 
 ## <a name="preview-limitations"></a>预览限制

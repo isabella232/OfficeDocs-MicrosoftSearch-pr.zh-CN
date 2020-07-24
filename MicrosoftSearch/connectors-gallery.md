@@ -13,21 +13,21 @@ search.appverid:
 - MET150
 - MOE150
 description: 列出 Microsoft 搜索的所有 Microsoft Graph 连接器
-ms.openlocfilehash: 47782a9a429bf3ad75cffaadf6f67402638fd3a6
-ms.sourcegitcommit: 68cd28a84df120473270f27e4eb62de9eae455f9
+ms.openlocfilehash: 82718cdadc57bf9133b61183cdbd912e269fdc70
+ms.sourcegitcommit: f2323c43fc732890213223efac32006df5b92c28
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44850916"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "45388009"
 ---
 # <a name="microsoft-graph-connectors-gallery"></a>Microsoft Graph 连接器库
 
 
 #### <a name="in-this-article"></a>本文内容
-* <a href="#Microsoft">Microsoft 连接器</a>
-* <a href="#Partners">合作伙伴的连接器</a>
+* <a href="#Microsoft">由 Microsoft 提供的连接器</a>
+* <a href="#Partners">由合作伙伴提供的连接器</a>
 
-<h2 id="Microsoft">Microsoft 连接器</h2>
+<h2 id="Microsoft">由 Microsoft 提供的连接器</h2>
 <ul class="panelContent cardsZ">
     <li>
         <div class="cardSize">
@@ -120,27 +120,6 @@ ms.locfileid: "44850916"
             <div class="cardPadding">
                 <div class="card" style="overflow: hidden; height: 235px;">
                     <div class="cardText">
-                        <h3>文件共享</h3>
-                        <p>由<a href="https://www.microsoft.com">Microsoft</a></p>
-                        <p>使用此 Microsoft Graph 连接器，组织中的用户可以搜索存储在本地 Windows 文件共享上的文件。</p>
-                        <div style="margin-top:20px;bottom:15px;position:absolute;display:block">
-                            <div style="font-weight:500;width:150px;display:inline">
-                                <a href="file-share-connector.md" target="_blank" data-linktype="relative-path" style="font-weight:500;width:150px;display:inline">
-                                    <font color="0065BA">更多详细信息</font>
-                                </a>
-                             <img src="media/FileConnectorLogo_Small.png" alt="File share" width="35" height="35" align="right" style="display:inline; margin-left:210px" data-linktype="relative-path"  />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </li>
-    <li>
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card" style="overflow: hidden; height: 235px;">
-                    <div class="cardText">
                         <h3>MediaWiki</h3>
                         <p>由<a href="https://www.microsoft.com">Microsoft</a></p>
                         <p>使用此 Microsoft Graph 连接器，用户可以在您的组织使用 MediaWiki 创建的 wiki 网站上搜索基于知识的文章。</p>
@@ -157,8 +136,6 @@ ms.locfileid: "44850916"
             </div>
         </div>
     </li>
-</ul>
-<ul class="panelContent cardsZ">
     <li>
         <div class="cardSize">
             <div class="cardPadding">
@@ -180,6 +157,8 @@ ms.locfileid: "44850916"
             </div>
         </div>
     </li>
+</ul>
+<ul class="panelContent cardsZ">
     <li>
         <div class="cardSize">
             <div class="cardPadding">
@@ -205,7 +184,7 @@ ms.locfileid: "44850916"
 
 ---
 
-<h2 id="Partners">合作伙伴的连接器</h2>
+<h2 id="Partners">由合作伙伴提供的连接器</h2>
 <!--- 1 ROW --->
 <h3 id="A"></h3>
 <ul class="panelContent cardsZ">
@@ -476,7 +455,7 @@ ms.locfileid: "44850916"
                     <div class="cardText">
                         <h3>Azure Data Lake</h3>
                         <p>按<a href="https://www.accenture.com">Accenture</a></p>
-                        <p>Azure Data Lake 连接器将在根或指定路径中对 Azure Data Lake Store 云中的内容进行爬网。 每个文件都是通过其元数据（大小、位置、上次访问时间等）提交的。 自动发现更新。</p>
+                        <p>Azure Data Lake 连接器将在根或指定路径中对 ADLS 云中的内容进行爬网。 每个文件都是通过其元数据（大小、位置、上次访问时间等）提交的。 自动发现更新。</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://contentanalytics.digital.accenture.com/display/aspire40/Azure+Data+Lake+Connector"><font color="0065BA">更多详细信息</font></a>
                         </p>
@@ -1222,7 +1201,7 @@ ms.locfileid: "44850916"
                     <div class="cardText">
                         <h3>LDAP</h3>
                         <p>按<a href="https://www.bainsight.com">BA 洞察力</a></p>
-                        <p>LDAP 连接器使组织能够连接到任何 LDAP 兼容目录，并索引其中的任何记录。 组织可以筛选到目录的特定子集并只检索特定字段，这样就可以轻松地搜索存储在目录中任意位置的用户、联系人或组。</p>
+                        <p>通过 LDAP 连接器，组织可以连接到任何符合 LDAP 的目录并索引它的任何记录。 组织可以筛选到目录的特定子集并只检索特定字段，这样就可以轻松地搜索存储在目录中任意位置的用户、联系人或组。</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://www.bainsight.com/indexing-connectors/1/"><font color="0065BA">更多详细信息</font></a>
                         </p>
@@ -1511,7 +1490,7 @@ ms.locfileid: "44850916"
             <div class="cardPadding">
                 <div class="card" style="min-height:240px;">
                     <div class="cardText">
-                        <h3>承诺</h3>
+                        <h3>目标</h3>
                         <p>按<a href="https://www.bainsight.com">BA 洞察力</a></p>
                         <p>目标连接器专门为目标而设计，建立到目标的安全连接，并将包含目标架构中的元数据的内容映射到搜索引擎架构。 然后，该示例在名为爬网的过程中提取内容并将其订阅到搜索引擎。</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
@@ -1988,7 +1967,7 @@ ms.locfileid: "44850916"
                     <div class="cardText">
                         <h3>SharePoint Online</h3>
                         <p>按<a href="https://www.accenture.com">Accenture</a></p>
-                        <p>SharePoint Online 连接器将对任何 SharePoint Online 网站集 URL 中的内容进行爬网。连接器将检索网站、列表、文件夹、列表项和附件以及其他页面（以 .aspx 格式）。 此连接器支持在 Microsoft O365 产品中运行的 SharePoint。 对爬网的本地产品提供支持的支持由 SharePoint 2010/2007 连接器和 SharePoint 2013 连接器支持。</p>
+                        <p>SharePoint Online 连接器将对任何 SharePoint Online 网站集 URL 中的内容进行爬网。连接器将检索网站、列表、文件夹、列表项和附件以及其他页面（以 .aspx 格式）。 此连接器支持在 Microsoft O365 产品中运行的 SharePoint。 支持爬网 sharepoint 2010/2007 连接器和 SharePoint 2013 连接器支持 SharePoint 的本地产品提供。</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://contentanalytics.digital.accenture.com/display/aspire40/SharePoint+Online+Connector"><font color="0065BA">更多详细信息</font></a>
                         </p>

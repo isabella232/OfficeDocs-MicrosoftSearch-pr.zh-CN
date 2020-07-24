@@ -12,16 +12,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 搜索的 Microsoft Graph 连接器概述
-ms.openlocfilehash: 08ddb8e61606007c706134242e865459f0399b86
-ms.sourcegitcommit: 68cd28a84df120473270f27e4eb62de9eae455f9
+ms.openlocfilehash: ecedd135336f37da26cee71be06dd421cdb95f61
+ms.sourcegitcommit: f2323c43fc732890213223efac32006df5b92c28
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44850868"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "45387991"
 ---
 # <a name="overview-of-microsoft-graph-connectors"></a>Microsoft Graph 连接器概述
 
-Microsoft Search 将对所有[Microsoft 365](https://www.microsoft.com/microsoft-365)数据编制索引，使其可供用户搜索。 使用 Microsoft Graph 连接器，您的组织可以将第三方数据编入索引，以显示在 Microsoft 搜索结果中。 第三方数据可以在内部部署或公共或私有云承载。 连接器扩展了可在 Microsoft 365 生产力应用和更广泛的 Microsoft 生态系统中搜索的内容源的类型。
+Microsoft Search 将对所有[Microsoft 365](https://www.microsoft.com/microsoft-365)数据编制索引，使其可供用户搜索。 使用 Microsoft Graph 连接器，你的组织可以将第三方数据编入索引，以显示在 Microsoft 搜索结果中。 第三方数据可以在内部部署或公共或私有云承载。 连接器扩展了可在 Microsoft 365 生产力应用和更广泛的 Microsoft 生态系统中搜索的内容源的类型。
 
 > [!IMPORTANT]
 > **免责声明**： microsoft Graph 连接器和 Microsoft 搜索 api （查询和索引）当前处于 "预览" 状态，可用于租户在目标版本中。 若要将连接器与 Microsoft 搜索配合使用或构建连接器，请选择进入[目标版本](https://docs.microsoft.com/office365/admin/manage/release-options-in-office-365?view=o365-worldwide)。 若要了解有关预览的详细信息，请参阅[连接器预览计划](connectors-preview.md)。
@@ -46,7 +46,7 @@ API 为每个数据源实例化一个连接。 然后，API 将对数据进行�
 
 您还可以[生成自己的连接器](https://docs.microsoft.com/graph/search-concept-overview)。
 
-### <a name="connectors-by-microsoft"></a>Microsoft 连接器
+### <a name="connectors-by-microsoft"></a>由 Microsoft 提供的连接器
 
 Microsoft Graph 连接器预览版本包含6个 Microsoft 构建的连接器。 您可以在[管理中心](https://admin.microsoft.com)中进行设置，并了解如何[设置 Microsoft 构建的连接器](configure-connector.md)。
 
@@ -63,9 +63,6 @@ Microsoft Graph 连接器预览版本包含6个 Microsoft 构建的连接器。 
 
 - **企业网站**。 使用此 Microsoft Graph 连接器，组织中的用户可以在任何非 SharePoint 企业网站中搜索页面。
 了解有关[企业网站连接器](enterprise-web-connector.md)的详细信息。
-
-- **文件共享**。 使用此 Microsoft Graph 连接器，组织中的用户可以搜索存储在本地 Windows 文件共享上的文件。
-了解有关[文件共享连接器](file-share-connector.md)的详细信息。
 
 - **[MediaWiki](https://www.mediawiki.org/wiki/MediaWiki)**。 使用此 Microsoft Graph 连接器，用户可以在您的组织使用 MediaWiki 创建的 wiki 网站上搜索知识库文章。
 了解有关[MediaWiki 连接器](mediawiki-connector.md)的详细信息。

@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 添加搜索纵向和自定义搜索结果
-ms.openlocfilehash: 60ab3423db0a86982df9c4332f0f22267c49dc04
-ms.sourcegitcommit: 9ba062f8b632a74e56ad7ec4dffaa1d8dab57614
+ms.openlocfilehash: 9bc0448c1105c26b0e083316db04887327d8db41
+ms.sourcegitcommit: f2323c43fc732890213223efac32006df5b92c28
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44996055"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "45387982"
 ---
 # <a name="customize-the-search-results-page"></a>自定义搜索结果页
 
@@ -41,7 +41,7 @@ ms.locfileid: "44996055"
 
 开始之前，请确保已对连接器编制索引。 这可能最长为48个小时，具体取决于文件大小。
 
-无法为驻留在[SharePoint](https://sharepoint.com/)中的内容或由[文件共享连接器](file-share-connector.md)编制索引的内容创建垂直。 了解如何为[内容编制索引](configure-connector.md)。
+无法为驻留在[SharePoint](https://sharepoint.com/)中的内容创建垂直。
 
 有三个基本步骤可添加垂直：
 
@@ -107,7 +107,7 @@ ms.locfileid: "44996055"
 
 下面列出了你可能遇到的常见问题和解决这些问题的措施。
 
-|错误  |Action  |
+|Error  |操作  |
 |---------|---------|
 | 我在垂直处看到 "出现了错误" 错误消息。 | 需要垂直和结果类型才能完成设置。 请确保已为相同的内容源创建了这两个。 |
 | 我看不到结果布局，尽管我创建了它。 | 此过程需要几分钟时间，因为通常会缓存这些设置。 请等待几分钟，然后重试。        |

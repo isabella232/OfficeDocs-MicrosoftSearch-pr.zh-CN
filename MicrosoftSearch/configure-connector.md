@@ -12,24 +12,23 @@ search.appverid:
 - MET150
 - MOE150
 description: 为 Microsoft Search 配置 Microsoft 构建的连接器
-ms.openlocfilehash: e5b40326bdd83f461e7ce9a45889ad82245e20aa
-ms.sourcegitcommit: 68cd28a84df120473270f27e4eb62de9eae455f9
+ms.openlocfilehash: 30c60e94e8e633bce90bbc1984eee35d3ceda771
+ms.sourcegitcommit: f2323c43fc732890213223efac32006df5b92c28
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44850886"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "45387965"
 ---
 <!-- markdownlint-disable no-trailing-punctuation -->
 
 # <a name="set-up-your-microsoft-built-connector-for-microsoft-search"></a>将 Microsoft 构建的连接器设置为 Microsoft Search
 
-本文将指导您完成配置 Microsoft 构建的连接器的步骤。 概述了在 Microsoft 365[管理中心](https://admin.microsoft.com)中设置连接的流程。 有关如何设置特定 Microsoft 构建的连接器的更多详细信息，请参阅以下文章：
+本文将指导您完成配置 Microsoft 构建的连接器的步骤。 概述了在 Microsoft 365[管理中心](https://admin.microsoft.com)中设置连接的流程。 有关如何设置特定的 Microsoft 构建的连接器的详细信息，请参阅以下文章：
 
 * [Azure Data Lake Storage Gen2](azure-data-lake-connector.md)
 * [Azure DevOps](azure-devops-connector.md)
 * [Azure SQL](MSSQL-connector.md)
 * [企业网站](enterprise-web-connector.md)
-* [文件共享](file-share-connector.md)
 * [MediaWiki](mediawiki-connector.md)
 * [Microsoft SQL server](MSSQL-connector.md)
 * [ServiceNow](servicenow-connector.md)
@@ -43,7 +42,7 @@ ms.locfileid: "44850886"
 3. 选择 "**添加连接器**"。
 4. 从可用连接器列表中，选择所选的连接器。
 
-![可用的数据源包括： ADLS Gen2 连接器、企业网站、ServiceNow、文件共享、Microsoft SQL server 和 MediaWiki。](media/addconnector_final.png)
+![可用的数据源包括： Azure DevOps Connector、ServiceNow、ADLS Gen2、Enterprise 网站、MediaWiki、Microsoft SQL server 和 Azure SQL。](media/add_connector.png)
 
 ### <a name="name-the-connector"></a>命名连接器
 
@@ -75,7 +74,7 @@ ms.locfileid: "44850886"
 可 | 按查询搜索特定属性的匹配项。 然后可以通过编程方式或逐字方式在查询中指定属性名称。 |  如果**Title**属性是可查询的，则支持查询**标题： Enterprise** 。
 可检索 | 只能在结果类型中使用可检索的属性并显示在搜索结果中。 |
 
-对于除文件共享连接器之外的所有连接器，必须手动设置自定义类型。 若要激活每个字段的搜索功能，您需要映射到属性列表的搜索架构。 "连接向导" 将根据您选择的源属性集自动选择搜索架构。 您可以通过选中 "搜索架构" 页中每个属性和属性的复选框来修改此架构。
+对于所有连接器，必须手动设置自定义类型。 若要激活每个字段的搜索功能，您需要映射到属性列表的搜索架构。 "连接向导" 将根据您选择的源属性集自动选择搜索架构。 您可以通过选中 "搜索架构" 页中每个属性和属性的复选框来修改此架构。
 
 ![可以通过添加或删除查询、搜索和检索函数来自定义连接器的架构。](media/manageschema.png)
 
@@ -90,7 +89,7 @@ ms.locfileid: "44850886"
 
 ### <a name="manage-search-permissions"></a>管理搜索权限
 
-访问控制列表（Acl）确定组织中的哪些用户可以访问每个数据项。 文件共享连接器仅支持可映射到[Azure Active Directory （AZURE AD）](https://docs.microsoft.com/azure/active-directory/)的 acl。 所有其他连接器都支持对所有用户都可见的搜索权限。
+访问控制列表（Acl）确定组织中的哪些用户可以访问每个数据项。 所有连接器都支持对所有用户都可见的搜索权限。
 
 ### <a name="set-the-refresh-schedule"></a>设置刷新计划
 
@@ -98,11 +97,11 @@ ms.locfileid: "44850886"
 
 通过**完全爬网**，搜索引擎将处理内容源中的每个项目并对其进行索引，而不考虑以前的爬网。 在下列情况下，完全爬网的效果最佳：
 
-* 您需要检测数据的删除。
+* 检测数据删除。
 * 增量爬网无法对内容进行爬网以对错误进行爬网。
-* 需要 Microsoft Search 软件更新。 更新将修改搜索架构。
 * 已修改 Acl。
 * 修改了爬网规则。
+* 需要 Microsoft Search 软件更新。 更新将修改搜索架构。
 
 使用**增量爬网**时，搜索引擎可以仅处理自上次成功爬网后创建或修改的项，并对这些项编制索引。 因此，并不会对内容源中的所有数据重新编制索引。 增量爬网最适用于检测内容、元数据、权限和其他更新。
 
@@ -120,10 +119,10 @@ ms.locfileid: "44850886"
 
 通过 Microsoft Search 用户界面（UI），最终用户可以从你的[microsoft 365](https://www.microsoft.com/microsoft-365)生产力应用和更广泛的 microsoft 生态系统中搜索内容。 垂直搜索是指当用户在[Bing](https://Bing.com)中的[SharePoint](https://sharepoint.com/)、 [microsoft Office](https://Office.com)和 microsoft 搜索中查看搜索结果时显示的选项卡。 您可以自定义搜索纵向以缩小结果范围，以便只显示特定类型的搜索结果。 这些纵向显示为搜索结果页顶部的选项卡。 新式结果类型（MRT.LOG）是指定如何显示结果的 UI。
 
-您必须创建自己的纵向和结果类型，以便最终用户可以查看来自新连接的搜索结果。 如果不执行此步骤，则连接中的数据不会显示在搜索结果页上。
+创建您自己的纵向和结果类型，以便最终用户可以查看来自新连接的搜索结果。 如果不执行此步骤，则连接中的数据不会显示在搜索结果页上。
 
 若要了解有关如何创建您的纵向和 MRTs 的详细信息，请参阅[搜索结果页面自定义](customize-search-page.md)。
 
-## <a name="how-do-i-know-this-worked"></a>我如何知道这有效？
+## <a name="how-do-i-know-the-connection-setup-worked"></a>我如何知道连接设置正常工作？
 
 转到 "[管理中心](https://admin.microsoft.com)" 的 "**连接器**" 选项卡下的已发布连接列表。 若要了解如何进行更新和删除，请参阅[管理连接器](manage-connector.md)。
