@@ -27,8 +27,10 @@
 ## [使用条款](terms-of-use.md)
 # 自定义和配置
 ## [管理垂直领域和结果类型](customize-search-page.md)
-## [搜索结果布局](customize-results-layout.md)
-## [SharePoint 中的 Microsoft 搜索](get-started-search-in-sharepoint-online.md)
+## [管理搜索结果布局](customize-results-layout.md)
+## SharePoint 中的 Microsoft 搜索
+### [概述](get-started-search-in-sharepoint-online.md)
+### [创建自定义搜索结果页面](create-search-results-pages.md)
 ## Microsoft 必应搜索
 ### [安全和隐私](security-for-search.md)
 ### [将搜索框添加到 Intranet 站点](add-a-search-box-to-your-intranet-site.md)
