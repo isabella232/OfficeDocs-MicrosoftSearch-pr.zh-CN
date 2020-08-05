@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 为 Microsoft Search 管理 Microsoft Graph 连接器。
-ms.openlocfilehash: dfbc58d7e51fca0491dc7e4452ba4312ff3dfd69
-ms.sourcegitcommit: f2323c43fc732890213223efac32006df5b92c28
+ms.openlocfilehash: adf98bccab703e2ae5ecd99b059e1426a50609c5
+ms.sourcegitcommit: 89484fec9af755240d5d1bc399501d51ee40571d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "45388000"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "46563883"
 ---
 # <a name="manage-your-connector-for-microsoft-search"></a>管理你的连接器以进行 Microsoft Search
 
@@ -31,7 +31,7 @@ ms.locfileid: "45388000"
 
 Operation | Microsoft 构建的连接器 | 合作伙伴或自定义生成的连接器
 --- | --- | ---
-添加连接 | ： heavy_check_mark：（请参阅[配置 Microsoft 构建的连接器](configure-connector.md)） | ： x：（请参阅合作伙伴或自定义内置连接器管理员 UX）
+添加连接 | ： heavy_check_mark： (请参阅[配置 Microsoft 构建的连接器](configure-connector.md))  | ： x： (指的是合作伙伴或自定义的连接器管理员 UX) 
 删除连接 | ： heavy_check_mark： | ： heavy_check_mark：
 编辑已发布的连接 | ： heavy_check_mark： Name<br></br> ： heavy_check_mark：说明<br></br> ： heavy_check_mark：外部数据源的身份验证凭据<br></br> ： heavy_check_mark：本地数据源的网关凭据<br></br> ： heavy_check_mark：刷新计划<br></br> | ： heavy_check_mark： Name<br></br> ： heavy_check_mark：说明
 编辑拔模连接 | ： heavy_check_mark： | 版
@@ -58,7 +58,7 @@ Operation | Microsoft 构建的连接器 | 合作伙伴或自定义生成的连�
 
 若要查看错误的特定详细信息，请选择其错误代码。 屏幕上会显示错误详细信息和链接。 最新错误显示在顶部。 请参阅下表中的示例。
 
-![连接器列表，选择了一个连接器，详细信息窗格显示了连接器的错误列表。 ](media/errormonitoring2.png)
+![连接器列表，选择了一个连接器，详细信息窗格显示了连接器的错误列表。](media/errormonitoring2.png)
 
 下面列出了可针对任何连接显示的不同错误。 如果这些解决方案不起作用，请联系支持部门或向我们发送[反馈](connectors-feedback.md)。
 
@@ -78,6 +78,35 @@ Operation | Microsoft 构建的连接器 | 合作伙伴或自定义生成的连�
 2003 | 由于不受支持的项目内容而导致索引失败。 | 有关详细信息，请参阅连接器特定文档。
 5000 | 出现问题。 如果这种情况继续存在，请与支持人员联系。 |
 
+## <a name="monitor-your-index-quota-utilization"></a>监视索引配额利用率 
+在预览期间，每个组织都有一个固定的配额（最多为2000000个项目），用于跨所有连接对外部系统中的内容编制索引。
+
+> [!NOTE]
+> Graph 连接器配额在预览期间可用。 这将在正式发行时进行更改。 
+
+可用的索引配额和消耗将显示在 "连接器" 登录页上。
+
+![索引配额使用率栏。](media/quota_utilization.png)
+
+配额使用率栏将根据您的组织的配额消耗来指示各种状态：
+
+State | 配额消耗
+--- | ---
+一般 | 1-69%
+高 | 70-89%
+关键 | 90%-99%
+完整 | 100%
+
+已编制索引的项目数也会随每个连接显示。 按每个连接编制索引的项目数分配给组织的可用总配额。
+
+当您的组织超过索引配额时，所有活动连接将受到影响，并且这些连接将停止 ingesting 内容。 若要解决此问题，可以执行以下任一操作：
+
+* 确定具有过多内容引入的连接并更新这些连接以编制更少的项目，以便为配额留出空间。 若要更新连接，必须使用新的摄取筛选器删除并创建新的连接，这将导致较少的项目。
+
+* 永久删除一个或多个连接
+
+* 如果需要增加组织的索引配额限制，请与 Microsoft 联系。
+
 ## <a name="preview-limitations"></a>预览限制
 
 * **发布**Microsoft 构建的连接器时，可能需要几分钟的时间才能创建连接。 在这段时间内，连接会将其状态显示为 "挂起"。 此外，也不会进行自动刷新，因此需要手动刷新。
@@ -85,3 +114,5 @@ Operation | Microsoft 构建的连接器 | 合作伙伴或自定义生成的连�
 * [Microsoft 365 管理中心](https://admin.microsoft.com)不支持在连接发布后查看和编辑**搜索架构**。 若要编辑搜索架构，请删除您的连接，然后创建一个新的连接。
 
 * 在管理连接的**刷新计划**时，将显示在每个会话期间同步的项目数。 但是，同步历史记录不可用。
+
+* 当组织达到关键或更高限制的配额利用率时，将**不**会通过消息中心收到通知。  定期检查连接器管理页，以确保配置的连接未超过组织的总配额限制。
