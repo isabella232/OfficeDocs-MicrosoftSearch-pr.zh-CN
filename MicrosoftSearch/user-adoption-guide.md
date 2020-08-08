@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9e8c9323-4ff9-42dd-8052-2bc9e0d6d0e7
 description: 了解有关方法和过程，帮助您成功将 Microsoft 搜索部署到您的组织
-ms.openlocfilehash: 4c40013297b8b7a91e589137e70716bd8e4fd326
-ms.sourcegitcommit: f4cb37fdf85b895337caee827fb72b5b7fcaa8ad
+ms.openlocfilehash: 76079dd2db378185a999acf9cc49cd04a7f97bbe
+ms.sourcegitcommit: b3738f5ab02bfba9dedf099e035f3850607be480
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/12/2019
-ms.locfileid: "39995002"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "46591514"
 ---
 # <a name="user-adoption-guide"></a>用户采用指南
 
@@ -37,9 +37,9 @@ ms.locfileid: "39995002"
 |**角色**|**负责**|**Department**|
 |:-----|:-----|:-----|
 |执行发起人  <br/> |了解组织的 Microsoft 搜索的高级别远景和价值。  <br/> 为 IT/业务团队提供领导能力支持。  <br/> 分配资源。  <br/> 与员工直接沟通。  <br/> |执行官领导  <br/> |
-|企业所有者  <br/> |确定产品和用户方案。  <br/> 确定部门和组织的成功指标。  <br/> |任意  <br/> |
+|企业所有者  <br/> |确定产品和用户方案。  <br/> 确定部门和组织的成功指标。  <br/> |任何  <br/> |
 |更改管理团队  <br/> |确保产品价值易于理解。  <br/> 为推出创建计划。  <br/> |IT  <br/> |
-|拥护  <br/> |将产品 Evangelize 到对等方和团队。  <br/> |Any （教职员工）  <br/> |
+|支持者  <br/> |将产品 Evangelize 到对等方和团队。  <br/> |任何 (员工)   <br/> |
 |搜索管理员  <br/> |确定用户采用核心团队成员。  <br/> 管理 Microsoft 搜索，包括体验和持续管理的外观和感觉。  <br/> 推动讨论以显示 Microsoft Search 的价值。  <br/> |IT  <br/> |
 |Editors  <br/> |在 Microsoft 365[管理中心](https://admin.microsoft.com)中创建内容。  <br/> |IT/任何  <br/> |
    
@@ -69,15 +69,15 @@ ms.locfileid: "39995002"
   
 1. **更改管理：** 确定您将如何衡量 Microsoft 搜索的认知度以及有关它的通信是否成功。 
     
-2. **用法：** 您可以利用 Insights 仪表板中的数据，其中包括每日和每月活动用户（DAU 和 MAU）、获取最多视图的内容类型，以及搜索关键字以根据时间测量使用情况的主要搜索关键字。 有关详细信息，请参阅[Microsoft Search Insights 仪表板报告](get-insights.md)。
+2. **用法：** 您可以利用 Insights 仪表板中的数据，其中包括每日和每月活动用户 (DAU 和 MAU) 、获取最多视图的内容类型以及搜索关键字，以随着时间的推移测量使用情况。 有关详细信息，请参阅[Microsoft Search Insights 仪表板报告](get-insights.md)。
     
-3. **用户满意度：** 使用从调查和用户焦点组中收集的数据来确定您的基准。 Net 满意度（NSAT）和 Net 净比分（NPS）也可以提供有用的度量。 无论您使用哪种方法，保持一致，以便您可以看到一段时间内的影响。 
+3. **用户满意度：** 使用从调查和用户焦点组中收集的数据来确定您的基准。 Net 满意度 (NSAT) 和 Net 净得分 (NPS) 也可以提供有用的度量。 无论您使用哪种方法，保持一致，以便您可以看到一段时间内的影响。 
     
 4. **其他度量：** 使用历史和/或当前数据获取支持请求以及搜索所用的时间量。 
     
 ## <a name="stage-3-readiness"></a>第3阶段：准备情况
 
-为 Microsoft Search 部署做准备的投资时间将导致您的组织产生积极影响。 Microsoft 提供了<a href="https://resources.techcommunity.microsoft.com/microsoft-search-in-bing-adoption-kit/">采用工具包</a>，其中包含规划指南、可自定义的电子邮件通知、调查模板、执行演示等。 还有<a href="https://resources.techcommunity.microsoft.com/microsoft-search/#adoption">Microsoft 搜索资源中心</a>，IT 实施者可以在其中找到其他培训和采用资源，旨在帮助 Microsoft 搜索首次部署成功。
+为 Microsoft Search 部署做准备的投资时间将导致您的组织产生积极影响。 Microsoft 提供一个<a href="https://go.microsoft.com/fwlink/?linkid=2114710">采用包</a>，其中包含一个通知电子邮件模板、轻量、为内部通信网站上的共享创建的视觉内容和一个培训演示文稿。 此外，还有一个<a href="https://resources.techcommunity.microsoft.com/microsoft-search/#adoption">Microsoft Search Resource Center</a> ，可在其中找到旨在帮助 Microsoft 搜索成功部署的其他培训和采用资源。
   
 ### <a name="product-and-content-readiness"></a>产品和内容准备情况
   
@@ -121,7 +121,7 @@ Microsoft Search 用户必须使用工作或学校帐户登录[Bing](https://Bin
   
 作为[microsoft 365](https://www.microsoft.com/microsoft-365)不可或缺的一部分，microsoft SEARCH 遵循 GDPR 和第3层指南。 根据您的组织，可能需要与您的隐私和安全团队共享有关 Microsoft 搜索的信息。 有关详细信息，请参阅[Bing 中的 Microsoft Search 安全性和隐私](security-for-search.md)。
   
-确保您的技术支持人员了解 Microsoft Search 的特性和功能，以及用户对登录的要求，以便它们可以更有效地支持用户。 有关详细信息，请参阅[在 microsoft 365 和 faq 中了解 Microsoft Search](https://support.office.com/article/Learn-about-Microsoft-Search-in-Microsoft-365-b8bf5a2c-7515-40a9-9a6a-b8ed382c86bc) 。 [](faqs.md)
+确保您的技术支持人员了解 Microsoft Search 的特性和功能，以及用户对登录的要求，以便它们可以更有效地支持用户。 有关详细信息，请参阅[在 microsoft 365 和 faq 中了解 Microsoft Search](https://support.office.com/article/Learn-about-Microsoft-Search-in-Microsoft-365-b8bf5a2c-7515-40a9-9a6a-b8ed382c86bc) 。 [FAQs](faqs.md)
   
 ### <a name="evaluate-with-pilot-users"></a>试用用户评估
   

@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 在 Microsoft Search 中创建和更新首字母缩略词答案
-ms.openlocfilehash: bbdd27b00be323db8d80994fe9ff6ab7fac17416
-ms.sourcegitcommit: b5142052ed17cd430b4c193b67d8f3d90d94ba6e
+ms.openlocfilehash: 68e62884898e3aa081fc32438ad9a80068092738
+ms.sourcegitcommit: b3738f5ab02bfba9dedf099e035f3850607be480
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "45143862"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "46591505"
 ---
 # <a name="manage-acronyms-answers-in-microsoft-search"></a>管理 Microsoft Search 中的缩写词答案
 
@@ -27,7 +27,7 @@ ms.locfileid: "45143862"
 
 ## <a name="what-users-experience"></a>用户体验
 
-Microsoft Search 用户可以在[Bing](https://Bing.com)和[SharePoint](https://products.office.com/sharepoint/collaboration)中获取具有首字母缩写词的定义。 在**搜索**框中，用户输入类似以下示例的查询：
+Microsoft Search 用户可以在[Bing](https://Bing.com)、 [SharePoint](https://products.office.com/sharepoint/collaboration)和[Office 365](https://Office.com)中获取具有首字母缩写词的定义。 在**搜索**框中，用户输入类似以下示例的查询：
 
 - 是*什么*DNN
 - *定义*DNN
@@ -64,7 +64,7 @@ Microsoft Search 查询两个数据源，以提供对用户搜索的缩写词答
 
 管理员可以单独添加首字母缩写词或在 CSV 文件中批量导入。 将 CSV 文件上传到下表所示的字段：
 
-| 首字母缩写词（必需） | 扩展（强制） | 说明  | Source | State （必需） |
+| 首字母缩略词 (强制)  | 扩展 (强制)  | 说明  | 源 | 状态 (强制)  |
 | --------- | --------- | ---------- | --------- |--------- |
 | *美元* | *拼写出缩写* |  | *URL* | *已发布或草稿* |
 
@@ -96,7 +96,7 @@ Microsoft Search 确保只有对文档具有访问权限的用户才能看到从
 > [!NOTE]
 > 挖掘的首字母缩写词不需要任何设置。
 
-## <a name="frequently-asked-questions"></a>常见问题
+## <a name="frequently-asked-questions"></a>常见问题解答
 
 **问：如何对编辑和挖掘数据进行分级？**
 
@@ -108,7 +108,7 @@ Microsoft Search 确保只有对文档具有访问权限的用户才能看到从
 
 **问：用户如何触发首字母缩略词答案？**
 
-**答**：若要获取缩写词答案，用户必须在[Bing](https://bing.com)或[SharePoint](https://products.office.com/sharepoint/collaboration) **搜索**框中输入特定的查询模式。 目前， [Office 365](https://Office.com)中不提供首字母缩略词答案。
+**答**：若要获取首字母缩写的答案，用户必须在[Bing](https://bing.com)、 [SharePoint](https://products.office.com/sharepoint/collaboration)或[Office 365](https://Office.com) **搜索**框中输入特定的查询模式。
 
 **问：收到或发送新的电子邮件或文档后，要显示挖掘的首字母缩写词需要多长时间？**
 
@@ -126,7 +126,3 @@ Microsoft Search 确保只有对文档具有访问权限的用户才能看到从
 
 **A**：若要关闭在搜索结果中显示挖掘的首字母缩写词，请按照[业务产品的联系支持](https://docs.microsoft.com/office365/admin/contact-support-for-business-products?redirectSourcePath=%252f%252farticle%252fContact-Office-365-for-business-support-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b&view=o365-worldwide&tabs=online#BKMK_call_support)部门的说明创建客户支持票证。
 创建支持票证后，提取的首字母缩写词最长需要48小时才能停止显示在搜索结果中。
-
-**问：我何时将在[Office 365](https://Office.com)中看到 "首字母缩略词" 答案？**
-
-**答**： Office 365 中的首字母缩写回答是产品路线图的一部分，但我们目前无法提供日期或时间范围。
