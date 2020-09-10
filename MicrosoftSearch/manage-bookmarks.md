@@ -13,24 +13,23 @@ search.appverid:
 - MOE150
 ms.assetid: c0c814d0-f7e4-444e-b18e-09beb45c9322
 description: 创建和更新书签以及用于批量编辑 Microsoft 搜索的书签结果的方法
-ms.openlocfilehash: 926fae2a4bd6bb6a436a3b5ea46f21077a23dcab
-ms.sourcegitcommit: 996b2c0538e28b71441461a371a62339cb6d476f
+ms.openlocfilehash: 2c0b42e4be1307aa45e4cab3f5c923a7808375e4
+ms.sourcegitcommit: 988c37610e71f9784b486660400aecaa7bed40b0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "45167454"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47422871"
 ---
 # <a name="manage-bookmarks"></a>管理书签
 
 你只需几步即可创建书签。 每个书签都包括标题、URL 和一组触发关键字。 您还可以将类别添加到可用于在管理门户中进行排序和筛选的书签。 书签可以具有多个关键字，多个书签可以共享同一个关键字，但保留关键字不能共享。 创建或修改书签时，搜索索引将立即刷新，并立即向用户提供书签。
 
-如果您的组织已在 SharePoint 中设置了提升的结果，则可以将升级后的结果导入**Microsoft Search**并将导入的内容提供给用户。 只要你设置了 **Microsoft 搜索**，就可以轻松快速地填充搜索结果，并提高用户效率。 我们建议你使用 SharePoint 中的升级结果作为参考，以了解如何命名和创建相关的搜索结果。
+如果您的组织已在 SharePoint 中设置了提升的结果，则可以将升级后的结果导入 **Microsoft Search** 并将导入的内容提供给用户。 只要你设置了 **Microsoft 搜索**，就可以轻松快速地填充搜索结果，并提高用户效率。 我们建议你使用 SharePoint 中的升级结果作为参考，以了解如何命名和创建相关的搜索结果。
 
 ## <a name="add-or-edit-a-single-bookmark"></a>添加或编辑单个书签
 
-1. 转到 **Microsoft 365 管理中心**。
-1. 在导航窗格中，转到**Settings**"  >  **Microsoft Search**  >  **解答**  >  [**书签**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/bookmarks)" "设置"。
-1. 若要添加书签，请选择“**新增**”。
+1. 在 [Microsoft 365 管理中心](https://admin.microsoft.com)，转到 " [**书签**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/bookmarks)"。
+1. 若要添加书签，请选择 " **添加**"。
 若要编辑书签，请从相关书签列表中选择书签。
 1. 在你添加或编辑信息时，预览将随之自动更新。
 1. 保存所做的更改。
@@ -41,8 +40,8 @@ ms.locfileid: "45167454"
 
 目前，为 Microsoft Edge 和 Chrome 提供了浏览器扩展。
 
-- 若要下载边缘扩展，请转到[Microsoft Store](https://www.microsoft.com/p/microsoft-search-content-creator/9nrqdbcbwq55?activetab=pivot:overviewtab)并下载该应用。
-- 若要下载 Chrome 扩展，请转到[chrome web store](https://chrome.google.com/webstore/detail/microsoft-search-content/nocnablpaoeecfmfnjoheefkogmleipm)并下载该应用。
+- 若要下载边缘扩展，请转到 [Microsoft Store](https://www.microsoft.com/p/microsoft-search-content-creator/9nrqdbcbwq55?activetab=pivot:overviewtab) 并下载该应用。
+- 若要下载 Chrome 扩展，请转到 [chrome web store](https://chrome.google.com/webstore/detail/microsoft-search-content/nocnablpaoeecfmfnjoheefkogmleipm) 并下载该应用。
 
 ## <a name="bulk-add-or-edit-bookmarks"></a>批量添加或编辑书签
 
@@ -88,7 +87,7 @@ ms.locfileid: "45167454"
 若要防止书签到书签复制错误，请遵循以下最佳实践：
 
 - 请勿对不同的书签使用重复的 URL。 如果已将某个 URL 分配给另一个书签，并且您正在从导入文件中再次添加它，则会收到错误消息。 这也适用于其他类型的答案的重复 Url。
-- 更新现有书签时使用 "*书签 ID* " 列。 您可以更新现有书签的任何其他属性（如关键字或说明），但应确保*书签 ID*位于导入文件的相应列中。 如果存在*书签 ID* ，服务不会将其视为新的添加，也不会将其作为错误处理。
+- 更新现有书签时使用 " *书签 ID* " 列。 您可以更新现有书签的任何其他属性（如关键字或说明），但应确保 *书签 ID* 位于导入文件的相应列中。 如果存在 *书签 ID* ，服务不会将其视为新的添加，也不会将其作为错误处理。
 
 ## <a name="power-apps"></a>Power Apps
 
@@ -104,9 +103,8 @@ Power Apps 是一项服务，允许您构建在浏览器中或在手机或平板
 
 ### <a name="add-a-power-app-to-a-bookmark"></a>向书签添加电源应用程序
 
-1. 查找要添加的[电源应用程序的应用程序 ID](https://docs.microsoft.com/powerapps/maker/canvas-apps/get-sessionid#get-an-app-id) 。
-1. 登录到[**Microsoft 365 管理中心**](https://admin.microsoft.com)。
-1. 在导航窗格中，转到**Settings**"  >  **Microsoft Search**  >  **解答**  >  [**书签**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/bookmarks)" "设置"。
+1. 查找要添加的 [电源应用程序的应用程序 ID](https://docs.microsoft.com/powerapps/maker/canvas-apps/get-sessionid#get-an-app-id) 。
+1. 在 [Microsoft 365 管理中心](https://admin.microsoft.com)，转到 " [**书签**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/bookmarks)"。
 1. 添加或查找一个要向其添加 **PowerApp** 的书签。
 1. 在“**书签设置**”中，选择“**Power 应用**”，然后选择“**添加 Power 应用**”。
 1. 输入或粘贴“**应用 ID**”。

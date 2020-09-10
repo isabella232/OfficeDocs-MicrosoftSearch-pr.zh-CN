@@ -1,8 +1,8 @@
 ---
 title: Microsoft 搜索的 MediaWiki 连接器
-ms.author: v-pamcn
-author: monaray
-manager: mnirkhe
+ms.author: monaray
+author: monaray97
+manager: jameslau
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 设置用于 Microsoft 搜索的 MediaWiki 连接器
-ms.openlocfilehash: 2aa0ef494aa42b1a7364ec68f6532dec737b9c25
-ms.sourcegitcommit: 21361af7c244ffd6ff8689fd0ff0daa359bf4129
+ms.openlocfilehash: b9c8d80ae5cb8e86b0f6341bfe9231b709569e7a
+ms.sourcegitcommit: 988c37610e71f9784b486660400aecaa7bed40b0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38626960"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47423015"
 ---
 # <a name="mediawiki-connector"></a>MediaWiki 连接器
 
@@ -26,20 +26,26 @@ ms.locfileid: "38626960"
 本文适用于 Microsoft 365 管理员或任何配置、运行和监控 MediaWiki 连接器的人。 它说明了如何配置连接器和连接器功能、限制和故障排除技术。
 
 ## <a name="connect-to-a-data-source"></a>连接到数据源
-输入您的 MediaWiki URL 和凭据以对连接进行身份验证。 你将需要以下信息：**租户 ID**、**资源 ID**、**客户端 ID**和**客户端密码**。
+
+输入您的 MediaWiki URL 和凭据以对连接进行身份验证。 你将需要以下信息： **租户 ID**、 **资源 ID**、 **客户端 ID**和 **客户端密码**。
 
 ## <a name="manage-the-search-schema"></a>管理搜索架构
-成功连接后，配置搜索架构映射。 您可以选择哪些属性可供**查询**、**搜索**和**检索**。
+
+成功连接后，配置搜索架构映射。 您可以选择哪些属性可供 **查询**、 **搜索**和 **检索**。
 
 ## <a name="manage-search-permissions"></a>管理搜索权限
-MediaWiki 连接器仅支持**所有人都**能看到的搜索权限。 索引数据显示在搜索结果中，并对组织中的所有用户可见。
 
-## <a name="set-the-refresh-schedule"></a>设置刷新计划 
+MediaWiki 连接器仅支持 **所有人都**能看到的搜索权限。 索引数据显示在搜索结果中，并对组织中的所有用户可见。
+
+## <a name="set-the-refresh-schedule"></a>设置刷新计划
+
 此计划将刷新已编制索引的数据，因此 wiki 的更改将反映在 Microsoft Search 中。 在指定的刷新间隔后，所有新页面、删除的页面、页面内容或元数据更改都会显示在搜索结果中。 爬网时间取决于 wiki 的大小。 目前，连接器会在每分钟50页面的周围进行爬网。
 
-## <a name="limitations"></a>限制 
+## <a name="limitations"></a>限制
+
 在预览版本中，MediaWiki 连接器具有以下限制：
+
 * 仅支持基于云的 wiki。
 * 仅支持基本或 OAuth 2.0 与 Azure Active Directory 或 Azure 身份验证。
-* 不支持用于索引的命名空间选择。 仅索引**主**、**类别**和**文件**命名空间。
-* 不支持访问控制列表（Acl）。 因此，索引页对组织中的所有用户都是可见的。
+* 不支持用于索引的命名空间选择。 仅索引 **主**、 **类别**和 **文件** 命名空间。
+* 不支持 (Acl) 的访问控制列表。 因此，索引页对组织中的所有用户都是可见的。

@@ -1,7 +1,7 @@
 ---
 title: 为 Microsoft Search 配置 Microsoft 构建的连接器
-ms.author: mounika.narayanan
-author: monaray
+ms.author: monaray
+author: monaray97
 manager: jameslau
 ms.audience: Admin
 ms.topic: article
@@ -12,18 +12,18 @@ search.appverid:
 - MET150
 - MOE150
 description: 为 Microsoft Search 配置 Microsoft 构建的连接器
-ms.openlocfilehash: 30c60e94e8e633bce90bbc1984eee35d3ceda771
-ms.sourcegitcommit: f2323c43fc732890213223efac32006df5b92c28
+ms.openlocfilehash: 19a0c21911a9c5410e13a36f0bcc694af4a5c41a
+ms.sourcegitcommit: 988c37610e71f9784b486660400aecaa7bed40b0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "45387965"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47422853"
 ---
 <!-- markdownlint-disable no-trailing-punctuation -->
 
 # <a name="set-up-your-microsoft-built-connector-for-microsoft-search"></a>将 Microsoft 构建的连接器设置为 Microsoft Search
 
-本文将指导您完成配置 Microsoft 构建的连接器的步骤。 概述了在 Microsoft 365[管理中心](https://admin.microsoft.com)中设置连接的流程。 有关如何设置特定的 Microsoft 构建的连接器的详细信息，请参阅以下文章：
+本文将指导您完成配置 Microsoft 构建的连接器的步骤。 概述了在 Microsoft 365 [管理中心](https://admin.microsoft.com)中设置连接的流程。 有关如何设置特定的 Microsoft 构建的连接器的详细信息，请参阅以下文章：
 
 * [Azure Data Lake Storage Gen2](azure-data-lake-connector.md)
 * [Azure DevOps](azure-devops-connector.md)
@@ -38,8 +38,8 @@ ms.locfileid: "45387965"
 完成以下步骤以配置任何 Microsoft 构建的连接器。
 
 1. 转到[Microsoft 365 管理中心](https://admin.microsoft.com)中的 "[连接器" 选项卡](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/Connectors)。
-2. 使用[Microsoft 365](https://www.microsoft.com/microsoft-365)租户的凭据登录你的帐户。
-3. 选择 "**添加连接器**"。
+2. 使用 [Microsoft 365](https://www.microsoft.com/microsoft-365) 租户的凭据登录你的帐户。
+3. 选择 " **添加连接器**"。
 4. 从可用连接器列表中，选择所选的连接器。
 
 ![可用的数据源包括： Azure DevOps Connector、ServiceNow、ADLS Gen2、Enterprise 网站、MediaWiki、Microsoft SQL server 和 Azure SQL。](media/add_connector.png)
@@ -50,13 +50,13 @@ ms.locfileid: "45387965"
 
 1. 连接的名称
 2. 连接 ID
-3. Description （可选）
+3.  (可选) 的说明
 
 连接 ID 为连接器创建隐式属性。 它必须仅包含字母数字字符，并且最多为32个字符。
 
 ### <a name="connect-to-a-data-source"></a>连接到数据源
 
-数据连接过程根据连接器的类型而有所不同。 若要了解有关连接到本地数据源的详细信息，请参阅[安装本地 data gateway](https://aka.ms/configuregateway)。
+数据连接过程根据连接器的类型而有所不同。 若要了解有关连接到本地数据源的详细信息，请参阅 [安装本地 data gateway](https://aka.ms/configuregateway)。
 
 ### <a name="select-source-properties"></a>选择源属性
 
@@ -66,12 +66,12 @@ ms.locfileid: "45387965"
 
 管理员可以设置搜索架构属性，以控制每个 source 属性的搜索功能。 搜索架构可帮助确定搜索结果页面上显示的结果以及最终用户可以查看和访问的信息。
 
-搜索架构属性包括可**搜索**、可**查询**和可**检索**。 下表列出了 Microsoft Graph 连接器支持和解释其功能的每个属性。
+搜索架构属性包括可 **搜索**、可 **查询**和可 **检索**。 下表列出了 Microsoft Graph 连接器支持和解释其功能的每个属性。
 
 搜索架构属性 | 函数 | 示例
 --- | --- | ---
-外面 | 将属性的文本内容设为可搜索的。 属性内容包含在全文本索引中。 | 如果属性为**title**，则针对**企业**的查询返回包含任何文本或标题中的 word **Enterprise**的答案。
-可 | 按查询搜索特定属性的匹配项。 然后可以通过编程方式或逐字方式在查询中指定属性名称。 |  如果**Title**属性是可查询的，则支持查询**标题： Enterprise** 。
+外面 | 将属性的文本内容设为可搜索的。 属性内容包含在全文本索引中。 | 如果属性为 **title**，则针对 **企业** 的查询返回包含任何文本或标题中的 word **Enterprise** 的答案。
+可 | 按查询搜索特定属性的匹配项。 然后可以通过编程方式或逐字方式在查询中指定属性名称。 |  如果 **Title** 属性是可查询的，则支持查询 **标题： Enterprise** 。
 可检索 | 只能在结果类型中使用可检索的属性并显示在搜索结果中。 |
 
 对于所有连接器，必须手动设置自定义类型。 若要激活每个字段的搜索功能，您需要映射到属性列表的搜索架构。 "连接向导" 将根据您选择的源属性集自动选择搜索架构。 您可以通过选中 "搜索架构" 页中每个属性和属性的复选框来修改此架构。
@@ -80,22 +80,22 @@ ms.locfileid: "45387965"
 
 这些限制和建议适用于搜索架构设置：
 
-* 对于索引自定义类型的连接器，我们建议您**不要标记包含**主要内容可**检索**的字段。 使用该搜索属性呈现搜索结果时，会出现重大性能问题。 例如， [ServiceNow](https://www.servicenow.com)知识库文章的**文本**内容字段。
-* 仅属性在搜索结果中标记为可检索的，并可用于创建新式结果类型（MRTs）。
+* 对于索引自定义类型的连接器，我们建议您 **不要标记包含** 主要内容可 **检索**的字段。 使用该搜索属性呈现搜索结果时，会出现重大性能问题。 例如， [ServiceNow](https://www.servicenow.com)知识库文章的**文本**内容字段。
+* 仅属性在搜索结果中标记为可检索的，并且可用于创建新式结果类型 (MRTs) 。
 * 只能将字符串属性标记为可搜索。
 
 > [!Note]
-> 创建连接后，**不能**修改架构。 若要执行此操作，您需要删除连接并创建一个新的连接。
+> 创建连接后， **不能** 修改架构。 若要执行此操作，您需要删除连接并创建一个新的连接。
 
 ### <a name="manage-search-permissions"></a>管理搜索权限
 
-访问控制列表（Acl）确定组织中的哪些用户可以访问每个数据项。 所有连接器都支持对所有用户都可见的搜索权限。
+访问控制列表 (Acl) 确定组织中的哪些用户可以访问每个数据项。 所有连接器都支持对所有用户都可见的搜索权限。
 
 ### <a name="set-the-refresh-schedule"></a>设置刷新计划
 
 刷新计划确定数据与 Microsoft Graph 和 Microsoft Search 中的索引同步的频率。 您可以通过两种方式安排刷新：完全爬网或增量爬网。
 
-通过**完全爬网**，搜索引擎将处理内容源中的每个项目并对其进行索引，而不考虑以前的爬网。 在下列情况下，完全爬网的效果最佳：
+通过 **完全爬网**，搜索引擎将处理内容源中的每个项目并对其进行索引，而不考虑以前的爬网。 在下列情况下，完全爬网的效果最佳：
 
 * 检测数据删除。
 * 增量爬网无法对内容进行爬网以对错误进行爬网。
@@ -103,7 +103,7 @@ ms.locfileid: "45387965"
 * 修改了爬网规则。
 * 需要 Microsoft Search 软件更新。 更新将修改搜索架构。
 
-使用**增量爬网**时，搜索引擎可以仅处理自上次成功爬网后创建或修改的项，并对这些项编制索引。 因此，并不会对内容源中的所有数据重新编制索引。 增量爬网最适用于检测内容、元数据、权限和其他更新。
+使用 **增量爬网**时，搜索引擎可以仅处理自上次成功爬网后创建或修改的项，并对这些项编制索引。 因此，并不会对内容源中的所有数据重新编制索引。 增量爬网最适用于检测内容、元数据、权限和其他更新。
 
 增量爬网比完全爬网快得多，因为未处理未更改的项目。 若要保持内容源和搜索索引之间的准确数据同步，您需要定期运行这两个爬网。
 
@@ -113,16 +113,16 @@ ms.locfileid: "45387965"
 
 ### <a name="review-connector-settings"></a>查看连接器设置
 
-配置连接器后，[管理员中心](https://admin.microsoft.com)将转到可查看您的设置的页面。 您可以在确认连接之前，通过配置过程来编辑任何设置。 若要了解详细信息，请参阅[管理连接器](manage-connector.md)。
+配置连接器后， [管理员中心](https://admin.microsoft.com) 将转到可查看您的设置的页面。 您可以在确认连接之前，通过配置过程来编辑任何设置。 若要了解详细信息，请参阅 [管理连接器](manage-connector.md)。
 
 ## <a name="next-steps-customize-the-search-results-page"></a>后续步骤：自定义搜索结果页
 
-通过 Microsoft Search 用户界面（UI），最终用户可以从你的[microsoft 365](https://www.microsoft.com/microsoft-365)生产力应用和更广泛的 microsoft 生态系统中搜索内容。 垂直搜索是指当用户在[Bing](https://Bing.com)中的[SharePoint](https://sharepoint.com/)、 [microsoft Office](https://Office.com)和 microsoft 搜索中查看搜索结果时显示的选项卡。 您可以自定义搜索纵向以缩小结果范围，以便只显示特定类型的搜索结果。 这些纵向显示为搜索结果页顶部的选项卡。 新式结果类型（MRT.LOG）是指定如何显示结果的 UI。
+通过 Microsoft Search 用户界面 (UI) ，最终用户可以从你的 [microsoft 365](https://www.microsoft.com/microsoft-365) 效率应用和更广泛的 microsoft 生态系统中搜索内容。 垂直搜索是指当用户在[Bing](https://Bing.com)中的[SharePoint](https://sharepoint.com/)、 [microsoft Office](https://Office.com)和 microsoft 搜索中查看搜索结果时显示的选项卡。 您可以自定义搜索纵向以缩小结果范围，以便只显示特定类型的搜索结果。 这些纵向显示为搜索结果页顶部的选项卡。 MRT.LOG)  (新式结果类型是指定如何显示结果的 UI。
 
 创建您自己的纵向和结果类型，以便最终用户可以查看来自新连接的搜索结果。 如果不执行此步骤，则连接中的数据不会显示在搜索结果页上。
 
-若要了解有关如何创建您的纵向和 MRTs 的详细信息，请参阅[搜索结果页面自定义](customize-search-page.md)。
+若要了解有关如何创建您的纵向和 MRTs 的详细信息，请参阅 [搜索结果页面自定义](customize-search-page.md)。
 
 ## <a name="how-do-i-know-the-connection-setup-worked"></a>我如何知道连接设置正常工作？
 
-转到 "[管理中心](https://admin.microsoft.com)" 的 "**连接器**" 选项卡下的已发布连接列表。 若要了解如何进行更新和删除，请参阅[管理连接器](manage-connector.md)。
+转到 "[管理中心](https://admin.microsoft.com)" 的 "**连接器**" 选项卡下的已发布连接列表。 若要了解如何进行更新和删除，请参阅 [管理连接器](manage-connector.md)。

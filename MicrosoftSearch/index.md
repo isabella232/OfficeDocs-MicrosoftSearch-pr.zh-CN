@@ -1,8 +1,8 @@
 ---
 title: Microsoft 搜索
-ms.author: anfowler
-author: adefowler
-manager: mnirkhe
+ms.author: jeffkizn
+author: jeffkizn
+manager: parulm
 ms.audience: Admin
 ms.topic: landing-page
 layout: LandingPage
@@ -14,13 +14,14 @@ search.appverid:
 - MOE150
 ms.assetid: 90d3190d-1add-490f-bef2-10b528252a2e
 description: Microsoft 搜索是一种企业搜索体验，通过为组织提供更多相关搜索结果来提高生产效率并节省时间
-ms.openlocfilehash: e6f805ae5d1f8d622d779d71d7375047ab99ce75
-ms.sourcegitcommit: 06f995ae7696a8cafcd12d19ed16a35d059b6abb
-ms.translationtype: HT
+ms.openlocfilehash: a9fe47012a5c4a97811f2a6028f0c1fa9c5037da
+ms.sourcegitcommit: 988c37610e71f9784b486660400aecaa7bed40b0
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "33858262"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47423006"
 ---
+<!-- markdownlint-disable no-inline-html -->
 # <a name="microsoft-search"></a>Microsoft 搜索
 
 <ul class="panelContent cardsW cols cols2">

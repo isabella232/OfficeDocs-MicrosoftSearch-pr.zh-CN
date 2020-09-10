@@ -1,7 +1,7 @@
 ---
 title: 连接器预览
-ms.author: mounika.narayanan
-author: monaray
+ms.author: monaray
+author: monaray97
 manager: shohara
 ms.audience: Admin
 ms.topic: article
@@ -12,20 +12,20 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解 microsoft Search 的 Microsoft Graph 连接器预览。
-ms.openlocfilehash: 4bcd8360957be69bc701e8b356cd222de32bfc5f
-ms.sourcegitcommit: 64eea81f8c1db9ee955013462a7b51612fb7d0b7
+ms.openlocfilehash: 81d169074a316b6ab07f47156e0f057e50c12e3e
+ms.sourcegitcommit: 988c37610e71f9784b486660400aecaa7bed40b0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "44604380"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47422889"
 ---
 # <a name="microsoft-graph-connectors-preview"></a>Microsoft Graph 连接器预览
 
-Microsoft Graph 连接器和 Microsoft 搜索 Api （查询和索引）当前处于预览状态。 若要获取对连接器功能的访问权限，必须在租户中启用目标发布选项。 这是一个早期预览，没有服务级别保证。 我们鼓励客户尝试连接器功能并提供反馈。 在预览期间，我们不建议使用连接器来实现生产目的。
+Microsoft Graph 连接器和 Microsoft Search Api (查询和索引) 当前处于预览状态。 若要获取对连接器功能的访问权限，必须在租户中启用目标发布选项。 这是一个早期预览，没有服务级别保证。 我们鼓励客户尝试连接器功能并提供反馈。 在预览期间，我们不建议使用连接器来实现生产目的。
 
 ## <a name="set-up-targeted-release"></a>设置目标版本
 
-若要尝试连接器，必须为组织中的所有用户设置**目标 "发布**" 选项。 若要了解有关目标发布选项及其设置方式的详细信息，请参阅[在 Office 365 中设置标准或目标发布选项](https://docs.microsoft.com/office365/admin/manage/release-options-in-office-365?view=o365-worldwide)。
+若要尝试连接器，必须为组织中的所有用户设置 **目标 "发布** " 选项。 若要了解有关目标发布选项及其设置方式的详细信息，请参阅 [在 Office 365 中设置标准或目标发布选项](https://docs.microsoft.com/office365/admin/manage/release-options-in-office-365?view=o365-worldwide)。
 
 ## <a name="choose-a-preview-environment"></a>选择预览环境
 

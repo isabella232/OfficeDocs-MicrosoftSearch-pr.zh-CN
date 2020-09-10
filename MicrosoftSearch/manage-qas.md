@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7e3432e6-5317-4d63-90b0-52da6fddd343
 description: 单独查找和更新答案，或使用 Microsoft Search tools 以一次性编辑 Q&。
-ms.openlocfilehash: 78a6ee0ff14f3347b0b2e2a65cc1ee0f68500981
-ms.sourcegitcommit: 9ba062f8b632a74e56ad7ec4dffaa1d8dab57614
+ms.openlocfilehash: 2a8b0727ef3540a35d617cf6c8bae7b0d99767a8
+ms.sourcegitcommit: 988c37610e71f9784b486660400aecaa7bed40b0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44996082"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47422997"
 ---
 # <a name="manage-qas"></a>管理问答
 
@@ -26,9 +26,8 @@ ms.locfileid: "44996082"
 
 ## <a name="add-or-edit-a-single-qa"></a>添加或编辑单个问答
 
-1. 转到 **Microsoft 365 管理中心**。
-1. 在导航窗格中，转到 "**设置**  >  **Microsoft Search**  >  **问答**  >  [**问答"&**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/qnas)
-1. 若要添加问答，请选择“**新增**”。
+1. 在 [Microsoft 365 管理中心](https://admin.microsoft.com)，转到 [**Q&**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/qnas)
+1. 若要将 Q&添加，请选择 " **添加**"。
 若要编辑问答，请在相关问答列表中选择问答。 在你添加或编辑信息时，预览将随之自动更新。
 1. 保存所做的更改。
 
@@ -61,8 +60,8 @@ ms.locfileid: "44996082"
 
 目前，浏览器扩展适用于 Microsoft Edge 和 Chrome。
 
-- 若要下载边缘（旧版）的扩展，请转到[Microsoft Store](https://www.microsoft.com/p/microsoft-search-content-creator/9nrqdbcbwq55?activetab=pivot:overviewtab)。
-- 若要下载分机版式或边缘（Chromium），请转到[Chrome web store](https://chrome.google.com/webstore/detail/microsoft-search-content/nocnablpaoeecfmfnjoheefkogmleipm)。
+- 若要下载边缘 (旧版) 的扩展，请转到 [Microsoft Store](https://www.microsoft.com/p/microsoft-search-content-creator/9nrqdbcbwq55?activetab=pivot:overviewtab)。
+- 若要下载扩展名 Chrome 或 Edge (Chromium) ，请转到 [Chrome web store](https://chrome.google.com/webstore/detail/microsoft-search-content/nocnablpaoeecfmfnjoheefkogmleipm)。
 
 ## <a name="bulk-add-or-edit-qas"></a>批量添加或编辑问答
 
@@ -77,10 +76,10 @@ ms.locfileid: "44996082"
 导入或导出 Q&为：
 
 1. 在“问答”选项卡的右上角，选择“**导入**”。
-选择 "**导出**" 以下载所有现有的 Q&，如 .csv 文件中所示。
+选择 " **导出** " 以下载所有现有的 Q&，如 .csv 文件中所示。
 1. 在右侧窗格中，选择要使用 .csv 文件导入的选项。 下载模板文件以获取必需字段和详细信息的列表。
 1. 添加或编辑 Q&模板文件中的详细信息，并将其保存到计算机上。
-1. 在 "**导入 Q&** 窗格中，选择"**浏览**"，然后选择要导入的 .csv 文件。
+1. 在 " **导入 Q&** 窗格中，选择" **浏览**"，然后选择要导入的 .csv 文件。
 1. 选择“**导入**”。
 
 重要的模板文件提示：
@@ -89,10 +88,10 @@ ms.locfileid: "44996082"
 - 如果包含现有书签的 **Id**，则会将其替换为导入文件中的信息。
 - 如果现有书签具有相同的标题或 URL，则将使用导入文件中的信息更新该书签。
 - 并不是模板文件中的所有字段都是必需的，并且根据书签状态不同，必需的字段也会有所不同。
-- 根据 "**省/市/自治区**" 字段，将书签保存为*草稿*、*建议*或*计划*或自动发布。
+- 根据 " **省/市/自治区** " 字段，将书签保存为 *草稿*、 *建议*或 *计划*或自动发布。
 - 对于管理多个组织的合作伙伴：您可以从一个组织中导出您的书签并将其导入到另一个组织中。 但是，在导入之前，你必须删除 **Id** 列中的数据。
 
 > [!NOTE]
 > 您不能导入 Q&，就像模板文件中有任何错误一样。 若要防止错误，请确保您的导入文件格式正确，并包含所有必需的信息。
 
-有关避免错误的详细信息，请参阅[防止导入错误](manage-bookmarks.md#prevent-import-errors)。
+有关避免错误的详细信息，请参阅 [防止导入错误](manage-bookmarks.md#prevent-import-errors)。
