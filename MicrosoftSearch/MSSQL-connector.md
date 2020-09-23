@@ -1,5 +1,5 @@
 ---
-title: Microsoft SQL server 和 Azure SQL connector for Microsoft Search
+title: Microsoft SQL Server 和 Azure SQL connector for Microsoft Search
 ms.author: monaray
 author: monaray97
 manager: mnirkhe
@@ -11,48 +11,46 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: 设置 Microsoft SQL server 或 Azure SQL connector for Microsoft Search。
-ms.openlocfilehash: e67b1e6175744fd741b265c056798f18dc28b1d4
-ms.sourcegitcommit: 988c37610e71f9784b486660400aecaa7bed40b0
+description: 设置 Microsoft SQL Server 或 Azure SQL connector for Microsoft Search。
+ms.openlocfilehash: 71fd8b6cdf090c9dda9ac94973661d865536a984
+ms.sourcegitcommit: 6baf6f4b8a6466ee1a6ad142be8541f659fcf5d9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47422907"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "48214485"
 ---
-# <a name="azure-sql-and-microsoft-sql-server-connectors"></a>Azure SQL 和 Microsoft SQL server 连接器
+# <a name="azure-sql-and-microsoft-sql-server-connectors"></a>Azure SQL 和 Microsoft SQL Server 连接器
 
-通过 Microsoft SQL server 或 Azure SQL 连接器，你的组织可以发现内部部署 SQL Server 数据库中的数据，也可以从云中的 Azure SQL 实例承载的数据库中对数据进行索引。 连接器将指定的内容索引到 Microsoft Search 中。 若要使索引保持对源数据的最新，它支持定期完全爬网和增量爬网。 使用这些 SQL 连接器，您还可以限制对特定用户的搜索结果的访问。
+通过 Microsoft SQL Server 或 Azure SQL 连接器，你的组织可以发现内部部署 SQL Server 数据库中的数据，也可以从云中的 Azure SQL 实例承载的数据库中对数据进行索引。 连接器将指定的内容索引到 Microsoft Search 中。 若要使索引保持对源数据的最新，它支持定期完全爬网和增量爬网。 使用这些 SQL 连接器，您还可以限制对特定用户的搜索结果的访问。
 
-本文适用于 Microsoft 365 管理员或任何配置、运行和监控 Microsoft SQL server 或 Azure SQL 连接器的人。 它说明了如何配置连接器和连接器功能、限制和故障排除技术。
+本文适用于 Microsoft 365 管理员或任何配置、运行和监控 Microsoft SQL Server 或 Azure SQL 连接器的人。 它说明了如何配置连接器和连接器功能、限制和故障排除技术。
 
-## <a name="install-a-data-gateway-required-for-on-premises-microsoft-sql-server-connector-only"></a>仅在本地 Microsoft SQL server 连接器中安装数据网关 (所需) 
+## <a name="install-a-data-gateway-required-for-on-premises-microsoft-sql-server-connector-only"></a>仅在本地 Microsoft SQL Server 连接器中安装数据网关 (所需) 
 
 为了访问第三方数据，您必须安装和配置 Microsoft Power BI 网关。 若要了解详细信息，请参阅 [安装本地网关](https://docs.microsoft.com/data-integration/gateway/service-gateway-install) 。  
 
 ## <a name="register-an-app"></a>注册应用
+对于 Azure SQL 连接器，必须在 Azure Active Directory 中注册应用，以允许 Microsoft Search 应用访问用于索引的数据。 若要了解有关注册应用程序的详细信息，请参阅 Microsoft Graph 文档了解如何 [注册应用](https://docs.microsoft.com/graph/auth-register-app-v2)。 
 
-对于 Azure SQL 连接器，必须在 Azure Active Directory 中注册应用，以允许 Microsoft Search 应用访问用于索引的数据。 若要了解有关注册应用程序的详细信息，请参阅 Microsoft Graph 文档了解如何 [注册应用](https://docs.microsoft.com/graph/auth-register-app-v2)。
-
-完成应用注册并记下应用程序名称、应用程序 (客户端) ID 和租户 ID 之后，需要 [生成新的客户端密码](https://docs.microsoft.com/azure/healthcare-apis/register-confidential-azure-ad-client-app#application-secret)。 客户端密码只会显示一次。 请记住注意 & 将客户端密码安全地存储在一起。 在 Microsoft Search 中配置新连接时，请使用客户端 ID 和客户端密码。
+完成应用注册并记下应用程序名称、应用程序 (客户端) ID 和租户 ID 之后，需要 [生成新的客户端密码](https://docs.microsoft.com/azure/healthcare-apis/register-confidential-azure-ad-client-app#application-secret)。 客户端密码只会显示一次。 请记住注意 & 将客户端密码安全地存储在一起。 在 Microsoft Search 中配置新连接时，请使用客户端 ID 和客户端密码。 
 
 若要将注册的应用程序添加到 Azure SQL 数据库，需要执行以下操作：
-
-- 登录到 Azure SQL DB
-- 打开新的查询窗口
-- 通过运行命令 "创建来自外部提供程序的用户 [app name]" 来创建新用户
-- 通过运行命令 "exec sp_addrolemember" db_datareader "、" [app name] "或" ALTER ROLE db_datareader ADD MEMBER [app name] "将用户添加到角色
+ - 登录到 Azure SQL DB
+ - 打开新的查询窗口
+ - 通过运行命令 "创建来自外部提供程序的用户 [app name]" 来创建新用户
+ - 通过运行命令 "exec sp_addrolemember" db_datareader "、" [app name] "或" ALTER ROLE db_datareader ADD MEMBER [app name] "将用户添加到角色
 
 >[!NOTE]
 >若要撤销在 Azure Active Directory 中注册的任何应用程序的访问权限，请参阅 Azure 文档中有关 [删除已注册的应用程序](https://docs.microsoft.com/azure/active-directory/develop/quickstart-remove-app)的说明。
 
 ## <a name="connect-to-a-data-source"></a>连接到数据源
 
-若要将 Microsoft SQL server 连接器连接到数据源，必须配置要爬网的数据库服务器和本地网关。 然后，您可以使用所需的身份验证方法连接到数据库。
+若要将 Microsoft SQL Server 连接器连接到数据源，必须配置要爬网的数据库服务器和本地网关。 然后，您可以使用所需的身份验证方法连接到数据库。
 
 对于 Azure SQL 连接器，只需指定要连接到的服务器名称或 IP 地址。 Azure SQL 连接器仅支持 Azure Active Directory Open ID connect (OIDC) authentication 连接到数据库。
 
 > [!NOTE]
-> 您的数据库必须运行 SQL server 版本2008或更高版本，Microsoft SQL server 连接器才能连接。
+> 您的数据库必须运行 SQL server 版本2008或更高版本，Microsoft SQL Server 连接器才能连接。
 
 若要搜索数据库内容，您必须在配置连接器时指定 SQL 查询。 这些 SQL 查询需要将要编制索引的所有数据库列命名 (即 source properties) ，包括要获取所有列所需执行的任何 SQL 联接。 若要限制对搜索结果的访问权限，您必须在配置连接器时指定 SQL 查询中 (Acl) 的访问控制列表。
 
@@ -81,22 +79,6 @@ ms.locfileid: "47422907"
 * **DeniedGroups**：此选项指定 **不** 具有对搜索结果的访问权限的用户组。 在以下示例中，组 engg-team@contoso.com 和 pm-team@contoso.com 无权访问订单 Id 为15的记录，而其他人有权访问此记录。  
 
 ![显示带有示例属性的 OrderTable 和 AclTable 的示例数据](media/MSSQL-ACL1.png)
-
-### <a name="supported-data-types"></a>支持的数据类型
-
-下表汇总了 MS SQL 和 Azure SQL 连接器中支持的 SQL 数据类型。 该表还汇总了受支持的 SQL 数据类型的索引数据类型。 若要了解有关 Microsoft Graph 连接器支持编制索引的数据类型的详细信息，请参阅 [属性资源类型](https://docs.microsoft.com/graph/api/resources/property?view=graph-rest-beta#properties)的文档。
-<!-- markdownlint-disable no-inline-html -->
-| 类别 | 源数据类型 | 索引数据类型 |
-| ------------ | ------------ | ------------ |
-| 日期和时间 | date <br> datetime <br> datetime2 <br> smalldatetime | datetime |
-| 精确数值 | bigint <br> int <br> smallint <br> tinyint | int64 |
-| 精确数值 | 位 | boolean |
-| 近似数值 | 点数 <br> 实时 | double |
-| 字符串 | 资料 <br> varchar <br> text | string |
-| Unicode 字符字符串 | nchar <br> nvarchar <br> ntext | 字符串 |
-| 其他数据类型 | uniqueidentifier | 字符串 |
-
-对于目前不直接支持的任何其他数据类型，需要将该列显式转换为受支持的数据类型。
 
 ### <a name="watermark-required"></a> (必需的水印) 
 
@@ -149,6 +131,6 @@ ms.locfileid: "47422907"
 
 在预览版本中，SQL 连接器具有以下限制：
 
-* Microsoft SQL server 连接器：本地数据库必须运行 SQL server 版本2008或更高版本。
+* Microsoft SQL Server 连接器：本地数据库必须运行 SQL Server 版本2008或更高版本。
 * 仅通过使用用户主体名称 (UPN) 、Azure Active Directory (Azure AD) 或 Active Directory 安全性来支持 Acl。
 * 不支持在数据库列中对多信息内容编制索引。 此类内容的示例包括 HTML、JSON、XML、blob 和文档 parsings，它们作为数据库列中的链接存在。
