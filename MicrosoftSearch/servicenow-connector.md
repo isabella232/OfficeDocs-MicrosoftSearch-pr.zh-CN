@@ -1,8 +1,8 @@
 ---
 title: 用于 Microsoft 搜索的 ServiceNow 连接器
-ms.author: monaray
-author: monaray97
-manager: jameslau
+ms.author: mnirkhe
+author: TrishaMc1
+manager: mnirkhe
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 设置用于 Microsoft 搜索的 ServiceNow 连接器
-ms.openlocfilehash: 29e8e490f114ce8537ddb973ed16ccb34f24f82f
-ms.sourcegitcommit: 988c37610e71f9784b486660400aecaa7bed40b0
+ms.openlocfilehash: 357722f83e7f276615d231c8d3e56016bc17ba6e
+ms.sourcegitcommit: be0c64845477127d73ee24dc727e4583ced3d0e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47422862"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48206956"
 ---
 # <a name="servicenow-connector"></a>ServiceNow 连接器
 
@@ -33,15 +33,15 @@ ms.locfileid: "47422862"
 
 若要从 ServiceNow 对内容进行身份验证和同步，请选择以下两个受支持的方法之一：
 
-1. 基本身份验证
-2.  (建议的 OAuth) 
+ - 基本身份验证
+ -  (建议的 OAuth) 
 
 > [!Note]
 > 若要使用 OAuth 进行身份验证，ServiceNow 管理员需要在你的 ServiceNow 实例中预配终结点，以便 Microsoft Search 应用可以访问该实例。 若要了解详细信息，请参阅在 ServiceNow 文档中 [创建客户端以访问实例的终结点](https://docs.servicenow.com/bundle/newyork-platform-administration/page/administer/security/task/t_CreateEndpointforExternalClients.html) 。
 
 下表提供了有关如何填写终结点创建表单的指导：
 
-**Field** | **说明** | **推荐值**
+字段 | 说明 | 推荐值
 --- | --- | ---
 名称 | 此唯一值标识您需要 OAuth 访问的应用程序。 | Microsoft 搜索
 客户端 ID | 应用程序的只读、自动生成的唯一 ID。 实例在请求访问令牌时使用客户端 ID。 | 不适用

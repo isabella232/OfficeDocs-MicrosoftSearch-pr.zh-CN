@@ -2,7 +2,7 @@
 title: 用于 Microsoft 搜索的 Azure Data Lake 连接器
 ms.author: monaray
 author: monaray97
-manager: jameslau
+manager: shohara
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 设置 Azure Data Lake Storage Gen2 connector for Microsoft Search
-ms.openlocfilehash: 788b7106c15cd9773c86f46f91ba0e91e38028f3
-ms.sourcegitcommit: 988c37610e71f9784b486660400aecaa7bed40b0
+ms.openlocfilehash: 01fea60e91af5ba321ceb00578ea2b0745c9c394
+ms.sourcegitcommit: be0c64845477127d73ee24dc727e4583ced3d0e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47422925"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48206929"
 ---
 # <a name="azure-data-lake-storage-gen2-connector"></a>Azure Data Lake Storage Gen2 connector
 
@@ -29,7 +29,12 @@ ms.locfileid: "47422925"
 ### <a name="primary-storage-connection-string"></a>主存储连接字符串 
 在 " **身份验证和配置** " 屏幕上，提供主存储连接字符串。 该字符串是允许访问您的存储帐户所必需的。 若要查找您的连接字符串，请转到 [Azure 门户](https://ms.portal.azure.com/#home) ，并导航到相关 Azure 存储帐户的 " **密钥** " 部分。 将连接字符串复制并粘贴到屏幕上的相应字段中。
 
-如果您不想提供 **AccountKey** (主存储连接字符串中的参数) ，您需要授予对 Graph 连接器服务的读取访问权限。 导航到 Azure 存储帐户的 " **访问控制** " 选项卡，然后按照中的说明授予对以下应用程序的访问权限：
+如果您不想提供 **AccountKey** (主存储连接字符串中的参数) ，您需要为以下角色授予对我们的 Graph 连接器服务的访问权限。 
+* 存储 Blob 数据读取器
+* 存储队列数据参与者
+* 存储 Blob 代理者仅对分层存储)  (
+
+导航到 Azure 存储帐户的 " **访问控制** " 选项卡，然后按照中的说明授予对以下应用程序的访问权限：
 * **第一方应用程序 ID：** 56c1da01-2129-48f7-9355-af6d59d42766
 * **第一方应用程序名称：** Graph 连接器服务
 

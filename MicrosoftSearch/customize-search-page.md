@@ -1,7 +1,7 @@
 ---
 title: 自定义 Microsoft Search 页面
-ms.author: jypal
-author: jypal6
+ms.author: jeffkizn
+author: jypal
 manager: jeffkizn
 ms.audience: Admin
 ms.topic: article
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 添加搜索纵向和自定义搜索结果
-ms.openlocfilehash: f9ecaa0c7aaaf75b40ed87db45f6ec4921488212
-ms.sourcegitcommit: 988c37610e71f9784b486660400aecaa7bed40b0
+ms.openlocfilehash: 8b212f385d126b4f6c3513b066936db28387377f
+ms.sourcegitcommit: be0c64845477127d73ee24dc727e4583ced3d0e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47422979"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48206965"
 ---
 # <a name="customize-the-search-results-page"></a>自定义搜索结果页
 
@@ -107,7 +107,7 @@ ms.locfileid: "47422979"
 
 下面列出了你可能遇到的常见问题和解决这些问题的措施。
 
-|Error  |Action  |
+|错误  |Action  |
 |---------|---------|
 | 我在垂直处看到 "出现了错误" 错误消息。 | 需要垂直和结果类型才能完成设置。 请确保已为相同的内容源创建了这两个。 |
 | 我看不到结果布局，尽管我创建了它。 | 此过程需要几分钟时间，因为通常会缓存这些设置。 请等待几分钟，然后重试。        |
