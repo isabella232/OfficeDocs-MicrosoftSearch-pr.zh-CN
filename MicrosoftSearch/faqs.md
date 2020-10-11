@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 获取有关企业搜索和 Microsoft 搜索的常见问题解答
-ms.openlocfilehash: c4b0d888e7765cf965832c252a79bdcf8aa5f6cf
-ms.sourcegitcommit: 988c37610e71f9784b486660400aecaa7bed40b0
+ms.openlocfilehash: 5a134116c98b4feea0c04909349ce4b972c59ffe
+ms.sourcegitcommit: 0b8c3c57384cecaa93c5cbaf3b3b30f8e20d1a69
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47422961"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48408435"
 ---
 <!-- markdownlint-disable no-trailing-punctuation -->
 # <a name="frequently-asked-questions"></a>常见问题
@@ -60,3 +60,7 @@ ms.locfileid: "47422961"
 ## <a name="can-users-earn-microsoft-rewards-points-with-their-work-or-school-account"></a>用户能否通过其工作或学校帐户获得 Microsoft 奖励积分？
 
 Microsoft 搜索需要企业用户使用工作或学校帐户登录。 但是，用户无法通过这些帐户登录到 Microsoft 奖励计划。 不过，也存在企业用户可能看到奖励积分累积的实例。 当 Microsoft 搜索用户拥有通过 [Microsoft 帐户](https://www.microsoft.com/welcome?rtc=1)创建的奖励帐户时，可能会出现此情况。 （与 Microsoft 帐户关联的电子邮件地址可以来自 Outlook.com、Hotmail.com、Gmail、Yahoo 或其他提供商。）如果用户在相同浏览器规划中使用其工作帐户和 Microsoft 帐户交替登录，则积分可能会累积到期奖励帐户。 通过清除 cookie，用户可以在使用 Microsoft 搜索进行搜索时停止累积积分。
+
+## <a name="can-guest-users-leverage-microsoft-search-in-my-organization"></a>来宾用户能否在我的组织中利用 Microsoft 搜索？
+
+Microsoft 365 通过[来宾访问](https://docs.microsoft.com/microsoft-365/solutions/collaborate-with-people-outside-your-organization)实现与组织外部人员的丰富协作。 这些用户将能够对文档、网站、组、列表和库执行搜索操作。 但是，来宾用户将不会获得完整、个性化的 Microsoft 搜索体验，并且可能需要使用页面中的搜索框，而不是页眉中的统一 Microsoft 搜索框。
