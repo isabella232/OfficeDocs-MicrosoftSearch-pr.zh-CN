@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 为 Microsoft Search 配置 Microsoft 构建的连接器
-ms.openlocfilehash: 19a0c21911a9c5410e13a36f0bcc694af4a5c41a
-ms.sourcegitcommit: 988c37610e71f9784b486660400aecaa7bed40b0
+ms.openlocfilehash: ce2515b3eaa859a8fbb00d83c4727865ab55e174
+ms.sourcegitcommit: 6aea7102c94855e9f80711c0f3d7bf5833ce8fb5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47422853"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48464473"
 ---
 <!-- markdownlint-disable no-trailing-punctuation -->
 
@@ -64,7 +64,17 @@ ms.locfileid: "47422853"
 
 ### <a name="manage-the-search-schema"></a>管理搜索架构
 
-管理员可以设置搜索架构属性，以控制每个 source 属性的搜索功能。 搜索架构可帮助确定搜索结果页面上显示的结果以及最终用户可以查看和访问的信息。
+#### <a name="content-property"></a>Content 属性
+
+您可以从**content**属性下拉列表中选择任意字符串属性，以选择哪个源属性是 (项的全文索引) 项的**内容**属性。 或者，可以保留默认的选定属性（如果存在）。
+
+尤其重要的是，因为此属性用于内容的全文索引、搜索结果页面代码段生成、语言检测、HTML/文本支持、排名和相关性以及查询表述，所以选择正确的属性是非常重要的。
+
+如果选择**内容**的属性，则可以选择在[创建结果类型](customize-results-layout.md)时使用系统生成的属性**ResultSnippet** 。 此属性用作在查询时从 **content** 属性生成的动态代码段的占位符。 如果您的结果类型中使用此属性，则会在搜索结果中生成代码段。
+
+#### <a name="search-schema-attributes"></a>搜索架构属性
+
+您可以设置搜索架构属性，以控制每个 source 属性的搜索功能。 搜索架构可帮助确定搜索结果页面上显示的结果以及最终用户可以查看和访问的信息。
 
 搜索架构属性包括可 **搜索**、可 **查询**和可 **检索**。 下表列出了 Microsoft Graph 连接器支持和解释其功能的每个属性。
 
@@ -78,11 +88,14 @@ ms.locfileid: "47422853"
 
 ![可以通过添加或删除查询、搜索和检索函数来自定义连接器的架构。](media/manageschema.png)
 
-这些限制和建议适用于搜索架构设置：
+#### <a name="restrictions-and-recommendations-for-search-schema-settings"></a>搜索架构设置的限制和建议
 
-* 对于索引自定义类型的连接器，我们建议您 **不要标记包含** 主要内容可 **检索**的字段。 使用该搜索属性呈现搜索结果时，会出现重大性能问题。 例如， [ServiceNow](https://www.servicenow.com)知识库文章的**文本**内容字段。
+* **Content**属性仅可搜索。 在下拉列表中选择此属性后，将无法将此属性标记为可 **检索** 或可 **查询**。 当使用 **content** 属性呈现搜索结果时，会出现重大性能问题。 例如， [ServiceNow](https://www.servicenow.com)知识库文章的**文本**内容字段。
+
 * 仅属性在搜索结果中标记为可检索的，并且可用于创建新式结果类型 (MRTs) 。
+
 * 只能将字符串属性标记为可搜索。
+
 
 > [!Note]
 > 创建连接后， **不能** 修改架构。 若要执行此操作，您需要删除连接并创建一个新的连接。
