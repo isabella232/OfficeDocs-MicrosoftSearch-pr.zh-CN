@@ -12,19 +12,19 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 搜索的 Microsoft Graph 连接器概述
-ms.openlocfilehash: 2e3ca14b408ca6471c3163871c80fb24d62cff26
-ms.sourcegitcommit: be0c64845477127d73ee24dc727e4583ced3d0e6
+ms.openlocfilehash: d20c576c92c0ec2d794fc6f8fd21c829e468c086
+ms.sourcegitcommit: 995ce23d4e47a3456a02dba0ba7c9cd0de64528a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48206983"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48919480"
 ---
 # <a name="overview-of-microsoft-graph-connectors"></a>Microsoft Graph 连接器概述
 
 Microsoft Search 将对所有 [Microsoft 365](https://www.microsoft.com/microsoft-365) 数据编制索引，使其可供用户搜索。 使用 Microsoft Graph 连接器，你的组织可以将第三方数据编入索引，以显示在 Microsoft 搜索结果中。 第三方数据可以在内部部署或公共或私有云承载。 连接器扩展了可在 Microsoft 365 生产力应用和更广泛的 Microsoft 生态系统中搜索的内容源的类型。
 
 > [!IMPORTANT]
-> **免责声明**： microsoft Graph 连接器和 Microsoft Search api (查询和索引) 当前处于预览状态，可用于租户在目标版本中。 若要将连接器与 Microsoft 搜索配合使用或构建连接器，请选择进入 [目标版本](https://docs.microsoft.com/office365/admin/manage/release-options-in-office-365?view=o365-worldwide)。 若要了解有关预览的详细信息，请参阅 [连接器预览计划](connectors-preview.md)。
+> **免责声明** ： microsoft Graph 连接器和 Microsoft Search api (查询和索引) 当前处于预览状态，可用于租户在目标版本中。 若要将连接器与 Microsoft 搜索配合使用或构建连接器，请选择进入 [目标版本](https://docs.microsoft.com/office365/admin/manage/release-options-in-office-365?view=o365-worldwide)。 若要了解有关预览的详细信息，请参阅 [连接器预览计划](connectors-preview.md)。
 
 ## <a name="architecture"></a>体系结构
 
@@ -52,25 +52,25 @@ Microsoft Graph 连接器预览版本包含6个 Microsoft 构建的连接器。 
 
 以下各节提供了这些 Microsoft 构建的连接器的简要说明。 您可以在链接的文章中获取每个连接器的详细信息。
 
-- **[Azure Data Lake Storage Gen2](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-introduction)**。 使用此 Microsoft Graph 连接器，组织中的用户可以搜索存储在 Azure Blob 容器中的文件和内容。 Azure Data Lake Storage Gen2 连接器还会在指定的 Azure Data Lake 存储 Gen2 帐户中为已启用层次结构的文件夹编制索引。
+- **[Azure Data Lake Storage Gen2](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-introduction)** 。 使用此 Microsoft Graph 连接器，组织中的用户可以搜索存储在 Azure Blob 容器中的文件和内容。 Azure Data Lake Storage Gen2 连接器还会在指定的 Azure Data Lake 存储 Gen2 帐户中为已启用层次结构的文件夹编制索引。
 了解有关 [Azure Data Lake Storage Gen2 连接器](azure-data-lake-connector.md)的详细信息。
 
-- **[Azure DevOps](https://azure.microsoft.com/services/devops)**。 使用此 Microsoft Graph 连接器，组织中的用户可以从 Azure DevOps 实例中搜索工作项。
+- **[Azure DevOps](https://azure.microsoft.com/services/devops)** 。 使用此 Microsoft Graph 连接器，组织中的用户可以从 Azure DevOps 实例中搜索工作项。
 了解有关 [Azure DevOps 连接器](azure-devops-connector.md)的详细信息。
 
-- **[AZURE SQL](https://azure.microsoft.com/services/sql-database)**。 使用此 Microsoft Graph 连接器，组织中的用户可以从 Azure SQL 数据库中搜索数据。
+- **[AZURE SQL](https://azure.microsoft.com/services/sql-database)** 。 使用此 Microsoft Graph 连接器，组织中的用户可以从 Azure SQL 数据库中搜索数据。
 了解有关 [AZURE SQL 连接器](MSSQL-connector.md)的详细信息。
 
-- **企业网站**。 使用此 Microsoft Graph 连接器，组织中的用户可以在任何非 SharePoint 企业网站中搜索页面。
+- **企业网站** 。 使用此 Microsoft Graph 连接器，组织中的用户可以在任何非 SharePoint 企业网站中搜索页面。
 了解有关 [企业网站连接器](enterprise-web-connector.md)的详细信息。
 
-- **[MediaWiki](https://www.mediawiki.org/wiki/MediaWiki)**。 使用此 Microsoft Graph 连接器，用户可以在您的组织使用 MediaWiki 创建的 wiki 网站上搜索知识库文章。
+- **[MediaWiki](https://www.mediawiki.org/wiki/MediaWiki)** 。 使用此 Microsoft Graph 连接器，用户可以在您的组织使用 MediaWiki 创建的 wiki 网站上搜索知识库文章。
 了解有关 [MediaWiki 连接器](mediawiki-connector.md)的详细信息。
 
-- **[MICROSOFT SQL server](https://www.microsoft.com/sql-server/sql-server-2017)**。 使用此 Microsoft Graph 连接器，组织中的用户可以搜索本地 SQL server 数据库中的数据。
+- **[MICROSOFT SQL server](https://www.microsoft.com/sql-server/sql-server-2017)** 。 使用此 Microsoft Graph 连接器，组织中的用户可以搜索本地 SQL server 数据库中的数据。
 了解有关 [MICROSOFT SQL server 连接器](MSSQL-connector.md)的详细信息。
 
-- **[ServiceNow](https://www.servicenow.com)**。 使用此 Microsoft Graph 连接器，组织中的用户可以从你的 ServiceNow 实例搜索知识库文章。
+- **[ServiceNow](https://www.servicenow.com)** 。 使用此 Microsoft Graph 连接器，组织中的用户可以从你的 ServiceNow 实例搜索知识库文章。
 了解有关 [ServiceNow 连接器](servicenow-connector.md)的详细信息。
 
 ### <a name="connectors-from-our-partners"></a>合作伙伴的连接器
@@ -88,8 +88,6 @@ Microsoft Graph 连接器预览版本包含6个 Microsoft 构建的连接器。 
 
 ## <a name="license-requirements"></a>许可要求
 
-若要在搜索结果中查看连接器中的数据，用户必须具有以下 Microsoft 365 或 Office 365 订阅之一：
+你需要组织中的用户的有效 Microsoft 365 或 Office 365 许可证和足够的图形连接器配额，以便在搜索结果中查看连接器中的数据。
 
-- [Microsoft 365 或 Office 365 企业版 E3 或 E5](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans)
-
-- [Microsoft 365 或 Office 365 教育版 A3 或 A5](https://www.microsoft.com/microsoft-365/academic/compare-office-365-education-plans?activetab=tab:primaryr1)
+若要了解详细信息，请参阅 [许可证要求和定价](licensing.md)。

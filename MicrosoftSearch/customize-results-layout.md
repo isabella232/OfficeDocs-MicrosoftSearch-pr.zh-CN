@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 使用自适应卡片，创建布局以查看自定义搜索结果
-ms.openlocfilehash: 0856adfd85a921cf026cd59a8ca2c5beea2ffcf2
-ms.sourcegitcommit: 7ceefb7a96ae6886145b929791c7448c139366b4
+ms.openlocfilehash: 5bd42eded291781f5122cfede3759327b5222108
+ms.sourcegitcommit: 995ce23d4e47a3456a02dba0ba7c9cd0de64528a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "48595270"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48919507"
 ---
 <!-- markdownlint-disable no-hard-tabs -->
 # <a name="create-a-layout-to-customize-search-results"></a>创建布局以自定义搜索结果
@@ -155,7 +155,7 @@ ms.locfileid: "48595270"
 }
 ```
 
-示例数据：在**预览模式下**，在**示例数据编辑器**中指定示例数据以查看数据绑定卡。
+示例数据：在 **预览模式下** ，在 **示例数据编辑器** 中指定示例数据以查看数据绑定卡。
 
 ```json
 {
@@ -178,7 +178,7 @@ ms.locfileid: "48595270"
 
 ### <a name="show-snippet-on-search-result"></a>在搜索结果中显示代码段  
 
-在连接器结果的 **content** 属性上生成的动态代码段可以显示在搜索结果中。 **ResultSnippet** 是系统属性，充当为每个连接器结果生成的代码段的占位符属性。 若要在结果布局上显示代码段，则必须将 **ResultSnippet** system 属性映射到搜索结果布局中的相应字段（例如 "说明"）。 在每个结果上生成的代码段还突出显示代码片段中用户输入的查询词的匹配项。 
+在连接器结果的 **content** 属性上生成的动态代码段可以显示在搜索结果中。 **ResultSnippet** 是系统属性，充当为每个连接器结果生成的代码段的占位符属性。 若要在结果布局上显示代码段，则必须将 **ResultSnippet** system 属性映射到搜索结果布局中的相应字段（例如 "说明"）。 在每个结果上生成的代码段还突出显示代码片段中用户输入的查询词的匹配项。
 
 ## <a name="things-to-consider"></a>注意事项
 
@@ -198,7 +198,7 @@ ms.locfileid: "48595270"
 - 绑定值时，请勿定义无效的数据类型。 有关数据类型的详细信息，请参阅 [管理搜索架构](https://docs.microsoft.com/sharepoint/search/manage-the-search-schema)。
 - 避免通过遵循结果布局 JSON 的最大高度来裁剪结果页上的结果。 如果超出结果布局的最大高度，则结果页上的结果将被裁剪。
 - 不使用 `px` 元素属性中的值。
-- 当使用结果布局中的 **ResultSnippet** 属性在搜索结果中突出显示查询匹配时，请勿使用 markdown。 
+- 当使用结果布局中的 **ResultSnippet** 属性在搜索结果中突出显示查询匹配时，请勿使用 markdown。
 
 ## <a name="resources"></a>资源
 
