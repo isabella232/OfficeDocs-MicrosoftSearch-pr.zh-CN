@@ -23,6 +23,7 @@
 ### [企业网站](enterprise-web-connector.md)
 ### [MediaWiki](mediawiki-connector.md)
 ### [ServiceNow](servicenow-connector.md)
+## [许可](licensing.md)
 ## [反馈](connectors-feedback.md)
 ## [使用条款](terms-of-use.md)
 # 自定义和配置
