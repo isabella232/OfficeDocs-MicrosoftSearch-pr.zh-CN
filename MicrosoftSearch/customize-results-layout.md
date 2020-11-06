@@ -1,5 +1,5 @@
 ---
-title: 自定义搜索结果布局
+title: 管理搜索结果布局
 ms.author: jypal
 author: jypal6
 manager: jeffkizn
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 使用自适应卡片，创建布局以查看自定义搜索结果
-ms.openlocfilehash: 5bd42eded291781f5122cfede3759327b5222108
-ms.sourcegitcommit: 995ce23d4e47a3456a02dba0ba7c9cd0de64528a
+ms.openlocfilehash: 425e5404c14d500f6ecd84ad449dafb05bbfd31b
+ms.sourcegitcommit: 59435698bece013ae64ca2a68c43455ca10e3fdf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/05/2020
-ms.locfileid: "48919507"
+ms.locfileid: "48927177"
 ---
 <!-- markdownlint-disable no-hard-tabs -->
 # <a name="create-a-layout-to-customize-search-results"></a>创建布局以自定义搜索结果
@@ -198,7 +198,7 @@ ms.locfileid: "48919507"
 - 绑定值时，请勿定义无效的数据类型。 有关数据类型的详细信息，请参阅 [管理搜索架构](https://docs.microsoft.com/sharepoint/search/manage-the-search-schema)。
 - 避免通过遵循结果布局 JSON 的最大高度来裁剪结果页上的结果。 如果超出结果布局的最大高度，则结果页上的结果将被裁剪。
 - 不使用 `px` 元素属性中的值。
-- 当使用结果布局中的 **ResultSnippet** 属性在搜索结果中突出显示查询匹配时，请勿使用 markdown。
+- 请勿在结果布局中将 markdown 与 **ResultSnippet** 属性一起使用，以在搜索结果中突出显示查询匹配项。
 
 ## <a name="resources"></a>资源
 

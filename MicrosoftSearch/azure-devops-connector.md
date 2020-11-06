@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 设置 Azure DevOps connector for Microsoft Search
-ms.openlocfilehash: 1030dd2b508e5364f53f92e7c8ce8c12c040ce70
-ms.sourcegitcommit: 85d40512e8616c851da1a38c137ca0e4e8625813
+ms.openlocfilehash: a0028c3b336c2b5e3d01bb14006ee0debb4524f2
+ms.sourcegitcommit: 59435698bece013ae64ca2a68c43455ca10e3fdf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47359718"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48927186"
 ---
 # <a name="azure-devops-connector"></a>Azure DevOps 连接器
 
@@ -69,15 +69,16 @@ ms.locfileid: "47359718"
 
 ![选择属性](media/ADO_choose_properties.png)
 
-## <a name="manage-the-search-schema"></a>管理搜索架构
-
-配置搜索架构映射。 您可以选择哪些属性可供 **查询**、可 **搜索** 和 **检索**。
-
 ## <a name="manage-search-permissions"></a>管理搜索权限
 
-Azure DevOps 连接器当前仅支持 **所有人都能看到**的搜索权限。 已编制索引的数据将显示在所有用户的搜索结果中。
+Azure DevOps 连接器当前仅支持 **所有人都能看到** 的搜索权限。 已编制索引的数据将显示在所有用户的搜索结果中。
 
-## <a name="set-the-refresh-schedule"></a>设置刷新计划
+## <a name="manage-search-schema"></a>管理搜索架构
+
+配置搜索架构映射。 您可以选择哪些属性可供 **查询** 、可 **搜索** 和 **检索** 。
+
+
+## <a name="set-refresh-schedule"></a>设置刷新计划
 
 Azure DevOps 连接器支持完全爬网和增量爬网的刷新计划。 完全爬网可查找以前同步到 Microsoft 搜索索引的已删除工作项。 将运行完全爬网以同步所有工作项。 若要同步新的工作项和对现有工作项的更新，您需要计划增量爬网。
 

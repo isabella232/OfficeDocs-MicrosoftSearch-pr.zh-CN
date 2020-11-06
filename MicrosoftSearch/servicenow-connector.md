@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 设置用于 Microsoft 搜索的 ServiceNow 连接器
-ms.openlocfilehash: f7ae05ad00a96a6f05780acfeb8c75911505ee6f
-ms.sourcegitcommit: 2ce86461e845c3ea84feb215df17685d2ef705c5
+ms.openlocfilehash: b60583e61687b13c7fd631cd1c4a9f6d663724e8
+ms.sourcegitcommit: 59435698bece013ae64ca2a68c43455ca10e3fdf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "48340853"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48927195"
 ---
 # <a name="servicenow-connector"></a>ServiceNow 连接器
 
@@ -28,11 +28,11 @@ ms.locfileid: "48340853"
 了解如何在 microsoft Search 中设置 microsoft [构建的连接器以](https://docs.microsoft.com/microsoftsearch/configure-connector)访问 microsoft 构建的连接器。 有关特定于 ServiceNow 连接器的特定配置，请见下面一文。
 
 ## <a name="connection-settings"></a>连接设置
-若要连接到你的 ServiceNow 数据，你需要组织的 **servicenow 实例 URL**、此帐户的凭据以及用于 OAuth 身份验证的客户端 ID 和客户端密码。  
+若要连接到你的 ServiceNow 数据，你需要组织的 **servicenow 实例 URL** 、此帐户的凭据以及用于 OAuth 身份验证的客户端 ID 和客户端密码。  
 
-您的组织的 **ServiceNow 实例 URL** 的外观通常如下所示 **https:// &lt; 您的组织域> service-now.com**。 除了此 URL，您还需要一个帐户，用于设置与 ServiceNow 的连接，以及允许 Microsoft Search 根据刷新计划定期更新 ServiceNow 中的文章。 帐户应具有 <em>知识</em> 角色。 [了解如何为 ServiceNow 帐户分配角色](https://docs.servicenow.com/bundle/paris-platform-administration/page/administer/users-and-groups/task/t_AssignARoleToAUser.html)。
+您的组织的 **ServiceNow 实例 URL** 的外观通常如下所示 **https:// &lt; 您的组织域> service-now.com** 。 除了此 URL，您还需要一个帐户，用于设置与 ServiceNow 的连接，以及允许 Microsoft Search 根据刷新计划定期更新 ServiceNow 中的文章。 帐户应具有 <em>知识</em> 角色。 [了解如何为 ServiceNow 帐户分配角色](https://docs.servicenow.com/bundle/paris-platform-administration/page/administer/users-and-groups/task/t_AssignARoleToAUser.html)。
 
-若要从 ServiceNow 验证和同步内容，请选择 **以下三** 种受支持的方法之一： 
+若要从 ServiceNow 验证和同步内容，请选择 **以下三** 种受支持的方法之一：
 1. 基本身份验证 
 2.  (建议的 ServiceNow OAuth) 
 3. Azure AD OpenID Connect
@@ -50,7 +50,7 @@ ms.locfileid: "48340853"
 名称 | 此唯一值标识您需要 OAuth 访问的应用程序。 | Microsoft 搜索
 客户端 ID | 应用程序的只读、自动生成的唯一 ID。 实例在请求访问令牌时使用客户端 ID。 | 不适用
 客户端密码 | 使用此共享机密字符串，ServiceNow 实例和 Microsoft Search 授权相互之间的通信。 | 将此视为密码，以遵循安全性最佳实践。
-重定向 URL | 授权服务器重定向到的必需回调 URL。 | https://gcs.office.com/v1.0/admin/oauth/callback
+重定向 URL | 授权服务器重定向到的必需回调 URL。 | https://gcs.office.com/v1.0/admin/oauth/callback
 徽标 URL | 包含应用程序徽标的图像的 URL。 | 不适用
 活动 | 选中此复选框可使应用程序注册表处于活动状态。 | 设置为活动
 刷新令牌生命期 | 刷新令牌有效的秒数。 默认情况下，刷新令牌在100天内过期 (8640000 秒) 。 | 31536000 (1 年) 
@@ -122,7 +122,7 @@ OIDC 提供程序 |  Azure AD
 OIDC 元数据 URL | 此格式必须采用 https \: //login.microsoftonline.com/"tenandId"/.well-known/openid-configuration <br/>将 "tenantID" 从步骤 1 (中的目录 (租户) ID 替换为) 不带引号的 ID。
 OIDC 配置缓存寿命范围 |  120
 应用程序 | 全球
-用户声明 | 子域
+用户声明 | sub
 用户字段 | 用户 ID
 启用 JTI 声明验证 | 禁用
 
@@ -148,13 +148,13 @@ OIDC 配置缓存寿命范围 |  120
 使用 "应用程序 ID" 作为 "客户端 (ID) " 中的 "应用程序 ID" 和 "客户端密钥" (从步骤 2) 在管理中心配置向导中使用 Azure AD OpenID Connect 向你的 ServiceNow 实例进行身份验证。
 
 ## <a name="filter-data"></a>筛选数据 
-使用 ServiceNow 查询字符串，可以指定用于同步文章的条件。 它类似于**SQL Select**语句中的**Where**子句。 例如，您可以选择仅对已发布和活动的文章编制索引。 若要了解如何创建自己的查询字符串，请参阅 [使用筛选器生成已编码的查询字符串](https://docs.servicenow.com/bundle/paris-platform-user-interface/page/use/using-lists/task/t_GenEncodQueryStringFilter.html)。
-
-## <a name="manage-the-search-schema"></a>管理搜索架构
-成功连接后，配置搜索架构映射。 您可以选择哪些属性可供 **查询**、 **搜索**和 **检索**。 若要了解有关管理搜索架构的详细信息，请参阅 [管理搜索架构](https://docs.microsoft.com/microsoftsearch/configure-connector#manage-the-search-schema)。
+使用 ServiceNow 查询字符串，可以指定用于同步文章的条件。 它类似于 **SQL Select** 语句中的 **Where** 子句。 例如，您可以选择仅对已发布和活动的文章编制索引。 若要了解如何创建自己的查询字符串，请参阅 [使用筛选器生成已编码的查询字符串](https://docs.servicenow.com/bundle/paris-platform-user-interface/page/use/using-lists/task/t_GenEncodQueryStringFilter.html)。
 
 ## <a name="manage-search-permissions"></a>管理搜索权限
-ServiceNow 连接器仅支持 **所有人都**能看到的搜索权限。 索引数据显示在搜索结果中，并对组织中的所有用户可见。
+ServiceNow 连接器仅支持 **所有人都** 能看到的搜索权限。 索引数据显示在搜索结果中，并对组织中的所有用户可见。
+
+## <a name="manage-the-search-schema"></a>管理搜索架构
+成功连接后，配置搜索架构映射。 您可以选择哪些属性可供 **查询** 、 **搜索** 和 **检索** 。 若要了解有关管理搜索架构的详细信息，请参阅 [管理搜索架构](https://docs.microsoft.com/microsoftsearch/configure-connector#manage-the-search-schema)。
 
 ## <a name="set-the-refresh-schedule"></a>设置刷新计划
 ServiceNow 连接器支持完全爬网和增量爬网的刷新计划。 我们建议您同时设置这两个。
@@ -162,6 +162,7 @@ ServiceNow 连接器支持完全爬网和增量爬网的刷新计划。 我们�
 完全爬网计划可查找以前同步到 Microsoft 搜索索引的已删除文章以及从同步筛选器中移出的所有文章。 首次连接到 ServiceNow 时，将运行完全爬网以同步所有知识库文章。 若要同步新项目并进行更新，需要安排增量爬网。
 
 对于完全爬网，建议默认值为一天，对于增量爬网，建议默认值为4小时。
+
 ## <a name="review-and-publish"></a>查看和发布
 配置连接器后，可以查看并发布连接。
 
