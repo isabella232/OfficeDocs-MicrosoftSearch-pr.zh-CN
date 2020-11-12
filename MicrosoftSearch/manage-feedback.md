@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ROBOTS: NoIndex
 description: 查看 Microsoft Search 中的用户反馈并对其执行操作
-ms.openlocfilehash: fd47403fd86be2e2fb1ba7baee7473958a8e5572
-ms.sourcegitcommit: 4b2cc0a4cd3d7cdcd8eb23a8baa9703173889a73
+ms.openlocfilehash: 332410cd29a7256cccd651c3a668fdf3eb473ba4
+ms.sourcegitcommit: 102371815e739da33d1711197cdc743ae8124baa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48986952"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "48996789"
 ---
 # <a name="managing-user-feedback"></a>管理用户反馈
 
@@ -32,7 +32,7 @@ ms.locfileid: "48986952"
 
 ![全局反馈表单](media/feedback/feedback-global-dialog.png)
 
-用户还可以选择将其查询和其他诊断信息连同类别和注释一起发送给 Microsoft。 诊断信息将包含一些个人数据，如用户标识符。 [了解](https://privacy.microsoft.com/en-US/privacystatement) 有关隐私的详细信息以及我们如何保护此数据。 诊断数据包含 Microsoft 为产品改进使用反馈项目所需的最关键信息。
+用户还可以选择将其查询和其他诊断信息连同类别和注释一起发送给 Microsoft。 [了解](https://privacy.microsoft.com/en-US/privacystatement) 有关隐私的详细信息以及我们如何保护此数据。 诊断数据包含 Microsoft 为产品改进使用反馈项目所需的最关键信息。
 
 大多数反馈提交都显示在 Microsoft 搜索管理中心的 " [反馈](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/feedback) " 部分。 与 **我要建议的内部链接** 类别一起发送的反馈在 " [书签](https://admin-ignite.microsoft.com/Adminportal/Home#/MicrosoftSearch/bookmarks) " 部分中显示为建议的书签，可通过 " **建议** 的状态" 筛选来查看。
 
