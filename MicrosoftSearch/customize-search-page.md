@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 添加搜索纵向和自定义搜索结果
-ms.openlocfilehash: 8999a811b6ed0e04963a87ff0170869b38dba727
-ms.sourcegitcommit: 995ce23d4e47a3456a02dba0ba7c9cd0de64528a
+ms.openlocfilehash: 8522a6daf05b718ee6a066272da181be6e95905e
+ms.sourcegitcommit: 59cdd3f0f82b7918399bf44d27d9891076090f4f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48919498"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "49367484"
 ---
 # <a name="customize-the-search-results-page"></a>自定义搜索结果页
 
@@ -30,16 +30,27 @@ ms.locfileid: "48919498"
 
 ## <a name="search-verticals-explained"></a>介绍的搜索纵向
 
-在 Microsoft 搜索结果页面的顶部有一排选项卡。 这些是搜索纵向。 垂直搜索仅显示特定类型或特定内容的结果。 例如， **文件** 或 **新闻** 。 默认情况下，Microsoft Search 将显示 **所有** 行业、 **人员** 、 **文件** 、 **网站** 和 **新闻** 。  
+在 Microsoft 搜索结果页面的顶部有一排选项卡。 这些是搜索纵向。 垂直搜索仅显示特定类型或特定内容的结果。 例如， **文件** 或 **新闻**。 默认情况下，Microsoft Search 将显示 **所有** 行业、 **人员**、 **文件**、 **网站** 和 **新闻**。  
 
 您可以添加与您的组织相关的搜索纵向。 这些将显示在 [SharePoint](https://sharepoint.com/)、 [Office](https://Office.com)和 [Bing](https://bing.com)中的 Microsoft 搜索结果页面上。 例如，您可以为与市场营销相关的内容创建一个垂直的，并根据每个组需要的信息类型创建另一个销售。 您可以将纵向添加到仅显示通过连接器索引的内容中的结果。  
 
->[!NOTE]
-> 纵向和结果类型当前在预览中作为 Microsoft Graph 连接器预览的一部分，不能用于驻留在 [SharePoint](https://sharepoint.com/)中的内容。 有关预览的详细信息，请参阅 [连接器预览](connectors-preview.md)。 若要参与预览，必须先提交 [Microsoft Graph 连接器预览注册表单](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbRxWYgu82J_RFnMMATAS6_chUNVYwNU1CMDNZUDBSSDZKWVo2RDJDRjRLQi4u)。
+### <a name="multiple-connections-in-a-vertical"></a>垂直中的多个连接
+
+现在，垂直搜索可以从多个连接器源呈现结果。 这为设计搜索结果页提供了更大的灵活性。 现有的垂直安装管理体验允许您选择 "内容源" 步骤中的多个连接。
+如果您准确地指派了尽可能多的语义标签，则会增强此体验。 可以在架构定义和摄取时添加语义标签。
+
+[以下](#configure-connector-step-5-assign-property-labels) 是有关如何创建和管理语义标签的其他信息。
+
+### <a name="things-you-should-know"></a>您应了解的事项
+
+1. 只能将连接添加为一个垂直下方的内容源。 不允许在多个行业中重用连接。
+2. 如果需要在添加了多个连接源的情况下，为垂直搜索设置查询，应使用常用的源属性来创建此类查询。
 
 ## <a name="things-to-consider"></a>注意事项
 
 开始之前，请确保已对连接器编制索引。 这可能最长为48个小时，具体取决于文件大小。
+
+无法为驻留在 [SharePoint](https://sharepoint.com/)中的内容创建垂直。
 
 有三个基本步骤可添加垂直：
 
@@ -57,16 +68,16 @@ ms.locfileid: "48919498"
 
 若要在 [SharePoint](https://sharepoint.com/) 主页、 [Office](https://office.com)或 [Bing](https://bing.com)中的 Microsoft 搜索上创建垂直，请按照以下步骤操作：
 
-1. 在  [Microsoft 365 管理中心](https://admin.microsoft.com)，转到 "  [**纵向**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/verticals)"。
-1. 选择 " **添加** " 以开始。  
+1. 在 [Microsoft 365 管理中心](https://admin.microsoft.com)，转到 " [**纵向**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/verticals)"。
+2. 选择 " **添加** " 以开始。  
 
 ### <a name="create-a-vertical-at-the-site-level"></a>在网站级别创建垂直
 
-1. 在您希望垂直的 [SharePoint](https://sharepoint.com/) 网站上，转到 " **设置** "。
-1. 选择 " **网站信息** "，然后 **查看 "所有网站设置** "。
-1. 查找 " **Microsoft search** " 部分，然后为 **此网站集选择 "配置 Microsoft search** "。
-1. 在导航窗格中，转到 "  **自定义体验** "，然后选择 " **纵向** " 选项卡。
-1. 若要添加垂直，请选择 " **添加** "。
+1. 在您希望垂直的 [SharePoint](https://sharepoint.com/) 网站上，转到 " **设置**"。
+2. 选择 " **网站信息** "，然后 **查看 "所有网站设置**"。
+3. 查找 " **Microsoft search** " 部分，然后为 **此网站集选择 "配置 Microsoft search**"。
+4. 在导航窗格中，转到 " **自定义体验**"，然后选择 " **纵向** " 选项卡。
+5. 若要添加垂直，请选择 " **添加**"。
   或者，若要编辑垂直，请在列表中选择它。
 
 请记住，将在禁用状态下创建纵向。 必须先启用它们，然后用户才能看到它们。
@@ -75,37 +86,43 @@ ms.locfileid: "48919498"
 
 您可以通过使用结果类型设计布局来定义结果在垂直方向的显示方式。 结果布局可让您直接在搜索结果中显示重要信息，因此用户无需选择每个结果即可查看他们是否找到了要查找的内容。
 
-搜索结果类型是使不同类型的搜索结果以不同方式显示的规则。它包含以下几个方面：
+### <a name="default-search-result-layout"></a>默认搜索结果布局
 
-- 用于比较每个搜索结果的 **一个或多个条件** ，例如搜索结果的内容源。  
+如果在配置连接器时 **标签** 和 **内容** 属性已正确映射到源属性，则将为连接器内容显示默认搜索结果布局。 标签 **标题** 是最重要的标签。 **强烈建议** 将属性分配给此标签以使用默认搜索结果布局。
+
+### <a name="create-your-own-result-type"></a>创建您自己的结果类型
+
+您可以决定创建自己的搜索结果布局，并通过创建 **结果类型** 来重写默认搜索结果布局。 搜索结果类型是使不同类型的搜索结果以不同方式显示的规则。 它包含以下几个方面：
+
+- 用于比较每个搜索结果的 **一个或多个条件**，例如搜索结果的内容源。  
 - 要用于满足条件的搜索结果的 **结果布局** 。 结果布局控制满足条件的所有结果在搜索结果页面上的显示和行为方式。
 
-**必须至少创建一个结果类型，才能在垂直方向上显示。** 您可以为每个垂直创建多个结果类型，从而允许您对不同类型的结果使用不同的布局。 例如，您可以自定义 *严重级别 1* 事件，使其具有更突出的颜色和与 *严重级别 3* 事件相比较大的字体。
+**如果没有执行合适的映射来显示默认搜索结果布局，则 Yyou 必须至少创建一个结果类型，才能在垂直方向上显示。** 您可以为每个垂直创建多个结果类型，从而允许您对不同类型的结果使用不同的布局。 例如，您可以自定义 *严重级别 1* 事件，使其具有更突出的颜色和与 *严重级别 3* 事件相比较大的字体。
 
 启动向导后，您可以通过步骤来定义结果类型的名称、内容源和条件。 您可以从列表视图定义结果类型的优先级。
   
 ### <a name="create-a-result-type-at-the-organization-level"></a>在组织级别创建结果类型
 
 1. 在 [Microsoft 365 管理中心](https://admin.microsoft.com)，转到 " [**结果类型**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/resulttypes)"。
-1. 若要添加 **结果类型** ，请选择 "  **添加** "。 若要编辑结果类型，请选择相关列表中的 "结果类型"。
+2. 若要添加 **结果类型**，请选择 " **添加**"。 若要编辑结果类型，请选择相关列表中的 "结果类型"。
 
 ### <a name="create-a-results-type-at-the-site-level"></a>在网站级别创建结果类型
 
-1. 在要创建结果类型的 [SharePoint](https://sharepoint.com/) 网站上，转到 " **设置** "。
-1. 选择 " **网站信息** "，然后 **查看 "所有网站设置** "。
-1. 查找 "Microsoft Search" 部分，然后为 **此网站集选择 "配置 Microsoft search** "。
-1. 在导航窗格中，转到 "  **自定义体验** "，然后选择 " **结果类型** " 选项卡。
-1. 若要添加结果类型，请选择 " **添加** "。  或者，若要编辑结果类型，请在列表中选择 "结果类型"。
+1. 在要创建结果类型的 [SharePoint](https://sharepoint.com/) 网站上，转到 " **设置**"。
+2. 选择 " **网站信息** "，然后 **查看 "所有网站设置**"。
+3. 查找 "Microsoft Search" 部分，然后为 **此网站集选择 "配置 Microsoft search**"。
+4. 在导航窗格中，转到 " **自定义体验**"，然后选择 " **结果类型** " 选项卡。
+5. 若要添加结果类型，请选择 " **添加**"。  或者，若要编辑结果类型，请在列表中选择 "结果类型"。
 
-### <a name="view-the-vertical-after-its-enabled"></a>在已启用时查看垂直
+## <a name="step-3-view-the-vertical-after-its-enabled"></a>步骤3：在启用垂直后查看
 
 在启用垂直后，可能需要一段时间才能进行查看。 如果您不希望在启用后等待，则可以将 **cacheClear = true** 追加到 [SharePoint](https://sharepoint.com/) 和 [Office](https://office.com) 中的 URL，以便立即查看垂直方向。
 
-## <a name="troubleshooting"></a>故障排除
+## <a name="troubleshooting"></a>疑难解答
 
 下面列出了你可能遇到的常见问题和解决这些问题的措施。
 
-|错误  |操作  |
+|错误  |Action  |
 |---------|---------|
 | 我在垂直处看到 "出现了错误" 错误消息。 | 需要垂直和结果类型才能完成设置。 请确保已为相同的内容源创建了这两个。 |
 | 我看不到结果布局，尽管我创建了它。 | 此过程需要几分钟时间，因为通常会缓存这些设置。 请等待几分钟，然后重试。        |

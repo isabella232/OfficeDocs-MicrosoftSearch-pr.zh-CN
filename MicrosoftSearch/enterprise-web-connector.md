@@ -12,23 +12,27 @@ search.appverid:
 - MET150
 - MOE150
 description: 设置企业网站连接器以进行 Microsoft Search
-ms.openlocfilehash: b4d9f837892bcfd795421530e0571fa0509a2761
-ms.sourcegitcommit: be0c64845477127d73ee24dc727e4583ced3d0e6
+ms.openlocfilehash: 4b9d8a8472c81c2bc647b3cef3cdb437073d36cf
+ms.sourcegitcommit: 59cdd3f0f82b7918399bf44d27d9891076090f4f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48206938"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "49367466"
 ---
 <!-- markdownlint-disable no-inline-html -->
 # <a name="enterprise-websites-connector"></a>企业网站连接器
 
-通过企业网站连接器，您的组织可以 **从其面向内部的网站中**索引文章和内容。 在配置了该网站的连接器和同步内容之后，最终用户可以从任何 Microsoft 搜索客户端搜索该内容。
+通过企业网站连接器，您的组织可以 **从其面向内部的网站中** 索引文章和内容。 在配置了该网站的连接器和同步内容之后，最终用户可以从任何 Microsoft 搜索客户端搜索该内容。
 
 本文适用于 [Microsoft 365](https://www.microsoft.com/microsoft-365) 管理员或任何配置、运行和监视企业网站连接器的人。 它说明了如何配置连接器和连接器功能、限制和故障排除技术。  
 
 ## <a name="connect-to-a-data-source"></a>连接到数据源
 
-若要连接到数据源，您需要根 URL 和一种形式的身份验证：无、基本身份验证或使用 [Azure Active Directory (AZURE AD) ](https://docs.microsoft.com/azure/active-directory/)的 OAuth 2.0。
+若要连接到数据源，您需要填写网站的根 URL 和要使用的身份验证类型：无、基本身份验证或使用 [Azure Active Directory (AZURE AD) ](https://docs.microsoft.com/azure/active-directory/)的 OAuth 2.0。
+
+### <a name="url"></a>URL
+
+使用 "URL" 字段指定要对其进行爬网的网站的根目录。 企业网站连接器将使用此 URL 作为起始点，并根据此 URL 中的所有链接进行爬网。
 
 ### <a name="authentication"></a>身份验证
 
@@ -45,23 +49,27 @@ ms.locfileid: "48206938"
 
 有关更多详细信息，请参阅 [快速入门：使用 Microsoft identity Platform 注册应用程序](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app)。
 
-### <a name="root-url"></a>根 URL
+## <a name="add-urls-to-exclude"></a>添加要排除的 Url
 
-根 URL 是启动爬网并用于身份验证的。 您可以从要对其进行爬网的网站的主页中获取 URL。
-
-## <a name="select-the-source-properties"></a>选择源属性
-
-根据企业网站的数据格式定义源属性。 但是，如果内容是敏感的或不值得爬网，则可以创建 **排除列表** ，以排除某些 url 的爬网。 若要创建排除列表，请浏览根 URL。 您可以选择在配置过程中将排除的 Url 添加到列表中。
+您可以根据需要创建 **排除列表** ，以排除某些 url 的爬网，如果该内容是敏感的或不值得爬网。 若要创建排除列表，请浏览根 URL。 您可以选择在配置过程中将排除的 Url 添加到列表中。
 
 ## <a name="manage-search-permissions"></a>管理搜索权限
 
- (Acl) 不支持访问控制列表。 因此，我们建议只将对组织中任何用户可见的网站进行连接。
+企业网站连接器仅支持 **所有人都** 能看到的搜索权限。 索引数据显示在搜索结果中，并对组织中的所有用户可见。
+
+## <a name="assign-property-labels"></a>分配属性标签
+
+通过从选项菜单中进行选择，可以为每个标签分配一个 source 属性。 虽然这一步并不是强制性的，但具有一些属性标签将改进搜索相关性，并确保最终用户更准确地搜索结果。
+
+## <a name="manage-schema"></a>管理架构
+
+在 " **管理架构** " 屏幕上，您可以选择更改架构属性， (可 **查询**、可 **搜索**、 **检索** 和 **可精简**) 与属性相关联，添加可选别名，然后选择 **Content** 属性。
 
 ## <a name="set-the-refresh-schedule"></a>设置刷新计划
 
-企业网站连接器仅支持完全爬网。 这意味着，在每次爬网期间，连接器都会读取网站的所有内容。 若要确保连接器获取足够的时间来读取内容，我们建议您设置一个较大的刷新计划间隔。 建议在一到两周之间进行计划刷新。
+企业网站连接器仅支持完全刷新。 这意味着连接器将在每次刷新期间对网站的所有内容进行重新爬网。 若要确保连接器获取足够的时间来对内容进行爬网，建议您设置一个较大的刷新计划间隔。 建议在一到两周之间进行计划刷新。
 
-## <a name="troubleshooting"></a>故障排除
+## <a name="troubleshooting"></a>疑难解答
 
 阅读网站的内容时，爬网可能会遇到下面的详细错误代码所表示的一些源错误。 若要获取有关错误类型的详细信息，请在选择该连接后转到 " **错误详细** 信息" 页。 单击 **错误代码** 以查看更多详细错误。 此外，请参阅 [管理连接器](https://docs.microsoft.com/microsoftsearch/manage-connector) 以了解详细信息。
 
@@ -82,4 +90,4 @@ ms.locfileid: "48206938"
 
 ## <a name="limitations"></a>限制
 
-企业网站连接器不支持搜索 **动态网页**上的数据。 这些网页的示例如 [Confluence](https://www.atlassian.com/software/confluence) 和 [Unily](https://www.unily.com/) 之类的内容管理系统中所示，或存储网站内容的数据库。
+企业网站连接器不支持搜索 **动态网页** 上的数据。 这些网页的示例如 [Confluence](https://www.atlassian.com/software/confluence) 和 [Unily](https://www.unily.com/) 之类的内容管理系统中所示，或存储网站内容的数据库。

@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 设置 Microsoft SQL Server 或 Azure SQL connector for Microsoft Search。
-ms.openlocfilehash: 71fd8b6cdf090c9dda9ac94973661d865536a984
-ms.sourcegitcommit: 6baf6f4b8a6466ee1a6ad142be8541f659fcf5d9
+ms.openlocfilehash: dc90693e7629c004ecc48b020262ec5cfd0808c0
+ms.sourcegitcommit: 59cdd3f0f82b7918399bf44d27d9891076090f4f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48214485"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "49367574"
 ---
 # <a name="azure-sql-and-microsoft-sql-server-connectors"></a>Azure SQL 和 Microsoft SQL Server 连接器
 
@@ -56,7 +56,7 @@ ms.locfileid: "48214485"
 
 ## <a name="full-crawl-required"></a>必需的完全爬网 () 
 
-在此步骤中，将配置运行对数据库的完全爬网的 SQL 查询。 完全爬网将选择要使其成为可 **查询**、可 **搜索**或可 **检索**的所有列或属性。 您还可以指定 ACL 列，以限制对特定用户或组的搜索结果访问。
+在此步骤中，将配置运行对数据库的完全爬网的 SQL 查询。 完全爬网将选择要使其成为可 **查询**、可 **搜索** 或可 **检索** 的所有列或属性。 您还可以指定 ACL 列，以限制对特定用户或组的搜索结果访问。
 
 > [!Tip]
 > 若要获取所需的所有列，可以联接多个表。
@@ -65,7 +65,7 @@ ms.locfileid: "48214485"
 
 ### <a name="select-data-columns-required-and-acl-columns-optional"></a>选择 "数据列" (必需的) 和 ACL 列 (可选的) 
 
-该示例演示如何选择包含用于搜索的数据的五个数据列：订单 Id、OrderTitle、OrderDesc、CreatedDateTime 和 IsDeleted。 若要设置每个数据行的查看权限，可以选择以下 ACL 列： AllowedUsers、AllowedGroups、DeniedUsers 和 DeniedGroups。 所有这些数据列都可以进行 **查询**、 **搜索**或 **检索**。
+该示例演示如何选择包含用于搜索的数据的五个数据列：订单 Id、OrderTitle、OrderDesc、CreatedDateTime 和 IsDeleted。 若要设置每个数据行的查看权限，可以选择以下 ACL 列： AllowedUsers、AllowedGroups、DeniedUsers 和 DeniedGroups。 所有这些数据列都可以进行 **查询**、 **搜索** 或 **检索**。
 
 选择数据列，如以下示例查询所示： `SELECT OrderId, OrderTitle, OrderDesc, AllowedUsers, AllowedGroups, DeniedUsers, DeniedGroups, CreatedDateTime, IsDeleted`
 
@@ -109,7 +109,7 @@ ms.locfileid: "48214485"
 
 支持使用以下 ID 类型作为 Acl：
 
-* **用户主体名称 (upn) **：用户主体名称 (UPN) 是电子邮件地址格式的系统用户的名称。 UPN (例如： john.doe@domain.com) 由用户名 (登录名) 、分隔符 (@ 符号) 和域名 (UPN 后缀) 组成。 
+* **用户主体名称 (upn)**：用户主体名称 (UPN) 是电子邮件地址格式的系统用户的名称。 UPN (例如： john.doe@domain.com) 由用户名 (登录名) 、分隔符 (@ 符号) 和域名 (UPN 后缀) 组成。 
 * **Azure Active Directory (AAD) ID**：在 Azure AD 中，每个用户或组都有一个对象 ID，它看起来像 "e0d3ad3d-0000-1111-2222-3c5f5c52ab9b" 这样的内容。
 * **Active Directory (AD) 安全 ID**：在本地 AD 安装中，每个用户和组都具有一个不可变的唯一安全标识符，其外观类似于-1-5-21-3878594291-2115959936-132693609-65242。 '
 
@@ -117,7 +117,7 @@ ms.locfileid: "48214485"
 
 ## <a name="incremental-crawl-optional"></a>增量爬网 (可选) 
 
-在此可选步骤中，提供用于运行数据库的增量爬网的 SQL 查询。 使用此查询，SQL 连接器可确定自上次增量爬网以来对数据所做的任何更改。 在完全爬网中，选择要使其成为可 **查询**、可 **搜索**或可 **检索**的所有列。 指定在完全爬网查询中指定的一组相同的 ACL 列。
+在此可选步骤中，提供用于运行数据库的增量爬网的 SQL 查询。 使用此查询，SQL 连接器可确定自上次增量爬网以来对数据所做的任何更改。 在完全爬网中，选择要使其成为可 **查询**、可 **搜索** 或可 **检索** 的所有列。 指定在完全爬网查询中指定的一组相同的 ACL 列。
 
 下图中的组件与完全爬网组件类似，但有一个例外。 在这种情况下，"ModifiedDateTime" 是选定的水印列。 查看 [完整的爬网步骤](#full-crawl-required) ，了解如何编写增量爬网查询，并查看以下图像作为示例。
 
@@ -126,6 +126,14 @@ ms.locfileid: "48214485"
 ## <a name="manage-search-permissions"></a>管理搜索权限
 
 您可以选择使用 [完全爬网屏幕中指定的 acl](#full-crawl-manage-search-permissions) ，也可以将其覆盖以使您的内容对所有人可见。
+
+## <a name="assign-property-labels"></a>分配属性标签
+
+通过从选项菜单中进行选择，可以为每个标签分配一个 source 属性。 虽然这一步并不是强制性的，但具有一些属性标签将改进搜索相关性，并确保最终用户更准确地搜索结果。
+
+## <a name="manage-schema"></a>管理架构
+
+在 " **管理架构** " 屏幕上，您可以选择更改架构属性， (可 **查询**、可 **搜索**、 **检索** 和 **可精简**) 与属性相关联，添加可选别名，然后选择 **Content** 属性。
 
 ## <a name="limitations"></a>限制
 

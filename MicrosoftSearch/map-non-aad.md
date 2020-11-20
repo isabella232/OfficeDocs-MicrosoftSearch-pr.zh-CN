@@ -11,14 +11,13 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-ROBOTS: NOINDEX, NOFOLLOW
 description: 如何映射非 AAD 标识的步骤
-ms.openlocfilehash: be479cfd9dad585e83b5a39ff3ce4a84b9d41676
-ms.sourcegitcommit: 77ec27736f3c8434b2ac47e10897ac2606ee8a03
+ms.openlocfilehash: cd7d0eb17678d69ec1966e4472b38c1f18c30809
+ms.sourcegitcommit: 59cdd3f0f82b7918399bf44d27d9891076090f4f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "48992840"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "49367655"
 ---
 # <a name="map-your-non-azure-ad-identities"></a>映射你的非 Azure AD 标识  
 
@@ -75,7 +74,7 @@ ms.locfileid: "48992840"
 在提供公式之后，您可以选择单击 " **预览** " 以查看数据源中5个随机用户的预览，并应用各自的用户映射。 预览的输出包括在步骤2中为这些用户选择的非 Azure AD 用户属性的值，以及针对该用户的步骤3中提供的最后一个公式的输出。 它还指示是否可以通过 "成功" 或 "失败" 图标将公式的输出解析为租户中的 Azure AD 用户。  
 
 >[!NOTE]
->如果单击 " **预览** " 后，如果一个或多个用户映射的状态为 "失败"，则仍可以继续创建连接。 预览显示5个随机用户及其从您的数据源的映射。 如果您提供的映射不会映射所有用户，则可能会遇到这种情况。
+>如果单击 " **预览**" 后，如果一个或多个用户映射的状态为 "失败"，则仍可以继续创建连接。 预览显示5个随机用户及其从您的数据源的映射。 如果您提供的映射不会映射所有用户，则可能会遇到这种情况。
 
 ## <a name="sample-non-azure-ad-mapping"></a>非 Azure AD 映射示例
 

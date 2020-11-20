@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 设置用于 Microsoft 搜索的 MediaWiki 连接器
-ms.openlocfilehash: d8aa4a99c353a80f7d3dcf768d8287200b17fdc6
-ms.sourcegitcommit: be0c64845477127d73ee24dc727e4583ced3d0e6
+ms.openlocfilehash: 7f6b34dcafc4b82ab3778ec1d7a4921383e44a44
+ms.sourcegitcommit: 59cdd3f0f82b7918399bf44d27d9891076090f4f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48206947"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "49367637"
 ---
 # <a name="mediawiki-connector"></a>MediaWiki 连接器
 
@@ -27,15 +27,19 @@ ms.locfileid: "48206947"
 
 ## <a name="connect-to-a-data-source"></a>连接到数据源
 
-输入您的 MediaWiki URL 和凭据以对连接进行身份验证。 你将需要以下信息： **租户 ID**、 **资源 ID**、 **客户端 ID**和 **客户端密码**。
-
-## <a name="manage-the-search-schema"></a>管理搜索架构
-
-成功连接后，配置搜索架构映射。 您可以选择哪些属性可供 **查询**、 **搜索**和 **检索**。
+输入您的 MediaWiki URL 和凭据以对连接进行身份验证。 你将需要以下信息： **租户 ID**、 **资源 ID**、 **客户端 ID** 和 **客户端密码**。
 
 ## <a name="manage-search-permissions"></a>管理搜索权限
 
-MediaWiki 连接器仅支持 **所有人都**能看到的搜索权限。 索引数据显示在搜索结果中，并对组织中的所有用户可见。
+MediaWiki 连接器仅支持 **所有人都** 能看到的搜索权限。 索引数据显示在搜索结果中，并对组织中的所有用户可见。
+
+## <a name="assign-property-labels"></a>分配属性标签
+
+通过从选项菜单中进行选择，可以为每个标签分配一个 source 属性。 虽然这一步并不是强制性的，但具有一些属性标签将改进搜索相关性，并确保最终用户更准确地搜索结果。
+
+## <a name="manage-schema"></a>管理架构
+
+在 " **管理架构** " 屏幕上，您可以选择更改架构属性， (可 **查询**、可 **搜索**、 **检索** 和 **可精简**) 与属性相关联，添加可选别名，然后选择 **Content** 属性。
 
 ## <a name="set-the-refresh-schedule"></a>设置刷新计划
 
@@ -47,5 +51,5 @@ MediaWiki 连接器仅支持 **所有人都**能看到的搜索权限。 索引�
 
 * 仅支持基于云的 wiki。
 * 仅支持基本或 OAuth 2.0 与 Azure Active Directory 或 Azure 身份验证。
-* 不支持用于索引的命名空间选择。 仅索引 **主**、 **类别**和 **文件** 命名空间。
+* 不支持用于索引的命名空间选择。 仅索引 **主**、 **类别** 和 **文件** 命名空间。
 * 不支持 (Acl) 的访问控制列表。 因此，索引页对组织中的所有用户都是可见的。
