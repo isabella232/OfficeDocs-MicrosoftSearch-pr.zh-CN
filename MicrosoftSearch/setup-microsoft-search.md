@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 首次设置 Microsoft 搜索。
-ms.openlocfilehash: 37b5f33fe7b49a11c4558debac5b9acae4cc40cd
-ms.sourcegitcommit: aa48b6510883e1617aa13a50b1056fb149c47586
+ms.openlocfilehash: 7d0b8e1b4bbb405e254b2fe2d29b11f081f5b460
+ms.sourcegitcommit: ac4e261c01262be747341f810d2d1faf220d3961
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "44256634"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "49382584"
 ---
 # <a name="set-up-microsoft-search"></a>设置 Microsoft 搜索
 
@@ -31,9 +31,7 @@ Microsoft Search 提供了一个用户友好的界面，可帮助用户查找诸
 
 在 Microsoft 365 管理中心管理 Microsoft 搜索。
 
-1. 在 Microsoft 365 管理中心中，转到“**设置**” > “**Microsoft 搜索**”。
-
-**注意：** 如果没有在“**设置**”下看到 Microsoft 搜索，请打开任意管理中心页面右上角的“**试用预览版**”开关。
+1. 在 Microsoft 365 管理中心，转到 "**设置**  >  [**搜索 & 智能**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch)"。
 
 作为管理员，你应该考虑一些可在组织内实现高效且用户友好的 Microsoft 搜索体验的因素。
 
@@ -55,7 +53,7 @@ Microsoft 搜索为管理员提供了可用于为其用户构建强大搜索体�
 书签是最常使用的答案类型。 它们会将用户查询的最佳结果提升到搜索结果的顶部，并使用户能够轻松找到他们要查找的内容。
 每个人都可以使用的信息内容;例如，有关公司的信息、Windows 和 Office 相关应用程序等。组织中的人员通常在日常工作中搜索的内容。 与工作相关的常见搜索包括员工福利、时间和费用报告、提交采购订单以及从 IT 服务获取帮助。
 
-有关创建和管理答案的详细内容，请参阅[规划内容](plan-your-content.md)。
+有关创建和管理答案的详细内容，请参阅 [规划内容](plan-your-content.md)。
 
 ## <a name="next-steps"></a>后续步骤
 

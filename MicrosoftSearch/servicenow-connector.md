@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 设置用于 Microsoft 搜索的 ServiceNow 连接器
-ms.openlocfilehash: 5bcc0870df7c2ad418bb2ae29e9d4d999dcbdf3f
-ms.sourcegitcommit: 59cdd3f0f82b7918399bf44d27d9891076090f4f
+ms.openlocfilehash: 520232f8055d5432ccb96a840a9466ae6a4e3b1a
+ms.sourcegitcommit: ac4e261c01262be747341f810d2d1faf220d3961
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "49367592"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "49382557"
 ---
 # <a name="servicenow-connector"></a>ServiceNow 连接器
 
@@ -171,6 +171,9 @@ OIDC 配置缓存寿命范围 |  120
 ServiceNow 连接器支持对 **所有人** 可见的搜索权限，或仅支持对 **此数据源具有访问权限的用户**。 索引数据将显示在搜索结果中，并对组织中的所有用户或对其分别拥有访问权限的用户可见。 ServiceNow 连接器支持不带高级脚本的默认用户条件权限。 当连接器遇到高级脚本的用户条件时，使用该用户条件的所有数据将不会显示在搜索结果中。
 
 如果您选择 " **仅有权访问此数据源的人员**"，则需要进一步选择您的 ServiceNow 实例是否有 Azure Active DIRECTORY (AAD) 预配的用户或非 AAD 用户。
+
+>[!NOTE]
+>如果 **只选择了具有此数据源访问权限的用户**，则 ServiceNow 连接器将处于 **预览阶段**。
 
 >[!NOTE]
 >如果选择 "AAD" 作为标识源的类型，请确保要为 ServiceNow 中的电子邮件目标属性分配 UPN 源属性。 若要验证或更改映射，请参阅 [在 Azure Active Directory 中自定义用户预配属性-用于 SaaS 应用程序的映射](https://docs.microsoft.com/azure/active-directory/app-provisioning/customize-application-attributes)。
