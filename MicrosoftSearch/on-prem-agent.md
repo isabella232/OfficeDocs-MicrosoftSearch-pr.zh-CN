@@ -11,13 +11,14 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
+ROBOTS: NoIndex
 description: 本地代理
-ms.openlocfilehash: 30ddf0ac8c6df76d1c598606754066b3d2e93615
-ms.sourcegitcommit: 59cdd3f0f82b7918399bf44d27d9891076090f4f
+ms.openlocfilehash: 487c5b179e09fd99fa26ae7a237e89ca38b7be4d
+ms.sourcegitcommit: 69a1c544cc8db364991cb58d7818d7158ff108b8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "49367731"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "49408939"
 ---
 # <a name="on-prem-agent"></a>本地代理
 
@@ -59,7 +60,7 @@ ms.locfileid: "49367731"
 
 可以按以下形式之一提供身份验证详细信息。
 
-### <a name="configuring-the-client-secret-for-authentation"></a>为 authentation 配置客户端密码
+### <a name="configuring-the-client-secret-for-authentication"></a>配置客户端机密以进行身份验证
 
 1. 转到 [Azure 门户](https://portal.azure.com) ，并使用管理员凭据登录租户。
 2. 从导航窗格中打开 " **应用注册** "，然后转到相应的应用程序。 在 " **管理**" 下，选择 " **证书和密码**"。
@@ -68,7 +69,7 @@ ms.locfileid: "49367731"
 
 ## <a name="using-thumbprint-certificate-for-authentication"></a>使用指纹证书进行身份验证
 
-如果已通过 [配置 authentation 的客户端密码](#Configuring-the-client-secret-for-authentication) 来配置身份验证详细信息，则可以将 directy 跳转到 [安装程序概述](configure-connector.md)。
+如果已通过 [配置客户端密码进行身份验证](#configuring-the-client-secret-for-authentication) 来配置身份验证详细信息，则可以直接跳转到 [安装程序概述](configure-connector.md)。
 
 1. 打开 " **应用注册** "，然后从导航窗格中选择 " **证书和密码** "。 复制证书指纹。
 ![在左窗格中选择了 "证书和密码" 时的 thumbrint 证书列表](media/onprem-agent/certificates.png)
