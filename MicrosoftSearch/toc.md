@@ -16,7 +16,6 @@
 ## [连接器库](connectors-gallery.md)
 ## Microsoft 的图表连接器
 ### [设置概述](configure-connector.md)
-### [设置你的本地代理（预览版）](on-prem-agent.md)
 ### [映射你的非 Azure AD 标识（预览版）](map-non-aad.md)
 ### [映射 Azure AD 标识 ](map-aad.md)
 ### 连接器专用信息
@@ -24,9 +23,7 @@
 #### [Azure DevOps （预览版）](azure-devops-connector.md)
 #### [Azure SQL 和 Microsoft SQL Server](MSSQL-connector.md)
 #### [企业网站](enterprise-web-connector.md)
-#### [文件共享（预览版）](fileshare-connector.md)
 #### [MediaWiki](mediawiki-connector.md)
-#### [Oracle SQL（预览版）](OracleSQL-connector.md)
 #### [Salesforce （预览版）](salesforce-connector.md)
 #### [ServiceNow](servicenow-connector.md)
 ## [管理连接](manage-connector.md)
