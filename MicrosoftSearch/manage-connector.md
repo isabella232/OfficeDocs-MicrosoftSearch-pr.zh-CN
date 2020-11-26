@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 为 Microsoft Search 管理 Microsoft Graph 连接器。
-ms.openlocfilehash: a9b3feff3a5c289fef3f5091518d074970209b9d
-ms.sourcegitcommit: 59cdd3f0f82b7918399bf44d27d9891076090f4f
+ms.openlocfilehash: 04ae757e95c6d3713ad03da701f99c669fb2a59c
+ms.sourcegitcommit: 0ed8ec8b3c4e0f5f669005081fd8b2219f07b4f0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "49367673"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "49420839"
 ---
 <!-- markdownlint-disable no-inline-html -->
 
@@ -92,6 +92,7 @@ Operation | Microsoft 构建的连接器 | 合作伙伴或自定义生成的连�
 2001 | 由于队列中的更新数过多，索引被限制。 根据队列的不同，可能需要一段时间才能完成更新。 | 请等待队列被清除。
 2002 | 由于不受支持的项格式设置而导致索引失败。 | 有关详细信息，请参阅连接器特定文档。
 2003 | 由于不受支持的项目内容而导致索引失败。 | 有关详细信息，请参阅连接器特定文档。
+2010 | 由于 Microsoft 所做的更新，此连接不再有效。 请删除该连接，然后创建一个新的连接。 | 请删除该连接，然后创建一个新的连接。
 5000 | 出现问题。 如果这种情况继续存在，请与支持人员联系。 |
 
 ## <a name="monitor-your-index-quota-utilization"></a>监视索引配额利用率
