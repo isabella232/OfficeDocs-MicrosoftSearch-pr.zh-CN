@@ -12,18 +12,18 @@ search.appverid:
 - MET150
 - MOE150
 description: 连接器结果群集体验的详细信息
-ms.openlocfilehash: eac4180a247fe17b4e86b57a69f2b7bdb79e56bb
-ms.sourcegitcommit: 59cdd3f0f82b7918399bf44d27d9891076090f4f
+ms.openlocfilehash: fa6ac2dc720ed43e40454b952526734accd45ea4
+ms.sourcegitcommit: a328b9764abf5cd0c1c0a8c7def0c6e334da9a1d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "49367716"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "49477110"
 ---
 # <a name="graph-connectors-result-cluster"></a>图形连接器结果群集
 
 ## <a name="overview-of-the-graph-connectors-result-cluster-preview"></a>图形连接器结果群集 (预览的概述)   
 
- 通过 Graph 连接器的结果群集，企业可以在其默认视图中搜索第三方数据源中的内容， (SharePoint 和 Office.com 中的所有选项卡) 。
+通过 Graph 连接器的结果群集，企业可以在其默认视图中搜索第三方数据源中的内容， (SharePoint 和 Office.com 中的所有选项卡) 。
 
 结果群集可帮助用户发现所有第三方内容 (previoulsy 绑定到一个位置中的单个连接器和垂直) 。 结果群集中显示的结果根据租户管理员在垂直搜索中配置它们的方式分组在一起。  
 
@@ -40,14 +40,14 @@ ms.locfileid: "49367716"
 ## <a name="enable-result-clusters"></a>启用结果群集
   
 默认情况下，结果群集体验处于关闭状态。  
+
 按照以下步骤在组织级别启用体验：
 
-Microsoft 365 管理中心
-
 1. 在 [Microsoft 365 管理中心](https://admin.microsoft.com/)，转到 "**设置**  >  **搜索 & 智能**  >  **自定义**  >  **纵向**"。  
-2. 选择 " **全部** 垂直"，然后转到 " **显示连接器结果** " 部分。 在网站级别启用体验。
+2. 选择 " **全部** 垂直"，然后按 "启用 **显示连接器结果**"。 
 
-Sharepoint
+
+按照以下步骤在网站级别启用体验：
 
 1. 在您希望结果群集体验的 SharePoint 网站上，转到 " **设置**"。
 2. 转到 "**网站信息**" > **查看所有网站设置**。
