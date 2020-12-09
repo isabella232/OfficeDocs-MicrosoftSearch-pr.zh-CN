@@ -2,7 +2,7 @@
 ## [概述](overview-microsoft-search.md)
 ## [设置](setup-microsoft-search.md)
 ## [常见问题](faqs.md)
-# [获取见解](get-insights.md)
+# [获取见解](usage-reports.md)
 # 提供解答
 ## [规划内容](plan-your-content.md)
 ## [首字母缩略词](manage-acronyms.md)
