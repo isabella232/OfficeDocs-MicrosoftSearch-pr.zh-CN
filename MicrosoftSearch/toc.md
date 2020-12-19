@@ -38,6 +38,8 @@
 ## SharePoint 中的 Microsoft 搜索
 ### [概述](get-started-search-in-sharepoint-online.md)
 ### [创建自定义搜索结果页面](create-search-results-pages.md)
+### [管理搜索框设置](manage-spo-search-box.md)
+### [在经典页面上使用Microsoft搜索](manage-classic-spo-pages.md)
 ## Microsoft 必应搜索
 ### [安全和隐私](security-for-search.md)
 ### [将搜索框添加到 Intranet 站点](add-a-search-box-to-your-intranet-site.md)
