@@ -11,15 +11,14 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-robots: NOINDEX:NOFOLLOW
 ms.assetid: c0c814d0-f7e4-444e-b18e-09beb45c9322
 description: 管理 Power BI 报告和数据在搜索结果中的显示方式
-ms.openlocfilehash: d775647b7cb2fca08ca7f693d4e1c8dd246d3599
-ms.sourcegitcommit: f17d81385b304f379bdc75d44580f59c3242e672
+ms.openlocfilehash: e78b8b5d22f7a91d80832fb4f5b536afc277fb6c
+ms.sourcegitcommit: 7294c953e7939e48f128656cc2f8f22705ae3f3d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 01/06/2021
-ms.locfileid: "49760863"
+ms.locfileid: "49773042"
 ---
 # <a name="manage-power-bi-answers"></a>管理 Power BI 答案
 
@@ -28,7 +27,7 @@ ms.locfileid: "49760863"
 * **易于使用：** 此开箱即用搜索体验可帮助用户轻松快速地查找整个组织的 Power BI 仪表板和报告。
 * **更丰富的内容：** 若要使 Power BI 搜索结果更有用，它们包括内容类型（仪表板或报表）以及拥有它的团队或人员等关键信息。
 * **内置数据保护：** Power BI 结果将仅为有权访问仪表板或报表的用户显示。
-* **统一搜索体验：** 为了保持一致体验，Power BI 结果在所有搜索入口点都是一致的。 无论您在何处搜索，您都具有相同的外观和感觉。
+* **统一搜索体验：** 为了保持一致的体验，Power BI 结果在所有搜索入口点都是一致的。 无论您在何处搜索，您都具有相同的外观和感觉。
 
 ## <a name="what-users-experience"></a>用户体验
 
@@ -47,7 +46,7 @@ Microsoft 搜索用户可以通过从 Windows 搜索框、SharePoint、Office 36
 
 ## <a name="turn-power-bi-search-on-or-off"></a>打开或关闭 Power BI 搜索
 
-默认情况下，为组织启用 Power BI 结果。 Power BI 管理员可以随时禁用它们。 在 Power BI 管理门户中，转到"租户设置"并禁用"对 **Power BI 使用全局** 搜索"设置。 若要了解更多信息，请参阅[管理门户中的管理 Power BI。](https://docs.microsoft.com/power-bi/admin/service-admin-portal#use-global-search-for-power-bi-preview)
+默认情况下，为组织启用 Power BI 结果。 Power BI 管理员可以随时禁用它们。 在 Power BI 管理门户中，转到"租户设置"并禁用"对 **Power BI 使用** 全局搜索"设置。 若要了解更多信息，请参阅[管理门户中的管理 Power BI。](https://docs.microsoft.com/power-bi/admin/service-admin-portal#use-global-search-for-power-bi-preview)
 
 :::image type="content" source="media/powerbi-answers/powerbi-admin.png" alt-text="用于打开或关闭 Power BI 答案的设置屏幕截图" border="true":::
 
