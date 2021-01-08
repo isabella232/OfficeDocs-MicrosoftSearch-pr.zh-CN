@@ -9,6 +9,7 @@
 ## [书签](manage-bookmarks.md)
 ## [平面图](manage-floorplans.md)
 ## [位置](manage-locations.md)
+## [Power BI](manage-powerbi.md)
 ## [问答](manage-qas.md)
 # 连接器（预览版）
 ## [概述](connectors-overview.md)
