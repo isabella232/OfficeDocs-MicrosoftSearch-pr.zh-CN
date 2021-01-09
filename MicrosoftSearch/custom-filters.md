@@ -12,50 +12,51 @@ search.appverid:
 - MET150
 - MOE150
 description: 管理自定义筛选器
-ms.openlocfilehash: 75273035a7825683f626464df7bbc8e294b41b6f
-ms.sourcegitcommit: 59435698bece013ae64ca2a68c43455ca10e3fdf
+ms.openlocfilehash: a050921058eac50d7588f1e71f5b0f56cc8e5752
+ms.sourcegitcommit: a86265684871da86562a76c4961d0a6c1869f517
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48927377"
+ms.lasthandoff: 01/09/2021
+ms.locfileid: "49790326"
 ---
-# <a name="create-custom-filters"></a>创建自定义筛选器
+# <a name="manage-custom-filters"></a>管理自定义筛选器
 
-您可以创建筛选器，以自定义用户在[Bing](https://bing.com)中的 microsoft [SharePoint](https://sharepoint.com/)、Microsoft [Office](https://office.com)和 microsoft 搜索中进行搜索时看到的搜索体验。 通过筛选器，用户可以快速从搜索查询中优化结果集。
+可以使用筛选器自定义 Microsoft 搜索体验。 通过筛选器，用户可以快速优化其搜索查询中的结果集。
 
-可以基于 connection 属性在垂直方向创建自定义筛选器。 例如，您可以在自定义垂直内为 ServiceNow 连接创建 **已发布的 On** 筛选器。
+可以基于连接属性在垂直方向上创建自定义筛选器。 例如，可以在垂直方向上为 ServiceNow 连接创建" **发布** 时间"筛选器。
+
+## <a name="create-a-filter-in-an-organizational-level-vertical"></a>在组织级别垂直创建筛选器
+
+若要在 Microsoft 搜索上创建筛选器，请按照以下步骤操作：
+
+1. 在 Microsoft 365 管理中心中，转到["垂直"。](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/verticals)
+1. 创建/编辑要创建筛选器的垂直方向
+1. 导航到向导中的"筛选器"步骤
+1. 单击"添加筛选器"并开始操作
+1. 添加筛选器后，你可以查看并保存垂直。
 
 ## <a name="things-to-consider"></a>注意事项
 
-1. 对于在连接内容源上创建自定义筛选器，提供了一些附加功能：
-- 您还可以在 "连接器源" 属性的 "别名" 上创建筛选器
-- 如果垂直具有多个连接，则可以通过这些连接创建公用筛选器。 为此，可以通过在别名源属性在不同连接之间进行的通用别名创建筛选器来实现。 例如，您可以通过创建别名，在 ServiceNow & Jira 连接中创建 **作者** 筛选器，如下所示：
+1. 连接内容上存在其他筛选器功能。
 
-| Connection | 属性 | Alias |
-| --- | --- | --- |
-| 服务现在 | 所有者 | 作者 |
-| Jira | Publisher | 作者 |
+    - 还可以在别名上创建连接器源属性的筛选器
+    - 如果垂直连接有多个连接，可以在这些连接之间创建一个公用筛选器。 为此，可以在常见别名上创建筛选器，该筛选器将跨不同连接对源属性进行别名设置。 例如，可以通过创建别名跨ServiceNow 和 Jira 连接创建作者筛选器，如下所示：
 
-2. 筛选器位于垂直范围内。 由此  
-- 如果筛选器是以组织级别的垂直方式创建的，则筛选器将仅在组织级别可见
-- 如果在垂直位置创建了筛选器，该筛选器在网站级别，则筛选器仅在网站级别可见。
+    | Connection | 属性 | 别名 |
+    | --- | --- | --- |
+    | 服务现在 | 所有者 | 作者 |
+    | Jira | Publisher | 作者 |
 
-## <a name="steps-to-create-custom-filter"></a>创建自定义筛选器的步骤
+1. 筛选器存在于垂直范围内。
 
-### <a name="create-filter-in-organizational-level-vertical"></a>在组织级别中创建筛选器垂直：
-
-若要在 Microsoft search 中创建筛选器，请按照以下步骤操作：
-
-1. 在 Microsoft 365 管理中心，转到 " [纵向](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/verticals) " 页面。
-2. 创建/编辑要在其中创建筛选器的垂直
-3. 导航到向导中的 "筛选器" 步骤
-4. 单击 "添加筛选器"，并在添加筛选器后开始，可以查看并保存垂直。
+    - 如果在组织级别以垂直方向创建筛选器，则筛选器将仅在组织级别可见
+    - 如果在网站级别以垂直方式创建筛选器，则筛选器将仅在网站级别可见。
 
 ## <a name="known-limitations"></a>已知限制
 
-1. 您当前可以仅在字符串 & 日期类型托管属性上创建筛选器。
-2. 无法创建分层筛选器
+1. 当前只能对字符串类型托管&创建筛选器。
+1. 无法创建分层筛选器。
 
 ## <a name="resources"></a>资源
 
-[自定义搜索结果页面](customize-search-page.md)
+[管理垂直领域和结果类型](customize-search-page.md)
