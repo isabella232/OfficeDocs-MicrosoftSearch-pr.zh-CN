@@ -18,7 +18,7 @@
 ## Microsoft 的图表连接器
 ### [设置概述](configure-connector.md)
 ### [映射你的非 Azure AD 标识（预览版）](map-non-aad.md)
-### [映射 Azure AD 标识 ](map-aad.md)
+### [映射 Azure AD 标识（预览版）](map-aad.md)
 ### 连接器专用信息
 #### [Azure Data Lake Storage Gen2](azure-data-lake-connector.md)
 #### [Azure DevOps （预览版）](azure-devops-connector.md)
@@ -28,6 +28,7 @@
 #### [Salesforce （预览版）](salesforce-connector.md)
 #### [ServiceNow](servicenow-connector.md)
 ## [管理连接](manage-connector.md)
+## [连接详细信息和错误](connector-details-errors.md)
 ## [许可](licensing.md)
 ## [反馈](connectors-feedback.md)
 ## [使用条款](terms-of-use.md)
@@ -44,7 +45,7 @@
 ## Microsoft 必应搜索
 ### [安全和隐私](security-for-search.md)
 ### [将搜索框添加到 Intranet 站点](add-a-search-box-to-your-intranet-site.md)
-### [将 Microsoft Edge 设置为默认浏览器](set-default-browser.md)
+### [将 Microsoft Edge 设置为默认浏览器](/deployedge/edge-default-browser)
 ### [将必应设置为默认搜索引擎](set-default-search-engine.md)
 ### [将 Bing.com 设置为默认主页](set-default-homepage.md)
 ### [用户采用指南](user-adoption-guide.md)
