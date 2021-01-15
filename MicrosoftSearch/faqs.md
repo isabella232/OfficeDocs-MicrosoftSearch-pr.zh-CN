@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 获取有关企业搜索和 Microsoft 搜索的常见问题解答
-ms.openlocfilehash: 5a134116c98b4feea0c04909349ce4b972c59ffe
-ms.sourcegitcommit: 0b8c3c57384cecaa93c5cbaf3b3b30f8e20d1a69
+ms.openlocfilehash: abaa1a232b08ba586dd6cd777f7e54c323159dee
+ms.sourcegitcommit: aa7774d2bdff2bd9e1b7f51fcda90fa6b0c3a5ca
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48408435"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "49867375"
 ---
 <!-- markdownlint-disable no-trailing-punctuation -->
 # <a name="frequently-asked-questions"></a>常见问题
@@ -29,33 +29,33 @@ ms.locfileid: "48408435"
 
 ## <a name="is-advanced-query-understanding-supported"></a>是否支持高级查询理解？
 
-是的，Microsoft Search 根据较大短语解析查询意图。此功能使用 AI 来了解用户在不影响其搜索意图的查询中添加的常见的多余短语。例如，当用户搜索 " *告诉我有关如何更改密码" 的详细信息*时，我们会从查询中提取不重要的词，并根据相关的更改密码（如 " *更改密码*"）进行触发。
+是的，Microsoft 搜索分析来自较大短语的查询意图。此功能使用 AI 了解用户添加到其查询中不会影响其搜索意图的常见多余短语。例如，当用户搜索告诉我有关如何更改密码的更多信息时，我们会从查询中提取不太重要的字词，并基于更改密码等相关字词 *触发。*
   
-此功能不会覆盖 [Microsoft 365 管理中心](https://admin.microsoft.com)中设置的关键字。
+此功能不会覆盖 [在 Microsoft 365 管理中心中设置的关键字](https://admin.microsoft.com)。
   
 ## <a name="can-you-search-for-files-on-premises"></a>是否可以搜索本地文件？
 
-是。 如果您具有 SharePoint 的混合部署，则可以搜索本地 [SharePoint](http://sharepoint.com/) 文件。
+是。 如果具有 [SharePoint](http://sharepoint.com/) 的混合部署，可以搜索本地 SharePoint 文件。
   
 ## <a name="how-do-i-make-bing-the-default-search-engine-for-people-in-my-org"></a>如何将必应设置为我组织中的人员的默认搜索引擎？
 
-以下是有关设置默认搜索引擎、默认主页和默认浏览器的说明，以便为用户提供 Microsoft Search in [Bing](https://Bing.com)的最佳体验：
+下面是设置默认搜索引擎、默认主页和默认浏览器以为用户提供在必应中的最佳 Microsoft 搜索 [体验的说明](https://Bing.com)：
 
-- [将 Microsoft Edge 设置为默认浏览器](set-default-browser.md)
+- [将 Microsoft Edge 设置为默认浏览器](/deployedge/edge-default-browser)
 - [将必应设置为默认搜索引擎](set-default-search-engine.md)
 - [将 Bing.com 设置为企业主页](set-default-homepage.md)
 
 ## <a name="how-are-my-search-results-protected"></a>我的搜索结果如何受到保护？
 
-我们需要 [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/) 身份验证才能访问受信任云中的结果。 通过身份验证的用户仅可查看其有权访问的内容。 对搜索查询进行取消标识，并将日志与公共 [Bing](https://Bing.com) 搜索流量分开。 此级别的保护在行业的其他地方均不可用。
+我们需要 [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/) 身份验证来访问受信任云中的结果。 通过身份验证的用户仅可查看其有权访问的内容。 搜索查询已取消标识，当您在 [必应](https://Bing.com) 中使用 Microsoft 搜索时，日志会与公共必应搜索流量分隔开。
 
 ## <a name="can-i-search-across-federated-organizations"></a>能否跨联合组织进行搜索？
 
 否。
 
-## <a name="where-can-i-get-info-about-office-365-security-compliance-and-privacy"></a>在哪里可以获取有关 Office 365 安全性、合规性和隐私的信息？
+## <a name="where-can-i-get-info-about-office-365-security-compliance-and-privacy"></a>在哪里可以获取有关 Office 365 安全、合规性和隐私的信息？
 
-详细信息可在 [Office 365 的 "信任中心" 页](https://www.microsoft.com/TrustCenter/CloudServices/office365/default.aspx)上找到。
+有关详细信息，请参阅 Office [365 的信任中心页面](https://www.microsoft.com/TrustCenter/CloudServices/office365/default.aspx)。
 
 ## <a name="can-users-earn-microsoft-rewards-points-with-their-work-or-school-account"></a>用户能否通过其工作或学校帐户获得 Microsoft 奖励积分？
 
@@ -63,4 +63,4 @@ Microsoft 搜索需要企业用户使用工作或学校帐户登录。 但是，
 
 ## <a name="can-guest-users-leverage-microsoft-search-in-my-organization"></a>来宾用户能否在我的组织中利用 Microsoft 搜索？
 
-Microsoft 365 通过[来宾访问](https://docs.microsoft.com/microsoft-365/solutions/collaborate-with-people-outside-your-organization)实现与组织外部人员的丰富协作。 这些用户将能够对文档、网站、组、列表和库执行搜索操作。 但是，来宾用户将不会获得完整、个性化的 Microsoft 搜索体验，并且可能需要使用页面中的搜索框，而不是页眉中的统一 Microsoft 搜索框。
+Microsoft 365 允许通过来宾访问与组织外部人员 [进行丰富的协作。](https://docs.microsoft.com/microsoft-365/solutions/collaborate-with-people-outside-your-organization) 这些用户将能够对文档、网站、组、列表和库执行搜索操作。 但是，来宾用户将不会获得完整、个性化的 Microsoft 搜索体验，并且可能需要利用页面搜索框，而不是标头中的统一 Microsoft 搜索框。
