@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 管理 Microsoft 搜索的 Microsoft Graph 连接器。
-ms.openlocfilehash: bf5a382ae0bd8308922599f0dfa9e087aad50c24
-ms.sourcegitcommit: b1ca58219fb16d5aff277f357dfa11ce6b0d42ca
+ms.openlocfilehash: cf1231f8003d166977398ef4bdcc1ad12104dd05
+ms.sourcegitcommit: d22fe2a34d7efe2dd5bbb456f0d00eb5f6c7608c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49695682"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "49880606"
 ---
 <!-- markdownlint-disable no-inline-html -->
 
@@ -31,7 +31,7 @@ ms.locfileid: "49695682"
 
 对于每种连接器类型 [，Microsoft 365 管理](https://admin.microsoft.com) 中心支持下表中所示的操作：
 
-操作 | Microsoft 构建的连接器 | 合作伙伴或自定义生成连接器
+Operation | Microsoft 构建的连接器 | 合作伙伴或自定义生成连接器
 --- | --- | ---
 添加连接 | ：heavy_check_mark： (请参阅[配置 Microsoft 构建的连接器) ](configure-connector.md) | ：x： (参考合作伙伴或自定义生成连接器管理员 UX) 
 删除连接 | :heavy_check_mark: | :heavy_check_mark:
@@ -68,7 +68,7 @@ ms.locfileid: "49695682"
 
 ### <a name="monitor-errors"></a>监视错误
 
-对于"**连接器"****选项卡上的每个** 活动连接器，任何现有爬网错误都显示在"**错误"选项卡** 下。选项卡列出了错误代码、每个代码的计数以及错误日志下载选项。 请参阅下图中的示例。 选择 **错误代码** 以查看错误的详细信息。
+对于" **连接器"选项卡** 上的 **每个** 活动连接器，任何现有爬网错误都显示在" **错误"选项卡** 下。选项卡列出了错误代码、每个代码的计数以及错误日志下载选项。 请参阅下图中的示例。 选择 **错误代码** 以查看错误的详细信息。
 
 ![连接器列表，其中选择了连接器，详细信息窗格显示此连接器的 3 个错误。](media/errormonitoring1.png)
 
@@ -76,7 +76,7 @@ ms.locfileid: "49695682"
 
 ![连接器列表，其中选择了连接器，详细信息窗格显示连接器的错误列表。](media/errormonitoring2.png)
 
-下面是可针对任何连接显示的不同错误的列表。 如果这些解决方案不起作用，请联系支持人员或向我们发送 [反馈](connectors-feedback.md)。
+下面列出了可针对任何连接显示的不同错误。
 
 错误代码 | 错误消息 | 解决方案
 --- | --- | ---
@@ -103,9 +103,9 @@ ms.locfileid: "49695682"
 
 >[!NOTE]
 >在预览期间，每个尝试使用 Graph 连接器的组织都获得一个免费的固定配额，在所有连接中最多包含 200 万个项目。 随着 Graph 连接器的发布，对于一直预览版使用 Graph 连接器的组织，免费配额将于 2021 年 2 月 1 日到期。
->标记为"预览"的 Microsoft 构建[](connectors-preview.md)的 Graph 连接器不会包含在组织的总收费索引配额中。 但是，它算作可以为组织配置的最大 10 个连接数，以及组织可以跨连接编制索引的最大 700 万个项目数;每个连接限制为 700，000 个项目。 
+>标记为"预览"的 Microsoft 构建[](connectors-preview.md)的 Graph 连接器不会包含在组织的总收费索引配额中。 但是，它算作可以为组织配置的最多 10 个连接数，以及组织可以跨连接编制索引的最大 700 万个项目数;每个连接限制为 700，000 个项目。 
 
-配额利用率栏将基于组织配额的使用情况指示各种状态：
+配额使用率栏将基于组织配额的使用情况指示各种状态：
 
 状态 | 配额消耗
 --- | ---
@@ -126,7 +126,7 @@ ms.locfileid: "49695682"
 
 * 了解如何根据许可要求和定价为组织 [购买索引配额](licensing.md)。
 
-* 确定要包含过多内容的连接，并更新这些连接以对较少的项目编制索引，以便为配额提供空间。 若要更新连接，必须删除并创建包含新引入筛选器的新连接，该筛选器将引入较少的项目。
+* 确定要包含过多内容的连接，并更新这些连接以索引较少的项目，以为配额提供空间。 若要更新连接，必须删除并创建包含新引入筛选器的新连接，该筛选器将引入较少的项目。
 
 * 永久删除一个或多个连接
 
