@@ -11,11 +11,11 @@
 ## [位置](manage-locations.md)
 ## [Power BI](manage-powerbi.md)
 ## [问答](manage-qas.md)
-# 连接器（预览版）
+# 连接器
 ## [概述](connectors-overview.md)
 ## [预览版](connectors-preview.md)
 ## [连接器库](connectors-gallery.md)
-## Microsoft 的图表连接器
+## Microsoft 的设置连接器
 ### [设置概述](configure-connector.md)
 ### [映射你的非 Azure AD 标识（预览版）](map-non-aad.md)
 ### [映射 Azure AD 标识（预览版）](map-aad.md)
@@ -30,7 +30,6 @@
 ## [管理连接](manage-connector.md)
 ## [连接详细信息和错误](connector-details-errors.md)
 ## [许可](licensing.md)
-## [反馈](connectors-feedback.md)
 ## [使用条款](terms-of-use.md)
 # 自定义和配置
 ## [管理垂直领域和结果类型](customize-search-page.md)
