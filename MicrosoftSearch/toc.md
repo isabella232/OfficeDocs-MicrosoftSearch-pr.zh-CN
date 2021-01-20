@@ -27,8 +27,9 @@
 #### [MediaWiki](mediawiki-connector.md)
 #### [Salesforce （预览版）](salesforce-connector.md)
 #### [ServiceNow](servicenow-connector.md)
-## [管理连接](manage-connector.md)
-## [连接详细信息和错误](connector-details-errors.md)
+## 管理连接
+### [监视连接](manage-connector.md)
+### [查看连接详细信息和错误](connector-details-errors.md)
 ## [许可](licensing.md)
 ## [使用条款](terms-of-use.md)
 # 自定义和配置
