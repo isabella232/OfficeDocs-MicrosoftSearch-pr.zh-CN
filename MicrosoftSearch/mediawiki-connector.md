@@ -11,45 +11,57 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: 设置用于 Microsoft 搜索的 MediaWiki 连接器
-ms.openlocfilehash: 7f6b34dcafc4b82ab3778ec1d7a4921383e44a44
-ms.sourcegitcommit: 59cdd3f0f82b7918399bf44d27d9891076090f4f
+description: 为 Microsoft 搜索设置 MediaWiki 连接器
+ms.openlocfilehash: 7a22fcc84f6f435bf438aa027c42c76eb8be1eaf
+ms.sourcegitcommit: 39bf9f0db7f9bff2ab82c99a059b0ddcf1c98f5f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "49367637"
+ms.lasthandoff: 01/19/2021
+ms.locfileid: "49905946"
 ---
 # <a name="mediawiki-connector"></a>MediaWiki 连接器
 
-通过 MediaWiki 连接器，贵组织可以发现使用 MediaWiki 软件创建的 wiki 中的数据并对其编制索引。 此连接器将指定的内容索引到 Microsoft Search，并支持定期爬网以保持索引为最新。
+通过 MediaWiki 连接器，组织可以发现使用 MediaWiki 软件创建的 Wiki 数据并编制数据索引。 此连接器将指定内容索引到 Microsoft 搜索中，并支持定期爬网，使索引保持最新。
 
-本文适用于 Microsoft 365 管理员或任何配置、运行和监控 MediaWiki 连接器的人。 它说明了如何配置连接器和连接器功能、限制和故障排除技术。
+本文适用于 Microsoft 365 管理员或配置、运行和监视 MediaWiki Graph 连接器的任何人。 它补充了"设置 Graph 连接器 ["文章中提供的一般](configure-connector.md) 说明。 如果尚未这样做，请阅读整个"设置 Graph 连接器"文章以了解常规安装过程。
 
-## <a name="connect-to-a-data-source"></a>连接到数据源
+下面列出了安装过程的每一步以及一条说明，指示你应遵循常规设置说明或仅适用于 MediaWiki Graph 连接器的其他说明。 本文还包括有关 MediaWiki Graph [连接器的限制](#limitations) 的信息。 
 
-输入您的 MediaWiki URL 和凭据以对连接进行身份验证。 你将需要以下信息： **租户 ID**、 **资源 ID**、 **客户端 ID** 和 **客户端密码**。
+## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>步骤 1：在 Microsoft 365 管理中心中添加 Graph 连接器。
+按照常规设置说明操作。
 
-## <a name="manage-search-permissions"></a>管理搜索权限
+## <a name="step-2-name-the-connection"></a>步骤 2：命名连接。
+按照常规设置说明操作。
+ 
+## <a name="step-3-configure-the-connection-settings"></a>步骤 3：配置连接设置。
+输入 **Wiki URL，** 然后从选项的下拉菜单中选择身份验证类型。 选项为 **None、Basic** 和 **OAuth 2.0 AAD。** 
 
-MediaWiki 连接器仅支持 **所有人都** 能看到的搜索权限。 索引数据显示在搜索结果中，并对组织中的所有用户可见。
+如果选择"**基本**"作为身份验证类型，则需要提供 **Wiki** **的用户名和密码。**
 
-## <a name="assign-property-labels"></a>分配属性标签
+如果选择 **OAuth 2.0 AAD** 作为身份验证类型，则需要提供 Wiki **安装的资源** ID。 你还需要提供在 AAD 应用程序注册 **页上生成的客户端** **ID** 和客户端密码。 
 
-通过从选项菜单中进行选择，可以为每个标签分配一个 source 属性。 虽然这一步并不是强制性的，但具有一些属性标签将改进搜索相关性，并确保最终用户更准确地搜索结果。
+## <a name="step-4-manage-search-permissions"></a>步骤 4：管理搜索权限
+MediaWiki 连接器仅支持对所有人可见的搜索 **权限**。 索引数据将显示在搜索结果中，并且对组织所有用户可见。
 
-## <a name="manage-schema"></a>管理架构
+## <a name="step-5-assign-property-labels"></a>步骤 5：分配属性标签
+按照常规设置说明操作。
 
-在 " **管理架构** " 屏幕上，您可以选择更改架构属性， (可 **查询**、可 **搜索**、 **检索** 和 **可精简**) 与属性相关联，添加可选别名，然后选择 **Content** 属性。
+## <a name="step-6-manage-schema"></a>步骤 6：管理架构
+按照常规设置说明操作。
 
-## <a name="set-the-refresh-schedule"></a>设置刷新计划
+## <a name="step-7-choose-refresh-settings"></a>步骤 7：选择刷新设置
+按照常规设置说明操作。
 
-此计划将刷新已编制索引的数据，因此 wiki 的更改将反映在 Microsoft Search 中。 在指定的刷新间隔后，所有新页面、删除的页面、页面内容或元数据更改都会显示在搜索结果中。 爬网时间取决于 wiki 的大小。 目前，连接器会在每分钟50页面的周围进行爬网。
+## <a name="step-8-review-connection"></a>步骤 8：查看连接
+按照常规设置说明操作。
+
+<!---## Troubleshooting-->
+<!---To be added-->
 
 ## <a name="limitations"></a>限制
+MediaWiki 连接器在预览版本中有以下限制：
 
-在预览版本中，MediaWiki 连接器具有以下限制：
-
-* 仅支持基于云的 wiki。
-* 仅支持基本或 OAuth 2.0 与 Azure Active Directory 或 Azure 身份验证。
-* 不支持用于索引的命名空间选择。 仅索引 **主**、 **类别** 和 **文件** 命名空间。
-* 不支持 (Acl) 的访问控制列表。 因此，索引页对组织中的所有用户都是可见的。
+* 仅支持基于云的 Wiki。
+* 仅支持使用 Azure Active Directory 或 Azure 身份验证的基本或 OAuth 2.0。
+* 不支持为索引选择命名空间。 仅索引主命名空间、类别命名空间和文件命名空间。
+* 不支持访问控制列表 (ACL) 。 因此，索引页对组织中所有用户都是可见的。

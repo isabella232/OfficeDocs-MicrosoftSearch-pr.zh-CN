@@ -12,16 +12,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 搜索的 Microsoft Graph 连接器概述
-ms.openlocfilehash: 677c91f121185faa6dc96f80c517917f429a3ab0
-ms.sourcegitcommit: 469be70ad295a5837978d75babf5243115257f77
+ms.openlocfilehash: a45a007bbb2774caaaac90fc1549c8ba634b0580
+ms.sourcegitcommit: 39bf9f0db7f9bff2ab82c99a059b0ddcf1c98f5f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49847516"
+ms.lasthandoff: 01/19/2021
+ms.locfileid: "49905947"
 ---
 # <a name="overview-of-microsoft-graph-connectors"></a>Microsoft Graph 连接器概述
 
-[Microsoft 搜索](https://docs.microsoft.com/microsoftsearch/overview-microsoft-search) 会索引 [所有 Microsoft 365](https://www.microsoft.com/microsoft-365) 数据，使其可搜索用户。 借助 Microsoft Graph 连接器，你的组织可以索引第三方数据，以便数据显示在 Microsoft 搜索结果中。 这扩展了在 Microsoft 365 生产力应用和更广泛的 Microsoft 生态系统中可搜索的内容源类型。 第三方数据可以托管在本地或公有云或私有云中。
+[Microsoft 搜索](https://docs.microsoft.com/microsoftsearch/overview-microsoft-search) 会索引 [所有 Microsoft 365](https://www.microsoft.com/microsoft-365) 数据，使其可搜索用户。 借助 Microsoft Graph 连接器，组织可以索引第三方数据，以便数据显示在 Microsoft 搜索结果中。 这扩展了在 Microsoft 365 生产力应用和更广泛的 Microsoft 生态系统中可搜索的内容源类型。 第三方数据可以托管在本地或公有云或私有云中。
 
 <!---link Microsoft Graph reference in line 19 when we have access to relevant documentation--->
 
@@ -30,12 +30,13 @@ ms.locfileid: "49847516"
 * [哪些数据源可以连接到 Microsoft 搜索？](#what-data-sources-can-be-connected-to-microsoft-search)
 * [如何管理连接？](#how-do-i-manage-my-connections)
 * [Graph 连接器的许可证要求和使用条款是什么？](#what-are-the-license-requirements-and-terms-of-use-for-graph-connectors)
+* [预览功能是什么？](#what-are-the-preview-features)
 * [如何自定义和配置搜索结果？](#how-do-i-customize-and-configure-search-results)
 * [如何从自定义应用程序中搜索连接器数据？](#how-do-i-search-my-connector-data-from-a-custom-application)
 
-<!---Modify to another note that is more accurate--->
+<!---Modify to another note that is more accurate after rollout completion--->
 > [!IMPORTANT]
-> Microsoft Graph 连接器和 Microsoft 搜索 API 现已普遍可用。 第一次推出将面向为定向版本配置的客户。 如果要在租户中使用 Graph 连接器，用户和管理员必须选择加入 [定向发布](https://docs.microsoft.com/office365/admin/manage/release-options-in-office-365?view=o365-worldwide&preserve-view=true)。
+> Microsoft Graph 连接器和 Microsoft 搜索 API 现已普遍可用。 第一次推出计划持续到 2021 年 2 月。 在此之前，只有已选择加入定向发布的租户和用户才能使用[](https://docs.microsoft.com/office365/admin/manage/release-options-in-office-365?view=o365-worldwide&preserve-view=true)Graph 连接器。 在向所有租户推出完成后，连接器内容的索引配额使用率将受计费限制。 有关详细信息 [，请参阅许可要求和](licensing.md) 定价。
 
 <!---Add Value, scenario, example, and/or graphic in December updates--->
 <!---Probably remove architecture section below
@@ -85,13 +86,24 @@ Microsoft 提供了 10 个 Graph 连接器，我们的生态系统合作伙伴�
 
 ## <a name="how-do-i-manage-my-connections"></a>如何管理连接？
 
-可以从[Microsoft 365](https://admin.microsoft.com/)管理中心[中的](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/Connectors)"连接器"选项卡管理连接。 有关详细信息 [，请参阅"管理](manage-connector.md) 连接"。
+可以从[Microsoft 365](https://admin.microsoft.com/)管理中心中的"连接器"选项卡管理连接。 [](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/Connectors) 有关详细信息 [，请参阅"管理](manage-connector.md) 连接"。
 
 ## <a name="what-are-the-license-requirements-and-terms-of-use-for-graph-connectors"></a>Graph 连接器的许可证要求和使用条款是什么？
 
 你需要有效的 Microsoft 365 或 Office 365 许可证和足够的 Graph 连接器配额，以便贵组织的用户能够查看搜索结果中连接器的数据。
 
 若要了解更多信息，请参阅[许可证要求、定价](licensing.md)[和使用条款](terms-of-use.md)。
+
+## <a name="what-are-the-preview-features"></a>预览功能是什么？
+
+尽管 Microsoft Graph 连接器和 Microsoft 搜索 API 现已普遍可用，但有几个功能是预览版。
+
+预览版中的连接器和功能集包括：
+
+* [Azure DevOps 连接器](azure-devops-connector.md)
+* [Salesforce 连接器](salesforce-connector.md)
+* 具有使用源 ACL 的搜索权限的[ServiceNow](servicenow-connector.md)连接器
+* [管理结果群集](result-cluster.md)
 
 ## <a name="how-do-i-customize-and-configure-search-results"></a>如何自定义和配置搜索结果？
 
