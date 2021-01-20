@@ -11,45 +11,57 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: 设置用于 Microsoft 搜索的 MediaWiki 连接器
-ms.openlocfilehash: 7f6b34dcafc4b82ab3778ec1d7a4921383e44a44
-ms.sourcegitcommit: 59cdd3f0f82b7918399bf44d27d9891076090f4f
+description: 为 Microsoft 搜索设置 MediaWiki 连接器
+ms.openlocfilehash: 7a22fcc84f6f435bf438aa027c42c76eb8be1eaf
+ms.sourcegitcommit: 39bf9f0db7f9bff2ab82c99a059b0ddcf1c98f5f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "49367637"
+ms.lasthandoff: 01/19/2021
+ms.locfileid: "49905946"
 ---
-# <a name="mediawiki-connector"></a><span data-ttu-id="329d8-103">MediaWiki 连接器</span><span class="sxs-lookup"><span data-stu-id="329d8-103">MediaWiki connector</span></span>
+# <a name="mediawiki-connector"></a><span data-ttu-id="df7ac-103">MediaWiki 连接器</span><span class="sxs-lookup"><span data-stu-id="df7ac-103">MediaWiki connector</span></span>
 
-<span data-ttu-id="329d8-104">通过 MediaWiki 连接器，贵组织可以发现使用 MediaWiki 软件创建的 wiki 中的数据并对其编制索引。</span><span class="sxs-lookup"><span data-stu-id="329d8-104">With the MediaWiki connector, your organization can discover and index data from a wiki created by using MediaWiki software.</span></span> <span data-ttu-id="329d8-105">此连接器将指定的内容索引到 Microsoft Search，并支持定期爬网以保持索引为最新。</span><span class="sxs-lookup"><span data-stu-id="329d8-105">This connector indexes specified content into Microsoft Search and supports periodic crawls to keep the index up to date.</span></span>
+<span data-ttu-id="df7ac-104">通过 MediaWiki 连接器，组织可以发现使用 MediaWiki 软件创建的 Wiki 数据并编制数据索引。</span><span class="sxs-lookup"><span data-stu-id="df7ac-104">With the MediaWiki connector, your organization can discover and index data from a wiki created by using MediaWiki software.</span></span> <span data-ttu-id="df7ac-105">此连接器将指定内容索引到 Microsoft 搜索中，并支持定期爬网，使索引保持最新。</span><span class="sxs-lookup"><span data-stu-id="df7ac-105">This connector indexes specified content into Microsoft Search and supports periodic crawls to keep the index up to date.</span></span>
 
-<span data-ttu-id="329d8-106">本文适用于 Microsoft 365 管理员或任何配置、运行和监控 MediaWiki 连接器的人。</span><span class="sxs-lookup"><span data-stu-id="329d8-106">This article is for Microsoft 365 administrators or anyone who configures, runs, and monitors a MediaWiki connector.</span></span> <span data-ttu-id="329d8-107">它说明了如何配置连接器和连接器功能、限制和故障排除技术。</span><span class="sxs-lookup"><span data-stu-id="329d8-107">It explains how to configure your connector and connector capabilities, limitations, and troubleshooting techniques.</span></span>
+<span data-ttu-id="df7ac-106">本文适用于 Microsoft 365 管理员或配置、运行和监视 MediaWiki Graph 连接器的任何人。</span><span class="sxs-lookup"><span data-stu-id="df7ac-106">This article is for Microsoft 365 administrators or anyone who configures, runs, and monitors a MediaWiki Graph connector.</span></span> <span data-ttu-id="df7ac-107">它补充了"设置 Graph 连接器 ["文章中提供的一般](configure-connector.md) 说明。</span><span class="sxs-lookup"><span data-stu-id="df7ac-107">It supplements the general instructions provided in the [Set up your Graph connector](configure-connector.md) article.</span></span> <span data-ttu-id="df7ac-108">如果尚未这样做，请阅读整个"设置 Graph 连接器"文章以了解常规安装过程。</span><span class="sxs-lookup"><span data-stu-id="df7ac-108">If you have not already done so, read the entire Set up your Graph connector article to understand the general setup process.</span></span>
 
-## <a name="connect-to-a-data-source"></a><span data-ttu-id="329d8-108">连接到数据源</span><span class="sxs-lookup"><span data-stu-id="329d8-108">Connect to a data source</span></span>
+<span data-ttu-id="df7ac-109">下面列出了安装过程的每一步以及一条说明，指示你应遵循常规设置说明或仅适用于 MediaWiki Graph 连接器的其他说明。</span><span class="sxs-lookup"><span data-stu-id="df7ac-109">Each step in the setup process is listed below along with either a note that indicates you should follow the general setup instructions OR other instructions that apply to only MediaWiki Graph connectors.</span></span> <span data-ttu-id="df7ac-110">本文还包括有关 MediaWiki Graph [连接器的限制](#limitations) 的信息。</span><span class="sxs-lookup"><span data-stu-id="df7ac-110">This article also includes information about [Limitations](#limitations) for MediaWiki Graph connectors.</span></span> 
 
-<span data-ttu-id="329d8-109">输入您的 MediaWiki URL 和凭据以对连接进行身份验证。</span><span class="sxs-lookup"><span data-stu-id="329d8-109">Enter your MediaWiki URL and credentials for authenticating the connection.</span></span> <span data-ttu-id="329d8-110">你将需要以下信息： **租户 ID**、 **资源 ID**、 **客户端 ID** 和 **客户端密码**。</span><span class="sxs-lookup"><span data-stu-id="329d8-110">You'll need the following information: **Tenant ID**, **Resource ID**, **Client ID**, and the **Client Secret**.</span></span>
+## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a><span data-ttu-id="df7ac-111">步骤 1：在 Microsoft 365 管理中心中添加 Graph 连接器。</span><span class="sxs-lookup"><span data-stu-id="df7ac-111">Step 1: Add a Graph connector in the Microsoft 365 admin center.</span></span>
+<span data-ttu-id="df7ac-112">按照常规设置说明操作。</span><span class="sxs-lookup"><span data-stu-id="df7ac-112">Follow the general setup instructions.</span></span>
 
-## <a name="manage-search-permissions"></a><span data-ttu-id="329d8-111">管理搜索权限</span><span class="sxs-lookup"><span data-stu-id="329d8-111">Manage search permissions</span></span>
+## <a name="step-2-name-the-connection"></a><span data-ttu-id="df7ac-113">步骤 2：命名连接。</span><span class="sxs-lookup"><span data-stu-id="df7ac-113">Step 2: Name the connection.</span></span>
+<span data-ttu-id="df7ac-114">按照常规设置说明操作。</span><span class="sxs-lookup"><span data-stu-id="df7ac-114">Follow the general setup instructions.</span></span>
+ 
+## <a name="step-3-configure-the-connection-settings"></a><span data-ttu-id="df7ac-115">步骤 3：配置连接设置。</span><span class="sxs-lookup"><span data-stu-id="df7ac-115">Step 3: Configure the connection settings.</span></span>
+<span data-ttu-id="df7ac-116">输入 **Wiki URL，** 然后从选项的下拉菜单中选择身份验证类型。</span><span class="sxs-lookup"><span data-stu-id="df7ac-116">Enter your **Wiki URL** and choose the **Authentication type** from the drop-down menu of options.</span></span> <span data-ttu-id="df7ac-117">选项为 **None、Basic** 和 **OAuth 2.0 AAD。** </span><span class="sxs-lookup"><span data-stu-id="df7ac-117">The options are **None**, **Basic**, and **OAuth 2.0 AAD**.</span></span>
 
-<span data-ttu-id="329d8-112">MediaWiki 连接器仅支持 **所有人都** 能看到的搜索权限。</span><span class="sxs-lookup"><span data-stu-id="329d8-112">The MediaWiki connector only supports search permissions visible to **Everyone**.</span></span> <span data-ttu-id="329d8-113">索引数据显示在搜索结果中，并对组织中的所有用户可见。</span><span class="sxs-lookup"><span data-stu-id="329d8-113">Indexed data appears in the search results and is visible to all users in the organization.</span></span>
+<span data-ttu-id="df7ac-118">如果选择"**基本**"作为身份验证类型，则需要提供 **Wiki** **的用户名和密码。**</span><span class="sxs-lookup"><span data-stu-id="df7ac-118">If you choose **Basic** as the Authentication type, you will need to provide the **Username** and **Password** for the wiki.</span></span>
 
-## <a name="assign-property-labels"></a><span data-ttu-id="329d8-114">分配属性标签</span><span class="sxs-lookup"><span data-stu-id="329d8-114">Assign property labels</span></span>
+<span data-ttu-id="df7ac-119">如果选择 **OAuth 2.0 AAD** 作为身份验证类型，则需要提供 Wiki **安装的资源** ID。</span><span class="sxs-lookup"><span data-stu-id="df7ac-119">If you choose **OAuth 2.0 AAD** as the Authentication type, you will need to provide the **Resource ID** of the wiki installation.</span></span> <span data-ttu-id="df7ac-120">你还需要提供在 AAD 应用程序注册 **页上生成的客户端** **ID** 和客户端密码。</span><span class="sxs-lookup"><span data-stu-id="df7ac-120">You will also need to provide the **Client ID** and **Client secret** generated on the AAD Application registration page.</span></span> 
 
-<span data-ttu-id="329d8-115">通过从选项菜单中进行选择，可以为每个标签分配一个 source 属性。</span><span class="sxs-lookup"><span data-stu-id="329d8-115">You can assign a source property to each label by choosing from a menu of options.</span></span> <span data-ttu-id="329d8-116">虽然这一步并不是强制性的，但具有一些属性标签将改进搜索相关性，并确保最终用户更准确地搜索结果。</span><span class="sxs-lookup"><span data-stu-id="329d8-116">While this step is not mandatory, having some property labels will improve the search relevance and ensure more accurate search results for end users.</span></span>
+## <a name="step-4-manage-search-permissions"></a><span data-ttu-id="df7ac-121">步骤 4：管理搜索权限</span><span class="sxs-lookup"><span data-stu-id="df7ac-121">Step 4: Manage search permissions</span></span>
+<span data-ttu-id="df7ac-122">MediaWiki 连接器仅支持对所有人可见的搜索 **权限**。</span><span class="sxs-lookup"><span data-stu-id="df7ac-122">The MediaWiki connector only supports search permissions visible to **Everyone**.</span></span> <span data-ttu-id="df7ac-123">索引数据将显示在搜索结果中，并且对组织所有用户可见。</span><span class="sxs-lookup"><span data-stu-id="df7ac-123">Indexed data appears in the search results and is visible to all users in the organization.</span></span>
 
-## <a name="manage-schema"></a><span data-ttu-id="329d8-117">管理架构</span><span class="sxs-lookup"><span data-stu-id="329d8-117">Manage schema</span></span>
+## <a name="step-5-assign-property-labels"></a><span data-ttu-id="df7ac-124">步骤 5：分配属性标签</span><span class="sxs-lookup"><span data-stu-id="df7ac-124">Step 5: Assign property labels</span></span>
+<span data-ttu-id="df7ac-125">按照常规设置说明操作。</span><span class="sxs-lookup"><span data-stu-id="df7ac-125">Follow the general setup instructions.</span></span>
 
-<span data-ttu-id="329d8-118">在 " **管理架构** " 屏幕上，您可以选择更改架构属性， (可 **查询**、可 **搜索**、 **检索** 和 **可精简**) 与属性相关联，添加可选别名，然后选择 **Content** 属性。</span><span class="sxs-lookup"><span data-stu-id="329d8-118">On the **Manage Schema** screen, you have the option to change the schema attributes (**queryable**, **searchable**, **retrievable**, and **refinable**) associated with the properties, add optional aliases, and choose the **Content** property.</span></span>
+## <a name="step-6-manage-schema"></a><span data-ttu-id="df7ac-126">步骤 6：管理架构</span><span class="sxs-lookup"><span data-stu-id="df7ac-126">Step 6: Manage schema</span></span>
+<span data-ttu-id="df7ac-127">按照常规设置说明操作。</span><span class="sxs-lookup"><span data-stu-id="df7ac-127">Follow the general setup instructions.</span></span>
 
-## <a name="set-the-refresh-schedule"></a><span data-ttu-id="329d8-119">设置刷新计划</span><span class="sxs-lookup"><span data-stu-id="329d8-119">Set the refresh schedule</span></span>
+## <a name="step-7-choose-refresh-settings"></a><span data-ttu-id="df7ac-128">步骤 7：选择刷新设置</span><span class="sxs-lookup"><span data-stu-id="df7ac-128">Step 7: Choose refresh settings</span></span>
+<span data-ttu-id="df7ac-129">按照常规设置说明操作。</span><span class="sxs-lookup"><span data-stu-id="df7ac-129">Follow the general setup instructions.</span></span>
 
-<span data-ttu-id="329d8-120">此计划将刷新已编制索引的数据，因此 wiki 的更改将反映在 Microsoft Search 中。</span><span class="sxs-lookup"><span data-stu-id="329d8-120">This schedule refreshes indexed data, so changes to the wiki are reflected in Microsoft Search.</span></span> <span data-ttu-id="329d8-121">在指定的刷新间隔后，所有新页面、删除的页面、页面内容或元数据更改都会显示在搜索结果中。</span><span class="sxs-lookup"><span data-stu-id="329d8-121">All new pages, deleted pages, page content, or metadata changes appear in search results after the specified refresh interval.</span></span> <span data-ttu-id="329d8-122">爬网时间取决于 wiki 的大小。</span><span class="sxs-lookup"><span data-stu-id="329d8-122">The crawl time is dependent on the size of the wiki.</span></span> <span data-ttu-id="329d8-123">目前，连接器会在每分钟50页面的周围进行爬网。</span><span class="sxs-lookup"><span data-stu-id="329d8-123">Currently the connector crawls at around 50 pages per minute.</span></span>
+## <a name="step-8-review-connection"></a><span data-ttu-id="df7ac-130">步骤 8：查看连接</span><span class="sxs-lookup"><span data-stu-id="df7ac-130">Step 8: Review connection</span></span>
+<span data-ttu-id="df7ac-131">按照常规设置说明操作。</span><span class="sxs-lookup"><span data-stu-id="df7ac-131">Follow the general setup instructions.</span></span>
 
-## <a name="limitations"></a><span data-ttu-id="329d8-124">限制</span><span class="sxs-lookup"><span data-stu-id="329d8-124">Limitations</span></span>
+<!---## Troubleshooting-->
+<!---To be added-->
 
-<span data-ttu-id="329d8-125">在预览版本中，MediaWiki 连接器具有以下限制：</span><span class="sxs-lookup"><span data-stu-id="329d8-125">The MediaWiki connector has these limitations in the preview release:</span></span>
+## <a name="limitations"></a><span data-ttu-id="df7ac-132">限制</span><span class="sxs-lookup"><span data-stu-id="df7ac-132">Limitations</span></span>
+<span data-ttu-id="df7ac-133">MediaWiki 连接器在预览版本中有以下限制：</span><span class="sxs-lookup"><span data-stu-id="df7ac-133">The MediaWiki connector has these limitations in the preview release:</span></span>
 
-* <span data-ttu-id="329d8-126">仅支持基于云的 wiki。</span><span class="sxs-lookup"><span data-stu-id="329d8-126">Supports only cloud-based wikis.</span></span>
-* <span data-ttu-id="329d8-127">仅支持基本或 OAuth 2.0 与 Azure Active Directory 或 Azure 身份验证。</span><span class="sxs-lookup"><span data-stu-id="329d8-127">Supports only Basic or OAuth 2.0 with Azure Active Directory or Azure authentication.</span></span>
-* <span data-ttu-id="329d8-128">不支持用于索引的命名空间选择。</span><span class="sxs-lookup"><span data-stu-id="329d8-128">Doesn't support namespace selection for indexing.</span></span> <span data-ttu-id="329d8-129">仅索引 **主**、 **类别** 和 **文件** 命名空间。</span><span class="sxs-lookup"><span data-stu-id="329d8-129">Indexes only **Main**, **Category**, and **File** namespaces.</span></span>
-* <span data-ttu-id="329d8-130">不支持 (Acl) 的访问控制列表。</span><span class="sxs-lookup"><span data-stu-id="329d8-130">Doesn't support Access Control Lists (ACLs).</span></span> <span data-ttu-id="329d8-131">因此，索引页对组织中的所有用户都是可见的。</span><span class="sxs-lookup"><span data-stu-id="329d8-131">Thus, indexed pages are visible to all users in the organization.</span></span>
+* <span data-ttu-id="df7ac-134">仅支持基于云的 Wiki。</span><span class="sxs-lookup"><span data-stu-id="df7ac-134">Supports only cloud-based wikis.</span></span>
+* <span data-ttu-id="df7ac-135">仅支持使用 Azure Active Directory 或 Azure 身份验证的基本或 OAuth 2.0。</span><span class="sxs-lookup"><span data-stu-id="df7ac-135">Supports only Basic or OAuth 2.0 with Azure Active Directory or Azure authentication.</span></span>
+* <span data-ttu-id="df7ac-136">不支持为索引选择命名空间。</span><span class="sxs-lookup"><span data-stu-id="df7ac-136">Doesn't support namespace selection for indexing.</span></span> <span data-ttu-id="df7ac-137">仅索引主命名空间、类别命名空间和文件命名空间。</span><span class="sxs-lookup"><span data-stu-id="df7ac-137">Indexes only Main, Category, and File namespaces.</span></span>
+* <span data-ttu-id="df7ac-138">不支持访问控制列表 (ACL) 。</span><span class="sxs-lookup"><span data-stu-id="df7ac-138">Doesn't support Access Control Lists (ACLs).</span></span> <span data-ttu-id="df7ac-139">因此，索引页对组织中所有用户都是可见的。</span><span class="sxs-lookup"><span data-stu-id="df7ac-139">Thus, indexed pages are visible to all users in the organization.</span></span>
