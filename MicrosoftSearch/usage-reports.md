@@ -12,27 +12,23 @@ search.appverid:
 - MET150
 - MOE150
 description: 查看 Microsoft 搜索使用情况报告
-ms.openlocfilehash: 04de0de08423eff1368bc2b77e48d3fc8add038d
-ms.sourcegitcommit: 1d6fcf180f427abf3d8bfa4b8b6129e39f60ceb4
+ms.openlocfilehash: ad349e60794f219fa757861081b12a33c6806091
+ms.sourcegitcommit: 25b82bce1eaec5803111161b04ee9fd9e82a0bd8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "49712608"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "50072236"
 ---
 # <a name="microsoft-search-usage-reports"></a>Microsoft 搜索使用率报告
 
-搜索使用率报告使您能够更好地了解搜索在组织中运行方式。 从这些报告生成的见解将帮助您使内容易于查找，[](https://docs.microsoft.com/microsoftsearch/make-content-easy-to-find)并采取措施，使搜索更有用且更令人愉悦。
-
-> [!IMPORTANT]
-> Microsoft 搜索使用情况报告目前处于预览阶段，正在向定向版本中的管理员推出。 确保你的管理员帐户位于定向发布圈中，以查看这些报告。
+搜索使用率报告使您能够更好地了解搜索在组织中如何运行。 从这些报告生成的见解将帮助您使内容易于查找，[](https://docs.microsoft.com/microsoftsearch/make-content-easy-to-find)并采取措施，使搜索更有用且更令人愉悦。
 
 Microsoft [搜索使用情况报告](https://admin.microsoft.com/Adminportal/Home?#/MicrosoftSearch/insights) 包括从 SharePoint 主页和搜索框中执行的搜索生成的Office.com表。 你可以查看前一年过去 31 天、每天或每月的数据。 这些报告刚刚推出，因此需要一段时间来累算历史数据。
 
-此页面的早期版本包含针对必应必应中的 Microsoft 搜索执行的搜索Bing.com。 这些数据将很快集成到这些报告中，但现在，你仍然可以通过单击页面底部的链接查看 **必应** 的顶部查询和印象分布来查看这些报告。
+此页面的早期版本包含针对必应必应中的 Microsoft 搜索执行的搜索Bing.com。 这些数据将很快集成到这些报告中，但现在，你仍然可以通过单击页面底部的链接查看必应热门查询和印象分布来查看 **这些报告**。
 
 > [!div class="mx-imgBorder"]
 > ![搜索使用率报告仪表板](media/usage-reports/usage_reports_v2.png)
-
 
 ## <a name="overview-of-search-reports"></a>搜索报告概述
 
@@ -45,7 +41,7 @@ Microsoft [搜索使用情况报告](https://admin.microsoft.com/Adminportal/Hom
 
 ## <a name="viewing-reports"></a>查看报告
 
-当您导航到使用率报告页面时，所有报告都可供查看。 您可以使用日期筛选器来选取要查看的特定日期或月份。
+当您导航到使用率报告页时，所有报告都可供查看。 您可以使用日期筛选器来选取要查看的特定日期或月份。
 
 下载报告将允许您在更广泛的时间范围内查看报告。 单击下载箭头并选择 **过去 31 天或****过去 12 个月**。 报告下载为 Excel 电子表格。 如果选择了过去 31 天，电子表格将包含每天的单个选项卡。 过去 12 个月的下载每月都有一个选项卡。
 
@@ -73,4 +69,4 @@ Microsoft [搜索使用情况报告](https://admin.microsoft.com/Adminportal/Hom
 
 **为什么必应中的 Microsoft 搜索报告位于单独的页面上？**
 
-将 Office 365 应用程序中的搜索现代化到 Microsoft 搜索需要我们加入以前不同的系统，包括报告生成。 这需要花费一些时间，并且我们认为现在让这些报告退出比等待完成 Bing 数据集成更加重要。 完成集成后，来自所有搜索终结点的数据将包含在同一报告中。
+将 Office 365 应用程序中的搜索功能现代化到 Microsoft 搜索需要我们加入以前不同的系统，包括报告生成。 这需要花费一些时间，并且我们认为现在让这些报告退出比等待完成 Bing 数据集成更加重要。 完成集成后，来自所有搜索终结点的数据将包含在同一报告中。
