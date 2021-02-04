@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 为 Microsoft 搜索设置企业网站图形连接器
-ms.openlocfilehash: bf706399ec55fafbe96ce53622ce8502c81c2190
-ms.sourcegitcommit: d39113376db26333872d3a2c7baddc3a3a7aea61
+ms.openlocfilehash: 526b36a798f50bed457832d576ffebd15820184d
+ms.sourcegitcommit: d53b91f8f52a4a96281b66831c2449bbffe2177c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 02/03/2021
-ms.locfileid: "50084881"
+ms.locfileid: "50097427"
 ---
 <!---Previous ms.author: monaray --->
 
@@ -30,7 +30,7 @@ ms.locfileid: "50084881"
 > [!NOTE]
 > 阅读 [**"设置 Graph 连接器"**](configure-connector.md) 文章以了解 Graph 连接器的常规设置过程。
 
-本文适用于配置、运行和监视 ServiceNow Graph 连接器的任何人。 它补充了常规安装过程，并显示了仅适用于 ServiceNow Graph 连接器的说明。 本文还包括有关疑难[解答和](#troubleshooting)[限制的信息](#limitations)。
+本文适用于配置、运行和监视企业网站连接器的任何人。 它补充了常规安装过程，并显示了仅适用于企业网站连接器的说明。 本文还包括有关疑难[解答和](#troubleshooting)[限制的信息](#limitations)。
 
 <!---## Before you get started-->
 

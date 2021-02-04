@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 为 Microsoft 搜索设置 Salesforce Graph 连接器
-ms.openlocfilehash: 0b80bf7d3296236887d1cc1bf8e75da976b6a1f1
-ms.sourcegitcommit: d39113376db26333872d3a2c7baddc3a3a7aea61
+ms.openlocfilehash: 6771bc0b234bc2570a8b1fa7174b9b9244cf3958
+ms.sourcegitcommit: d53b91f8f52a4a96281b66831c2449bbffe2177c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 02/03/2021
-ms.locfileid: "50084999"
+ms.locfileid: "50097445"
 ---
 <!---Previous ms.author: rusamai --->
 
@@ -28,7 +28,7 @@ Salesforce Graph 连接器允许组织为 Salesforce 实例中的联系人、机
 > [!NOTE]
 > 阅读 [**Graph 连接器的安装程序**](configure-connector.md) 文章，了解一般的 Graph 连接器设置过程。
 
-本文适用于配置、运行和监视 ServiceNow Graph 连接器的任何人。 它补充了常规安装过程，并显示了仅适用于 Salesforce Graph 连接器的说明。 本文还包括有关 [限制的信息](#limitations)。
+本文适用于配置、运行和监视 Salesforce Graph 连接器的任何人。 它补充了常规安装过程，并显示了仅适用于 Salesforce Graph 连接器的说明。 本文还包括有关 [限制的信息](#limitations)。
 
 >[!IMPORTANT]
 >Salesforce Graph 连接器当前支持 Summer '19 或更高版本。
@@ -163,7 +163,7 @@ Salesforce 连接器当前仅支持完全爬网的刷新计划。
 - 在"管理架构"屏幕中，这些常用标准属性名称列出一次，选项为"查询"、"搜索"、"检索"和"**精简**"，并应用于全部或无。
     - 名称
     - URL
-    - Description
+    - 说明
     - Fax
     - 电话版
     - MobilePhone

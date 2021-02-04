@@ -1,8 +1,8 @@
 ---
-title: 文件共享连接器
-ms.author: rusamai
-author: rsamai
-manager: jameslau
+title: Microsoft 搜索的文件共享 Graph 连接器
+ms.author: mecampos
+author: mecampos
+manager: umas
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -12,25 +12,30 @@ search.appverid:
 - MET150
 - MOE150
 ROBOTS: NoIndex
-description: 为 Microsoft 搜索设置文件共享连接器
-ms.openlocfilehash: bf9fb730abd4ca6e42b681893525bbe3dd8a1419
-ms.sourcegitcommit: 249f41723dd6fda1e93ee1a8f3f7571ef066454b
+description: 为 Microsoft 搜索设置文件共享图形连接器
+ms.openlocfilehash: e8a68a1c6b9c2c8a8592fb915fe9bf846a758e77
+ms.sourcegitcommit: d53b91f8f52a4a96281b66831c2449bbffe2177c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49750894"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "50097418"
 ---
-# <a name="file-share-connector"></a>文件共享连接器
+<!---Previous ms.author: rusamai --->
 
-借助文件共享 Graph 连接器，贵组织的用户可以搜索本地 Windows 文件共享。
+# <a name="file-share-graph-connector"></a>文件共享 Graph 连接器
 
-本文适用于 Microsoft 365 管理员或配置、运行和监视文件共享连接器的任何人。 它介绍了如何配置连接器和连接器功能、限制和故障排除技术。
+文件共享 Graph 连接器允许组织中用户搜索本地 Windows 文件共享。
 
-## <a name="install-graph-connector-agent"></a>安装 Graph 连接器代理
+> [!NOTE]
+> 阅读 [**Graph 连接器的安装程序**](configure-connector.md) 文章，了解一般的 Graph 连接器设置过程。
 
-若要为 Windows 文件共享编制索引，必须安装和注册 [Graph 连接器代理](on-prem-agent.md) 软件。
+## <a name="before-you-get-started"></a>在开始使用之前
 
-## <a name="content-requirements"></a>内容要求
+### <a name="install-the-graph-connector-agent"></a>安装 Graph 连接器代理
+
+若要为 Windows 文件共享编制索引，必须安装和注册 Graph 连接器代理。 请参阅 ["安装 Graph 连接器代理"](on-prem-agent.md) 了解更多信息。  
+
+### <a name="content-requirements"></a>内容要求
 
 ### <a name="file-types"></a>文件类型
 
@@ -38,32 +43,53 @@ ms.locfileid: "49750894"
 
 ### <a name="file-size-limits"></a>文件大小限制
 
-支持的最大文件大小为 100 MB。 超过 100 MB 的文件不会编制索引。 处理后的最大大小限制为 4 MB。 当文件大小达到 4 MB 时，处理将停止。 因此，文件中呈现的一些短语可能无法用于搜索。
+支持的最大文件大小为 100 MB。 超过 100 MB 的文件不编制索引。 处理后的最大大小限制为 4 MB。 当文件大小达到 4 MB 时，处理将停止。 因此，文件中呈现的一些短语可能无法用于搜索。
 
-## <a name="connect-to-a-data-source"></a>连接到数据源
+## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>步骤 1：在 Microsoft 365 管理中心中添加 Graph 连接器
 
-在 **"连接到数据源"** 页上，选择 **"** 文件共享"并提供名称、连接 ID 和说明。 下一页，提供文件共享的路径并选择之前安装的 Graph 连接器代理。 输入对文件共享中所有文件的读取访问权限 [的 Microsoft Windows](https://microsoft.com/windows) 用户帐户的凭据。
+按照常规 [设置说明操作](https://docs.microsoft.com/microsoftsearch/configure-connector)。
+<!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 
-## <a name="preserve-last-access-time"></a>保留上一次访问时间
+## <a name="step-2-name-the-connection"></a>步骤 2：命名连接
+
+按照常规 [设置说明操作](https://docs.microsoft.com/microsoftsearch/configure-connector)。
+<!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
+
+## <a name="step-3-configure-the-connection-settings"></a>步骤 3：配置连接设置
+
+在 **"连接到数据源"** 页上，选择 **"** 文件共享"并提供名称、连接 ID 和说明。 下一页，提供文件共享的路径，然后选择之前安装的 Graph 连接器代理。 输入对文件共享中所有文件的读取访问权限 [的 Microsoft Windows](https://microsoft.com/windows) 用户帐户的凭据。
+
+### <a name="preserve-last-access-time"></a>保留上一次访问时间
 
 当连接器尝试对文件进行爬网时，将更新其元数据中的"上次访问时间"字段。 如果您依赖于该字段作为任何存档和备份解决方案，并且不希望在连接器访问它时对其进行更新，您可以在"高级设置"页中 **配置此选项。**
 
-## <a name="manage-search-permissions"></a>管理搜索权限
+## <a name="step-4-manage-search-permissions"></a>步骤 4：管理搜索权限
 
 您可以限制基于"共享 (访问控制列表"或"新技术文件系统"或"NTFS"或"NTFS") 搜索任何文件的权限。 如果要使用"共享访问控制列表"，请在"高级设置"页上 **选择相应的** 选项。 如果要使用 NTFS 访问控制列表，请在"管理搜索权限"页上 **选择相应的** 选项。
 
-## <a name="assign-property-labels"></a>分配属性标签
+## <a name="step-5-assign-property-labels"></a>步骤 5：分配属性标签
 
-可以通过从选项菜单中选择来为每个标签分配源属性。 虽然此步骤不是必需的，但具有一些属性标签将提高搜索相关性，并确保最终用户获得更准确的搜索结果。
+按照常规 [设置说明操作](https://docs.microsoft.com/microsoftsearch/configure-connector)。
+<!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 
-## <a name="manage-schema"></a>管理架构
+## <a name="step-6-manage-schema"></a>步骤 6：管理架构
 
-在"管理架构"屏幕上，你可以选择更改架构属性 (可查询、可搜索、可检索和可精简 **)** 这些属性、添加可选别名以及选择 **Content** 属性。
+按照常规 [设置说明操作](https://docs.microsoft.com/microsoftsearch/configure-connector)。
+<!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 
-## <a name="set-the-refresh-schedule"></a>设置刷新计划
+## <a name="step-7-choose-refresh-settings"></a>步骤 7：选择刷新设置
 
-建议的默认刷新计划间隔为 15 分钟，但您可以根据您的首选项更改它。
+按照常规 [设置说明操作](https://docs.microsoft.com/microsoftsearch/configure-connector)。
+<!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 
-## <a name="result-layout"></a>结果布局
+## <a name="step-8-review-connection"></a>步骤 8：查看连接
 
-建议使用默认结果布局来显示文件共享连接器结果，因为它具有相应的图标和控件，可帮助你导航到文件路径。 如果创建新的结果布局，它将覆盖默认值。
+按照常规 [设置说明操作](https://docs.microsoft.com/microsoftsearch/configure-connector)。
+<!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup 
+instructions.-->
+
+<!---## Troubleshooting-->
+<!---Insert troubleshooting recommendations for this data source-->
+
+<!---## Limitations-->
+<!---Insert limitations for this data source-->

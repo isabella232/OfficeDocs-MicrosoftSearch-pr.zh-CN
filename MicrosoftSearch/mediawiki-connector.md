@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 为 Microsoft 搜索设置 MediaWiki Graph 连接器
-ms.openlocfilehash: 9d9d7a1ef9aeaba079f8cccef1ec4a4836768e8d
-ms.sourcegitcommit: d39113376db26333872d3a2c7baddc3a3a7aea61
+ms.openlocfilehash: e2b2b7c506d92623dd0f68801312c1820b5b9d4e
+ms.sourcegitcommit: d53b91f8f52a4a96281b66831c2449bbffe2177c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 02/03/2021
-ms.locfileid: "50084980"
+ms.locfileid: "50097391"
 ---
 <!---Previous ms.author: monaray --->
 
@@ -28,7 +28,7 @@ ms.locfileid: "50084980"
 > [!NOTE]
 > 阅读 [**Graph 连接器的安装程序**](configure-connector.md) 文章，了解一般的 Graph 连接器设置过程。
 
-本文适用于配置、运行和监视 ServiceNow Graph 连接器的任何人。 它补充了常规安装过程，并显示了仅适用于 MediaWiki Graph 连接器的说明。 本文还包括有关 [限制的信息](#limitations)。
+本文适用于配置、运行和监视 MediaWiki Graph 连接器的任何人。 它补充了常规安装过程，并显示了仅适用于 MediaWiki Graph 连接器的说明。 本文还包括有关 [限制的信息](#limitations)。
 
 <!---## Before you get started-->
 

@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ROBOTS: NoIndex
 description: 为 Microsoft 搜索设置 Oracle SQL Graph 连接器。
-ms.openlocfilehash: a13c9ea71b115e84d313489214d424f77337a062
-ms.sourcegitcommit: d39113376db26333872d3a2c7baddc3a3a7aea61
+ms.openlocfilehash: 01e4cd6b04d2997ea11ef006e94ea09b03280f41
+ms.sourcegitcommit: 6a7f36769e92b714588b47efb0c185eddabe6953
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "50084971"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "50099332"
 ---
 <!---Previous ms.author:vivg --->
 
@@ -29,7 +29,7 @@ Oracle SQL Graph 连接器允许组织发现本地 Oracle 数据库中的数据�
 > [!NOTE]
 > 阅读 [**Graph 连接器的安装程序**](configure-connector.md) 文章，了解一般的 Graph 连接器设置过程。
 
-本文适用于配置、运行和监视 ServiceNow Graph 连接器的任何人。 它补充了常规安装过程，并显示了仅适用于 ServiceNow Graph 连接器的说明。 本文还包括有关疑难[解答和](#troubleshooting)[限制的信息](#limitations)。
+本文适用于配置、运行和监视 Oracle SQL连接器的任何人。 它补充了常规安装过程，并显示了仅适用于 Oracle SQL Graph 连接器的说明。 本文还包括有关疑难[解答和](#troubleshooting)[限制的信息](#limitations)。
 
 ## <a name="before-you-get-started"></a>在开始使用之前
 

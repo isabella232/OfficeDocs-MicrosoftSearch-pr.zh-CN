@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 为 Microsoft 搜索设置 Azure DevOps Graph 连接器
-ms.openlocfilehash: 3d922a5384de8bf0ef3c6dfd80bd67ad9170eb66
-ms.sourcegitcommit: d39113376db26333872d3a2c7baddc3a3a7aea61
+ms.openlocfilehash: 8fe783c847c672223e051f4433af3e41678fe367
+ms.sourcegitcommit: d53b91f8f52a4a96281b66831c2449bbffe2177c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 02/03/2021
-ms.locfileid: "50084935"
+ms.locfileid: "50097400"
 ---
 <!---Previous ms.author: shgrover --->
 
@@ -28,7 +28,7 @@ Azure DevOps Graph 连接器允许组织在其 Azure DevOps 服务实例中为�
 > [!NOTE]
 > 阅读 [**Graph 连接器的安装程序**](configure-connector.md) 文章，了解一般的 Graph 连接器设置过程。
 
-本文适用于配置、运行和监视 ServiceNow Graph 连接器的任何人。 它补充了常规安装过程，并显示了仅适用于 ServiceNow Graph 连接器的说明。
+本文适用于配置、运行和监视 Azure DevOps Graph 连接器的任何人。 它补充了常规安装过程，并显示了仅适用于 Azure DevOps Graph 连接器的说明。
 
 >[!IMPORTANT]
 >Azure DevOps 连接器仅支持 Azure DevOps 云服务。 此连接器不支持 Azure DevOps Server 2019、TFS 2018、TFS 2017、TFS 2015 和 TFS 2013。
@@ -59,7 +59,7 @@ instructions.-->
 
 下表提供了有关如何填写应用程序注册表单的指导：
 
-必填字段 | Description | 建议值
+必填字段 | 说明 | 建议值
 --- | --- | ---
 | 公司名称         | 公司的名称。 | 使用适当的值   |
 | 应用程序名称     | 标识要授权的应用程序的唯一值。    | Microsoft 搜索     |
