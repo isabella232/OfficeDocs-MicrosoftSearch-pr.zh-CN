@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 在 Microsoft 搜索中创建和更新首字母缩写词答案
-ms.openlocfilehash: ff79e3d741e10d401873c29d86739e61c9f53329
-ms.sourcegitcommit: e6ceb07cae208648dadd5452a077414ab5a4513f
+ms.openlocfilehash: 45d3cc7b33f27d2f4e77d8099fbfa91e01aabcbb
+ms.sourcegitcommit: ef94ffd6111acb929c8343f0f4f82ea109b68fb6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "49728003"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "50122153"
 ---
 # <a name="manage-acronyms-answers-in-microsoft-search"></a>在 Microsoft 搜索中管理首字母缩写词答案
 
@@ -62,15 +62,15 @@ Microsoft 搜索查询两个数据源，以提供用户搜索的首字母缩略�
 
 **草稿状态**。 如果要在 Microsoft 搜索中提供首字母缩略词之前查看该缩写词，可以添加草稿状态中的首字母缩写词。 "草稿"状态中的首字母缩略词不会显示在搜索结果中。 您需要将缩写词移动到"已发布"状态，使其显示在搜索结果中。
 
-可以单独添加首字母缩写词，也可以将其批量导入 CSV 文件中。 上传包含下表中所示字段的 CSV 文件：
+可以单独添加首字母缩写词，也可以将其批量导入 CSV 文件中。 上载包含下表中所示字段的 CSV 文件：
 
-| 首字母缩略 (强制)  | 扩展 (强制)  | 说明  | Source | 州 (强制)  |
-| --------- | --------- | ---------- | --------- |--------- |
-| *XXX* | *拼写的缩写* |  | *URL* | *已发布或草稿* |
+| 首字母缩写词 (强制)  | 扩展 (强制)  | URL | 说明  | State (Mandatory)  | 上次修改时间 | 上次修改者 | Id |
+| --------- | --------- | --------- | ---------- | --------- |--------- |--------- |--------- |
+| *XXX* | *拼写的缩写* | *Source* |  | *已发布或草稿* |  |  |  |
 
 ### <a name="csv-fields"></a>CSV 字段
 
-**首字母缩略词**。 包含实际的短格式或缩写。 例如 *，DNN*。
+**首字母缩略词**。 包含实际的短格式或首字母缩写。 例如 *，DNN*。
 
 **展开**。 包含首字母缩略词的扩展。 例如， *深度神经网络*。
 
@@ -85,7 +85,7 @@ Microsoft 搜索查询两个数据源，以提供用户搜索的首字母缩略�
 
 ### <a name="system-curated-acronyms"></a>系统库缩略词
 
-对于管理员来说，将组织中使用的所有首字母缩写词添加到"答案"可能是一个挑战。 此功能可以找到搜索管理员甚至不知道的首字母缩略词。 为完成这一工作，Microsoft 搜索还发现并组织这些源中的首字母缩写词：
+对于管理员来说，将组织中使用的所有首字母缩写词添加到"答案"可能是一个挑战。 此功能可以找到搜索管理员甚至不知道的首字母缩略词。 为完成这一工作，Microsoft 搜索还发现并特地从这些源中提供首字母缩略词：
 
 - 用户的电子邮件
 - [SharePoint、Microsoft](https://products.office.com/sharepoint/collaboration) [OneDrive]( https://onedrive.live.com/about/)和[Microsoft OneNote 中的文档](https://www.onenote.com/)
@@ -96,9 +96,9 @@ Microsoft 搜索确保只有具有文档访问权限和权限的用户才能看�
 > [!NOTE]
 > 无需为管理员设置的首字母缩略词进行设置。
 
-## <a name="frequently-asked-questions"></a>常见问题
+## <a name="frequently-asked-questions"></a>常见问题解答
 
-**问：如何对管理员选择和系统选择的数据进行排名？**
+**问：如何对管理员和系统选择的数据进行排名？**
 
 **答：** 结果的排名可能因人而异，因为结果针对每个用户进行个性化设置。 这两个类别都不始终优先于其他类别。
 
@@ -124,5 +124,5 @@ Microsoft 搜索确保只有具有文档访问权限和权限的用户才能看�
 
 **问：如果我的组织不想显示系统特有首字母缩略词，该做什么？能否在搜索结果中停止显示此类型的首字母缩写词？**
 
-**答**：若要在搜索结果中关闭显示系统创建的首字母缩略词，请按照联系商业产品支持人员中的说明创建 [客户支持票证](https://docs.microsoft.com/office365/admin/contact-support-for-business-products?redirectSourcePath=%252f%252farticle%252fContact-Office-365-for-business-support-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b&view=o365-worldwide&tabs=online#BKMK_call_support)。
+**答**：若要在搜索结果中关闭显示系统创建的首字母缩略词，请按照联系商业产品支持人员中的说明创建 [客户支持票证](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products)。
 创建支持票证后，系统创建的首字母缩略词最多需要 48 小时才能停止显示在搜索结果中。
