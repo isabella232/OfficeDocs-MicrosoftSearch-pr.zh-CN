@@ -13,14 +13,14 @@ search.appverid:
 - MOE150
 ROBOTS: NoIndex
 description: On-prem 代理
-ms.openlocfilehash: 31220196849fe90ab2611e9c2b83a1cec0a02b34
-ms.sourcegitcommit: a04f1df14a3221776ccd141f6060328612d80e06
+ms.openlocfilehash: 7aef2ea57c92929d4d4f45e1a738c84e6a3f4bba
+ms.sourcegitcommit: ab4f81ded967168689e6e81c90e115b94719335c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49876495"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "50173059"
 ---
-# <a name="graph-connector-agent"></a>Graph 连接器代理
+# <a name="graph-connector-agent"></a>图形连接器代理
 
 使用 On-prem Graph 连接器需要安装 *Graph 连接器代理* 软件。 它允许在本地数据和 Graph 连接器 API 之间安全数据传输。 本文将指导您完成代理的安装和配置。
 
@@ -35,6 +35,15 @@ ms.locfileid: "49876495"
 * 8 核，3 GHz
 * 16 GB RAM，2 GB 磁盘空间
 * 通过 443 对数据源和 Internet 的网络访问
+
+安装代理后，如果组织的代理服务器或防火墙阻止与未知域的通信，请将以下这些域添加到允许列表中。
+
+1. *.servicebus.windows.net
+2. *.events.data.microsoft.com
+3. https://login.microsoftonline.com
+4. https://gcs.office.com
+5. https://graph.microsoft.com/
+
 
 ## <a name="create-and-configure-an-app-for-the-agent"></a>为代理创建和配置应用  
 
@@ -51,7 +60,7 @@ ms.locfileid: "49876495"
 7. 从权限中搜索"ExternalItem.ReadWrite.All"和"Directory.Read.All"，然后选择 **"添加权限"。**
 8. 选择 **"授予管理员同意 [TenantName]"，** 然后通过选择"是 **"确认**。
 9. 检查权限是否位于"已授予"状态。
-     ![右侧列上显示为绿色授予的权限。](media/onprem-agent/granted-state.png)
+     ![右侧列显示为绿色授予的权限。](media/onprem-agent/granted-state.png)
 
 ### <a name="configure-authentication"></a>配置身份验证
 
@@ -60,7 +69,7 @@ ms.locfileid: "49876495"
 #### <a name="configuring-the-client-secret-for-authentication"></a>配置客户端密码进行身份验证
 
 1. 转到 [Azure 门户，](https://portal.azure.com) 然后使用租户的管理员凭据登录。
-2. 从 **导航窗格** 打开应用注册，然后转到相应的应用。 在 **"管理**"下 **，选择"证书和密码"。**
+2. 从 **导航窗格中** 打开应用注册，然后转到相应的应用。 在 **"管理**"下 **，选择证书和密码**。
 3. 选择 **"新建** 客户端密码"，然后选择密码的过期期限。 复制生成的密码并保存它，因为它不会再次显示。
 4. 使用此客户端密码和应用程序 ID 配置代理。 不能在代理的"名称" **字段中** 使用空格。 接受字母数字字符。
 
@@ -74,7 +83,7 @@ ms.locfileid: "49876495"
 
 ##### <a name="step-1-get-a-certificate"></a>步骤 1：获取证书
 
-下面的脚本可用于生成自签名证书。 你的组织可能不允许自签名证书。 在这种情况下，请使用此信息了解要求，并根据组织策略获取证书。
+下面的脚本可用于生成自签名证书。 你的组织可能不允许自签名证书。 在这种情况下，使用此信息了解要求，并根据组织策略获取证书。
 
 ```Powershell
 $dnsName = "<TenantDomain like agent.onmicrosoft.com>" # Your DNS name
