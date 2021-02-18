@@ -17,7 +17,8 @@
 ## [连接器库](connectors-gallery.md)
 ## Microsoft 的设置连接器
 ### [设置概述](configure-connector.md)
-### [映射你的非 Azure AD 标识（预览版）](map-non-aad.md)
+### [设置图形连接器代理（预览版）](on-prem-agent.md)
+### [映射非 Azure AD 标识（预览版）](map-non-aad.md)
 ### [映射 Azure AD 标识（预览版）](map-aad.md)
 ### 连接器专用信息
 #### [Azure Data Lake Storage Gen2](azure-data-lake-connector.md)
