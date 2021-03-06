@@ -3,6 +3,7 @@ title: 适用于 Microsoft 搜索的企业网站 Graph 连接器
 ms.author: mecampos
 author: mecampos
 manager: umas
+audience: Admin
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -11,13 +12,13 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: 为 Microsoft 搜索设置企业网站图形连接器
-ms.openlocfilehash: 7d71e6e3d775c97d8916e20ab032c312c269c5f1
-ms.sourcegitcommit: 6a7522d9aeaedeedaac096c485d3f343ce98d3d2
+description: 为 Microsoft 搜索设置企业网站 Graph 连接器
+ms.openlocfilehash: b0ed7cc4148dba6c7555fcf7c9c930184cdbc24c
+ms.sourcegitcommit: f76ade4c8fed0fee9c36d067b3ca8288c6c980aa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50421096"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50508793"
 ---
 <!---Previous ms.author: monaray --->
 
@@ -28,9 +29,9 @@ ms.locfileid: "50421096"
 企业网站 Graph 连接器允许组织从面向内部的网站索引 **文章和内容**。 配置连接器并同步网站内容后，最终用户可以从任何 Microsoft 搜索客户端搜索该内容。
 
 > [!NOTE]
-> 阅读 [**"设置 Graph 连接器"**](configure-connector.md) 文章，了解一般的 Graph 连接器设置过程。
+> 阅读 [**"设置 Graph 连接器"**](configure-connector.md) 文章，了解一般 Graph 连接器设置说明。
 
-本文适用于配置、运行和监视企业网站连接器的任何人。 它补充了常规安装过程，并显示了仅适用于企业网站连接器的说明。 本文还包括有关疑[难解答和](#troubleshooting)[限制的信息](#limitations)。
+本文适用于配置、运行和监视企业网站连接器的任何人。 它补充了常规安装过程，并显示了仅适用于企业网站连接器的说明。 本文还包括有关[疑难解答和](#troubleshooting)[限制的信息](#limitations)。
 
 <!---## Before you get started-->
 
@@ -50,12 +51,12 @@ ms.locfileid: "50421096"
 
 若要连接到数据源，您需要填写网站的根 URL、选择爬网源以及要使用身份验证的类型：无、基本身份验证或使用 [Azure Active Directory (Azure AD) ](https://docs.microsoft.com/azure/active-directory/)的 OAuth 2.0。 完成此信息后，选择"测试连接"以验证设置。
 
-> [!NOTE]
-> 如果要爬网的网站定义了站点地图，则连接器将仅对网站地图中列出的 URL 进行爬网。 如果未定义站点图，连接器将深入爬网在网站的根 URL 上找到的所有链接。
-
 ### <a name="url"></a>URL
 
 使用 URL 字段指定要爬网的网站的根。 企业网站连接器将使用此 URL 作为起点，并按照此 URL 的所有链接进行爬网。
+
+> [!NOTE]
+> 如果要爬网的网站定义了站点地图，则连接器将仅对网站地图中列出的 URL 进行爬网。 如果未定义站点图，连接器将深入爬网在网站的根 URL 上找到的所有链接。
 
 ### <a name="crawl-mode-cloud-or-on-premises-preview"></a>爬网模式：云或本地 (预览) 
 
@@ -81,11 +82,11 @@ ms.locfileid: "50421096"
 
 若要获取资源、client_id和client_secret的值，请转到使用授权代码请求重定向 URL **网页上的访问** 令牌。
 
-有关详细信息，请参阅快速 [入门：使用 Microsoft 标识平台注册应用程序](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app)。
+有关详细信息，请参阅快速 [入门：向 Microsoft 标识平台注册应用程序](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app)。
 
 ## <a name="step-3a-add-urls-to-exclude-optional-crawl-restrictions"></a>步骤 3a：添加 URL 以排除 (可选的爬网限制) 
 
-有两种方法可阻止对页面进行爬网：禁止在robots.txt或将其添加到排除列表中。
+有两种方法可阻止对页面进行爬网：禁止在 robots.txt 文件中对页面进行爬网或将其添加到排除列表。
 
 ### <a name="support-for-robotstxt"></a>支持robots.txt
 
@@ -101,7 +102,7 @@ ms.locfileid: "50421096"
 
 ## <a name="step-5-manage-schema"></a>步骤 5：管理架构
 
-在"管理架构"屏幕上，可以更改架构属性 (选项为"查询"、"搜索"、"检索"和"精简 **")** 与属性关联，添加可选别名，然后选择 **"内容**"属性。 
+在"管理架构"屏幕上，可以更改架构属性 (包括与属性关联的查询、搜索、检索和优化 **) 、** 添加可选别名以及选择 **Content** 属性。
 
 ## <a name="step-6-manage-search-permissions"></a>步骤 6：管理搜索权限
 

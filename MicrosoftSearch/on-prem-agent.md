@@ -3,6 +3,7 @@ title: 本地代理
 ms.author: rusamai
 author: rsamai
 manager: jameslau
+audience: Admin
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -13,12 +14,12 @@ search.appverid:
 - MOE150
 ROBOTS: NoIndex
 description: On-prem Agent
-ms.openlocfilehash: bd5212d42fe21583aa6a4e0dc8060d5e191a7292
-ms.sourcegitcommit: 35b4246cb3e38c6fe21540686e28fe54154b33f3
+ms.openlocfilehash: 5134c0c4459f9d38825451f274e67469956756d2
+ms.sourcegitcommit: f76ade4c8fed0fee9c36d067b3ca8288c6c980aa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/16/2021
-ms.locfileid: "50259426"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50508802"
 ---
 # <a name="graph-connector-agent"></a>Graph 连接器代理
 
@@ -26,7 +27,7 @@ ms.locfileid: "50259426"
 
 ## <a name="installation"></a>安装
 
-在此处下载最新版本的 Graph 连接器 [代理](https://aka.ms/gcadownload) ，然后使用安装向导安装软件。 使用下面所述的计算机的建议配置，软件可以处理最多三个连接。 除此之外的任何连接都可能会降低代理上所有连接的性能。
+在此处下载最新版本的 Graph 连接器 [代理](https://aka.ms/gcadownload) ，然后使用安装向导安装软件。 使用下面所述的计算机的建议配置，软件可以处理最多三个连接。 任何超过该连接的连接都可能会降低代理上所有连接的性能。
 
 建议的配置：
 
@@ -105,7 +106,7 @@ Export-PfxCertificate -Cert $certificatePath -FilePath ($filePath + '.pfx') -Pas
 
 1. 打开应用程序，然后从左窗格导航到"证书和机密"部分
 1. 选择"上载证书"并上载 .cer 文件
-1. 打开 **应用注册** ，然后 **从导航窗格中** 选择证书和密码。 复制证书指纹。
+1. 打开 **应用注册** ，然后从导航 **窗格中** 选择证书和密码。 复制证书指纹。
 
 ![在左窗格中选择证书和密码时指纹证书列表](media/onprem-agent/certificates.png)
 
@@ -123,4 +124,4 @@ Export-PfxCertificate -Cert $certificatePath -FilePath ($filePath + '.pfx') -Pas
 1. 单击"权限"对话框上的"确定"。 代理计算机现在配置为代理使用证书生成令牌。
 
 ## <a name="troubleshooting"></a>疑难解答
-1. 如果连接失败，出现错误"1011： Graph 连接器代理不可访问或脱机。"，登录到安装了代理的计算机，如果代理应用程序尚未运行，则启动它。 如果连接继续失败，请验证在注册期间提供给代理的证书或客户端密码尚未过期并且具有所需的权限。
+1. 如果连接失败，出现错误"1011： Graph 连接器代理不可访问或脱机。"，登录到安装了代理的计算机，如果代理应用程序尚未运行，则启动它。 如果连接继续失败，请确认在注册期间提供给代理的证书或客户端密码尚未过期，并且具有所需的权限。

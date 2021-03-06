@@ -3,6 +3,7 @@ title: 用于 Microsoft 搜索的 Azure Data Lake Graph 连接器
 ms.author: mecampos
 author: mecampos
 manager: umas
+audience: Admin
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -12,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 为 Microsoft 搜索设置 Azure Data Lake Storage Gen2 Graph 连接器
-ms.openlocfilehash: da508694929d3c83a456c664aa4613b09a1b14a3
-ms.sourcegitcommit: d39113376db26333872d3a2c7baddc3a3a7aea61
+ms.openlocfilehash: 2bb9570bc3b0a5adef7ac72ea1620c4f22a8aefb
+ms.sourcegitcommit: f76ade4c8fed0fee9c36d067b3ca8288c6c980aa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "50084854"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50508883"
 ---
 <!---Previous ms.author: monaray --->
 
@@ -26,11 +27,11 @@ ms.locfileid: "50084854"
 Azure Data Lake Storage Gen2 Graph 连接器允许贵组织的用户搜索存储在 [Azure Blob](https://docs.microsoft.com/azure/storage/blobs/storage-blobs-introduction) 存储和 [Azure Data Lake Gen 2 存储](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-introduction) 帐户中的文件。
 
 > [!NOTE]
-> 阅读 [**"设置 Graph 连接器"**](configure-connector.md) 文章以了解 Graph 连接器的常规设置过程。
+> 阅读 [**"设置 Graph 连接器"**](configure-connector.md) 文章，了解一般 Graph 连接器设置说明。
 
 本文适用于配置、运行和监视 Azure Data Lake Storage Gen2 连接器的任何人。 它补充了常规安装过程，并显示了仅适用于 Azure Data Lake Storage Gen2 连接器的说明。 本文还包括有关 [限制的信息](#limitations)。
 
-在本文中，我们将 *Azure 存储* 用作 Azure [Blob](https://docs.microsoft.com/azure/storage/blobs/storage-blobs-introduction) 存储和 [Azure Data Lake Gen 2](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-introduction)存储的通用术语。
+在本文中，我们将 *Azure 存储* 用作 Azure [Blob](https://docs.microsoft.com/azure/storage/blobs/storage-blobs-introduction) 存储和 [Azure Data Lake Gen 2 存储的通用术语](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-introduction)。
 
 ## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>步骤 1：在 Microsoft 365 管理中心中添加 Graph 连接器
 
@@ -46,7 +47,7 @@ Azure Data Lake Storage Gen2 Graph 连接器允许贵组织的用户搜索存储
 
 输入主存储连接字符串。 此字符串是允许访问存储帐户的必需字符串。 若要查找连接字符串，请转到 [Azure](https://ms.portal.azure.com/#home) 门户并导航到相关 Azure **存储帐户的** "密钥"部分。
 
-如果不希望在主存储连接 (中提供 **AccountKey**) ，请授予以下角色对 Graph 连接器服务的访问权限：
+如果您不希望在主存储连接 (中提供 **AccountKey**) ，请授予以下角色对 Graph 连接器服务的访问权限：
 
 * 存储 Blob 数据读取器
 * 存储队列数据参与者
@@ -61,7 +62,7 @@ Azure Data Lake Storage Gen2 Graph 连接器允许贵组织的用户搜索存储
 
 将来可能会添加对在 Graph 连接器服务中实时处理更改的支持。 在这种情况下，我们将监视存储在队列中的 Azure 存储更改通知。 你需要在 Azure 存储帐户相同的帐户中创建队列。
 
-创建队列后，请转到队列页面上的" **事件** "选项卡以配置 **事件订阅**。 选择队列将接收的所有 Blob 事件，将队列连接到 Azure 存储帐户。
+创建队列后，转到队列页面上的"事件"选项卡以配置 **事件订阅**。 选择队列将接收的所有 Blob 事件，将队列连接到 Azure 存储帐户。
 
 ## <a name="step-4-assign-property-labels"></a>步骤 4：分配属性标签
 
@@ -69,23 +70,23 @@ Azure Data Lake Storage Gen2 Graph 连接器允许贵组织的用户搜索存储
 
 ## <a name="step-5-manage-schema"></a>步骤 5：管理架构
 
-在 **"管理架构**"屏幕上，可以更改与属性关联的架构属性，选项为 **"查询**"、"**搜索**"、"检索"和"**优化"。** 还可以添加可选别名，然后选择 **Content** 属性。
+在 **"管理架构**"屏幕上，可以更改与属性关联的架构属性，选项为 **"** 查询"、"**搜索**"、"**检索**"和"**优化"。** 还可以添加可选别名，然后选择 **Content** 属性。
 
 ## <a name="step-6-manage-search-permissions"></a>步骤 6：管理搜索权限
 
 ### <a name="azure-data-lake-gen-2"></a>Azure Data Lake Gen 2
 
-你可以选择从 Azure Data [Lake Gen 2](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-introduction) 存储帐户 (访问控制列表) ACL。 设置这些搜索权限后，将基于登录 [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/)的用户的权限来修整搜索内容。 或者，可以选择使存储帐户中编制索引的所有内容对组织中的每个人可见。 在这种情况下，组织中的每个人都将有权访问存储帐户中的所有数据。
+你可以选择从 Azure Data [Lake Gen 2](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-introduction) 存储帐户 (访问控制列表) ACL。 设置这些搜索权限后，将基于在 [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/)中登录的用户的权限来修整搜索内容。 或者，可以选择使从存储帐户编制索引的所有内容对组织中的每个人可见。 在这种情况下，组织中的每个人都将有权访问存储帐户中的所有数据。
 
-Azure Data Lake Storage Gen2 Graph 连接器支持对任何人或仅具有此数据源访问权限的用户可见的 **搜索权限**。 搜索结果中出现的索引数据对组织中有权访问每个项目的用户可见。
+Azure Data Lake Storage Gen2 Graph 连接器支持对"任何人"或"仅有权访问此数据源的人"可见的 **搜索权限**。 搜索结果中出现的索引数据对组织中有权访问每个项目的用户可见。
 
 ### <a name="azure-blob-storage"></a>Azure Blob 存储
 
-对于与 [Azure Blob 存储](https://docs.microsoft.com/azure/storage/blobs/storage-blobs-introduction)的连接，从配置源编制索引的所有内容对组织中的每个人都可见。 Azure Blob 存储中不支持 Blob 级别的访问控制列表。
+对于与 [Azure Blob 存储](https://docs.microsoft.com/azure/storage/blobs/storage-blobs-introduction)的连接，从已配置源索引的所有内容对组织中的每个人都可见。 Azure Blob 存储中不支持 Blob 级别的访问控制列表。
 
 ## <a name="step-7-set-the-refresh-schedule"></a>步骤 7：设置刷新计划
 
-在 **"刷新设置** "屏幕上，可以设置增量爬网间隔和完全爬网间隔。 Azure Data Lake Storage Gen2 连接器的默认间隔为增量爬网 15 分钟，完全爬网间隔为一周。
+在 **"刷新设置** "屏幕上，可以设置增量爬网间隔和完全爬网间隔。 Azure Data Lake Storage Gen2 连接器的默认间隔为增量爬网的 15 分钟，完全爬网的默认间隔为一周。
 
 ## <a name="step-8-review-connection"></a>步骤 8：查看连接
 

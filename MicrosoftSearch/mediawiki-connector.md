@@ -3,6 +3,7 @@ title: Microsoft 搜索的 MediaWiki Graph 连接器
 ms.author: mecampos
 author: mecampos
 manager: umas
+audience: Admin
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -12,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 为 Microsoft 搜索设置 MediaWiki Graph 连接器
-ms.openlocfilehash: e2b2b7c506d92623dd0f68801312c1820b5b9d4e
-ms.sourcegitcommit: d53b91f8f52a4a96281b66831c2449bbffe2177c
+ms.openlocfilehash: 1c2908de859056ccb26b862820e8b3be7a158569
+ms.sourcegitcommit: f76ade4c8fed0fee9c36d067b3ca8288c6c980aa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "50097391"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50508766"
 ---
 <!---Previous ms.author: monaray --->
 
@@ -26,7 +27,7 @@ ms.locfileid: "50097391"
 通过 MediaWiki Graph 连接器，组织可以发现使用 MediaWiki 软件创建的 Wiki 数据，并编制数据索引。 此连接器将指定内容索引到 Microsoft 搜索中，并支持定期爬网，使索引保持最新。
 
 > [!NOTE]
-> 阅读 [**Graph 连接器的安装程序**](configure-connector.md) 文章，了解一般的 Graph 连接器设置过程。
+> 阅读 [**Graph 连接器的安装程序**](configure-connector.md) 文章，了解一般 Graph 连接器设置说明。
 
 本文适用于配置、运行和监视 MediaWiki Graph 连接器的任何人。 它补充了常规安装过程，并显示了仅适用于 MediaWiki Graph 连接器的说明。 本文还包括有关 [限制的信息](#limitations)。
 
@@ -46,15 +47,15 @@ ms.locfileid: "50097391"
 
 ## <a name="step-3-configure-the-connection-settings"></a>步骤 3：配置连接设置
 
-输入 **Wiki URL，** 然后从选项的下拉菜单中选择身份验证类型。 选项为 **None、Basic** 和 **OAuth 2.0 AAD。** 
+输入 **Wiki URL，** 然后 **从** 选项的下拉菜单中选择身份验证类型。 选项包括 **"无****"、"基本**"**和"OAuth 2.0 AAD"。**
 
 如果选择"**基本**"作为身份验证类型，则需要提供 **Wiki** **的用户名和密码。**
 
-如果选择 **OAuth 2.0 AAD** 作为身份验证类型，则需要提供 Wiki **安装的资源** ID。 你还需要提供在 AAD 应用程序注册 **页上生成的客户端** **ID** 和客户端密码。
+如果选择 **OAuth 2.0 AAD** 作为身份验证类型，则需要提供 Wiki 安装的资源 **ID。** 你还需要提供在 AAD 应用程序注册页上生成的客户端 **ID** 和客户端密码。
 
 ## <a name="step-4-manage-search-permissions"></a>步骤 4：管理搜索权限
 
-MediaWiki 连接器仅支持对所有人可见的搜索 **权限**。 索引数据将显示在搜索结果中，并且对组织所有用户可见。
+MediaWiki 连接器仅支持对所有人可见的搜索 **权限**。 索引数据将显示在搜索结果中，并且对组织中的所有用户可见。
 
 ## <a name="step-5-assign-property-labels"></a>步骤 5：分配属性标签
 
@@ -81,9 +82,9 @@ MediaWiki 连接器仅支持对所有人可见的搜索 **权限**。 索引数�
 
 ## <a name="limitations"></a>限制
 
-MediaWiki 连接器在预览版本中有以下限制：
+MediaWiki 连接器在预览版中具有以下限制：
 
 * 仅支持基于云的 Wiki。
 * 仅支持使用 Azure Active Directory 或 Azure 身份验证的基本或 OAuth 2.0。
 * 不支持为索引选择命名空间。 仅索引主命名空间、类别命名空间和文件命名空间。
-* 不支持访问控制列表 (ACL) 。 因此，索引页对组织中所有用户都是可见的。
+* 不支持访问控制列表和 (ACL) 。 因此，索引页对组织中的所有用户可见。

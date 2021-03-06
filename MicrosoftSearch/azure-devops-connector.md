@@ -3,6 +3,7 @@ title: 用于 Microsoft 搜索的 Azure DevOps Graph 连接器
 ms.author: mecampos
 author: mecampos
 manager: umas
+audience: Admin
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -12,21 +13,21 @@ search.appverid:
 - MET150
 - MOE150
 description: 为 Microsoft 搜索设置 Azure DevOps Graph 连接器
-ms.openlocfilehash: 8fe783c847c672223e051f4433af3e41678fe367
-ms.sourcegitcommit: d53b91f8f52a4a96281b66831c2449bbffe2177c
+ms.openlocfilehash: 9307aabbf5ea1565e083abfefb90c590d356ae58
+ms.sourcegitcommit: f76ade4c8fed0fee9c36d067b3ca8288c6c980aa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "50097400"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50508857"
 ---
 <!---Previous ms.author: shgrover --->
 
 # <a name="azure-devops-graph-connector-preview"></a>Azure DevOps Graph 连接器 (预览) 
 
-Azure DevOps Graph 连接器允许组织在其 Azure DevOps 服务实例中为工作项编制索引。 配置 Azure DevOps 中的连接器和索引内容后，最终用户可以在 Microsoft 搜索中搜索这些项目。
+Azure DevOps Graph 连接器允许组织在其 Azure DevOps 服务实例中对工作项编制索引。 配置 Azure DevOps 中的连接器和索引内容后，最终用户可以在 Microsoft 搜索中搜索这些项目。
 
 > [!NOTE]
-> 阅读 [**Graph 连接器的安装程序**](configure-connector.md) 文章，了解一般的 Graph 连接器设置过程。
+> 阅读 [**Graph 连接器的安装程序**](configure-connector.md) 文章，了解一般 Graph 连接器设置说明。
 
 本文适用于配置、运行和监视 Azure DevOps Graph 连接器的任何人。 它补充了常规安装过程，并显示了仅适用于 Azure DevOps Graph 连接器的说明。
 
@@ -59,18 +60,18 @@ instructions.-->
 
 下表提供了有关如何填写应用程序注册表单的指导：
 
-必填字段 | 说明 | 建议值
+必需字段 | 说明 | 建议值
 --- | --- | ---
 | 公司名称         | 公司的名称。 | 使用适当的值   |
 | 应用程序名称     | 标识要授权的应用程序的唯一值。    | Microsoft 搜索     |
-| 应用程序网站  | 在连接器设置过程中请求访问 Azure DevOps 实例的应用程序的 URL。  (必需) 。  | https://<span>gcs.office。</span>com/
+| 应用程序网站  | 在连接器设置期间请求访问 Azure DevOps 实例的应用程序的 URL。  (必需) 。  | https://<span>gcs.office。</span>com/
 | 授权回调 URL        | 授权服务器重定向到的必需回调 URL。 | https://<span>gcs.office。</span>com/v1.0/admin/oauth/callback|
-| 授权范围 | 应用程序的访问范围 | 选择以下范围：标识 (读取) 、工作项 (读取) 、变量组 (读取) 、项目和团队 (读取) 、Graph (读取) |
+| 授权范围 | 应用程序的访问范围 | 选择以下范围：Identity (read) 、Work Items (read) 、Variable Groups (read) 、Project and team (read) 、Graph (read) |
 
-使用上述详细信息注册应用时，将获取将用于配置连接器的应用 **ID** 和客户端密码。
+使用上述详细信息注册应用时，你可获取将用于配置连接器的应用 **ID** 和客户端密码。
 
 >[!NOTE]
->若要撤销对在 Azure DevOps 中注册的任何应用的访问权限，请转到 Azure DevOps 实例右上方的用户设置。 选择"配置文件"，然后在侧窗格的"安全性"部分选择"授权"。 将鼠标悬停在已授权的 OAuth 应用上，以查看应用详细信息的一角的"撤销"按钮。
+>若要撤销对在 Azure DevOps 中注册的任何应用的访问权限，请转到 Azure DevOps 实例右上方的用户设置。 选择配置文件，然后在侧窗格的"安全性"部分中选择"授权"。 将鼠标悬停在授权的 OAuth 应用上，以查看应用详细信息的一角的"撤销"按钮。
 
 ### <a name="connection-settings"></a>连接设置
 
@@ -80,21 +81,21 @@ instructions.-->
 
 ### <a name="configure-data-select-projects-and-fields"></a>配置数据：选择项目和字段
 
-您可以选择连接来为整个组织或特定项目编制索引。
+可以选择连接以索引整个组织或特定项目。
 
 如果选择为整个组织编制索引，则组织的所有项目中的项目都将编制索引。 创建新项目和项目后，将在下一次爬网过程中对这些项目编制索引。
 
-如果您选择单个项目，则只会对这些项目中的工作项编制索引。
+如果选择单个项目，则仅对这些项目中的工作项编制索引。
 
 ![配置数据](media/ADO_Configure_data.png)
 
-接下来，在继续操作之前，选择您希望连接索引和预览这些字段中数据的字段。
+接下来，选择您希望连接在这些字段中编制索引和预览数据的字段，然后再继续。
 
 ![选择属性](media/ADO_choose_properties.png)
 
 ## <a name="step-4-manage-search-permissions"></a>步骤 4：管理搜索权限
 
-Azure DevOps 连接器支持仅对此数据源或  **** 所有人具有访问权限的用户可见的 **搜索权限**。 如果选择"仅有权访问此数据源的用户"，则基于对 Azure DevOps 中组织、项目或区域路径级别用户或组的权限，已编制索引的数据将显示在具有访问权限的用户的搜索结果中。 如果选择" **每个人**"，则索引数据将显示在所有用户的搜索结果中。
+Azure DevOps 连接器支持仅对此数据源具有访问权限的用户或所有人  **可见的搜索****权限**。 如果选择"仅有权访问此数据源的用户"，则基于对 Azure DevOps 中组织、项目或区域路径级别的用户或组的权限，已编制索引的数据将显示在具有访问权限的用户的搜索结果中。 如果选择" **每个人**"，则索引数据将显示在所有用户的搜索结果中。
 
 ## <a name="step-5-assign-property-labels"></a>步骤 5：分配属性标签
 
@@ -107,7 +108,7 @@ Azure DevOps 连接器支持仅对此数据源或  **** 所有人具有访问�
 ## <a name="step-7-choose-refresh-settings"></a>步骤 7：选择刷新设置
 
 Azure DevOps 连接器支持完全爬网和增量爬网的刷新计划。
-对于增量爬网，建议计划为一小时，完全爬网为一天。
+建议的增量爬网计划为 1 小时，完全爬网为 1 天。
 
 ## <a name="step-8-review-connection"></a>步骤 8：查看连接
 
