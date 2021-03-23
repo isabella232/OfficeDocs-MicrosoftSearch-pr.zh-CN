@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: ee40010e-5d7f-4ba8-a3f8-d240dab3af6d
 description: 了解如何使用 Microsoft 搜索将必应设置为公司的默认搜索引擎。
-ms.openlocfilehash: 1ac2f23a8263c01901e252e7dd830e7373380669
-ms.sourcegitcommit: f76ade4c8fed0fee9c36d067b3ca8288c6c980aa
+ms.openlocfilehash: 346bf3bf2da10178a8bd19390920db2d9de2629e
+ms.sourcegitcommit: 5df252e6d0bd67bb1b4c59418aceca8369f5fe42
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50508667"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51031752"
 ---
 # <a name="make-bing-the-default-search-engine"></a>将必应设置为默认搜索引擎
   
@@ -30,7 +30,7 @@ ms.locfileid: "50508667"
   
 有关各种 Windows 版本的最新 ADMX 文件，请参阅[如何在 Windows 中为组策略管理模板创建和管理中央存储](https://support.microsoft.com/help/3087759/how-to-create-and-manage-the-central-store-for-group-policy-administra)。
   
-如果在 GPMC 内找不到本节中所述的设置，请下载相应的 ADMX，然后将它们复制到中央存储。 有关详细信息，请参阅使用[ADMX Domain-Based编辑 GPO。](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-vista/cc748955%28v%3dws.10%29) 控制器上的中央存储是具有以下命名约定的文件夹 **：%systemroot%\sysvol \\<\> \policies\PolicyDefinitions**
+如果在 GPMC 内找不到本节中所述的设置，请下载相应的 ADMX，然后将它们复制到中央存储。 有关详细信息，请参阅使用[ADMX Domain-Based编辑 GPO。](/previous-versions/windows/it-pro/windows-vista/cc748955%28v%3dws.10%29) 控制器上的中央存储是具有以下命名约定的文件夹 **：%systemroot%\sysvol<domain \\ \> \policies\PolicyDefinitions**
   
 控制器处理的每个域都应有一个单独的文件夹。以下命令可用于从命令提示符复制 ADMX 文件：
   
@@ -46,9 +46,9 @@ ms.locfileid: "50508667"
 
 设置此策略后，用户无法更改默认搜索引擎。
   
-Chrome 附带自己的组策略设置集，可以从 Google Chrome 企业帮助以 ADMX 文件的形式 [下载这些设置](https://support.google.com/chrome/a/answer/187202)。
+Chrome 附带自己的组策略设置集，可以从 [Google Chrome](https://support.google.com/chrome/a/answer/187202)Enterprise 帮助以 ADMX 文件的形式下载。
   
-将模板文件复制到域控制器上的 ADMX 文件的中央存储。 有关详细信息，请参阅使用[ADMX Domain-Based编辑 GPO。](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-vista/cc748955%28v%3dws.10%29) 控制器上的中央存储是具有以下命名约定的文件夹 **：%systemroot%\sysvol \\<\> 域 \policies\PolicyDefinitions**
+将模板文件复制到域控制器上 ADMX 文件的中央存储。 有关详细信息，请参阅使用[ADMX Domain-Based编辑 GPO。](/previous-versions/windows/it-pro/windows-vista/cc748955%28v%3dws.10%29) 控制器上的中央存储是具有以下命名约定的文件夹 **：%systemroot%\sysvol<domain \\ \> \policies\PolicyDefinitions**
   
 控制器处理的每个域都应有一个单独的文件夹。以下命令可用于从命令提示符复制 ADMX 文件：
   
@@ -60,7 +60,7 @@ Chrome 附带自己的组策略设置集，可以从 Google Chrome 企业帮助�
     - 第一个部分的设置是固定的，本地管理员无法在浏览器中进行更改。
     - 用户可以在浏览器设置中更改后一部分策略的设置。
 
-3. 导航到 **\<Computer/User\> "配置"\"管理模板"\"Google Chrome"\"默认搜索提供程序"**
+3. 导航到 **\<Computer/User\> 配置\管理模板\Google Chrome\默认搜索提供程序**
 4. 双击“启用默认搜索提供程序”，并将其设置为“启用”。
 5. 双击“默认搜索提供程序”图标，将其设置为“启用”，并输入 `https://www.bing.com/sa/simg/bb.ico`
 6. 双击“默认搜索提供程序即时 URL”，并输入 `https://www.bing.com/business/search?q={searchTerms}&amp;form=BFBSPR`

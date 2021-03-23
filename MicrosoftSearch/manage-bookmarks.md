@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: c0c814d0-f7e4-444e-b18e-09beb45c9322
 description: 创建和更新书签以及批量编辑 Microsoft 搜索的书签结果的方法
-ms.openlocfilehash: b801e75f772a585c2ddfedd09aff3b74c1d909b5
-ms.sourcegitcommit: 2f770de12b27546b18b2e86517d2c25522eb9022
+ms.openlocfilehash: e8488146a041e7165596dafff8012adfa1122341
+ms.sourcegitcommit: 5df252e6d0bd67bb1b4c59418aceca8369f5fe42
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50929604"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51031725"
 ---
 # <a name="manage-bookmarks"></a>管理书签
 
@@ -124,7 +124,7 @@ ms.locfileid: "50929604"
 
 书签可以具有多个关键字并共享相同的关键字，但保留的关键字不能共享。 保留的关键字是触发一个特定书签的唯一术语或短语。 保留的关键字只能与一个答案相关联。 请慎用保留的关键字。
 
-## <a name="frequently-asked-questions"></a>常见问题
+## <a name="frequently-asked-questions"></a>常见问题解答
 
 **问：书签发布后在 Microsoft 搜索中可见需要多久？**
 
@@ -160,4 +160,4 @@ ms.locfileid: "50929604"
 
 **问：在哪里可以找到 Power App 的应用 ID？**
 
-**答**：转到 Power Apps 网站并查看应用的详细信息窗格。 详细了解如何[获取应用 ID。](https://docs.microsoft.com/powerapps/maker/canvas-apps/get-sessionid#get-an-app-id)
+**答**：转到 Power Apps 网站并查看应用的详细信息窗格。 详细了解如何[获取应用 ID。](/powerapps/maker/canvas-apps/get-sessionid#get-an-app-id)

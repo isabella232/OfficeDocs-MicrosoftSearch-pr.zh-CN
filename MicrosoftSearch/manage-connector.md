@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 管理 Microsoft Graph 连接器以用于 Microsoft 搜索。
-ms.openlocfilehash: 1c152f23e9b9d9982b957830d5f4bef0eef41347
-ms.sourcegitcommit: 2f770de12b27546b18b2e86517d2c25522eb9022
+ms.openlocfilehash: cba50d8eb558b4d74ed46554dc155d4f275b1332
+ms.sourcegitcommit: 5df252e6d0bd67bb1b4c59418aceca8369f5fe42
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50929579"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51031716"
 ---
 <!-- markdownlint-disable no-inline-html -->
 
@@ -61,7 +61,7 @@ Operation | Microsoft 的图表连接器 | 合作伙伴或图形连接器
  
 >[!NOTE]
 >在预览期间，每个尝试 Graph 连接器的组织都获得一个免费的固定配额，在所有连接中最多包含 200 万个项目。 随着 Graph 连接器正式发布，对于预览版中一直使用 Graph 连接器的组织，免费配额将于 2021 年 4 月 1 日到期。
->标记为"预览"的 Microsoft 构建[](connectors-preview.md)的 Graph 连接器不会包含在组织的已收费总索引配额中。 但是，它算作可以为组织配置的最多 10 个连接数，以及组织可以跨连接编制索引的最大 700 万个项目;每个连接限制为 700，000 个项目。 
+>标记为"预览"的 Microsoft 构建[](./connectors-overview.md)的 Graph 连接器不会包含在组织的已收费总索引配额中。 但是，它算作可以为组织配置的最多 10 个连接数，以及组织可以跨连接编制索引的最大 700 万个项目;每个连接限制为 700，000 个项目。 
 
 配额利用率栏将基于组织的配额消耗指示各种状态：
 
