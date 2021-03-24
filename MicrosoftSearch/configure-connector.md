@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft Graph 连接器的设置概述
-ms.openlocfilehash: 5c674f6b9253af1145be983e5713f65be1c2b022
-ms.sourcegitcommit: 5df252e6d0bd67bb1b4c59418aceca8369f5fe42
+ms.openlocfilehash: 169e78fd4a0148d8bb4e52968b2efd785045806e
+ms.sourcegitcommit: 08a7086185d28df14b06d1f7fdfbb1637288f7a5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/23/2021
-ms.locfileid: "51031374"
+ms.locfileid: "51042580"
 ---
 <!-- Previous ms.author: monaray -->
 
@@ -189,7 +189,7 @@ QUERY | 通过查询来搜索特定属性的匹配项。 然后，可以在查�
 
 转到管理中心中"连接器"选项卡下的已发布连接[列表](https://admin.microsoft.com)。 若要了解如何进行更新和删除，请参阅 [管理连接器](manage-connector.md)。
 
-## <a name="troubleshooting"></a>疑难解答
+## <a name="troubleshooting"></a>故障排除
 <!---Insert troubleshooting recommendations for this data source-->
 读取数据源的连接器特定信息。 
 
@@ -204,4 +204,4 @@ QUERY | 通过查询来搜索特定属性的匹配项。 然后，可以在查�
 
 ## <a name="next-steps"></a>后续步骤
 
-发布连接后，需要自定义搜索结果页面。 若要了解如何自定义搜索结果，请参阅自定义 [搜索结果页面](#next-steps-customize-the-search-results-page)。
+发布连接后，需要自定义搜索结果页面。 若要了解如何自定义搜索结果，请参阅自定义 [搜索结果页面](customize-search-page.md)。

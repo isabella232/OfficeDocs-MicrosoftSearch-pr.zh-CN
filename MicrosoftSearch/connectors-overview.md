@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 搜索的 Microsoft Graph 连接器概述
-ms.openlocfilehash: 2d49471c703b765f6e99324f39dbe730f6dea814
-ms.sourcegitcommit: 5df252e6d0bd67bb1b4c59418aceca8369f5fe42
+ms.openlocfilehash: 77f145f58cf06e49f88af25bcb4d28cfa7d2bd56
+ms.sourcegitcommit: 08a7086185d28df14b06d1f7fdfbb1637288f7a5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/23/2021
-ms.locfileid: "51031653"
+ms.locfileid: "51042571"
 ---
 <!---Previous ms.author: monaray --->
 
@@ -124,7 +124,7 @@ Microsoft 提供了 9 个 Graph 连接器，我们的生态系统合作伙伴已
 
 ## <a name="how-do-i-customize-search-results"></a>如何自定义搜索结果？
 
-下一步是按照本文中的建议自定义搜索结果，如何[自定义和配置搜索结果？。](#how-do-i-customize-and-configure-search-results) 若要了解有关自定义搜索结果的信息，请参阅自定义 [搜索结果页面](./configure-connector.md#next-steps-customize-the-search-results-page)。
+下一步是按照本文中的建议自定义搜索结果，如何[自定义和配置搜索结果？。](#how-do-i-customize-and-configure-search-results) 若要了解有关自定义搜索结果的信息，请参阅自定义 [搜索结果页面](customize-search-page.md)。
 
 ## <a name="what-are-the-connector-limitations"></a>连接器限制是什么？
 
