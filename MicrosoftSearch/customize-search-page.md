@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 添加垂直搜索并自定义搜索结果
-ms.openlocfilehash: 75dd6193308f52e7bfbb787d8f8dc27def834751
-ms.sourcegitcommit: 5df252e6d0bd67bb1b4c59418aceca8369f5fe42
+ms.openlocfilehash: c6104383698203fde48d217506da57941efa680f
+ms.sourcegitcommit: 0aca0a5c9152b1b5e8345c91edadfae0b30f57c8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51031644"
+ms.lasthandoff: 04/05/2021
+ms.locfileid: "51587736"
 ---
 # <a name="customize-the-search-results-page"></a>自定义搜索结果页面
 
@@ -116,7 +116,10 @@ ms.locfileid: "51031644"
 
 ## <a name="step-3-view-the-vertical-after-its-enabled"></a>步骤 3：启用后查看垂直方向
 
-启用垂直方向后，可能需要一段时间才能查看。 如果不想在启用后等待，可以将 **cacheClear=true** 追加到 [SharePoint](https://sharepoint.com/) 和 [Office](https://office.com) 中的 URL，以便立即查看垂直方向。 对于 [必应](https://bing.com)，将 **&features=uncachedVerticals** 追加到"工作"垂直 URL 以立即查看垂直方向。
+启用垂直方向后，需要几个小时才能查看。 如果不想在启用后等待，可以将 **cacheClear=true** 追加到 [SharePoint](https://sharepoint.com/) 和 [Office](https://office.com) 中的 URL，以便立即查看垂直方向。 对于 [必应](https://bing.com)，将 **&features=uncachedVerticals** 追加到"工作"垂直 URL 以立即查看垂直方向。 
+
+> [!NOTE]
+> 从移动 Web 浏览器查看时，添加的垂直方向在 [SharePoint](https://sharepoint.com/) 和 [Office](https://office.com) 上不可见。
 
 ## <a name="troubleshooting"></a>疑难解答
 
