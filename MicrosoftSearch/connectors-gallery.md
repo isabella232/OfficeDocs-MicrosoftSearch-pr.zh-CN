@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 列出 Microsoft 搜索的所有 Microsoft Graph 连接器
-ms.openlocfilehash: f20a52beb3894503e0c5b8911bfc026b8249f9a5
-ms.sourcegitcommit: 2f770de12b27546b18b2e86517d2c25522eb9022
+ms.openlocfilehash: b899e3facd38502dc653364b29e70a10ac6ca3a4
+ms.sourcegitcommit: a07c957dfa1d31542f0362379251bc9679dfae41
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50929613"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "51639877"
 ---
 # <a name="microsoft-graph-connectors-gallery"></a>Microsoft Graph 连接器库
 
@@ -425,6 +425,22 @@ ms.locfileid: "50929613"
             <div class="cardPadding">
                 <div class="card" style="min-height:240px;">
                     <div class="cardText">
+                        <h3>Atlassian Confluence (Cloud) </h3>
+                        <p>BY <a href="https://www.bainsight.com">BA Insight</a></p>
+                        <p>我们的 Confluence (Cloud Version) Connector 是企业级索引连接器，它支持对存储在 Confluence 中的内容进行爬网和索引。</p>
+                        <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
+                            <a href="https://www.bainsight.com/connectors/connector-for-confluence-cloud-version/"><font color="0065BA">更多详细信息</font></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li>
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card" style="min-height:240px;">
+                    <div class="cardText">
                        <h3>Atlassian Confluence 云</h3>
                         <p>由 <a href="https://www.raytion.com">Raytion</a></p>
                         <p>Connector for Atlassian Confluence Cloud。 对来自本地 Confluence 实例的标记的页面、博客文章、附件、注释、空格、配置文件和中心网站进行实时索引。 连接器完全支持 Confluence 云的内置用户和组管理。 第六代 Raytion 搜索连接器。</p>
@@ -471,6 +487,7 @@ ms.locfileid: "50929613"
             </div>
         </div>
     </li>
+<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>Azure AD </h3><p>由 <a href="https://www.raytion.com">Raytion</a></p><p>保护企业搜索连接器，以可靠地从 Microsoft Azure Active Directory (Azure AD) 内容，并智能地使用 Microsoft Graph 进行搜索。 它通过 Microsoft Graph API 对 Azure AD 中的对象进行索引。 连接器可用于将主体近实时地集成到 Microsoft Graph 中，以实施专业搜索、设备搜索和位置搜索等用例，或者提供与自定义数据源结合使用的早期绑定安全修整。 连接器支持针对 Microsoft 365 的联合身份验证。</p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.raytion.com/connectors/raytion-azure-ad-connector/"><font color="0065BA">更多详细信息</font></a></p></div></div></div></div></li>
     <li>
         <div class="cardSize">
             <div class="cardPadding">
@@ -546,6 +563,22 @@ ms.locfileid: "50929613"
             <div class="cardPadding">
                 <div class="card" style="min-height:240px;">
                     <div class="cardText">
+                        <h3>亚里达</h3>
+                        <p>BY <a href="https://www.bainsight.com">BA Insight</a></p>
+                        <p>使用一个一体式数据连接器，可以显示 AssetWise 中的内容以及来自其他存储库的单个合并搜索索引。</p>
+                        <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
+                            <a href="https://www.bainsight.com/connectors/bentley-connector-for-sharepoint-azure-elasticsearch/"><font color="0065BA">更多详细信息</font></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li>
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card" style="min-height:240px;">
+                    <div class="cardText">
                         <h3>Box</h3>
                         <p>BY <a href="https://www.bainsight.com">BA Insight</a></p>
                         <p>Box 连接器使内容可以显示 SharePoint 和其他门户中的 Box 内容，使用户能够从 SharePoint 和 Box 获取集成搜索结果。</p>
@@ -608,6 +641,8 @@ ms.locfileid: "50929613"
             </div>
         </div>
     </li>
+<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>Confluence </h3><p>由 <a href="https://www.raytion.com">Raytion</a></p><p>保护企业级搜索连接器，以可靠地索引来自 Atlassian Confluence 的内容，并智能地使用 Microsoft Graph 进行搜索。 它几乎可以实时地为本地 Confluence 实例中的标记对页面、博客文章、附件、注释、空间、配置文件和中心网站进行索引。 该连接器完全支持 Atlassian Confluence 的内置用户和组管理，以及基于 Active Directory 和其他目录服务的连接安装。</p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.raytion.com/connectors/raytion-confluence-connector/"><font color="0065BA">更多详细信息</font></a></p></div></div></div></div></li>
+<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>Confluence 云 </h3><p>由 <a href="https://www.raytion.com">Raytion</a></p><p>保护企业级搜索连接器，以可靠地索引来自 Atlassian Confluence 云的内容，并智能地使用 Microsoft Graph 进行搜索。 它几乎实时地为来自 Confluence 云实例的标记的页面、博客文章、附件、注释、空间、配置文件和中心网站建立索引。 连接器完全支持 Atlassian Confluence 云的内置用户和组管理。</p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.raytion.com/connectors/raytion-confluence-cloud-connector/"><font color="0065BA">更多详细信息</font></a></p></div></div></div></div></li>
     <li>
         <div class="cardSize">
             <div class="cardPadding">
@@ -643,6 +678,7 @@ ms.locfileid: "50929613"
 </ul>
 <!--- 9 ROW --->
 <ul class="panelContent cardsZ">
+<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>Documentum </h3><p>由 <a href="https://www.raytion.com">Raytion</a></p><p>保护企业级搜索连接器，以可靠地对 OpenText Documentum 中的内容编制索引，并智能地使用 Microsoft Graph 进行搜索。 它几乎可以实时地对存储库、文件夹和文件以及 Documentum 中的元数据和属性进行可靠索引。 连接器完全支持 OpenText Documentum 的内置用户和组管理。</p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.raytion.com/connectors/raytion-documentum-connector/"><font color="0065BA">更多详细信息</font></a></p></div></div></div></div></li>
     <li>
         <div class="cardSize">
             <div class="cardPadding">
@@ -653,6 +689,22 @@ ms.locfileid: "50929613"
                         <p>Documentum 连接器将爬网任何 Documentum 内容存储库中的内容。 DQL 是一种查询语言，允许您执行涉及文档和内容管理的专用搜索功能的复杂查询。 安装 Documentum DQL 连接器将爬网 Documentum 中的内容。</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://contentanalytics.digital.accenture.com/display/aspire40/Documentum+Connector"><font color="0065BA">更多详细信息</font></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li>
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card" style="min-height:240px;">
+                    <div class="cardText">
+                        <h3>Egnyte</h3>
+                        <p>BY <a href="https://www.bainsight.com">BA Insight</a></p>
+                        <p>"Egnyte 连接器支持完全爬网和增量爬网以及具有非常高吞吐量的索引。"</p>
+                        <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
+                            <a href="https://www.bainsight.com/connectors/egnyte-connector-for-sharepoint-azure-elasticsearch/"><font color="0065BA">更多详细信息</font></a>
                         </p>
                     </div>
                 </div>
@@ -710,6 +762,8 @@ ms.locfileid: "50929613"
             </div>
         </div>
     </li>
+<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>企业保管库 </h3><p>由 <a href="https://www.raytion.com">Raytion</a></p><p>保护企业搜索连接器，以可靠地索引 Symantec Enterprise Vault 中的内容，并智能地使用 Microsoft Graph 进行搜索。 它几乎可以实时地对存档数据（如电子邮件、附件、文件、日历项和来自企业保管库的联系人）建立索引。 连接器完全支持 Symantec Enterprise Vault 的身份验证模型基本、NTLM 和 Kerberos 身份验证。</p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.raytion.com/connectors/raytion-enterprise-vault-connector-2/"><font color="0065BA">更多详细信息</font></a></p></div></div></div></div></li>
+<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>企业保管库 </h3><p>由 <a href="https://www.raytion.com">Raytion</a></p><p>保护企业级搜索连接器，以可靠地索引来自 Microsoft Enterprise Vault 的内容，并智能地使用 Microsoft Graph 进行搜索。 它几乎可以实时地对存档数据（如电子邮件、附件、文件、日历项和来自企业保管库的联系人）建立索引。 该连接器完全支持具有基本身份验证、NTLM 身份验证和 Kerberos 身份验证的 Windows 企业存储库身份验证模型。</p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.raytion.com/connectors/raytion-enterprise-vault-connector/"><font color="0065BA">更多详细信息</font></a></p></div></div></div></div></li>
     <li>
         <div class="cardSize">
             <div class="cardPadding">
@@ -828,6 +882,7 @@ ms.locfileid: "50929613"
             </div>
         </div>
     </li>
+<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>FirstSpirit </h3><p>由 <a href="https://www.raytion.com">Raytion</a></p><p>保护企业级搜索连接器，以可靠地索引来自 e-则 FirstSpirit 中的内容，并智能地使用 Microsoft Graph 进行搜索。 它几乎可以实时地索引 FirstSpirit 中的页面、附件和其他生成的文档类型。 该连接器完全支持电子数据第一个内置用户、组和权限管理，以及基于 Active Directory 和其他目录服务的 FirstSpirit 安装。</p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.raytion.com/connectors/raytion-firstspirit-connector/"><font color="0065BA">更多详细信息</font></a></p></div></div></div></div></li>
     <li>
         <div class="cardSize">
             <div class="cardPadding">
@@ -873,6 +928,22 @@ ms.locfileid: "50929613"
                         <p>Google Cloud SQL Connector 将 Google Cloud SQL 内容索引到 Microsoft 搜索索引中，通过 BA Insight 的 SmartHub 显示该索引，为用户提供集成搜索结果。</p>
                         <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
                             <a href="https://www.bainsight.com/connectors/google-cloud-sql-connector-sharepoint-azure-elasticsearch/"><font color="0065BA">更多详细信息</font></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li>
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card" style="min-height:240px;">
+                    <div class="cardText">
+                        <h3>Google Drive</h3>
+                        <p>BY <a href="https://www.bainsight.com">BA Insight</a></p>
+                        <p>使用一个、引用 Google Drive 内容的单个合并搜索索引，使用一个 GOOGLE Drive 连接器，可以显示来自 Google Drive 的内容以及其他存储库中的内容。</p>
+                        <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
+                            <a href="https://www.bainsight.com/connectors/google-drive-connector-sharepoint-azure-elasticsearch/"><font color="0065BA">更多详细信息</font></a>
                         </p>
                     </div>
                 </div>
@@ -1123,6 +1194,22 @@ ms.locfileid: "50929613"
             <div class="cardPadding">
                 <div class="card" style="min-height:240px;">
                     <div class="cardText">
+                        <h3>iManage 云</h3>
+                        <p>BY <a href="https://www.bainsight.com">BA Insight</a></p>
+                        <p>BA Insight 的 iManage 云连接器安全地将工作工作区中文档的全文和元数据索引到搜索引擎中。</p>
+                        <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
+                            <a href="https://www.bainsight.com/connectors/connector-for-imanage-work-cloud/"><font color="0065BA">更多详细信息</font></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li>
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card" style="min-height:240px;">
+                    <div class="cardText">
                         <h3>iManage Work</h3>
                         <p>BY <a href="https://www.bainsight.com">BA Insight</a></p>
                         <p>iManage 工作连接器提供完全安全性，并且以高吞吐量运行，以最大限度地减少爬网时间，同时保持对工作性能的低影响。 它只需要读取访问权限，无需在任何 iManage 服务器上安装客户端软件。 这将实现对存储在 iManage Work 中所有内容的无缝和同时访问。</p>
@@ -1134,6 +1221,25 @@ ms.locfileid: "50929613"
             </div>
         </div>
     </li>
+    <li>
+     <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card" style="min-height:240px;">
+                    <div class="cardText">
+                        <h3>Jira</h3>
+                        <p>BY <a href="https://www.bainsight.com">BA Insight</a></p>
+                        <p>Jira 连接器使用户能够针对所有 Jira 对象执行搜索，无需直接转到 Jira。</p>
+                        <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
+                            <a href="https://www.bainsight.com/connectors/jira-connector-for-sharepoint-azure-elasticsearch/"><font color="0065BA">更多详细信息</font></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>Jira </h3><p>由 <a href="https://www.raytion.com">Raytion</a></p><p>保护企业级搜索连接器，以可靠地索引来自 Atlassian Jira 的内容，并智能地使用 Microsoft Graph 进行搜索。 它几乎可以实时地对本地 Jira 实例中的项目、问题、附件、注释、工作日志、问题历史记录、链接和配置文件进行可靠索引。 该连接器完全支持 Atlassian Jira 的内置用户和组管理，以及基于 Active Directory 和其他目录服务的 Jira 安装。</p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.raytion.com/connectors/raytion-jira-connector /"><font color="0065BA">更多详细信息</font></a></p></div></div></div></div></li>
+<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>Jira (Cloud) </h3><p>BY <a href="https://www.bainsight.com">BA Insight</a></p><p>Jira (云) 连接器针对所有 Jira 对象执行搜索，无需直接导航到 Jira。</p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.bainsight.com/connectors/jira-cloud-connector-for-sharepoint-azure-elasticsearch/"><font color="0065BA">更多详细信息</font></a></p></div></div></div></div></li>
+<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>Jira 云 </h3><p>由 <a href="https://www.raytion.com">Raytion</a></p><p>保护企业搜索连接器，以可靠地索引来自 Atlassian Jira 云的内容，并智能地使用 Microsoft Graph 进行搜索。 它几乎可以实时地索引 Jira 云中的项目、问题、附件、注释、工作日志、问题历史记录、链接和配置文件。 连接器完全支持 Atlassian Jira Cloud 的内置用户和组管理。</p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.raytion.com/connectors/raytion-jira-cloud-connector /"><font color="0065BA">更多详细信息</font></a></p></div></div></div></div></li>
     <li>
         <div class="cardSize">
             <div class="cardPadding">
@@ -1204,6 +1310,7 @@ ms.locfileid: "50929613"
 </ul>
 <!--- 20 ROW --->
 <ul class="panelContent cardsZ">
+<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>都斯图</h3><p>BY <a href="https://www.bainsight.com">BA Insight</a></p><p>通过为用户创建数据连接器，不仅对视频编制索引，还支持对各种其他类型的信息（包括类别、数据、文档等）编制索引。</p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.bainsight.com/connectors/kaltura-connector-for-sharepoint-azure-elasticsearch/"><font color="0065BA">更多详细信息</font></a></p></div></div></div></div></li>
     <li>
         <div class="cardSize">
             <div class="cardPadding">
@@ -1389,7 +1496,7 @@ ms.locfileid: "50929613"
             </div>
         </div>
     </li>
-    <li>
+   <li>
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card" style="min-height:240px;">
@@ -1405,6 +1512,11 @@ ms.locfileid: "50929613"
             </div>
         </div>
     </li>
+<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>Microsoft Dynamics 365</h3><p>BY <a href="https://www.bainsight.com">BA Insight</a></p><p>我们的 Microsoft Dynamics 365 CRM 连接器支持本地 CRM 安装和 Dynamics CRM Online。 </p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.bainsight.com/connectors/microsoft-dynamics-crm-connector-sharepoint-azure-elasticsearch/"><font color="0065BA">更多详细信息</font></a></p></div></div></div></div></li>
+<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>Microsoft Dynamics 365 (Cloud) </h3><p>BY <a href="https://www.bainsight.com">BA Insight</a></p><p>我们的 Microsoft Dynamics 365 (云版本) CRM 连接器建立了与 CRM 应用程序的安全连接，并且将 CRM 架构中的内容映射到搜索引擎架构。</p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.bainsight.com/connectors/connector-for-microsoft-dynamics-cloud/"><font color="0065BA"">更多详细信息</font></a></p></div></div></div></div></li>
+<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>Microsoft Exchange Online</h3><p>BY <a href="https://www.bainsight.com">BA Insight</a></p><p>使用 BA Insight Microsoft Exchange Online 连接器，用户可以通过各种搜索平台从 Exchange Online 检索内容。</p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.bainsight.com/connectors/microsoft-exchange-online-connector-sharepoint-azure-elasticsearch/"><font color="0065BA">更多详细信息</font></a></p></div></div></div></div></li>
+<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>Microsoft Exchange 公用文件夹</h3><p>BY <a href="https://www.bainsight.com">BA Insight</a></p><p>通过使用一个MICROSOFT Exchange 公用文件夹连接器，用户可以通过各种搜索平台从 Exchange 检索内容。</p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.bainsight.com/connectors/microsoft-exchange-connector-sharepoint-azure-elasticsearch/"><font color="0065BA">更多详细信息</font></a></p></div></div></div></div></li>
+<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>Microsoft Exchange Server</h3><p>BY <a href="https://www.bainsight.com">BA Insight</a></p><p>使用 BA Insight Microsoft Exchange 连接器，用户可以通过各种搜索引擎从 Exchange 检索内容。 </p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.bainsight.com/connectors/microsoft-exchange-server-connector-sharepoint-azure-elasticsearch/"><font color="0065BA">更多详细信息</font></a></p></div></div></div></div></li>
 </ul>
 <!--- 24 ROW --->
 <ul class="panelContent cardsZ">
@@ -1440,6 +1552,7 @@ ms.locfileid: "50929613"
             </div>
         </div>
     </li>
+<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>Microsoft Teams</h3><p>BY <a href="https://www.bainsight.com">BA Insight</a></p><p>BA Insight Microsoft Teams 连接器将 Microsoft Teams 中的内容与其他企业系统的内容一起索引，以提供统一的结果。</p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.bainsight.com/connectors/microsoft-teams-connector-for-sharepoint-azure-elasticsearch/"><font color="0065BA">更多详细信息</font></a></p></div></div></div></div></li>
     <li>
         <div class="cardSize">
             <div class="cardPadding">
@@ -1511,7 +1624,9 @@ ms.locfileid: "50929613"
 </ul>
 <!--- 26 ROW --->
 <ul class="panelContent cardsZ">
-    <li>
+<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>中西公司目录</h3><p>BY <a href="https://www.bainsight.com">BA Insight</a></p><p>公司目录连接器将保护源系统的安全性，并提供完全爬网和增量爬网，以便用户一直可以使用最新信息。</p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.bainsight.com/connectors/the-firm-directory-connector-sharepoint-azure-elasticsearch/"><font color="0065BA">更多详细信息</font></a></p></div></div></div></div></li>
+<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>注释 </h3><p>由 <a href="https://www.raytion.com">Raytion</a></p><p>保护企业搜索连接器，以可靠地对 IBM Notes (以前 Lotus Note) 的内容编制索引，并智能地使用 Microsoft Graph 进行搜索。 它几乎可以实时地对一组可配置便笺数据库中的记录进行可靠索引。 该连接器完全支持 IBM Notes 的内置用户和组管理。</p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.raytion.com/connectors/raytion-notes-connector/"><font color="0065BA">更多详细信息</font></a></p></div></div></div></div></li>
+<li>
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card" style="min-height:240px;">
@@ -1559,6 +1674,7 @@ ms.locfileid: "50929613"
             </div>
         </div>
     </li>
+<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>OneDrive for Business</h3><p>BY <a href="https://www.bainsight.com">BA Insight</a></p><p>BA Insight OneDrive 连接器使 OneDrive 中的内容可以索引到各种搜索平台，从而为用户提供来自多个源的集成搜索结果。</p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.bainsight.com/connectors/onedrive-business-connector-sharepoint-azure-elasticsearch/"><font color="0065BA">更多详细信息</font></a></p></div></div></div></div></li>
 </ul>
 <!--- 27 ROW --->
 <ul class="panelContent cardsZ">
@@ -1613,6 +1729,7 @@ ms.locfileid: "50929613"
 </ul>
 <!--- 28 ROW --->
 <ul class="panelContent cardsZ">
+<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>OpenText Documentum (Cloud) </h3><p>BY <a href="https://www.bainsight.com">BA Insight</a></p><p>BA Insight 的 OpenText Documentum 云连接器安全地将 Documentum 对象的全文和元数据索引到搜索引擎中，从而支持跨多个存储库的内容结果集可搜索的内容。 </p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.bainsight.com/connectors/connector-for-documentum-cloud/"><font color="0065BA">更多详细信息</font></a></p></div></div></div></div></li>
     <li>
         <div class="cardSize">
             <div class="cardPadding">
@@ -1747,6 +1864,8 @@ ms.locfileid: "50929613"
             </div>
         </div>
     </li>
+<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>实践法</h3><p>BY <a href="https://www.bainsight.com">BA Insight</a></p><p>BA Insight 实践法律连接器使用户能够对实践法数据库执行搜索，无需直接导航到实践法。</p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.bainsight.com/connectors/practical-law-connector-sharepoint-azure-elasticsearch/"><font color="0065BA">更多详细信息</font></a></p></div></div></div></div></li>
+<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>ProLaw</h3><p>BY <a href="https://www.bainsight.com">BA Insight</a></p><p>BA Insight Connector for Pro Law 可将任何门户连接到 ProLaw，从而在尊重 Pro Law 中的用户权限的同时显示 Pro Law 的信息。</p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.bainsight.com/connectors/prolaw-connector-sharepoint-azure-elasticsearch/"><font color="0065BA">更多详细信息</font></a></p></div></div></div></div></li>
     <li>
         <div class="cardSize">
             <div class="cardPadding">
@@ -1865,6 +1984,7 @@ ms.locfileid: "50929613"
             </div>
         </div>
     </li>
+<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>SAP ERP (Cloud) </h3><p>BY <a href="https://www.bainsight.com">BA Insight</a></p><p>BA Insight 的 SAP ERP (云版本) 连接器旨在将 SAP 中的项目引入搜索索引。</p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.bainsight.com/connectors/connector-for-sap-erp-cloud/"><font color="0065BA">更多详细信息</font></a></p></div></div></div></div></li>
 </ul>
 <!--- 33 ROW --->
 <ul class="panelContent cardsZ">
@@ -1884,6 +2004,7 @@ ms.locfileid: "50929613"
             </div>
         </div>
     </li>
+<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>SAP HANA (Cloud) </h3><p>BY <a href="https://www.bainsight.com">BA Insight</a></p><p>SAP HANA (云版本) 连接器确保源数据库的安全性，并提供完全爬网和增量爬网，以便用户能够一直获得最新信息。 </p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.bainsight.com/connectors/connector-sap-hana-cloud-version/"><font color="0065BA">更多详细信息</font></a></p></div></div></div></div></li>
     <li>
         <div class="cardSize">
             <div class="cardPadding">
@@ -1967,6 +2088,8 @@ ms.locfileid: "50929613"
             </div>
         </div>
     </li>
+<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>ServiceNow (Cloud) </h3><p>BY <a href="https://www.bainsight.com">BA Insight</a></p><p>BA Insight ServiceNow (云版本) 连接器遵守源系统的安全性，并提供完全和增量爬网，以便用户能够一直获得最新信息。</p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.bainsight.com/connectors/servicenow-cloud-connector/"><font color="0065BA">更多详细信息</font></a></p></div></div></div></div></li>
+<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>SharePoint 2010</h3><p>BY <a href="https://www.bainsight.com">BA Insight</a></p><p>BA Insight 的 SharePoint 2010 连接器允许你连接到 SharePoint 2010，从任何网站、文档库或列表提取数据;并安全地索引此内容。 </p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.bainsight.com/connectors/sharepoint-2010-connector/"><font color="0065BA">更多详细信息</font></a></p></div></div></div></div></li>
 </ul>
 <!--- 35 ROW --->
 <ul class="panelContent cardsZ">
@@ -1986,6 +2109,7 @@ ms.locfileid: "50929613"
             </div>
         </div>
     </li>
+<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>SharePoint 2013</h3><p>BY <a href="https://www.bainsight.com">BA Insight</a></p><p>BA Insight 的 SharePoint 2013 连接器允许你连接到 SharePoint 2013，从任何网站、文档库或列表提取数据;并安全地索引此内容。 </p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.bainsight.com/connectors/sharepoint-2013-connector/"><font color="0065BA">更多详细信息</font></a></p></div></div></div></div></li>
     <li>
         <div class="cardSize">
             <div class="cardPadding">
@@ -2002,6 +2126,8 @@ ms.locfileid: "50929613"
             </div>
         </div>
     </li>
+<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>SharePoint 2016</h3><p>BY <a href="https://www.bainsight.com">BA Insight</a></p><p>BA Insight 的 SharePoint 连接器允许你连接到 SharePoint 2016，从任何网站、文档库或列表提取数据;并安全地索引此内容。  </p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.bainsight.com/connectors/sharepoint-2016-connector/"><font color="0065BA">更多详细信息</font></a></p></div></div></div></div></li>
+<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>SharePoint 2019</h3><p>BY <a href="https://www.bainsight.com">BA Insight</a></p><p>BA Insight 的 SharePoint 连接器允许你连接到 SharePoint 2019，从任何网站、文档库或列表提取数据;并安全地索引此内容。 </p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.bainsight.com/connectors/connector-for-sharepoint-2019/"><font color="0065BA">更多详细信息</font></a></p></div></div></div></div></li>
     <li>
         <div class="cardSize">
             <div class="cardPadding">
@@ -2018,6 +2144,7 @@ ms.locfileid: "50929613"
             </div>
         </div>
     </li>
+<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>SharePoint Online</h3><p>BY <a href="https://www.bainsight.com">BA Insight</a></p><p>BA Insight 的 SharePoint Online 连接器允许你连接到 SharePoint Online，从任何网站、文档库或列表提取数据;并安全地索引此内容。</p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.bainsight.com/connectors/sharepoint-online-connector/"><font color="0065BA">更多详细信息</font></a></p></div></div></div></div></li>
 </ul>
 <!--- 36 ROW --->
 <ul class="panelContent cardsZ">
@@ -2069,6 +2196,7 @@ ms.locfileid: "50929613"
             </div>
         </div>
     </li>
+<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>可宽延时间 </h3><p>由 <a href="https://www.raytion.com">Raytion</a></p><p>保护企业搜索连接器，以可靠地索引 Slack 中的内容，并智能地使用 Microsoft Graph 进行搜索。 它几乎实时地从 Slack 的所有公共频道对消息、线程和共享文件进行可靠索引。</p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.raytion.com/connectors/raytion-slack-connector/"><font color="0065BA">更多详细信息</font></a></p></div></div></div></div></li>
 </ul>
 <!--- 37 ROW --->
 <ul class="panelContent cardsZ">
@@ -2292,6 +2420,8 @@ ms.locfileid: "50929613"
             </div>
         </div>
     </li>
+<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>网站爬网程序</h3><p>BY <a href="https://www.bainsight.com">BA Insight</a></p><p>利用 BA Insight 网站爬网程序连接器，可以显示单个合并搜索索引中任何网站的内容以及其他存储库中的内容。 </p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.bainsight.com/connectors/website-connector-for-sharepoint-azure-elasticsearch/"><font color="0065BA">更多详细信息</font></a></p></div></div></div></div></li>
+<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>西 km</h3><p>BY <a href="https://www.bainsight.com">BA Insight</a></p><p>BA Insight West km Connector 支持跨交易和诉讼文档进行搜索，包括创建自定义搜索结果页面。</p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.bainsight.com/connectors/westkm-connector-sharepoint-azure-elasticsearch/"><font color="0065BA">更多详细信息</font></a></p></div></div></div></div></li>
     <li>
         <div class="cardSize">
             <div class="cardPadding">
@@ -2375,102 +2505,7 @@ ms.locfileid: "50929613"
             </div>
         </div>
     </li>
-    <li>
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card" style="min-height:240px;">
-                    <div class="cardText">
-                        <h3>Atlassian Confluence (Cloud) </h3>
-                        <p>BY <a href="https://www.bainsight.com">BA Insight</a></p>
-                        <p>我们的 Confluence (Cloud Version) Connector 是企业级索引连接器，它支持对存储在 Confluence 中的内容进行爬网和索引。</p>
-                        <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
-                            <a href="https://www.bainsight.com/connectors/connector-for-confluence-cloud-version/"><font color="0065BA">更多详细信息</font></a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </li>
-    <li>
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card" style="min-height:240px;">
-                    <div class="cardText">
-                        <h3>亚里达</h3>
-                        <p>BY <a href="https://www.bainsight.com">BA Insight</a></p>
-                        <p>使用一个一体式数据连接器，可以显示 AssetWise 中的内容以及来自其他存储库的单个合并搜索索引。</p>
-                        <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
-                            <a href="https://www.bainsight.com/connectors/bentley-connector-for-sharepoint-azure-elasticsearch/"><font color="0065BA">更多详细信息</font></a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </li>
-    <li>
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card" style="min-height:240px;">
-                    <div class="cardText">
-                        <h3>Egnyte</h3>
-                        <p>BY <a href="https://www.bainsight.com">BA Insight</a></p>
-                        <p>"Egnyte 连接器支持完全爬网和增量爬网以及具有非常高吞吐量的索引。"</p>
-                        <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
-                            <a href="https://www.bainsight.com/connectors/egnyte-connector-for-sharepoint-azure-elasticsearch/"><font color="0065BA">更多详细信息</font></a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </li>
-    <li>
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card" style="min-height:240px;">
-                    <div class="cardText">
-                        <h3>Google Drive</h3>
-                        <p>BY <a href="https://www.bainsight.com">BA Insight</a></p>
-                        <p>使用一个、引用 Google Drive 内容的单个合并搜索索引，使用一个 GOOGLE Drive 连接器，可以显示来自 Google Drive 的内容以及其他存储库中的内容。</p>
-                        <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
-                            <a href="https://www.bainsight.com/connectors/google-drive-connector-sharepoint-azure-elasticsearch/"><font color="0065BA">更多详细信息</font></a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </li>
-    <li>
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card" style="min-height:240px;">
-                    <div class="cardText">
-                        <h3>iManage 云</h3>
-                        <p>BY <a href="https://www.bainsight.com">BA Insight</a></p>
-                        <p>BA Insight 的 iManage 云连接器安全地将工作工作区中文档的全文和元数据索引到搜索引擎中。</p>
-                        <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
-                            <a href="https://www.bainsight.com/connectors/connector-for-imanage-work-cloud/"><font color="0065BA">更多详细信息</font></a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </li>
-    <li>
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card" style="min-height:240px;">
-                    <div class="cardText">
-                        <h3>Jira</h3>
-                        <p>BY <a href="https://www.bainsight.com">BA Insight</a></p>
-                        <p>Jira 连接器使用户能够针对所有 Jira 对象执行搜索，无需直接转到 Jira。</p>
-                        <p style="margin-top:20px;margin-bottom:20px;font-weight:500">
-                            <a href="https://www.bainsight.com/connectors/jira-connector-for-sharepoint-azure-elasticsearch/"><font color="0065BA">更多详细信息</font></a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </li>
+<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>Yammer </h3><p>由 <a href="https://www.raytion.com">Raytion</a></p><p>保护企业级搜索连接器，以可靠地索引 Microsoft Yammer 中的内容，并智能地使用 Microsoft Graph 进行搜索。 它几乎可以实时地对 Yammer 中的频道、帖子、回复、附件、投票和通知进行可靠索引。 连接器完全支持 Microsoft Yammer 的内置用户和组管理，尤其是针对 Microsoft 365 的联合身份验证。</p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.raytion.com/connectors/raytion-yammer-connector/"><font color="0065BA">更多详细信息</font></a></p></div></div></div></div></li>
 <!-- This is the "template" for each box > Copy and edit to add new boxes
     <li>
         <div class="cardSize">
@@ -2494,38 +2529,3 @@ ms.locfileid: "50929613"
 <!-- --->
 <!-- --->
 <!-- --->
-<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>Jira (Cloud) </h3><p>BY <a href="https://www.bainsight.com">BA Insight</a></p><p>Jira (云) 连接器针对所有 Jira 对象执行搜索，无需直接导航到 Jira。</p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.bainsight.com/connectors/jira-cloud-connector-for-sharepoint-azure-elasticsearch/"><font color="0065BA">更多详细信息</font></a></p></div></div></div></div></li>
-<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>都斯图</h3><p>BY <a href="https://www.bainsight.com">BA Insight</a></p><p>通过为用户创建数据连接器，不仅对视频编制索引，还支持对各种其他类型的信息（包括类别、数据、文档等）编制索引。</p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.bainsight.com/connectors/kaltura-connector-for-sharepoint-azure-elasticsearch/"><font color="0065BA">更多详细信息</font></a></p></div></div></div></div></li>
-<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>Microsoft Dynamics 365</h3><p>BY <a href="https://www.bainsight.com">BA Insight</a></p><p>我们的 Microsoft Dynamics 365 CRM 连接器支持本地 CRM 安装和 Dynamics CRM Online。 </p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.bainsight.com/connectors/microsoft-dynamics-crm-connector-sharepoint-azure-elasticsearch/"><font color="0065BA">更多详细信息</font></a></p></div></div></div></div></li>
-<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>Microsoft Dynamics 365 (Cloud) </h3><p>BY <a href="https://www.bainsight.com">BA Insight</a></p><p>我们的 Microsoft Dynamics 365 (云版本) CRM 连接器建立了与 CRM 应用程序的安全连接，并且将 CRM 架构中的内容映射到搜索引擎架构。</p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.bainsight.com/connectors/connector-for-microsoft-dynamics-cloud/"><font color="0065BA"">更多详细信息</font></a></p></div></div></div></div></li>
-<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>Microsoft Exchange Online</h3><p>BY <a href="https://www.bainsight.com">BA Insight</a></p><p>使用 BA Insight Microsoft Exchange Online 连接器，用户可以通过各种搜索平台从 Exchange Online 检索内容。</p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.bainsight.com/connectors/microsoft-exchange-online-connector-sharepoint-azure-elasticsearch/"><font color="0065BA">更多详细信息</font></a></p></div></div></div></div></li>
-<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>Microsoft Exchange 公用文件夹</h3><p>BY <a href="https://www.bainsight.com">BA Insight</a></p><p>通过使用一个MICROSOFT Exchange 公用文件夹连接器，用户可以通过各种搜索平台从 Exchange 检索内容。</p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.bainsight.com/connectors/microsoft-exchange-connector-sharepoint-azure-elasticsearch/"><font color="0065BA">更多详细信息</font></a></p></div></div></div></div></li>
-<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>Microsoft Exchange Server</h3><p>BY <a href="https://www.bainsight.com">BA Insight</a></p><p>使用 BA Insight Microsoft Exchange 连接器，用户可以通过各种搜索引擎从 Exchange 检索内容。 </p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.bainsight.com/connectors/microsoft-exchange-server-connector-sharepoint-azure-elasticsearch/"><font color="0065BA">更多详细信息</font></a></p></div></div></div></div></li>
-<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>Microsoft Teams</h3><p>BY <a href="https://www.bainsight.com">BA Insight</a></p><p>BA Insight Microsoft Teams 连接器将 Microsoft Teams 中的内容与其他企业系统的内容一起索引，以提供统一的结果。</p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.bainsight.com/connectors/microsoft-teams-connector-for-sharepoint-azure-elasticsearch/"><font color="0065BA">更多详细信息</font></a></p></div></div></div></div></li>
-<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>中西公司目录</h3><p>BY <a href="https://www.bainsight.com">BA Insight</a></p><p>公司目录连接器将保护源系统的安全性，并提供完全爬网和增量爬网，以便用户一直可以使用最新信息。</p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.bainsight.com/connectors/the-firm-directory-connector-sharepoint-azure-elasticsearch/"><font color="0065BA">更多详细信息</font></a></p></div></div></div></div></li>
-<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>OneDrive for Business</h3><p>BY <a href="https://www.bainsight.com">BA Insight</a></p><p>BA Insight OneDrive 连接器使 OneDrive 中的内容可以索引到各种搜索平台，从而为用户提供来自多个源的集成搜索结果。</p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.bainsight.com/connectors/onedrive-business-connector-sharepoint-azure-elasticsearch/"><font color="0065BA">更多详细信息</font></a></p></div></div></div></div></li>
-<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>OpenText Documentum (Cloud) </h3><p>BY <a href="https://www.bainsight.com">BA Insight</a></p><p>BA Insight 的 OpenText Documentum 云连接器安全地将 Documentum 对象的全文和元数据索引到搜索引擎中，从而支持跨多个存储库的内容结果集可搜索的内容。 </p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.bainsight.com/connectors/connector-for-documentum-cloud/"><font color="0065BA">更多详细信息</font></a></p></div></div></div></div></li>
-<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>实践法</h3><p>BY <a href="https://www.bainsight.com">BA Insight</a></p><p>BA Insight 实践法律连接器使用户能够对实践法数据库执行搜索，无需直接导航到实践法。</p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.bainsight.com/connectors/practical-law-connector-sharepoint-azure-elasticsearch/"><font color="0065BA">更多详细信息</font></a></p></div></div></div></div></li>
-<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>ProLaw</h3><p>BY <a href="https://www.bainsight.com">BA Insight</a></p><p>BA Insight Connector for Pro Law 可将任何门户连接到 ProLaw，从而在尊重 Pro Law 中的用户权限的同时显示 Pro Law 的信息。</p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.bainsight.com/connectors/prolaw-connector-sharepoint-azure-elasticsearch/"><font color="0065BA">更多详细信息</font></a></p></div></div></div></div></li>
-<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>SAP ERP (Cloud) </h3><p>BY <a href="https://www.bainsight.com">BA Insight</a></p><p>BA Insight 的 SAP ERP (云版本) 连接器旨在将 SAP 中的项目引入搜索索引。</p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.bainsight.com/connectors/connector-for-sap-erp-cloud/"><font color="0065BA">更多详细信息</font></a></p></div></div></div></div></li>
-<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>SAP HANA (Cloud) </h3><p>BY <a href="https://www.bainsight.com">BA Insight</a></p><p>SAP HANA (云版本) 连接器确保源数据库的安全性，并提供完全爬网和增量爬网，以便用户能够一直获得最新信息。 </p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.bainsight.com/connectors/connector-sap-hana-cloud-version/"><font color="0065BA">更多详细信息</font></a></p></div></div></div></div></li>
-<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>ServiceNow (Cloud) </h3><p>BY <a href="https://www.bainsight.com">BA Insight</a></p><p>BA Insight ServiceNow (云版本) 连接器遵守源系统的安全性，并提供完全和增量爬网，以便用户能够一直获得最新信息。</p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.bainsight.com/connectors/servicenow-cloud-connector/"><font color="0065BA">更多详细信息</font></a></p></div></div></div></div></li>
-<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>SharePoint 2010</h3><p>BY <a href="https://www.bainsight.com">BA Insight</a></p><p>BA Insight 的 SharePoint 2010 连接器允许你连接到 SharePoint 2010，从任何网站、文档库或列表提取数据;并安全地索引此内容。 </p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.bainsight.com/connectors/sharepoint-2010-connector/"><font color="0065BA">更多详细信息</font></a></p></div></div></div></div></li>
-<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>SharePoint 2013</h3><p>BY <a href="https://www.bainsight.com">BA Insight</a></p><p>BA Insight 的 SharePoint 2013 连接器允许你连接到 SharePoint 2013，从任何网站、文档库或列表提取数据;并安全地索引此内容。 </p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.bainsight.com/connectors/sharepoint-2013-connector/"><font color="0065BA">更多详细信息</font></a></p></div></div></div></div></li>
-<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>SharePoint 2016</h3><p>BY <a href="https://www.bainsight.com">BA Insight</a></p><p>BA Insight 的 SharePoint 连接器允许你连接到 SharePoint 2016，从任何网站、文档库或列表提取数据;并安全地索引此内容。  </p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.bainsight.com/connectors/sharepoint-2016-connector/"><font color="0065BA">更多详细信息</font></a></p></div></div></div></div></li>
-<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>SharePoint 2019</h3><p>BY <a href="https://www.bainsight.com">BA Insight</a></p><p>BA Insight 的 SharePoint 连接器允许你连接到 SharePoint 2019，从任何网站、文档库或列表提取数据;并安全地索引此内容。 </p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.bainsight.com/connectors/connector-for-sharepoint-2019/"><font color="0065BA">更多详细信息</font></a></p></div></div></div></div></li>
-<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>SharePoint Online</h3><p>BY <a href="https://www.bainsight.com">BA Insight</a></p><p>BA Insight 的 SharePoint Online 连接器允许你连接到 SharePoint Online，从任何网站、文档库或列表提取数据;并安全地索引此内容。</p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.bainsight.com/connectors/sharepoint-online-connector/"><font color="0065BA">更多详细信息</font></a></p></div></div></div></div></li>
-<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>网站爬网程序</h3><p>BY <a href="https://www.bainsight.com">BA Insight</a></p><p>利用 BA Insight 网站爬网程序连接器，可以显示单个合并搜索索引中任何网站的内容以及其他存储库中的内容。 </p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.bainsight.com/connectors/website-connector-for-sharepoint-azure-elasticsearch/"><font color="0065BA">更多详细信息</font></a></p></div></div></div></div></li>
-<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>西 km</h3><p>BY <a href="https://www.bainsight.com">BA Insight</a></p><p>BA Insight West km Connector 支持跨交易和诉讼文档进行搜索，包括创建自定义搜索结果页面。</p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.bainsight.com/connectors/westkm-connector-sharepoint-azure-elasticsearch/"><font color="0065BA">更多详细信息</font></a></p></div></div></div></div></li>
-<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>Azure AD </h3><p>由 <a href="https://www.raytion.com">Raytion</a></p><p>保护企业搜索连接器，以可靠地从 Microsoft Azure Active Directory (Azure AD) 内容，并智能地使用 Microsoft Graph 进行搜索。 它通过 Microsoft Graph API 对 Azure AD 中的对象进行索引。 连接器可用于将主体近实时地集成到 Microsoft Graph 中，以实施专业搜索、设备搜索和位置搜索等用例，或者提供与自定义数据源结合使用的早期绑定安全修整。 连接器支持针对 Microsoft 365 的联合身份验证。</p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.raytion.com/connectors/raytion-azure-ad-connector/"><font color="0065BA">更多详细信息</font></a></p></div></div></div></div></li>
-<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>Confluence </h3><p>由 <a href="https://www.raytion.com">Raytion</a></p><p>保护企业级搜索连接器，以可靠地索引来自 Atlassian Confluence 的内容，并智能地使用 Microsoft Graph 进行搜索。 它几乎可以实时地为本地 Confluence 实例中的标记对页面、博客文章、附件、注释、空间、配置文件和中心网站进行索引。 该连接器完全支持 Atlassian Confluence 的内置用户和组管理，以及基于 Active Directory 和其他目录服务的连接安装。</p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.raytion.com/connectors/raytion-confluence-connector/"><font color="0065BA">更多详细信息</font></a></p></div></div></div></div></li>
-<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>Confluence 云 </h3><p>由 <a href="https://www.raytion.com">Raytion</a></p><p>保护企业级搜索连接器，以可靠地索引来自 Atlassian Confluence 云的内容，并智能地使用 Microsoft Graph 进行搜索。 它几乎实时地为来自 Confluence 云实例的标记的页面、博客文章、附件、注释、空间、配置文件和中心网站建立索引。 连接器完全支持 Atlassian Confluence 云的内置用户和组管理。</p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.raytion.com/connectors/raytion-confluence-cloud-connector/"><font color="0065BA">更多详细信息</font></a></p></div></div></div></div></li>
-<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>Documentum </h3><p>由 <a href="https://www.raytion.com">Raytion</a></p><p>保护企业级搜索连接器，以可靠地对 OpenText Documentum 中的内容编制索引，并智能地使用 Microsoft Graph 进行搜索。 它几乎可以实时地对存储库、文件夹和文件以及 Documentum 中的元数据和属性进行可靠索引。 连接器完全支持 OpenText Documentum 的内置用户和组管理。</p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.raytion.com/connectors/raytion-documentum-connector/"><font color="0065BA">更多详细信息</font></a></p></div></div></div></div></li>
-<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>企业保管库 </h3><p>由 <a href="https://www.raytion.com">Raytion</a></p><p>保护企业搜索连接器，以可靠地索引 Symantec Enterprise Vault 中的内容，并智能地使用 Microsoft Graph 进行搜索。 它几乎可以实时地对存档数据（如电子邮件、附件、文件、日历项和来自企业保管库的联系人）建立索引。 连接器完全支持 Symantec Enterprise Vault 的身份验证模型基本、NTLM 和 Kerberos 身份验证。</p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.raytion.com/connectors/raytion-enterprise-vault-connector-2/"><font color="0065BA">更多详细信息</font></a></p></div></div></div></div></li>
-<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>企业保管库 </h3><p>由 <a href="https://www.raytion.com">Raytion</a></p><p>保护企业级搜索连接器，以可靠地索引来自 Microsoft Enterprise Vault 的内容，并智能地使用 Microsoft Graph 进行搜索。 它几乎可以实时地对存档数据（如电子邮件、附件、文件、日历项和来自企业保管库的联系人）建立索引。 该连接器完全支持具有基本身份验证、NTLM 身份验证和 Kerberos 身份验证的 Windows 企业存储库身份验证模型。</p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.raytion.com/connectors/raytion-enterprise-vault-connector/"><font color="0065BA">更多详细信息</font></a></p></div></div></div></div></li>
-<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>FirstSpirit </h3><p>由 <a href="https://www.raytion.com">Raytion</a></p><p>保护企业级搜索连接器，以可靠地索引来自 e-则 FirstSpirit 中的内容，并智能地使用 Microsoft Graph 进行搜索。 它几乎可以实时地索引 FirstSpirit 中的页面、附件和其他生成的文档类型。 该连接器完全支持电子数据第一个内置用户、组和权限管理，以及基于 Active Directory 和其他目录服务的 FirstSpirit 安装。</p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.raytion.com/connectors/raytion-firstspirit-connector/"><font color="0065BA">更多详细信息</font></a></p></div></div></div></div></li>
-<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>Jira </h3><p>由 <a href="https://www.raytion.com">Raytion</a></p><p>保护企业级搜索连接器，以可靠地索引来自 Atlassian Jira 的内容，并智能地使用 Microsoft Graph 进行搜索。 它几乎可以实时地对本地 Jira 实例中的项目、问题、附件、注释、工作日志、问题历史记录、链接和配置文件进行可靠索引。 该连接器完全支持 Atlassian Jira 的内置用户和组管理，以及基于 Active Directory 和其他目录服务的 Jira 安装。</p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.raytion.com/connectors/raytion-jira-connector /"><font color="0065BA">更多详细信息</font></a></p></div></div></div></div></li>
-<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>Jira 云 </h3><p>由 <a href="https://www.raytion.com">Raytion</a></p><p>保护企业搜索连接器，以可靠地索引来自 Atlassian Jira 云的内容，并智能地使用 Microsoft Graph 进行搜索。 它几乎可以实时地索引 Jira 云中的项目、问题、附件、注释、工作日志、问题历史记录、链接和配置文件。 连接器完全支持 Atlassian Jira Cloud 的内置用户和组管理。</p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.raytion.com/connectors/raytion-jira-cloud-connector /"><font color="0065BA">更多详细信息</font></a></p></div></div></div></div></li>
-<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>备注 </h3><p>由 <a href="https://www.raytion.com">Raytion</a></p><p>保护企业搜索连接器，以可靠地对 IBM Notes (以前 Lotus Note) 的内容编制索引，并智能地使用 Microsoft Graph 进行搜索。 它几乎可以实时地对一组可配置便笺数据库中的记录进行可靠索引。 该连接器完全支持 IBM Notes 的内置用户和组管理。</p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.raytion.com/connectors/raytion-notes-connector/"><font color="0065BA">更多详细信息</font></a></p></div></div></div></div></li>
-<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>可宽延时间 </h3><p>由 <a href="https://www.raytion.com">Raytion</a></p><p>保护企业搜索连接器，以可靠地索引 Slack 中的内容，并智能地使用 Microsoft Graph 进行搜索。 它几乎实时地从 Slack 的所有公共频道对消息、线程和共享文件进行可靠索引。</p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.raytion.com/connectors/raytion-slack-connector/"><font color="0065BA">更多详细信息</font></a></p></div></div></div></div></li>
-<li><div class="cardSize"><div class="cardPadding"><div class="card" style="min-height:240px;"><div class="cardText"><h3>Yammer </h3><p>由 <a href="https://www.raytion.com">Raytion</a></p><p>保护企业级搜索连接器，以可靠地索引 Microsoft Yammer 中的内容，并智能地使用 Microsoft Graph 进行搜索。 它几乎可以实时地对 Yammer 中的频道、帖子、回复、附件、投票和通知进行可靠索引。 连接器完全支持 Microsoft Yammer 的内置用户和组管理，尤其是针对 Microsoft 365 的联合身份验证。</p><p style="margin-top:20px;margin-bottom:20px;font-weight:500"><a href="https://www.raytion.com/connectors/raytion-yammer-connector/"><font color="0065BA">更多详细信息</font></a></p></div></div></div></div></li>

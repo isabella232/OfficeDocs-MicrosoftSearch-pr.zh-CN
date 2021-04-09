@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 搜索的 Microsoft Graph 连接器概述
-ms.openlocfilehash: 77f145f58cf06e49f88af25bcb4d28cfa7d2bd56
-ms.sourcegitcommit: 08a7086185d28df14b06d1f7fdfbb1637288f7a5
+ms.openlocfilehash: ccf1e746c2a8bf97429bf5b13c8340db015e3eb1
+ms.sourcegitcommit: a07c957dfa1d31542f0362379251bc9679dfae41
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51042571"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "51639859"
 ---
 <!---Previous ms.author: monaray --->
 
@@ -108,6 +108,7 @@ Microsoft 提供了 9 个 Graph 连接器，我们的生态系统合作伙伴已
 * [Salesforce 连接器](salesforce-connector.md)
 * 具有使用源 ACL 的搜索权限的[ServiceNow](servicenow-connector.md)连接器
 * [管理结果群集](result-cluster.md)
+* [垂直连接中的多个连接](customize-search-page.md#multiple-connections-in-a-vertical)
 
 ## <a name="how-do-i-customize-and-configure-search-results"></a>如何自定义和配置搜索结果？
 
@@ -130,12 +131,10 @@ Microsoft 提供了 9 个 Graph 连接器，我们的生态系统合作伙伴已
 
 * 发布 **Microsoft** 构建的连接器时，可能需要几分钟时间才能创建连接。 在此期间，连接的状态将显示为"挂起"。
 
-* [Microsoft 365](https://admin.microsoft.com)管理中心不支持在连接发布后编辑搜索架构。 若要编辑搜索架构，请删除连接，然后创建一个新连接。
-
-* 以大约每秒四个项目的速度限制 Ingestion 吞吐量。
+* 以每秒 4 个项目的速度限制 Ingestion 吞吐量。
 
 * 不支持架构更新。 创建连接设置后，无法更新架构。 只能删除并重新创建连接。
 
 * 存在连接限制。 每个租户可以创建最多 10 个连接。
 
-* 对连接的编辑支持不可用。 创建连接后，你无法编辑或更改它。 如果需要更改任何详细信息，则必须删除并重新创建连接。
+* 创建连接后，不能编辑或更改连接。 如果需要更改任何详细信息，则必须删除并重新创建连接。

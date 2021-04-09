@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 添加垂直搜索并自定义搜索结果
-ms.openlocfilehash: c6104383698203fde48d217506da57941efa680f
-ms.sourcegitcommit: 0aca0a5c9152b1b5e8345c91edadfae0b30f57c8
+ms.openlocfilehash: e5c4ab8d507e0e6096a5b9d52dc0e818faebefb6
+ms.sourcegitcommit: a07c957dfa1d31542f0362379251bc9679dfae41
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/05/2021
-ms.locfileid: "51587736"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "51639850"
 ---
 # <a name="customize-the-search-results-page"></a>自定义搜索结果页面
 
@@ -40,6 +40,9 @@ ms.locfileid: "51587736"
 如果准确指定尽可能多的语义标签，将会增强此体验。 你可以根据架构定义和引用添加语义标签。
 
 [下面是](configure-connector.md#step-5-assign-property-labels) 有关创建和管理语义标签的其他信息。
+
+> [!NOTE]
+> 垂直连接中的多个连接当前处于预览阶段。 有关预览的详细信息，请参阅 [连接器预览功能](connectors-overview.md#what-are-the-preview-features)。
 
 ### <a name="things-you-should-know"></a>你应了解的一些内容
 
