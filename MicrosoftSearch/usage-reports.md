@@ -3,21 +3,23 @@ title: 搜索使用率报告
 ms.author: ankmis
 author: jeffkizn
 manager: parulm
-ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
+audience: Admin
+ms.audience: Admin
+ms.date: 04/09/2021
 localization_priority: Normal
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 description: 查看 Microsoft 搜索使用率报告
-ms.openlocfilehash: 2237fc978ad7b0d7b94b342a9f2646c9da6b73a4
-ms.sourcegitcommit: 5df252e6d0bd67bb1b4c59418aceca8369f5fe42
+ms.openlocfilehash: 8e46b1bdc2143dd3f7c53643e3ee89446a18cbbf
+ms.sourcegitcommit: 74356701eac9d5deccd01b142e7e6fb083cd3871
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51031743"
+ms.lasthandoff: 04/09/2021
+ms.locfileid: "51656777"
 ---
 # <a name="microsoft-search-usage-reports"></a>Microsoft 搜索使用率报告
 
@@ -35,9 +37,12 @@ ms.locfileid: "51031743"
 | 报告 | 说明 |
 |:-----|:-----|
 |查询量|此报告显示执行的搜索查询的数量。 使用此报告可确定搜索查询量趋势，并确定较高和较低搜索活动的时间段。|
-|热门查询|此报告显示最热门的搜索查询。 使用此报告可了解用户要搜索的信息类型。|
+|热门查询|此报告显示最热门的搜索查询。 当通过单击结果至少搜索此查询三次时，会向该报表添加查询。 使用此报告可了解用户要搜索的信息类型。|
 |放弃的查询|此报告显示点击率较低的热门搜索查询。 使用此报告可确定可能导致用户不满意的搜索查询，并提高内容的可发现性。 然后，你可以确定创建答案（如书签）或通过 Graph 连接器插入新内容是否是正确的操作。|
 |无结果查询|此报告显示未返回结果的热门搜索查询。 使用此报告可确定可能导致用户不满意的搜索查询，并提高内容的可发现性。 然后，你可以确定创建答案（如书签）或通过 Graph 连接器插入新内容是否是正确的操作。|
+
+>[!NOTE]
+>目前存在一个已知问题，例如书签等答案所满足的查询被视为放弃的查询。
 
 ## <a name="viewing-reports"></a>查看报告
 
@@ -55,7 +60,7 @@ ms.locfileid: "51031743"
 
 顶部、弃用和失败的查询表显示您选择的第一天或当月的结果。
 
-**我何时会看到过去 7 天、过去 30 天等的聚合数据...像必应热门查询报告一样？**
+**我何时会看到过去 7 天、过去 30 天的聚合数据，等等...像必应热门查询报告一样？**
 
 我们正在考虑这种类型的聚合，并针对这些报告的未来版本简化数据范围筛选。
 
