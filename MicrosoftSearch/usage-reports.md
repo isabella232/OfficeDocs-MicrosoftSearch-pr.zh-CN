@@ -14,16 +14,19 @@ search.appverid:
 - MET150
 - MOE150
 description: 查看 Microsoft 搜索使用率报告
-ms.openlocfilehash: 8e46b1bdc2143dd3f7c53643e3ee89446a18cbbf
-ms.sourcegitcommit: 74356701eac9d5deccd01b142e7e6fb083cd3871
+ms.openlocfilehash: 17645d86e315538305a28bad51ea1a41dcc37dcb
+ms.sourcegitcommit: d62849b00f2b65b493ab54be50c3e7c94430f057
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2021
-ms.locfileid: "51656777"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51754661"
 ---
 # <a name="microsoft-search-usage-reports"></a>Microsoft 搜索使用率报告
 
 利用搜索使用率报告，您可以更好地了解搜索在组织中如何运行。 从这些报告生成的见解将帮助您使内容易于查找，[](./make-content-easy-to-find.md)并采取措施，使搜索成为更有用且更令人愉悦的体验。
+
+> [!IMPORTANT]
+> Microsoft 搜索使用情况报告目前处于预览阶段
 
 [Microsoft 搜索使用情况报告](https://admin.microsoft.com/Adminportal/Home?#/MicrosoftSearch/insights)包括从 SharePoint 主页和搜索框中执行的搜索 Office.com 表。 你可以查看过去 31 天、每天或上一年每月的数据。 这些报告刚刚推出，因此需要一段时间来累算历史数据。
 
