@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft Graph 连接器公共预览版 Microsoft 搜索的许可证要求和定价
-ms.openlocfilehash: 23eed2c107b8b0ee04d772b3d2a77fb5db9c1902
-ms.sourcegitcommit: 62cb7b8c6a311760cc728f2c70a9a22ca76e977e
+ms.openlocfilehash: a7236f647e6513508e50519f9c6b1af166a3b2d9
+ms.sourcegitcommit: 2a178850c521189a221879151faa7b3b0aff95d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "51408702"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51905525"
 ---
 <!---Previous ms.author: rusamai --->
 
@@ -38,9 +38,15 @@ ms.locfileid: "51408702"
 
 ## <a name="entitlement-built-into-microsoft-365-or-office-365-e5-licenses"></a>Microsoft 365 或 Office 365 E5 许可证中内置的权利
 
-Microsoft 365 E5 或 Office 365 E5 许可证类型包含对 500 个项目的索引配额权利，这算作组织从 Graph 连接器中获取内容的配额。 请注意，这不包括在 Microsoft 365 A5 或 Office 365 A5 中。
+以下许可证包含对 500 项索引配额的权利，这些配额计入从 Graph 连接器中从组织配额中提供内容：
+
+* Microsoft 365 E5 或 Office 365 E5
+* [Microsoft Viva 主题](https://www.microsoft.com/microsoft-viva/topics?activetab=pivot:overviewtab)
 
 例如，如果你的组织有 100 个 Microsoft 365 E5 许可证，则你的组织具有 100 x 500 = 50，000 个项目的 Graph 连接器索引配额。
+
+<!---Comment requested in PR#143--->
+请注意，Microsoft 365 A5 或 Office 365 A5 不包括此权利。
 
 ## <a name="purchase-of-add-on-index-quota"></a>购买加载项索引配额
 若要购买更多 Graph 连接器配额，请与 Microsoft 帐户管理器联系，或完成以下步骤：
