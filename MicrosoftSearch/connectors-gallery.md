@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 列出 Microsoft 搜索的所有 Microsoft Graph 连接器
-ms.openlocfilehash: e3d28aa9db3053fc47b03304e211956e366b6aa9
-ms.sourcegitcommit: 2a178850c521189a221879151faa7b3b0aff95d2
+ms.openlocfilehash: c5eaa19f599598066929b8c45da47a5ac3426928
+ms.sourcegitcommit: 2a24caf029caa97feeabaf7345aebaf28de4b2d9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51905561"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51928575"
 ---
 # <a name="microsoft-graph-connectors-gallery"></a>Microsoft Graph 连接器库
 
@@ -1688,7 +1688,7 @@ BY [BA Insight](https://www.bainsight.com/)
 
 ---
 
-### <a name="notes"></a>笔记
+### <a name="notes"></a>注释
 
 由 [Raytion](https://www.raytion.com/)
 
@@ -2198,9 +2198,9 @@ SAP HANA (云版本) 连接器确保源数据库的安全性，并提供完全�
 
 按 [Accenture](https://www.accenture.com/)
 
+"现在服务"连接器将爬网 ServiceNow 中的内容。
 
-
-[更多详细信息]()
+[更多详细信息](https://contentanalytics.digital.accenture.com/display/aspire40/ServiceNow+Connector)
 
    :::column-end:::
 
@@ -2220,9 +2220,9 @@ SAP HANA (云版本) 连接器确保源数据库的安全性，并提供完全�
 
 BY [BA Insight](https://www.bainsight.com/)
 
+ ServiceNow 连接器将保护源系统的安全性，并提供完全爬网和增量爬网，因此用户始终可以使用最新信息。
 
-
-[更多详细信息]()
+[更多详细信息](https://www.bainsight.com/connectors/servicenow-connector-sharepoint-azure-elasticsearch)
 
 :::column-end:::
 :::column span="":::
