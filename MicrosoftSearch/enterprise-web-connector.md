@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 为 Microsoft 搜索设置企业网站图形连接器
-ms.openlocfilehash: 42c3f0a80b21e23bb625db06c4f9e89f2c10de4a
-ms.sourcegitcommit: 5df252e6d0bd67bb1b4c59418aceca8369f5fe42
+ms.openlocfilehash: 4b8a14b216d7df68d0898bb72d926abe671047a4
+ms.sourcegitcommit: 56b7b5aa55413141c805f766bdf7bc63d721ef53
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51031626"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51951018"
 ---
 <!---Previous ms.author: monaray --->
 
@@ -58,11 +58,11 @@ ms.locfileid: "51031626"
 > [!NOTE]
 > 如果要爬网的网站定义了网站地图，连接器将仅对网站地图中列出的 URL 进行爬网。 如果未定义网站图，连接器将深入爬网在网站的根 URL 上找到的所有链接。
 
-### <a name="crawl-mode-cloud-or-on-premises-preview"></a>爬网模式：云或本地 (预览) 
+### <a name="crawl-mode-cloud-or-on-premises"></a>爬网模式：云或本地
 
 爬网模式确定要索引的网站类型（云或本地）。 对于云网站，选择 **"云** "作为爬网模式。
 
-此外，连接器现在支持对本地网站进行爬网。 此模式为预览模式。 若要访问本地数据，必须先安装和配置 Graph 连接器代理。 若要了解更多信息，请参阅 [Graph 连接器代理](./on-prem-agent.md)。
+此外，连接器现在支持对本地网站进行爬网。 若要访问本地数据，必须先安装和配置 Graph 连接器代理。 若要了解更多信息，请参阅 [Graph 连接器代理](./on-prem-agent.md)。
 
 对于本地网站，选择代理作为爬网模式，在"本地代理"字段中，选择之前安装和配置的 Graph 连接器代理。  
 
