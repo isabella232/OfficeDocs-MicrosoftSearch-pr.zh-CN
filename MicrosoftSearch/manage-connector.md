@@ -1,6 +1,6 @@
 ---
 title: 管理 Microsoft Graph 连接器以用于 Microsoft 搜索
-ms.author: monaray
+ms.author: mecampos
 author: monaray97
 manager: mnirkhe
 audience: Admin
@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 管理 Microsoft Graph 连接器以用于 Microsoft 搜索。
-ms.openlocfilehash: cba50d8eb558b4d74ed46554dc155d4f275b1332
-ms.sourcegitcommit: 5df252e6d0bd67bb1b4c59418aceca8369f5fe42
+ms.openlocfilehash: 685b501f3afe25d75c13a1fe6cc2c1b5db8a3511
+ms.sourcegitcommit: e5d695c40b68c2f1fa082fa9de20b9aa6d5b8050
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51031716"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52325165"
 ---
 <!-- markdownlint-disable no-inline-html -->
 
@@ -43,7 +43,7 @@ Operation | Microsoft 的图表连接器 | 合作伙伴或图形连接器
 
 创建连接后，已处理项目的数量会显示在 **"Microsoft** 搜索"页上的"连接器"选项卡上。 初始完全爬网成功完成后，将显示定期增量爬网的进度。 此页面提供有关连接器日常操作的信息以及日志和错误历史记录的概述。
 
-状态列中针对 **每个连接显示** 四种状态：
+对于每个连接，"状态 **"** 列中会显示五种状态：
 
 * **正在同步**。 连接器正在对源数据进行爬网，以对现有项目编制索引并进行更新。
 
@@ -51,7 +51,9 @@ Operation | Microsoft 的图表连接器 | 合作伙伴或图形连接器
 
 * **已暂停**。 管理员通过暂停选项暂停爬网。 下一次爬网仅在手动恢复时运行。 但是，此连接的数据仍然可搜索。
 
-* **失败**。 连接出现严重故障。 此错误需要手动干预。 管理员需要根据显示的错误消息采取相应的操作。 在发生错误之前已编制索引的数据是可搜索的。
+* **已失败**。 连接出现严重故障。 此错误需要手动干预。 管理员需要根据显示的错误消息采取相应的操作。 在发生错误之前已编制索引的数据是可搜索的。
+
+* **删除失败**。 删除连接失败。 根据失败原因，可能仍对数据编制索引，可能仍使用项目配额，并且可能仍对连接运行爬网。 建议在此状态中再次尝试删除连接。
 
 ## <a name="monitor-your-index-quota-utilization"></a>监视索引配额利用率
 
