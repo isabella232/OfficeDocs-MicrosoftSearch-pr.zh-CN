@@ -1,5 +1,5 @@
 ---
-title: 管理 Power BI 答案
+title: 管理Power BI答案
 ms.author: dawholl
 author: dawholl
 manager: jeffkizn
@@ -12,66 +12,69 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: c0c814d0-f7e4-444e-b18e-09beb45c9322
-description: 管理 Power BI 报告和数据在搜索结果中的显示方式
-ms.openlocfilehash: 3d67f79cce2392f949541690879ffb9202d79060
-ms.sourcegitcommit: 5df252e6d0bd67bb1b4c59418aceca8369f5fe42
+description: 管理Power BI数据在搜索结果中的显示方式
+ms.openlocfilehash: 4b2251bdb8039c25fb1ec5290f3374a9f4eb3fd1
+ms.sourcegitcommit: 4b72a31910753d46373a829a64ffec77fe6bc855
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51031437"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52547697"
 ---
-# <a name="manage-power-bi-answers"></a>管理 Power BI 答案
+# <a name="manage-power-bi-answers"></a>管理Power BI答案
 
-为了便于用户查找做出明智决定所需的数据和分析，Microsoft 搜索增加了对 Power BI 仪表板和报告的支持。 以下是 Power BI 搜索的一些好处：
+为了便于用户查找做出明智决定所需的数据和分析，Microsoft 搜索增加了对仪表板Power BI的支持。 以下是搜索搜索的一Power BI优势：
 
-* **易于使用：** 这种开箱即用搜索体验可帮助用户轻松快速地查找整个组织的 Power BI 仪表板和报告。
-* **更丰富的内容：** 若要使 Power BI 搜索结果更有用，它们包括关键信息，如内容类型（仪表板或报表）以及拥有它的团队或人员。
-* **内置数据保护：** Power BI 结果将仅为有权访问仪表板或报表的用户显示。
-* **统一搜索体验：** 为了保持一致的体验，Power BI 结果在所有搜索入口点中保持一致。 无论您在何处搜索，您都具有相同的外观和感觉。
+* **易于使用：** 这种开箱即用搜索体验可帮助用户轻松Power BI整个组织的仪表板和报告。
+* **更丰富的内容：** 为了Power BI搜索结果，它们包括关键信息，如内容类型（仪表板或报表）以及拥有该内容的团队或人员。
+* **内置数据保护：Power BI** 仪表板或报表的用户才能查看结果。
+* **统一搜索体验：** 若要保持一致体验，Power BI所有搜索入口点的结果都是一致的。 无论您在何处搜索，您都具有相同的外观和感觉。
 
 ## <a name="what-users-experience"></a>用户体验
 
-Microsoft 搜索用户可以通过从 Windows 搜索框、SharePoint、Office 365 和必应进行搜索来查找 Power BI 结果。 用户可以使用如下所示的查询搜索报表和仪表板：
+Microsoft 搜索用户可以通过Power BI搜索框、Windows、SharePoint、Office 365 和 必应 来查找必应。 用户可以使用如下所示的查询搜索报表和仪表板：
 
-* Power BI about `<topic>`
-* Power BI for `<topic>`
-* `<topic>` Power BI 仪表板或 Power BI 仪表板 `<topic>`
-* `<topic>` Power BI 报表或 Power BI 报表 `<topic>`
-* `<topic>` Power BI 指标或 Power BI 指标 `<topic>`
-* `<topic>` Power BI 记分卡或 Power BI 记分卡 `<topic>`
+* Power BI关于`<topic>`
+* Power BI的`<topic>`
+* `<topic>`Power BI仪表板或Power BI仪表板`<topic>`
+* `<topic>`Power BI报告或Power BI报告`<topic>`
+* `<topic>`Power BI指标或Power BI指标`<topic>`
+* `<topic>`Power BI记分卡或Power BI记分卡`<topic>`
 
-将以上示例中的内容替换为要查找的信息，如销售、使用情况、容量 `<topic>` 、2021、Q1 等，以查看 Power BI 的相关结果。
+将以上示例中的内容替换为要查找的信息（如销售、使用情况、容量 `<topic>` 、2021、Q1 等）以查看 Power BI。
 
-:::image type="content" source="media/powerbi-answers/powerbi-serp.png" alt-text="带 Power BI 答案和垂直的 SERP 屏幕截图" border="true":::
+:::image type="content" source="media/powerbi-answers/powerbi-serp.png" alt-text="带自动解答和垂直Power BI SERP 的屏幕截图" border="true":::
 
-## <a name="turn-power-bi-search-on-or-off"></a>打开或关闭 Power BI 搜索
+## <a name="turn-power-bi-search-on-or-off"></a>打开Power BI或关闭搜索
 
-默认情况下，为组织启用 Power BI 结果。 Power BI 管理员可以随时禁用它们。 在 Power BI 管理门户中，转到"租户设置"并禁用"对 **Power BI 使用全局搜索** "设置。 若要了解更多信息，请参阅[管理门户中的管理 Power BI。](/power-bi/admin/service-admin-portal#use-global-search-for-power-bi-preview)
+Power BI为组织启用结果。 你的Power BI管理员可随时禁用它们。 在"Power BI管理门户"中，转到"租户设置"并禁用"使用全局 **搜索来搜索Power BI** 设置。 若要了解更多信息，请参阅[管理Power BI管理门户。](/power-bi/admin/service-admin-portal#use-global-search-for-power-bi-preview)
 
-:::image type="content" source="media/powerbi-answers/powerbi-admin.png" alt-text="打开或关闭 Power BI 答案的设置屏幕截图" border="true":::
+:::image type="content" source="media/powerbi-answers/powerbi-admin.png" alt-text="用于打开或关闭Power BI答案的设置屏幕截图" border="true":::
+
+> [!NOTE]
+> 使用 Microsoft 搜索时，搜索查询和从 Power BI 返回的结果可能在不同于 Power BI 租户数据所在的区域或地理位置进行处理。
 
 ## <a name="frequently-asked-questions"></a>常见问题解答
 
-**问：Power BI 搜索默认启用吗？**
+**问：Power BI搜索是否已启用？**
 
-**答：** 是的。 默认情况下，为 Microsoft 搜索启用 Power BI 搜索。 租户管理员无需首次设置此功能。
+**答：** 是的。 Power BI Microsoft 搜索启用搜索。 租户管理员无需首次设置此功能。
 
-**问：能否为特定组或用户启用或禁用 Power BI 搜索？**
+**问：Power BI组或用户启用还是禁用搜索？**
 
 **答：** 目前，只能为整个组织启用或禁用它。
 
-**问：如果禁用 Power BI 搜索，Power BI 搜索结果页面是否隐藏？**
+**问：如果Power BI搜索，搜索结果页面是否Power BI隐藏？**
 
-**答：** 不。 Power BI 搜索结果页面将显示一条消息，通知用户当前不适用于其组织。
+**答：** 不。 搜索结果Power BI页将显示一条消息，通知用户当前不适用于其组织。
 
-**问：如果没有 Power BI 许可证，我是否会看到 Power BI 搜索结果页面？**
+**问：如果我没有Power BI许可证，我是否会看到搜索结果Power BI页面？**
 
-**答：** 不。 如果搜索用户没有 Power BI 许可证，则 Power BI 搜索结果页面不会显示在 Microsoft 搜索结果中。
+**答：** 不。 如果搜索用户没有Power BI许可证，Power BI搜索结果页面将不会显示在 Microsoft 搜索结果中。
 
-**问：我能否看到无法访问的 Power BI 搜索结果？**
+**问：我能否Power BI无法访问的搜索结果？**
 
-**答：** 不。 Microsoft 搜索将仅返回你有权访问的 Power BI 结果。
+**答：** 不。 Microsoft 搜索将仅Power BI您有权访问的结果。
 
-**问：我能否自定义 Power BI 搜索结果 (例如，报告类型或报告所有者) ？**
+**问：我能否Power BI搜索结果 (，例如报告类型或报告所有者) ？**
 
-**答：** 目前，我们不支持自定义 Power BI 搜索结果中包含的字段。
+**答：** 目前，我们不支持自定义搜索结果中Power BI字段。
