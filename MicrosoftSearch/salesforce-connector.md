@@ -1,5 +1,5 @@
 ---
-title: Microsoft 搜索的 Salesforce Graph 连接器
+title: Salesforce Graph Microsoft 搜索连接器
 ms.author: mecampos
 author: mecampos
 manager: umas
@@ -12,27 +12,27 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: 为 Microsoft 搜索设置 Salesforce Graph 连接器
-ms.openlocfilehash: 59cc321a40655a1c1e5edf615dd43a2a56c8ddbc
-ms.sourcegitcommit: 5df252e6d0bd67bb1b4c59418aceca8369f5fe42
+description: 为 Microsoft 搜索Graph Salesforce 连接器
+ms.openlocfilehash: d4d19c05f82ddb28c4dc3e6719bf8ea8d7284cc3
+ms.sourcegitcommit: 1b154441f3a3abba0f2719e66a767432bc9506ca
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51031680"
+ms.lasthandoff: 06/02/2021
+ms.locfileid: "52720985"
 ---
 <!---Previous ms.author: rusamai --->
 
 # <a name="salesforce-graph-connector-preview"></a>Salesforce Graph 连接器 (预览) 
 
-Salesforce Graph 连接器允许组织为 Salesforce 实例中的联系人、机会、线索和帐户对象编制索引。 配置来自 Salesforce 的连接器和索引内容后，最终用户可以从任何 Microsoft 搜索客户端搜索这些项目。
+Salesforce Graph连接器，允许组织索引 Salesforce 实例中的联系人、机会、线索和帐户对象。 配置来自 Salesforce 的连接器和索引内容后，最终用户可以从任何 Microsoft 搜索客户端搜索这些项目。
 
 > [!NOTE]
-> 阅读 [**适用于 Graph 连接器的**](configure-connector.md) 安装程序一文，了解 Graph 连接器的常规设置说明。
+> 阅读 [**Graph 连接器**](configure-connector.md)的安装程序一文，了解 Graph 连接器的一般设置说明。
 
-本文适用于配置、运行和监视 Salesforce Graph 连接器的任何人。 它补充了常规设置过程，并显示了仅适用于 Salesforce Graph 连接器的说明。 本文还包括有关 [限制的信息](#limitations)。
+本文适用于配置、运行和监视 Salesforce Graph连接器。 它补充了常规安装过程，并显示了仅适用于 Salesforce Graph说明。 本文还包括有关 [限制的信息](#limitations)。
 
 >[!IMPORTANT]
->Salesforce Graph 连接器当前支持 Summer '19 或更高版本。
+>Salesforce Graph连接器当前支持 Summer '19 或更高版本。
 
 ## <a name="before-you-get-started"></a>在开始使用之前
 
@@ -63,7 +63,7 @@ Salesforce Graph 连接器允许组织为 Salesforce 实例中的联系人、机
       > [!div class="mx-imgBorder"]
       > ![管理员输入上面列出的所有必需配置后，Salesforce 实例中的 API 部分。](media/salesforce-connector/sf1.png)
 
-- 复制消费者密钥和使用者密码。 在 Microsoft 365 管理门户中为 Graph 连接器配置连接设置时，此信息将用作客户端 ID 和客户端密码。
+- 复制消费者密钥和使用者密码。 在管理门户中为 Graph 连接器配置连接设置时，此信息将用作客户端 ID 和Microsoft 365密码。
 
   > [!div class="mx-imgBorder"]
   > ![管理员提交所有必需配置后，Salesforce 实例中的 API 部分返回的结果。 使用者密钥位于左列顶部，使用者密码位于右列顶部。](media/salesforce-connector/clientsecret.png)
@@ -77,9 +77,9 @@ Salesforce Graph 连接器允许组织为 Salesforce 实例中的联系人、机
   > [!div class="mx-imgBorder"]
   > ![选择名为"刷新令牌在吊销前有效"的刷新令牌策略](media/salesforce-connector/oauthpolicies.png)
 
-现在，可以使用 [M365 管理](https://admin.microsoft.com/) 中心完成 Graph 连接器的其余设置过程。
+现在，可以使用[M365](https://admin.microsoft.com/)管理中心完成您的 Graph 连接器的其余设置过程。
 
-## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>步骤 1：在 Microsoft 365 管理中心添加 Graph 连接器
+## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>步骤 1：在Graph管理中心中添加Microsoft 365连接器
 
 按照常规 [设置说明操作](./configure-connector.md)。
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
@@ -111,9 +111,9 @@ Salesforce Graph 连接器允许组织为 Salesforce 实例中的联系人、机
 
 你需要选择哪些用户将看到此数据源中的搜索结果。 如果你仅允许某些 Azure Active Directory (Azure AD) 或非 Azure AD 用户查看搜索结果，请确保映射标识。
 
-## <a name="step-4a-select-permissions"></a>步骤 4a：选择权限
+### <a name="step-4a-select-permissions"></a>步骤 4.a：选择权限
 
-可以选择从 Salesforce 实例 (访问控制列表) ACL，或允许组织中的每个人查看来自此数据源的搜索结果。 ACL 可以包括 Azure Active Directory (AAD) 标识 (从 Azure AD 联合到 Salesforce) 的用户、在 Azure AD) 中具有相应标识的非 Azure AD 标识 (本机 Salesforce 用户，或同时包括这两者。
+可以选择从 Salesforce 实例 (访问控制列表) ACL，或允许组织中的每个人查看来自此数据源的搜索结果。 ACL 可以包括 Azure Active Directory (AAD) 标识 (从 Azure AD 联合到 Salesforce) 的用户、在 Azure AD) 中具有相应标识的非 Azure AD 标识 (或者同时包括这两者。
 
 >[!NOTE]
 >如果使用第三方标识提供程序（如 Ping ID 或 secureAuth），则应该选择"非 AAD"作为标识类型。
@@ -123,9 +123,15 @@ Salesforce Graph 连接器允许组织为 Salesforce 实例中的联系人、机
 
 如果选择从 Salesforce 实例中输入 ACL，并且为标识类型选择了"非 AAD"，请参阅映射非 [Azure AD 标识](map-non-aad.md) ，获取有关映射标识的说明。
 
-## <a name="step-4b-map-aad-identities"></a>步骤 4b：映射 AAD 标识
+### <a name="step-4b-map-aad-identities"></a>步骤 4.b：映射 AAD 标识
 
 如果你选择从 Salesforce 实例中输入 ACL，并且为标识类型选择了"AAD"，请参阅映射 [Azure AD 标识](map-aad.md) ，获取有关映射标识的说明。 若要了解如何为 Salesforce 设置 Azure AD SSO，请参阅 [本教程](/azure/active-directory/saas-apps/salesforce-tutorial)。
+
+### <a name="apply-user-mapping-to-sync-your-salesforce-identities-to-azure-ad-identities"></a>应用用户映射以将 Salesforce 标识同步到 Azure AD 标识
+
+在此视频中，你可以看到向 Salesforce 实例进行身份验证、将非 Azure Active Directory 标识同步到 Azure Active Directory 标识以及将适当的安全修整应用到 Salesforce 项的过程。
+
+> [!VIDEO https://www.youtube.com/watch?v=SZYiFxZMKcM]
 
 ## <a name="step-5-assign-property-labels"></a>步骤 5：分配属性标签
 
@@ -158,9 +164,9 @@ Salesforce 连接器当前仅支持完全爬网的刷新计划。
 
 ## <a name="limitations"></a>限制
 
-- Graph 连接器当前不支持使用 Salesforce 中的个人组进行基于 Apex、基于区域共享和共享。
-- Graph 连接器使用的 Salesforce API 中存在一个已知 bug，其中销售线索的专用组织范围默认值当前不可用。  
-- 如果某个字段具有字段级别 (为) 设置 FLS，则 Graph 连接器将不会为 Salesforce 组织的任何配置文件提供该字段。因此，用户将无法搜索这些字段的值，也不会显示在结果中。  
+- 当前Graph连接器不支持使用 Salesforce 中的个人组进行基于 Apex、基于区域共享和共享。
+- 连接器使用的 Salesforce API Graph一个已知 bug，其中销售线索的专用组织范围默认值当前不可用。  
+- 如果某个字段具有字段级别 (为) 设置 FLS，则 Graph 连接器不会为 Salesforce 组织的任何配置文件输入该字段。因此，用户将无法搜索这些字段的值，也不会显示在结果中。  
 - 在"管理架构"屏幕中，这些常用标准属性名称列出一次，选项为"查询 **"、"搜索****"、"检索**"和"**精简**"，并应用于全部或无。
     - 名称
     - URL
@@ -170,7 +176,7 @@ Salesforce 连接器当前仅支持完全爬网的刷新计划。
     - MobilePhone
     - 电子邮件
     - 类型
-    - Title
+    - 标题
     - AccountId
     - AccountName
     - AccountUrl

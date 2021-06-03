@@ -1,5 +1,5 @@
 ---
-title: 为 Microsoft 搜索配置 Microsoft 构建的 Graph 连接器
+title: 配置 Microsoft 为 Microsoft 搜索Graph连接器
 ms.author: mecampos
 author: mecampos
 manager: umas
@@ -12,24 +12,24 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: Microsoft Graph 连接器的设置概述
-ms.openlocfilehash: 169e78fd4a0148d8bb4e52968b2efd785045806e
-ms.sourcegitcommit: 08a7086185d28df14b06d1f7fdfbb1637288f7a5
+description: Microsoft Graph连接器的设置概述
+ms.openlocfilehash: ef94d530af63d8b8b33dfae3c4b411164ef31feb
+ms.sourcegitcommit: 1b154441f3a3abba0f2719e66a767432bc9506ca
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51042580"
+ms.lasthandoff: 06/02/2021
+ms.locfileid: "52720940"
 ---
 <!-- Previous ms.author: monaray -->
 
 <!-- markdownlint-disable no-trailing-punctuation -->
 
-# <a name="setup-overview-for-graph-connectors-by-microsoft"></a>Microsoft Graph 连接器的设置概述 
+# <a name="setup-overview-for-graph-connectors-by-microsoft"></a>Microsoft Graph连接器的设置概述 
 
-本文介绍了 Microsoft 在 **Microsoft** [365](https://admin.microsoft.com)管理中心中设置 Graph 连接器所需的基本过程。 基本过程包括以下步骤：  
+本文介绍了在管理中心中Graph **Microsoft** 设置 Microsoft 365 [连接器所需的基本过程](https://admin.microsoft.com)。 基本流程包括以下步骤:  
 <!---Add links to each section in the doc--->
 
-1. [在 Microsoft 365 管理中心添加 Graph 连接器](#step-1-add-a-graph-connector-in-the-microsoft-365-admin-center)
+1. [在 Graph 管理中心Microsoft 365连接器](#step-1-add-a-graph-connector-in-the-microsoft-365-admin-center)
 2. [命名连接](#step-2-name-the-connection)
 3. [配置连接设置](#step-3-configure-the-connection-settings)
 4. [管理搜索权限](#step-4-manage-search-permissions)
@@ -45,27 +45,27 @@ ms.locfileid: "51042580"
 * [后续步骤](#next-steps)
 
 > [!NOTE]
-> Microsoft 的所有 Graph 连接器的安装过程都类似，但不完全相同。 **除了阅读本文之外，还请务必阅读数据源的连接器特定信息。**  
+> Microsoft 的所有连接器的安装过程Graph类似，但不完全相同。 **除了阅读本文之外，还请务必阅读数据源的连接器特定信息。**  
 
 <!---## Before you get started-->
 
 <!---Insert "Before you get started" recommendations for this data source-->
 
-## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>步骤 1：在 Microsoft 365 管理中心添加 Graph 连接器
+## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>步骤 1：在Graph管理中心中添加Microsoft 365连接器
 
-完成以下步骤以配置任何 Microsoft 构建的 Graph 连接器：
+完成以下步骤以配置任何 Microsoft 构建Graph连接器：
 
-1. 在 [Microsoft 365](https://admin.microsoft.com)管理中心登录管理员帐户。
+1. 在管理中心 中Microsoft 365[管理员帐户](https://admin.microsoft.com)。
 
-2. 在导航窗格中，选择"**设置"，** 然后选择"搜索&**智能"。** 选择" [连接器"选项卡](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/Connectors)。
+2. 在导航窗格中，**选择**"设置"，然后选择"搜索&**智能"。** 选择" [连接器"选项卡](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/Connectors)。
 
 3. 选择 **"+** 添加"，然后从可用选项的菜单中选择你选择的数据源。
 
    > [!div class="mx-imgBorder"]
-   > ![可用的数据源包括：ADLS Gen2、企业网站、Microsoft SQL 服务器、Azure SQL、Oracle SQL 数据库、ServiceNow、文件共享、Azure DevOps 和 MediaWiki。](media/add-connector.png)
+   > ![可用的数据源包括：ADLS Gen2、Enterprise 网站、Microsoft SQL 服务器、Azure SQL、Oracle SQL 数据库、ServiceNow、文件共享、Azure DevOps 和 MediaWiki。](media/add-connector.png)
 
 > [!NOTE]
-> 最多可以向每个租户添加 10 个 Graph 连接。
+> 最多可以向每个租户添加 10 Graph连接。
 
 ## <a name="step-2-name-the-connection"></a>步骤 2：命名连接
 
@@ -87,13 +87,13 @@ ms.locfileid: "51042580"
 
 访问控制列表 (ACL) 确定组织中哪些用户可以访问每一项数据。  
 
-某些连接器（如 [Microsoft SQL](MSSQL-connector.md) 和 Azure Data Lake Storage [Gen2）](azure-data-lake-connector.md) 在本机支持 Azure Active [Directory (Azure AD) ](/azure/active-directory/) ACL。
+一些连接器（如[Microsoft SQL](MSSQL-connector.md)和 Azure Data Lake[存储 Gen2）](azure-data-lake-connector.md)在本机Azure Active Directory ([Azure AD) ](/azure/active-directory/) ACL。
 
-其他连接器（ [如 ServiceNow、Azure](servicenow-connector.md) [DevOps](azure-devops-connector.md)和 [Salesforce）](salesforce-connector.md) 支持同步非 Azure AD 用户和组。  
+其他连接器（如[ServiceNow、Azure DevOps](servicenow-connector.md)和[](azure-devops-connector.md)[Salesforce）](salesforce-connector.md)支持同步非 Azure AD 用户和组。  
 
 ## <a name="step-5-assign-property-labels"></a>步骤 5：分配属性标签
 
-可以在"分配属性标签"页上将语义标签分配给源属性。 标签是 Microsoft 提供的已知标记，可提供语义含义。 它们允许 Microsoft 将连接器数据集成到 Microsoft 365 体验中，如增强的搜索、人员卡片、智能发现等。  
+可以在"分配属性标签"页上将语义标签分配给源属性。 标签是 Microsoft 提供的已知标记，可提供语义含义。 它们允许 Microsoft 将连接器数据集成到Microsoft 365体验，如增强的搜索、人员卡片、智能发现等。  
 
 下表列出了当前支持的标签及其说明。  
 
@@ -131,11 +131,11 @@ ms.locfileid: "51042580"
 
 您可以设置搜索架构属性来控制每个源属性的搜索功能。 搜索架构可帮助确定搜索结果页面上显示哪些结果，以及最终用户可以查看和访问的信息。
 
-搜索架构属性包括查询、**搜索、****检索和** 优化 **的选项**。 下表列出了 Microsoft Graph 连接器支持的每个属性，并说明了它们的功能。
+搜索架构属性包括查询、**搜索、****检索和** 优化 **的选项**。 下表列出了 Microsoft 连接器支持的每个Graph并解释了它们的功能。
 
 搜索架构属性 | 函数 | 示例
 --- | --- | ---
-SEARCH | 使属性的文本内容可搜索。 属性内容包含在全文索引中。 | 如果属性为 **title**，则 **查询 Enterprise** 将返回任何文本或标题中包含 **单词 Enterprise** 的答案。
+SEARCH | 使属性的文本内容可搜索。 属性内容包含在全文索引中。 | 如果属性为 **title**，则查询Enterprise返回包含单词 **Enterprise文本** 或标题中的结果。
 QUERY | 通过查询来搜索特定属性的匹配项。 然后，可以在查询中以编程方式或详细方式指定属性名称。 |  如果可以查询 **Title** 属性，则支持查询 **Title： Enterprise。**
 检索 | 结果类型中只能使用可检索属性，并显示在搜索结果中。 |
 优化 | 精简选项可在"Microsoft 搜索结果"页中一样使用。 | 如果在连接设置 [过程中](custom-filters.md) 标记了精简属性，则贵组织的用户可以在搜索结果页中按 **URL** 进行筛选
@@ -164,7 +164,7 @@ QUERY | 通过查询来搜索特定属性的匹配项。 然后，可以在查�
 
 有两种类型的刷新间隔，即"完全刷新"和"增量刷新"，但增量刷新不适用于某些数据源。
 
-在完全刷新后，搜索引擎将处理和索引内容源中的每个项目，而不考虑以前的爬网。 完全刷新最适合以下情形：
+在完全刷新后，搜索引擎将处理和索引内容源中已更改的项目，而不考虑以前的爬网。 完全刷新最适合以下情形：
 
 * 检测数据的删除。
 * 增量刷新发现错误，但失败。
@@ -189,7 +189,7 @@ QUERY | 通过查询来搜索特定属性的匹配项。 然后，可以在查�
 
 转到管理中心中"连接器"选项卡下的已发布连接[列表](https://admin.microsoft.com)。 若要了解如何进行更新和删除，请参阅 [管理连接器](manage-connector.md)。
 
-## <a name="troubleshooting"></a>故障排除
+## <a name="troubleshooting"></a>疑难解答
 <!---Insert troubleshooting recommendations for this data source-->
 读取数据源的连接器特定信息。 
 
@@ -198,9 +198,9 @@ QUERY | 通过查询来搜索特定属性的匹配项。 然后，可以在查�
 
 ## <a name="limitations"></a>限制
 <!---Insert limitations for this data source-->
-若要了解适用于所有数据源的限制，请参阅 [Microsoft Graph 连接器概述](connectors-overview.md) 文章。
+若要了解适用于所有数据源的限制，请参阅 Microsoft Graph[概述](connectors-overview.md)文章。
 
-请参阅数据源的特定于连接器的信息，了解该特定 Graph 连接器是否具有其他限制。
+请参阅数据源的特定于连接器的信息，了解该特定连接器是否Graph限制。
 
 ## <a name="next-steps"></a>后续步骤
 

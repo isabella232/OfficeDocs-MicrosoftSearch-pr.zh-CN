@@ -1,5 +1,5 @@
 ---
-title: Azure SQL 和 Microsoft SQL Microsoft 搜索的服务器 Graph 连接器
+title: Azure SQL 和 Microsoft SQL Server Graph 连接器用于 Microsoft 搜索
 ms.author: mecampos
 author: mecampos
 manager: umas
@@ -12,33 +12,33 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: 为 Microsoft 搜索SQL Azure SQL 和 Microsoft SQL Graph 连接器。
-ms.openlocfilehash: 81951dab058a14d687f81f7611ee624b079f0822
-ms.sourcegitcommit: 5df252e6d0bd67bb1b4c59418aceca8369f5fe42
+description: 为 Microsoft 搜索SQL Azure SQL Graph 和 Microsoft SQL Graph 连接器。
+ms.openlocfilehash: 29474c731c489c9e9b75f2456d25e4ff43aae4eb
+ms.sourcegitcommit: 1b154441f3a3abba0f2719e66a767432bc9506ca
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51031401"
+ms.lasthandoff: 06/02/2021
+ms.locfileid: "52720976"
 ---
 <!---Previous ms.author: vivg --->
 
-# <a name="azure-sql-and-microsoft-sql-server-graph-connectors"></a>Azure SQL 和 Microsoft SQL 服务器 Graph 连接器
+# <a name="azure-sql-and-microsoft-sql-server-graph-connectors"></a>Azure SQL 和 Microsoft SQL 服务器Graph连接器
 
 Microsoft SQL 服务器或 Azure SQL Graph 连接器允许组织发现本地 SQL Server 数据库或云中的 Azure SQL 实例中托管的数据库的数据并编制索引。
-Graph 连接器将指定内容索引到 Microsoft 搜索中。 若要使索引与源数据保持最新，它支持定期完全爬网和增量爬网。 使用这些SQL连接器，还可以限制某些用户对搜索结果的访问。
+该Graph连接器将指定内容索引到 Microsoft 搜索中。 若要使索引与源数据保持最新，它支持定期完全爬网和增量爬网。 使用这些SQL连接器，还可以限制某些用户对搜索结果的访问。
 
 > [!NOTE]
-> 阅读 [**设置 Graph 连接器一**](configure-connector.md) 文，了解 Graph 连接器的常规设置说明。
+> 阅读 [**Setup your Graph connector**](configure-connector.md)一文，了解 Graph 连接器的一般设置说明。
 
-本文适用于配置、运行和监视 Azure SQL 和 Microsoft SQL Graph 连接器的任何人。 它补充了常规设置过程，并显示了仅适用于 Azure SQL 和 Microsoft SQL Graph 连接器的说明。 本文还包括有关 Microsoft [](#limitations) SQL 和 Azure SQL 连接器的限制的信息。
+本文适用于配置、运行和监视 Azure SQL 和 Microsoft SQL 服务器Graph连接器。 它补充了常规安装过程，并显示了仅适用于 Azure SQL 和 Microsoft SQL 服务器Graph说明。 本文还包括有关 Microsoft [](#limitations) SQL 和 Azure SQL连接器的限制的信息。
 
 ## <a name="before-you-get-started"></a>在开始使用之前
 
-### <a name="install-the-graph-connector-agent-required-for-on-premises-microsoft-sql-server-connector-only"></a>安装仅本地 Microsoft (服务器连接器所需的 Graph 连接器SQL代理) 
+### <a name="install-the-graph-connector-agent-required-for-on-premises-microsoft-sql-server-connector-only"></a>仅Graph本地 Microsoft (服务器连接器所需的 SQL 连接器代理) 
 
-若要访问本地第三方数据，必须安装和配置 Graph 连接器代理。 有关详细信息 [，](on-prem-agent.md) 请参阅安装 Graph 连接器代理。  
+若要访问本地第三方数据，必须安装和配置 Graph 连接器代理。 有关详细信息[，请参阅](on-prem-agent.md)Graph连接器代理。  
 
-## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>步骤 1：在 Microsoft 365 管理中心添加 Graph 连接器
+## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>步骤 1：在Graph管理中心中添加Microsoft 365连接器
 
 按照常规 [设置说明操作](./configure-connector.md)。
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup 
@@ -54,11 +54,11 @@ instructions.-->
 
 ### <a name="register-an-app-for-azure-sql-connector-only"></a>仅为 Azure (连接器SQL应用) 
 
-对于 Azure SQL 连接器，必须在 Azure Active Directory 中注册应用，以允许 Microsoft 搜索应用访问用于索引的数据。 若要了解有关注册应用的信息，请参阅如何注册应用的 Microsoft Graph [文档](/graph/auth-register-app-v2)。
+对于 Azure SQL 连接器，必须在 Azure Active Directory 中注册应用，以允许 Microsoft 搜索应用访问用于索引的数据。 若要了解有关注册应用的信息，请参阅 Microsoft Graph注册应用[的文档](/graph/auth-register-app-v2)。
 
 完成应用注册并记下应用名称、 (客户端) ID 和租户 ID 后，需要生成一 [个新的客户端密码](/azure/healthcare-apis/register-confidential-azure-ad-client-app#application-secret)。 客户端密码将只显示一次。 请记住，&安全存储客户端密码。 在 Microsoft 搜索中配置新连接时，请使用客户端 ID 和客户端密码。
 
-若要将注册的应用添加到 Azure SQL 数据库，你需要：
+若要将注册的应用添加到Azure SQL 数据库，你需要：
 
 - 登录到 Azure SQL DB
 - 打开新的查询窗口
@@ -66,26 +66,26 @@ instructions.-->
 - 通过运行命令"exec sp_addrolemember"db_datareader，[应用名称]"或"ALTER ROLE db_datareader ADD MEMBER [app name]"将用户添加到角色
 
 >[!NOTE]
->若要撤销对在 Azure Active Directory 中注册的任何应用的访问权限，请参阅有关删除已注册应用的 Azure [文档](/azure/active-directory/develop/quickstart-remove-app)。
+>若要撤销对在 Azure Active Directory 中注册的任何应用的访问权限，请参阅有关删除已注册应用的 Azure[文档](/azure/active-directory/develop/quickstart-remove-app)。
 
 ### <a name="connection-settings"></a>连接设置
 
-若要将 Microsoft SQL服务器连接器连接到数据源，必须配置要数据库服务器的服务器场和本地代理。 然后，您可以使用所需的身份验证方法连接到数据库。
+若要将 Microsoft SQL连接器连接到数据源，必须配置要数据库服务器的服务器场和本地代理。 然后，您可以使用所需的身份验证方法连接到数据库。
 
 > [!NOTE] 
 > 您的数据库必须SQL 2008 或更高版本的服务器版本，Microsoft SQL 连接器才能连接。
 
-对于 Azure SQL 连接器，只需指定要连接到的服务器名称或 IP 地址。 Azure SQL 连接器仅支持 Azure Active Directory 开放 ID (OIDC) 身份验证连接到数据库。
+对于 Azure SQL 连接器，只需指定要连接到的服务器名称或 IP 地址。 Azure SQL 连接器仅Azure Active Directory OIDC (OIDC) 打开 ID 连接以连接到数据库。
 
 为了增加安全性，你可以为 Azure 服务器或数据库SQL IP 防火墙规则。 若要了解有关设置 IP 防火墙规则的信息，请参阅有关 [IP 防火墙规则的文档](/azure/azure-sql/database/firewall-configure)。 在防火墙设置中添加以下客户端 IP 范围。
 
-| 地区 | IP 范围 |
+| 区域 | IP 范围 |
 | ------------ | ------------ |
 | NAM | 52.250.92.252/30, 52.224.250.216/30 |
 | EUR | 20.54.41.208/30, 51.105.159.88/30 |
 | APC | 52.139.188.212/30, 20.43.146.44/30 |
 
-若要搜索数据库内容，必须在配置连接器SQL指定查询。 这些SQL查询需要命名要索引的所有数据库列 (即源属性) ，包括获取所有列需要执行的任何 SQL 联接。 若要限制对搜索结果的访问，您必须在配置连接器时 (在) 查询SQL访问控制列表和 ACL。
+若要搜索数据库内容，必须在配置连接器SQL指定查询。 这些SQL查询需要命名要索引的所有数据库列 (即源属性) ，包括获取所有列需要执行的任何 SQL 联接。 若要限制对搜索结果的访问，必须在配置连接器时 (在) 查询SQL访问控制列表和 ACL。
 
 ## <a name="step-3a-full-crawl-required"></a>步骤 3a：必需 (完全) 
 
@@ -115,7 +115,7 @@ instructions.-->
 
 ### <a name="supported-data-types"></a>支持的数据类型
 
-下表总结了 MS SQL 和 Azure SQL 连接器中支持SQL数据类型。 该表还汇总了受支持的数据类型索引索引SQL 数据类型。 若要了解有关支持索引的 Microsoft Graph 连接器数据类型的信息，请参阅有关属性资源 [类型的文档](/graph/api/resources/property?preserve-view=true&view=graph-rest-beta#properties)。
+下表总结了 MS SQL 和 Azure SQL 连接器中支持SQL数据类型。 该表还汇总了数据类型索引索引SQL 数据类型。 若要了解有关 Microsoft 连接器Graph索引支持的数据类型的信息，请参阅有关属性[资源类型的文档](/graph/api/resources/property?preserve-view=true&view=graph-rest-beta#properties)。
 
 | 类别 | 源数据类型 | 索引数据类型 |
 | ------------ | ------------ | ------------ |
@@ -207,15 +207,19 @@ Create your own verticals and result types, so end users can view search results
 
 To learn more about how to create your verticals and MRTs, see [Search results page customization](customize-search-page.md).-->
 
-<!---## Troubleshooting-->
+## <a name="troubleshooting"></a>疑难解答
 
-<!---Insert troubleshooting recommendations for this data source-->
+下面是配置连接器时观察到的常见错误及其可能的原因。
+
+| 配置步骤 | 错误消息 | 可能 (原因)  |
+| ------------ | ------------ | ------------ |
+| 完全爬网 | `Error from database server: A transport level error has occurred when receiving results from the server.` | 由于网络问题，导致出现此错误。 建议使用 Microsoft 网络监视器检查网络日志 [，](https://www.microsoft.com/download/details.aspx?id=4865) 并联系 Microsoft 客户支持。 |
 
 ## <a name="limitations"></a>限制
 
 预览SQL连接器有以下限制：
 
-- Microsoft SQL连接器：本地数据库必须运行 SQL 2008 或更高版本。
-- 托管 Azure (数据库SQL M365) Azure 订阅和 Azure 订阅必须位于同一 Azure Active Directory 中。
+- Microsoft SQL连接器：内部部署数据库必须运行 SQL 2008 或更高版本的服务器。
+- 托管 Azure SQL 数据库 (M365 订阅和 Azure) 必须位于同一Azure Active Directory。
 - ACL 仅支持使用用户主体名称 (UPN) 、Azure Active Directory (Azure AD) 或 Active Directory 安全性。
 - 不支持对数据库列内的丰富内容编制索引。 此类内容的示例包括作为数据库列内的链接存在的 HTML、JSON、XML、blob 和文档分析。

@@ -1,5 +1,5 @@
 ---
-title: 用于 Microsoft 搜索的 ServiceNow Graph 连接器
+title: ServiceNow Graph Microsoft 搜索连接器
 ms.author: mecampos
 author: mecampos
 manager: umas
@@ -12,26 +12,26 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: 为 Microsoft 搜索设置 ServiceNow Graph 连接器
-ms.openlocfilehash: 692170ef6f8332418efc7d56a56c6fa1b1cce76c
-ms.sourcegitcommit: 5df252e6d0bd67bb1b4c59418aceca8369f5fe42
+description: 为 Microsoft 搜索设置 ServiceNow Graph连接器
+ms.openlocfilehash: 08947381dff7cd06007c68a7f1614b23c53f7510
+ms.sourcegitcommit: 1b154441f3a3abba0f2719e66a767432bc9506ca
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51031761"
+ms.lasthandoff: 06/02/2021
+ms.locfileid: "52720959"
 ---
 <!---Previous ms.author: kam1 --->
 
-# <a name="servicenow-graph-connector"></a>ServiceNow 图形连接器
+# <a name="servicenow-graph-connector"></a>ServiceNow Graph 连接器
 
-ServiceNow Graph 连接器允许组织根据组织内的用户条件权限为用户可见的基于知识的文章编制索引。 从 ServiceNow 配置连接器并索引内容后，用户可以从任何 Microsoft 搜索客户端搜索文章。
+ServiceNow Graph 连接器允许您的组织根据组织内的用户条件权限为用户可见的基于知识的文章编制索引。 从 ServiceNow 配置连接器并索引内容后，用户可以从任何 Microsoft 搜索客户端搜索文章。
 
 > [!NOTE]
-> 阅读 [**适用于 Graph 连接器的**](configure-connector.md) 安装程序一文，了解 Graph 连接器的常规设置说明。
+> 阅读 [**Graph 连接器**](configure-connector.md)的安装程序一文，了解 Graph 连接器的一般设置说明。
 
-本文适用于配置、运行和监视 ServiceNow Graph 连接器的任何人。 它补充了常规设置过程，并显示了仅适用于 ServiceNow Graph 连接器的说明。 本文还包括有关疑[难解答和](#troubleshooting)[限制的信息](#limitations)。
-  
-## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>步骤 1：在 Microsoft 365 管理中心添加 Graph 连接器
+本文适用于配置、运行和监视 ServiceNow Graph连接器。 它补充了常规安装过程，并显示了仅适用于 ServiceNow 连接器Graph说明。 本文还包括有关疑[难解答和](#troubleshooting)[限制的信息](#limitations)。
+
+## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>步骤 1：在Graph管理中心中添加Microsoft 365连接器
 
 按照常规 [设置说明操作](./configure-connector.md)。
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
@@ -64,7 +64,7 @@ ServiceNow Graph 连接器允许组织根据组织内的用户条件权限为用
 
 1. 基本身份验证
 1. ServiceNow OAuth (推荐) 
-1. Azure AD OpenID Connect
+1. Azure AD OpenID 连接
 
 ### <a name="basic-authentication"></a>基本身份验证
 
@@ -89,13 +89,13 @@ ServiceNow Graph 连接器允许组织根据组织内的用户条件权限为用
 
 输入客户端 ID 和客户端密码以连接到实例。 连接后，使用 ServiceNow 帐户凭据对爬网权限进行身份验证。 帐户应至少具有 **知识** 角色。
 
-### <a name="azure-ad-openid-connect"></a>Azure AD OpenID Connect
+### <a name="azure-ad-openid-connect"></a>Azure AD OpenID 连接
 
-若要使用 Azure AD OpenID Connect 进行身份验证，请按照以下步骤操作。
+若要使用 Azure AD OpenID 连接进行身份验证，请按照以下步骤操作。
 
-## <a name="step-3a-register-a-new-application-in-azure-active-directory"></a>步骤 3.a：在 Azure Active Directory 中注册新应用程序
+## <a name="step-3a-register-a-new-application-in-azure-active-directory"></a>步骤 3.a：在 Azure Active Directory
 
-若要了解如何在 Azure Active Directory 中注册新应用程序，请参阅 [注册应用程序](/azure/active-directory/develop/quickstart-register-app#register-an-application)。 选择单个租户组织目录。 不需要重定向 URI。 注册后，记下应用程序 (客户端) ID 和目录 (租户) ID。
+若要了解如何在应用程序中注册新Azure Active Directory，请参阅[注册应用程序](/azure/active-directory/develop/quickstart-register-app#register-an-application)。 选择单个租户组织目录。 不需要重定向 URI。 注册后，记下应用程序 (客户端) ID 和目录 (租户) ID。
 
 ## <a name="step-3b-create-a-client-secret"></a>步骤 3.b：创建客户端密码
 
@@ -107,13 +107,13 @@ ServiceNow Graph 连接器允许组织根据组织内的用户条件权限为用
 
 1. 运行 PowerShell。
 
-2. 使用下面的命令安装 Azure PowerShell。
+2. 使用Azure PowerShell安装客户端。
 
    ```powershell
    Install-Module -Name Az -AllowClobber -Scope CurrentUser
    ```
 
-3. 连接到 Azure。
+3. 连接 Azure。
 
    ```powershell
    Connect-AzAccount
@@ -130,7 +130,7 @@ ServiceNow Graph 连接器允许组织根据组织内的用户条件权限为用
 
 属性 | 说明 
 --- | ---
-租户 ID (的目录 ID)  | 步骤 3.a 中的 Azure Active Directory 租户的唯一 ID。
+租户 ID (的目录 ID)  | 步骤 3.a Azure Active Directory租户的唯一 ID。
 客户端 ID (应用程序 ID)  | 步骤 3.a 中注册的应用程序的唯一 ID。
 客户端密码 | 应用程序的密钥从步骤 3.b (开始) 。 请像处理密码一样处理它。
 服务主体 ID | 作为服务运行的应用程序的标识。  (步骤 3.c) 
@@ -184,13 +184,13 @@ ServiceNow 实例需要以下配置：
 
 访问使用 ServiceNow 主体 ID 作为用户 ID 创建的 ServiceNow 帐户，并分配知识角色。 有关向 ServiceNow 帐户分配角色的说明，请参阅： [将角色分配给用户](https://docs.servicenow.com/bundle/paris-platform-administration/page/administer/users-and-groups/task/t_AssignARoleToAUser.html)。
 
-使用步骤 3.a 中的应用程序 ID 作为客户端 ID 和步骤 3.b 中的客户端密码，使用 Azure AD OpenID Connect 对 ServiceNow 实例进行身份验证。
+使用步骤 3.a 中的应用程序 ID 作为客户端 ID 和步骤 3.b 中的客户端密码，使用 Azure AD OpenID 连接。
 
 ## <a name="step-4-select-properties-and-filter-data"></a>步骤 4：选择属性和筛选数据
 
-在此步骤中，可以从 ServiceNow 数据源中添加或删除可用属性。 默认情况下，Microsoft 365 已选择几个属性。
+在此步骤中，可以从 ServiceNow 数据源中添加或删除可用属性。 Microsoft 365已默认选择了几个属性。
 
-使用 ServiceNow 查询字符串，可以指定用于同步文章的条件。 它就像 Select 语句中的 **Where** **SQL** 语句。 例如，可以选择仅对已发布和处于活动状态的文章编制索引。 若要了解如何创建自己的查询字符串，请参阅使用筛选器生成编码 [的查询字符串](https://docs.servicenow.com/bundle/paris-platform-user-interface/page/use/using-lists/task/t_GenEncodQueryStringFilter.html)。
+使用 ServiceNow 查询字符串，可以指定用于同步文章的条件。 它就像 Select 语句中的 **Where** **SQL** 子句。 例如，可以选择仅对已发布和处于活动状态的文章编制索引。 若要了解如何创建自己的查询字符串，请参阅使用筛选器生成编码 [的查询字符串](https://docs.servicenow.com/bundle/paris-platform-user-interface/page/use/using-lists/task/t_GenEncodQueryStringFilter.html)。
 
 使用"预览结果"按钮验证所选属性和查询筛选器的示例值。
 
@@ -198,15 +198,21 @@ ServiceNow 实例需要以下配置：
 
 ServiceNow 连接器支持对"任何人"或"仅有权访问此数据源的人"**可见的搜索权限**。 索引数据显示在搜索结果中，并且对组织中分别具有访问权限的用户可见。 ServiceNow 连接器支持默认用户条件权限，而无需高级脚本。 当连接器找到具有高级脚本的用户条件时，使用该用户条件的所有数据将不会显示在搜索结果中。
 
-如果选择"仅 **有权访问** 此数据源的用户"，则需要进一步选择 ServiceNow 实例是否具有 Azure Active Directory (AAD) 已预配用户或非 AAD 用户。
+如果选择"**仅有权访问** 此数据源的用户"，则需要进一步选择 ServiceNow 实例是否Azure Active Directory (AAD) 已设置用户或非 AAD 用户。
 
 >[!NOTE]
 >如果您选择"仅 **有权访问此数据源** 的人"，则 ServiceNow 连接器 **为预览版**。
 
 >[!NOTE]
->如果选择 AAD 作为标识源类型，请确保将 UPN 源属性分配给 ServiceNow 中的电子邮件目标属性。 若要验证或更改映射，请参阅在 [Azure Active Directory](/azure/active-directory/app-provisioning/customize-application-attributes)中为 SaaS 应用程序自定义用户预配属性映射。
+>如果选择 AAD 作为标识源类型，请确保将 UPN 源属性分配给 ServiceNow 中的电子邮件目标属性。 若要验证或更改映射，请参阅自定义 SaaS 应用程序中的用户预配属性[Azure Active Directory。](/azure/active-directory/app-provisioning/customize-application-attributes)
 
 如果选择从 ServiceNow 实例中选取 ACL，并且为标识类型选择了"非 AAD"，请参阅映射非 [Azure AD 标识](map-non-aad.md) ，获取有关映射标识的说明。
+
+### <a name="managing-search-permissions-in-microsoft-search"></a>在 Microsoft 搜索中管理搜索权限
+
+在下面的视频中，你可以看到如何使用 Servicenow 连接器为知识文章编制索引、定义用户条件权限，以及如何在 ServiceNow 和 Microsoft 搜索索引之间无缝同步更改。
+
+> [!VIDEO https://www.youtube.com/watch?v=TVSkJpk1RiE]
 
 ## <a name="step-6-assign-property-labels"></a>步骤 6：分配属性标签
 
@@ -237,7 +243,7 @@ ServiceNow 连接器支持对"任何人"或"仅有权访问此数据源的人"**
 
 ## <a name="limitations"></a>限制
 
-ServiceNow Graph 连接器在其最新版本中具有以下限制：
+ServiceNow Graph连接器在其最新版本中具有以下限制：
 
 - 对组织中每个人都可用的知识库文章编制索引是一项普遍可用的功能。
 - *只有具有"管理搜索权限* "步骤下此数据源功能的访问权限的用户才在预览版中，并且仅处理 [用户条件](https://hi.service-now.com/kb_view.do?sysparm_article=KB0550924) 权限。 任何任何类型的访问权限将不会应用到搜索结果中。
