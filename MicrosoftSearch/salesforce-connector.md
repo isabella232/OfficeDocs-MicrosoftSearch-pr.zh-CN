@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 为 Microsoft 搜索Graph Salesforce 连接器
-ms.openlocfilehash: d4d19c05f82ddb28c4dc3e6719bf8ea8d7284cc3
-ms.sourcegitcommit: 1b154441f3a3abba0f2719e66a767432bc9506ca
+ms.openlocfilehash: 7d73454fb909db24514c969f34158e3f2be5e34c
+ms.sourcegitcommit: 6cffa2d29448be9a22514e7b4c3009c522af0860
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/02/2021
-ms.locfileid: "52720985"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52774086"
 ---
 <!---Previous ms.author: rusamai --->
 
@@ -131,7 +131,7 @@ Salesforce Graph连接器，允许组织索引 Salesforce 实例中的联系人�
 
 在此视频中，你可以看到向 Salesforce 实例进行身份验证、将非 Azure Active Directory 标识同步到 Azure Active Directory 标识以及将适当的安全修整应用到 Salesforce 项的过程。
 
-> [!VIDEO https://www.youtube.com/watch?v=SZYiFxZMKcM]
+> [!VIDEO https://www.youtube-nocookie.com/embed/SZYiFxZMKcM]
 
 ## <a name="step-5-assign-property-labels"></a>步骤 5：分配属性标签
 

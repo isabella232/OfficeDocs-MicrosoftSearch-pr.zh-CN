@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 为 Microsoft 搜索设置 ServiceNow Graph连接器
-ms.openlocfilehash: 08947381dff7cd06007c68a7f1614b23c53f7510
-ms.sourcegitcommit: 1b154441f3a3abba0f2719e66a767432bc9506ca
+ms.openlocfilehash: 31b581af2c51a5c26b161e778b242e396afe91fd
+ms.sourcegitcommit: 6cffa2d29448be9a22514e7b4c3009c522af0860
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/02/2021
-ms.locfileid: "52720959"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52774077"
 ---
 <!---Previous ms.author: kam1 --->
 
@@ -212,7 +212,7 @@ ServiceNow 连接器支持对"任何人"或"仅有权访问此数据源的人"**
 
 在下面的视频中，你可以看到如何使用 Servicenow 连接器为知识文章编制索引、定义用户条件权限，以及如何在 ServiceNow 和 Microsoft 搜索索引之间无缝同步更改。
 
-> [!VIDEO https://www.youtube.com/watch?v=TVSkJpk1RiE]
+> [!VIDEO https://www.youtube-nocookie.com/embed/TVSkJpk1RiE]
 
 ## <a name="step-6-assign-property-labels"></a>步骤 6：分配属性标签
 
