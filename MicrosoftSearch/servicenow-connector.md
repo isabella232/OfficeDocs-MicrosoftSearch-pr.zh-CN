@@ -13,56 +13,58 @@ search.appverid:
 - MET150
 - MOE150
 description: 为 Microsoft 搜索设置 ServiceNow Graph连接器
-ms.openlocfilehash: 31b581af2c51a5c26b161e778b242e396afe91fd
-ms.sourcegitcommit: 6cffa2d29448be9a22514e7b4c3009c522af0860
+ms.openlocfilehash: 0b7e752ec67a7c14e4afc2e3bad32124694f8f39
+ms.sourcegitcommit: 668930032e77a065c23551b3e8820dcc2c63c0f8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52774077"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "52853811"
 ---
 <!---Previous ms.author: kam1 --->
 
+
 # <a name="servicenow-graph-connector"></a>ServiceNow Graph 连接器
 
-ServiceNow Graph 连接器允许您的组织根据组织内的用户条件权限为用户可见的基于知识的文章编制索引。 从 ServiceNow 配置连接器并索引内容后，用户可以从任何 Microsoft 搜索客户端搜索文章。
+借助 Microsoft Graph Connector for ServiceNow，组织可以索引对所有用户可见的知识库文章，或对组织中具有用户条件权限受限的知识库文章编制索引。 从 ServiceNow 配置连接器并索引内容后，最终用户可以从任何 Microsoft 搜索客户端搜索这些文章。  
 
-> [!NOTE]
-> 阅读 [**Graph 连接器**](configure-connector.md)的安装程序一文，了解 Graph 连接器的一般设置说明。
+本文适用于配置Microsoft 365运行和监视 ServiceNow 连接器的管理员Graph用户。 它补充了设置连接器文章中提供的Graph[说明](configure-connector.md)。 如果尚未这样做，请阅读整个设置 Graph 连接器一文，了解常规设置过程。
 
-本文适用于配置、运行和监视 ServiceNow Graph连接器。 它补充了常规安装过程，并显示了仅适用于 ServiceNow 连接器Graph说明。 本文还包括有关疑[难解答和](#troubleshooting)[限制的信息](#limitations)。
+下面列出了安装过程的每一步以及一条说明，指示你应遵循常规设置说明或仅适用于 ServiceNow Graph 连接器的其他说明，包括有关疑难解答和限制[的信息。](#limitations) [](#troubleshooting)  
 
-## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>步骤 1：在Graph管理中心中添加Microsoft 365连接器
+## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>步骤 1：在Graph管理中心中添加Microsoft 365连接器。
+按照常规设置说明操作。
 
-按照常规 [设置说明操作](./configure-connector.md)。
-<!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
+## <a name="step-2-name-the-connection"></a>步骤 2：命名连接。
+按照常规设置说明操作。
 
-## <a name="step-2-name-the-connection"></a>步骤 2：命名连接
-
-按照常规 [设置说明操作](./configure-connector.md)。
-<!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 
 ## <a name="step-3-connection-settings"></a>步骤 3：连接设置
+若要连接到 ServiceNow 数据，你需要组织的 **ServiceNow 实例 URL**。 组织的 ServiceNow 实例 URL 通常 https:// **&lt; 组织域>.service-now.com**。 
 
-若要连接到 ServiceNow 数据，请使用组织的此帐户的 **ServiceNow** 实例 URL 凭据、客户端 ID 和客户端密码进行 OAuth 身份验证。  
+除了此 URL 外，还需要一个服务帐户来设置与 ServiceNow 的连接，以及允许 Microsoft 搜索根据刷新计划定期更新知识文章。 该服务帐户将需要对以下 **ServiceNow** 表记录的读取权限，以成功对各种实体进行爬网。
 
-组织的 **ServiceNow** 实例 URL 通常 https:// **&lt; 组织域>.service-now.com**。 除了此 URL 外，还需要一个帐户来设置与 ServiceNow 的连接，并允许 Microsoft 搜索根据刷新计划更新 ServiceNow 中的文章。 帐户应至少具有 <em>知识</em> 角色。 [了解如何为 ServiceNow 帐户分配角色](https://docs.servicenow.com/bundle/paris-platform-administration/page/administer/users-and-groups/task/t_AssignARoleToAUser.html)。
+**功能** | **需要读取访问权限的表** | **描述**
+--- | --- | ---
+索引可供所有人使用的知识 <em>文章</em> | kb_knowledge | 用于对知识库文章进行爬网
+索引和支持用户条件权限 | kb_uc_can_read_mtom | Who阅读此知识库
+| | kb_uc_can_contribute_mtom | Who可参与此知识库
+| | kb_uc_cannot_read_mtom | Who无法读取此知识库
+| | kb_uc_cannot_contribute_mtom | Who无法参与此知识库
+| | sys_user | 读取用户表
+| | sys_user_has_role | 读取用户的角色信息
+| | sys_user_grmember | 读取用户的组成员身份
+| | user_criteria | 读取用户条件权限
+| | kb_knowledge_base | 读取知识库信息
+
+你可以 **为用于与** Microsoft 搜索连接的服务帐户创建和分配角色。 [了解如何为 ServiceNow 帐户分配角色](https://docs.servicenow.com/bundle/paris-platform-administration/page/administer/users-and-groups/task/t_AssignARoleToAUser.html)。 可以在已创建的角色上分配表的读取权限。 若要了解如何设置对表记录的读取访问权限，请参阅 [保护表记录](https://developer.servicenow.com/dev.do#!/learn/learning-plans/orlando/new_to_servicenow/app_store_learnv2_securingapps_orlando_creating_and_editing_access_controls)。 
+
 
 >[!NOTE]
->如果要对用户和组标识进行爬网以遵守 Microsoft 搜索结果中知识文章的访问权限，则该帐户应有权读取 ServiceNow 中的下表记录：
->* kb_uc_can_contribute_mtom
->* kb_uc_can_read_mtom
->* kb_uc_cannot_read_mtom
->* kb_uc_cannot_contribute_mtom
->* sys_user
->* sys_user_has_role
->* sys_user_grmember
->* user_criteria
->* kb_knowledge_base  
-> 你可以为用于与 Microsoft 搜索连接的帐户创建和分配角色。 可以在该角色上分配表的读取权限。 若要了解如何设置对表记录的读取访问权限，请参阅 [保护表记录](https://developer.servicenow.com/dev.do#!/learn/learning-plans/orlando/new_to_servicenow/app_store_learnv2_securingapps_orlando_creating_and_editing_access_controls)。
+> ServiceNow Graph 连接器可以在没有高级脚本的情况下对知识库文章和用户条件权限编制索引。 如果用户条件包含高级脚本，将在搜索结果中隐藏所有相关的知识库文章。
 
-若要对 ServiceNow 中的内容进行身份验证和同步，请选择 **以下三种受支持的方法** 之一：
-
-1. 基本身份验证
+若要对 ServiceNow 中的内容进行身份验证和同步，请选择 **以下三种受支持的方法** 之一： 
+ 
+1. 基本身份验证 
 1. ServiceNow OAuth (推荐) 
 1. Azure AD OpenID 连接
 
@@ -72,7 +74,7 @@ ServiceNow Graph 连接器允许您的组织根据组织内的用户条件权限
 
 ### <a name="servicenow-oauth"></a>ServiceNow OAuth
 
-若要使用 ServiceNow OAuth 进行身份验证，请设置 ServiceNow 实例中的终结点。 Microsoft 搜索应用将使用它来访问实例。 若要了解更多信息，请参阅[](https://docs.servicenow.com/bundle/newyork-platform-administration/page/administer/security/task/t_CreateEndpointforExternalClients.html)ServiceNow 文档中的为客户端创建用于访问实例的终结点。
+若要使用 ServiceNow OAuth 进行身份验证，ServiceNow 管理员需要在 ServiceNow 实例中设置终结点，以便 Microsoft 搜索应用可以访问它。 若要了解更多信息，请参阅[](https://docs.servicenow.com/bundle/newyork-platform-administration/page/administer/security/task/t_CreateEndpointforExternalClients.html)ServiceNow 文档中的为客户端创建用于访问实例的终结点。
 
 下表提供了有关如何填写终结点创建表单的指导：
 
@@ -87,7 +89,7 @@ ServiceNow Graph 连接器允许您的组织根据组织内的用户条件权限
 刷新令牌有效期 | 刷新令牌有效的秒数。 默认情况下，刷新令牌在 100 天后过期 (8，640，000 秒) 。 | 31，536，000 (年 1) 
 访问令牌有效期 | 访问令牌有效的秒数。 | 43，200 (12 小时) 
 
-输入客户端 ID 和客户端密码以连接到实例。 连接后，使用 ServiceNow 帐户凭据对爬网权限进行身份验证。 帐户应至少具有 **知识** 角色。
+输入客户端 ID 和客户端密码以连接到实例。 连接后，使用 ServiceNow 帐户凭据对爬网权限进行身份验证。 帐户应至少具有 **知识** 角色。 参考步骤 [3：连接](#step-3-connection-settings) 设置开头的表，该表格提供对更多 ServiceNow 表记录和索引用户条件权限的读取访问权限。
 
 ### <a name="azure-ad-openid-connect"></a>Azure AD OpenID 连接
 
@@ -163,7 +165,7 @@ ServiceNow 实例需要以下配置：
    应用程序 | 全局
    用户声明 | sub
    用户字段 | 用户 ID
-   启用 JTI 声明验证 | 已禁用
+   启用 JTI 声明验证 | 禁用
 
 5. 选择"提交并更新 OAuth OIDC 实体"表单。
 
@@ -180,11 +182,11 @@ ServiceNow 实例需要以下配置：
 
 所有其他值都可以留为默认值。
 
-## <a name="step-3f-enable-knowledge-role-for-the-servicenow-account"></a>步骤 3.f：为 ServiceNow 帐户启用知识角色
+##### <a name="step-36-enable-knowledge-role-for-the-servicenow-account"></a>步骤 3.6：为 ServiceNow 帐户启用知识角色
 
-访问使用 ServiceNow 主体 ID 作为用户 ID 创建的 ServiceNow 帐户，并分配知识角色。 有关向 ServiceNow 帐户分配角色的说明，请参阅： [将角色分配给用户](https://docs.servicenow.com/bundle/paris-platform-administration/page/administer/users-and-groups/task/t_AssignARoleToAUser.html)。
+访问使用 ServiceNow 主体 ID 作为用户 ID 创建的 ServiceNow 帐户，并分配知识角色。 可以在此处找到将角色分配给 ServiceNow 帐户的说明，将角色 [分配给用户](https://docs.servicenow.com/bundle/paris-platform-administration/page/administer/users-and-groups/task/t_AssignARoleToAUser.html)。 参考步骤 [3：连接](#step-3-connection-settings) 设置开头的表，该表格提供对更多 ServiceNow 表记录和索引用户条件权限的读取访问权限。
 
-使用步骤 3.a 中的应用程序 ID 作为客户端 ID 和步骤 3.b 中的客户端密码，使用 Azure AD OpenID 连接。
+在管理中心配置向导中，将应用程序 ID 用作步骤 3.a) 中的客户端 ID (和步骤 3.b) 中的客户端密码 (，以使用 Azure AD OpenID 连接 向 ServiceNow 实例进行身份验证。
 
 ## <a name="step-4-select-properties-and-filter-data"></a>步骤 4：选择属性和筛选数据
 
@@ -196,38 +198,35 @@ ServiceNow 实例需要以下配置：
 
 ## <a name="step-5-manage-search-permissions"></a>步骤 5：管理搜索权限
 
-ServiceNow 连接器支持对"任何人"或"仅有权访问此数据源的人"**可见的搜索权限**。 索引数据显示在搜索结果中，并且对组织中分别具有访问权限的用户可见。 ServiceNow 连接器支持默认用户条件权限，而无需高级脚本。 当连接器找到具有高级脚本的用户条件时，使用该用户条件的所有数据将不会显示在搜索结果中。
+ServiceNow 连接器支持对"任何人"或"仅有权访问此数据源的人"**可见的搜索权限**。 索引数据显示在搜索结果中，并且对组织中所有用户或分别可通过用户条件权限访问它们的用户可见。 如果未使用用户条件启用知识库文章，则它将出现在组织中所有人的搜索结果中。
 
-如果选择"**仅有权访问** 此数据源的用户"，则需要进一步选择 ServiceNow 实例是否Azure Active Directory (AAD) 已设置用户或非 AAD 用户。
-
->[!NOTE]
->如果您选择"仅 **有权访问此数据源** 的人"，则 ServiceNow 连接器 **为预览版**。
+ServiceNow Graph 连接器支持不带高级脚本的默认用户条件权限。 当连接器遇到具有高级脚本的用户条件时，使用该用户条件的所有数据将不会显示在搜索结果中。
 
 >[!NOTE]
->如果选择 AAD 作为标识源类型，请确保将 UPN 源属性分配给 ServiceNow 中的电子邮件目标属性。 若要验证或更改映射，请参阅自定义 SaaS 应用程序中的用户预配属性[Azure Active Directory。](/azure/active-directory/app-provisioning/customize-application-attributes)
+>若要选择 **"仅有权访问此数据源的人"，** 请对租户启用定向发布更新。 若要了解如何设置定向发布，请参阅设置 [定向发布选项。](/microsoft-365/admin/manage/release-options-in-office-365?preserve-view=true&view=o365-worldwide)
 
-如果选择从 ServiceNow 实例中选取 ACL，并且为标识类型选择了"非 AAD"，请参阅映射非 [Azure AD 标识](map-non-aad.md) ，获取有关映射标识的说明。
+如果选择"仅有权访问此数据源的用户 **"，** 则需要进一步选择 ServiceNow 实例是否Azure Active Directory (AAD) 用户或非 AAD 用户。
 
-### <a name="managing-search-permissions-in-microsoft-search"></a>在 Microsoft 搜索中管理搜索权限
+>[!NOTE]
+>如果选择 AAD 作为标识源类型，请确保将 UserPrincipalName (UPN) 属性分配给 ServiceNow 中的电子邮件目标属性。 若要验证或更改映射，请参阅自定义 SaaS 应用程序中的用户预配属性[Azure Active Directory。](/azure/active-directory/app-provisioning/customize-application-attributes)
 
-在下面的视频中，你可以看到如何使用 Servicenow 连接器为知识文章编制索引、定义用户条件权限，以及如何在 ServiceNow 和 Microsoft 搜索索引之间无缝同步更改。
+如果你为标识类型选择"非 AAD"，请参阅映射非 [Azure AD](map-non-aad.md) 标识，获取有关映射标识的说明。 
 
-> [!VIDEO https://www.youtube-nocookie.com/embed/TVSkJpk1RiE]
+还可以参考以下视频，了解有关管理搜索权限的更多内容。
+
+[![Managing Search Permissions in Microsoft Graph Connector for ServiceNow](https://img.youtube.com/vi/TVSkJpk1RiE/hqdefault.jpg)](https://www.youtube.com/watch?v=TVSkJpk1RiE)
 
 ## <a name="step-6-assign-property-labels"></a>步骤 6：分配属性标签
 
-按照常规 [设置说明操作](./configure-connector.md)。
-<!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
+按照常规设置说明操作。
 
 ## <a name="step-7-manage-schema"></a>步骤 7：管理架构
 
-按照常规 [设置说明操作](./configure-connector.md)。
-<!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
+按照常规设置说明操作。
 
 ## <a name="step-8-choose-refresh-settings"></a>步骤 8：选择刷新设置
 
-按照常规 [设置说明操作](./configure-connector.md)。
-<!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
+按照常规设置说明操作。
 
 >[!NOTE]
 >对于标识，将仅应用计划的完全爬网。
@@ -235,16 +234,37 @@ ServiceNow 连接器支持对"任何人"或"仅有权访问此数据源的人"**
 ## <a name="step-9-review-connection"></a>步骤 9：查看连接
 
 按照常规 [设置说明操作](./configure-connector.md)。
-<!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
-
-## <a name="troubleshooting"></a>疑难解答
-
-发布连接后，自定义结果页后，可以在管理中心中查看" **连接器** "选项卡 [下的状态](https://admin.microsoft.com)。 若要了解如何进行更新和删除，请参阅 [管理连接器](manage-connector.md)。
-
-## <a name="limitations"></a>限制
 
 ServiceNow Graph连接器在其最新版本中具有以下限制：
 
+发布连接后，需要自定义搜索结果页面。 若要了解如何自定义搜索结果，请参阅自定义 [搜索结果页面](/microsoftsearch/configure-connector#next-steps-customize-the-search-results-page)。
+
+## <a name="limitations"></a>限制
+ServiceNow Graph连接器在其最新版本中具有以下限制：
 - 对组织中每个人都可用的知识库文章编制索引是一项普遍可用的功能。
-- *只有具有"管理搜索权限* "步骤下此数据源功能的访问权限的用户才在预览版中，并且仅处理 [用户条件](https://hi.service-now.com/kb_view.do?sysparm_article=KB0550924) 权限。 任何任何类型的访问权限将不会应用到搜索结果中。
-- 当前预览版不支持具有高级脚本的用户条件。 具有访问限制的知识文章将被编制索引，拒绝所有人访问，并且不会在搜索结果中显示给任何用户，直到我们支持它们。
+- *只有具有"管理* 搜索权限"步骤下此数据源功能的访问权限的用户才位于目标发布频道中，并且仅处理 [用户条件](https://hi.service-now.com/kb_view.do?sysparm_article=KB0550924) 权限。 任何任何类型的访问权限将不会在搜索结果中应用。
+- 当前版本不支持具有高级脚本的用户条件。 任何具有此类访问限制的知识文章都会编制索引，拒绝所有人访问，即，在我们支持它们之前，这些文章不会显示在任何用户的搜索结果中。
+
+## <a name="troubleshooting"></a>疑难解答
+发布连接后，自定义结果页后，可以在管理中心的"数据源 **"选项卡下** 查看 [状态](https://admin.microsoft.com)。 若要了解如何进行更新和删除，请参阅 [管理连接器](manage-connector.md)。
+在下面可以找到常见问题的疑难解答步骤。
+### <a name="1-unable-to-login-due-to-single-sign-on-enabled-servicenow-instance"></a>1. 无法登录，因为启用了单Sign-On ServiceNow 实例
+
+如果组织已启用单一Sign-On (SSO) ServiceNow，则使用服务帐户登录时可能遇到问题。 可以通过添加到 ServiceNow 实例 URL<em> `login.do` </em>来显示基于用户名和密码的登录名。 示例。 `https://<your-organization-domain>.service-now.com./login.do` 
+
+### <a name="2-unauthorized-or-forbidden-response-to-api-request"></a>2. 未经授权或禁止响应 API 请求
+
+#### <a name="21-check-table-access-permissions"></a>2.1. 检查表访问权限
+如果在连接状态中看到禁止响应或未授权响应，请检查服务帐户是否具有对步骤 [3：](#step-3-connection-settings)连接设置 中提到的表所需的访问权限。 请检查表中的所有列是否具有读取权限。
+
+#### <a name="22-check-if-servicenow-instance-behind-firewall"></a>2.2. 检查防火墙后的 ServiceNow 实例
+Graph如果连接器位于网络防火墙后面，则可能无法访问 ServiceNow 实例。 您需要明确允许访问 Graph 连接器服务。 您可以在下表中查找 Graph 连接器服务的公用 IP 地址范围。 根据你的租户区域，将其添加到你的 ServiceNow 实例网络白名单。
+
+**环境** | **Region** | **区域**
+--- | --- | ---
+PROD | 北美 | 52.250.92.252/30, 52.224.250.216/30
+PROD | 欧洲 | 20.54.41.208/30, 51.105.159.88/30 
+PROD | 亚太地区 | 52.139.188.212/30, 20.43.146.44/30 
+
+
+如果你有任何其他问题或想要提供反馈，请告诉我们 aka.ms/TalkToGraphConnectors
