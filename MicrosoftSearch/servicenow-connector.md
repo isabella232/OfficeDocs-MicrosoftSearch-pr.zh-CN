@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 为 Microsoft 搜索设置 ServiceNow Graph连接器
-ms.openlocfilehash: 0b7e752ec67a7c14e4afc2e3bad32124694f8f39
-ms.sourcegitcommit: 668930032e77a065c23551b3e8820dcc2c63c0f8
+ms.openlocfilehash: ac5d0b23547ce7ccd0d8bb6399b092f9bc9e5303
+ms.sourcegitcommit: f12e7ff0a94d30a9de1f93266715180e7530de3f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "52853811"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52879305"
 ---
 <!---Previous ms.author: kam1 --->
 
@@ -64,15 +64,15 @@ ms.locfileid: "52853811"
 
 若要对 ServiceNow 中的内容进行身份验证和同步，请选择 **以下三种受支持的方法** 之一： 
  
-1. 基本身份验证 
-1. ServiceNow OAuth (推荐) 
-1. Azure AD OpenID 连接
+- 基本身份验证 
+- ServiceNow OAuth (推荐) 
+- Azure AD OpenID 连接
 
-### <a name="basic-authentication"></a>基本身份验证
+## <a name="step-31-basic-authentication"></a>步骤 3.1：基本身份验证
 
 输入具有知识角色的 ServiceNow 帐户 **的用户名和密码** ，以向实例进行身份验证。
 
-### <a name="servicenow-oauth"></a>ServiceNow OAuth
+## <a name="step-32-servicenow-oauth"></a>步骤 3.2：ServiceNow OAuth
 
 若要使用 ServiceNow OAuth 进行身份验证，ServiceNow 管理员需要在 ServiceNow 实例中设置终结点，以便 Microsoft 搜索应用可以访问它。 若要了解更多信息，请参阅[](https://docs.servicenow.com/bundle/newyork-platform-administration/page/administer/security/task/t_CreateEndpointforExternalClients.html)ServiceNow 文档中的为客户端创建用于访问实例的终结点。
 
@@ -91,19 +91,19 @@ ms.locfileid: "52853811"
 
 输入客户端 ID 和客户端密码以连接到实例。 连接后，使用 ServiceNow 帐户凭据对爬网权限进行身份验证。 帐户应至少具有 **知识** 角色。 参考步骤 [3：连接](#step-3-connection-settings) 设置开头的表，该表格提供对更多 ServiceNow 表记录和索引用户条件权限的读取访问权限。
 
-### <a name="azure-ad-openid-connect"></a>Azure AD OpenID 连接
+## <a name="step-33-azure-ad-openid-connect"></a>步骤 3.3：Azure AD OpenID 连接
 
 若要使用 Azure AD OpenID 连接进行身份验证，请按照以下步骤操作。
 
-## <a name="step-3a-register-a-new-application-in-azure-active-directory"></a>步骤 3.a：在 Azure Active Directory
+### <a name="step-331-register-a-new-application-in-azure-active-directory"></a>步骤 3.3.1：在 Azure Active Directory
 
 若要了解如何在应用程序中注册新Azure Active Directory，请参阅[注册应用程序](/azure/active-directory/develop/quickstart-register-app#register-an-application)。 选择单个租户组织目录。 不需要重定向 URI。 注册后，记下应用程序 (客户端) ID 和目录 (租户) ID。
 
-## <a name="step-3b-create-a-client-secret"></a>步骤 3.b：创建客户端密码
+### <a name="step-332-create-a-client-secret"></a>步骤 3.3.2：创建客户端密码
 
 若要了解如何创建客户端密码，请参阅创建 [客户端密码](/azure/active-directory/develop/quickstart-register-app#add-a-client-secret)。 记下客户端密码。
 
-## <a name="step-3c-retrieve-service-principal-object-identifier"></a>步骤 3.c：检索服务主体对象标识符
+### <a name="step-333-retrieve-service-principal-object-identifier"></a>步骤 3.3.3：检索服务主体对象标识符
 
 按照步骤检索服务主体对象标识符
 
@@ -137,7 +137,7 @@ ms.locfileid: "52853811"
 客户端密码 | 应用程序的密钥从步骤 3.b (开始) 。 请像处理密码一样处理它。
 服务主体 ID | 作为服务运行的应用程序的标识。  (步骤 3.c) 
 
-## <a name="step-3d-register-servicenow-application"></a>步骤 3.d：注册 ServiceNow 应用程序
+### <a name="step-334-register-servicenow-application"></a>步骤 3.3.4：注册 ServiceNow 应用程序
 
 ServiceNow 实例需要以下配置：
 
@@ -169,7 +169,7 @@ ServiceNow 实例需要以下配置：
 
 5. 选择"提交并更新 OAuth OIDC 实体"表单。
 
-## <a name="step-3e-create-a-servicenow-account"></a>步骤 3.e：创建 ServiceNow 帐户
+### <a name="step-335-create-a-servicenow-account"></a>步骤 3.3.5：创建 ServiceNow 帐户
 
 请参阅创建 ServiceNow 帐户、在 [ServiceNow 中创建用户的说明](https://docs.servicenow.com/bundle/paris-platform-administration/page/administer/users-and-groups/task/t_CreateAUser.html)。
 
@@ -182,7 +182,7 @@ ServiceNow 实例需要以下配置：
 
 所有其他值都可以留为默认值。
 
-##### <a name="step-36-enable-knowledge-role-for-the-servicenow-account"></a>步骤 3.6：为 ServiceNow 帐户启用知识角色
+### <a name="step-336-enable-knowledge-role-for-the-servicenow-account"></a>步骤 3.3.6：为 ServiceNow 帐户启用知识角色
 
 访问使用 ServiceNow 主体 ID 作为用户 ID 创建的 ServiceNow 帐户，并分配知识角色。 可以在此处找到将角色分配给 ServiceNow 帐户的说明，将角色 [分配给用户](https://docs.servicenow.com/bundle/paris-platform-administration/page/administer/users-and-groups/task/t_AssignARoleToAUser.html)。 参考步骤 [3：连接](#step-3-connection-settings) 设置开头的表，该表格提供对更多 ServiceNow 表记录和索引用户条件权限的读取访问权限。
 
@@ -267,4 +267,4 @@ PROD | 欧洲 | 20.54.41.208/30, 51.105.159.88/30
 PROD | 亚太地区 | 52.139.188.212/30, 20.43.146.44/30 
 
 
-如果你有任何其他问题或想要提供反馈，请告诉我们 aka.ms/TalkToGraphConnectors
+如果你有任何其他问题或想要提供反馈，请告诉我们 aka.ms/TalkToGraphConnectors [](https://aka.ms/TalkToGraphConnectors)
