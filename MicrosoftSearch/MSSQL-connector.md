@@ -1,5 +1,5 @@
 ---
-title: Azure SQL 和 Microsoft SQL Server Graph 连接器用于 Microsoft 搜索
+title: Azure SQL 和 Microsoft SQL Server Graph 连接器Microsoft 搜索
 ms.author: mecampos
 author: mecampos
 manager: umas
@@ -12,33 +12,33 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: 为 Microsoft 搜索SQL Azure SQL Graph 和 Microsoft SQL Graph 连接器。
-ms.openlocfilehash: 29474c731c489c9e9b75f2456d25e4ff43aae4eb
-ms.sourcegitcommit: 1b154441f3a3abba0f2719e66a767432bc9506ca
+description: 设置 Azure SQL 和 Microsoft SQL Graph 连接器Microsoft 搜索。
+ms.openlocfilehash: 1cc28561d7572c3a554f1cf93b582b4787414f48
+ms.sourcegitcommit: a8867bbdfa8c5fd3debde8e6b2bba4f79768e3f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/02/2021
-ms.locfileid: "52720976"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "52955615"
 ---
 <!---Previous ms.author: vivg --->
 
-# <a name="azure-sql-and-microsoft-sql-server-graph-connectors"></a>Azure SQL 和 Microsoft SQL 服务器Graph连接器
+# <a name="azure-sql-and-microsoft-sql-server-graph-connectors"></a>Azure SQL 和 Microsoft SQL Server Graph 连接器
 
-Microsoft SQL 服务器或 Azure SQL Graph 连接器允许组织发现本地 SQL Server 数据库或云中的 Azure SQL 实例中托管的数据库的数据并编制索引。
-该Graph连接器将指定内容索引到 Microsoft 搜索中。 若要使索引与源数据保持最新，它支持定期完全爬网和增量爬网。 使用这些SQL连接器，还可以限制某些用户对搜索结果的访问。
+借助 Microsoft SQL Server 或 Azure SQL Graph 连接器，组织可以发现本地 SQL Server 数据库或托管在云中的 Azure SQL 实例中的数据库的数据，并编制索引。
+该Graph连接器将指定内容索引到Microsoft 搜索。 若要使索引与源数据保持最新，它支持定期完全爬网和增量爬网。 使用这些SQL连接器，还可以限制某些用户对搜索结果的访问。
 
 > [!NOTE]
 > 阅读 [**Setup your Graph connector**](configure-connector.md)一文，了解 Graph 连接器的一般设置说明。
 
-本文适用于配置、运行和监视 Azure SQL 和 Microsoft SQL 服务器Graph连接器。 它补充了常规安装过程，并显示了仅适用于 Azure SQL 和 Microsoft SQL 服务器Graph说明。 本文还包括有关 Microsoft [](#limitations) SQL 和 Azure SQL连接器的限制的信息。
+本文适用于配置、运行和监视 Azure SQL 和 Microsoft SQL Server Graph 连接器。 它补充了常规设置过程，并显示了仅适用于 Azure SQL 和 Microsoft SQL Server Graph 连接器的说明。 本文还包括有关[azure](#limitations)和 Azure Microsoft SQL Server 连接器SQL的信息。
 
 ## <a name="before-you-get-started"></a>在开始使用之前
 
-### <a name="install-the-graph-connector-agent-required-for-on-premises-microsoft-sql-server-connector-only"></a>仅Graph本地 Microsoft (服务器连接器所需的 SQL 连接器代理) 
+### <a name="install-the-graph-connector-agent-required-for-on-premises-microsoft-sql-server-connector-only"></a>仅Graph本地 (连接器所需的 Microsoft SQL Server 连接器代理) 
 
 若要访问本地第三方数据，必须安装和配置 Graph 连接器代理。 有关详细信息[，请参阅](on-prem-agent.md)Graph连接器代理。  
 
-## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>步骤 1：在Graph管理中心中添加Microsoft 365连接器
+## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>步骤 1：在Graph中添加一个Microsoft 365 管理中心
 
 按照常规 [设置说明操作](./configure-connector.md)。
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup 
@@ -54,9 +54,9 @@ instructions.-->
 
 ### <a name="register-an-app-for-azure-sql-connector-only"></a>仅为 Azure (连接器SQL应用) 
 
-对于 Azure SQL 连接器，必须在 Azure Active Directory 中注册应用，以允许 Microsoft 搜索应用访问用于索引的数据。 若要了解有关注册应用的信息，请参阅 Microsoft Graph注册应用[的文档](/graph/auth-register-app-v2)。
+对于 Azure SQL 连接器，必须在 Azure Active Directory 注册应用，Microsoft 搜索访问数据进行索引。 若要了解有关注册应用的信息，请参阅 Microsoft Graph注册应用[的文档](/graph/auth-register-app-v2)。
 
-完成应用注册并记下应用名称、 (客户端) ID 和租户 ID 后，需要生成一 [个新的客户端密码](/azure/healthcare-apis/register-confidential-azure-ad-client-app#application-secret)。 客户端密码将只显示一次。 请记住，&安全存储客户端密码。 在 Microsoft 搜索中配置新连接时，请使用客户端 ID 和客户端密码。
+完成应用注册并记下应用名称、 (客户端) ID 和租户 ID 后，需要生成一 [个新的客户端密码](/azure/healthcare-apis/register-confidential-azure-ad-client-app#application-secret)。 客户端密码将只显示一次。 请记住，&安全存储客户端密码。 在客户端 ID 和客户端密码中配置新连接时Microsoft 搜索。
 
 若要将注册的应用添加到Azure SQL 数据库，你需要：
 
@@ -70,14 +70,14 @@ instructions.-->
 
 ### <a name="connection-settings"></a>连接设置
 
-若要将 Microsoft SQL连接器连接到数据源，必须配置要数据库服务器的服务器场和本地代理。 然后，您可以使用所需的身份验证方法连接到数据库。
+若要将Microsoft SQL Server连接器连接到数据源，必须配置数据库服务器爬网的连接器和本地代理。 然后，您可以使用所需的身份验证方法连接到数据库。
 
 > [!NOTE] 
-> 您的数据库必须SQL 2008 或更高版本的服务器版本，Microsoft SQL 连接器才能连接。
+> 您的数据库必须SQL Server 2008 或更高版本，Microsoft SQL Server连接器才能连接。
 
 对于 Azure SQL 连接器，只需指定要连接到的服务器名称或 IP 地址。 Azure SQL 连接器仅Azure Active Directory OIDC (OIDC) 打开 ID 连接以连接到数据库。
 
-为了增加安全性，你可以为 Azure 服务器或数据库SQL IP 防火墙规则。 若要了解有关设置 IP 防火墙规则的信息，请参阅有关 [IP 防火墙规则的文档](/azure/azure-sql/database/firewall-configure)。 在防火墙设置中添加以下客户端 IP 范围。
+为了增加安全性，你可以为 Azure 服务器或数据库SQL Server IP 防火墙规则。 若要了解有关设置 IP 防火墙规则的信息，请参阅有关 [IP 防火墙规则的文档](/azure/azure-sql/database/firewall-configure)。 在防火墙设置中添加以下客户端 IP 范围。
 
 | 区域 | IP 范围 |
 | ------------ | ------------ |
@@ -219,7 +219,7 @@ To learn more about how to create your verticals and MRTs, see [Search results p
 
 预览SQL连接器有以下限制：
 
-- Microsoft SQL连接器：内部部署数据库必须运行 SQL 2008 或更高版本的服务器。
-- 托管 Azure SQL 数据库 (M365 订阅和 Azure) 必须位于同一Azure Active Directory。
+- Microsoft SQL Server连接器：内部部署数据库必须运行 SQL Server 2008 或更高版本。
+- 托管 Azure Microsoft 365 数据库 (的 Azure SQL 订阅) 必须位于同一Azure Active Directory。
 - ACL 仅支持使用用户主体名称 (UPN) 、Azure Active Directory (Azure AD) 或 Active Directory 安全性。
 - 不支持对数据库列内的丰富内容编制索引。 此类内容的示例包括作为数据库列内的链接存在的 HTML、JSON、XML、blob 和文档分析。
