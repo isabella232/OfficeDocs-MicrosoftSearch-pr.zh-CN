@@ -11,29 +11,32 @@
 ## [位置](manage-locations.md)
 ## [Power BI](manage-powerbi.md)
 ## [问答](manage-qas.md)
-# 连接器
-## [概述](connectors-overview.md)
-## [连接器库](connectors-gallery.md)
-## Microsoft 的设置连接器
-### [设置概述](configure-connector.md)
-### [设置图形连接器代理](on-prem-agent.md)
-### [映射非 Azure AD 标识（预览版）](map-non-aad.md)
-### [映射 Azure AD 标识（预览版）](map-aad.md)
-### 连接器专用信息
-#### [Azure Data Lake Storage Gen2](azure-data-lake-connector.md)
-#### [Azure DevOps （预览版）](azure-devops-connector.md)
-#### [Azure SQL 和 Microsoft SQL Server](MSSQL-connector.md)
-#### [企业网站](enterprise-web-connector.md)
-#### [文件共享](fileshare-connector.md)
-#### [MediaWiki](mediawiki-connector.md)
-#### [Oracle SQL](OracleSQL-connector.md)
-#### [Salesforce （预览版）](salesforce-connector.md)
-#### [ServiceNow](servicenow-connector.md)
-## 管理连接
-### [监视连接](manage-connector.md)
-### [查看连接详细信息和错误](connector-details-errors.md)
-## [许可](licensing.md)
-## [使用条款](terms-of-use.md)
+# 数据源
+## Graph 连接器
+### [概述](connectors-overview.md)
+### [连接器库](connectors-gallery.md)
+### Microsoft 的设置连接器
+#### [设置概述](configure-connector.md)
+#### [设置图形连接器代理](on-prem-agent.md)
+#### [映射非 Azure AD 标识（预览版）](map-non-aad.md)
+#### [映射 Azure AD 标识（预览版）](map-aad.md)
+#### 连接器专用信息
+##### [Azure Data Lake Storage Gen2](azure-data-lake-connector.md)
+##### [Azure DevOps （预览版）](azure-devops-connector.md)
+##### [Azure SQL 和 Microsoft SQL Server](MSSQL-connector.md)
+##### [企业网站](enterprise-web-connector.md)
+##### [文件共享](fileshare-connector.md)
+##### [MediaWiki](mediawiki-connector.md)
+##### [Oracle SQL](OracleSQL-connector.md)
+##### [Salesforce （预览版）](salesforce-connector.md)
+##### [ServiceNow](servicenow-connector.md)
+### 管理连接
+#### [监视连接](manage-connector.md)
+#### [查看连接详细信息和错误](connector-details-errors.md)
+### [许可](licensing.md)
+### [使用条款](terms-of-use.md)
+## 联盟连接器
+### [Dynamics 365](manage-dynamics365.md)
 # 自定义和配置
 ## [管理垂直领域和结果类型](customize-search-page.md)
 ## [管理搜索结果布局](customize-results-layout.md)
