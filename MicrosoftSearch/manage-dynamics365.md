@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: mssearch
 localization_priority: Normal
 description: 管理 Dynamics 365 内容在搜索结果中的显示方式
-ms.openlocfilehash: 8818d2e6a412feb167c67f465f485b23e868a12a
-ms.sourcegitcommit: be989950a7b63281c2348cfd9e6cc13e79b7c067
+ms.openlocfilehash: 5f642bcb026358e57258e5e736fc263616fc4b05
+ms.sourcegitcommit: f07a2e578b6c9ed5a1a3b22266cca371782870a7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53021831"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53067932"
 ---
 # <a name="dynamics-365-federation-search-preview"></a>Dynamics 365 联合搜索 (预览) 
 
@@ -51,7 +51,9 @@ Dynamics 365 答案将显示在所有 Microsoft 搜索 画布的搜索结果中�
 
 :::image type="content" alt-text="Dynamics 365 中详细信息页面的屏幕截图" source="media/dynamics365/dynamics365-detail-page.png" lightbox="media/dynamics365/dynamics365-detail-page.png":::
 
-无论用户在何处开始搜索，他们的体验都将保持一致，并使用户能够快速找到最相关的 Dynamics 365 结果。 请查看我们的 [Microsoft Build 2021 视频](https://youtu.be/TH9QUkQoEJM) 进行演示。
+无论用户在何处开始搜索，他们的体验都将保持一致，并使用户能够快速找到最相关的 Dynamics 365 结果。 请查看我们的 Microsoft Build 2021 视频进行演示。
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4P83t]
 
 ## <a name="supported-query-patterns"></a>支持的查询模式
 
