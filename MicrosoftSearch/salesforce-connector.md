@@ -1,5 +1,5 @@
 ---
-title: Salesforce Graph Microsoft 搜索连接器
+title: Salesforce Graph 连接器Microsoft 搜索
 ms.author: mecampos
 author: mecampos
 manager: umas
@@ -12,19 +12,19 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: 为 Microsoft 搜索Graph Salesforce 连接器
-ms.openlocfilehash: 7d73454fb909db24514c969f34158e3f2be5e34c
-ms.sourcegitcommit: 6cffa2d29448be9a22514e7b4c3009c522af0860
+description: 设置 Salesforce Graph 连接器Microsoft 搜索
+ms.openlocfilehash: 4bef771538934722deaa5deac3959f21246e4529
+ms.sourcegitcommit: 93fc70f0073ab45b4dbd702441ac2fc07a7668bc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52774086"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "53230931"
 ---
 <!---Previous ms.author: rusamai --->
 
 # <a name="salesforce-graph-connector-preview"></a>Salesforce Graph 连接器 (预览) 
 
-Salesforce Graph连接器，允许组织索引 Salesforce 实例中的联系人、机会、线索和帐户对象。 配置来自 Salesforce 的连接器和索引内容后，最终用户可以从任何 Microsoft 搜索客户端搜索这些项目。
+Salesforce Graph连接器，允许组织索引 Salesforce 实例中的联系人、机会、线索和帐户对象。 配置来自 Salesforce 的连接器和索引内容后，最终用户可以从任何客户端搜索Microsoft 搜索项。
 
 > [!NOTE]
 > 阅读 [**Graph 连接器**](configure-connector.md)的安装程序一文，了解 Graph 连接器的一般设置说明。
@@ -77,9 +77,9 @@ Salesforce Graph连接器，允许组织索引 Salesforce 实例中的联系人�
   > [!div class="mx-imgBorder"]
   > ![选择名为"刷新令牌在吊销前有效"的刷新令牌策略](media/salesforce-connector/oauthpolicies.png)
 
-现在，可以使用[M365](https://admin.microsoft.com/)管理中心完成您的 Graph 连接器的其余设置过程。
+现在，可以使用[Microsoft 365 管理 中心](https://admin.microsoft.com/)完成连接器的其余设置Graph过程。
 
-## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>步骤 1：在Graph管理中心中添加Microsoft 365连接器
+## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>步骤 1：在Graph中添加一个Microsoft 365 管理中心
 
 按照常规 [设置说明操作](./configure-connector.md)。
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
@@ -150,7 +150,7 @@ Salesforce Graph连接器，允许组织索引 Salesforce 实例中的联系人�
 Salesforce 连接器当前仅支持完全爬网的刷新计划。
 
 >[!IMPORTANT]
->完全爬网将查找已删除的对象和之前已同步到 Microsoft 搜索索引的用户。
+>完全爬网将查找已删除的对象和之前已同步到索引Microsoft 搜索用户。
 
 建议的完全爬网计划为一周。
 
@@ -176,7 +176,7 @@ Salesforce 连接器当前仅支持完全爬网的刷新计划。
     - MobilePhone
     - 电子邮件
     - 类型
-    - 标题
+    - Title
     - AccountId
     - AccountName
     - AccountUrl

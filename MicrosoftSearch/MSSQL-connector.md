@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 设置 Azure SQL 和 Microsoft SQL Graph 连接器Microsoft 搜索。
-ms.openlocfilehash: 1cc28561d7572c3a554f1cf93b582b4787414f48
-ms.sourcegitcommit: a8867bbdfa8c5fd3debde8e6b2bba4f79768e3f6
+ms.openlocfilehash: 0f8501e36754235b43846b80d60d4b0156a504b9
+ms.sourcegitcommit: 93fc70f0073ab45b4dbd702441ac2fc07a7668bc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "52955615"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "53230913"
 ---
 <!---Previous ms.author: vivg --->
 
@@ -30,7 +30,7 @@ ms.locfileid: "52955615"
 > [!NOTE]
 > 阅读 [**Setup your Graph connector**](configure-connector.md)一文，了解 Graph 连接器的一般设置说明。
 
-本文适用于配置、运行和监视 Azure SQL 和 Microsoft SQL Server Graph 连接器。 它补充了常规设置过程，并显示了仅适用于 Azure SQL 和 Microsoft SQL Server Graph 连接器的说明。 本文还包括有关[azure](#limitations)和 Azure Microsoft SQL Server 连接器SQL的信息。
+本文适用于配置、运行和监视 Azure SQL 和 Microsoft SQL 服务器Graph连接器。 它补充了常规安装过程，并显示了仅适用于 Azure SQL 和 Microsoft SQL 服务器Graph说明。 本文还包括有关 Microsoft [](#limitations) SQL 和 Azure SQL连接器的限制的信息。
 
 ## <a name="before-you-get-started"></a>在开始使用之前
 
@@ -209,7 +209,7 @@ To learn more about how to create your verticals and MRTs, see [Search results p
 
 ## <a name="troubleshooting"></a>疑难解答
 
-下面是配置连接器时观察到的常见错误及其可能的原因。
+以下是配置连接器时观察到的常见错误及其可能的原因。
 
 | 配置步骤 | 错误消息 | 可能 (原因)  |
 | ------------ | ------------ | ------------ |
@@ -220,6 +220,7 @@ To learn more about how to create your verticals and MRTs, see [Search results p
 预览SQL连接器有以下限制：
 
 - Microsoft SQL Server连接器：内部部署数据库必须运行 SQL Server 2008 或更高版本。
+
 - 托管 Azure Microsoft 365 数据库 (的 Azure SQL 订阅) 必须位于同一Azure Active Directory。
 - ACL 仅支持使用用户主体名称 (UPN) 、Azure Active Directory (Azure AD) 或 Active Directory 安全性。
 - 不支持对数据库列内的丰富内容编制索引。 此类内容的示例包括作为数据库列内的链接存在的 HTML、JSON、XML、blob 和文档分析。
