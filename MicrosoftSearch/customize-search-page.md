@@ -1,5 +1,5 @@
 ---
-title: 自定义 Microsoft 搜索页
+title: 自定义Microsoft 搜索页面
 ms.author: jeffkizn
 author: jypal
 manager: jeffkizn
@@ -12,27 +12,27 @@ search.appverid:
 - MET150
 - MOE150
 description: 添加垂直搜索并自定义搜索结果
-ms.openlocfilehash: e5c4ab8d507e0e6096a5b9d52dc0e818faebefb6
-ms.sourcegitcommit: a07c957dfa1d31542f0362379251bc9679dfae41
+ms.openlocfilehash: 6b6f0593a668e9c2c5c7fc5a62f7b5dd4a43a8bb
+ms.sourcegitcommit: ea6905626de67090141039565282e4e0c53b43ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2021
-ms.locfileid: "51639850"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53314016"
 ---
 # <a name="customize-the-search-results-page"></a>自定义搜索结果页面
 
-您可以创建垂直搜索和结果类型，以自定义用户在必应中的 Microsoft [SharePoint、Microsoft Office](https://sharepoint.com/)和 Microsoft 搜索中搜索 [时](https://office.com)看到的 [搜索结果](https://bing.com)。 通过垂直方向，用户可以更轻松地找到他们有权查看的信息。 例如，您可以为市场营销部门用户的第三方软件中的营销分析数据创建垂直搜索。 还可以定义结果类型并为此数据自定义布局。  
+您可以创建垂直搜索和结果类型，以自定义用户在 Microsoft [SharePoint、Microsoft Office](https://office.com)和 必应 中[](https://sharepoint.com/)搜索时Microsoft 搜索[看到的必应。](https://bing.com) 通过垂直方向，用户可以更轻松地找到他们有权查看的信息。 例如，您可以为市场营销部门用户的第三方软件中的营销分析数据创建垂直搜索。 还可以定义结果类型并为此数据自定义布局。  
 
 您可以在以下级别创建垂直和结果类型：
 
-- **组织级别** – 当您在组织级别添加垂直搜索时，当用户从 [SharePoint](https://sharepoint.com/) 起始页 [、Office](https://office.com)或必应上搜索时，它将显示在 [搜索结果页面上](https://bing.com)。
-- **网站** 级别 – 例如，您可能希望允许客户服务员工直接从其部门的 SharePoint 网站搜索严重性 *1* 事件。
+- **组织级别**– 当您在组织级别添加垂直搜索时，当用户从 SharePoint 起始页、Office 或 [](https://sharepoint.com/)必应 中搜索时，[](https://office.com)它将显示在 [搜索结果必应。](https://bing.com)
+- **网站** 级别 – 例如，您可能希望允许客户服务员工直接从其部门的网站搜索严重性 *1* SharePoint事件。
 
 ## <a name="search-verticals-explained"></a>说明的垂直搜索
 
-在"Microsoft 搜索结果"页面顶部，有一行选项卡。 这些是垂直搜索。 垂直搜索只显示某种类型或特定内容的结果。 例如 **，Files** 或 **News**。 默认情况下，Microsoft 搜索显示垂直"全部 **"、"** 人员 **"、"文件****"、"网站**"和"**新闻"。**   
+在结果Microsoft 搜索顶部，有一行选项卡。 这些是垂直搜索。 垂直搜索只显示某种类型或特定内容的结果。 例如 **，Files** 或 **News**。 默认情况下，Microsoft 搜索显示"全部"、"人员"、"**文件**"、"**网站**"和"**新闻"。**  
 
-您可以添加与组织相关的垂直搜索。 这些将显示在[SharePoint、Office](https://sharepoint.com/)和必应中的 Microsoft[](https://Office.com)搜索结果[页面上](https://bing.com)。 例如，您可以根据每个组需要的信息类型，为与市场营销相关的内容创建一个垂直目录，为销售创建另一个垂直目录。 您可以添加垂直线来显示仅来自通过连接器编制索引的内容的结果。  
+您可以添加与组织相关的垂直搜索。 这些将显示在Microsoft 搜索、SharePoint、Office 和 必应[](https://sharepoint.com/)[中的结果必应。](https://bing.com) [](https://Office.com) 例如，您可以根据每个组需要的信息类型，为与市场营销相关的内容创建一个垂直目录，为销售创建另一个垂直目录。 您可以添加垂直线来显示仅来自通过连接器编制索引的内容的结果。  
 
 ### <a name="multiple-connections-in-a-vertical"></a>垂直连接中的多个连接
 
@@ -53,7 +53,7 @@ ms.locfileid: "51639850"
 
 在启动之前，请确保连接器已编制索引。 这最多可能需要 48 小时，具体取决于文件大小。
 
-无法为驻留在 SharePoint 中的内容创建[垂直。](https://sharepoint.com/)
+无法为驻留在 SharePoint 中的内容[创建SharePoint。](https://sharepoint.com/)
 
 添加垂直方向有三个基本步骤：
 
@@ -66,19 +66,20 @@ ms.locfileid: "51639850"
 启动向导后，将指导您完成定义要搜索的内容的垂直名称、内容源和范围的步骤。 垂直线处于禁用状态。 稍后将启用它。
 
 您可以使用一组有限的关键字查询语言 [ (KQL) ](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference) 范围。 此页面列出了可用的属性。 建议您将自由文本关键字和属性限制与布尔运算符一起用于创建 KQL。
+KQL 还支持使用 [配置文件查询变量](#profile-query-variables) 对垂直方向的结果进行微调。
 
 ### <a name="create-a-vertical-at-the-organization-level"></a>在组织级别创建垂直
 
-若要在 [SharePoint](https://sharepoint.com/) 主页 [、Office](https://office.com)或 [必应](https://bing.com)中的 Microsoft 搜索上创建垂直搜索，请按照以下步骤操作：
+若要在家庭Microsoft 搜索、SharePoint或Office创建[](https://sharepoint.com/)[必应，请按照](https://office.com)以下步骤操作： [](https://bing.com)
 
-1. 在 [Microsoft 365 管理中心中](https://admin.microsoft.com)，转到 [**"垂直"。**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/verticals)
+1. In the [Microsoft 365 管理中心，](https://admin.microsoft.com)go to [**Verticals**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/verticals).
 2. 选择 **"添加** "开始。  
 
 ### <a name="create-a-vertical-at-the-site-level"></a>在网站级别创建垂直
 
-1. 在需要垂直方向的 [SharePoint](https://sharepoint.com/)网站上，转到"设置 **"。**
+1. 在 [SharePoint](https://sharepoint.com/)垂直搜索的网站中，转到 **"设置"。**
 2. 选择 **"网站信息**"，然后选择 **"查看所有网站设置"。**
-3. 查找 **"Microsoft 搜索"** 部分，然后为此网站集 **选择"配置 Microsoft 搜索"。**
+3. 查找 **"Microsoft 搜索"** 部分，然后选择"为此 **Microsoft 搜索配置网站集"。**
 4. 在导航窗格中，转到" **自定义体验**"，然后选择" **垂直"** 选项卡。
 5. 若要添加垂直，请选择"添加 **"。**
   或者，若要编辑垂直方向，请在列表中选择它。
@@ -98,7 +99,7 @@ ms.locfileid: "51639850"
 您可以决定创建自己的搜索结果布局，然后通过创建结果类型覆盖默认 **搜索结果布局**。 搜索结果类型是使不同类型的搜索结果以不同方式显示的规则。 它包含以下几个方面：
 
 - **要比较每个** 搜索结果的一个或多个条件，例如搜索结果的内容源。  
-- **用于满足** 条件的搜索结果的结果布局。 结果布局控制满足条件的所有结果在搜索结果页面上的显示和行为方式。
+- **用于满足** 条件的搜索结果的结果布局。 生成的布局控制满足条件的所有结果在搜索结果页面上的显示和行为方式。
 
 **如果未进行适当的映射以显示默认搜索结果布局，则必须为结果至少创建一个结果类型，以在垂直方向显示。** 您可以为每个垂直类型创建多个结果类型，这允许您对不同类型的结果使用不同的布局。 例如，你可以自定义"严重性 *1"* 事件，以比"严重性 *3"* 事件具有更醒目的颜色和更大的字体。
 
@@ -106,23 +107,89 @@ ms.locfileid: "51639850"
   
 ### <a name="create-a-result-type-at-the-organization-level"></a>在组织级别创建结果类型
 
-1. 在 [Microsoft 365 管理中心中](https://admin.microsoft.com)，转到"[**结果类型"。**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/resulttypes)
+1. 在 ["Microsoft 365 管理中心"](https://admin.microsoft.com)中，转到"[**结果类型"。**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/resulttypes)
 2. 若要添加结果 **类型，请选择**"添加 **"。** 若要编辑结果类型，请在相关列表中选择结果类型。
 
 ### <a name="create-a-results-type-at-the-site-level"></a>在网站级别创建结果类型
 
-1. 在要创建结果类型的 [SharePoint](https://sharepoint.com/)网站上，转到"设置 **"。**
+1. 在 [SharePoint](https://sharepoint.com/)要创建结果类型的网站中，转到 **"设置"。**
 2. 选择 **"网站信息**"，然后选择 **"查看所有网站设置"。**
-3. 查找"Microsoft 搜索"部分，然后为此网站集 **选择"配置 Microsoft 搜索"。**
+3. 查找"Microsoft 搜索"部分，然后选择"**为此Microsoft 搜索配置网站集"。**
 4. 在导航窗格中，转到"自定义 **体验"，** 然后选择" **结果类型"** 选项卡。
 5. 若要添加结果类型，请选择"添加 **"。**  或者，若要编辑结果类型，请在列表中选择结果类型。
 
 ## <a name="step-3-view-the-vertical-after-its-enabled"></a>步骤 3：启用后查看垂直方向
 
-启用垂直方向后，需要几个小时才能查看。 如果不想在启用后等待，可以将 **cacheClear=true** 追加到 [SharePoint](https://sharepoint.com/) 和 [Office](https://office.com) 中的 URL，以便立即查看垂直方向。 对于 [必应](https://bing.com)，将 **&features=uncachedVerticals** 追加到"工作"垂直 URL 以立即查看垂直方向。 
+启用垂直方向后，需要几个小时才能查看。 如果不想在启用后等待，可以将 **cacheClear=true** 追加到 [SharePoint](https://sharepoint.com/)中的 URL，Office立即查看垂直方向。 [](https://office.com) 例如 [必应，](https://bing.com)将&**features=uncachedVerticals** 追加到"工作"垂直 URL 以立即查看垂直方向。
 
 > [!NOTE]
-> 从移动 Web 浏览器查看时，添加的垂直方向在 [SharePoint](https://sharepoint.com/) 和 [Office](https://office.com) 上不可见。
+> 从移动 Web 浏览器查看时[，SharePoint和](https://sharepoint.com/)Office[垂直显示](https://office.com)。
+
+## <a name="profile-query-variables"></a>配置文件查询变量
+
+查询变量用于垂直查询的 KQL 查询部分，以提供动态数据作为垂直查询的输入。 您可以使用配置文件查询变量使搜索结果与登录用户上下文相关。 配置文件查询变量从已登录用户的配置文件提取 [值](/graph/api/resources/profile?view=graph-rest-beta)。
+
+例如，如果要创建登录用户可以搜索分配给他们的支持票证的垂直"票证"，可以在管理页的垂直创建期间在"查询"部分下指定以下查询。  
+
+**AssignedTo：{Profile.accounts.userPrincipalName}**
+
+这将缩小搜索结果范围，以只显示被分派人是执行搜索的用户的项目。
+
+[配置文件资源](https://graph.microsoft.com/graph/api/resources/profile?view=graph-rest-beta) 将属性公开为集合。 例如，与电子邮件地址有关的信息通过电子邮件集合公开，工作职位作为职位集合，等等。 用户配置文件中提供的所有属性（将 AAD 作为源类型）都作为查询变量公开。
+
+请考虑电子邮件集合中具有 3 个可用电子邮件地址的用户，如下所示。
+
+```json
+"emails": [{ 
+
+        "address": "Megan.Bowen@contoso.com",
+        "id": "xyz", 
+        "source": { 
+            "CreatedBy": "xyz", 
+            "CreatedOn": "2222", 
+            "Type": "official" 
+        },
+        "type": "main" 
+    }, { 
+        "address": "meganb@hotmail.com",
+        "id": "abc", 
+        "source": { 
+            "CreatedBy": "abc",
+            "CreatedOn": "3333", 
+            "Type": "non-official",
+        },
+        "type": "work"
+    }, { 
+        "address": "meganb@outlook.com",
+        "id": "pqr", 
+        "source": { 
+            "CreatedBy": "pqr", 
+            "CreatedOn": "4444", 
+            "Type": "personal" 
+        },
+        "type": "personal" 
+    } 
+] 
+```
+
+- 查询 **MyProperty： {Profile.emails.address}** 将解析为 MyProperty："Megan.Bowen@contoso.com"。  
+
+- 如果要解析 address 属性的所有值，您必须使用多值扩展语法。 查询 **{|MyProperty：{Profile.emails.address}}** 将解析为 ( (MyProperty："Megan.Bowen@contoso.com") OR (MyProperty：" "meganb@hotmail.com") OR (MyProperty："meganb@outlook.com") )   
+
+"|"运算符应该用于解析多值变量。 有关配置文件扩展的更多示例，请参阅下表。
+
+| #         | 语法 |  返回的值  |
+| --------- | ------ | --- |
+| 1    | MyProperty：{Profile.emails.address}  |   "Megan.Bowen@contoso.com"  |
+| 2 | MyProperty：{Profile.emails}   |    {Profile.emails} 这无法解析，因为电子邮件是对象。|
+| 3    | {?MyProperty：{Profile.emails}}  |  这无法解决，因为电子邮件是对象。 "？" 运算符忽略未解析的查询变量。 当进一步向下传递查询堆栈时，将删除此变量。   |
+| 4  | {&#124;MyProperty： {Profile.emails.source.Type}}    |   ( (MyProperty："official") OR (MyProperty："non-official") OR (MyProperty："personal") )     |
+
+> [!NOTE]
+>
+> - 配置文件查询变量仅支持将连接器用作内容源的自定义垂直[](connectors-overview.md)搜索。
+> - 配置文件查询变量在垂直设置过程的"查询 ["部分定义](customize-search-page.md#step-1-create-the-search-vertical)。
+> - 配置文件查询变量当前处于预览阶段。 有关预览的详细信息，请参阅 [连接器预览功能](connectors-overview.md#what-are-the-preview-features)。
 
 ## <a name="troubleshooting"></a>疑难解答
 
