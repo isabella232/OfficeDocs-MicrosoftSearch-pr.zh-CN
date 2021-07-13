@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft Graph 连接器概述Microsoft 搜索
-ms.openlocfilehash: 4bcfb871fabae07270611762d2112a6e72d4762b
-ms.sourcegitcommit: 93fc70f0073ab45b4dbd702441ac2fc07a7668bc
+ms.openlocfilehash: 87645e32e274eb166d6ba008c4ac720667105a1f
+ms.sourcegitcommit: 52129e0129a201ec056903b2461d012fda6d3636
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "53230886"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53383480"
 ---
 <!---Previous ms.author: monaray --->
 
@@ -38,10 +38,6 @@ ms.locfileid: "53230886"
 * [如何从自定义应用程序中搜索连接器数据？](#how-do-i-search-my-connector-data-from-a-custom-application)
 * [如何自定义搜索结果？](#how-do-i-customize-search-results)
 * [连接器限制是什么](#what-are-the-connector-limitations)
-
-<!---Modify to another note that is more accurate after rollout completion--->
-> [!IMPORTANT]
-> Microsoft Graph连接器Microsoft 搜索 API 现已普遍可用。 首次推出将面向针对定向版本配置的客户。 如果要在租户中Graph连接器，用户和管理员必须选择加入[定向发布](/microsoft-365/admin/manage/release-options-in-office-365?preserve-view=true&view=o365-worldwide)。
 
 <!---Add Value, scenario, example, and/or graphic in December updates--->
 <!---Probably remove architecture section below
