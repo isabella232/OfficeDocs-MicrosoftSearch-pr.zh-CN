@@ -1,5 +1,5 @@
 ---
-title: 适用于 Microsoft 搜索的企业网站 Graph 连接器
+title: Enterprise网站Graph连接器Microsoft 搜索
 ms.author: mecampos
 author: mecampos
 manager: umas
@@ -12,32 +12,32 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: 为 Microsoft 搜索设置企业网站图形连接器
-ms.openlocfilehash: 4b8a14b216d7df68d0898bb72d926abe671047a4
-ms.sourcegitcommit: 56b7b5aa55413141c805f766bdf7bc63d721ef53
+description: 为Enterprise连接器Graph网站Microsoft 搜索
+ms.openlocfilehash: f986736218768b4979e6e8aa474081c6aa87cb75
+ms.sourcegitcommit: 56e6c0706067e383d826ec97feb80f0742a726e0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51951018"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "53419889"
 ---
 <!---Previous ms.author: monaray --->
 
 <!-- markdownlint-disable no-inline-html -->
 
-# <a name="enterprise-websites-graph-connector"></a>企业网站图形连接器
+# <a name="enterprise-websites-graph-connector"></a>Enterprise连接器Graph网站
 
-企业网站图形连接器允许组织索引来自面向内部 **的网站的文章和内容**。 配置连接器并同步网站内容后，最终用户可以从任何 Microsoft 搜索客户端搜索该内容。
+通过Enterprise连接器Graph组织可以索引其面向内部的网站 **的文章和内容**。 配置连接器并同步网站内容后，最终用户可以从任何客户端搜索Microsoft 搜索内容。
 
 > [!NOTE]
-> 阅读 [**设置 Graph 连接器一**](configure-connector.md) 文，了解 Graph 连接器的常规设置说明。
+> 阅读 [**Setup your Graph connector**](configure-connector.md)一文，了解 Graph 连接器的一般设置说明。
 
-本文适用于配置、运行和监视企业网站连接器的任何人。 它补充了常规安装过程，并显示了仅适用于企业网站连接器的说明。 本文还包括有关疑[难解答和](#troubleshooting)[限制的信息](#limitations)。
+本文适用于配置、运行和监视 Enterprise连接器的任何人。 它补充了常规安装过程，并显示了仅适用于 Enterprise 连接器的说明。 本文还包括有关疑[难解答和](#troubleshooting)[限制的信息](#limitations)。
 
 <!---## Before you get started-->
 
 <!---Insert "Before you get started" recommendations for this data source-->
 
-## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>步骤 1：在 Microsoft 365 管理中心添加 Graph 连接器
+## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>步骤 1：在Graph中添加一个Microsoft 365 管理中心
 
 按照常规 [设置说明操作](./configure-connector.md)。
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
@@ -49,40 +49,41 @@ ms.locfileid: "51951018"
 
 ## <a name="step-3-configure-the-connection-settings"></a>步骤 3：配置连接设置
 
-若要连接到数据源，需要填写网站的根 URL、选择爬网源和希望使用的身份验证类型：无、基本身份验证或 [具有 Azure Active Directory (Azure AD) ](/azure/active-directory/)的 OAuth 2.0。 完成此信息后，选择"测试连接"以验证设置。
+若要连接到数据源，请填写网站的根 URL，选择爬网源和你要使用的身份验证类型：无、基本身份验证或[包含 Azure Active Directory (Azure AD) ](/azure/active-directory/)的 OAuth 2.0。 完成此信息后，选择"测试连接"以验证设置。
 
 ### <a name="url"></a>URL
 
 使用 URL 字段指定要爬网的网站的根。 企业网站连接器将使用此 URL 作为起点，并按照此 URL 的所有链接进行爬网。
 
-> [!NOTE]
-> 如果要爬网的网站定义了网站地图，连接器将仅对网站地图中列出的 URL 进行爬网。 如果未定义网站图，连接器将深入爬网在网站的根 URL 上找到的所有链接。
+### <a name="crawl-websites-listed-in-the-sitemap"></a>对网站地图中列出的网站进行爬网
+
+选择后，连接器将仅对网站地图中列出的 URL 进行爬网。 如果未选择或未找到站点地图，连接器将深入爬网在网站的根 URL 上找到的所有链接。
+
+> [!div class="mx-imgBorder"]
+> ![Web 连接器的连接设置窗格Enterprise屏幕截图](media/enterprise-web-connector/connectors-enterpriseweb-connectionsettings-with-sitemap.png)
 
 ### <a name="crawl-mode-cloud-or-on-premises"></a>爬网模式：云或本地
 
 爬网模式确定要索引的网站类型（云或本地）。 对于云网站，选择 **"云** "作为爬网模式。
 
-此外，连接器现在支持对本地网站进行爬网。 若要访问本地数据，必须先安装和配置 Graph 连接器代理。 若要了解更多信息，请参阅 [Graph 连接器代理](./on-prem-agent.md)。
+此外，连接器现在支持对本地网站进行爬网。 若要访问本地数据，必须先安装和配置 Graph 连接器代理。 若要了解更多信息，请参阅[Graph代理](./on-prem-agent.md)。
 
-对于本地网站，选择代理作为爬网模式，在"本地代理"字段中，选择之前安装和配置的 Graph 连接器代理。  
-
-> [!div class="mx-imgBorder"]
-> ![企业 Web 连接器的连接设置窗格屏幕截图](media/enterprise-web-connector/connectors-enterpriseweb-settings.png)
+对于本地网站，选择"代理"作为爬网模式，在"本地代理"字段中，选择之前安装和配置的 Graph 连接器代理。  
 
 ### <a name="authentication"></a>身份验证
 
-基本身份验证需要用户名和密码。 使用 [Microsoft 365](https://admin.microsoft.com)管理中心 创建此机器人帐户。
+基本身份验证需要用户名和密码。 使用帐户创建此自动程序[Microsoft 365 管理中心。](https://admin.microsoft.com)
 
 具有 [Azure AD](/azure/active-directory/) 的 OAuth 2.0 需要资源 ID、客户端 ID 和客户端密码。 OAuth 2.0 仅适用于云模式。
 
-有关详细信息，请参阅授权 [使用 OAuth 2.0](/azure/active-directory/develop/v1-protocols-oauth-code)代码授予流访问 Azure Active Directory Web 应用程序。 注册以下值：
+有关详细信息，请参阅使用[OAuth 2.0 代码Azure Active Directory授权访问 Web](/azure/active-directory/develop/v1-protocols-oauth-code)应用程序。 注册以下值：
 
-**名称：** Microsoft 搜索 <br/>
+**名称：Microsoft 搜索** <br/>
 **Redirect_URI：**`https://gcs.office.com/v1.0/admin/oauth/callback`
 
 若要获取资源、client_id 和 client_secret 的值，请转到使用授权代码请求重定向 URL **网页上的访问** 令牌。
 
-有关详细信息，请参阅 [快速入门：向 Microsoft](/azure/active-directory/develop/quickstart-register-app)标识平台注册应用程序。
+有关详细信息，请参阅快速入门[：向应用程序注册Microsoft 标识平台。](/azure/active-directory/develop/quickstart-register-app)
 
 ## <a name="step-3a-add-urls-to-exclude-optional-crawl-restrictions"></a>步骤 3a：添加 URL 以排除 (可选的爬网限制) 
 
@@ -98,7 +99,7 @@ ms.locfileid: "51951018"
 
 ## <a name="step-4-assign-property-labels"></a>步骤 4：分配属性标签
 
-可以通过从选项菜单中选择来为每个标签分配源属性。 虽然此步骤不是强制性的，但具有一些属性标签将提高搜索相关性，并确保最终用户获得更准确的搜索结果。
+可以通过从选项菜单中选择来为每个标签分配源属性。 虽然此步骤不是必需的，但具有一些属性标签将提高搜索相关性，并确保最终用户获得更准确的搜索结果。
 
 ## <a name="step-5-manage-schema"></a>步骤 5：管理架构
 
@@ -106,11 +107,11 @@ ms.locfileid: "51951018"
 
 ## <a name="step-6-manage-search-permissions"></a>步骤 6：管理搜索权限
 
-企业网站连接器仅支持对所有人可见的搜索 **权限**。 索引数据将显示在搜索结果中，并且对组织中所有用户可见。
+the Enterprise websites connector only supports search permissions visible to **Everyone**. 索引数据将显示在搜索结果中，并且对组织中所有用户可见。
 
 ## <a name="step-7-set-the-refresh-schedule"></a>步骤 7：设置刷新计划
 
-企业网站连接器仅支持完全刷新。 这意味着连接器将在每次刷新过程中对网站的所有内容重新进行crawl。 若要确保连接器有足够的时间对内容进行爬网，建议您设置一个大型刷新计划间隔。 我们建议在一到两周之间计划刷新。
+Enterprise网站连接器仅支持完全刷新。 这意味着连接器将在每次刷新过程中对网站的所有内容重新进行crawl。 若要确保连接器有足够的时间对内容进行爬网，建议您设置一个大型刷新计划间隔。 我们建议在一到两周之间计划刷新。
 
 ## <a name="step-8-review-connection"></a>步骤 8：查看连接
 
@@ -138,4 +139,4 @@ ms.locfileid: "51951018"
 
 ## <a name="limitations"></a>限制
 
-企业网站连接器不支持在动态网页上 **搜索数据**。 这些网页的示例存储在内容管理系统（如 [Confluence](https://www.atlassian.com/software/confluence) 和 [Unily）](https://www.unily.com/) 或存储网站内容的数据库中。
+the Enterprise websites connector doesn't support searching data on **dynamic webpages**. 这些网页的示例存储在内容管理系统（如 [Confluence](https://www.atlassian.com/software/confluence) 和 [Unily）](https://www.unily.com/) 或存储网站内容的数据库中。
