@@ -13,22 +13,22 @@ search.appverid:
 - MOE150
 ms.assetid: f980b90f-95e2-4b66-8b21-69f601ff4b50
 ROBOTS: NoIndex
-description: 通过将 Microsoft 搜索框添加到 Intranet 站点或页面，更快地获取相关搜索建议并查找工作结果。
-ms.openlocfilehash: c71f61971bf69c2eaa5fb7a48d0cb3d26af0ad07
-ms.sourcegitcommit: 5f0a8bdf274d02132a3b5211fb4738eb38d159db
+description: 通过向 Intranet 站点或页面添加一个Microsoft 搜索搜索框，更快地获取相关搜索建议并查找工作结果。
+ms.openlocfilehash: 7d9ca4be8d3be27a7549ffb940d6dc55b3763baf
+ms.sourcegitcommit: 38a0f09596c2bca0e12bf4cada7b4c64fd4c48e4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52247758"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53449058"
 ---
 # <a name="add-a-search-box-to-your-intranet-site"></a>将搜索框添加到 Intranet 站点
 
-若要为用户提供轻松访问组织的结果，在"搜索"框中必应 Microsoft 搜索"添加到任何 Intranet 站点或页面。 以下为一些优势：
+若要为用户提供轻松访问您组织的结果，Microsoft 搜索搜索框中必应 Intranet 站点或页面。 以下为一些优势：
 
 - 搜索中心或 intranet SharePoint上的搜索框提供了一个熟悉、受信任的入口点以开始搜索
 - 支持所有主要 Web 浏览器，包括 Google Chrome 和 Microsoft Edge
 - 仅显示来自组织的搜索建议，从不包括 Web 建议
-- 将用户从工作结果必应 Microsoft 搜索，其中不包括广告和 Web 结果
+- 将用户Microsoft 搜索工作必应，其中不包括广告和 Web 结果
 - 控制搜索框的外观和行为，包括使用户登录默认垂直或已创建的自定义垂直方向的能力
   
 ## <a name="add-a-search-box-to-an-intranet-page"></a>将搜索框添加到 Intranet 页面
@@ -108,11 +108,11 @@ ms.locfileid: "52247758"
 
 使用 bfbSearchBoxConfig 中的垂直选项定义您想要的垂直方向。 例如，如果您希望用户始终登录"网站"垂直（默认垂直距离之一）上，请使用值"Site-sites"。
 
-![Microsoft 搜索中工作结果页面的屏幕截图必应显示"网站"垂直结果和 URL](media/sites-vertical-esb.png)
+:::image type="content" alt-text="Screenshot of work results page on Microsoft 搜索 in 必应 showing the Sites vertical results and URL." source="media/sites-vertical-esb.png" lightbox="media/sites-vertical-esb.png":::
 
 对于自定义垂直方向，使用 URL 末尾的哈希。 您可以通过从 必应 的工作页进行搜索、单击垂直标签，以及复制数字符号后的值 (#) 。
 
-![Microsoft 搜索中工作结果页面的屏幕截图必应显示自定义演示文稿垂直结果和 URL](media/custom-vertical-esb.png)
+:::image type="content" alt-text="显示自定义演示文稿垂直结果和 URL Microsoft 搜索中必应工作结果页面的屏幕截图。" source="media/custom-vertical-esb.png" lightbox="media/custom-vertical-esb.png":::
 
 ## <a name="use-an-iframe-to-embed-a-search-box"></a>使用 iFrame 嵌入搜索框
 
@@ -124,4 +124,4 @@ ms.locfileid: "52247758"
 
 ## <a name="inprivate-mode-and-conditional-access"></a>InPrivate 模式和条件访问
 
-如果在 InPrivate 窗口中打开页面或网站，将禁用嵌入搜索框。 此外，使用 Microsoft Edge 中的 Azure AD 条件访问必应，在使用 InPrivate 模式时，必应.com 不支持 AAD 登录。 有关 Edge 中的条件访问详细信息，请参阅Microsoft Edge[和条件访问](https://docs.microsoft.com/deployedge/ms-edge-security-conditional-access#accessing-conditional-access-protected-resources-in-microsoft-edge)。 
+如果在 InPrivate 窗口中打开页面或网站，将禁用嵌入搜索框。 此外，使用 Microsoft Edge 中的 Azure AD 条件访问必应，在使用 InPrivate 模式时，必应.com 不支持 AAD 登录。 有关 Edge 中的条件访问详细信息，请参阅Microsoft Edge[和条件访问](/deployedge/ms-edge-security-conditional-access#accessing-conditional-access-protected-resources-in-microsoft-edge)。 

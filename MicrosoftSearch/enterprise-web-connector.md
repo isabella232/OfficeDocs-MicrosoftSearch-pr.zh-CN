@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 为Enterprise连接器Graph网站Microsoft 搜索
-ms.openlocfilehash: f986736218768b4979e6e8aa474081c6aa87cb75
-ms.sourcegitcommit: 56e6c0706067e383d826ec97feb80f0742a726e0
+ms.openlocfilehash: 32e38c9bef036556dae2734e23b1d26ba4fe2c27
+ms.sourcegitcommit: 38a0f09596c2bca0e12bf4cada7b4c64fd4c48e4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/14/2021
-ms.locfileid: "53419889"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53449041"
 ---
 <!---Previous ms.author: monaray --->
 
@@ -31,7 +31,7 @@ ms.locfileid: "53419889"
 > [!NOTE]
 > 阅读 [**Setup your Graph connector**](configure-connector.md)一文，了解 Graph 连接器的一般设置说明。
 
-本文适用于配置、运行和监视 Enterprise连接器的任何人。 它补充了常规安装过程，并显示了仅适用于 Enterprise 连接器的说明。 本文还包括有关疑[难解答和](#troubleshooting)[限制的信息](#limitations)。
+本文适用于配置、运行和监视 Enterprise连接器的任何人。 它补充了常规安装过程，并显示了仅适用于 Enterprise 连接器的说明。 本文还包括有关疑难 [解答的信息](#troubleshooting)。
 
 <!---## Before you get started-->
 
@@ -59,8 +59,21 @@ ms.locfileid: "53419889"
 
 选择后，连接器将仅对网站地图中列出的 URL 进行爬网。 如果未选择或未找到站点地图，连接器将深入爬网在网站的根 URL 上找到的所有链接。
 
+### <a name="dynamic-site-configuration"></a>动态网站配置
+
+如果您的网站包含动态内容（例如，内容管理系统（如 Confluence 或 Unily）中的网页，您可以启用动态爬网程序。 若要将其打开，请选择"**为动态网站启用爬网"。** 爬网程序将等待动态内容呈现，然后再开始爬网。
+
 > [!div class="mx-imgBorder"]
-> ![Web 连接器的连接设置窗格Enterprise屏幕截图](media/enterprise-web-connector/connectors-enterpriseweb-connectionsettings-with-sitemap.png)
+> ![Web 连接器的连接设置窗格Enterprise屏幕截图](media/enterprise-web-connector/connectors-enterpriseweb-connectionsettings-dynamicconfig-small.png)
+
+除了该复选框之外，还有三个可选字段可用：
+
+1. **DOM Ready：** 输入爬网程序应用作内容已完全呈现且应开始爬网的信号的 DOM 元素。
+1. **要添加的标头**：指定在发送特定 Web URL 时爬网程序应包含的 HTTP 标头。 您可以为不同的网站设置多个标头。 我们建议包括身份验证令牌值。
+1. **要跳过的标题**：指定应从动态爬网请求中排除的任何不必要的标头。
+
+> [!NOTE]
+> 动态爬网仅受代理爬网模式支持。
 
 ### <a name="crawl-mode-cloud-or-on-premises"></a>爬网模式：云或本地
 
@@ -136,7 +149,3 @@ Enterprise网站连接器仅支持完全刷新。 这意味着连接器将在每
 
 * 错误 6001-6013 在数据源因网络问题而不可访问时发生，或者数据源本身被删除、移动或重命名时发生。 检查提供的数据源详细信息是否仍然有效。
 * 当数据源包含页面上的非文本内容或页面不是 HTML 时，将发生错误 6021-6024。 检查数据源，在排除列表中添加此页面或忽略错误。
-
-## <a name="limitations"></a>限制
-
-the Enterprise websites connector doesn't support searching data on **dynamic webpages**. 这些网页的示例存储在内容管理系统（如 [Confluence](https://www.atlassian.com/software/confluence) 和 [Unily）](https://www.unily.com/) 或存储网站内容的数据库中。
