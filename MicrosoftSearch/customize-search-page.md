@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 添加垂直搜索并自定义搜索结果
-ms.openlocfilehash: 6b6f0593a668e9c2c5c7fc5a62f7b5dd4a43a8bb
-ms.sourcegitcommit: ea6905626de67090141039565282e4e0c53b43ac
+ms.openlocfilehash: 4dd3f08f6d7e3df0aa983684eb0d4f649bc409a1
+ms.sourcegitcommit: 1e766e1f549c46882f47df6679f5a3cdf48d70d6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "53314016"
+ms.lasthandoff: 07/16/2021
+ms.locfileid: "53463223"
 ---
 # <a name="customize-the-search-results-page"></a>自定义搜索结果页面
 
@@ -135,7 +135,7 @@ KQL 还支持使用 [配置文件查询变量](#profile-query-variables) 对垂�
 
 这将缩小搜索结果范围，以只显示被分派人是执行搜索的用户的项目。
 
-[配置文件资源](https://graph.microsoft.com/graph/api/resources/profile?view=graph-rest-beta) 将属性公开为集合。 例如，与电子邮件地址有关的信息通过电子邮件集合公开，工作职位作为职位集合，等等。 用户配置文件中提供的所有属性（将 AAD 作为源类型）都作为查询变量公开。
+[配置文件资源](/graph/api/resources/profile?view=graph-rest-beta) 将属性公开为集合。 例如，与电子邮件地址有关的信息通过电子邮件集合公开，工作职位作为职位集合，等等。 用户配置文件中提供的所有属性（将 AAD 作为源类型）都作为查询变量公开。
 
 请考虑电子邮件集合中具有 3 个可用电子邮件地址的用户，如下所示。
 
