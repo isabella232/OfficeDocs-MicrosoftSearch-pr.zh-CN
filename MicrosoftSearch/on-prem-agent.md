@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 ROBOTS: NoIndex
 description: On-prem Agent
-ms.openlocfilehash: d6dabbbb5ee34acedd92166564f560bbc64c7da7
-ms.sourcegitcommit: 93fc70f0073ab45b4dbd702441ac2fc07a7668bc
+ms.openlocfilehash: cfd02fa4ef05ae35738742d9a5d3194d6181ff05
+ms.sourcegitcommit: 0e26abf728cc8df91a85bb22f21426612cf0d57d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "53230922"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53565219"
 ---
 # <a name="microsoft-graph-connector-agent"></a>Microsoft Graph 连接器代理
 
@@ -91,8 +91,8 @@ ms.locfileid: "53230922"
 使用基于证书的身份验证有三个简单的步骤：
 
 1. 创建或获取证书
-1. Upload证书到 Azure 门户
-1. 将证书分配给代理
+2. Upload证书到 Azure 门户
+3. 将证书分配给代理
 
 ##### <a name="step-1-get-a-certificate"></a>步骤 1：获取证书
 
@@ -118,9 +118,9 @@ Export-PfxCertificate -Cert $certificatePath -FilePath ($filePath + '.pfx') -Pas
 
 1. 打开应用程序，然后从左窗格导航到"证书和机密"部分。
 
-1. 选择 **Upload证书** 并上载 .cer 文件。
+2. 选择 **Upload证书** 并上载 .cer 文件。
 
-1. 打开 **应用注册** ，然后从导航 **窗格中选择** 证书和密码。 复制证书指纹。
+3. 打开 **应用注册** ，然后从导航 **窗格中选择** 证书和密码。 复制证书指纹。
 
 :::image type="content" alt-text="在左窗格中选择证书和密码时指纹证书列表" source="media/onprem-agent/certificates.png" lightbox="media/onprem-agent/certificates.png":::
 
@@ -130,20 +130,33 @@ Export-PfxCertificate -Cert $certificatePath -FilePath ($filePath + '.pfx') -Pas
 
 1. 将证书 pfx 文件下载到代理计算机上。
 
-1. 双击 pfx 文件以启动证书安装对话框。
+2. 双击 pfx 文件以启动证书安装对话框。
 
-1. 在 **安装证书** 时，选择"本地计算机"作为存储位置。
+3. 在 **安装证书** 时，选择"本地计算机"作为存储位置。
 
-1. 安装证书后，通过"管理 **计算机证书""开始"菜单。**
+4. 安装证书后，通过"管理 **计算机证书""开始"菜单。**
 
-1. 选择"个人证书"下 **新安装的**  >  **证书**。
+5. 选择"个人证书"下 **新安装的**  >  **证书**。
 
-1. 右键单击证书，然后选择"**所有任务**  >  **管理私钥"** 选项。
+6. 右键单击证书，然后选择"**所有任务**  >  **管理私钥"** 选项。
 
-1. 在"权限"对话框中，选择"添加"选项。 在用户选择对话框中，编写 **：NT Service\GcaHostService，** 然后单击 **确定**。 不要单击"检查 **名称"** 按钮。
+7. 在"权限"对话框中，选择"添加"选项。 在用户选择对话框中，编写 **：NT Service\GcaHostService，** 然后单击 **确定**。 不要单击"检查 **名称"** 按钮。
 
-1. 单击"权限"对话框上的"确定"。 现在，代理计算机配置为代理使用证书生成令牌。
+8. 单击"权限"对话框上的"确定"。 现在，代理计算机配置为代理使用证书生成令牌。
 
 ## <a name="troubleshooting"></a>疑难解答
 
-1. 如果连接失败，出现错误"1011： Graph 连接器代理不可访问或脱机。"，请登录到安装了代理的计算机，如果代理应用程序尚未运行，请启动它。 如果连接继续失败，请验证在注册期间提供给代理的证书或客户端密码是否尚未过期且具有所需的权限。
+### <a name="installation-failure"></a>安装失败
+如果安装失败，请运行以下方法检查安装日志：msiexec /i " <path to msi>\GcaInstaller.msi" /L*V " <destination path> \install.log"。 如果错误无法解决，请通过日志 MicrosoftGraphConnectorsFeedback@service.microsoft.com 支持。
+
+### <a name="registration-failure"></a>注册失败
+
+如果登录配置应用失败，出现错误"登录失败。" Please click on sign in button to try again." 即使在浏览器身份验证成功之后，打开 services.msc 并检查 GcaHostService 是否正在运行。 如果不是，请手动启动它。
+
+如果服务启动失败，出现错误"服务由于登录失败而未启动"，请检查虚拟帐户 NT Service\GcaHostService 是否有权作为计算机上服务登录。 有关 [说明，](https://docs.microsoft.com/windows/security/threat-protection/security-policy-settings/log-on-as-a-service) 请查看此链接。 如果在"本地策略"\"用户权限分配"中，添加用户或组的选项显示为灰色，则意味着尝试添加此帐户的用户在此计算机上没有管理员权限，或者存在覆盖此帐户的组策略。 需要更新组策略以允许主机服务作为服务登录。
+
+### <a name="connection-failure"></a>连接失败
+
+如果在创建连接时"测试连接"操作失败，出现错误"请检查用户名/密码和数据源路径"，即使提供的用户名和密码正确，请确保用户帐户对安装了 Graph 连接器代理的计算机具有交互式登录权限。 请参阅有关 [登录策略管理的文档](https://docs.microsoft.com/windows/security/threat-protection/security-policy-settings/allow-log-on-locally#policy-management) 以检查登录权限。 还要确保数据源和代理计算机位于同一网络上。
+
+如果连接失败，出现错误"1011： Graph 连接器代理不可访问或脱机。"，请登录到安装了代理的计算机，如果代理应用程序尚未运行，请启动它。 如果连接继续失败，请验证在注册期间提供给代理的证书或客户端密码是否尚未过期且具有所需的权限。

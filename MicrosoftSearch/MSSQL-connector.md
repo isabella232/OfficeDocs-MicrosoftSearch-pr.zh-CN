@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 设置 Azure SQL 和 Microsoft SQL Graph 连接器Microsoft 搜索。
-ms.openlocfilehash: 0f8501e36754235b43846b80d60d4b0156a504b9
-ms.sourcegitcommit: 93fc70f0073ab45b4dbd702441ac2fc07a7668bc
+ms.openlocfilehash: ae17b99fa0b83b38c8681652af0fdfdb32969f28
+ms.sourcegitcommit: 9cfe9b7f6d4ddf783ee31a6d2a02a73f0c0aef79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "53230913"
+ms.lasthandoff: 07/26/2021
+ms.locfileid: "53590258"
 ---
 <!---Previous ms.author: vivg --->
 
@@ -36,7 +36,10 @@ ms.locfileid: "53230913"
 
 ### <a name="install-the-graph-connector-agent-required-for-on-premises-microsoft-sql-server-connector-only"></a>仅Graph本地 (连接器所需的 Microsoft SQL Server 连接器代理) 
 
-若要访问本地第三方数据，必须安装和配置 Graph 连接器代理。 有关详细信息[，请参阅](on-prem-agent.md)Graph连接器代理。  
+若要访问本地第三方数据，必须安装和配置 Graph 连接器代理。 有关详细信息[，请参阅](on-prem-agent.md)Graph连接器代理。
+
+>[!NOTE]
+>如果在配置 Microsoft SQL Server Graph 连接器时使用 Windows 身份验证，则尝试登录的用户需要具有安装 Graph 连接器代理的计算机的交互式登录权限。 请参阅有关 [登录策略管理的文档](/windows/security/threat-protection/security-policy-settings/allow-log-on-locally#policy-management) 以检查登录权限。
 
 ## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>步骤 1：在Graph中添加一个Microsoft 365 管理中心
 
@@ -79,7 +82,7 @@ instructions.-->
 
 为了增加安全性，你可以为 Azure 服务器或数据库SQL Server IP 防火墙规则。 若要了解有关设置 IP 防火墙规则的信息，请参阅有关 [IP 防火墙规则的文档](/azure/azure-sql/database/firewall-configure)。 在防火墙设置中添加以下客户端 IP 范围。
 
-| 区域 | IP 范围 |
+| 地区 | IP 范围 |
 | ------------ | ------------ |
 | NAM | 52.250.92.252/30, 52.224.250.216/30 |
 | EUR | 20.54.41.208/30, 51.105.159.88/30 |
@@ -124,8 +127,8 @@ instructions.-->
 | 精确数字 | bit | boolean |
 | 近似数值 | float <br> real | double |
 | 字符串 | char <br> varchar <br> text | string |
-| Unicode 字符字符串 | nchar <br> nvarchar <br> ntext | string |
-| 其他数据类型 | uniqueidentifier | string |
+| Unicode 字符字符串 | nchar <br> nvarchar <br> ntext | 字符串 |
+| 其他数据类型 | uniqueidentifier | 字符串 |
 
 对于当前数据类型不支持的其他任何字段，需要将列显式强制转换到受支持的数据类型。
 
@@ -220,7 +223,6 @@ To learn more about how to create your verticals and MRTs, see [Search results p
 预览SQL连接器有以下限制：
 
 - Microsoft SQL Server连接器：内部部署数据库必须运行 SQL Server 2008 或更高版本。
-
 - 托管 Azure Microsoft 365 数据库 (的 Azure SQL 订阅) 必须位于同一Azure Active Directory。
 - ACL 仅支持使用用户主体名称 (UPN) 、Azure Active Directory (Azure AD) 或 Active Directory 安全性。
 - 不支持对数据库列内的丰富内容编制索引。 此类内容的示例包括作为数据库列内的链接存在的 HTML、JSON、XML、blob 和文档分析。

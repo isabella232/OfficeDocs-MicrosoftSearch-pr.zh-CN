@@ -18,8 +18,8 @@
 ### Microsoft 的设置连接器
 #### [设置概述](configure-connector.md)
 #### [设置图形连接器代理](on-prem-agent.md)
-#### [映射非 Azure AD 标识（预览版）](map-non-aad.md)
-#### [映射 Azure AD 标识（预览版）](map-aad.md)
+#### [映射非 Azure AD 身份标识](map-non-aad.md)
+#### [映射 Azure AD 身份标识](map-aad.md)
 #### 连接器专用信息
 ##### [Azure Data Lake Storage Gen2](azure-data-lake-connector.md)
 ##### [Azure DevOps （预览版）](azure-devops-connector.md)
@@ -28,7 +28,7 @@
 ##### [文件共享](fileshare-connector.md)
 ##### [MediaWiki](mediawiki-connector.md)
 ##### [Oracle SQL](OracleSQL-connector.md)
-##### [Salesforce （预览版）](salesforce-connector.md)
+##### [Salesforce](salesforce-connector.md)
 ##### [ServiceNow](servicenow-connector.md)
 ### 管理连接
 #### [监视连接](manage-connector.md)

@@ -13,18 +13,18 @@ search.appverid:
 - MET150
 - MOE150
 description: 设置 Salesforce Graph 连接器Microsoft 搜索
-ms.openlocfilehash: 4bef771538934722deaa5deac3959f21246e4529
-ms.sourcegitcommit: 93fc70f0073ab45b4dbd702441ac2fc07a7668bc
+ms.openlocfilehash: b0b3ba0e41c0e28cac15f4fed491ac8507aa0e59
+ms.sourcegitcommit: 8270e4271b1eeb57b988ea5265e5b6d9d6ef64a6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "53230931"
+ms.lasthandoff: 07/22/2021
+ms.locfileid: "53529370"
 ---
 <!---Previous ms.author: rusamai --->
 
-# <a name="salesforce-graph-connector-preview"></a>Salesforce Graph 连接器 (预览) 
+# <a name="salesforce-graph-connector"></a>Salesforce Graph 连接器
 
-Salesforce Graph连接器，允许组织索引 Salesforce 实例中的联系人、机会、线索和帐户对象。 配置来自 Salesforce 的连接器和索引内容后，最终用户可以从任何客户端搜索Microsoft 搜索项。
+Salesforce Graph连接器，允许组织为 Salesforce 实例中的联系人、机会、线索、案例和帐户对象编制索引。 配置来自 Salesforce 的连接器和索引内容后，最终用户可以从任何客户端搜索Microsoft 搜索项。
 
 > [!NOTE]
 > 阅读 [**Graph 连接器**](configure-connector.md)的安装程序一文，了解 Graph 连接器的一般设置说明。
@@ -105,13 +105,20 @@ Salesforce Graph连接器，允许组织索引 Salesforce 实例中的联系人�
 通过搜索显示"连接成功"的绿色横幅来检查连接是否成功，如以下屏幕截图所示。
 
   > [!div class="mx-imgBorder"]
-  > ![成功登录的屏幕截图。 显示"连接成功"的绿色横幅位于 Salesforce 实例 URL 的字段下](media/salesforce-connector/sf5.png)
+  > ![成功登录的屏幕截图。 显示"连接成功"的绿色横幅位于 Salesforce 实例 URL 的字段下](media/salesforce-connector/salesforce-connector-connection-settings.png)
 
-## <a name="step-4-manage-search-permissions"></a>步骤 4：管理搜索权限
+## <a name="step-4-select-properties"></a>步骤 4：选择属性
+
+选择要对连接器进行爬网并包括在搜索结果中的 Salesforce 对象。 如果选择"联系人"，还将自动选择"帐户"。
+
+>[!NOTE]
+>如果某个字段具有字段级别 (为) 设置 FLS，则连接器不会为 Salesforce 组织的任何配置文件输入该字段。因此，用户将无法搜索这些字段的值，也不会显示在结果中。
+
+## <a name="step-5-manage-search-permissions"></a>步骤 5：管理搜索权限
 
 你需要选择哪些用户将看到此数据源中的搜索结果。 如果你仅允许某些 Azure Active Directory (Azure AD) 或非 Azure AD 用户查看搜索结果，请确保映射标识。
 
-### <a name="step-4a-select-permissions"></a>步骤 4.a：选择权限
+### <a name="step-5a-select-permissions"></a>步骤 5.a：选择权限
 
 可以选择从 Salesforce 实例 (访问控制列表) ACL，或允许组织中的每个人查看来自此数据源的搜索结果。 ACL 可以包括 Azure Active Directory (AAD) 标识 (从 Azure AD 联合到 Salesforce) 的用户、在 Azure AD) 中具有相应标识的非 Azure AD 标识 (或者同时包括这两者。
 
@@ -123,7 +130,7 @@ Salesforce Graph连接器，允许组织索引 Salesforce 实例中的联系人�
 
 如果选择从 Salesforce 实例中输入 ACL，并且为标识类型选择了"非 AAD"，请参阅映射非 [Azure AD 标识](map-non-aad.md) ，获取有关映射标识的说明。
 
-### <a name="step-4b-map-aad-identities"></a>步骤 4.b：映射 AAD 标识
+### <a name="step-5b-map-aad-identities"></a>步骤 5.b：映射 AAD 标识
 
 如果你选择从 Salesforce 实例中输入 ACL，并且为标识类型选择了"AAD"，请参阅映射 [Azure AD 标识](map-aad.md) ，获取有关映射标识的说明。 若要了解如何为 Salesforce 设置 Azure AD SSO，请参阅 [本教程](/azure/active-directory/saas-apps/salesforce-tutorial)。
 
@@ -133,11 +140,11 @@ Salesforce Graph连接器，允许组织索引 Salesforce 实例中的联系人�
 
 > [!VIDEO https://www.youtube-nocookie.com/embed/SZYiFxZMKcM]
 
-## <a name="step-5-assign-property-labels"></a>步骤 5：分配属性标签
+## <a name="step-6-assign-property-labels"></a>步骤 6：分配属性标签
 
 可以通过从选项菜单中选择来为每个标签分配源属性。 虽然此步骤并非必需步骤，但具有一些属性标签将提高搜索相关性，并确保最终用户获得更好的搜索结果。 默认情况下，某些标签（如"Title"、"URL"、"CreatedBy"和"LastModifiedBy"）已分配有源属性。
 
-## <a name="step-6-manage-schema"></a>步骤 6：管理架构
+## <a name="step-7-manage-schema"></a>步骤 7：管理架构
 
 您可以选择应编制索引的源属性，以便它们显示在搜索结果中。 默认情况下，连接向导基于一组源属性选择搜索架构。 可以通过选中搜索架构页中每个属性和属性的复选框来修改它。 搜索架构属性包括 Search、Query、Retrieve 和 Refine。
 利用优化，您可以定义稍后可在搜索体验中用作自定义精简程序或筛选器的属性。  
@@ -145,7 +152,7 @@ Salesforce Graph连接器，允许组织索引 Salesforce 实例中的联系人�
 > [!div class="mx-imgBorder"]
 > ![选择每个源属性的架构。 选项包括查询、搜索、检索和优化](media/salesforce-connector/sf9.png)
 
-## <a name="step-7-set-the-refresh-schedule"></a>步骤 7：设置刷新计划
+## <a name="step-8-set-the-refresh-schedule"></a>步骤 8：设置刷新计划
 
 Salesforce 连接器当前仅支持完全爬网的刷新计划。
 
@@ -154,9 +161,15 @@ Salesforce 连接器当前仅支持完全爬网的刷新计划。
 
 建议的完全爬网计划为一周。
 
-## <a name="step-8-review-connection"></a>步骤 8：查看连接
+## <a name="step-9-review-connection"></a>步骤 9：查看连接
 
 按照常规 [设置说明操作](./configure-connector.md)。
+
+>[!TIP]
+>**默认结果类型**
+>* 发布连接器后，Salesforce 连接器[](./customize-search-page.md#step-2-create-the-result-types)将自动注册结果类型。 结果类型使用基于步骤 3[](./customize-results-layout.md)中选定的字段的动态生成的结果布局。
+>* 可以通过导航到"结果类型"中的"结果类型"来管理 [](https://admin.microsoft.com)[**Microsoft 365 管理中心。**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/resulttypes) 默认结果类型将命名为 `ConnectionId` "Default"。 例如，如果连接 ID 为 `Salesforce` ，结果布局将命名为："SalesforceDefault"
+>* 此外，还可以选择创建您自己的结果类型（如果需要）。
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 
 <!---## Troubleshooting-->
