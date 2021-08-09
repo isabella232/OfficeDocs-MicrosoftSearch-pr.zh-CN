@@ -1,5 +1,5 @@
 ---
-title: 用于 Microsoft 搜索的 MediaWiki Graph 连接器
+title: MediaWiki Graph连接器Microsoft 搜索
 ms.author: mecampos
 author: mecampos
 manager: umas
@@ -12,30 +12,30 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: 为 Microsoft 搜索设置 MediaWiki Graph 连接器
-ms.openlocfilehash: 5922cf76aa112430f9f6e857066acd054182058c
-ms.sourcegitcommit: 5df252e6d0bd67bb1b4c59418aceca8369f5fe42
+description: 为媒体连接器Graph MediaWiki Microsoft 搜索
+ms.openlocfilehash: fff24ce918e3eab6a50d78977749a030ef17d0aef235e6d98e02bdf54fc63a0c
+ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51031689"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54532691"
 ---
 <!---Previous ms.author: monaray --->
 
-# <a name="mediawiki-graph-connector"></a>MediaWiki Graph 连接器
+# <a name="mediawiki-graph-connector"></a>MediaWiki Graph连接器
 
-通过 MediaWiki Graph 连接器，组织可以发现使用 MediaWiki 软件创建的 Wiki 数据，并编制数据索引。 此连接器将指定内容索引到 Microsoft 搜索中，并支持定期爬网，使索引保持最新。
+通过 MediaWiki Graph连接器，组织可以发现使用 MediaWiki 软件创建的 Wiki 数据，并编制数据索引。 此连接器将指定内容索引Microsoft 搜索并支持定期爬网，使索引保持最新。
 
 > [!NOTE]
-> 阅读 [**适用于 Graph 连接器的**](configure-connector.md) 安装程序一文，了解 Graph 连接器的常规设置说明。
+> 阅读 [**Graph 连接器**](configure-connector.md)的安装程序一文，了解 Graph 连接器的一般设置说明。
 
-本文适用于配置、运行和监视 MediaWiki Graph 连接器的任何人。 它补充了常规设置过程，并显示了仅适用于 MediaWiki Graph 连接器的说明。 本文还包括有关 [限制的信息](#limitations)。
+本文适用于配置、运行和监视 MediaWiki Graph连接器。 它补充了常规安装过程，并显示了仅适用于 MediaWiki 连接器Graph说明。 本文还包括有关 [限制的信息](#limitations)。
 
 <!---## Before you get started-->
 
 <!---Insert "Before you get started" recommendations for this data source-->
 
-## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>步骤 1：在 Microsoft 365 管理中心添加 Graph 连接器
+## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>步骤 1：在Graph中添加一个Microsoft 365 管理中心
 
 按照常规 [设置说明操作](./configure-connector.md)。
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
@@ -85,6 +85,6 @@ MediaWiki 连接器仅支持对所有人可见的搜索 **权限**。 索引数�
 MediaWiki 连接器在预览版本中有以下限制：
 
 * 仅支持基于云的 Wiki。
-* 仅支持使用 Azure Active Directory 或 Azure 身份验证的基本或 OAuth 2.0。
+* 仅支持基本或 OAuth 2.0 Azure Active Directory Azure 身份验证。
 * 不支持为索引选择命名空间。 仅索引 Main、Category 和 File 命名空间。
 * 不支持访问控制列表 (ACL) 。 因此，索引页对组织所有用户都是可见的。

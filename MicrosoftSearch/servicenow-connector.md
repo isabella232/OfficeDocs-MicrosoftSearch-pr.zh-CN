@@ -1,5 +1,5 @@
 ---
-title: ServiceNow Graph Microsoft 搜索连接器
+title: ServiceNow Graph连接器Microsoft 搜索
 ms.author: mecampos
 author: mecampos
 manager: umas
@@ -12,26 +12,26 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: 为 Microsoft 搜索设置 ServiceNow Graph连接器
-ms.openlocfilehash: ac5d0b23547ce7ccd0d8bb6399b092f9bc9e5303
-ms.sourcegitcommit: f12e7ff0a94d30a9de1f93266715180e7530de3f
+description: 为 Graph 设置 ServiceNow Microsoft 搜索
+ms.openlocfilehash: 11abe956e624fa23cd19e2dfc2ae9a4af31a0f81407f6e2c5672723c5fdfc8b5
+ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52879305"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54534128"
 ---
 <!---Previous ms.author: kam1 --->
 
 
 # <a name="servicenow-graph-connector"></a>ServiceNow Graph 连接器
 
-借助 Microsoft Graph Connector for ServiceNow，组织可以索引对所有用户可见的知识库文章，或对组织中具有用户条件权限受限的知识库文章编制索引。 从 ServiceNow 配置连接器并索引内容后，最终用户可以从任何 Microsoft 搜索客户端搜索这些文章。  
+借助 Microsoft Graph Connector for ServiceNow，组织可以索引对所有用户可见的知识库文章，或对组织中具有用户条件权限受限的知识库文章编制索引。 从 ServiceNow 配置连接器并索引内容后，最终用户可以从任何客户端搜索Microsoft 搜索文章。  
 
 本文适用于配置Microsoft 365运行和监视 ServiceNow 连接器的管理员Graph用户。 它补充了设置连接器文章中提供的Graph[说明](configure-connector.md)。 如果尚未这样做，请阅读整个设置 Graph 连接器一文，了解常规设置过程。
 
 下面列出了安装过程的每一步以及一条说明，指示你应遵循常规设置说明或仅适用于 ServiceNow Graph 连接器的其他说明，包括有关疑难解答和限制[的信息。](#limitations) [](#troubleshooting)  
 
-## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>步骤 1：在Graph管理中心中添加Microsoft 365连接器。
+## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>步骤 1：在Graph中添加一个Microsoft 365 管理中心。
 按照常规设置说明操作。
 
 ## <a name="step-2-name-the-connection"></a>步骤 2：命名连接。
@@ -41,9 +41,9 @@ ms.locfileid: "52879305"
 ## <a name="step-3-connection-settings"></a>步骤 3：连接设置
 若要连接到 ServiceNow 数据，你需要组织的 **ServiceNow 实例 URL**。 组织的 ServiceNow 实例 URL 通常 https:// **&lt; 组织域>.service-now.com**。 
 
-除了此 URL 外，还需要一个服务帐户来设置与 ServiceNow 的连接，以及允许 Microsoft 搜索根据刷新计划定期更新知识文章。 该服务帐户将需要对以下 **ServiceNow** 表记录的读取权限，以成功对各种实体进行爬网。
+除了此 URL 外，还需要一个服务帐户来设置与 ServiceNow 的连接，并允许 Microsoft 搜索 根据刷新计划定期更新知识文章。 该服务帐户将需要对以下 **ServiceNow** 表记录的读取权限，以成功对各种实体进行爬网。
 
-**功能** | **需要读取访问权限的表** | **描述**
+**功能** | **需要读取访问权限的表** | **说明**
 --- | --- | ---
 索引可供所有人使用的知识 <em>文章</em> | kb_knowledge | 用于对知识库文章进行爬网
 索引和支持用户条件权限 | kb_uc_can_read_mtom | Who阅读此知识库
@@ -56,7 +56,7 @@ ms.locfileid: "52879305"
 | | user_criteria | 读取用户条件权限
 | | kb_knowledge_base | 读取知识库信息
 
-你可以 **为用于与** Microsoft 搜索连接的服务帐户创建和分配角色。 [了解如何为 ServiceNow 帐户分配角色](https://docs.servicenow.com/bundle/paris-platform-administration/page/administer/users-and-groups/task/t_AssignARoleToAUser.html)。 可以在已创建的角色上分配表的读取权限。 若要了解如何设置对表记录的读取访问权限，请参阅 [保护表记录](https://developer.servicenow.com/dev.do#!/learn/learning-plans/orlando/new_to_servicenow/app_store_learnv2_securingapps_orlando_creating_and_editing_access_controls)。 
+你可以 **为用于连接** 服务帐户的服务帐户创建和分配Microsoft 搜索。 [了解如何为 ServiceNow 帐户分配角色](https://docs.servicenow.com/bundle/paris-platform-administration/page/administer/users-and-groups/task/t_AssignARoleToAUser.html)。 可以在已创建的角色上分配表的读取权限。 若要了解如何设置对表记录的读取访问权限，请参阅 [保护表记录](https://developer.servicenow.com/dev.do#!/learn/learning-plans/orlando/new_to_servicenow/app_store_learnv2_securingapps_orlando_creating_and_editing_access_controls)。 
 
 
 >[!NOTE]
@@ -74,7 +74,7 @@ ms.locfileid: "52879305"
 
 ## <a name="step-32-servicenow-oauth"></a>步骤 3.2：ServiceNow OAuth
 
-若要使用 ServiceNow OAuth 进行身份验证，ServiceNow 管理员需要在 ServiceNow 实例中设置终结点，以便 Microsoft 搜索应用可以访问它。 若要了解更多信息，请参阅[](https://docs.servicenow.com/bundle/newyork-platform-administration/page/administer/security/task/t_CreateEndpointforExternalClients.html)ServiceNow 文档中的为客户端创建用于访问实例的终结点。
+若要使用 ServiceNow OAuth 进行身份验证，ServiceNow 管理员需要在 ServiceNow 实例中预配终结点，以便Microsoft 搜索访问它。 若要了解更多信息，请参阅[](https://docs.servicenow.com/bundle/newyork-platform-administration/page/administer/security/task/t_CreateEndpointforExternalClients.html)ServiceNow 文档中的为客户端创建用于访问实例的终结点。
 
 下表提供了有关如何填写终结点创建表单的指导：
 
@@ -82,7 +82,7 @@ ms.locfileid: "52879305"
 --- | --- | ---
 名称 | 标识需要 OAuth 访问的应用程序的唯一值。 | Microsoft 搜索
 客户端 ID | 应用程序的只读自动生成的唯一 ID。 实例在请求访问令牌时使用客户端 ID。 | 不适用
-客户端密码 | 通过此共享密码字符串，ServiceNow 实例和 Microsoft 搜索可授权相互通信。 | 通过将密码视为密码来遵循安全性最佳做法。
+客户端密码 | 通过此共享密码字符串，ServiceNow 实例Microsoft 搜索相互授权通信。 | 通过将密码视为密码来遵循安全性最佳做法。
 重定向 URL | 授权服务器重定向到的必需回调 URL。 | https://gcs.office.com/v1.0/admin/oauth/callback
 徽标 URL | 包含应用程序徽标的图像的 URL。 | 不适用
 活动 | 选中此复选框可以使应用程序注册表处于活动状态。 | 设置为活动
@@ -162,7 +162,7 @@ ServiceNow 实例需要以下配置：
    OIDC 提供程序 |  Azure AD
    OIDC 元数据 URL | URL 格式必须为 https \: //login.microsoftonline.com/<tenandId">/.well-known/openid-configuration <br/>将"tenantID"替换为步骤 3.a 中的 (租户) ID。
    OIDC 配置缓存生命周期 |  120
-   应用程序 | 全局
+   应用程序 | 全球
    用户声明 | sub
    用户字段 | 用户 ID
    启用 JTI 声明验证 | 禁用

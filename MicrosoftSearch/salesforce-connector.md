@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 设置 Salesforce Graph 连接器Microsoft 搜索
-ms.openlocfilehash: b0b3ba0e41c0e28cac15f4fed491ac8507aa0e59
-ms.sourcegitcommit: 8270e4271b1eeb57b988ea5265e5b6d9d6ef64a6
+ms.openlocfilehash: f63dacd4e1c7da7d8eac53bc04bcbd108182df132c2e1fa61bdc2ffd0a549d2b
+ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/22/2021
-ms.locfileid: "53529370"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54532708"
 ---
 <!---Previous ms.author: rusamai --->
 
@@ -189,7 +189,7 @@ Salesforce 连接器当前仅支持完全爬网的刷新计划。
     - MobilePhone
     - 电子邮件
     - 类型
-    - Title
+    - 标题
     - AccountId
     - AccountName
     - AccountUrl

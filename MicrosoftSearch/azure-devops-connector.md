@@ -1,5 +1,5 @@
 ---
-title: Azure DevOps Graph Microsoft 搜索的连接器
+title: Azure DevOps Graph连接器Microsoft 搜索
 ms.author: mecampos
 author: mecampos
 manager: umas
@@ -12,19 +12,19 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: 为 Microsoft 搜索Azure DevOps Graph连接器
-ms.openlocfilehash: bfe04a022360a968424b673ad03ba05f27c8c333
-ms.sourcegitcommit: 1b154441f3a3abba0f2719e66a767432bc9506ca
+description: 设置Azure DevOps Graph连接器Microsoft 搜索
+ms.openlocfilehash: b7c5ab48288fdc421cda87b8afbadf08b8cf42ef023e8f56decd7b5c177c619a
+ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/02/2021
-ms.locfileid: "52720949"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54533329"
 ---
 <!---Previous ms.author: shgrover --->
 
 # <a name="azure-devops-graph-connector-preview"></a>Azure DevOps Graph连接器 (预览) 
 
-此Azure DevOps Graph连接器允许您的组织在其服务实例中为工作项Azure DevOps索引。 配置连接器并索引来自Azure DevOps后，最终用户可以在 Microsoft 搜索中搜索这些项目。
+此Azure DevOps Graph连接器允许您的组织在其服务实例中为工作项Azure DevOps索引。 配置连接器并索引来自Azure DevOps内容后，最终用户可以在 Microsoft 搜索。
 
 > [!NOTE]
 > 阅读 [**Graph 连接器**](configure-connector.md)的安装程序一文，了解 Graph 连接器的一般设置说明。
@@ -38,7 +38,7 @@ ms.locfileid: "52720949"
 
 <!---Insert "Before you get started" recommendations for this data source-->
 
-## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>步骤 1：在Graph管理中心中添加Microsoft 365连接器
+## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>步骤 1：在Graph中添加一个Microsoft 365 管理中心
 
 按照常规 [设置说明操作](./configure-connector.md)。
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup 
@@ -56,7 +56,7 @@ instructions.-->
 
 ### <a name="register-an-app"></a>注册应用
 
-在应用程序中注册Azure DevOps，以便 Microsoft 搜索应用可以访问该实例。 若要了解更多信息，请参阅Azure DevOps注册应用[的文档](/azure/devops/integrate/get-started/authentication/oauth?preserve-view=true&view=azure-devops#register-your-app)。
+在应用程序Azure DevOps，以便Microsoft 搜索访问实例。 若要了解更多信息，请参阅Azure DevOps注册应用[的文档](/azure/devops/integrate/get-started/authentication/oauth?preserve-view=true&view=azure-devops#register-your-app)。
 
 下表提供了有关如何填写应用程序注册表单的指导：
 
@@ -78,7 +78,7 @@ instructions.-->
 
 ### <a name="connection-settings"></a>连接设置
 
-向 Microsoft Search 应用注册Azure DevOps，可以完成连接设置步骤。 输入组织名称、应用 ID 和客户端密码。
+向 Microsoft 搜索 应用Azure DevOps，可以完成连接设置步骤。 输入组织名称、应用 ID 和客户端密码。
 
 ![连接应用程序设置](media/ADO_Connection_settings_2.png)
 
@@ -120,7 +120,7 @@ the Azure DevOps connector supports search permissions visible to  **Only peop
 >[!TIP]
 >**默认结果类型**
 >* 连接器Azure DevOps连接器发布[后](./customize-search-page.md#step-2-create-the-result-types)自动注册结果类型。 结果类型使用基于步骤 3[](./customize-results-layout.md)中选定的字段的动态生成的结果布局。 
->* 可以通过导航到管理中心中的结果类型来管理 [**结果**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/resulttypes)[Microsoft 365类型](https://admin.microsoft.com)。 默认结果类型将命名为 `ConnectionId` "Default"。 例如，如果你的连接 ID 是 `AzureDevOps` ，结果布局将命名为："AzureDevOpsDefault"
+>* 可以通过导航到"结果类型"中的"结果类型"来管理 [](https://admin.microsoft.com)[**Microsoft 365 管理中心。**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/resulttypes) 默认结果类型将命名为 `ConnectionId` "Default"。 例如，如果你的连接 ID 是 `AzureDevOps` ，结果布局将命名为："AzureDevOpsDefault"
 >* 此外，还可以选择创建您自己的结果类型（如果需要）。
 
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup 

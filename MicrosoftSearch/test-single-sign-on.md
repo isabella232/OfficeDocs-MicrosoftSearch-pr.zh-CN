@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: a220c1bf-7cee-448a-90a3-310284d03e81
 description: 减少提示 Windows 10 用户登录 Microsoft 搜索和 Office 365 的次数
-ms.openlocfilehash: 9fa7e067a5d72b7044981491f8526e6de727cfae
-ms.sourcegitcommit: 21361af7c244ffd6ff8689fd0ff0daa359bf4129
+ms.openlocfilehash: d3628503c9150c1d71b4d390a9e9c34f5e6faedfac4e33c44cdd038f90d591d0
+ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38626888"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54534110"
 ---
 # <a name="test-single-sign-on"></a>测试单一登录
 
@@ -35,9 +35,9 @@ ms.locfileid: "38626888"
   
 1. 转到 Microsoft 搜索管理门户
     
-2. 在导航窗格中，单击“工具”****
+2. 在导航窗格中，单击“工具”
     
-3. 在工具列表中，下载“Windows 10 和 Chrome AAD 登录扩展”****
+3. 在工具列表中，下载“Windows 10 和 Chrome AAD 登录扩展”
     
 4. 与 Windows 10 上的 Chrome 用户共享扩展
 

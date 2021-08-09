@@ -1,5 +1,5 @@
 ---
-title: 配置 Microsoft 为 Microsoft 搜索Graph连接器
+title: 配置 Microsoft 构建的 Graph 连接器Microsoft 搜索
 ms.author: mecampos
 author: mecampos
 manager: umas
@@ -12,24 +12,24 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: Microsoft Graph连接器的设置概述
-ms.openlocfilehash: ef94d530af63d8b8b33dfae3c4b411164ef31feb
-ms.sourcegitcommit: 1b154441f3a3abba0f2719e66a767432bc9506ca
+description: Microsoft 针对 Graph 连接器的设置概述
+ms.openlocfilehash: 0c67081d3efab421b563e82dba506da85e65cb91d34b31f128f3bcff945c68a1
+ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/02/2021
-ms.locfileid: "52720940"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54533296"
 ---
 <!-- Previous ms.author: monaray -->
 
 <!-- markdownlint-disable no-trailing-punctuation -->
 
-# <a name="setup-overview-for-graph-connectors-by-microsoft"></a>Microsoft Graph连接器的设置概述 
+# <a name="setup-overview-for-graph-connectors-by-microsoft"></a>Microsoft 针对 Graph 连接器的设置概述 
 
-本文介绍了在管理中心中Graph **Microsoft** 设置 Microsoft 365 [连接器所需的基本过程](https://admin.microsoft.com)。 基本流程包括以下步骤:  
+本文介绍 Microsoft 在 Microsoft 365 管理中心 中设置 Graph **连接器所需的**[基本Microsoft 365 管理中心。](https://admin.microsoft.com) 基本流程包括以下步骤:  
 <!---Add links to each section in the doc--->
 
-1. [在 Graph 管理中心Microsoft 365连接器](#step-1-add-a-graph-connector-in-the-microsoft-365-admin-center)
+1. [在 Microsoft 365 管理中心内添加 Graph 连接器。](#step-1-add-a-graph-connector-in-the-microsoft-365-admin-center)
 2. [命名连接](#step-2-name-the-connection)
 3. [配置连接设置](#step-3-configure-the-connection-settings)
 4. [管理搜索权限](#step-4-manage-search-permissions)
@@ -51,11 +51,11 @@ ms.locfileid: "52720940"
 
 <!---Insert "Before you get started" recommendations for this data source-->
 
-## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>步骤 1：在Graph管理中心中添加Microsoft 365连接器
+## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>步骤 1：在Graph中添加一个Microsoft 365 管理中心
 
 完成以下步骤以配置任何 Microsoft 构建Graph连接器：
 
-1. 在管理中心 中Microsoft 365[管理员帐户](https://admin.microsoft.com)。
+1. 在登录管理员帐户时[Microsoft 365 管理中心。](https://admin.microsoft.com)
 
 2. 在导航窗格中，**选择**"设置"，然后选择"搜索&**智能"。** 选择" [连接器"选项卡](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/Connectors)。
 
@@ -138,7 +138,7 @@ ms.locfileid: "52720940"
 SEARCH | 使属性的文本内容可搜索。 属性内容包含在全文索引中。 | 如果属性为 **title**，则查询Enterprise返回包含单词 **Enterprise文本** 或标题中的结果。
 QUERY | 通过查询来搜索特定属性的匹配项。 然后，可以在查询中以编程方式或详细方式指定属性名称。 |  如果可以查询 **Title** 属性，则支持查询 **Title： Enterprise。**
 检索 | 结果类型中只能使用可检索属性，并显示在搜索结果中。 |
-优化 | 精简选项可在"Microsoft 搜索结果"页中一样使用。 | 如果在连接设置 [过程中](custom-filters.md) 标记了精简属性，则贵组织的用户可以在搜索结果页中按 **URL** 进行筛选
+优化 | 精简选项可以像在结果页Microsoft 搜索一样。 | 如果在连接设置 [过程中](custom-filters.md) 标记了精简属性，则贵组织的用户可以在搜索结果页中按 **URL** 进行筛选
 
 对于除文件共享连接器之外的所有连接器，必须手动设置自定义类型。 若要激活每个字段的搜索功能，您需要映射到属性列表的搜索架构。 连接向导根据选择的源属性集自动选择搜索架构。 您可以通过选中搜索架构页中每个属性和属性的复选框来修改此架构。
 
@@ -160,7 +160,7 @@ QUERY | 通过查询来搜索特定属性的匹配项。 然后，可以在查�
 
 ## <a name="step-7-refresh-settings"></a>步骤 7：刷新设置
 
-刷新间隔确定数据在数据源和 Microsoft 搜索之间同步频率。 根据数据的修改频率和修改类型，每种类型的数据源都有一组不同的最佳刷新计划。
+刷新间隔确定数据在数据源和数据源之间的同步Microsoft 搜索。 根据数据的修改频率和修改类型，每种类型的数据源都有一组不同的最佳刷新计划。
 
 有两种类型的刷新间隔，即"完全刷新"和"增量刷新"，但增量刷新不适用于某些数据源。
 

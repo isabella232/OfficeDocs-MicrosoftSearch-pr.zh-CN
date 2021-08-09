@@ -1,5 +1,5 @@
 ---
-title: 集成 Power Apps
+title: 集成Power Apps
 ms.author: dawholl
 author: dawholl
 manager: kellis
@@ -12,21 +12,21 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 1fadcba3-4a7f-4a55-8476-d4e64d49a15f
-description: 在 Microsoft 搜索的书签结果中包括基于浏览器的应用
-ms.openlocfilehash: 52fa78c54ab6db74ef1e3679d3d32151a3f5ac10
-ms.sourcegitcommit: 5df252e6d0bd67bb1b4c59418aceca8369f5fe42
+description: 在应用的书签结果中包括基于浏览器Microsoft 搜索
+ms.openlocfilehash: 4571862919c2f8bd92f1756a70baef908eaa0eade649e6890c1ba56d314398c2
+ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51031698"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54532954"
 ---
-# <a name="integrate-power-apps-in-microsoft-search-bookmarks"></a>在 Microsoft 搜索书签中集成 Power Apps
+# <a name="integrate-power-apps-in-microsoft-search-bookmarks"></a>将Power Apps集成到Microsoft 搜索书签中
    
-通过将现有 [Microsoft Power Apps](https://products.office.com/business/microsoft-powerapps) 集成到 Microsoft 搜索书签，帮助用户完成任务，如输入休假时间或报告费用。 集成 Power Apps 显示在书签结果中，无需转到其他站点或打开单独的工具，从而节省时间和精力。
+通过将现有[Microsoft](https://products.office.com/business/microsoft-powerapps) Power Apps集成到你的活动书签，帮助你的用户完成任务，例如输入休假时间或Microsoft 搜索费用。 集成Power Apps显示在书签结果中，无需转到其他网站或打开单独的工具，从而节省时间和精力。
   
-## <a name="what-are-power-apps"></a>什么是 Power Apps？
+## <a name="what-are-power-apps"></a>什么是Power Apps？
 
-[Power Apps](https://products.office.com/business/microsoft-powerapps) 是一项服务，允许你构建在浏览器或手机或平板电脑上运行的业务应用，无需编码经验。 了解更多：
+[Power Apps](https://products.office.com/business/microsoft-powerapps)一项服务，可让你生成在浏览器或手机或平板电脑上运行的业务应用，无需编码经验。 了解更多：
   
 - [引导学习](/learn/browse/?products=powerapps)
     
@@ -34,11 +34,11 @@ ms.locfileid: "51031698"
     
 ## <a name="add-a-power-app-to-a-bookmark"></a>将 Power App 添加到书签
 
-[Power Apps (在 https://products.office.com/business/microsoft-powerapps) 任意浏览器和任何设备上工作，添加时间不到一分钟。
+[Power Apps (浏览器和任何设备上工作，添加时间少于 https://products.office.com/business/microsoft-powerapps) 一分钟。
   
 1. [查找要集成 Power App](/powerapps/maker/canvas-apps/get-sessionid#get-an-app-id) 的应用 ID。
     
-2. 在 Microsoft 365 [管理中心中](https://admin.microsoft.com)，转到 **书签**。
+2. In the Microsoft 365 [admin center，](https://admin.microsoft.com)go to **Bookmarks**.
     
 3. 添加书签或查找要添加 Power App 的现有书签。
     
@@ -54,4 +54,4 @@ ms.locfileid: "51031698"
     
 7. 选择“**发布**”。
     
-当授权的 Microsoft 搜索用户在 [必应](https://Bing.com) 上搜索书签的任何关键字或保留的关键字时，Power App 将显示在书签结果中。
+当授权Microsoft 搜索用户必应搜索书签的任何关键字[](https://Bing.com)或保留的关键字时，Power App 将显示在书签结果中。

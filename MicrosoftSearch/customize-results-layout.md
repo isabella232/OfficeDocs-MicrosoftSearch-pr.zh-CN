@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 使用自适应卡片，创建用于查看自定义搜索结果的布局
-ms.openlocfilehash: 1badb5bb34d746b22de8ddb91cd26c813fe9f67f
-ms.sourcegitcommit: 8270e4271b1eeb57b988ea5265e5b6d9d6ef64a6
+ms.openlocfilehash: 79c10236bf2eb797afb99b1c7e78925e7cc2361a5fe7d4f695eb739eaed13532
+ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/22/2021
-ms.locfileid: "53529359"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54533940"
 ---
 <!-- markdownlint-disable no-hard-tabs -->
 # <a name="create-a-layout-to-customize-search-results"></a>创建布局以自定义搜索结果

@@ -1,5 +1,5 @@
 ---
-title: 适用于 Microsoft 搜索的文件共享图形连接器
+title: 文件共享Graph连接器Microsoft 搜索
 ms.author: mecampos
 author: mecampos
 manager: umas
@@ -13,28 +13,28 @@ search.appverid:
 - MET150
 - MOE150
 ROBOTS: NoIndex
-description: 为 Microsoft 搜索设置文件共享图形连接器
-ms.openlocfilehash: 792e853e5d2b7a23835dc031ff4ba4c09d619f9c
-ms.sourcegitcommit: 5df252e6d0bd67bb1b4c59418aceca8369f5fe42
+description: 为Graph设置文件共享Microsoft 搜索
+ms.openlocfilehash: af4c3996fdc8ac753404f4b4519175a9054fa18bce3862b0c5841c7bd5369cdd
+ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51031608"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54533018"
 ---
 <!---Previous ms.author: rusamai --->
 
-# <a name="file-share-graph-connector"></a>文件共享图连接器
+# <a name="file-share-graph-connector"></a>文件共享Graph连接器
 
-文件共享 Graph 连接器允许贵组织的用户搜索本地 Windows 文件共享。
+文件共享Graph连接器允许贵组织的用户搜索本地Windows文件共享。
 
 > [!NOTE]
-> 阅读 [**适用于 Graph 连接器的安装程序一**](configure-connector.md) 文，了解 Graph 连接器的常规设置过程。
+> 阅读 [**Setup for your Graph connector**](configure-connector.md)一文，了解 Graph 连接器的一般设置过程。
 
 ## <a name="before-you-get-started"></a>在开始使用之前
 
 ### <a name="install-the-graph-connector-agent"></a>安装 Graph 连接器代理
 
-若要为 Windows 文件共享编制索引，必须安装和注册 Graph 连接器代理。 有关详细信息 [，](on-prem-agent.md) 请参阅安装 Graph 连接器代理。  
+若要为Windows索引，必须安装并注册连接器Graph代理。 有关详细信息[，请参阅](graph-connector-agent.md)Graph连接器代理。  
 
 ### <a name="content-requirements"></a>内容要求
 
@@ -46,7 +46,7 @@ ms.locfileid: "51031608"
 
 支持的最大文件大小为 100 MB。 超过 100 MB 的文件不会编制索引。 处理后的最大大小限制为 4 MB。 当文件大小达到 4 MB 时，处理将停止。 因此，文件中有些短语可能无法用于搜索。
 
-## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>步骤 1：在 Microsoft 365 管理中心添加 Graph 连接器
+## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>步骤 1：在Graph中添加一个Microsoft 365 管理中心
 
 按照常规 [设置说明操作](./configure-connector.md)。
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
@@ -58,7 +58,7 @@ ms.locfileid: "51031608"
 
 ## <a name="step-3-configure-the-connection-settings"></a>步骤 3：配置连接设置
 
-在" **连接到数据源"页上** ，选择" **文件共享** "并提供名称、连接 ID 和说明。 下一页，提供文件共享的路径并选择之前安装的 Graph 连接器代理。 输入对文件共享中所有文件的读取访问权限的 [Microsoft Windows](https://microsoft.com/windows) 用户帐户的凭据。
+在 **"连接数据源"** 页上，选择"文件共享"并提供名称、连接 ID 和说明。 下一页，提供文件共享的路径并选择之前安装的连接器Graph代理。 输入 Microsoft [Windows用户帐户的](https://microsoft.com/windows)凭据，该帐户具有对文件共享中所有文件的读取访问权限。
 
 ### <a name="preserve-last-access-time"></a>保留上一次访问时间
 

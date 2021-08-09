@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 为Enterprise连接器Graph网站Microsoft 搜索
-ms.openlocfilehash: 32e38c9bef036556dae2734e23b1d26ba4fe2c27
-ms.sourcegitcommit: 38a0f09596c2bca0e12bf4cada7b4c64fd4c48e4
+ms.openlocfilehash: 7e308c8239fbc4ea0da5449731d25442490270f9d604a40944d17cd2bf367a0c
+ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53449041"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54533073"
 ---
 <!---Previous ms.author: monaray --->
 
@@ -79,7 +79,7 @@ ms.locfileid: "53449041"
 
 爬网模式确定要索引的网站类型（云或本地）。 对于云网站，选择 **"云** "作为爬网模式。
 
-此外，连接器现在支持对本地网站进行爬网。 若要访问本地数据，必须先安装和配置 Graph 连接器代理。 若要了解更多信息，请参阅[Graph代理](./on-prem-agent.md)。
+此外，连接器现在支持对本地网站进行爬网。 若要访问本地数据，必须先安装和配置 Graph 连接器代理。 若要了解更多信息，请参阅[Graph代理](./graph-connector-agent.md)。
 
 对于本地网站，选择"代理"作为爬网模式，在"本地代理"字段中，选择之前安装和配置的 Graph 连接器代理。  
 

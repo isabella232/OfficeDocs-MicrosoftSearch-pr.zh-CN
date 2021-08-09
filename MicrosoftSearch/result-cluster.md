@@ -12,18 +12,18 @@ search.appverid:
 - MET150
 - MOE150
 description: 连接器结果群集体验的详细信息
-ms.openlocfilehash: ae5528f2e12c9e331b66e821f2a9c03947d788df
-ms.sourcegitcommit: 5df252e6d0bd67bb1b4c59418aceca8369f5fe42
+ms.openlocfilehash: 912e27942e9ae3bfef874ae66227880af676b7a1a28449cc82ae8fc02f4446c0
+ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51031770"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54533974"
 ---
-# <a name="graph-connectors-result-cluster"></a>图形连接器结果群集
+# <a name="graph-connectors-result-cluster"></a>Graph连接器结果群集
 
-## <a name="overview-of-the-graph-connectors-result-cluster-preview"></a>Graph 连接器结果群集和预览 (概述)   
+## <a name="overview-of-the-graph-connectors-result-cluster-preview"></a>预览Graph连接器结果 (概述)   
 
-借助 Graph 连接器结果群集，企业可以在默认视图中搜索来自第三方数据源的内容，即 SharePoint、Office.com 和必应中的 Microsoft 搜索中的"全部"选项卡。 
+使用 Graph 连接器结果群集，企业可以在默认视图中搜索来自第三方数据源的内容，即 SharePoint、Office.com和 必应 中的 Microsoft 搜索 中的"全部"选项卡。
 
 结果群集可帮助用户在一个地方发现所有第三方内容。 结果群集中显示的结果根据垂直搜索配置分组在一起。
 
@@ -45,18 +45,18 @@ ms.locfileid: "51031770"
 
 请按照以下步骤在组织级别启用体验：
 
-1. 在 [Microsoft 365 管理中心中](https://admin.microsoft.com)，转到 [**"垂直"。**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/verticals)
+1. In the [Microsoft 365 管理中心，](https://admin.microsoft.com)go to [**Verticals**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/verticals).
 2. 选择"**全部"** 垂直，然后启用"**显示连接器结果"。** 
 
 
-请按照以下步骤在 SharePoint 网站级别启用体验：
+请按照以下步骤在网站级别SharePoint体验：
 
-1. 在想要获得结果群集体验的 SharePoint 网站上，转到"设置 **"。**
+1. 在SharePoint群集体验的网站中，转到 **"设置"。**
 2. 转到"**网站信息** > **""查看所有网站设置"。**
-3. 转到"Microsoft 搜索"部分，然后为此 **网站集选择"配置 Microsoft 搜索"。**
+3. 转到"Microsoft 搜索"部分，然后选择"为此 **Microsoft 搜索配置网站集"。**
 4. 在导航窗格中，转到"自定义 **体验"，** 然后选择"**垂直"。**
 5. 选择"**全部"** 垂直，然后启用"**显示连接器结果"。**
 
 ## <a name="view-the-result-cluster-experience-after-it-is-enabled"></a>启用后查看结果群集体验
 
-打开结果群集体验后，可能需要 12 小时才能查看它。 如果想立即获得体验，可以将 *cacheClear=true* 追加到 SharePoint 和 Office 中的 URL。
+打开结果群集体验后，可能需要 12 小时才能查看它。 如果需要立即体验，可以将 *cacheClear=true* 追加到 SharePoint 中的 URL，Office。

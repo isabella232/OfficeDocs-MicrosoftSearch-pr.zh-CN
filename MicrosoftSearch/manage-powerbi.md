@@ -13,16 +13,16 @@ search.appverid:
 - MOE150
 ms.assetid: c0c814d0-f7e4-444e-b18e-09beb45c9322
 description: 管理Power BI数据在搜索结果中的显示方式
-ms.openlocfilehash: 4b2251bdb8039c25fb1ec5290f3374a9f4eb3fd1
-ms.sourcegitcommit: 4b72a31910753d46373a829a64ffec77fe6bc855
+ms.openlocfilehash: a9148ab621703d89ddbe0f225ac2b0697748d8a2e85ffe96cec1763e04deeda9
+ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52547697"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54533607"
 ---
 # <a name="manage-power-bi-answers"></a>管理Power BI答案
 
-为了便于用户查找做出明智决定所需的数据和分析，Microsoft 搜索增加了对仪表板Power BI的支持。 以下是搜索搜索的一Power BI优势：
+为了让用户更轻松地找到做出明智决定所需的数据和分析，Microsoft 搜索添加了对仪表板Power BI的支持。 以下是搜索搜索的一Power BI优势：
 
 * **易于使用：** 这种开箱即用搜索体验可帮助用户轻松Power BI整个组织的仪表板和报告。
 * **更丰富的内容：** 为了Power BI搜索结果，它们包括关键信息，如内容类型（仪表板或报表）以及拥有该内容的团队或人员。
@@ -51,13 +51,13 @@ Power BI为组织启用结果。 你的Power BI管理员可随时禁用它们。
 :::image type="content" source="media/powerbi-answers/powerbi-admin.png" alt-text="用于打开或关闭Power BI答案的设置屏幕截图" border="true":::
 
 > [!NOTE]
-> 使用 Microsoft 搜索时，搜索查询和从 Power BI 返回的结果可能在不同于 Power BI 租户数据所在的区域或地理位置进行处理。
+> 使用 Microsoft 搜索 时，搜索查询和从 Power BI 返回的结果可能在不同于 Power BI 租户数据所在的区域或地理位置进行处理。
 
-## <a name="frequently-asked-questions"></a>常见问题解答
+## <a name="frequently-asked-questions"></a>常见问题
 
 **问：Power BI搜索是否已启用？**
 
-**答：** 是的。 Power BI Microsoft 搜索启用搜索。 租户管理员无需首次设置此功能。
+**答：** 是的。 Power BI默认情况下会为用户启用Microsoft 搜索。 租户管理员无需首次设置此功能。
 
 **问：Power BI组或用户启用还是禁用搜索？**
 
@@ -69,7 +69,7 @@ Power BI为组织启用结果。 你的Power BI管理员可随时禁用它们。
 
 **问：如果我没有Power BI许可证，我是否会看到搜索结果Power BI页面？**
 
-**答：** 不。 如果搜索用户没有Power BI许可证，Power BI搜索结果页面将不会显示在 Microsoft 搜索结果中。
+**答：** 不。 如果搜索用户没有Power BI许可证，Power BI搜索结果页面将不会显示在Microsoft 搜索中。
 
 **问：我能否Power BI无法访问的搜索结果？**
 

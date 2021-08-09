@@ -1,5 +1,5 @@
 ---
-title: 在 SharePoint 网站中管理搜索框
+title: 管理网站中的SharePoint框
 ms.author: keremy
 author: jeffkizn
 manager: parulm
@@ -11,24 +11,24 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: 如何自定义 SharePoint 网站的搜索框体验
-ms.openlocfilehash: c58e7cf0a47d22fa9c6fd3abd93cc97087625690
-ms.sourcegitcommit: 5df252e6d0bd67bb1b4c59418aceca8369f5fe42
+description: 如何自定义网站搜索框SharePoint体验
+ms.openlocfilehash: 151b5b066cd0164d4f7689192c37867d75b6eb6c57c82588cee654871c5e32b0
+ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51031356"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54533578"
 ---
-# <a name="search-box-settings-on-sharepoint-sites"></a>SharePoint 网站的搜索框设置
+# <a name="search-box-settings-on-sharepoint-sites"></a>搜索网站上搜索SharePoint设置
 
-在 SharePoint 网站上自定义 Microsoft 搜索的几种方法之一是定制套件导航栏中的搜索框在 SharePoint 网站中的工作方式，以最好地满足您的需求。
+在 SharePoint 网站上自定义Microsoft 搜索方法之一是定制套件导航栏中的搜索框在 SharePoint 网站中的工作方式，以最好地满足您的需求。
 
-有关其他自定义选项，请参阅 Changing [the Microsoft Search results page to add custom verticals， result types and layouts](customize-search-page.md)和 Creating a custom search results [page](create-search-results-pages.md)。
+有关其他自定义选项，请参阅[Changing the Microsoft 搜索 results page to add custom verticals， result types and layouts](customize-search-page.md)和 Creating a custom search results [page](create-search-results-pages.md)。
 
 > [!NOTE]
 > 套件导航栏搜索框目前并非可供所有客户使用，但这些选项仍可立即设置，并且将在可用时生效。
 
-对于下面列出的任务，你将 PowerShell 与 SharePoint PnP PowerShell 扩展一同使用。 可以在此处安装并了解有关如何开始使用 [的更多信息](/powershell/sharepoint/sharepoint-pnp/sharepoint-pnp-cmdlets?view=sharepoint-ps)。 您将使用此命令登录到您的网站或网站集：
+对于下面列出的任务，你将使用 PowerShell 和 SharePoint PnP PowerShell 扩展。 可以在此处安装并了解有关如何开始使用 [的更多信息](/powershell/sharepoint/sharepoint-pnp/sharepoint-pnp-cmdlets?view=sharepoint-ps)。 您将使用此命令登录到您的网站或网站集：
 
 ```powershell
 Connect-PnPOnline -Url <yoursiteurl> -UseWebLogin
@@ -37,7 +37,7 @@ Connect-PnPOnline -Url <yoursiteurl> -UseWebLogin
 
 ## <a name="changing-the-scope-of-search"></a>更改搜索范围
 
-今天在 SharePoint Online 中创建新网站并键入搜索框中时，你将进入 Microsoft 搜索结果页面。 此页面默认显示来自当前网站的结果，并允许您将搜索范围扩展到当前网站与 (（如果有一个) ）关联的中心，或扩展到整个组织。
+今天在 SharePoint Online 中创建新网站并键入搜索框中时，你将进入"Microsoft 搜索页面。 此页面默认显示来自当前网站的结果，并允许您将搜索范围扩展到当前网站与 (（如果有一个) ）关联的中心，或扩展到整个组织。
 
 默认情况下，搜索框使用的范围取决于网站类型。
 
@@ -84,11 +84,11 @@ Set-PnPSearchSettings -Scope Site -SearchBoxInNavBar Hidden
 
 * 此设置仅适用于套件导航栏中的搜索框。 它不适用于页面中的搜索框或经典页面上的搜索框。
 
-* 在导航栏中禁用搜索框后，如果您希望网站具有搜索功能，您必须使用自定义 Web 部件或 SharePoint 框架扩展自己提供搜索框。
+* 在导航栏中禁用搜索框后，如果要在网站中实现搜索功能，您必须使用自定义 Web 部件或扩展名自己SharePoint 框架它。
 
-* 此解决方案还将从网站的列表和库中删除搜索框。 除了网站范围的搜索之外，自定义搜索解决方案还需要考虑 SharePoint 列表和库的上下文搜索。
+* 此解决方案还将从网站的列表和库中删除搜索框。 除了网站范围的搜索之外，自定义搜索解决方案还需要考虑SharePoint列表和库的上下文搜索。
 
-* 如果将设置应用到域的根网站，SharePoint 起始页也将停止显示搜索框。
+* 如果将设置应用到域的根网站，SharePoint起始页也将停止显示搜索框。
 
 ## <a name="changing-the-hint-displayed-in-the-search-box"></a>更改搜索框中显示的提示
 

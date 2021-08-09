@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8ab9aa00-cd74-405f-8410-9a1c3cfacdb9
 description: 随着时间推移，可能需要更新位置状态和内容以保持其相关性。
-ms.openlocfilehash: ab093cca1c340268b2fd43f7594eb48eddf32208
-ms.sourcegitcommit: 988c37610e71f9784b486660400aecaa7bed40b0
+ms.openlocfilehash: 5e9d88fc08458e928e52988124ee94c60829c7bb71ed13f8534b71ca08e2d50c
+ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47422880"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54532872"
 ---
 # <a name="manage-locations"></a>管理位置
 
@@ -28,8 +28,8 @@ ms.locfileid: "47422880"
 
 ### <a name="add-or-edit-a-single-location"></a>添加或编辑单个位置
 
-1. 在[Microsoft 365 管理中心](https://admin.microsoft.com)，转到 "[**位置**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/locations)"
-1. 若要添加新位置，请选择 " **添加**"。
+1. 在 ["Microsoft 365 管理中心"](https://admin.microsoft.com)中，转到 [**"位置"**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/locations)
+1. 若要添加新位置，请选择"添加 **"。**
 1. 若要编辑位置，请在相关位置列表中选择该位置。
 1. 在你添加或编辑信息时，预览将随之自动更新。
 1. 保存所做的更改。
@@ -42,7 +42,7 @@ ms.locfileid: "47422880"
 
 1. 批量添加位置 - 在位置模板文件中添加详细信息，然后导入它。
 1. 批量编辑位置 - 将书签导出到 .csv 文件，编辑导出的 .csv 文件中的位置详细信息，然后导入更新的 .csv 文件。
-1. 备份位置–将现有位置导出到 .csv 文件。
+1. 备份位置 – 将现有位置导出到.csv文件。
 
 若要导出或导入位置：
 
@@ -56,14 +56,14 @@ ms.locfileid: "47422880"
 
 以下是关于模板文件的一些要点：
 
-- 请勿编辑以下字段中的数据：*Id*、*上次修改时间*和*上次修改者*
-- 如果包含现有位置的 *Id* ，则会将其替换为导入文件中的信息。
-- 如果存在具有相同名称的现有位置，则将使用导入文件中的信息更新该位置。
-- 并非模板文件中的所有字段都是必需的，并且必填字段因位置状态而异。
-- 根据 " *省/市/自治区* " 字段，位置将保存为草稿、建议、计划或将自动发布。
-- 对于管理多个组织的合作伙伴，您可以从一个组织中导出位置并将其导入到另一个组织中。 但是，在导入之前，你必须删除 *Id* 列中的数据。
+- 请勿编辑以下字段中的数据：*Id*、*上次修改时间* 和 *上次修改者*
+- 如果包含现有位置的 *ID，* 它将替换为导入文件中的信息。
+- 如果存在同名的现有位置，该位置将用导入文件中的信息进行更新。
+- 模板文件中并非所有字段都是必需的，并且必填字段因位置状态而异。
+- 根据" *状态* "字段，位置将另存为草稿、建议、计划或自动发布。
+- 对于管理多个组织的合作伙伴，你可以从一个组织导出位置，然后将它们导入另一个组织。 但是，在导入之前，你必须删除 *Id* 列中的数据。
 
 > [!NOTE]
-> 如果模板文件中有任何错误，则无法导入位置。 为防止出错，请确保导入文件具有正确格式，并且包含所有必需信息。
+> 如果模板文件中出现任何错误，则不能导入位置。 为防止出错，请确保导入文件具有正确格式，并且包含所有必需信息。
 
 有关如何防止错误的详细信息，请参阅[防止导入错误](manage-bookmarks.md#prevent-import-errors)。

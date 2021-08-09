@@ -12,22 +12,22 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 7e3432e6-5317-4d63-90b0-52da6fddd343
-description: 单独查找和更新答案，或使用 Microsoft Search tools 以一次性编辑 Q&。
-ms.openlocfilehash: 2a8b0727ef3540a35d617cf6c8bae7b0d99767a8
-ms.sourcegitcommit: 988c37610e71f9784b486660400aecaa7bed40b0
+description: 单独查找并更新答案，或使用可用的Microsoft 搜索工具一&一次编辑问答。
+ms.openlocfilehash: 2e54169a6196ec78bd96b33aa1ba71fc498b6ff13d8d872ad06ca0db1d9fc2c0
+ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47422997"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54532863"
 ---
 # <a name="manage-qas"></a>管理问答
 
-创建问答类似于创建书签。 Q&，使您可以回答用户的问题，而不只是提供指向网页的链接。 您还可以设置格式文本中的答案的格式。 如果书签和 Q&共享相同的关键字，则首先显示书签结果。 与书签一样，在添加或更改 Q&A 之后，会立即刷新 Q&索引。
+创建问答类似于创建书签。 Q&As allow you to answer the user's questions instead of just providing a link to a webpage. 您还可以以格式文本格式显示答案。 如果书签和问答&同一关键字，则首先显示书签结果。 与书签一样，&A 问答添加&更改后，将立即刷新索引的问答。
 
 ## <a name="add-or-edit-a-single-qa"></a>添加或编辑单个问答
 
-1. 在 [Microsoft 365 管理中心](https://admin.microsoft.com)，转到 [**Q&**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/qnas)
-1. 若要将 Q&添加，请选择 " **添加**"。
+1. In the [Microsoft 365 管理中心，](https://admin.microsoft.com)go to [**Q&A**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/qnas)
+1. 若要添加问答&，请选择"添加 **"。**
 若要编辑问答，请在相关问答列表中选择问答。 在你添加或编辑信息时，预览将随之自动更新。
 1. 保存所做的更改。
 
@@ -54,44 +54,44 @@ ms.locfileid: "47422997"
 - hr
 - img
 
-## <a name="add-or-edit-qas-using-browser-extensions"></a>使用浏览器扩展添加或编辑 Q&
+## <a name="add-or-edit-qas-using-browser-extensions"></a>使用浏览器扩展&或编辑问答
 
-搜索管理员可以使用浏览器扩展轻松创建搜索内容。 安装浏览器扩展，然后转到要从中生成 Q&的网站。 然后，您可以创建 Q&A 并包含指向源网站的链接。
+搜索管理员可以使用浏览器扩展轻松创建搜索内容。 安装浏览器扩展，然后转到要生成问答&站点。 然后，可以创建问答&并包含指向源网站的链接。
 
-目前，浏览器扩展适用于 Microsoft Edge 和 Chrome。
+目前，浏览器扩展可用于 Microsoft Edge Chrome。
 
-- 若要下载边缘 (旧版) 的扩展，请转到 [Microsoft Store](https://www.microsoft.com/p/microsoft-search-content-creator/9nrqdbcbwq55?activetab=pivot:overviewtab)。
-- 若要下载扩展名 Chrome 或 Edge (Chromium) ，请转到 [Chrome web store](https://chrome.google.com/webstore/detail/microsoft-search-content/nocnablpaoeecfmfnjoheefkogmleipm)。
+- 若要下载旧版边缘 (的) ，[请转到Microsoft Store。](https://www.microsoft.com/p/microsoft-search-content-creator/9nrqdbcbwq55?activetab=pivot:overviewtab)
+- 若要下载 Chrome 或 Edge (Chromium) ，请转到 Chrome [Web 应用商店](https://chrome.google.com/webstore/detail/microsoft-search-content/nocnablpaoeecfmfnjoheefkogmleipm)。
 
 ## <a name="bulk-add-or-edit-qas"></a>批量添加或编辑问答
 
-管理员可以使用导入和导出功能批量创建或编辑 Q&As。
+管理员可以使用导入和导出功能批量创建或编辑问答&问题。
 
-使用导入/导出功能执行以下操作：
+使用导入/导出功能可：
 
-- 批量添加 Q&-在 Q&模板文件中添加详细信息，然后将其导入。
-- 批量编辑 Q&As-Export Q&为 .csv 文件，请编辑 Q&导出文件中的详细信息，然后导入该文件。
-- 以 .csv 文件的形式备份 Q&As-Export Q&。
+- 批量添加 Q&As - 在 Q&模板文件中添加详细信息，然后导入它。
+- 批量编辑&为 - 将问答&导出到 .csv 文件，编辑导出&中的问答详细信息，然后导入该文件。
+- 备份问答&- 将问答&导出到.csv文件。
 
-导入或导出 Q&为：
+若要导入或导出问答&为：
 
 1. 在“问答”选项卡的右上角，选择“**导入**”。
-选择 " **导出** " 以下载所有现有的 Q&，如 .csv 文件中所示。
-1. 在右侧窗格中，选择要使用 .csv 文件导入的选项。 下载模板文件以获取必需字段和详细信息的列表。
-1. 添加或编辑 Q&模板文件中的详细信息，并将其保存到计算机上。
-1. 在 " **导入 Q&** 窗格中，选择" **浏览**"，然后选择要导入的 .csv 文件。
+选择 **导出** 以下载所有现有问答&如在.csv文件中。
+1. 在右窗格中，选择使用文件导入.csv选项。 下载模板文件，获取所需字段和详细信息的列表。
+1. 添加或编辑&模板文件中的详细信息，并将其保存在您的计算机上。
+1. In the **Import Q&A** pane， select **Browse**， and then select the .csv file that you want to import.
 1. 选择“**导入**”。
 
 重要的模板文件提示：
 
-- 请勿编辑以下字段中的数据：**Id**、**上次修改时间**和**上次修改者**
+- 请勿编辑以下字段中的数据：**Id**、**上次修改时间** 和 **上次修改者**
 - 如果包含现有书签的 **Id**，则会将其替换为导入文件中的信息。
-- 如果现有书签具有相同的标题或 URL，则将使用导入文件中的信息更新该书签。
-- 并不是模板文件中的所有字段都是必需的，并且根据书签状态不同，必需的字段也会有所不同。
-- 根据 " **省/市/自治区** " 字段，将书签保存为 *草稿*、 *建议*或 *计划*或自动发布。
-- 对于管理多个组织的合作伙伴：您可以从一个组织中导出您的书签并将其导入到另一个组织中。 但是，在导入之前，你必须删除 **Id** 列中的数据。
+- 如果存在标题或 URL 相同的现有书签，该书签将用导入文件中的信息进行更新。
+- 模板文件中并非所有字段都是必需的，并且所需字段因书签状态而异。
+- 根据 **"状态"** 字段，书签保存为 *草稿*、建议或计划书签，或者自动发布。
+- 对于管理多个组织的合作伙伴：你可以从一个组织导出书签，然后将它们导入另一个组织。 但是，在导入之前，你必须删除 **Id** 列中的数据。
 
 > [!NOTE]
-> 您不能导入 Q&，就像模板文件中有任何错误一样。 若要防止错误，请确保您的导入文件格式正确，并包含所有必需的信息。
+> 无法导入问答&就像模板文件中有任何错误一样。 若要防止错误，请确保导入文件的格式正确，并包含所有必需信息。
 
-有关避免错误的详细信息，请参阅 [防止导入错误](manage-bookmarks.md#prevent-import-errors)。
+有关避免错误的详细信息，请参阅防止 [导入错误](manage-bookmarks.md#prevent-import-errors)。

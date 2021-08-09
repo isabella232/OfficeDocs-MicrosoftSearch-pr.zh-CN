@@ -1,5 +1,5 @@
 ---
-title: 管理 Microsoft Graph 连接器以用于 Microsoft 搜索
+title: 管理 Microsoft Graph Connectors for Microsoft 搜索
 ms.author: mecampos
 author: monaray97
 manager: mnirkhe
@@ -12,13 +12,13 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: 管理 Microsoft Graph 连接器以用于 Microsoft 搜索。
-ms.openlocfilehash: 685b501f3afe25d75c13a1fe6cc2c1b5db8a3511
-ms.sourcegitcommit: e5d695c40b68c2f1fa082fa9de20b9aa6d5b8050
+description: 管理 Microsoft Graph Connectors for Microsoft 搜索。
+ms.openlocfilehash: e8cf01cb3af3dea96ba98ab65e12d54a027ab77fa92e00c354331ac887578b0f
+ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52325165"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54532901"
 ---
 <!-- markdownlint-disable no-inline-html -->
 
@@ -28,11 +28,11 @@ ms.locfileid: "52325165"
 
 ## <a name="connection-operations"></a>连接操作
 
-导航到[](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/Connectors)[Microsoft 365](https://admin.microsoft.com)管理中心中的"连接器"选项卡。
+导航到"连接器["选项卡](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/Connectors)[中的Microsoft 365 管理中心。](https://admin.microsoft.com)
 
-对于每种连接器类型 [，Microsoft 365](https://admin.microsoft.com) 管理中心支持下表中显示的操作：
+对于每个连接器类型，Microsoft 365 管理中心支持[](https://admin.microsoft.com)下表中所示的操作：
 
-Operation | Microsoft 的图表连接器 | 合作伙伴或图形连接器
+操作 | Microsoft 的图表连接器 | 合作伙伴或Graph连接器
 --- | --- | ---
 添加连接 | ：heavy_check_mark： ([请参阅安装程序概述](configure-connector.md))  | ：x： (请参阅你的合作伙伴或自定义的连接器管理员 UX) 
 删除连接 | :heavy_check_mark: | :heavy_check_mark:
@@ -41,7 +41,7 @@ Operation | Microsoft 的图表连接器 | 合作伙伴或图形连接器
 
 ## <a name="monitor-your-connection-state"></a>监视连接状态
 
-创建连接后，已处理项目的数量会显示在 **"Microsoft** 搜索"页上的"连接器"选项卡上。 初始完全爬网成功完成后，将显示定期增量爬网的进度。 此页面提供有关连接器日常操作的信息以及日志和错误历史记录的概述。
+创建连接后，已处理项目的数量会显示在"连接器"选项卡上的"Microsoft 搜索 **页上。** 初始完全爬网成功完成后，将显示定期增量爬网的进度。 此页面提供有关连接器日常操作的信息以及日志和错误历史记录的概述。
 
 对于每个连接，"状态 **"** 列中会显示五种状态：
 
@@ -62,8 +62,8 @@ Operation | Microsoft 的图表连接器 | 合作伙伴或图形连接器
 ![索引配额使用率栏](media/quota_utilization.png)
  
 >[!NOTE]
->在预览期间，每个尝试 Graph 连接器的组织都获得一个免费的固定配额，在所有连接中最多包含 200 万个项目。 随着 Graph 连接器正式发布，对于预览版中一直使用 Graph 连接器的组织，免费配额将于 2021 年 4 月 1 日到期。
->标记为"预览"的 Microsoft 构建[](./connectors-overview.md)的 Graph 连接器不会包含在组织的已收费总索引配额中。 但是，它算作可以为组织配置的最多 10 个连接数，以及组织可以跨连接编制索引的最大 700 万个项目;每个连接限制为 700，000 个项目。 
+>在预览期间，向每个尝试Graph连接器的组织提供了一个免费的固定配额，该配额在所有连接中最多包含 200 万个项目。 随着Graph正式发布，对于在预览版中一直使用 Graph 连接器的组织，免费配额将于 2021 年 4 月 1 日到期。
+>Microsoft 构建Graph标记为"[预览](./connectors-overview.md)"的连接器不会包含在组织的已收费总索引配额中。 但是，它算作可以为组织配置的最多 10 个连接数，以及组织可以跨连接编制索引的最大 700 万个项目;每个连接限制为 700，000 个项目。 
 
 配额利用率栏将基于组织的配额消耗指示各种状态：
 

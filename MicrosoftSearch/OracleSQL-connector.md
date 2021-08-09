@@ -1,5 +1,5 @@
 ---
-title: 用于 Microsoft 搜索的 Oracle SQL Graph 连接器
+title: Oracle SQL Graph连接器Microsoft 搜索
 ms.author: mecampos
 author: mecampos
 manager: umas
@@ -13,32 +13,32 @@ search.appverid:
 - MET150
 - MOE150
 ROBOTS: NoIndex
-description: 为 Microsoft 搜索SQL Oracle SQL Graph 连接器。
-ms.openlocfilehash: 7ad3d03c73ce051c43f3b3ea094130a837d3177f
-ms.sourcegitcommit: 5df252e6d0bd67bb1b4c59418aceca8369f5fe42
+description: 为 Microsoft 搜索 设置 Oracle SQL Graph 连接器。
+ms.openlocfilehash: 5c45998796a606c61f1fa4a63693fe7a32bb8da7a5267bd1456452ed4872dc84
+ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51031419"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54533431"
 ---
 <!---Previous ms.author:vivg --->
 
-# <a name="oracle-sql-graph-connector"></a>Oracle SQL Graph 连接器
+# <a name="oracle-sql-graph-connector"></a>Oracle SQL Graph连接器
 
-Oracle SQL Graph 连接器允许组织发现本地 Oracle 数据库中的数据并编制索引。 连接器将指定内容索引到 Microsoft 搜索中。 若要使索引与源数据保持最新，它支持定期完全爬网和增量爬网。 使用 Oracle SQL连接器，还可以限制某些用户对搜索结果的访问。
+Oracle SQL Graph 连接器允许组织发现本地 Oracle 数据库中的数据并编制索引。 连接器将指定内容索引到Microsoft 搜索。 若要使索引与源数据保持最新，它支持定期完全爬网和增量爬网。 使用 Oracle SQL 连接器，还可以限制某些用户对搜索结果的访问。
 
 > [!NOTE]
-> 阅读 [**适用于 Graph 连接器的**](configure-connector.md) 安装程序一文，了解 Graph 连接器的常规设置说明。
+> 阅读 [**Graph 连接器**](configure-connector.md)的安装程序一文，了解 Graph 连接器的一般设置说明。
 
-本文适用于配置、运行和监视 Oracle SQL连接器的任何人。 它补充了常规安装过程，并显示了仅适用于 Oracle SQL Graph 连接器的说明。 本文还包括有关疑[难解答和](#troubleshooting)[限制的信息](#limitations)。
+本文适用于配置、运行和监视 Oracle SQL Graph连接器。 它补充了常规安装过程，并显示了仅适用于 Oracle SQL Graph连接器的说明。 本文还包括有关疑[难解答和](#troubleshooting)[限制的信息](#limitations)。
 
 ## <a name="before-you-get-started"></a>在开始使用之前
 
 ### <a name="install-the-graph-connector-agent"></a>安装 Graph 连接器代理
 
-若要访问本地第三方数据，必须安装和配置 Graph 连接器代理。 有关详细信息 [，](on-prem-agent.md) 请参阅安装 Graph 连接器代理。  
+若要访问本地第三方数据，必须安装和配置 Graph 连接器代理。 有关详细信息[，请参阅](graph-connector-agent.md)Graph连接器代理。  
 
-## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>步骤 1：在 Microsoft 365 管理中心添加 Graph 连接器
+## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>步骤 1：在Graph中添加一个Microsoft 365 管理中心
 
 按照常规 [设置说明操作](./configure-connector.md)。
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
@@ -52,12 +52,12 @@ Oracle SQL Graph 连接器允许组织发现本地 Oracle 数据库中的数据�
 
 若要将 Oracle SQL连接器连接到数据源，必须配置要数据库服务器的连接器和本地 Graph 连接器代理。 然后，您可以使用所需的身份验证方法连接到数据库。
 
-对于 Oracle SQL 连接器，您需要指定主机名、端口和服务 (数据库) 名称以及首选的身份验证方法、用户名和密码。
+对于 Oracle SQL连接器，需要指定主机名、端口和服务 (数据库) 名称以及首选的身份验证方法、用户名和密码。
 
 > [!NOTE]
-> 您的数据库必须运行 Oracle 数据库版本 11g 或更高版本，连接器才能连接。 连接器支持在 Windows、Linux 和 Azure VM 平台上托管的 Oracle 数据库。
+> 您的数据库必须运行 Oracle 数据库版本 11g 或更高版本，连接器才能连接。 连接器支持托管在 Windows、Linux 和 Azure VM 平台上的 Oracle 数据库。
 
-若要搜索数据库内容，必须在配置连接器SQL指定查询。 这些SQL查询需要命名要索引的所有数据库列 (即源属性) ，包括获取所有列需要执行的任何 SQL 联接。 若要限制对搜索结果的访问，您必须在配置连接器时 (在) 查询SQL访问控制列表和 ACL。
+若要搜索数据库内容，必须在配置连接器SQL指定查询。 这些SQL查询需要命名要索引的所有数据库列 (即源属性) ，包括获取所有列需要执行的任何 SQL 联接。 若要限制对搜索结果的访问，必须在配置连接器时 (在) 查询SQL访问控制列表和 ACL。
 
 ## <a name="step-3a-full-crawl-required"></a>步骤 3a：必需 (完全) 
 
@@ -87,7 +87,7 @@ Oracle SQL Graph 连接器允许组织发现本地 Oracle 数据库中的数据�
 
 ### <a name="supported-data-types"></a>支持的数据类型
 
-下表汇总了 Oracle 连接器支持的SQL类型。 该表还汇总了受支持的数据类型索引索引SQL 数据类型。 若要了解有关支持索引的 Microsoft Graph 连接器数据类型的信息，请参阅有关属性资源 [类型的文档](/graph/api/resources/property?preserve-view=true&view=graph-rest-beta#properties)。
+下表汇总了 Oracle 连接器支持的数据类型SQL类型。 该表还汇总了数据类型索引索引SQL 数据类型。 若要了解有关 Microsoft 连接器Graph索引支持的数据类型的信息，请参阅有关属性[资源类型的文档](/graph/api/resources/property?preserve-view=true&view=graph-rest-beta#properties)。
 
 | 类别 | 源数据类型 | 索引数据类型 |
 | ------------ | ------------ | ------------ |
@@ -161,7 +161,7 @@ Oracle SQL Graph 连接器允许组织发现本地 Oracle 数据库中的数据�
 
 Oracle SQL 连接器支持完全爬网和增量爬网的刷新计划。 我们建议您同时设置这两者。
 
-完全爬网计划将查找以前同步到 Microsoft 搜索索引的已删除行和从同步筛选器移出的任何行。 首次连接到数据库时，将运行完全爬网以同步从完全爬网查询检索到的所有行。 若要同步新行并进行更新，您需要计划增量爬网。
+完全爬网计划将查找以前同步到 Microsoft 搜索 索引的已删除行以及从同步筛选器中移出的任何行。 首次连接到数据库时，将运行完全爬网以同步从完全爬网查询检索到的所有行。 若要同步新行并进行更新，您需要计划增量爬网。
 
 ## <a name="step-8-review-connection"></a>步骤 8：查看连接
 

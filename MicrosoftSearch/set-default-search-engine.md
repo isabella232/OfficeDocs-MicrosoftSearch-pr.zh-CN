@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: ee40010e-5d7f-4ba8-a3f8-d240dab3af6d
 description: 了解如何使用 Microsoft 搜索将必应设置为公司的默认搜索引擎。
-ms.openlocfilehash: 346bf3bf2da10178a8bd19390920db2d9de2629e
-ms.sourcegitcommit: 5df252e6d0bd67bb1b4c59418aceca8369f5fe42
+ms.openlocfilehash: 7ad9ff2a0fde5ad5d84a7a51785767fd2e5d21df6654a76b09e9796917a92a0f
+ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51031752"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54534177"
 ---
 # <a name="make-bing-the-default-search-engine"></a>将必应设置为默认搜索引擎
   
@@ -42,11 +42,11 @@ ms.locfileid: "51031752"
 4. 通过将生成的 GPO 链接到适当的域来强制执行此系列设置。
 
 
-## <a name="google-chrome-on-windows-10-version-1507-or-later"></a>Windows 10 版本 1507 或更高版本上的 Google Chrome
+## <a name="google-chrome-on-windows-10-version-1507-or-later"></a>Windows 10版本 1507 或更高版本上的 Google Chrome
 
 设置此策略后，用户无法更改默认搜索引擎。
   
-Chrome 附带自己的组策略设置集，可以从 [Google Chrome](https://support.google.com/chrome/a/answer/187202)Enterprise 帮助以 ADMX 文件的形式下载。
+Chrome 附带自己的组策略设置集，可以从 Google Chrome 或帮助以 ADMX 文件的形式[Enterprise下载](https://support.google.com/chrome/a/answer/187202)。
   
 将模板文件复制到域控制器上 ADMX 文件的中央存储。 有关详细信息，请参阅使用[ADMX Domain-Based编辑 GPO。](/previous-versions/windows/it-pro/windows-vista/cc748955%28v%3dws.10%29) 控制器上的中央存储是具有以下命名约定的文件夹 **：%systemroot%\sysvol<domain \\ \> \policies\PolicyDefinitions**
   
