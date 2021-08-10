@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 ROBOTS: NoIndex
 description: 为Graph设置文件共享Microsoft 搜索
-ms.openlocfilehash: af4c3996fdc8ac753404f4b4519175a9054fa18bce3862b0c5841c7bd5369cdd
-ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
+ms.openlocfilehash: 387a04c435045d620f8e35aa9fbdd37e23da32a61489d0102dc7bda09920e980
+ms.sourcegitcommit: 07d04a81d30b04d1f7e3c556bd711dc7efd710d9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54533018"
+ms.lasthandoff: 08/10/2021
+ms.locfileid: "57823009"
 ---
 <!---Previous ms.author: rusamai --->
 
@@ -64,7 +64,27 @@ ms.locfileid: "54533018"
 
 当连接器尝试对文件进行爬网时，将更新其元数据中的"上次访问时间"字段。 如果您依赖该字段作为任何存档和备份解决方案，并且不希望在连接器访问它时对其进行更新，您可以在"高级设置"页 **中配置** 此选项。
 
-## <a name="step-4-manage-search-permissions"></a>步骤 4：管理搜索权限
+## <a name="step-4-limits-for-file-indexing"></a>步骤 4：文件索引的限制
+
+配置文件共享连接时，管理员能够限制文件和文件夹编制索引。 有多种方法可以执行此操作：
+
+#### <a name="based-on-file-types"></a>基于文件类型
+
+仅对以下格式的文本内容编制索引：DOC、 DOCM、DOCX、DOT、DOTX、EML、HTML、MHT、MHTML、MSG、NWS、OBD、OBT、ODP、ODS、ODT、ONE、PDF、POT、PPS、PPT、PPTM、PPTX、TXT、XLB、XLC、XLSB、XLS、XLSX、XLT、XLXM、XML、XPS。 对于不属于此格式的多媒体文件和文件，只对元数据编制索引。
+
+#### <a name="based-on-last-modified-date-or-number-of-days-since-last-modification"></a>基于上次修改日期或自上次修改以来的天数
+
+#### <a name="full-network-path-of-filefolder-or-regular-expression-to-limit-indexing"></a>用于限制索引的文件/文件夹或正则表达式的完整网络路径 
+
+在网络路径中，使用转义字符 () 字符（如 ） \\ 之前 \\ 。 示例：对于路径 \\ \\ CONTOSO \\ FILE \\ SHAREDFOLDER，正确的输入方式为 \\ \\ \\ \\ CONTOSO \\ \\ FILE \\ \\ SHAREDFOLDER
+
+可以在此处找到用于编写正则表达式 [的规则](https://docs.microsoft.com/dotnet/standard/base-types/regular-expression-language-quick-reference)
+
+管理员还可以为限制规则提供例外。 例外规则的优先级将取代限制规则。 同样，可以通过为要包括在索引中的项目提供文件夹/文件路径来定义异常。
+
+![限制和例外](media/file-connector/ExclusionRule.png)
+
+## <a name="step-5-manage-search-permissions"></a>步骤 5：管理搜索权限
 
 您可以通过在"管理搜索权限"页中选择所需选项，来限制基于"共享访问控制列表"或"新建技术文件系统 (NTFS) 访问控制列表"搜索任何 **文件的权限。** 这些访问控制列表中提供的用户帐户和组必须由 Active Directory (AD) 。 如果要将任何其他系统用于用户帐户管理，可以选择"每个人"选项，这将允许用户搜索所有文件，而没有任何访问限制。 但是，当用户尝试打开文件时，将应用在源上设置的访问控制。
 
@@ -74,22 +94,22 @@ ms.locfileid: "54533018"
 
 ![Advanced_sharing](media/file-connector/file-advanced-sharing.png)
 
-## <a name="step-5-assign-property-labels"></a>步骤 5：分配属性标签
+## <a name="step-6-assign-property-labels"></a>步骤 6：分配属性标签
 
 按照常规 [设置说明操作](./configure-connector.md)。
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 
-## <a name="step-6-manage-schema"></a>步骤 6：管理架构
+## <a name="step-7-manage-schema"></a>步骤 7：管理架构
 
 按照常规 [设置说明操作](./configure-connector.md)。
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 
-## <a name="step-7-choose-refresh-settings"></a>步骤 7：选择刷新设置
+## <a name="step-8-choose-refresh-settings"></a>步骤 8：选择刷新设置
 
 按照常规 [设置说明操作](./configure-connector.md)。
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
 
-## <a name="step-8-review-connection"></a>步骤 8：查看连接
+## <a name="step-9-review-connection"></a>步骤 9：查看连接
 
 按照常规 [设置说明操作](./configure-connector.md)。
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup 
