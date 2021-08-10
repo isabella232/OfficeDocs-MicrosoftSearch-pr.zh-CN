@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft Graph 连接器概述Microsoft 搜索
-ms.openlocfilehash: a7f2fe8b5278df9368c3036895450a74ad7eae8a644aedc147fb16dd0efdd46e
-ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
+ms.openlocfilehash: 42bcdfbd8d2b00a54a1fa73c41331bb36cc90e3c903ad52cb7b37888a4fb317e
+ms.sourcegitcommit: cd773596e613bf9a8d64990807c1078d8953cda1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54533179"
+ms.lasthandoff: 08/08/2021
+ms.locfileid: "57801953"
 ---
 <!---Previous ms.author: monaray --->
 
@@ -103,7 +103,7 @@ Microsoft 提供了 9 个连接器，我们的生态系统合作伙伴已创建 
 * [Azure DevOps连接器](azure-devops-connector.md)
 * [Salesforce 连接器](salesforce-connector.md)
 * 具有使用源 ACL 的搜索权限的[ServiceNow](servicenow-connector.md)连接器
-* [管理结果群集](result-cluster.md)
+* [管理自定义筛选器](custom-filters.md)
 * [垂直连接中的多个连接](customize-search-page.md#multiple-connections-in-a-vertical)
 
 ## <a name="how-do-i-customize-and-configure-search-results"></a>如何自定义和配置搜索结果？
