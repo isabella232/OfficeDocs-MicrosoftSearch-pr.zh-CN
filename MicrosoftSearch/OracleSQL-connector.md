@@ -13,22 +13,22 @@ search.appverid:
 - MET150
 - MOE150
 ROBOTS: NoIndex
-description: 为 Microsoft 搜索 设置 Oracle SQL Graph 连接器。
-ms.openlocfilehash: 5c45998796a606c61f1fa4a63693fe7a32bb8da7a5267bd1456452ed4872dc84
-ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
+description: 为 Microsoft 搜索 设置 SQL Graph Oracle Microsoft 搜索。
+ms.openlocfilehash: 21585d1d60e5dcd73a45a3ccda151fbb144e85eb
+ms.sourcegitcommit: 5151bcd8fd929ef37239b7c229e2fa33b1e0e0b7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54533431"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58236025"
 ---
 <!---Previous ms.author:vivg --->
 
 # <a name="oracle-sql-graph-connector"></a>Oracle SQL Graph连接器
 
-Oracle SQL Graph 连接器允许组织发现本地 Oracle 数据库中的数据并编制索引。 连接器将指定内容索引到Microsoft 搜索。 若要使索引与源数据保持最新，它支持定期完全爬网和增量爬网。 使用 Oracle SQL 连接器，还可以限制某些用户对搜索结果的访问。
+Oracle SQL Graph 连接器允许组织发现本地 Oracle 数据库中的数据并编制索引。 连接器将指定内容索引到Microsoft 搜索。 若要使索引与源数据保持最新，它支持定期完全爬网和增量爬网。 使用 Oracle SQL连接器，还可以限制某些用户对搜索结果的访问。
 
 > [!NOTE]
-> 阅读 [**Graph 连接器**](configure-connector.md)的安装程序一文，了解 Graph 连接器的一般设置说明。
+> 阅读 [**Setup for your Graph connector**](configure-connector.md)一文，了解 Graph 连接器的一般设置说明。
 
 本文适用于配置、运行和监视 Oracle SQL Graph连接器。 它补充了常规安装过程，并显示了仅适用于 Oracle SQL Graph连接器的说明。 本文还包括有关疑[难解答和](#troubleshooting)[限制的信息](#limitations)。
 
@@ -38,7 +38,7 @@ Oracle SQL Graph 连接器允许组织发现本地 Oracle 数据库中的数据�
 
 若要访问本地第三方数据，必须安装和配置 Graph 连接器代理。 有关详细信息[，请参阅](graph-connector-agent.md)Graph连接器代理。  
 
-## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>步骤 1：在Graph中添加一个Microsoft 365 管理中心
+## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>步骤 1：在Graph中添加Microsoft 365 管理中心
 
 按照常规 [设置说明操作](./configure-connector.md)。
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
@@ -61,7 +61,7 @@ Oracle SQL Graph 连接器允许组织发现本地 Oracle 数据库中的数据�
 
 ## <a name="step-3a-full-crawl-required"></a>步骤 3a：必需 (完全) 
 
-在此步骤中，配置SQL数据库完全爬网的查询。 完全爬网将选择要选择选项"查询、搜索"或"检索"的所有列或 **属性**。  还可以指定 ACL 列以限制对特定用户或组的搜索结果的访问。
+在此步骤中，配置SQL数据库完全爬网的查询。 完全爬网将选择要选择选项"查询、搜索"或"检索"的所有列或 **属性**。  还可以指定 ACL 列以将搜索结果的访问限制到特定用户或组。
 
 > [!Tip]
 > 若要获取所需的所有列，可以联接多个表。
@@ -87,11 +87,11 @@ Oracle SQL Graph 连接器允许组织发现本地 Oracle 数据库中的数据�
 
 ### <a name="supported-data-types"></a>支持的数据类型
 
-下表汇总了 Oracle 连接器支持的数据类型SQL类型。 该表还汇总了数据类型索引索引SQL 数据类型。 若要了解有关 Microsoft 连接器Graph索引支持的数据类型的信息，请参阅有关属性[资源类型的文档](/graph/api/resources/property?preserve-view=true&view=graph-rest-beta#properties)。
+下表汇总了 Oracle 连接器支持的数据类型SQL类型。 该表还汇总了受支持数据类型索引索引SQL 数据类型。 若要了解有关 Microsoft 连接器Graph索引支持的数据类型的信息，请参阅有关属性[资源类型的文档](/graph/api/resources/property?preserve-view=true&view=graph-rest-beta#properties)。
 
 | 类别 | 源数据类型 | 索引数据类型 |
 | ------------ | ------------ | ------------ |
-| 数字数据类型 | NUMBER (p，0)  | int64 (p <= 18)  <br> p (18 >的 double)  |
+| 数字数据类型 | NUMBER (p，0)  | int64 (p <= 18)  <br> p (18 >的双精度)  |
 | 浮点数数据类型 | NUMBER (p，s)  <br> FLOAT (p)  | double |
 | 日期数据类型 | DATE <br> TIMESTAMP <br> TIMESTAMP (n)  | datetime |
 | 字符数据类型 | CHAR (n)  <br> VARCHAR <br> VARCHAR2 <br> LONG <br> 一些 <br> NCLOB | string |
@@ -102,7 +102,7 @@ Oracle SQL Graph 连接器允许组织发现本地 Oracle 数据库中的数据�
 
 ### <a name="watermark-required"></a>需要 (水印) 
 
-为了防止数据库过载，连接器使用完全爬网水印列批处理和恢复完全爬网查询。 通过使用水印列的值，将提取每个后续批次，并且从最后一个检查点恢复查询。 实质上，这是一种用于控制完全爬网的数据刷新的机制。
+为了防止数据库过载，连接器批处理和恢复具有完全爬网水印列的完全爬网查询。 通过使用水印列的值，将提取每个后续批次，并且从最后一个检查点恢复查询。 实质上，这是一种用于控制完全爬网的数据刷新的机制。
 
 为水印创建查询代码段，如以下示例所示：
 
@@ -117,15 +117,15 @@ Oracle SQL Graph 连接器允许组织发现本地 Oracle 数据库中的数据�
 
 ### <a name="skipping-soft-deleted-rows-optional"></a>跳过软删除的行 (可选) 
 
-若要排除对数据库中的软删除行编制索引，请指定软删除列名称和值，以指示该行已被删除。
+若要排除对数据库中的软删除行编制索引，请指定软删除列的名称和值，以指示该行已被删除。
 
 ![软删除设置："软删除列"和"指示已删除行的软删除列的值"](media/MSSQL-softdelete.png)
 
 ### <a name="full-crawl-manage-search-permissions"></a>完全爬网：管理搜索权限
 
-选择 **"管理权限** "以选择各种访问控制 (ACL) 指定访问控制机制的列。 Select the column name you specified in the full crawl SQL query.
+选择 **"管理权限** "以选择各种访问控制 (ACL) 指定访问控制机制的列。 选择在完全爬网或查询中指定的SQL名称。
 
-每个 ACL 列应都是一个多值列。 这些多个 ID 值可以使用分隔符分隔，如分号 (;) 、逗号 (、) 等。 需要在值分隔符字段中指定 **此分隔** 符。
+每个 ACL 列应都是一个多值列。 可以使用分隔符分隔这些多个 ID 值，如分号 (;) 、逗号 (、) 等。 需要在值分隔符字段中指定 **此分隔** 符。
 
 支持将以下 ID 类型用作 ACL：
 
@@ -161,7 +161,7 @@ Oracle SQL Graph 连接器允许组织发现本地 Oracle 数据库中的数据�
 
 Oracle SQL 连接器支持完全爬网和增量爬网的刷新计划。 我们建议您同时设置这两者。
 
-完全爬网计划将查找以前同步到 Microsoft 搜索 索引的已删除行以及从同步筛选器中移出的任何行。 首次连接到数据库时，将运行完全爬网以同步从完全爬网查询检索到的所有行。 若要同步新行并进行更新，您需要计划增量爬网。
+完全爬网计划将查找以前同步到 Microsoft 搜索 索引的已删除行以及从同步筛选器中移动的任何行。 首次连接到数据库时，将运行完全爬网以同步从完全爬网查询检索到的所有行。 若要同步新行并进行更新，您需要计划增量爬网。
 
 ## <a name="step-8-review-connection"></a>步骤 8：查看连接
 
@@ -180,7 +180,7 @@ To learn more about how to create your verticals and MRTs, see [Search results p
 
 | 配置步骤 | 错误消息 | 可能 (原因)  |
 | ------------ | ------------ | ------------ |
-| 数据库设置 | 来自 数据库服务器 的错误：连接请求已过 | 主机名无效 <br> 主机不可到达 |
+| 数据库设置 | 错误数据库服务器：连接请求已过 | 主机名无效 <br> 主机不可到达 |
 | 数据库设置 | 错误来自数据库服务器：ORA-12541：TNS：无侦听器 | 无效的端口 |
 | 数据库设置 | 来自 数据库服务器 的错误：ORA-12514：TNS：侦听器当前不知道连接器描述符中请求的服务 | 无效的服务 (数据库) 名称 |
 | 数据库设置 | 错误数据库服务器：用户''登录 `user` 失败。 | 用户名或密码无效 |

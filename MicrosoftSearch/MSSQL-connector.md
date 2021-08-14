@@ -13,24 +13,24 @@ search.appverid:
 - MET150
 - MOE150
 description: 设置 Azure SQL 和 Microsoft SQL Graph 连接器Microsoft 搜索。
-ms.openlocfilehash: ed9284de968921f40003e011348e3e6d4321b59d86207b6c7d054765c6837a1e
-ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
+ms.openlocfilehash: 9e8a9784c139873b4584f9be0a42e51f101bd7d6
+ms.sourcegitcommit: 5151bcd8fd929ef37239b7c229e2fa33b1e0e0b7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54533506"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58236035"
 ---
 <!---Previous ms.author: vivg --->
 
 # <a name="azure-sql-and-microsoft-sql-server-graph-connectors"></a>Azure SQL 和 Microsoft SQL Server Graph 连接器
 
-借助 Microsoft SQL Server 或 Azure SQL Graph 连接器，组织可以发现本地 SQL Server 数据库或托管在云中的 Azure SQL 实例中的数据库的数据，并编制索引。
+借助 Microsoft SQL Server 或 Azure SQL Graph 连接器，组织可以发现本地 SQL Server 数据库或云中托管在 Azure SQL 实例中的数据库的数据并编制索引。
 该Graph连接器将指定内容索引到Microsoft 搜索。 若要使索引与源数据保持最新，它支持定期完全爬网和增量爬网。 使用这些SQL连接器，还可以限制某些用户对搜索结果的访问。
 
 > [!NOTE]
 > 阅读 [**Setup your Graph connector**](configure-connector.md)一文，了解 Graph 连接器的一般设置说明。
 
-本文适用于配置、运行和监视 Azure SQL 和 Microsoft SQL 服务器Graph连接器。 它补充了常规安装过程，并显示了仅适用于 Azure SQL 和 Microsoft SQL 服务器Graph说明。 本文还包括有关 Microsoft [](#limitations) SQL 和 Azure SQL连接器的限制的信息。
+本文适用于配置、运行和监视 Azure SQL 和 Microsoft SQL 服务器Graph连接器。 它补充了常规设置过程，并显示了仅适用于 Azure SQL 和 Microsoft SQL 服务器Graph说明。 本文还包括有关 Microsoft [](#limitations) SQL 和 Azure SQL连接器的限制的信息。
 
 ## <a name="before-you-get-started"></a>在开始使用之前
 
@@ -41,7 +41,7 @@ ms.locfileid: "54533506"
 >[!NOTE]
 >如果在配置 Microsoft SQL Server Graph 连接器时使用 Windows 身份验证，则尝试登录的用户需要具有安装 Graph 连接器代理的计算机的交互式登录权限。 请参阅有关 [登录策略管理的文档](/windows/security/threat-protection/security-policy-settings/allow-log-on-locally#policy-management) 以检查登录权限。
 
-## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>步骤 1：在Graph中添加一个Microsoft 365 管理中心
+## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>步骤 1：在Graph中添加Microsoft 365 管理中心
 
 按照常规 [设置说明操作](./configure-connector.md)。
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup 
@@ -59,9 +59,9 @@ instructions.-->
 
 对于 Azure SQL 连接器，必须在 Azure Active Directory 注册应用，Microsoft 搜索访问数据进行索引。 若要了解有关注册应用的信息，请参阅 Microsoft Graph注册应用[的文档](/graph/auth-register-app-v2)。
 
-完成应用注册并记下应用名称、 (客户端) ID 和租户 ID 后，需要生成一 [个新的客户端密码](/azure/healthcare-apis/register-confidential-azure-ad-client-app#application-secret)。 客户端密码将只显示一次。 请记住，&安全存储客户端密码。 在客户端 ID 和客户端密码中配置新连接时Microsoft 搜索。
+完成应用注册并记下应用名称、应用程序 (客户端) ID 和租户 ID 后，需要生成一 [个新的客户端密码](/azure/healthcare-apis/register-confidential-azure-ad-client-app#application-secret)。 客户端密码将只显示一次。 请记住，&安全存储客户端密码。 在客户端 ID 和客户端密码中配置新连接时，请使用Microsoft 搜索。
 
-若要将注册的应用添加到Azure SQL 数据库，你需要：
+若要将注册的应用添加到你的Azure SQL 数据库，你需要：
 
 - 登录到 Azure SQL DB
 - 打开新的查询窗口
@@ -92,7 +92,7 @@ instructions.-->
 
 ## <a name="step-3a-full-crawl-required"></a>步骤 3a：必需 (完全) 
 
-在此步骤中，配置SQL数据库完全爬网的查询。 完全爬网将选择要选择选项"查询、搜索"或"检索"的所有列或 **属性**。  还可以指定 ACL 列以限制对特定用户或组的搜索结果的访问。
+在此步骤中，配置SQL数据库完全爬网的查询。 完全爬网将选择要选择选项"查询、搜索"或"检索"的所有列或 **属性**。  还可以指定 ACL 列以将搜索结果的访问限制到特定用户或组。
 
 > [!Tip]
 > 若要获取所需的所有列，可以联接多个表。
@@ -101,7 +101,7 @@ instructions.-->
 
 ### <a name="select-data-columns-required-and-acl-columns-optional"></a>Select data columns (Required) and ACL columns (Optional) 
 
-该示例演示保留搜索数据的五个数据列的选择：OrderId、OrderTitle、OrderDesc、CreatedDateTime 和 IsDeleted。 若要设置每行数据的查看权限，可以选择以下 ACL 列：AllowedUsers、AllowedGroups、DeniedUsers 和 DeniedGroups。 所有这些数据列还具有查询、**搜索或** 检索 **的选项**。 
+该示例演示保存搜索数据的五个数据列的选择：OrderId、OrderTitle、OrderDesc、CreatedDateTime 和 IsDeleted。 若要设置每行数据的查看权限，可以选择以下 ACL 列：AllowedUsers、AllowedGroups、DeniedUsers 和 DeniedGroups。 所有这些数据列还具有查询、**搜索或** 检索 **的选项**。 
 
 选择数据列，如此示例查询中所示： `SELECT OrderId, OrderTitle, OrderDesc, AllowedUsers, AllowedGroups, DeniedUsers, DeniedGroups, CreatedDateTime, IsDeleted`
 
@@ -118,7 +118,7 @@ instructions.-->
 
 ### <a name="supported-data-types"></a>支持的数据类型
 
-下表总结了 MS SQL 和 Azure SQL 连接器中支持SQL数据类型。 该表还汇总了数据类型索引索引SQL 数据类型。 若要了解有关 Microsoft 连接器Graph索引支持的数据类型的信息，请参阅有关属性[资源类型的文档](/graph/api/resources/property?preserve-view=true&view=graph-rest-beta#properties)。
+下表总结了 MS SQL 连接器和 Azure SQL 支持SQL数据类型。 该表还汇总了数据类型索引索引SQL 数据类型。 若要了解有关 Microsoft 连接器Graph索引支持的数据类型的信息，请参阅有关属性[资源类型的文档](/graph/api/resources/property?preserve-view=true&view=graph-rest-beta#properties)。
 
 | 类别 | 源数据类型 | 索引数据类型 |
 | ------------ | ------------ | ------------ |
@@ -134,7 +134,7 @@ instructions.-->
 
 ### <a name="watermark-required"></a>需要 (水印) 
 
-为了防止数据库过载，连接器使用完全爬网水印列批处理和恢复完全爬网查询。 通过使用水印列的值，将提取每个后续批次，并且从最后一个检查点恢复查询。 实质上，此机制控制完全爬网的数据刷新。
+为了防止数据库过载，连接器批处理和恢复具有完全爬网水印列的完全爬网查询。 通过使用水印列的值，将提取每个后续批次，并且从最后一个检查点恢复查询。 实质上，此机制控制完全爬网的数据刷新。
 
 为水印创建查询代码段，如以下示例所示：
 
@@ -149,15 +149,15 @@ instructions.-->
 
 ### <a name="skipping-soft-deleted-rows-optional"></a>跳过软删除的行 (可选) 
 
-若要排除对数据库中的软删除行编制索引，请指定软删除列名称和值，以指示该行已被删除。
+若要排除对数据库中的软删除行编制索引，请指定软删除列的名称和值，以指示该行已被删除。
 
 ![软删除设置："软删除列"和"指示已删除行的软删除列的值"](media/MSSQL-softdelete.png)
 
 ### <a name="full-crawl-manage-search-permissions"></a>完全爬网：管理搜索权限
 
-选择 **"管理权限** "以选择各种访问控制 (ACL) 指定访问控制机制的列。 Select the column name you specified in the full crawl SQL query.
+选择 **"管理权限** "以选择各种访问控制 (ACL) 指定访问控制机制的 ACL 列。 选择在完全爬网或查询中指定的SQL名称。
 
-每个 ACL 列应都是一个多值列。 这些多个 ID 值可以使用分隔符分隔，如分号 (;) 、逗号 (、) 等。 需要在值分隔符字段中指定 **此分隔** 符。
+每个 ACL 列应都是一个多值列。 可以使用分隔符分隔这些多个 ID 值，如分号 (;) 、逗号 (、) 等。 需要在值分隔符字段中指定 **此分隔** 符。
 
 支持将以下 ID 类型用作 ACL：
 
@@ -224,5 +224,5 @@ To learn more about how to create your verticals and MRTs, see [Search results p
 
 - Microsoft SQL Server连接器：内部部署数据库必须运行 SQL Server 2008 或更高版本。
 - 托管 Azure Microsoft 365 数据库 (的 Azure SQL 订阅) 必须位于同一Azure Active Directory。
-- ACL 仅支持使用用户主体名称 (UPN) 、Azure Active Directory (Azure AD) 或 Active Directory 安全性。
+- ACL 仅支持通过使用用户主体名称 (UPN) 、Azure Active Directory (Azure AD) 或 Active Directory 安全性。
 - 不支持对数据库列内的丰富内容编制索引。 此类内容的示例包括作为数据库列内的链接存在的 HTML、JSON、XML、blob 和文档分析。

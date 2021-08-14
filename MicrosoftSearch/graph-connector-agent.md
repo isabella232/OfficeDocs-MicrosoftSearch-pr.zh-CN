@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 ROBOTS: NoIndex
 description: On-prem Agent
-ms.openlocfilehash: a17ad4637f7618a6f1109fb5de177c9a673a4fa6b791711e807107676749ccc5
-ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
+ms.openlocfilehash: 1fcd1b6848d950c9f7cefa87d086f6607ac5df4f
+ms.sourcegitcommit: 5151bcd8fd929ef37239b7c229e2fa33b1e0e0b7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54534219"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58235942"
 ---
 # <a name="microsoft-graph-connector-agent"></a>Microsoft Graph 连接器代理
 
@@ -96,7 +96,7 @@ ms.locfileid: "54534219"
 
 ##### <a name="step-1-get-a-certificate"></a>步骤 1：获取证书
 
-下面的脚本可用于生成自签名证书。 你的组织可能不允许自签名证书。 在这种情况下，请使用此信息了解要求，并根据组织策略获取证书。
+下面的脚本可用于生成自签名证书。 你的组织可能不允许自签名证书。 在这种情况下，使用此信息了解要求并根据组织策略获取证书。
 
 ```powershell
 $dnsName = "<TenantDomain like agent.onmicrosoft.com>" # Your DNS name
@@ -147,7 +147,7 @@ Export-PfxCertificate -Cert $certificatePath -FilePath ($filePath + '.pfx') -Pas
 ## <a name="troubleshooting"></a>疑难解答
 
 ### <a name="installation-failure"></a>安装失败
-如果安装失败，请运行以下方法检查安装日志：msiexec /i " <path to msi>\GcaInstaller.msi" /L*V " <destination path> \install.log"。 如果错误无法解决，请通过日志 MicrosoftGraphConnectorsFeedback@service.microsoft.com 支持。
+如果安装失败，请运行以下方法检查安装日志：msiexec /i " <path to msi>\GcaInstaller.msi" /L*V " <destination path> \install.log"。 如果错误不可解决，请通过日志 MicrosoftGraphConnectorsFeedback@service.microsoft.com 支持。
 
 ### <a name="registration-failure"></a>注册失败
 
@@ -159,4 +159,4 @@ Export-PfxCertificate -Cert $certificatePath -FilePath ($filePath + '.pfx') -Pas
 
 如果在创建连接时"测试连接"操作失败，出现错误"请检查用户名/密码和数据源路径"，即使提供的用户名和密码正确，请确保用户帐户对安装了 Graph 连接器代理的计算机具有交互式登录权限。 请参阅有关 [登录策略管理的文档](/windows/security/threat-protection/security-policy-settings/allow-log-on-locally#policy-management) 以检查登录权限。 还要确保数据源和代理计算机位于同一网络上。
 
-如果连接失败，出现错误"1011： Graph 连接器代理不可访问或脱机。"，请登录到安装了代理的计算机，如果代理应用程序尚未运行，请启动它。 如果连接继续失败，请验证在注册期间提供给代理的证书或客户端密码是否尚未过期且具有所需的权限。
+如果连接失败，出现错误"1011： Graph 连接器代理不可访问或脱机。"，请登录到安装了代理的计算机，如果代理应用程序尚未运行，则启动它。 如果连接继续失败，请验证在注册期间提供给代理的证书或客户端密码尚未过期，并且具有所需的权限。

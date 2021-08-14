@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 连接器详细信息和错误
-ms.openlocfilehash: b3fe584447191476d4100d5be9d5f23ca641d31a69d71f4e25698735190e78ed
-ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
+ms.openlocfilehash: f7ae7f66aa1ec00c3178bec91b15304459666d5e
+ms.sourcegitcommit: 5151bcd8fd929ef37239b7c229e2fa33b1e0e0b7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54533256"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58235950"
 ---
 <!-- markdownlint-disable no-inline-html -->
 
@@ -25,9 +25,9 @@ ms.locfileid: "54533256"
 
 若要访问和管理连接器，必须指定为租户的搜索管理员。 请与租户管理员联系，以预配搜索管理员角色。
 
-导航到"连接器["选项卡](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/Connectors)[中的Microsoft 365 管理中心。](https://admin.microsoft.com)
+导航到"连接器["选项卡](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/Connectors)中的"Microsoft 365 管理中心"。 [](https://admin.microsoft.com)
 
-单击"连接器"选项卡上的连接时，可以查看连接详细信息 [和错误](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/Connectors)。  
+在"连接器"选项卡上单击连接时，可以查看连接详细信息 [和错误](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/Connectors)。  
 
 ## <a name="view-your-last-crawl-info"></a>查看上次爬网信息
 
@@ -68,7 +68,7 @@ ms.locfileid: "54533256"
 1008 | 租户的总配额利用率已达到其限制。 | 请尝试删除连接以释放部分配额或调整引入筛选器以引入较少的数据。 如果这些无法解决问题，请与 Microsoft 支持部门联系。
 1009 | 连接的总配额使用率已达到其限制。 | 尝试调整引入筛选器以引入较少的数据。 如果此操作无法解决问题，请与 Microsoft 支持部门联系。
 1010 | 对非 Azure AD 组编制索引的总配额使用率已达到其 10 万的限制。 | 请尝试删除连接以释放部分配额或调整引入筛选器以引入较少的数据。 如果这些无法解决问题，请与 Microsoft 支持部门联系。
-1011 | 无法[Graph连接器代理](graph-connector-agent.md)或脱机。 | 
+1011 | 连接[Graph代理不可](graph-connector-agent.md)访问或脱机。 | 
 1012 | 由于身份验证模式不受支持，连接身份验证失败。 | 编辑连接以更新连接的身份验证设置。
 2001 | 索引被限制，因为队列中有大量更新。 根据队列，可能需要一些时间才能完成更新。 | 请等待，直到队列被清除。
 2002 | 索引编制失败，因为项目格式不受支持。 | 有关详细信息，请参阅连接器特定的文档。
@@ -76,7 +76,7 @@ ms.locfileid: "54533256"
 2004 | 索引编制失败，因为项目或文件大小不受支持。 | 有关详细信息，请参阅连接器特定的文档。
 2005 | 索引编制失败，因为 URI 太长。 | 有关详细信息，请参阅连接器特定的文档。
 2006 | 由于映射公式无效或没有具有此属性的 Azure AD 用户，用户映射失败。 | 请尝试使用不同的映射公式删除和重新创建连接。 
-2007 | 此项目不会显示在Microsoft 搜索，因为某些没有查看此项目的权限的用户或组无法编制索引。 | 
+2007 | 此项目不会显示在Microsoft 搜索，因为无法对无权查看此项目的一些用户或组编制索引。 | 
 2008 | 连接不能具有成员数超过 50，000 的非 Azure AD 组。 | 尝试从组中删除用户，或者尝试从组中删除包含该组的 ACLed 项，然后重新创建连接。
 2009 | 由于大量请求，非 Azure AD 组索引暂时暂停。 当系统处理完这些请求后，索引将恢复。 请稍后重新查看。 | 
 2010 | 由于 Microsoft 进行了更新，此连接不再有效。 请删除连接并创建一个新连接。 | 请删除连接并创建一个新连接。

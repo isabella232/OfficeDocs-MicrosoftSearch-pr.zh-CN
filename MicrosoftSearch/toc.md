@@ -17,7 +17,7 @@
 ### [连接器库](connectors-gallery.md)
 ### Microsoft 的设置连接器
 #### [设置概述](configure-connector.md)
-#### [设置图形连接器代理](on-prem-agent.md)
+#### [设置图形连接器代理](graph-connector-agent.md)
 #### [映射非 Azure AD 身份标识](map-non-aad.md)
 #### [映射 Azure AD 身份标识](map-aad.md)
 #### 连接器专用信息

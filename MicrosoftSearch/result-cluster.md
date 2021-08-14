@@ -1,8 +1,8 @@
 ---
 title: 连接器结果群集
-ms.author: manusi
-author: manusi
-manager: ruppala
+ms.author: masingh
+author: maheshsinghania
+manager: jeffkizn
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
@@ -12,18 +12,18 @@ search.appverid:
 - MET150
 - MOE150
 description: 连接器结果群集体验的详细信息
-ms.openlocfilehash: 912e27942e9ae3bfef874ae66227880af676b7a1a28449cc82ae8fc02f4446c0
-ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
+ms.openlocfilehash: c90cc98415be6a42d32b646894cb04305ecb6542
+ms.sourcegitcommit: 5151bcd8fd929ef37239b7c229e2fa33b1e0e0b7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54533974"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58235898"
 ---
 # <a name="graph-connectors-result-cluster"></a>Graph连接器结果群集
 
-## <a name="overview-of-the-graph-connectors-result-cluster-preview"></a>预览Graph连接器结果 (概述)   
+## <a name="overview-of-the-graph-connectors-result-cluster"></a>连接器Graph群集概述  
 
-使用 Graph 连接器结果群集，企业可以在默认视图中搜索来自第三方数据源的内容，即 SharePoint、Office.com和 必应 中的 Microsoft 搜索 中的"全部"选项卡。
+使用 Graph 连接器结果群集，企业可以在默认视图中搜索来自第三方数据源的内容，即 SharePoint、Office.com和 必应 中的 Microsoft 搜索 中的"所有"选项卡。
 
 结果群集可帮助用户在一个地方发现所有第三方内容。 结果群集中显示的结果根据垂直搜索配置分组在一起。
 
@@ -35,28 +35,27 @@ ms.locfileid: "54533974"
 
 结果群集的显示方式因所配置垂直搜索的数量和内容类型等因素而异。 通过交互或忽略结果群集，用户将隐式提供将随着时间调整其触发的提示。
 
-结果群集中显示的连接器项的搜索结果体验使用 [由你定义](./customize-search-page.md#create-your-own-result-type) 的结果类型。 如果未配置结果类型，则使用 [系统生成的](./customize-search-page.md#default-search-result-layout) 布局。 
+结果群集中显示的连接器项的搜索结果体验使用 [由你定义](./customize-search-page.md#create-your-own-result-type) 的结果类型。 如果未配置结果类型，则使用 [系统生成的](./customize-search-page.md#default-search-result-layout) 布局。
 
-我们建议使用"title"属性作为搜索结果标题，使用"content"属性作为搜索说明。 这将通过准确触发结果群集和群集中最相关的结果为用户提供最佳体验。 
+我们建议使用"title"属性作为搜索结果标题，使用"content"属性作为搜索说明。 这将通过准确触发结果群集和群集中最相关的结果为用户提供最佳体验。
 
-## <a name="enable-result-clusters"></a>启用结果群集
+结果群集显示在"全部"垂直页面的中间。 例如，下面将显示"MediaWiki"垂直的结果群集。
+
+![MediaWiki 结果群集的示例](media/result-cluster/result-cluster-example.png)
+
+## <a name="result-clusters-default-settings"></a>结果群集默认设置
   
-默认情况下，结果群集体验已关闭。  
+默认情况下，结果群集体验已打开。  
 
-请按照以下步骤在组织级别启用体验：
+如果要禁用它，请按照以下步骤在组织级别关闭体验：
 
 1. In the [Microsoft 365 管理中心，](https://admin.microsoft.com)go to [**Verticals**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/verticals).
-2. 选择"**全部"** 垂直，然后启用"**显示连接器结果"。** 
+1. 选择"**全部"** 垂直，然后启用"**隐藏连接器结果"。**
 
+请按照以下步骤在网站级别关闭SharePoint体验：
 
-请按照以下步骤在网站级别SharePoint体验：
-
-1. 在SharePoint群集体验的网站中，转到 **"设置"。**
+1. 转到 **设置** 网站中的SharePoint
 2. 转到"**网站信息** > **""查看所有网站设置"。**
 3. 转到"Microsoft 搜索"部分，然后选择"为此 **Microsoft 搜索配置网站集"。**
 4. 在导航窗格中，转到"自定义 **体验"，** 然后选择"**垂直"。**
-5. 选择"**全部"** 垂直，然后启用"**显示连接器结果"。**
-
-## <a name="view-the-result-cluster-experience-after-it-is-enabled"></a>启用后查看结果群集体验
-
-打开结果群集体验后，可能需要 12 小时才能查看它。 如果需要立即体验，可以将 *cacheClear=true* 追加到 SharePoint 中的 URL，Office。
+5. 选择"**全部"** 垂直，然后启用"**隐藏连接器结果"。**
