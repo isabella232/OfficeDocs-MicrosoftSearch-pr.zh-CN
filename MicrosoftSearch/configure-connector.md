@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 针对 Graph 连接器的设置概述
-ms.openlocfilehash: 0c67081d3efab421b563e82dba506da85e65cb91d34b31f128f3bcff945c68a1
-ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
+ms.openlocfilehash: b08363421ed143eb32c112ef53ac47cff44722e0
+ms.sourcegitcommit: 8ac77db22002d47bb461222b81b7cfc1c15a72fb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54533296"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58340084"
 ---
 <!-- Previous ms.author: monaray -->
 
@@ -26,17 +26,18 @@ ms.locfileid: "54533296"
 
 # <a name="setup-overview-for-graph-connectors-by-microsoft"></a>Microsoft 针对 Graph 连接器的设置概述 
 
-本文介绍 Microsoft 在 Microsoft 365 管理中心 中设置 Graph **连接器所需的**[基本Microsoft 365 管理中心。](https://admin.microsoft.com) 基本流程包括以下步骤:  
+本文介绍了 Microsoft 在 Graph 中设置连接器 **所需的基本**[Microsoft 365 管理中心。](https://admin.microsoft.com) 基本流程包括以下步骤:  
 <!---Add links to each section in the doc--->
 
 1. [在 Microsoft 365 管理中心内添加 Graph 连接器。](#step-1-add-a-graph-connector-in-the-microsoft-365-admin-center)
 2. [命名连接](#step-2-name-the-connection)
 3. [配置连接设置](#step-3-configure-the-connection-settings)
-4. [管理搜索权限](#step-4-manage-search-permissions)
-5. [分配属性标签](#step-5-assign-property-labels)
-6. [管理架构](#step-6-manage-schema)
-7. [刷新设置](#step-7-refresh-settings)
-8. [查看连接](#step-8-review-connection)
+4. [选择属性](#step-4-select-properties)
+5. [管理搜索权限](#step-5-manage-search-permissions)
+6. [分配属性标签](#step-6-assign-property-labels)
+7. [管理架构](#step-7-manage-schema)
+8. [刷新设置](#step-8-refresh-settings)
+9. [查看连接](#step-9-review-connection)
 
 本文还包括有关疑难解答、限制和下一步步骤的信息：
 
@@ -51,13 +52,13 @@ ms.locfileid: "54533296"
 
 <!---Insert "Before you get started" recommendations for this data source-->
 
-## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>步骤 1：在Graph中添加一个Microsoft 365 管理中心
+## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>步骤 1：在Graph中添加Microsoft 365 管理中心
 
 完成以下步骤以配置任何 Microsoft 构建Graph连接器：
 
 1. 在登录管理员帐户时[Microsoft 365 管理中心。](https://admin.microsoft.com)
 
-2. 在导航窗格中，**选择**"设置"，然后选择"搜索&**智能"。** 选择" [连接器"选项卡](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/Connectors)。
+2. 在导航窗格中，**选择**"设置"，然后选择"搜索&**智能"。** 选择" [数据源"选项卡](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/Connectors)。
 
 3. 选择 **"+** 添加"，然后从可用选项的菜单中选择你选择的数据源。
 
@@ -72,26 +73,35 @@ ms.locfileid: "54533296"
 指定以下属性：
 
 * Name（必选）
-* 连接 ID (是必需的) 
+* 连接 ID (必需) 
 * 说明 (可选) 
+* 选中复选框 (必需) 
 
 连接 ID 为连接器创建隐式属性。 它只能包含字母数字字符，并且最多包含 32 个字符。
 
 ## <a name="step-3-configure-the-connection-settings"></a>步骤 3：配置连接设置
 
-配置连接设置的过程因数据源的类型而异。 有关要添加到租户的数据源类型，请参阅特定于连接器的信息，以在设置过程中完成此步骤。  
+配置连接设置的过程因数据源的类型而异。 有关 [要添加到租户](/microsoftsearch/servicenow-connector#step-31-basic-authentication) 的数据源类型，请参阅特定于连接器的信息，以在设置过程中完成此步骤。  
 
 若要了解有关连接到本地数据源的更多信息，请参阅安装 [本地数据网关](/data-integration/gateway/service-gateway-install)。
 
-## <a name="step-4-manage-search-permissions"></a>步骤 4：管理搜索权限
+## <a name="step-4-select-properties"></a>步骤 4：选择属性
 
-访问控制列表 (ACL) 确定组织中哪些用户可以访问每一项数据。  
+可以选择由索引编制索引Microsoft 搜索。 
 
-一些连接器（如[Microsoft SQL](MSSQL-connector.md)和 Azure Data Lake[存储 Gen2）](azure-data-lake-connector.md)在本机Azure Active Directory ([Azure AD) ](/azure/active-directory/) ACL。
+ServiceNow 查询可用于先筛选数据，然后再由数据Microsoft 搜索;这可让你更加控制可搜索的数据。 若要了解有关 ServiceNow 查询的更多信息，请参阅 [了解 ServiceNow 查询](https://go.microsoft.com/fwlink/?linkid=2151447)。 
+
+## <a name="step-5-manage-search-permissions"></a>步骤 5：管理搜索权限
+
+访问控制列表 (ACL) 确定组织中哪些用户可以访问每个项目。  
+
+一些连接器（如[Microsoft SQL](MSSQL-connector.md) [和 Azure Data Lake 存储 Gen2）](azure-data-lake-connector.md)在本机Azure Active Directory ([Azure AD) ](/azure/active-directory/) ACL。
 
 其他连接器（如[ServiceNow、Azure DevOps](servicenow-connector.md)和[](azure-devops-connector.md)[Salesforce）](salesforce-connector.md)支持同步非 Azure AD 用户和组。  
 
-## <a name="step-5-assign-property-labels"></a>步骤 5：分配属性标签
+选择"每个人"可让组织中的每个人查看来自此数据源的搜索结果。
+
+## <a name="step-6-assign-property-labels"></a>步骤 6：分配属性标签
 
 可以在"分配属性标签"页上将语义标签分配给源属性。 标签是 Microsoft 提供的已知标记，可提供语义含义。 它们允许 Microsoft 将连接器数据集成到Microsoft 365体验，如增强的搜索、人员卡片、智能发现等。  
 
@@ -101,13 +111,13 @@ ms.locfileid: "54533296"
 --- | ---  
 **title** | 您希望在搜索和其他体验中显示的项目的标题
 **url** | 源系统中项的目标 URL
-**createdBy** | 创建项目的人的名称
-**lastModifiedBy** | 最近编辑项目的人的姓名
-**authors** | 参与/协作项目人员的姓名
-**createdDateTime** | 项目创建时间
-**lastModifiedDateTime** | 最近编辑的项目何时
-**fileName** | 文件项的名称
-**FileExtension** | 文件项的类型，如 .pdf 或 .word
+**创建者** | 创建项目的人的名称
+**最后一次修改者** | 最近编辑项目的人的姓名
+**Authors** | 参与/协作项目人员的姓名
+**创建日期时间** | 项目创建时间
+**上次修改日期时间** | 最近编辑的项目何时
+**文件名** | 文件项的名称
+**文件扩展名** | 文件项的类型，如 .pdf 或 .word
 
 此页上的属性根据数据源预先选择，但如果有更适合特定标签的不同属性，可以更改此选择。  
 
@@ -115,7 +125,7 @@ ms.locfileid: "54533296"
 
 映射标签不正确会导致搜索体验下降。 可以不为某些标签分配属性。  
 
-## <a name="step-6-manage-schema"></a>步骤 6：管理架构
+## <a name="step-7-manage-schema"></a>步骤 7：管理架构
 
 ### <a name="content-property"></a>Content 属性
 
@@ -151,14 +161,14 @@ QUERY | 通过查询来搜索特定属性的匹配项。 然后，可以在查�
 
 * 当使用 content 属性呈现搜索结果时，会发生 **重大** 性能问题。 例如 **，ServiceNow** 知识库文章的文本 [](https://www.servicenow.com)内容字段。
 
-* 只有标记为可检索的属性才能呈现在搜索结果中，并可用于在 MRT 中 (新式) 。
+* 只有标记为可检索的属性才能在搜索结果中呈现，并可用于在 MRT (新式) 。
 
 * 只能将字符串属性标记为可搜索。
 
 > [!NOTE]
 > 创建连接后， **无法修改** 架构。 为此，需要删除连接并创建一个新连接。
 
-## <a name="step-7-refresh-settings"></a>步骤 7：刷新设置
+## <a name="step-8-refresh-settings"></a>步骤 8：刷新设置
 
 刷新间隔确定数据在数据源和数据源之间的同步Microsoft 搜索。 根据数据的修改频率和修改类型，每种类型的数据源都有一组不同的最佳刷新计划。
 
@@ -181,7 +191,7 @@ QUERY | 通过查询来搜索特定属性的匹配项。 然后，可以在查�
 
 <!---Change screenshot for one that shows both options in new UI (try ServiceNow)--->
 
-## <a name="step-8-review-connection"></a>步骤 8：查看连接
+## <a name="step-9-review-connection"></a>步骤 9：查看连接
 
 可以在完成连接前查看整个配置并根据需要编辑设置。 **如果尚未阅读，请务必阅读数据源的连接器特定信息。** 准备好 **完成连接** 后，选择"完成更新"。
 
@@ -198,9 +208,9 @@ QUERY | 通过查询来搜索特定属性的匹配项。 然后，可以在查�
 
 ## <a name="limitations"></a>限制
 <!---Insert limitations for this data source-->
-若要了解适用于所有数据源的限制，请参阅 Microsoft Graph[概述](connectors-overview.md)文章。
+若要了解适用于所有数据源的限制，请参阅 Microsoft Graph[概述文章](connectors-overview.md)。
 
-请参阅数据源的特定于连接器的信息，了解该特定连接器是否Graph限制。
+请参阅数据源的连接器特定信息，了解该特定连接器是否Graph限制。
 
 ## <a name="next-steps"></a>后续步骤
 

@@ -12,14 +12,13 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-ROBOTS: NoIndex
 description: On-prem Agent
-ms.openlocfilehash: 1fcd1b6848d950c9f7cefa87d086f6607ac5df4f
-ms.sourcegitcommit: 5151bcd8fd929ef37239b7c229e2fa33b1e0e0b7
+ms.openlocfilehash: b6303b71910dc300ba5297fde155e538452ef99d
+ms.sourcegitcommit: 8ac77db22002d47bb461222b81b7cfc1c15a72fb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 08/13/2021
-ms.locfileid: "58235942"
+ms.locfileid: "58340093"
 ---
 # <a name="microsoft-graph-connector-agent"></a>Microsoft Graph 连接器代理
 
@@ -45,6 +44,8 @@ ms.locfileid: "58235942"
 4. https://<span>gcs.office。</span>com/
 5. https://<span>graph.microsoft。</span>com/
 
+>[!NOTE]
+>不支持代理身份验证。 如果您的环境具有需要身份验证的代理，我们的建议是允许连接器代理绕过该代理。
 
 ## <a name="create-and-configure-an-app-for-the-agent"></a>为代理创建和配置应用  
 
@@ -54,7 +55,7 @@ ms.locfileid: "58235942"
 
 1. 转到 [Azure 门户，](https://portal.azure.com) 然后使用租户的管理员凭据登录。
 
-2. 从导航 **Azure Active Directory**  ->  导航窗格中导航到"应用注册"，然后选择"新建 **注册"。**
+2. 从导航 **Azure Active Directory**  ->  导航到"应用注册"，然后选择"新建 **注册"。**
 
 3. 提供应用的名称，**然后选择注册。**
 
@@ -147,6 +148,7 @@ Export-PfxCertificate -Cert $certificatePath -FilePath ($filePath + '.pfx') -Pas
 ## <a name="troubleshooting"></a>疑难解答
 
 ### <a name="installation-failure"></a>安装失败
+
 如果安装失败，请运行以下方法检查安装日志：msiexec /i " <path to msi>\GcaInstaller.msi" /L*V " <destination path> \install.log"。 如果错误不可解决，请通过日志 MicrosoftGraphConnectorsFeedback@service.microsoft.com 支持。
 
 ### <a name="registration-failure"></a>注册失败
