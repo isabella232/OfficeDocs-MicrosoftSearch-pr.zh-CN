@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: On-prem Agent
-ms.openlocfilehash: b6303b71910dc300ba5297fde155e538452ef99d
-ms.sourcegitcommit: 8ac77db22002d47bb461222b81b7cfc1c15a72fb
+ms.openlocfilehash: a27b5225d6a9f804d9122fbb237adb453eaf34ba
+ms.sourcegitcommit: 7148807ee9c857bd900916bed24176892a7d1d66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58340093"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58363238"
 ---
 # <a name="microsoft-graph-connector-agent"></a>Microsoft Graph 连接器代理
 
@@ -55,7 +55,7 @@ ms.locfileid: "58340093"
 
 1. 转到 [Azure 门户，](https://portal.azure.com) 然后使用租户的管理员凭据登录。
 
-2. 从导航 **Azure Active Directory**  ->  导航到"应用注册"，然后选择"新建 **注册"。**
+2. 从导航 **Azure Active Directory**  ->  导航窗格中导航到"应用注册"，然后选择"新建 **注册"。**
 
 3. 提供应用的名称，**然后选择注册。**
 
@@ -141,15 +141,17 @@ Export-PfxCertificate -Cert $certificatePath -FilePath ($filePath + '.pfx') -Pas
 
 6. 右键单击证书，然后选择"**所有任务**  >  **管理私钥"** 选项。
 
-7. 在"权限"对话框中，选择"添加"选项。 在用户选择对话框中，编写 **：NT Service\GcaHostService，** 然后单击 **确定**。 不要单击"检查 **名称"** 按钮。
+7. 在"权限"对话框中，选择"添加"选项。 它弹出一个新窗口。 选择"位置"选项。 Select the machine on which agent is installed among the list of locations shown and click **OK**.
 
-8. 单击"权限"对话框上的"确定"。 现在，代理计算机配置为代理使用证书生成令牌。
+8. 在用户选择对话框中，编写 **：NT Service\GcaHostService，** 然后单击 **确定**。 不要单击"检查 **名称"** 按钮。
+
+9. 单击"权限"对话框上的"确定"。 现在，代理计算机配置为代理使用证书生成令牌。
 
 ## <a name="troubleshooting"></a>疑难解答
 
 ### <a name="installation-failure"></a>安装失败
 
-如果安装失败，请运行以下方法检查安装日志：msiexec /i " <path to msi>\GcaInstaller.msi" /L*V " <destination path> \install.log"。 如果错误不可解决，请通过日志 MicrosoftGraphConnectorsFeedback@service.microsoft.com 支持。
+如果安装失败，请运行以下代码检查安装日志：msiexec /i "< path to msi >\GcaInstaller.msi" /L*V "< destination path >\install.log"。 如果错误不可解决，请通过日志 MicrosoftGraphConnectorsFeedback@service.microsoft.com 支持。
 
 ### <a name="registration-failure"></a>注册失败
 
@@ -161,4 +163,4 @@ Export-PfxCertificate -Cert $certificatePath -FilePath ($filePath + '.pfx') -Pas
 
 如果在创建连接时"测试连接"操作失败，出现错误"请检查用户名/密码和数据源路径"，即使提供的用户名和密码正确，请确保用户帐户对安装了 Graph 连接器代理的计算机具有交互式登录权限。 请参阅有关 [登录策略管理的文档](/windows/security/threat-protection/security-policy-settings/allow-log-on-locally#policy-management) 以检查登录权限。 还要确保数据源和代理计算机位于同一网络上。
 
-如果连接失败，出现错误"1011： Graph 连接器代理不可访问或脱机。"，请登录到安装了代理的计算机，如果代理应用程序尚未运行，则启动它。 如果连接继续失败，请验证在注册期间提供给代理的证书或客户端密码尚未过期，并且具有所需的权限。
+如果连接失败，出现错误"1011： Graph 连接器代理不可访问或脱机。"，请登录到安装了代理的计算机，如果代理应用程序尚未运行，请启动它。 如果连接继续失败，请验证在注册期间提供给代理的证书或客户端密码尚未过期，并且具有所需的权限。
