@@ -12,13 +12,13 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: 设置Enterprise网站Graph连接器Microsoft 搜索
-ms.openlocfilehash: 002a1504915c2c882492c894595e39598c692bcf
-ms.sourcegitcommit: 5151bcd8fd929ef37239b7c229e2fa33b1e0e0b7
+description: 设置 Enterprise 网站Graph连接器Microsoft 搜索
+ms.openlocfilehash: 2be52bc83718c2450ad91444a6176f5f63c03890
+ms.sourcegitcommit: e5d56d6ce1cd285c5af3e0472ce169cb34883017
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58235934"
+ms.lasthandoff: 08/23/2021
+ms.locfileid: "58469975"
 ---
 <!---Previous ms.author: monaray --->
 
@@ -26,12 +26,12 @@ ms.locfileid: "58235934"
 
 # <a name="enterprise-websites-graph-connector"></a>Enterprise连接器Graph网站
 
-通过Enterprise连接器Graph组织可以索引其面向 **内部的网站的文章和内容**。 配置连接器并同步网站内容后，最终用户可以从任何客户端搜索Microsoft 搜索内容。
+the Enterprise websites Graph connector allows your organization to index articles and **content from its internal-facing websites**. 配置连接器并同步网站内容后，最终用户可以从任何客户端搜索Microsoft 搜索内容。
 
 > [!NOTE]
-> 阅读 [**Setup your Graph connector**](configure-connector.md)一文，了解 Graph 连接器的一般设置说明。
+> 阅读 [**Setup your Graph connector**](configure-connector.md)一文，了解 Graph连接器的一般设置说明。
 
-本文适用于配置、运行和监视 Enterprise连接器的任何人。 它补充了常规安装过程，并显示了仅适用于 Enterprise 连接器的说明。 本文还包括有关疑难 [解答的信息](#troubleshooting)。
+本文适用于配置、运行和监视 Enterprise连接器的任何人。 它补充了常规设置过程，并显示了仅适用于 Enterprise 连接器的说明。 本文还包括有关疑难 [解答的信息](#troubleshooting)。
 
 <!---## Before you get started-->
 
@@ -64,7 +64,7 @@ ms.locfileid: "58235934"
 如果您的网站包含动态内容（例如，内容管理系统（如 Confluence 或 Unily）中的网页，您可以启用动态爬网程序。 若要将其打开，请选择"**为动态网站启用爬网"。** 爬网程序将等待动态内容呈现，然后再开始爬网。
 
 > [!div class="mx-imgBorder"]
-> ![设置 Web Enterprise的"连接"窗格屏幕截图](media/enterprise-web-connector/connectors-enterpriseweb-connectionsettings-dynamicconfig-small.png)
+> ![Web 连接器设置连接Enterprise屏幕截图。](media/enterprise-web-connector/connectors-enterpriseweb-connectionsettings-dynamicconfig-small.png)
 
 除了该复选框之外，还有三个可选字段可用：
 
@@ -100,11 +100,11 @@ ms.locfileid: "58235934"
 
 ## <a name="step-3a-add-urls-to-exclude-optional-crawl-restrictions"></a>步骤 3a：添加 URL 以排除 (可选的爬网限制) 
 
-有两种方法可阻止对页面进行爬网：禁止在robots.txt文件中对页面进行爬网或将其添加到排除列表。
+有两种方法可阻止对页面进行爬网：禁止在 robots.txt 文件中对页面进行爬网或将其添加到排除列表。
 
 ### <a name="support-for-robotstxt"></a>支持robots.txt
 
-连接器检查根网站是否存在robots.txt文件，如果存在，它将遵循并遵循该文件中的说明。 如果您不希望连接器对网站中的某些页面或目录进行爬网，可以在您的 robots.txt 文件中调用这些页面或目录。
+连接器检查根网站是否存在robots.txt文件，如果存在，它将遵循并遵循该文件中的说明。 如果您不希望连接器对网站中的某些页面或目录进行爬网，可以在您的 robots.txt 文件中在"禁止"声明中调用这些页面或目录。
 
 ### <a name="add-urls-to-exclude"></a>添加要排除的 URL
 
@@ -116,7 +116,7 @@ ms.locfileid: "58235934"
 
 ## <a name="step-5-manage-schema"></a>步骤 5：管理架构
 
-在"管理架构"屏幕上，可以更改架构属性 (选项包括"查询"、搜索、检索和精简) 这些属性相关联，添加可选别名，然后选择"**内容**"属性。
+在"管理架构"屏幕上，可以更改架构属性 (选项为"查询、搜索、检索"和"精简) 这些属性关联，添加可选别名，然后选择 **"内容**"属性。
 
 ## <a name="step-6-manage-search-permissions"></a>步骤 6：管理搜索权限
 
@@ -138,7 +138,7 @@ Enterprise网站连接器仅支持完全刷新。 这意味着连接器将在每
  详细错误代码 | 错误消息
  --- | ---
  6001 | 尝试编制索引的网站不可访问
- 6005 | 根据每个配置，尝试编制索引的源robots.txt阻止。
+ 6005 | 尝试编制索引的源页已根据配置robots.txt阻止。
  6008 | 无法解析 DNS
  6009 | 对于除 HTTP 404 (408) 之外的所有客户端错误，请参阅 HTTP 4xx 错误代码了解详细信息。
  6013 | 找不到尝试编制索引的源页。  (HTTP 404 错误) 

@@ -6,18 +6,18 @@ manager: mnirkhe
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 description: 连接器详细信息和错误
-ms.openlocfilehash: f7ae7f66aa1ec00c3178bec91b15304459666d5e
-ms.sourcegitcommit: 5151bcd8fd929ef37239b7c229e2fa33b1e0e0b7
+ms.openlocfilehash: 915723a2a22771e89fdb433b4ddadba76fa91090
+ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58235950"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58701378"
 ---
 <!-- markdownlint-disable no-inline-html -->
 
@@ -41,7 +41,7 @@ ms.locfileid: "58235950"
 **类型** | 增量或完全爬网
 **Duration** | 上一次爬网完成所花的时间
 **成功** | 上一次爬网中成功包含的项目数
-**Errors** | 上次爬网中出错的项目数
+**错误** | 上次爬网中出错的项目数
 
 ## <a name="monitor-errors"></a>监视错误
 
@@ -68,7 +68,7 @@ ms.locfileid: "58235950"
 1008 | 租户的总配额利用率已达到其限制。 | 请尝试删除连接以释放部分配额或调整引入筛选器以引入较少的数据。 如果这些无法解决问题，请与 Microsoft 支持部门联系。
 1009 | 连接的总配额使用率已达到其限制。 | 尝试调整引入筛选器以引入较少的数据。 如果此操作无法解决问题，请与 Microsoft 支持部门联系。
 1010 | 对非 Azure AD 组编制索引的总配额使用率已达到其 10 万的限制。 | 请尝试删除连接以释放部分配额或调整引入筛选器以引入较少的数据。 如果这些无法解决问题，请与 Microsoft 支持部门联系。
-1011 | 连接[Graph代理不可](graph-connector-agent.md)访问或脱机。 | 
+1011 | 无法[Graph连接器代理](graph-connector-agent.md)或脱机。 | 
 1012 | 由于身份验证模式不受支持，连接身份验证失败。 | 编辑连接以更新连接的身份验证设置。
 2001 | 索引被限制，因为队列中有大量更新。 根据队列，可能需要一些时间才能完成更新。 | 请等待，直到队列被清除。
 2002 | 索引编制失败，因为项目格式不受支持。 | 有关详细信息，请参阅连接器特定的文档。

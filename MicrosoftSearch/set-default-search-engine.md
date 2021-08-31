@@ -6,19 +6,19 @@ manager: parulm
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 ms.assetid: ee40010e-5d7f-4ba8-a3f8-d240dab3af6d
 description: 了解如何使用 Microsoft 搜索将必应设置为公司的默认搜索引擎。
-ms.openlocfilehash: 7ad9ff2a0fde5ad5d84a7a51785767fd2e5d21df6654a76b09e9796917a92a0f
-ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
+ms.openlocfilehash: 5feef972d5c61c9cefba6981084e005271b39f15
+ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54534177"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58701900"
 ---
 # <a name="make-bing-the-default-search-engine"></a>将必应设置为默认搜索引擎
   
@@ -42,11 +42,11 @@ ms.locfileid: "54534177"
 4. 通过将生成的 GPO 链接到适当的域来强制执行此系列设置。
 
 
-## <a name="google-chrome-on-windows-10-version-1507-or-later"></a>Windows 10版本 1507 或更高版本上的 Google Chrome
+## <a name="google-chrome-on-windows-10-version-1507-or-later"></a>Windows 10 版本 1507 或更高版本上的 Google Chrome
 
 设置此策略后，用户无法更改默认搜索引擎。
   
-Chrome 附带自己的组策略设置集，可以从 Google Chrome 或帮助以 ADMX 文件的形式[Enterprise下载](https://support.google.com/chrome/a/answer/187202)。
+Chrome 附带自己的组策略设置集，可以从 Google Chrome Enterprise帮助以 ADMX[文件的形式下载](https://support.google.com/chrome/a/answer/187202)。
   
 将模板文件复制到域控制器上 ADMX 文件的中央存储。 有关详细信息，请参阅使用[ADMX Domain-Based编辑 GPO。](/previous-versions/windows/it-pro/windows-vista/cc748955%28v%3dws.10%29) 控制器上的中央存储是具有以下命名约定的文件夹 **：%systemroot%\sysvol<domain \\ \> \policies\PolicyDefinitions**
   
@@ -89,7 +89,7 @@ Windows 注册表编辑器版本 5.00
   
 双击创建的文件并按照步骤导入文件。成功导入后应该会出现如下对话框：
   
-![注册表编辑器成功导入消息](media/ea3686b9-f6d7-481e-9a0d-2c96891bc501.png)
+![注册表编辑器成功导入消息。](media/ea3686b9-f6d7-481e-9a0d-2c96891bc501.png)
   
 ### <a name="step-2-open-the-group-policy-management-console-gpmcmsc-and-switch-to-editing-an-existing-policy-or-creating-a-new-one"></a>步骤 2. 打开组策略管理控制台 (gpmc.msc) 并切换到编辑现有策略或新建一个策略
 
@@ -98,7 +98,7 @@ Windows 注册表编辑器版本 5.00
 3. 导航到 **HKEY_CURRENT_USER\SOFTWARE\Microsoft\Internet Explorer\SearchScopes**。
 4. 从此项中确保选择 DefaultScope。
 
-    ![选中 DefaultScope 的注册表浏览器](media/ec5a450d-0cba-4e9c-acba-1a09e8e90bad.png)
+    ![选中 DefaultScope 的注册表浏览器。](media/ec5a450d-0cba-4e9c-acba-1a09e8e90bad.png)
 5. 检查必应中包含 Microsoft 搜索 GUID 的所有子项，以及该项下的所有值（任何用户配置文件路径除外）。向下滚动以选择其他项。
 6. 单击“完成”以完成此配置。
 

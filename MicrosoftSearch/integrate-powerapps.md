@@ -6,19 +6,19 @@ manager: kellis
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 ms.assetid: 1fadcba3-4a7f-4a55-8476-d4e64d49a15f
 description: 在应用的书签结果中包括基于浏览器Microsoft 搜索
-ms.openlocfilehash: 4571862919c2f8bd92f1756a70baef908eaa0eade649e6890c1ba56d314398c2
-ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
+ms.openlocfilehash: 55df0d6d6d39742548db497ed77f530b6a591895
+ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54532954"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58702099"
 ---
 # <a name="integrate-power-apps-in-microsoft-search-bookmarks"></a>将Power Apps集成到Microsoft 搜索书签中
    
@@ -26,7 +26,7 @@ ms.locfileid: "54532954"
   
 ## <a name="what-are-power-apps"></a>什么是Power Apps？
 
-[Power Apps](https://products.office.com/business/microsoft-powerapps)一项服务，可让你生成在浏览器或手机或平板电脑上运行的业务应用，无需编码经验。 了解更多：
+[Power Apps](https://products.office.com/business/microsoft-powerapps)是一项服务，可让你生成在浏览器或手机或平板电脑上运行的业务应用，无需编码经验。 了解更多：
   
 - [引导学习](/learn/browse/?products=powerapps)
     
@@ -34,7 +34,7 @@ ms.locfileid: "54532954"
     
 ## <a name="add-a-power-app-to-a-bookmark"></a>将 Power App 添加到书签
 
-[Power Apps (浏览器和任何设备上工作，添加时间少于 https://products.office.com/business/microsoft-powerapps) 一分钟。
+[Power Apps (浏览器和任何设备上运行，添加时间 https://products.office.com/business/microsoft-powerapps) 少于一分钟。
   
 1. [查找要集成 Power App](/powerapps/maker/canvas-apps/get-sessionid#get-an-app-id) 的应用 ID。
     
@@ -54,4 +54,4 @@ ms.locfileid: "54532954"
     
 7. 选择“**发布**”。
     
-当授权Microsoft 搜索用户必应搜索书签的任何关键字[](https://Bing.com)或保留的关键字时，Power App 将显示在书签结果中。
+当授权Microsoft 搜索用户必应搜索书签的任何关键字或[](https://Bing.com)保留的关键字时，Power App 将显示在书签结果中。

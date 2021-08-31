@@ -6,19 +6,19 @@ manager: shohara
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 ms.assetid: c020bd72-9906-4dfd-bc77-57287f5927ce
 description: 了解如何使用 Microsoft 搜索将必应设置为公司的默认主页。
-ms.openlocfilehash: 1ec0ffc097324b3c2d985f6eada4fb3fa3b079b7caab9d6af0e4073c4d91b562
-ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
+ms.openlocfilehash: 745e4a81e4b53ff88b612cd19295cb89dc041ddc
+ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54534156"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58701441"
 ---
 # <a name="make-bingcom-the-default-home-page"></a>将 Bing.com 设置为默认主页
 
@@ -85,7 +85,7 @@ ms.locfileid: "54534156"
     
 5. 按 F8 在配置任何内容之前禁用所有设置。屏幕应如下所示： 
     
-    ![Internet Explorer 10 属性对话框](media/2fd55755-5007-4e33-a795-c42ce2fcef4a.jpg)
+    ![Internet Explorer 10"属性"对话框。](media/2fd55755-5007-4e33-a795-c42ce2fcef4a.jpg)
   
 6. 在主页设置上按 **F6**，然后输入 `https://www.bing.com/business?form=BFBSPR`
     

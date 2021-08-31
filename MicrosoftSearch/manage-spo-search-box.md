@@ -6,18 +6,18 @@ manager: parulm
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: 如何自定义网站搜索框SharePoint体验
-ms.openlocfilehash: 151b5b066cd0164d4f7689192c37867d75b6eb6c57c82588cee654871c5e32b0
-ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
+description: 如何在网站中自定义搜索SharePoint体验
+ms.openlocfilehash: b5d58dd5a241ccf2ada556c44ec0ea5479ea2e2b
+ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54533578"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58701973"
 ---
 # <a name="search-box-settings-on-sharepoint-sites"></a>搜索网站上搜索SharePoint设置
 
@@ -82,7 +82,7 @@ Set-PnPSearchSettings -Scope Site -SearchBoxInNavBar Hidden
 
 有几个点需要考虑：
 
-* 此设置仅适用于套件导航栏中的搜索框。 它不适用于页面中的搜索框或经典页面上的搜索框。
+* 此设置仅适用于套件导航栏中的搜索框。 它不适用于页面中的搜索框，或经典页面上的搜索框。
 
 * 在导航栏中禁用搜索框后，如果要在网站中实现搜索功能，您必须使用自定义 Web 部件或扩展名自己SharePoint 框架它。
 

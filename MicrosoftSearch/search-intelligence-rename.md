@@ -1,24 +1,24 @@
 ---
-title: 搜索和&介绍
+title: 搜索&智能
 ms.author: jeffkizn
 author: jeffkizn
 manager: parulm
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 ROBOTS: NoIndex
-description: 在Microsoft 搜索导航中重命名为搜索&智能
-ms.openlocfilehash: b0a5912ba02c74daffe677f3fbd22c0fb3df12289f155ad4beef69484771fcf3
-ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
+description: 将Microsoft 搜索导航中的项目重命名为搜索&智能
+ms.openlocfilehash: a2dc33751e8888a57c60c3d9a88694ecefd8313d
+ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54533965"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58701918"
 ---
 # <a name="search--intelligence"></a>搜索&智能
 

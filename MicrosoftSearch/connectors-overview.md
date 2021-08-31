@@ -7,28 +7,28 @@ audience: Admin
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 description: Microsoft Graph 连接器概述Microsoft 搜索
-ms.openlocfilehash: 8b7c4545022765a5e903f2ba98490dae0cd40e85
-ms.sourcegitcommit: 5151bcd8fd929ef37239b7c229e2fa33b1e0e0b7
+ms.openlocfilehash: e1aea93c927d933a63c3eb0456bb18d3f99e9291
+ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58235863"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58702208"
 ---
 <!---Previous ms.author: monaray --->
 
 # <a name="overview-of-microsoft-graph-connectors"></a>Microsoft Graph 连接器概述
 
-[Microsoft 搜索](./overview-microsoft-search.md)索引所有[Microsoft 365](https://www.microsoft.com/microsoft-365)数据，使其可搜索用户。 借助 Microsoft Graph连接器，组织可以索引第三方数据，以便数据显示在Microsoft 搜索结果中。 此功能扩展了 Microsoft 365 生产力应用中可搜索的内容源类型以及 Microsoft 更广泛的数据源。 第三方数据可以本地托管，也可以托管在公有云或私有云中。
+[Microsoft 搜索](./overview-microsoft-search.md)索引所有[Microsoft 365](https://www.microsoft.com/microsoft-365)数据，使其可搜索用户。 借助 Microsoft Graph连接器，你的组织可以索引第三方数据，以便数据显示在Microsoft 搜索结果中。 此功能扩展了 Microsoft 365 生产力应用中可搜索的内容源类型以及 Microsoft 更广泛的数据源。 第三方数据可以本地托管，也可以托管在公有云或私有云中。
 
 <!---link Microsoft Graph reference in line 19 when we have access to relevant documentation--->
 
-本文旨在帮助管理员Microsoft 365查找可用于回答以下问题的资源：
+本文旨在帮助管理员Microsoft 365找到可用于回答以下问题的资源：
 
 * [哪些数据源可以连接到Microsoft 搜索？](#what-data-sources-can-be-connected-to-microsoft-search)
 * [如何管理连接？](#how-do-i-manage-my-connections)
@@ -74,7 +74,7 @@ Microsoft 提供了 9 个连接器，我们的生态系统合作伙伴已创建 
 * [Salesforce （预览版）](salesforce-connector.md)
 * [ServiceNow](servicenow-connector.md)
 
-[Microsoft Graph 连接器](https://www.microsoft.com/microsoft-search/connectors)库包含每个连接器的简短说明。 如果已准备好将其中一个数据源连接到租户，请务必阅读安装程序概述以及适用于数据源的"Microsoft[](configure-connector.md)安装连接器"部分中的其他任何文章。
+[Microsoft Graph 连接器](https://www.microsoft.com/microsoft-search/connectors)库包含每个连接器的简要说明。 如果已准备好将其中一个数据源连接到租户，请务必阅读安装程序概述以及适用于数据源的"Microsoft[](configure-connector.md)安装连接器"部分中的其他任何文章。
 
 ### <a name="microsoft-graph-connectors-by-our-partners"></a>由Graph的 Microsoft 连接器
 
@@ -82,7 +82,7 @@ Microsoft 提供了 9 个连接器，我们的生态系统合作伙伴已创建 
 
 ### <a name="build-your-own-microsoft-graph-connector"></a>生成你自己的 Microsoft Graph 连接器
 
-如果愿意，可以生成自己的连接器。 有关生成连接器详细信息，请参阅生成首个自定义[Microsoft Graph 连接器](/graph/connecting-external-content-build-quickstart)。
+如果愿意，可以生成自己的连接器。 有关生成连接器的信息，请参阅生成首个自定义[Microsoft Graph 连接器](/graph/connecting-external-content-build-quickstart)。
 
 ## <a name="how-do-i-manage-my-connections"></a>如何管理连接？
 
@@ -117,7 +117,7 @@ Microsoft 提供了 9 个连接器，我们的生态系统合作伙伴已创建 
 
 ## <a name="how-do-i-search-my-connector-data-from-a-custom-application"></a>如何从自定义应用程序中搜索连接器数据？
 
-对自定义数据编制索引后，开发人员 [可以查询此数据](/graph/search-concept-custom-types)。 可以在任何应用程序中查看数据。 有关详细信息，请参阅 Microsoft Microsoft 搜索[中的 Graph API 概述](/graph/search-concept-overview)。
+对自定义数据编制索引后，开发人员 [可以查询此数据](/graph/search-concept-custom-types)。 可以在任何应用程序中查看数据。 有关详细信息，请参阅 Microsoft [Graph 中的](/graph/search-concept-overview)Microsoft 搜索 API 概述。
 
 ## <a name="how-do-i-customize-search-results"></a>如何自定义搜索结果？
 

@@ -1,31 +1,31 @@
 ---
-title: 安全与隐私Microsoft 搜索中必应
+title: 安全与隐私Microsoft 搜索必应
 ms.author: jeffkizn
 author: jeffkizn
 manager: parulm
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 description: 保护公司数据和最终用户，同时向授权用户提供信息，Microsoft 搜索必应
-ms.openlocfilehash: 181a06ecb9c009d03c71e3e7f8ecfc7d675faa659967bc6a6c1560513a45a5ac
-ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
+ms.openlocfilehash: bf3629b2508c705d19e3b7b772c6f3672063a6f1
+ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54532674"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58701855"
 ---
-# <a name="security-and-privacy-for-microsoft-search-in-bing"></a>安全与隐私Microsoft 搜索中必应
+# <a name="security-and-privacy-for-microsoft-search-in-bing"></a>安全与隐私Microsoft 搜索必应
 
-通过增强的隐私和安全措施，Microsoft 搜索必应帮助保护用户和工作区数据。
+通过增强的隐私和安全措施，Microsoft 搜索必应帮助保护用户和工作场所数据。
 
 ## <a name="secure-by-default"></a>默认处于保护状态
 
-Microsoft 搜索请求必应 HTTPS 进行。 连接进行端到端加密，以增强安全性。
+Microsoft 搜索请求必应 HTTPS 进行。 连接经过端到端加密，增强了安全性。
   
 ## <a name="authentication-and-authorization-with-azure-active-directory"></a>Azure Active Directory 身份验证和授权
 
@@ -39,7 +39,7 @@ Microsoft 搜索中必应身份验证绑定到Azure Active Directory。 当用�
   
 ## <a name="communicates-with-the-microsoft-cloud-from-the-browser"></a>通过浏览器与 Microsoft 云通信
 
-当用户使用工作或学校帐户登录时，必应将必要的客户端库下载到浏览器以启用Microsoft 搜索结果。 然后，当他们进行搜索时，浏览器内代码调用Office 365云以获得工作结果。 为此，Microsoft 搜索专用 API，该 API 根据 SSAE 18 SOC2 类型 1 的控制目标运行。 这意味着，与在 必应 Office 365 Core Online Services 中处理工作结果本身相比，工作结果和工作数据不会通过比工作结果本身更严格的数据处理控制目标Office 365流。
+当用户使用工作或学校帐户登录时，必应将必要的客户端库下载到浏览器以启用Microsoft 搜索结果。 然后，当用户搜索时，浏览器内代码将调用Office 365云以获得工作结果。 为此，Microsoft 搜索使用根据 SSAE 18 SOC2 类型 1 的控制目标运营的专用 API。 这意味着，与在 必应 Office 365 Core Online Services 中处理工作结果本身相比，工作结果和工作数据不会通过比工作结果本身更严格的数据处理控制目标Office 365流。
   
 ## <a name="permissions"></a>权限
 
@@ -47,12 +47,12 @@ Microsoft 搜索中必应身份验证绑定到Azure Active Directory。 当用�
 
 ## <a name="microsoft-search-in-bing-protects-workplace-searches"></a>Microsoft 搜索必应工作区搜索
 
-当用户在搜索查询中输入搜索Microsoft 搜索必应，将同时发生两个搜索请求：
+当用户在搜索查询中输入搜索Microsoft 搜索，必应两个同时搜索请求：
 
 - 对组织内部资源的搜索。
 - 从 必应.com 单独搜索公共结果。
 
-由于工作区搜索可能很敏感，Microsoft 搜索实施了一组信任措施，用于描述如何处理从 必应.com 单独搜索公共结果。
+由于工作区搜索可能很敏感，Microsoft 搜索实施了一组信任措施，用于描述如何处理对来自 必应.com 的公共结果的单独搜索。
 
 ### <a name="logging"></a>日志记录
 

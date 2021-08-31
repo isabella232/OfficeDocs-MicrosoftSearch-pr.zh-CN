@@ -7,18 +7,18 @@ audience: Admin
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 description: Microsoft 针对 Graph 连接器的设置概述
-ms.openlocfilehash: b08363421ed143eb32c112ef53ac47cff44722e0
-ms.sourcegitcommit: 8ac77db22002d47bb461222b81b7cfc1c15a72fb
+ms.openlocfilehash: 3b8ae9068b445e09f2df95fb5b29feb5ec3af74b
+ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58340084"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58701873"
 ---
 <!-- Previous ms.author: monaray -->
 
@@ -26,7 +26,7 @@ ms.locfileid: "58340084"
 
 # <a name="setup-overview-for-graph-connectors-by-microsoft"></a>Microsoft 针对 Graph 连接器的设置概述 
 
-本文介绍了 Microsoft 在 Graph 中设置连接器 **所需的基本**[Microsoft 365 管理中心。](https://admin.microsoft.com) 基本流程包括以下步骤:  
+本文介绍 Microsoft 在 Microsoft 365 管理中心 中设置 Graph **连接器所需的**[基本Microsoft 365 管理中心。](https://admin.microsoft.com) 基本流程包括以下步骤:  
 <!---Add links to each section in the doc--->
 
 1. [在 Microsoft 365 管理中心内添加 Graph 连接器。](#step-1-add-a-graph-connector-in-the-microsoft-365-admin-center)
@@ -46,17 +46,17 @@ ms.locfileid: "58340084"
 * [后续步骤](#next-steps)
 
 > [!NOTE]
-> Microsoft 的所有连接器的安装过程Graph类似，但不完全相同。 **除了阅读本文之外，还请务必阅读数据源的连接器特定信息。**  
+> Microsoft 的所有连接器的安装过程Graph，但不完全相同。 **除了阅读本文之外，还请务必阅读数据源的连接器特定信息。**  
 
 <!---## Before you get started-->
 
 <!---Insert "Before you get started" recommendations for this data source-->
 
-## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>步骤 1：在Graph中添加Microsoft 365 管理中心
+## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>步骤 1：在Graph连接器中添加Microsoft 365 管理中心
 
 完成以下步骤以配置任何 Microsoft 构建Graph连接器：
 
-1. 在登录管理员帐户时[Microsoft 365 管理中心。](https://admin.microsoft.com)
+1. 在登录管理员帐户时[，Microsoft 365 管理中心。](https://admin.microsoft.com)
 
 2. 在导航窗格中，**选择**"设置"，然后选择"搜索&**智能"。** 选择" [数据源"选项卡](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/Connectors)。
 
@@ -73,7 +73,7 @@ ms.locfileid: "58340084"
 指定以下属性：
 
 * Name（必选）
-* 连接 ID (必需) 
+* 连接 ID (是必需的) 
 * 说明 (可选) 
 * 选中复选框 (必需) 
 
@@ -208,7 +208,7 @@ QUERY | 通过查询来搜索特定属性的匹配项。 然后，可以在查�
 
 ## <a name="limitations"></a>限制
 <!---Insert limitations for this data source-->
-若要了解适用于所有数据源的限制，请参阅 Microsoft Graph[概述文章](connectors-overview.md)。
+若要了解适用于所有数据源的限制，请参阅 Microsoft Graph[概述](connectors-overview.md)文章。
 
 请参阅数据源的连接器特定信息，了解该特定连接器是否Graph限制。
 

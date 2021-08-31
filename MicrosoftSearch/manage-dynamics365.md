@@ -8,24 +8,24 @@ ms.topic: article
 ms.service: mssearch
 localization_priority: Normal
 description: 管理 Dynamics 365 内容在搜索结果中的显示方式
-ms.openlocfilehash: d2874febe39abf68653fa82d6a50121ebd1a357b
-ms.sourcegitcommit: fbe565b1a8994425b4f7ff0114a69044659e3892
+ms.openlocfilehash: ff7b1d86716233910ba6c1ba3141fbe13beb5a98
+ms.sourcegitcommit: e5d56d6ce1cd285c5af3e0472ce169cb34883017
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "58380030"
+ms.lasthandoff: 08/23/2021
+ms.locfileid: "58470227"
 ---
 # <a name="dynamics-365-federation-search-preview"></a>Dynamics 365 联合搜索 (预览) 
 
 ## <a name="microsoft-search-federation-and-connectors"></a>Microsoft 搜索联合身份验证和连接器
 
-为了帮助使Microsoft 搜索更有用，我们引入了联合Microsoft 搜索联合。 通过联合搜索，组织可以在以下网站中访问这些方案Microsoft 搜索：
+为了帮助Microsoft 搜索，我们引入了联合身份验证Microsoft 搜索联合。 通过联合搜索，组织可以在以下网站中访问这些方案Microsoft 搜索：
 
 * 系统符合严格合规性要求的数据
 * 无法离开系统边界的数据
 * 存储在你的组织不希望在云上编制索引的敏感数据
 
-通过联合搜索连接访问的数据在索引中Microsoft 搜索。 此外，使用 Microsoft 的内置连接器可轻松设置联合搜索连接。 我们的 Dynamics 365 连接器目前处于预览阶段。 如果你对加入预览版感兴趣，请通过 以下版本[aka.ms/D365FederationSearchPreview。](https://aka.ms/D365FederationSearchPreview) 有关发布时间框架，请参阅Microsoft 搜索[路线图](https://www.microsoft.com/microsoft-365/roadmap?filters=Microsoft%20Search)。
+通过联合搜索连接访问的数据不会在Microsoft 搜索。 此外，使用 Microsoft 的内置连接器可轻松设置联合搜索连接。 我们的 Dynamics 365 连接器目前处于预览阶段。 如果你对加入预览版感兴趣，请通过 以下版本[aka.ms/D365FederationSearchPreview。](https://aka.ms/D365FederationSearchPreview) 有关发布时间框架，请参阅Microsoft 搜索[路线图](https://www.microsoft.com/microsoft-365/roadmap?filters=Microsoft%20Search)。
 
 ## <a name="dynamics-365-federation-connector"></a>Dynamics 365 联合连接器
 
@@ -41,15 +41,15 @@ Microsoft Dynamics 365 是一系列智能业务应用程序，设计用于企业
 
 Dynamics 365 答案将显示在所有 Microsoft 搜索 画布的搜索结果中，包括 SharePoint Online、必应 和 Office。
 
-:::image type="content" alt-text="SharePoint、必应 和 Office 上的 Dynamics 365 Office" source="media/dynamics365/dynamics365-answer.png" lightbox="media/dynamics365/dynamics365-answer.png":::
+:::image type="content" alt-text="SharePoint、必应 和 Office 上的 Dynamics 365 答案的屏幕截图" source="media/dynamics365/dynamics365-answer.png" lightbox="media/dynamics365/dynamics365-answer.png":::
 
 从答案中，使用"更多 Dynamics 365 结果"链接可以轻松查看更多 **Dynamics 365** 搜索结果。 它将用户带进专用 Dynamics 365 结果页，该页面包含更多与查询相关的结果。
 
-:::image type="content" alt-text="Dynamics 365 垂直版和 SharePoint、必应 和 Office" source="media/dynamics365/dynamics365-vertical.png" lightbox="media/dynamics365/dynamics365-vertical.png":::
+:::image type="content" alt-text="Dynamics 365 垂直和 SharePoint、必应 和 Office" source="media/dynamics365/dynamics365-vertical.png" lightbox="media/dynamics365/dynamics365-vertical.png":::
 
 单击或点击任何结果将打开 Dynamics 365，然后显示详细信息。
 
-:::image type="content" alt-text="Dynamics 365 中详细信息页面的屏幕截图" source="media/dynamics365/dynamics365-detail-page.png" lightbox="media/dynamics365/dynamics365-detail-page.png":::
+:::image type="content" alt-text="Dynamics 365 中详细信息页面的屏幕截图。" source="media/dynamics365/dynamics365-detail-page.png" lightbox="media/dynamics365/dynamics365-detail-page.png":::
 
 无论用户在何处开始搜索，他们的体验都将保持一致，并使用户能够快速找到最相关的 Dynamics 365 结果。 请查看我们的 Microsoft Build 2021 视频进行演示。
 
@@ -83,7 +83,7 @@ Dynamics 365 答案将显示在所有 Microsoft 搜索 画布的搜索结果中�
 
 通过此简单配置，您可以为组织人员启用 Dynamics 365 联合搜索体验。
 
-1. 在Microsoft 365 管理中心[中](https://admin.microsoft.com)，转到"[数据源"。](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/connectors)
+1. 在["Microsoft 365 管理中心"](https://admin.microsoft.com)中，转到["数据源"。](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/connectors)
 
 2. 在"Microsoft 应用和服务"部分中的"Microsoft Dynamics 365"下，选择"管理"以打开 Microsoft Dynamics 365 面板。 
 
@@ -97,6 +97,6 @@ Dynamics 365 答案将显示在所有 Microsoft 搜索 画布的搜索结果中�
 
 7. 选择 **"保存** "完成连接设置。
 
-:::image type="content" alt-text="Dynamics 365 设置面板的屏幕截图Microsoft 365 管理中心" source="media/dynamics365/dynamic365-connection-setup.png" lightbox="media/dynamics365/dynamic365-connection-setup.png":::
+:::image type="content" alt-text="Dynamics 365 设置面板的屏幕截图Microsoft 365 管理中心。" source="media/dynamics365/dynamic365-connection-setup.png" lightbox="media/dynamics365/dynamic365-connection-setup.png":::
 
 设置完成后，只有具有有效 Dynamics 365 许可证的用户以及访问连接的 Dynamics 365 环境时，Dynamics 365 回答和垂直显示。 您随时都可以返回到这些设置，并更改连接终结点环境或停用连接。

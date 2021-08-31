@@ -6,25 +6,25 @@ manager: kellis
 ms.audience: Admin
 ms.topic: reference
 ms.service: mssearch
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 ms.assetid: 9e8c9323-4ff9-42dd-8052-2bc9e0d6d0e7
 description: 了解帮助你成功向组织Microsoft 搜索的方法和流程
-ms.openlocfilehash: b2613ba06353c22704479c8de66dcdbaef567019d5a8eef84d47605fc391e8ef
-ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
+ms.openlocfilehash: 1e33e17da92070eb4a887b4d5130a4c47b7cfe37
+ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54534200"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58701882"
 ---
 # <a name="user-adoption-guide"></a>用户采用指南
 
-此信息供管理员、Microsoft 搜索领导和业务所有者使用。
+此信息适用于Microsoft 搜索、变更管理领导和业务所有者。
   
-若要在整个组织中推广和确保成功采用Microsoft 搜索，我们建议采用这一分四个阶段的过程。
+若要在整个组织中推广并确保成功采用Microsoft 搜索，我们建议采用这一分四个阶段的过程。
   
 ## <a name="stage-1-stakeholders"></a>第 1 阶段：利益干系人
 
@@ -45,7 +45,7 @@ ms.locfileid: "54534200"
    
 ## <a name="stage-2-scenarios"></a>第 2 阶段：方案
 
-若要确保用户采用，确定和定义最终用户方案至关重要。 这些应该包括人们如何使用实际示例Microsoft 搜索以更快地查找其需要的信息、回答问题和完成任务。 为了衡量推广成功和用户采用，在开始之前确定将使用的指标也很重要。
+若要确保用户采用，确定和定义最终用户方案至关重要。 这些应该包括人们如何使用实际示例Microsoft 搜索，以更快地查找他们所需要的信息、回答问题和完成任务。 为了衡量推广成功和用户采用，在开始之前确定将使用的指标也很重要。
   
 ### <a name="understand-what-your-users-need-and-want"></a>了解用户需要和所需的内容
   
@@ -53,13 +53,13 @@ ms.locfileid: "54534200"
   
 对于组织中各种角色和团队，请考虑：
   
-- 搜索信息时的现有用户难处。
+- 搜索信息时的现有用户问题。
     
 - 常用应用、工具、网站和其他信息源。
     
 - 用户在搜索信息时希望看到的信息。
     
-- 如何为组织Microsoft 搜索组织带来的好处。 有关详细信息，请参阅Microsoft 搜索[概述](overview-microsoft-search.md)。
+- 如何为组织Microsoft 搜索优势。 有关详细信息，请参阅Microsoft 搜索[概述](overview-microsoft-search.md)。
     
 选择将对用户产生最大正面影响的用户方案。
   
@@ -71,33 +71,33 @@ ms.locfileid: "54534200"
     
 2. **用法：** 你可以利用 Insights 仪表板数据，包括每日和每月活动用户 (DAU 和 MAU) 、获取最多视图的内容类型和热门搜索关键字，以测量一段时间的使用情况。 有关详细信息，请参阅Microsoft 搜索 Insights[报告](./usage-reports.md)。
     
-3. **用户满意度：** 使用从调查和用户焦点组收集的数据来确定基线。 NSAT (的) 净推动者分数 (NPS) 也可以提供有用的度量。 无论使用哪种方法，都保持一致，以便你可以查看随着时间的推移的影响。 
+3. **用户满意度：** 使用从调查和用户焦点组收集的数据来确定基线。 NSAT (的) 和 NPS (净推荐分数) 可提供有用的度量。 无论使用哪种方法，都保持一致，以便你可以查看随着时间的推移的影响。 
     
-4. **其他度量：** 将历史和/或当前数据用于支持请求和搜索所花的时间。 
+4. **其他度量：** 将历史和/或当前数据用于支持请求以及搜索所花的时间。 
     
 ## <a name="stage-3-readiness"></a>第 3 阶段：准备情况
 
-花时间准备部署Microsoft 搜索将会对组织产生积极的影响。 Microsoft 提供了 <a href="https://go.microsoft.com/fwlink/?linkid=2114710">一个采用工具包</a> ，其中包含公告电子邮件模板、为在内部通信网站上共享而创建的轻型可视内容，以及培训演示文稿。 还有一个<a href="https://resources.techcommunity.microsoft.com/microsoft-search/#adoption">Microsoft 搜索 资源汇，</a>你可以找到其他培训和采用资源，这些资源旨在帮助你成功Microsoft 搜索你的企业。
+花时间准备部署Microsoft 搜索将为组织带来积极的影响。 Microsoft 提供了 <a href="https://go.microsoft.com/fwlink/?linkid=2114710">一个采用工具包</a> ，其中包含公告电子邮件模板、为在内部通信网站上共享而创建的轻型可视内容，以及培训演示文稿。 还有一个<a href="https://resources.techcommunity.microsoft.com/microsoft-search/#adoption">Microsoft 搜索 资源汇，</a>你可以找到其他培训和采用资源，这些资源旨在帮助你成功Microsoft 搜索部署。
   
 ### <a name="product-and-content-readiness"></a>产品和内容就绪情况
   
-管理员直接影响最终用户的搜索体验，并确定Microsoft 搜索组织的外观。 这包括选择要向用户显示的结果类型。 这些结果可能包括指向文档、网站、人员、组、位置、对话和其他工作区资源的链接（也称为书签）。
+管理员直接影响最终用户的搜索体验，并确定Microsoft 搜索查找组织。 这包括选择要向用户显示的结果类型。 这些结果可能包括指向文档、网站、人员、组、位置、对话和其他工作区资源的链接（也称为书签）。
   
 有关详细信息，请参阅设置[Microsoft 搜索。](setup-microsoft-search.md)
   
-编辑人员是帮助管理书签和问答&他们的专业知识领域的行业专家。 编辑器应创建解决您之前确定的用户方案的内容。
+编辑人员是主题专家，帮助管理书签和&领域的问答。 编辑器应创建解决您之前确定的用户方案的内容。
   
 有关详细信息，请参阅 [规划内容](plan-your-content.md)。
   
 ### <a name="signing-in"></a>登录
   
-Microsoft 搜索用户必须使用工作[必应学校帐户](https://Bing.com)登录。 若要使用户尽可能无缝登录：
+Microsoft 搜索用户必须使用工作[必应或学校](https://Bing.com)帐户登录。 若要使用户尽可能无缝登录：
   
 - 要确保正确[Azure Active Directory](/azure/active-directory/)配置，请让一些用户尝试登录。 有关详细信息，请参阅测试 [单一登录](test-single-sign-on.md)。
     
 - 将公司管理的设备的浏览器默认设置设置为必应。 有关详细信息，请参阅设置 [默认浏览器](/deployedge/edge-default-browser)。
     
-- 通过组策略为[Microsoft Edge](https://www.microsoft.com/windows/microsoft-edge) [和 Google Chrome](https://www.google.com)用户部署搜索扩展。 有关详细信息，请参阅Microsoft 搜索[概述](overview-microsoft-search.md)。
+- 通过组策略为[Microsoft Edge](https://www.microsoft.com/windows/microsoft-edge) Google [Chrome](https://www.google.com)用户部署搜索扩展。 有关详细信息，请参阅Microsoft 搜索[概述](overview-microsoft-search.md)。
     
 ### <a name="draft-communications"></a>草稿通信
   
@@ -113,13 +113,13 @@ Microsoft 搜索用户必须使用工作[必应学校帐户](https://Bing.com)�
     
 - 请执行发起人主持大会堂会议或发送公告电子邮件。
     
-- 共享有关使用工具的自助Microsoft 搜索。
+- 共享有关使用 Microsoft 搜索 的自助文档。
     
 所有通信都应让用户了解如何登录[必应查找工作](https://Bing.com)结果。
   
 ### <a name="engage-partner-teams"></a>参与合作伙伴团队
   
-作为企业一[Microsoft 365，Microsoft 搜索](https://www.microsoft.com/microsoft-365)符合 GDPR 和 Tier-C 准则。 根据你的组织，可能需要与隐私Microsoft 搜索共享有关信息。 有关详细信息，请参阅 [Microsoft 必应搜索安全性和隐私](security-for-search.md)。
+作为企业一[Microsoft 365，Microsoft 搜索](https://www.microsoft.com/microsoft-365)符合 GDPR 和 Tier-C 准则。 根据组织的不同，可能需要与隐私Microsoft 搜索共享相关信息。 有关详细信息，请参阅 [Microsoft 必应搜索安全性和隐私](security-for-search.md)。
   
 确保技术支持了解用户登录Microsoft 搜索功能，以及用户登录要求，以便可以更有效地支持用户。 有关详细信息，请参阅[了解Microsoft 搜索中的Microsoft 365](https://support.office.com/article/Learn-about-Microsoft-Search-in-Microsoft-365-b8bf5a2c-7515-40a9-9a6a-b8ed382c86bc)[和常见问题](faqs.md)。
   
@@ -175,7 +175,7 @@ Microsoft 搜索用户必须使用工作[必应学校帐户](https://Bing.com)�
     
 ### <a name="ongoing-communication"></a>持续通信
   
-在前几周和几个月，保持沟通节奏，鼓励与用户Microsoft 搜索。 这样可让用户了解情况并吸引新用户。 每次通信都应Microsoft 搜索对工作有帮助的原因。
+在前几周和几个月，保持沟通节奏，鼓励用户与Microsoft 搜索。 这样可让用户了解情况并吸引新用户。 每次通信都应说明Microsoft 搜索对工作有帮助的原因。
   
 发送持续通信，突出显示要尝试的功能和搜索，以及用户成功案例。
   
@@ -189,6 +189,6 @@ Microsoft 搜索用户必须使用工作[必应学校帐户](https://Bing.com)�
     
 2. 确定哪些功能最常使用或不经常使用。 
     
-3. 开展调查、重点组和反馈会话，了解用户对Microsoft 搜索、提高采用率并确定改进领域。
+3. 开展调查、重点组和反馈会话，了解用户对Microsoft 搜索的想法、提高采用率并确定改进领域。
     
-教育与反馈是一个迭代过程。 当用户采用新内容和通信时，可能需要Microsoft 搜索。
+教育与反馈是一个迭代过程。 当用户采用新设置时，可能需要对内容和通信Microsoft 搜索。

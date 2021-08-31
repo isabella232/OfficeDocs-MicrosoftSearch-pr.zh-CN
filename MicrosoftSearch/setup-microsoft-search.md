@@ -6,22 +6,22 @@ manager: parulm
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 description: 首次设置 Microsoft 搜索。
-ms.openlocfilehash: 9a52695f3a7494b27849ff21798302777716b9bda755ff372e605ec45a6d94b5
-ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
+ms.openlocfilehash: b1ddc3c32036b1fe3b86d38926bec86f626736f4
+ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54534119"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58701459"
 ---
 # <a name="set-up-microsoft-search"></a>设置 Microsoft 搜索
 
-Microsoft 搜索提供了一个用户友好界面，可帮助用户查找文件和文档、内部网站和业务工具、人员与组、位置和方向、对话和答案等信息。 它通过安全访问所有数据源（包括电子邮件、文件、SharePoint文件、OneDrive内容和其他共享资源）来实现此目标。 通过Microsoft 搜索必应还可以从 Internet 获取搜索结果。
+Microsoft 搜索提供了一个用户友好界面，可帮助用户查找文件和文档、内部网站和业务工具、人员与组、位置和方向、对话和答案等信息。 它通过安全访问所有数据源（包括电子邮件、文件、SharePoint文件、OneDrive内容和其他共享资源）来实现此目标。 使用 Microsoft 搜索 必应还可以从 Internet 获取搜索结果。
 
 若要了解有关 Microsoft 搜索功能的详细信息，请参阅 [Microsoft 搜索概述](overview-microsoft-search.md)。
 

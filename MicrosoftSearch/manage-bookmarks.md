@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: c0c814d0-f7e4-444e-b18e-09beb45c9322
 description: 创建和更新书签以及批量编辑书签结果的方法Microsoft 搜索
-ms.openlocfilehash: ed46583d857d97fa28773b64401ae4f85f88650a
-ms.sourcegitcommit: 5151bcd8fd929ef37239b7c229e2fa33b1e0e0b7
+ms.openlocfilehash: 67833ba563f8f4081cc6291db968542ba32df79f
+ms.sourcegitcommit: e5d56d6ce1cd285c5af3e0472ce169cb34883017
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58235959"
+ms.lasthandoff: 08/23/2021
+ms.locfileid: "58470236"
 ---
 # <a name="manage-bookmarks"></a>管理书签
 
@@ -38,7 +38,7 @@ ms.locfileid: "58235959"
 
 ## <a name="create-bookmark-answers"></a>创建书签答案
 
-In the [Microsoft 365 管理中心](https://admin.microsoft.com/)， go to [Bookmarks](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/bookmarks) and choose how you want to create new bookmarks：
+In the [Microsoft 365 管理中心，](https://admin.microsoft.com/)go to [Bookmarks](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/bookmarks) and choose how you want to create new bookmarks：
 
 - 添加书签
 - 导入SharePoint结果
@@ -50,15 +50,15 @@ In the [Microsoft 365 管理中心](https://admin.microsoft.com/)， go to [Book
 
 搜索管理员和编辑人员可以在网站中添加书签Microsoft 365 管理中心发布书签或将其保存到草稿。 发布书签可立即刷新搜索索引，使其可立即被用户发现。 您还可以通过指定发布书签的日期和时间来计划书签。
 
-- **已发布**：组织用户可以通过以下方式使用书签Microsoft 搜索。
+- **已发布**：组织的用户可以通过以下方式使用书签Microsoft 搜索。
 - **草稿**：保存为草稿的书签对用户不可用。 如果你或其他利益干系人想要在发布书签之前查看或更新书签，请使用此状态。
 - **计划**：将在指定日期和时间发布的书签。
 
-可以使用内容Microsoft 搜索浏览器扩展轻松添加书签。 只需转到要添加为书签的网站，然后单击扩展中的"添加"。 若要安装适用于 Microsoft Edge Google Chrome 的扩展，请转到[Chrome Web 应用商店](https://chrome.google.com/webstore/detail/microsoft-search-content/nocnablpaoeecfmfnjoheefkogmleipm)并将其添加到浏览器。
+可以使用内容Microsoft 搜索浏览器扩展轻松添加书签。 只需转到要添加为书签的网站，然后单击扩展中的"添加"。 若要安装适用于 Microsoft Edge Google Chrome 的扩展，请转到[Chrome Web 应用商店](https://chrome.google.com/webstore/detail/microsoft-search-content/nocnablpaoeecfmfnjoheefkogmleipm)，并将其添加到浏览器。
 
 ### <a name="import-sharepoint-results"></a>导入SharePoint结果
 
-如果组织在 SharePoint 中设置了升级结果，可以将租户的升级结果中的标题、URL 和说明导入 Microsoft 搜索并为用户提供导入的内容。 在大多数情况下，导入SharePoint结果只需几分钟。 如果要导入大量结果，最多可能需要 48 小时。 这是一种快速填充搜索结果并为用户提供更高效的简单方法。 我们建议使用来自 SharePoint 升级的结果作为参考，以了解如何命名和创建相关搜索结果。
+如果组织在 SharePoint 中设置升级结果，可以将租户的升级结果中的标题、URL 和说明导入 Microsoft 搜索并为用户提供导入的内容。 在大多数情况下，导入SharePoint结果只需几分钟。 如果要导入大量结果，最多可能需要 48 小时。 这是一种快速填充搜索结果并为用户提供更高效的简单方法。 我们建议使用来自升级SharePoint作为参考，了解如何命名和创建相关搜索结果。
 
 ### <a name="add-default-and-suggested-bookmarks"></a>添加默认书签和推荐书签
 
@@ -104,9 +104,9 @@ In the [Microsoft 365 管理中心](https://admin.microsoft.com/)， go to [Book
 
 若要减少添加书签所需的手动工作量，Microsoft 搜索可评估您组织的 SharePoint 链接，并推荐书签。 可以在发布之前查看它们，或将其设置为自动发布。 建议书签不需要任何设置，默认情况下会启用这些书签并设置为自动发布。 若要随时更改这些设置，请选择" **管理书签** "以打开"书签设置"面板。
 
-![管理门户中推荐书签设置的Microsoft 365屏幕截图](media/bookmarks-recommendedsettings.png)
+![Screenshot of Recommended bookmark settings in the Microsoft 365 admin portal.](media/bookmarks-recommendedsettings.png)
 
-如果启用建议的书签，则建议引擎将SharePoint组织的网站，以确定高流量链接。 初始评估期后，建议书签将被自动发布或添加到建议书签列表中。 接下来，将开始下一个周期（即 30 天评估期，后跟自动发布或添加建议的书签）。
+如果启用建议的书签，建议引擎将SharePoint组织的网站，以确定高流量链接。 初始评估期后，建议书签将被自动发布或添加到建议书签列表中。 接下来，将开始下一个周期（即 30 天评估期，后跟自动发布或添加建议的书签）。
 
 我们建议搜索管理员或编辑定期查看这些自动发布或建议的书签。 此外，建议书签绝不会包含现有已发布、建议、计划或已排除书签中的 URL。
 
@@ -124,17 +124,17 @@ In the [Microsoft 365 管理中心](https://admin.microsoft.com/)， go to [Book
 
 **问：书签发布后在Microsoft 搜索中可见需要多久？**
 
-**答：** 发布后立即在Microsoft 搜索中提供书签。
+**答：** 书签在发布后立即Microsoft 搜索中可用。
 
 **问：建议书签显示需要多久？**
 
-**答：** 如果同时启用了推荐书签和自动Microsoft 搜索，则建议书签将只显示在书签中。 在初始评估期间，建议引擎将评估SharePoint流量以确定合适的书签，然后自动发布它们。 发布后，它们将立即在Microsoft 搜索。
+**答：** 如果同时启用了推荐书签和自动Microsoft 搜索，则建议书签将只显示在网站中。 在初始评估期间，建议引擎将评估SharePoint流量以确定合适的书签，然后自动发布它们。 发布后，它们将立即在Microsoft 搜索。
 
 **问：删除的书签从结果中删除需要Microsoft 搜索？**
 
 **答**：已删除的书签将立即从工作结果中删除。
 
-**问：Microsoft 搜索从所有语言的网站推荐书签吗？**
+**问：Microsoft 搜索推荐来自所有语言的网站的书签？**
 
 **答**：是的，Microsoft 搜索从任何内部网站SharePoint书签，而不考虑语言。
 
@@ -152,8 +152,8 @@ In the [Microsoft 365 管理中心](https://admin.microsoft.com/)， go to [Book
 
 **问：如果未对添加到建议列表的建议书签执行任何操作，会发生什么情况？**
 
-**答**：为了避免建议列表中出现大量书签，建议 (所有者 = SYSTEM) 将在 180 天后清除。
+**答**：为了避免建议列表中出现大量书签，建议书签 (所有者 = SYSTEM) 将在 180 天后清除。
 
 **问：在哪里可以找到 Power App 的应用 ID？**
 
-**答**：转到Power Apps网站并查看应用程序的详细信息窗格。 详细了解如何[获取应用 ID。](/powerapps/maker/canvas-apps/get-sessionid#get-an-app-id)
+**答**：转到 Power Apps 网站并查看应用程序的详细信息窗格。 详细了解如何[获取应用 ID。](/powerapps/maker/canvas-apps/get-sessionid#get-an-app-id)

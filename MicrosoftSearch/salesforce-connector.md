@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 设置 Salesforce Graph 连接器Microsoft 搜索
-ms.openlocfilehash: f63dacd4e1c7da7d8eac53bc04bcbd108182df132c2e1fa61bdc2ffd0a549d2b
-ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
+ms.openlocfilehash: ea8de1b33787e9c08e50e99ace0afaa83e75394d
+ms.sourcegitcommit: be5dcc7005447d6139e39d86211c7ec4cd5dd907
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54532708"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "58639576"
 ---
 <!---Previous ms.author: rusamai --->
 
@@ -27,7 +27,7 @@ ms.locfileid: "54532708"
 Salesforce Graph连接器，允许组织为 Salesforce 实例中的联系人、机会、线索、案例和帐户对象编制索引。 配置来自 Salesforce 的连接器和索引内容后，最终用户可以从任何客户端搜索Microsoft 搜索项。
 
 > [!NOTE]
-> 阅读 [**Graph 连接器**](configure-connector.md)的安装程序一文，了解 Graph 连接器的一般设置说明。
+> 阅读 [**Graph 连接器的**](configure-connector.md)安装程序一文，了解 Graph 连接器的一般设置说明。
 
 本文适用于配置、运行和监视 Salesforce Graph连接器。 它补充了常规安装过程，并显示了仅适用于 Salesforce Graph说明。 本文还包括有关 [限制的信息](#limitations)。
 
@@ -63,7 +63,7 @@ Salesforce Graph连接器，允许组织为 Salesforce 实例中的联系人、�
       > [!div class="mx-imgBorder"]
       > ![管理员输入上面列出的所有必需配置后，Salesforce 实例中的 API 部分。](media/salesforce-connector/sf1.png)
 
-- 复制消费者密钥和使用者密码。 在管理门户中为 Graph 连接器配置连接设置时，此信息将用作客户端 ID 和Microsoft 365密码。
+- 复制消费者密钥和使用者密码。 在管理门户中为 Graph 连接器配置连接 设置 时，此信息将用作客户端 ID 和Microsoft 365密码。
 
   > [!div class="mx-imgBorder"]
   > ![管理员提交所有必需配置后，Salesforce 实例中的 API 部分返回的结果。 使用者密钥位于左列顶部，使用者密码位于右列顶部。](media/salesforce-connector/clientsecret.png)
@@ -75,11 +75,11 @@ Salesforce Graph连接器，允许组织为 Salesforce 实例中的联系人、�
     - 对于刷新令牌策略，选择 **"刷新令牌有效，直到吊销"**
 
   > [!div class="mx-imgBorder"]
-  > ![选择名为"刷新令牌在吊销前有效"的刷新令牌策略](media/salesforce-connector/oauthpolicies.png)
+  > ![选择名为"Refresh token is valid until revoked"的刷新令牌策略。](media/salesforce-connector/oauthpolicies.png)
 
 现在，可以使用[Microsoft 365 管理 中心](https://admin.microsoft.com/)完成连接器的其余设置Graph过程。
 
-## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>步骤 1：在Graph中添加一个Microsoft 365 管理中心
+## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>步骤 1：在Graph连接器中添加Microsoft 365 管理中心
 
 按照常规 [设置说明操作](./configure-connector.md)。
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
@@ -112,7 +112,7 @@ Salesforce Graph连接器，允许组织为 Salesforce 实例中的联系人、�
 选择要对连接器进行爬网并包括在搜索结果中的 Salesforce 对象。 如果选择"联系人"，还将自动选择"帐户"。
 
 >[!NOTE]
->如果某个字段具有字段级别 (为) 设置 FLS，则连接器不会为 Salesforce 组织的任何配置文件输入该字段。因此，用户将无法搜索这些字段的值，也不会显示在结果中。
+>如果某个字段具有字段级别 (为) 设置 FLS，则连接器不会为 Salesforce 组织的任何配置文件提供该字段。因此，用户将无法搜索这些字段的值，也不会显示在结果中。
 
 ## <a name="step-5-manage-search-permissions"></a>步骤 5：管理搜索权限
 
@@ -120,7 +120,7 @@ Salesforce Graph连接器，允许组织为 Salesforce 实例中的联系人、�
 
 ### <a name="step-5a-select-permissions"></a>步骤 5.a：选择权限
 
-可以选择从 Salesforce 实例 (访问控制列表) ACL，或允许组织中的每个人查看来自此数据源的搜索结果。 ACL 可以包括 Azure Active Directory (AAD) 标识 (从 Azure AD 联合到 Salesforce) 的用户、在 Azure AD) 中具有相应标识的非 Azure AD 标识 (或者同时包括这两者。
+可以选择从 Salesforce 实例 (访问控制列表) ACL，或允许组织中的每个人查看此数据源中的搜索结果。 ACL 可以包括 Azure Active Directory (AAD) 标识 (从 Azure AD 联合到 Salesforce) 的用户、在 Azure AD) 中具有相应标识的非 Azure AD 标识 (或者同时包括这两者。
 
 >[!NOTE]
 >如果使用第三方标识提供程序（如 Ping ID 或 secureAuth），则应该选择"非 AAD"作为标识类型。
@@ -142,15 +142,15 @@ Salesforce Graph连接器，允许组织为 Salesforce 实例中的联系人、�
 
 ## <a name="step-6-assign-property-labels"></a>步骤 6：分配属性标签
 
-可以通过从选项菜单中选择来为每个标签分配源属性。 虽然此步骤并非必需步骤，但具有一些属性标签将提高搜索相关性，并确保最终用户获得更好的搜索结果。 默认情况下，某些标签（如"Title"、"URL"、"CreatedBy"和"LastModifiedBy"）已分配有源属性。
+可以通过从选项菜单中选择来为每个标签分配源属性。 虽然此步骤并非必需步骤，但具有某些属性标签将提高搜索相关性，并确保最终用户获得更好的搜索结果。 默认情况下，某些标签（如"Title"、"URL"、"CreatedBy"和"LastModifiedBy"）已分配有源属性。
 
 ## <a name="step-7-manage-schema"></a>步骤 7：管理架构
 
-您可以选择应编制索引的源属性，以便它们显示在搜索结果中。 默认情况下，连接向导基于一组源属性选择搜索架构。 可以通过选中搜索架构页中每个属性和属性的复选框来修改它。 搜索架构属性包括 Search、Query、Retrieve 和 Refine。
+您可以选择应编制索引的源属性，以便它们显示在搜索结果中。 默认情况下，连接向导基于一组源属性选择搜索架构。 您可以通过选中搜索架构页中每个属性和属性的复选框来修改它。 搜索架构属性包括 Search、Query、Retrieve 和 Refine。
 利用优化，您可以定义稍后可在搜索体验中用作自定义精简程序或筛选器的属性。  
 
 > [!div class="mx-imgBorder"]
-> ![选择每个源属性的架构。 选项包括查询、搜索、检索和优化](media/salesforce-connector/sf9.png)
+> ![选择每个源属性的架构。 选项包括查询、搜索、检索和优化。](media/salesforce-connector/sf9.png)
 
 ## <a name="step-8-set-the-refresh-schedule"></a>步骤 8：设置刷新计划
 
@@ -167,7 +167,7 @@ Salesforce 连接器当前仅支持完全爬网的刷新计划。
 
 >[!TIP]
 >**默认结果类型**
->* 发布连接器后，Salesforce 连接器[](./customize-search-page.md#step-2-create-the-result-types)将自动注册结果类型。 结果类型使用基于步骤 3[](./customize-results-layout.md)中选定的字段的动态生成的结果布局。
+>* 发布连接器后，Salesforce 连接器[](./customize-search-page.md#step-2-create-result-types)将自动注册结果类型。 结果类型使用基于步骤 3[](./customize-results-layout.md)中选定的字段的动态生成的结果布局。
 >* 可以通过导航到"结果类型"中的"结果类型"来管理 [](https://admin.microsoft.com)[**Microsoft 365 管理中心。**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/resulttypes) 默认结果类型将命名为 `ConnectionId` "Default"。 例如，如果连接 ID 为 `Salesforce` ，结果布局将命名为："SalesforceDefault"
 >* 此外，还可以选择创建您自己的结果类型（如果需要）。
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
@@ -178,8 +178,8 @@ Salesforce 连接器当前仅支持完全爬网的刷新计划。
 ## <a name="limitations"></a>限制
 
 - 当前Graph连接器不支持使用 Salesforce 中的个人组进行基于 Apex、基于区域共享和共享。
-- 连接器使用的 Salesforce API Graph一个已知 bug，其中销售线索的专用组织范围默认值当前不可用。  
-- 如果某个字段具有字段级别 (为) 设置 FLS，则 Graph 连接器不会为 Salesforce 组织的任何配置文件输入该字段。因此，用户将无法搜索这些字段的值，也不会显示在结果中。  
+- 在连接器使用的 Salesforce API Graph一个已知 bug，其中销售线索的专用组织范围默认值当前不可用。  
+- 如果字段具有字段级别 (为) 设置 FLS，则 Graph 连接器不会为 Salesforce 组织的任何配置文件提供该字段。因此，用户将无法搜索这些字段的值，也不会显示在结果中。  
 - 在"管理架构"屏幕中，这些常用标准属性名称列出一次，选项为"查询 **"、"搜索****"、"检索**"和"**精简**"，并应用于全部或无。
     - 名称
     - URL

@@ -7,27 +7,27 @@ audience: Admin
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 description: 为媒体连接器Graph MediaWiki Microsoft 搜索
-ms.openlocfilehash: fff24ce918e3eab6a50d78977749a030ef17d0aef235e6d98e02bdf54fc63a0c
-ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
+ms.openlocfilehash: 7e1c308eb1785dd7fec23fac7e9002957a0d50ca
+ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54532691"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58701946"
 ---
 <!---Previous ms.author: monaray --->
 
 # <a name="mediawiki-graph-connector"></a>MediaWiki Graph连接器
 
-通过 MediaWiki Graph连接器，组织可以发现使用 MediaWiki 软件创建的 Wiki 数据，并编制数据索引。 此连接器将指定内容索引Microsoft 搜索并支持定期爬网，使索引保持最新。
+通过 MediaWiki Graph连接器，组织可以发现使用 MediaWiki 软件创建的 Wiki 数据，并编制数据索引。 此连接器将指定内容索引到Microsoft 搜索并支持定期爬网，使索引保持最新。
 
 > [!NOTE]
-> 阅读 [**Graph 连接器**](configure-connector.md)的安装程序一文，了解 Graph 连接器的一般设置说明。
+> 阅读 [**Graph 连接器的**](configure-connector.md)安装程序一文，了解 Graph 连接器的一般设置说明。
 
 本文适用于配置、运行和监视 MediaWiki Graph连接器。 它补充了常规安装过程，并显示了仅适用于 MediaWiki 连接器Graph说明。 本文还包括有关 [限制的信息](#limitations)。
 
@@ -35,7 +35,7 @@ ms.locfileid: "54532691"
 
 <!---Insert "Before you get started" recommendations for this data source-->
 
-## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>步骤 1：在Graph中添加一个Microsoft 365 管理中心
+## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>步骤 1：在Graph连接器中添加Microsoft 365 管理中心
 
 按照常规 [设置说明操作](./configure-connector.md)。
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->

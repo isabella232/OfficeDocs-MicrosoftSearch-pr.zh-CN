@@ -6,7 +6,7 @@ manager: kellis
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
@@ -14,18 +14,18 @@ search.appverid:
 ms.assetid: f980b90f-95e2-4b66-8b21-69f601ff4b50
 ROBOTS: NoIndex
 description: 通过向 Intranet 站点或页面添加一个Microsoft 搜索搜索框，更快地获取相关搜索建议并查找工作结果。
-ms.openlocfilehash: f11fcbeee23346041e4ebc720e4256d3aba29d57bed9266ed04bb02ee31c2ada
-ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
+ms.openlocfilehash: d9f730eee98291d64e1f860c67be3eb7aa52a4a8
+ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54533382"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58701405"
 ---
 # <a name="add-a-search-box-to-your-intranet-site"></a>将搜索框添加到 Intranet 站点
 
 若要为用户提供轻松访问您组织的结果，Microsoft 搜索搜索框中必应 Intranet 站点或页面。 以下为一些优势：
 
-- 搜索中心或 intranet SharePoint上的搜索框提供了一个熟悉、受信任的入口点以开始搜索
+- Web 门户或 Intranet SharePoint上的搜索框提供了一个熟悉、受信任的入口点以开始搜索
 - 支持所有主要 Web 浏览器，包括 Google Chrome 和 Microsoft Edge
 - 仅显示来自组织的搜索建议，从不包括 Web 建议
 - 将用户Microsoft 搜索工作必应，其中不包括广告和 Web 结果
@@ -110,7 +110,7 @@ ms.locfileid: "54533382"
 
 :::image type="content" alt-text="Screenshot of work results page on Microsoft 搜索 in 必应 showing the Sites vertical results and URL." source="media/sites-vertical-esb.png" lightbox="media/sites-vertical-esb.png":::
 
-对于自定义垂直方向，使用 URL 末尾的哈希。 您可以通过从 必应 的工作页进行搜索、单击垂直标签，以及复制数字符号后的值 (#) 。
+对于自定义垂直方向，使用 URL 末尾的哈希。 可以通过从 必应 上的工作页进行搜索、单击垂直标签，以及复制数字符号 (#) 。
 
 :::image type="content" alt-text="显示自定义演示文稿垂直结果和 URL Microsoft 搜索中必应工作结果页面的屏幕截图。" source="media/custom-vertical-esb.png" lightbox="media/custom-vertical-esb.png":::
 
@@ -124,4 +124,4 @@ ms.locfileid: "54533382"
 
 ## <a name="inprivate-mode-and-conditional-access"></a>InPrivate 模式和条件访问
 
-如果在 InPrivate 窗口中打开页面或网站，将禁用嵌入搜索框。 此外，使用 Microsoft Edge 中的 Azure AD 条件访问必应，在使用 InPrivate 模式时，必应.com 不支持 AAD 登录。 有关 Edge 中的条件访问详细信息，请参阅Microsoft Edge[和条件访问](/deployedge/ms-edge-security-conditional-access#accessing-conditional-access-protected-resources-in-microsoft-edge)。 
+如果在 InPrivate 窗口中打开页面或网站，将禁用嵌入搜索框。 此外，由于 Azure AD 条件访问支持Microsoft Edge，必应.com 在使用 InPrivate 模式时不支持 AAD 登录。 有关 Edge 中的条件访问详细信息，请参阅Microsoft Edge[和条件访问](/deployedge/ms-edge-security-conditional-access#accessing-conditional-access-protected-resources-in-microsoft-edge)。 

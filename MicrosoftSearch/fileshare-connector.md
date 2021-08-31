@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 ROBOTS: NoIndex
 description: 设置文件共享Graph连接器Microsoft 搜索
-ms.openlocfilehash: 71bcc86c2a1bf2f3d20693028ce006812aa170b5
-ms.sourcegitcommit: 5151bcd8fd929ef37239b7c229e2fa33b1e0e0b7
+ms.openlocfilehash: b91f10704b536ecc3a62c492ef23ba8745c4dcf8
+ms.sourcegitcommit: e5d56d6ce1cd285c5af3e0472ce169cb34883017
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58235910"
+ms.lasthandoff: 08/23/2021
+ms.locfileid: "58469948"
 ---
 <!---Previous ms.author: rusamai --->
 
@@ -28,7 +28,7 @@ ms.locfileid: "58235910"
 文件共享Graph连接器允许贵组织的用户搜索本地Windows文件共享。
 
 > [!NOTE]
-> 阅读 [**Graph 连接器的**](configure-connector.md)安装程序一文，了解 Graph 连接器的常规设置过程。
+> 阅读 [**setup for your Graph connector**](configure-connector.md)一文，了解常规 Graph 连接器安装过程。
 
 ## <a name="before-you-get-started"></a>在开始使用之前
 
@@ -46,7 +46,7 @@ ms.locfileid: "58235910"
 
 支持的最大文件大小为 100 MB。 超过 100 MB 的文件不会编制索引。 处理后的最大大小限制为 4 MB。 当文件大小达到 4 MB 时，处理将停止。 因此，文件中有些短语可能无法用于搜索。
 
-## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>步骤 1：在Graph中添加连接器Microsoft 365 管理中心
+## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>步骤 1：在Graph连接器中添加Microsoft 365 管理中心
 
 按照常规 [设置说明操作](./configure-connector.md)。
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
@@ -58,7 +58,7 @@ ms.locfileid: "58235910"
 
 ## <a name="step-3-configure-the-connection-settings"></a>步骤 3：配置连接设置
 
-在 **"连接"页上**，选择"文件共享"并提供名称、连接 ID 和说明。 下一页，提供文件共享的路径并选择之前安装的连接器Graph代理。 输入 Microsoft [Windows用户帐户的](https://microsoft.com/windows)凭据，该帐户具有对文件共享中所有文件的读取访问权限。
+在 **"连接数据源"** 页上，选择"文件共享"并提供名称、连接 ID 和说明。 下一页，提供文件共享的路径并选择之前安装的连接器Graph代理。 输入 Microsoft [Windows用户帐户的](https://microsoft.com/windows)凭据，该帐户具有对文件共享中所有文件的读取访问权限。
 
 ### <a name="preserve-last-access-time"></a>保留上一次访问时间
 
@@ -76,23 +76,23 @@ ms.locfileid: "58235910"
 
 #### <a name="full-network-path-of-filefolder-or-regular-expression-to-limit-indexing"></a>用于限制索引的文件/文件夹或正则表达式的完整网络路径 
 
-在网络路径中，使用转义字符 () \\ 字符（如 ）之前 \\ 。 示例：对于路径 \\ \\ CONTOSO \\ FILE \\ SHAREDFOLDER，正确的输入方式为 \\ \\ \\ \\ CONTOSO \\ \\ FILE \\ \\ SHAREDFOLDER
+在网络路径中，使用转义字符 () \\ 在特殊字符（如 ）之前 \\ 。 示例：对于路径 \\ \\ CONTOSO \\ FILE \\ SHAREDFOLDER，正确的输入方式为 \\ \\ \\ \\ CONTOSO \\ \\ FILE \\ \\ SHAREDFOLDER
 
 可以在此处找到用于编写正则表达式 [的规则](https://docs.microsoft.com/dotnet/standard/base-types/regular-expression-language-quick-reference)
 
 管理员还可以为限制规则提供例外。 例外规则的优先级将取代限制规则。 同样，可以通过为要包括在索引中的项目提供文件夹/文件路径来定义异常。
 
-![限制和例外](media/file-connector/ExclusionRule.png)
+![限制和例外。](media/file-connector/ExclusionRule.png)
 
 ## <a name="step-5-manage-search-permissions"></a>步骤 5：管理搜索权限
 
-您可以通过在"管理搜索权限"页中选择所需选项，来限制搜索基于"共享访问控制列表"或"新技术文件系统 (NTFS) 访问控制列表"的任何 **文件的权限。** 这些访问控制列表中提供的用户帐户和组必须由 Active Directory (AD) 。 如果要将任何其他系统用于用户帐户管理，可以选择"每个人"选项，这将允许用户搜索所有文件，而没有任何访问限制。 但是，当用户尝试打开文件时，将应用在源上设置的访问控制。
+您可以通过在"管理搜索权限"页中选择所需选项，来限制基于"共享访问控制列表"或"新建技术文件系统 (NTFS) 访问控制列表"搜索任何 **文件的权限。** 这些访问控制列表中提供的用户帐户和组必须由 Active Directory (AD) 。 如果要将任何其他系统用于用户帐户管理，可以选择"每个人"选项，这将允许用户搜索所有文件，而没有任何访问限制。 但是，当用户尝试打开文件时，将应用在源上设置的访问控制。
 
 请注意，默认情况下，当在网络共享文件夹时，Windows 会为共享 ACL 中的"每个人"提供"读取"权限。 通过扩展名，如果在"管理搜索权限"中选择"共享 **ACL"，** 用户将能够搜索所有文件。 如果要限制访问，请删除文件共享中"任何人"的"读取"访问权限，并仅向所需的用户和组提供访问权限。 然后，连接器读取这些访问限制，并应用这些限制进行搜索。
 
 只有在提供的共享路径遵循 UNC 路径格式时，才能选择"共享 ACL"。 可以通过在"共享"选项下进入"高级共享"来创建 UNC 格式的路径。
 
-![Advanced_sharing](media/file-connector/file-advanced-sharing.png)
+![Advanced_sharing。](media/file-connector/file-advanced-sharing.png)
 
 ## <a name="step-6-assign-property-labels"></a>步骤 6：分配属性标签
 

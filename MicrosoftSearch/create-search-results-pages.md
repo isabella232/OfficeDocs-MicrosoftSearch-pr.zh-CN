@@ -6,18 +6,18 @@ manager: jeffkizn
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 为 SharePoint Online 网站创建自己的搜索结果页面
-ms.openlocfilehash: 40944ef1eef7df41cd610b9f4abd037afe91dd8972a1a875901cecbac8756eb4
-ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
+ms.openlocfilehash: df99287dbdd9a82c1a8bc66b39e67a37fcb22da8
+ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54533152"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58702199"
 ---
 # <a name="create-a-custom-search-results-page-in-sharepoint-online"></a>在 SharePoint Online 中创建自定义搜索结果页面
 
-自定义搜索体验的一SharePoint一个方法就是为网站创建自定义搜索结果页面。 这允许您使用您创建的页面，而不是结果页中的Microsoft 搜索。 这样，您就搜索结果体验如何查找用户提供了更大的灵活性。
+自定义搜索体验的一SharePoint一个方法就是为网站创建自定义搜索结果页面。 这允许您使用您创建的页面，而不是在结果页Microsoft 搜索默认值。 这样，您就搜索结果体验如何查找用户提供了更大的灵活性。
 
 >[!NOTE]
 > 若要对默认可用的Microsoft 搜索页面进行更改，请参阅自定义[搜索结果页面](customize-search-page.md)。
@@ -30,7 +30,7 @@ ms.locfileid: "54533152"
 
 1. 浏览到要配置自定义结果页的网站，然后转到S site 设置 > **Site Collection 设置 > Search 设置**。
 
-2. 在"设置"中，清除"使用与我的父级相同的结果页面设置"中的选择，选择"将查询发送到自定义结果页面"，并为"结果"页面 URL 提供值 **：。** 然后，保存更改。 您在此处使用的 URL 应该适用于您创建用作自定义结果页的页面。
+2. 在"设置"中，从"使用与我的父级相同的结果页面设置"中清除选择，选择"将查询发送到自定义结果页面"，并为"结果"页面 URL 提供值 **：。** 然后，保存更改。 您在此处使用的 URL 应该用于您创建用作自定义结果页的页面。
 
 >[!NOTE]
 > 自定义结果页需要与您的网站位于同一个域中，但它不一定位于同一网站集中。  
@@ -41,13 +41,13 @@ ms.locfileid: "54533152"
 
 ## <a name="change-the-layout-of-your-custom-results-page"></a>更改自定义结果页面的布局
 
-可以使用名为 **HeaderlessSearchResults** 的页面布局使搜索结果页面看起来更接近我们开箱即用搜索结果体验。 对于设置为自定义搜索结果页面的页面，此新布局只能处于活动状态。
+可以使用名为 **HeaderlessSearchResults** 的页面布局使搜索结果页面看起来离我们开箱即用搜索结果体验更近。 对于设置为自定义搜索结果页面的页面，此新布局只能处于活动状态。
 
 若要设置页面布局，可以将 [Set-PnPClientSidePageSharePoint PnP PowerShell](/powershell/module/sharepoint-pnp/set-pnpclientsidepage?view=sharepoint-ps) 命令与 -LayoutType HeaderlessSearchResults 一同使用。
 
 ## <a name="use-sharepoint-framework-query-extensions"></a>使用SharePoint 框架查询扩展
 
-自定义搜索结果页还可利用查询扩展[SharePoint 框架](/sharepoint/dev/spfx/building-search-extensions)查询，在查询发送到搜索引擎之前对其进行修改。
+自定义搜索结果页还可以利用查询扩展SharePoint 框架查询，[](/sharepoint/dev/spfx/building-search-extensions)在查询发送到搜索引擎之前对其进行修改。
 
 ## <a name="additional-resources"></a>其他资源
 

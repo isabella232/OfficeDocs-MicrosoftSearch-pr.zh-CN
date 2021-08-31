@@ -12,18 +12,18 @@ search.appverid:
 - MET150
 - MOE150
 description: 如何映射 AAD 标识的步骤
-ms.openlocfilehash: 676e06d4019dabe0f07846dd8918b8070765a7ffd9deb02b11dd68f2014dc7e5
-ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
+ms.openlocfilehash: 69d4164e6d0acc245eee5c631db39ed7fb178325
+ms.sourcegitcommit: e5d56d6ce1cd285c5af3e0472ce169cb34883017
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54532801"
+ms.lasthandoff: 08/23/2021
+ms.locfileid: "58470293"
 ---
 # <a name="map-your-azure-ad-identities"></a>映射 Azure AD 标识   
 
-本文将引导你完成将 Azure AD 标识映射到数据源 (非 Azure AD 标识) 的唯一标识符的步骤，以便访问控制列表 (ACL) 中具有非 Azure AD 标识的用户可以查看作用域为他们的连接器搜索结果。
+本文将引导你完成将 Azure AD 标识映射到数据源 (非 Azure AD 标识) 的唯一标识符的步骤，以便访问控制列表 (ACL) 具有非 Azure AD 标识的用户可以查看作用域为他们的连接器搜索结果。
 
-这些步骤仅与由 Microsoft 设置 [Salesforce](salesforce-connector.md) 连接器的搜索管理员相关，搜索管理员具有"仅有权访问此数据源的用户"和标识类型"AAD"的搜索权限。 以下步骤将演练如何将 Azure AD 用户属性映射到用户的 **联合身份验证 ID。**
+这些步骤仅与搜索管理员相关，搜索管理员使用"仅有权访问此数据源的用户"和标识类型"AAD"的搜索权限由 Microsoft 设置 [Salesforce](salesforce-connector.md) 连接器。 以下步骤将演练如何将 Azure AD 用户属性映射到用户的 **联合身份验证 ID。**
 
 >[!NOTE]
 >如果要设置 [Salesforce](salesforce-connector.md)连接器，并选择"搜索权限"屏幕上的"仅有权访问此数据源和标识类型非 **AAD** 的用户"，请参阅映射非 Azure [AD](map-non-aad.md)标识一文，了解如何映射非 Azure AD 标识的步骤。  
@@ -49,7 +49,7 @@ ms.locfileid: "54532801"
 | {0}.{1}@contoso.com  | firstname | lastname |firstname.lastname@contoso.com
 | {0}@domain.com                 | userid                 |             |userid@domain.com
 
-提供公式后，可以选择单击"预览"以查看数据源中应用了其各自的用户映射的 5 个随机用户的预览。 预览的输出包括步骤 1 中为这些用户选择的 Azure AD 用户属性的值，以及步骤 2 中为该用户提供的最终公式的输出。 它还指示是否可以通过"成功"或"失败"图标将公式的输出解析为租户中的 Azure AD 用户。  
+提供公式后，可以选择单击"预览"，查看数据源中应用了各自的用户映射的 5 个随机用户的预览。 预览的输出包括步骤 1 中为这些用户选择的 Azure AD 用户属性的值，以及步骤 2 中为该用户提供的最终公式的输出。 它还指示是否可以通过"成功"或"失败"图标将公式的输出解析为租户中的 Azure AD 用户。  
 
 >[!NOTE]
 >如果单击"预览"后，一个或多个用户映射的状态为"失败"，则仍可继续创建 **连接**。 预览显示 5 个随机用户及其来自数据源的映射。 如果您提供的映射未映射所有用户，则可能会遇到这种情况。
@@ -58,7 +58,7 @@ ms.locfileid: "54532801"
 
 有关示例 Azure AD 映射，请参阅下面的快照。
 
-![如何填写 Azure AD 映射页面的示例快照](media/aad-mapping.png)
+![如何填写 Azure AD 映射页面的示例快照。](media/aad-mapping.png)
 
 ## <a name="limitations"></a>限制  
 

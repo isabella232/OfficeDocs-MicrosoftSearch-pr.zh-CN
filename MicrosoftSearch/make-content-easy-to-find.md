@@ -6,35 +6,35 @@ manager: mnirkhe
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 description: 创建书签、位置和问答项目，让用户轻松查找组织的内容。
-ms.openlocfilehash: 0cf3152e7fb47f0cb1b1fa3fe0df43645a2536e171fd8211050a1773ec86a490
-ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
+ms.openlocfilehash: 77b6507c7643e6cf2176f37a9a2cf0def1c640ba
+ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54532936"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58702072"
 ---
 # <a name="make-content-easy-to-find"></a>使内容易于查找
 
 Microsoft 搜索可帮助用户查找相关内容。 它是一种搜索你的 Intranet 和 Web 内容的安全方式。 这种跨 Web 和组织的集成只能从 Microsoft 获得。 利用 Microsoft 搜索，搜索管理员可以通过对组织的了解，使用户能够轻松查找相关内容。 
 
 ## <a name="components-that-find-content"></a>查找内容的组件
-在Microsoft 搜索中，管理员创建[书签](manage-bookmarks.md)[、PowerApps、Q](integrate-powerapps.md)&[A](manage-qas.md)和[位置](manage-locations.md)，使内容更易于查找。 每个搜索组件都包括标题、URL 和一组触发关键字。
+在Microsoft 搜索中，管理员创建[书签](manage-bookmarks.md)[、PowerApps、Q](integrate-powerapps.md) [&A](manage-qas.md)和[位置](manage-locations.md)，使内容更易于查找。 每个搜索组件都包括标题、URL 和一组触发关键字。
 
 ## <a name="bookmarks"></a>书签
 只需几个 [步骤，](manage-bookmarks.md) 就可以创建书签。 每个书签都包括标题、URL 和一组触发关键字。 一个书签可以具有多个关键字，多个书签可以共享同一个关键字。 但保留的关键字无法共享。 创建或修改书签时，搜索索引将刷新，并且用户可以立即使用书签。
 
-如果组织已 **升级在** SharePoint 中设置 [](http://sharepoint.com/)的结果，可以将这些结果导入Microsoft 搜索。 使用升级的结果，您可以快速填充搜索结果，使内容可供用户使用，Microsoft 搜索设置后就使其更有效。 我们建议你使用 SharePoint 中的升级结果作为参考，以了解如何命名和创建相关的搜索结果。 
+如果组织已 **升级在** SharePoint [中设置](http://sharepoint.com/)的结果，可以将这些结果导入Microsoft 搜索。 使用升级的结果，您可以快速填充搜索结果，使内容可供用户使用，Microsoft 搜索设置后就使其更有效。 我们建议你使用 SharePoint 中的升级结果作为参考，以了解如何命名和创建相关的搜索结果。 
 
 ### <a name="add-or-edit-bookmarks-by-using-browser-extensions"></a>使用浏览器扩展添加或编辑书签
 搜索管理员可以使用浏览器扩展轻松创建搜索内容。 若要将网站添加为书签，请安装浏览器扩展。 然后转到该网站，并添加为书签。 若要了解更多信息，请参阅 [管理书签](manage-bookmarks.md)。
 
-目前，浏览器扩展可用于[Microsoft Edge](https://www.microsoft.com/windows/microsoft-edge) [和 Google Chrome：](https://www.google.com) 
+目前，浏览器扩展可用于[Microsoft Edge](https://www.microsoft.com/windows/microsoft-edge)和 Google [Chrome：](https://www.google.com) 
 - 若要下载边缘扩展，请转到["Microsoft Store"。](https://www.microsoft.com/p/microsoft-search-content-creator/9nrqdbcbwq55?activetab=pivot:overviewtab)
 - 若要下载 Chrome 扩展，请转到 [Chrome Web 应用商店](https://chrome.google.com/webstore/detail/microsoft-search-content/nocnablpaoeecfmfnjoheefkogmleipm)。
 
@@ -58,7 +58,7 @@ Microsoft 搜索可帮助用户查找相关内容。 它是一种搜索你的 In
 
 ## <a name="qa"></a>问答
 
-创建[问答&创建](manage-qas.md)[书签](manage-bookmarks.md)。 使用问答&，你可以为用户提供问题的答案，而不是仅提供网页链接。 您可以使用可用工具以格式文本格式回答。 如果书签和问答&同一关键字，则首先显示书签结果。 与书签一样，&A 索引的问答在添加或更改问答后立即&刷新。 
+创建[问答&创建](manage-qas.md)[书签一样](manage-bookmarks.md)。 使用问答&，你可以为用户提供问题的答案，而不是仅提供网页链接。 您可以使用可用工具以格式文本格式回答。 如果书签和问答&同一关键字，则首先显示书签结果。 与书签一样，&A 索引的问答在添加或更改问答后立即&刷新。 
 
 ### <a name="supported-html-tags"></a>受支持的 HTML 标记
 
@@ -90,14 +90,14 @@ Microsoft 搜索可帮助用户查找相关内容。 它是一种搜索你的 In
 
 [借助位置](manage-locations.md)，用户可以查找地址并找到组织的大楼。 **位置功能** 为办公室、校园和建筑物提供了准确的位置，以及路线和导航。 为了获得最佳结果，管理员需要将组织的所有重要位置添加到Microsoft 搜索。 与 [Bookmarks](manage-bookmarks.md) 和 [Q&A](manage-qas.md)不同，Locations 索引不会立即刷新。 新位置或已更改的位置可能需要几个小时才能显示在搜索结果中。
 
-## <a name="get-started"></a>开始行动
+## <a name="get-started"></a>入门
 若要了解用户需要的信息，并轻松发现该信息，请尝试以下一些方法：
 
 - 使用 Intranet 搜索日志，来确定获得最多流量的网站和页面。
 - 确定每天或每周使用的应用、网站和工具。
 - 查找员工福利的直接链接。
 - 查找用户需要了解的策略和流程。
-- 确定与谁联系以联系支持人员，以及他们如何这样做。
+- 确定与支持人员联系的用户及其如何联系。
 - 获取季节性或基于业务周期定期需要的信息。 例如，人们正在寻找工具来预订请假或季度财务更新。
 - 收集区域用户或移动用户的策略。 示例是因位置而异的好处。
 - 确定常见 Web 搜索的内部网站和信息。 示例包括交通、公共交通信息、本地天气、公司合作伙伴提供的折扣以及健康与健身计划。
@@ -110,7 +110,7 @@ Microsoft 搜索可帮助用户查找相关内容。 它是一种搜索你的 In
 大多数搜索管理员没有关于每个主题的特定知识。 若要在无需外部资源帮助的情况下扩展可用内容的数量，请向组织其他人寻求专长和知识。
 
 ### <a name="get-content-from-smes"></a>从 SMES 获取内容
-利用组织中与 (行业) 专家，包括来自人力资源、支持、销售、技术和其他关键领域的专家。 如果将内容添加为编辑人员，SMES 可以直接Microsoft 搜索内容。 
+利用组织中 (行业) 专家，包括来自人力资源、支持、销售、技术和其他关键领域的专家。 如果将内容添加为编辑人员，SMES 可以直接Microsoft 搜索内容。 
 
 ### <a name="involve-your-users"></a>让用户参与进来
 让用户推荐要设为书签的资源。 还要要求用户报告损坏或无效链接等错误。
@@ -125,7 +125,7 @@ Microsoft 搜索可帮助用户查找相关内容。 它是一种搜索你的 In
 1. 在你添加或编辑信息时，预览将随之自动更新。
 
 ### <a name="bulk-add-or-edit-components"></a>批量添加或编辑组件
-借助 **导入** 和 **导出功能**，搜索管理员可以批量创建或编辑书签、问答 [](manage-bookmarks.md)&[A 和](manage-qas.md)[位置](manage-locations.md)。 当管理员希望添加或编辑多个组件时，此功能非常有用。 
+借助 **导入** 和 **导出功能**，搜索管理员可以批量创建或编辑书签、问答 [](manage-bookmarks.md)&[A](manage-qas.md)和 [位置](manage-locations.md)。 当管理员希望添加或编辑多个组件时，此功能非常有用。 
 
 导入和导出功能提供以下功能：
 - **批量添加**。 在组件的模板文件中添加详细信息，然后导入它。
@@ -138,12 +138,12 @@ Microsoft 搜索可帮助用户查找相关内容。 它是一种搜索你的 In
 1. 若要下载 CSV 文件的所有现有组件，请选择"导出 **"。**
 1. 在右侧窗格中，选择使用 CSV 文件或从文件[导入SharePoint。](http://sharepoint.com/)
 1. 若要获取所需字段和详细信息的列表，请下载组件的模板文件。 
-1. 在模板文件中添加或编辑组件详细信息。 然后，将其保存到您的计算机上。 
+1. 在模板文件中添加或编辑组件详细信息。 然后，将其保存到计算机上。 
 1. 在组件的"导入"**窗格中**，选择"浏览 **"。** 然后选择您想要的 CSV 文件，然后选择 **导入**。
 
 ### <a name="template-guidelines"></a>模板指南
 在使用模板文件时，请注意以下指南和限制：
-- 从不编辑以下字段中的数据 *：Id、Last* *Modified* 和 *Last Modified By。*
+- 从不编辑以下字段中的数据 *：Id、Last* *Modified* 和 *Last Modified By*。
 - 如果包含现有 *书签的 ID，* 则它将替换为导入文件中的信息。
 - 如果现有文件中存在标题或 URL 相同的书签，则使用导入文件中的信息更新书签。
 - 模板文件中并非所有字段都是必需的，并且所需字段因书签状态而异。
@@ -177,7 +177,7 @@ Microsoft 搜索可帮助用户查找相关内容。 它是一种搜索你的 In
 ### <a name="reserved-keywords"></a>保留关键字
  保留关键字是用于触发结果的唯一词条或短语。 与其他关键字不同，保留的关键字仅与一个结果相关联。 请慎用保留关键字，以便 Microsoft 搜索能够基于使用情况进行学习。
 
-例如，用于提交工时的网站的书签。 如果 **日志时间** 是保留的关键字，则组织中搜索日志时间的用户会看到该网站是"日志时间"框中Microsoft 搜索书签。 
+例如，用于提交工时的网站的书签。 如果 **日志时间** 是保留的关键字，则组织中搜索日志时间的用户会看到该网站是"记录"框中Microsoft 搜索书签。 
 
 ### <a name="group-related-content-with-keywords"></a>使用关键字对相关内容进行分组
 如果您希望用户在搜索特定术语时查找相关内容集，请为所有相关内容分配相同的关键字。 例如，搜索与生命周期状态更改有关的过程和工具。 若要将有关更新权益、税务信息以及名称和别名更改的解答组合在一起，请包含一个关键字，如 **"我的关键字"。**
@@ -205,26 +205,26 @@ Microsoft 搜索可帮助用户查找相关内容。 它是一种搜索你的 In
 - 修复或删除损坏和无效的 URL。
 - 删除不再相关的&或问答。
 - 检查工具、网站名称或团队名称更改。
-- 请考虑书签或 Q&A 是否足够权威或是否需要更明确的说明。
+- 请考虑书签或问答&是否足够权威或需要更明确的说明。
 
 ## <a name="get-insights-about-bookmarks-qa-and-locations"></a>获取有关书签、问答&和位置的见解
 
-Microsoft 搜索显示已发布、计划[或&](manage-qas.md)书签、问答和位置数。 [](manage-bookmarks.md) [](manage-locations.md) 仪表板[Insights](./usage-reports.md)按状态显示书签&问答和位置总计：
+Microsoft 搜索显示已发布、计划[或&](manage-qas.md)书签[](manage-bookmarks.md)、问答和位置数。 [](manage-locations.md) 仪表板[Insights](./usage-reports.md)按状态显示书签&问答和位置总计：
 
 - **已发布：** 向用户推出的已发布结果数。
 - **已计划：** 发布管道中的已计划结果数。
 - **已建议：** 来自用户的建议数。
 
-建议的 [书签](manage-bookmarks.md)、&[A](manage-qas.md)和 [位置](manage-locations.md) 是衡量内容差距的良好指标。 它们可帮助你了解用户查找但找不到内容。 此数据可能指示你需要创建多个书签、问答&A 或位置。 或者，您可能需要使用更好的关键字、保留的关键字和搜索字符串来更新现有内容，使内容更可发现。
+建议的 [书签](manage-bookmarks.md)、&[A](manage-qas.md)和 [位置](manage-locations.md) 是衡量内容差距的良好指标。 它们可帮助你了解用户查找但找不到内容。 此数据可能指示你需要创建多个书签、问答&位置。 或者，您可能需要使用更好的关键字、保留的关键字和搜索字符串来更新现有内容，使内容更可发现。
 
 ### <a name="review-top-search-queries"></a>查看热门搜索查询
 
 若要了解哪些搜索生成了过去 90 天内最多的展示次数，请查看热门搜索查询。 *"* 印象"表示在搜索结果中查看页面多少次。 Insights仪表板上的"热门查询["](./usage-reports.md)卡片显示每个结果类型的前 25 个用户搜索、搜索总数和点击率 (CTR) 。 通过此报告，您可以确定搜索查询量并确定具有较高和较低搜索活动的查询。
 
-较低的搜索计数可能表示用户不满意。 要么用户没有查找该内容，要么使用不同的关键字来查找该内容。 CTR 可显示用户选择升级结果的频率以及查询规则和结果对用户的有用程度。 较低的 CTR 表示用户找到内容，但无法满足其需求。 在这种情况下，请查看内容。 若要使内容与搜索查询保持一致，请确保它与用户的搜索相匹配，并更新标题、说明和关键字。 
+较低的搜索计数可能表示用户不满意。 要么用户不查找该内容，要么使用不同的关键字来查找该内容。 CTR 可显示用户选择升级结果的频率以及查询规则和结果对用户的有用程度。 较低的 CTR 表示用户找到内容，但无法满足其需求。 在这种情况下，请查看内容。 若要使内容与搜索查询保持一致，请确保它与用户的搜索相匹配，并更新标题、说明和关键字。 
 
 ### <a name="analyze-impressions-by-result-type"></a>按结果类型分析展示次数
 
 仪表板上"展示次数"**分发卡中的** 易读图形Insights显示 [](./usage-reports.md)不同时间帧的展示次数。 时间轴将会显示结果类型的每日展示次数。 使用这些图形，可以确定最常用或不经常使用的结果类型。 不经常使用特定结果类型不一定意味着结果类型不良好。 它只显示用户如何使用搜索结果。
 
- 如果用户首选特定结果类型，您可能会创建更多相同类型的搜索结果。 若要确保关键字适当，请查看使用率较低的结果类型的关键字。 通过此报告，还可以查看用户行为在一段时间的变化。
+ 如果用户首选特定结果类型，则可能会创建更多相同类型的搜索结果。 若要确保关键字适当，请查看使用率较低的结果类型的关键字。 通过此报告，还可以查看用户行为在一段时间的变化。

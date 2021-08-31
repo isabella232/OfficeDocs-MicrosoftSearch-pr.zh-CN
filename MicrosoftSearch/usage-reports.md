@@ -8,18 +8,18 @@ ms.service: mssearch
 audience: Admin
 ms.audience: Admin
 ms.date: 07/02/2021
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 description: 查看Microsoft 搜索使用情况报告
-ms.openlocfilehash: 9798cdaf0f88ca2f247bb8d10fce526f07adbabc1bbe5566eaddfc071346f751
-ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
+ms.openlocfilehash: 9de48331efbc956ee7d980b919d9bd2f025fc8aa
+ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54533108"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58701450"
 ---
 # <a name="microsoft-search-usage-reports"></a>Microsoft 搜索使用率报告
 
@@ -28,12 +28,12 @@ ms.locfileid: "54533108"
 > [!IMPORTANT]
 > Microsoft 搜索使用情况报告当前处于预览阶段
 
-该[Microsoft 搜索使用情况报告](https://admin.microsoft.com/Adminportal/Home?#/MicrosoftSearch/insights)包括从 SharePoint Home、Office.com 和 必应 搜索框中执行的搜索生成的Microsoft 搜索和必应表。 你可以查看过去 31 天、每天或上一年每月的数据。 这些报告刚刚推出，因此需要一段时间来累算历史数据。
+该[Microsoft 搜索使用情况](https://admin.microsoft.com/Adminportal/Home?#/MicrosoftSearch/insights)报告包括从 SharePoint Home、Office.com 和 Microsoft 搜索 搜索框中执行的搜索Microsoft 搜索图表必应表格。 你可以查看过去 31 天、每天或上一年每月的数据。 这些报告刚刚推出，因此需要一段时间来累算历史数据。
 
-此页面的以前版本包含仅针对 Microsoft 搜索.com 上 必应 必应 搜索执行的数据。 该数据现在集成到这些报告;你仍然可以通过单击页面底部的链接来查看旧必应热门查询和印象 **分布**。 此链接和旧页面将很快删除。
+此页面的早期版本包含仅针对 Microsoft 搜索.com 上必应必应搜索的数据。 该数据现已集成到这些报告;你仍然可以通过单击页面底部的链接来查看旧页面必应热门查询和印象 **分布**。 此链接和旧页面将很快删除。
 
 > [!div class="mx-imgBorder"]
-> ![搜索使用率报告仪表板](media/usage-reports/usage_reports_v2.png)
+> ![搜索使用率报告仪表板。](media/usage-reports/usage_reports_v2.png)
 
 ## <a name="overview-of-search-reports"></a>搜索报告概述
 
@@ -41,8 +41,8 @@ ms.locfileid: "54533108"
 |:-----|:-----|
 |查询量|此报告显示执行的搜索查询的数量。 使用此报告可确定搜索查询量趋势，并确定较高和较低搜索活动的时间段。|
 |热门查询|此报告显示最热门的搜索查询。 当通过单击结果至少搜索此查询三次时，会向该报表添加查询。 使用此报告可了解用户要搜索的信息类型。|
-|放弃的查询|此报告显示点击率较低的热门搜索查询。 使用此报告可确定可能导致用户不满意的搜索查询，并提高内容的可发现性。 然后，您可以确定创建答案（如书签）或通过 Graph连接器来加入新内容是否是正确的操作。|
-|无结果查询|此报告显示未返回结果的热门搜索查询。 使用此报告可确定可能导致用户不满意的搜索查询，并提高内容的可发现性。 然后，您可以确定创建答案（如书签）或通过 Graph连接器来加入新内容是否是正确的操作。|
+|放弃的查询|此报告显示点击率较低的热门搜索查询。 使用此报告可确定可能导致用户不满意的搜索查询，并提高内容的可发现性。 然后，您可以确定创建答案（如书签）或通过 Graph 连接器来插入新内容是否是正确的操作。|
+|无结果查询|此报告显示未返回结果的热门搜索查询。 使用此报告可确定可能导致用户不满意的搜索查询，并提高内容的可发现性。 然后，您可以确定创建答案（如书签）或通过 Graph 连接器来插入新内容是否是正确的操作。|
 
 >[!NOTE]
 >目前存在一个已知问题，例如书签等答案所满足的查询被视为放弃的查询。
@@ -67,7 +67,7 @@ ms.locfileid: "54533108"
 
 我们正在考虑这种类型的聚合，并针对这些报告的未来版本简化数据范围筛选。
 
-**为什么无法按不同应用和源 (使用情况) ？**
+**为什么我看不到按不同应用和源 (使用情况) ？**
 
 目前，无法按源进行筛选。 报告将组合来自 SharePoint Home 和 Office.com 的搜索。 我们的下一版本将包括源筛选，以便你可以查看特定于每个应用程序的指标。
 

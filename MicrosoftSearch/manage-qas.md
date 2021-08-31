@@ -6,19 +6,19 @@ manager: parulm
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 ms.assetid: 7e3432e6-5317-4d63-90b0-52da6fddd343
-description: 单独查找并更新答案，或使用可用的Microsoft 搜索工具一&一次编辑问答。
-ms.openlocfilehash: 2e54169a6196ec78bd96b33aa1ba71fc498b6ff13d8d872ad06ca0db1d9fc2c0
-ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
+description: 单独查找并更新答案或使用可用的Microsoft 搜索编辑问答&一次编辑问答。
+ms.openlocfilehash: 2ee42e3feaf5c14b2af820360f753ecc2e116f9b
+ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54532863"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58701982"
 ---
 # <a name="manage-qas"></a>管理问答
 
@@ -67,17 +67,17 @@ ms.locfileid: "54532863"
 
 管理员可以使用导入和导出功能批量创建或编辑问答&问题。
 
-使用导入/导出功能可：
+使用 导入/导出 功能可：
 
-- 批量添加 Q&As - 在 Q&模板文件中添加详细信息，然后导入它。
+- 批量添加 Q&As - 在问答模板&添加详细信息，然后导入它。
 - 批量编辑&为 - 将问答&导出到 .csv 文件，编辑导出&中的问答详细信息，然后导入该文件。
 - 备份问答&- 将问答&导出到.csv文件。
 
 若要导入或导出问答&为：
 
 1. 在“问答”选项卡的右上角，选择“**导入**”。
-选择 **导出** 以下载所有现有问答&如在.csv文件中。
-1. 在右窗格中，选择使用文件导入.csv选项。 下载模板文件，获取所需字段和详细信息的列表。
+选择 **导出** 以下载所有现有问答&一个.csv文件。
+1. 在右侧窗格中，选择使用文件导入.csv选项。 下载模板文件，获取所需字段和详细信息的列表。
 1. 添加或编辑&模板文件中的详细信息，并将其保存在您的计算机上。
 1. In the **Import Q&A** pane， select **Browse**， and then select the .csv file that you want to import.
 1. 选择“**导入**”。

@@ -6,24 +6,24 @@ manager: parulm
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 description: 在经典Microsoft 搜索页面上使用SharePoint
-ms.openlocfilehash: 187a8c78b9f1b78cf1c5ad04ede91a38fe88759d34037226949a441034cb13b9
-ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
+ms.openlocfilehash: 5b9c40da63ccf3b28cf2d61282763d3d4f62f867
+ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54533596"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58702036"
 ---
 # <a name="classic-pages-and-microsoft-search"></a>经典页面和Microsoft 搜索
 
 SharePoint网站之前创建的网站使用经典搜索框和经典搜索结果体验。 我们将推出一项功能，该功能将默认使用经典页面，以开始使用使用 Microsoft 搜索 的新式搜索体验，从而提供具有更高相关性的个性化结果。
 
-建议所有网站（包括经典网站）使用 Microsoft 搜索，但如果经典网站使用自定义母版页和/或自定义了经典搜索结果体验，我们将自动检测这些自定义项，而不是切换到 Microsoft 搜索。
+建议Microsoft 搜索所有网站（包括经典网站）使用自定义母版页和/或自定义经典搜索结果体验，我们将自动检测这些自定义项，而不是切换到 Microsoft 搜索。
 
 ## <a name="classic-sites-that-will-automatically-switch-to-microsoft-search"></a>将自动切换到网站的经典Microsoft 搜索
 
@@ -84,4 +84,4 @@ Set-PnPSearchSettings -Scope Site -SearchBoxInNavBar AllPages
 ```
 
 > [!NOTE]
-> 只能为包含"STS"、"CMSPUBLISHING"、"BLANKINTERNET"和"GROUP" (的团队网站或发布网站模板 id 手动启用) 。 Microsoft 搜索
+> 只能 Microsoft 搜索为包含"STS"、"CMSPUBLISHING"、"BLANKINTERNET"和"GROUP" (的团队网站或发布网站模板 id 手动启用) 。

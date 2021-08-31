@@ -1,5 +1,5 @@
 ---
-title: Azure Data Lake Graph连接器Microsoft 搜索
+title: Azure Data Lake Graph 连接器Microsoft 搜索
 ms.author: mecampos
 author: mecampos
 manager: umas
@@ -7,18 +7,18 @@ audience: Admin
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: 设置 Azure Data Lake 存储 Gen2 Graph连接器，Microsoft 搜索
-ms.openlocfilehash: 10bccfc0af144c22f280819d96e21be13ae1c2aad273364499296b6289d3a1e5
-ms.sourcegitcommit: 71ac2a38971ca4452d1bddfc773ff8f45e1ffd77
+description: 设置 Azure Data Lake 存储 Gen2 Graph连接器Microsoft 搜索
+ms.openlocfilehash: f60de4252e514f84bc92daf4ea65c535cf40a13d
+ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54533362"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58701396"
 ---
 <!---Previous ms.author: monaray --->
 
@@ -27,13 +27,13 @@ ms.locfileid: "54533362"
 Azure Data Lake 存储 Gen2 Graph 连接器允许贵组织的用户搜索[存储在 Azure Blob 存储](/azure/storage/blobs/storage-blobs-introduction)和 Azure Data Lake Gen [2](/azure/storage/blobs/data-lake-storage-introduction)存储帐户的文件。
 
 > [!NOTE]
-> 阅读 [**Setup your Graph connector**](configure-connector.md)一文，了解 Graph 连接器的一般设置说明。
+> 阅读 [**Setup your Graph connector**](configure-connector.md)一文，了解 Graph连接器的一般设置说明。
 
-本文适用于配置、运行和监视 Azure Data Lake 存储 Gen2 连接器的任何人。 它补充了常规安装过程，并显示了仅适用于 Azure Data Lake 存储 Gen2 连接器的说明。 本文还包括有关 [限制的信息](#limitations)。
+本文适用于配置、运行和监视 Azure Data Lake 存储 Gen2 连接器的任何人。 它补充了常规设置过程，并显示了仅适用于 Azure Data Lake 存储 Gen2 连接器的说明。 本文还包括有关 [限制的信息](#limitations)。
 
-在文章中，我们将 Azure 存储用作[Azure Blob](/azure/storage/blobs/storage-blobs-introduction)存储 和 Azure Data [Lake Gen 2](/azure/storage/blobs/data-lake-storage-introduction)存储 的通用术语。
+在文章中，我们将 Azure 存储用作[Azure Blob](/azure/storage/blobs/storage-blobs-introduction)存储 和[Azure Data Lake Gen 2](/azure/storage/blobs/data-lake-storage-introduction)项目的通用存储。
 
-## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>步骤 1：在Graph中添加一个Microsoft 365 管理中心
+## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>步骤 1：在Graph连接器中添加Microsoft 365 管理中心
 
 按照常规 [设置说明操作](./configure-connector.md)。
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
@@ -47,13 +47,13 @@ Azure Data Lake 存储 Gen2 Graph 连接器允许贵组织的用户搜索[存储
 
 输入主存储连接字符串。 需要此字符串才能访问存储帐户。 若要查找连接字符串，请转到[Azure](https://ms.portal.azure.com/#home)门户并导航到相关帐户的密钥Azure 存储部分。
 
-如果您不希望在主存储连接字符串 (中提供 **AccountKey** 参数) ，请授予以下角色对 Graph 连接器服务的访问权限：
+如果您不希望在主存储连接字符串 (中提供 **AccountKey**) ，请授予以下角色对 Graph 连接器服务的访问权限：
 
 * 存储Blob 数据读取器
 * 存储队列数据参与者
 * 存储Blob Delegator
 
-导航到 **帐户的**"访问控制"Azure 存储，然后按照其中的说明授予对以下应用的访问权限：
+导航到帐户 **的**"访问控制"Azure 存储，然后按照其中的说明授予对以下应用的访问权限：
 
 * **第一方应用** ID：56c1da01-2129-48f7-9355-af6d59d42766
 * **第一方应用名称：Graph** 连接器服务
@@ -70,7 +70,7 @@ Azure Data Lake 存储 Gen2 Graph 连接器允许贵组织的用户搜索[存储
 
 ## <a name="step-5-manage-schema"></a>步骤 5：管理架构
 
-在"**管理架构**"屏幕上，可以更改与属性关联的架构属性，选项为"**查询****"、"搜索****"、"检索**"和"**优化"。** 还可以添加可选别名，然后选择 **Content** 属性。
+在 **"管理架构**"屏幕上，可以更改与属性关联的架构属性，选项为"查询"、"**搜索**"、"**检索**"和"**优化"。** 还可以添加可选别名，然后选择 **Content** 属性。
 
 ## <a name="step-6-manage-search-permissions"></a>步骤 6：管理搜索权限
 
@@ -78,7 +78,7 @@ Azure Data Lake 存储 Gen2 Graph 连接器允许贵组织的用户搜索[存储
 
 你可以选择从[Azure Data Lake Gen 2](/azure/storage/blobs/data-lake-storage-introduction) (帐户) 访问控制列表存储 ACL。 设置这些搜索权限后，将基于登录用户的权限对搜索内容进行[Azure Active Directory。](/azure/active-directory/) 或者，可以选择使存储帐户中编制索引的所有内容对组织中的每个人可见。 在这种情况下，组织中的每个人都可以访问存储帐户中的所有数据。
 
-Azure Data Lake 存储 Gen2 Graph 连接器支持对"任何人"或"仅有权访问此数据源的人"**可见的搜索权限**。 对于组织中有权访问每个项目的用户，搜索结果中出现的已编制索引的数据可能可见。
+Azure Data Lake 存储 Gen2 Graph 连接器支持对"任何人"或"仅有权访问此数据源的人"可见的 **搜索权限**。 对于组织中有权访问每个项目的用户，搜索结果中出现的已编制索引的数据可能可见。
 
 ### <a name="azure-blob-storage"></a>Azure Blob 存储
 
@@ -98,7 +98,7 @@ Azure Data Lake 存储 Gen2 Graph 连接器支持对"任何人"或"仅有权访�
 
 ## <a name="limitations"></a>限制
 
-无法针对 Azure Data Lake 存储 Gen2 源存储另一种方法重新配置 Azure Blob 数据的已发布连接。 在这种情况下，建议配置新连接。
+无法为 Azure Data Lake 存储 Gen2 源存储另一种方法重新配置 Azure Blob 数据库的已发布连接。 在这种情况下，建议配置新连接。
 
 此外，文件的大小需要小于或小于 4 MB，以用于爬网。 当前支持的文件类型包括：
 
