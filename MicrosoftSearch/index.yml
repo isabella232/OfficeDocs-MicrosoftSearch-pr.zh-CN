@@ -1,0 +1,81 @@
+## YamlMime:Hub
+title: Microsoft 搜索管理文档
+summary: 管理Microsoft 搜索，通过为组织提供更相关的搜索结果来提高工作效率。
+metadata:
+  title: Microsoft 搜索文档
+  description: Microsoft 搜索为组织提供更相关的搜索结果，从而提高工作效率并节省时间。
+  ms.service: mssearch
+  ms.topic: landing-page
+  author: jeffkizn
+  ms.author: jeffkizn
+  ms.date: 05/29/2020
+highlightedContent:
+  items:
+    - title: 了解Microsoft 搜索
+      itemType: overview
+      url: 'https://resources.techcommunity.microsoft.com/microsoft-search/'
+    - title: Microsoft 搜索路线图
+      itemType: reference
+      url: 'https://www.microsoft.com/microsoft-365/roadmap?rtc=1&filters=Microsoft%20Search'
+    - title: 采用资源
+      itemType: get-started
+      url: 'https://resources.techcommunity.microsoft.com/microsoft-search/#adoption'
+    - title: Microsoft 搜索 YouTube
+      itemType: video
+      url: 'https://www.youtube.com/channel/UC-d4Q5pvRf6IVJuWY8wpAFw/'
+additionalContent:
+  sections:
+    - title: 管理
+      items:
+        - title: Microsoft 搜索管理员
+          links:
+            - text: 常规概述
+              url: overview-microsoft-search.md
+            - text: 设置 Microsoft 搜索
+              url: setup-microsoft-search.md
+            - text: 常见问题解答
+              url: faqs.md
+        - title: 从用户获取见解
+          links:
+            - text: 搜索使用率报告
+              url: usage-reports.md
+            - text: 查看用户的反馈
+              url: manage-feedback.md
+        - title: 提供解答
+          links:
+            - text: 管理书签
+              url: manage-bookmarks.md
+            - text: 管理首字母缩略词
+              url: manage-acronyms.md
+            - text: 管理平面图
+              url: manage-floorplans.md
+            - text: 管理位置
+              url: manage-locations.md
+            - text: 管理Power BI
+              url: manage-powerbi.md
+            - text: 管理问答&问题
+              url: manage-qas.md
+        - title: 管理数据源
+          links:
+            - text: Graph连接器概述
+              url: connectors-overview.md
+            - text: Setup Graph Connectors
+              url: configure-connector.md
+            - text: 联合连接器管理
+              url: manage-dynamics365.md
+        - title: 自定义最终用户 UX
+          links:
+            - text: 管理垂直领域和结果类型
+              url: customize-search-page.md
+            - text: 自定义 SERP 布局
+              url: customize-results-layout.md
+            - text: 管理筛选器
+              url: custom-filters.md
+            - text: 管理结果群集
+              url: result-cluster.md
+        - title: 搜索客户端
+          links:
+            - text: 了解Microsoft 搜索中SharePoint
+              url: get-started-search-in-sharepoint-online.md
+            - text: 了解Microsoft 搜索中必应
+              url: security-for-search.md
