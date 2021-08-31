@@ -7,18 +7,18 @@ audience: Admin
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-ms.localizationpriority: medium
+localization_priority: Normal
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 description: 设置Azure DevOps Graph连接器Microsoft 搜索
-ms.openlocfilehash: fcf381a92ef397f900b300ca667fa80067a6672a
-ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
+ms.openlocfilehash: 9c3c5d994f8470cdd70dc07445ede2c74f688383
+ms.sourcegitcommit: be5dcc7005447d6139e39d86211c7ec4cd5dd907
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58701387"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "58639567"
 ---
 <!---Previous ms.author: shgrover --->
 
@@ -74,11 +74,11 @@ instructions.-->
 使用上述详细信息注册应用时，你可获取将用于配置连接器的应用 **ID** 和客户端密码。
 
 >[!NOTE]
->若要撤销对在 Azure DevOps 中注册的任何应用的访问权限，请转到你的 Azure DevOps 实例的右上方的用户设置。 选择"配置文件"，然后在侧窗格的"安全性"部分选择"授权"。 将鼠标悬停在授权 OAuth 应用上方，即可看到应用详细信息右上角的"撤销"按钮。
+>若要撤销对在 Azure DevOps 中注册的任何应用的访问权限，请转到 Azure DevOps 实例的右上方的"用户设置"。 选择"配置文件"，然后在侧窗格的"安全性"部分选择"授权"。 将鼠标悬停在授权 OAuth 应用上方，即可看到应用详细信息右上角的"撤销"按钮。
 
 ### <a name="connection-settings"></a>连接设置
 
-向 Microsoft 搜索应用Azure DevOps，可以完成连接设置步骤。 输入组织名称、应用 ID 和客户端密码。
+向 Microsoft 搜索 应用Azure DevOps，可以完成连接设置步骤。 输入组织名称、应用 ID 和客户端密码。
 
 ![连接应用程序设置。](media/ADO_Connection_settings_2.png)
 
@@ -98,7 +98,7 @@ instructions.-->
 
 ## <a name="step-4-manage-search-permissions"></a>步骤 4：管理搜索权限
 
-the Azure DevOps connector supports search permissions visible to  **Only people with access to this data source** or **Everyone**. 如果选择"仅具有此数据源访问权限的用户"，则基于对 Azure DevOps 中组织、Project 或区域路径级别的用户或组的权限，索引数据将显示在搜索结果中。 如果选择" **任何人"，** 则索引数据将显示在所有用户的搜索结果中。
+the Azure DevOps connector supports search permissions visible to  **Only people with access to this data source** or **Everyone**. 如果您选择"仅具有此数据源访问权限的用户"，索引数据将显示在搜索结果中，这些用户基于对 Azure DevOps 中组织、Project 或区域路径级别的用户或组的权限来访问它们。 如果选择" **任何人"，** 则索引数据将显示在所有用户的搜索结果中。
 
 ## <a name="step-5-assign-property-labels"></a>步骤 5：分配属性标签
 
@@ -119,8 +119,8 @@ the Azure DevOps connector supports search permissions visible to  **Only peop
 
 >[!TIP]
 >**默认结果类型**
->* 连接器Azure DevOps连接器发布[后](./customize-search-page.md#step-2-create-result-types)自动注册结果类型。 结果类型使用基于步骤 3[](./customize-results-layout.md)中选定的字段的动态生成的结果布局。 
->* 可以通过导航到"结果类型"中的"结果类型"来管理 [](https://admin.microsoft.com)[**Microsoft 365 管理中心。**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/resulttypes) 默认结果类型将命名为 `ConnectionId` "Default"。 例如，如果你的连接 ID 是 `AzureDevOps` ，结果布局将命名为："AzureDevOpsDefault"
+>* 连接器Azure DevOps连接器发布[后自动](./customize-search-page.md#step-2-create-result-types)注册结果类型。 结果类型使用基于步骤 3[](./customize-results-layout.md)中选定的字段的动态生成的结果布局。 
+>* 您可以通过导航到结果类型中的"结果类型"[**来管理Microsoft 365 管理中心。**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/resulttypes) [](https://admin.microsoft.com) 默认结果类型将命名为 `ConnectionId` "Default"。 例如，如果你的连接 ID 是 `AzureDevOps` ，结果布局将命名为："AzureDevOpsDefault"
 >* 此外，还可以选择创建您自己的结果类型（如果需要）。
 
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup 

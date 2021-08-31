@@ -7,18 +7,18 @@ audience: Admin
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 description: 设置 Salesforce Graph 连接器Microsoft 搜索
-ms.openlocfilehash: ea8de1b33787e9c08e50e99ace0afaa83e75394d
-ms.sourcegitcommit: be5dcc7005447d6139e39d86211c7ec4cd5dd907
+ms.openlocfilehash: c2679002affe494ba31777718d265b5526b744c0
+ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "58639576"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58701864"
 ---
 <!---Previous ms.author: rusamai --->
 
@@ -79,7 +79,7 @@ Salesforce Graph连接器，允许组织为 Salesforce 实例中的联系人、�
 
 现在，可以使用[Microsoft 365 管理 中心](https://admin.microsoft.com/)完成连接器的其余设置Graph过程。
 
-## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>步骤 1：在Graph连接器中添加Microsoft 365 管理中心
+## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>步骤 1：在Graph中添加Microsoft 365 管理中心
 
 按照常规 [设置说明操作](./configure-connector.md)。
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->

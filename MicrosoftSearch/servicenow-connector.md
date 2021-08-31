@@ -7,18 +7,18 @@ audience: Admin
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-ms.localizationpriority: medium
+localization_priority: Normal
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 description: 为 Graph 设置 ServiceNow Microsoft 搜索
-ms.openlocfilehash: fccae6c2a007470eb9ef56130cb952158c01610c
-ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
+ms.openlocfilehash: 2ad75820fde0b9282ac14b64730b69704f199fc6
+ms.sourcegitcommit: e5d56d6ce1cd285c5af3e0472ce169cb34883017
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58701909"
+ms.lasthandoff: 08/23/2021
+ms.locfileid: "58470378"
 ---
 <!---Previous ms.author: kam1 --->
 
@@ -130,13 +130,13 @@ ms.locfileid: "58701909"
    ```powershell
    Get-AzADServicePrincipal -ApplicationId "Application-ID"
    ```
-   将"Application-ID"替换为 Application (client) ID (，) 步骤 3.a 中注册的应用程序的引号。 请注意 PowerShell 输出中的 ID 对象的值。 它是服务主体 ID。
+   将"Application-ID"替换为 Application (client) ID (，而不) 步骤 3.a 中注册的应用程序的引号。 请注意 PowerShell 输出中的 ID 对象的值。 它是服务主体 ID。
 
 现在，你已拥有 Azure 门户中需要的所有信息。 下表提供了信息的快速摘要。
 
 属性 | 说明 
 --- | ---
-租户 ID (目录 ID)  | 步骤 3.a Azure Active Directory租户的唯一 ID。
+租户 ID (的目录 ID)  | 步骤 3.a Azure Active Directory租户的唯一 ID。
 客户端 ID (应用程序 ID)  | 步骤 3.a 中注册的应用程序的唯一 ID。
 客户端密码 | 应用程序的密钥从步骤 3.b (开始) 。 请像处理密码一样处理它。
 服务主体 ID | 作为服务运行的应用程序的标识。  (步骤 3.c) 
@@ -152,7 +152,7 @@ ServiceNow 实例需要以下配置：
    字段 | 说明 | 建议值
    --- | --- | ---
    名称 | 标识 OAuth OIDC 实体的唯一名称。 | Azure AD
-   客户端 ID | 第三方 OAuth OIDC 服务器中注册的应用程序的客户端 ID。 实例在请求访问令牌时使用客户端 ID。 | 步骤 3 (客户端) ID
+   客户端 ID | 第三方 OAuth OIDC 服务器中注册的应用程序的客户端 ID。 实例在请求访问令牌时使用客户端 ID。 | 步骤 3 (客户端) ID 的应用程序
    客户端密码 | 第三方 OAuth OIDC 服务器中注册的应用程序的客户端密码。 | 步骤 3.b 中的客户端密码
 
    所有其他值都可以为默认值。
@@ -164,7 +164,7 @@ ServiceNow 实例需要以下配置：
    字段 | 建议值
    --- | ---
    OIDC 提供程序 |  Azure AD
-   OIDC 元数据 URL | URL 格式必须为 https \: //login.microsoftonline.com/<tenandId">/.well-known/openid-configuration <br/>将"tenantID"替换为步骤 3.a 中的 (租户) ID。
+   OIDC 元数据 URL | URL 的形式必须为 https \: //login.microsoftonline.com/<tenandId">/.well-known/openid-configuration <br/>将"tenantID"替换为步骤 3.a 中的 (租户) ID。
    OIDC 配置缓存生命周期 |  120
    Application | 全球
    用户声明 | sub
@@ -206,7 +206,7 @@ ServiceNow 连接器支持对"任何人"或"仅有权访问此数据源的人"**
 
 ServiceNow Graph 连接器支持默认用户条件权限，而无需高级脚本。 当连接器遇到具有高级脚本的用户条件时，使用该用户条件的所有数据将不会显示在搜索结果中。
 
-如果选择"**仅有权访问** 此数据源的用户"，则需要进一步选择 ServiceNow 实例是否具有 Azure Active Directory (AAD) 已设置用户或非 AAD 用户。
+如果选择"仅有权访问此数据源的用户 **"，** 则需要进一步选择 ServiceNow 实例是否Azure Active Directory (AAD) 用户或非 AAD 用户。
 
 >[!NOTE]
 >如果选择 AAD 作为标识源类型，请确保将 UserPrincipalName (UPN) 源属性分配给 ServiceNow 中的电子邮件目标属性。 若要验证或更改映射，请参阅自定义 SaaS 应用程序中的用户预配属性[Azure Active Directory。](/azure/active-directory/app-provisioning/customize-application-attributes)

@@ -6,18 +6,18 @@ manager: tonytha
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 description: 建筑物中的Microsoft 搜索功能可帮助用户在建筑物内查找人员、办公室和其他建筑物。
-ms.openlocfilehash: 6cbba6d764fd3904d251fa53fd96c3a66a6aed6b
-ms.sourcegitcommit: e5d56d6ce1cd285c5af3e0472ce169cb34883017
+ms.openlocfilehash: beeef26cc7413da654cc3ab01d92aa6cdc74e5cb
+ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/23/2021
-ms.locfileid: "58470020"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58702018"
 ---
 # <a name="manage-floor-plans"></a>管理平面图
 
@@ -51,7 +51,7 @@ ms.locfileid: "58470020"
 
 用户的办公地点是建筑物代码和房间标签的组合。 例如，如果建筑物代码为 *2，* 会议室标签为 *1173，* 则办公地点为 *2/1173*。
 
-为组织中添加或更新每个用户的办公地点。 您可以在 Office 2016 中[](https://admin.microsoft.com)更改用户配置文件上的Microsoft 365 管理中心也可以在本地 Active Directory 中更改以同步到Azure Active Directory。 *PhysicalDeliveryOfficeName* 是用于办公室位置的字段。 如果房间标签不包括楼层号，请参阅常见问题解答获取提示。
+为组织中添加或更新每个用户的办公地点。 可以更改用户个人资料中的办公地点[Microsoft 365 管理中心](https://admin.microsoft.com)也可以在本地 Active Directory 中更改，以同步到Azure Active Directory。 *PhysicalDeliveryOfficeName* 是用于办公室位置的字段。 如果房间标签不包括楼层号，请参阅常见问题解答获取提示。
 
 本示例中，Allan 办公室位于 2 号楼 1 的 1173 室。
 ![floorplans-userlestview.png。](media/floorplans-userlistview.png)
@@ -92,7 +92,7 @@ ms.locfileid: "58470020"
     - 如果没有用户映射，或者你对此映射不满意，请选择"继续 **映射"。** 若要发布，请选择跳过 **并发布**。
 7. 输入此平面图的建筑物代码。 可在用户的办公地点属性上找到大楼代码。 例如，如果用户的办公地点为 **2/1173，** 则建筑物代码为 **2**。
 8. 在查看屏幕上，重复步骤 6 以确保映射正确。
-9.  (可选) 查看并确定所有上载的平面图的位置模式，然后选择下一 **步**。
+9.  (可选) 查看并标识所有上载的平面图的位置模式，然后选择下一 **步**。
 10. 在查看屏幕上，重复步骤 6 以确保映射正确。
 11. 准备好后，选择 **"发布**"，使平面 **Microsoft 搜索。**
 

@@ -6,28 +6,28 @@ manager: parulm
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-ms.localizationpriority: medium
+localization_priority: Normal
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 description: 大致了解什么是Microsoft 搜索优势，以及哪些应用支持Microsoft 搜索。
-ms.openlocfilehash: 29a6db642ac9cc787b8cbec45aec609f55722206
-ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
+ms.openlocfilehash: 271742f7f440004db039b4352b9486445508d3f0
+ms.sourcegitcommit: e5d56d6ce1cd285c5af3e0472ce169cb34883017
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58701937"
+ms.lasthandoff: 08/23/2021
+ms.locfileid: "58470329"
 ---
 # <a name="overview-of-microsoft-search"></a>Microsoft 搜索概述
 
-Microsoft 搜索可帮助您找到完成所处理操作所需的操作。 无论你是搜索人员、文件、组织结构图、网站或常见问题解答，都可以Microsoft 搜索整个工作日获取答案。
+Microsoft 搜索可帮助你找到完成所处理操作所需的操作。 无论你是搜索人员、文件、组织结构图、网站或常见问题解答，都可以Microsoft 搜索工作之一获取答案。
 
 Microsoft 搜索帮助用户找到正确的答案、人员以及内容，以在已工作的应用中完成其任务。
 
 - 用户可获得与其搜索的应用的 **上下文** 相关的结果。 例如，当他们在[Microsoft](https://www.microsoft.com/outlook)Outlook 中搜索时，会查找电子邮件，而不是[SharePoint网站。](http://sharepoint.com/) 在 SharePoint 中搜索时，他们可找到网站、页面和文件。
 - 无论用户使用哪种应用，Microsoft 搜索都提供 **个人** 结果。 Microsoft 搜索[Microsoft](https://developer.microsoft.com/graph/) Graph见解来显示与每个用户相关的结果。 每个用户可能会看到不同的结果，即使他们搜索相同的字词。 他们只能看到已有权访问的结果，Microsoft 搜索不会更改权限。
-- 用户无需记住信息所在的位置。 例如，用户正在处理Microsoft Word，并且[](https://products.office.com/word)想要重用同事从其用户共享的信息的演示文稿[OneDrive。](https://onedrive.live.com/about/) 无需切换到"开始"OneDrive搜索该演示文稿，只需从 Word 搜索。
+- 用户无需记住信息所在的位置。 例如，一个用户正在Microsoft Word，并且[](https://products.office.com/word)想要重用同事从其用户共享的信息的演示文稿[OneDrive。](https://onedrive.live.com/about/) 无需切换到"搜索"OneDrive搜索该演示文稿，只需从 Word 搜索。
 - 在[必应](https://bing.com)中，除了公共网页结果之外，用户还可以从组织内部获得结果。
 
 ## <a name="what-users-see"></a>用户看到的内容
@@ -38,11 +38,11 @@ Microsoft 搜索帮助用户找到正确的答案、人员以及内容，以在�
 
 当用户在"搜索"框中单击时，搜索将基于他们之前在搜索Office 365并基于组织中热门内容提供建议结果。 他们最近处理的文件、最近使用的命令以及他们协作过的人是搜索考虑的活动示例。 当用户开始在"搜索" **框中键入** 内容时，建议的结果将更新。 用户可以从"搜索" **框中打开搜索结果** 。 下面是在搜索中[搜索SharePoint。](http://sharepoint.com/)
 
-![包含查询Microsoft 搜索结果的文本框屏幕截图。](media/SERP_text_520.png)
+![包含查询Microsoft 搜索结果的"列表"框的屏幕截图。](media/SERP_text_520.png)
 
 如果搜索框中的建议不是用户查找的内容， **则 Enter** 将打开结果的完整列表。 他们可以使用元数据（如上次修改项目的人和项目所在的时间）以及预览项来确定项目是否正在查找。
 
-![搜索结果页面Microsoft 搜索屏幕截图。](media/search_box.png)
+![结果页Microsoft 搜索屏幕截图。](media/search_box.png)
 
 ## <a name="benefits-of-microsoft-search"></a>Microsoft 搜索的优点
 
@@ -62,13 +62,13 @@ Microsoft 搜索帮助用户找到正确的答案、人员以及内容，以在�
 
 **显示有用的内容** – 答案根据关键字提供快速的权威结果来搜索查询。 [规划内容](plan-your-content.md)。
 
-**添加外部内容**– Microsoft Graph 连接器允许您将外部内容引入索引。 使用连接器通过外部数据和文件来丰富搜索Microsoft 365。 [Microsoft Graph 连接器概述](connectors-overview.md)
+**添加外部内容**– Microsoft Graph 连接器允许您将外部内容引入索引。 使用连接器丰富来自外部的数据和文件的搜索Microsoft 365。 [Microsoft Graph 连接器概述](connectors-overview.md)
 
 **自定义用户体验** – 您可以通过使用垂直和其他配置来自定义用户体验。 [自定义Microsoft 搜索页面](customize-search-page.md)
 
 ## <a name="what-content-is-searched"></a>搜索的内容
 
-Microsoft 搜索显示组织在连接器中存储Microsoft 365索引的内容。 Microsoft 搜索不跨租户搜索，也不显示来自其他组织共享的内容的结果。 如果组织已使用云混合搜索设置混合 SharePoint 环境，Microsoft 搜索 将返回联机和本地 SharePoint 内容的搜索结果，包括已连接到 SharePoint Server 环境的任何外部内容。 [详细了解混合搜索环境](/sharepoint/hybrid/learn-about-cloud-hybrid-search-for-sharepoint)。
+Microsoft 搜索显示组织存储在连接器中Microsoft 365索引的内容。 Microsoft 搜索不跨租户搜索，也不显示来自其他组织共享的内容的结果。 如果组织已使用云混合搜索设置混合 SharePoint 环境，Microsoft 搜索 将返回联机和本地 SharePoint 内容的搜索结果，包括已连接到 SharePoint Server 环境的任何外部内容。 [详细了解混合搜索环境](/sharepoint/hybrid/learn-about-cloud-hybrid-search-for-sharepoint)。
 
 用户将获取从其他位置获取的相同搜索结果，并且还将从 Internet 获取结果。
 
@@ -77,7 +77,7 @@ Microsoft 搜索显示组织在连接器中存储Microsoft 365索引的内容。
 当用户进行搜索时，Microsoft 搜索会处理查询并从较长的短语解析搜索意图，使用人工智能 (AI) 来了解用户添加到查询的常见多余短语，这些短语不影响他们的搜索意图。 例如，当用户搜索“如何更改密码”时，我们会从查询中提取不太重要的字词，并根据“更改密码”等相关字词进行触发。  
 用户 **有权** 查看的搜索结果将显示在搜索结果页面上。 Microsoft 搜索使用智能排名算法根据相关性对结果进行排序。
 
-## <a name="how-microsoft-search-in-bing-protects-your-company-data"></a>企业Microsoft 搜索如何必应公司数据
+## <a name="how-microsoft-search-in-bing-protects-your-company-data"></a>如何Microsoft 搜索必应保护公司数据
 
 [安全与隐私Microsoft 搜索必应](security-for-search.md)
 

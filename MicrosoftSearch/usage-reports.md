@@ -8,27 +8,27 @@ ms.service: mssearch
 audience: Admin
 ms.audience: Admin
 ms.date: 07/02/2021
-ms.localizationpriority: medium
+localization_priority: Normal
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 description: 查看Microsoft 搜索使用情况报告
-ms.openlocfilehash: 9de48331efbc956ee7d980b919d9bd2f025fc8aa
-ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
+ms.openlocfilehash: b20045fc3cec609a1c2ad5e3e51655f1f2f24986
+ms.sourcegitcommit: e5d56d6ce1cd285c5af3e0472ce169cb34883017
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58701450"
+ms.lasthandoff: 08/23/2021
+ms.locfileid: "58470387"
 ---
 # <a name="microsoft-search-usage-reports"></a>Microsoft 搜索使用率报告
 
 利用搜索使用率报告，您可以更好地了解搜索在组织中如何运行。 从这些报告生成的见解将帮助您使内容易于查找，[](./make-content-easy-to-find.md)并采取措施，使搜索成为更有用且更令人愉悦的体验。
 
 > [!IMPORTANT]
-> Microsoft 搜索使用情况报告当前处于预览阶段
+> Microsoft 搜索使用情况报告当前处于预览状态
 
-该[Microsoft 搜索使用情况](https://admin.microsoft.com/Adminportal/Home?#/MicrosoftSearch/insights)报告包括从 SharePoint Home、Office.com 和 Microsoft 搜索 搜索框中执行的搜索Microsoft 搜索图表必应表格。 你可以查看过去 31 天、每天或上一年每月的数据。 这些报告刚刚推出，因此需要一段时间来累算历史数据。
+该[Microsoft 搜索使用情况](https://admin.microsoft.com/Adminportal/Home?#/MicrosoftSearch/insights)报告包括从 SharePoint Home、Office.com 和 Microsoft 搜索 搜索框中执行的搜索必应图表和表。 你可以查看过去 31 天、每天或上一年每月的数据。 这些报告刚刚推出，因此需要一段时间来累算历史数据。
 
 此页面的早期版本包含仅针对 Microsoft 搜索.com 上必应必应搜索的数据。 该数据现已集成到这些报告;你仍然可以通过单击页面底部的链接来查看旧页面必应热门查询和印象 **分布**。 此链接和旧页面将很快删除。
 

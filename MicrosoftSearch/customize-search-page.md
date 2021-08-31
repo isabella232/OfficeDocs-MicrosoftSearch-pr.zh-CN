@@ -6,18 +6,18 @@ manager: jeffkizn
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 description: 添加垂直搜索并自定义搜索结果
-ms.openlocfilehash: 701604798115091c7c7a286d3b6e97dea08e9453
-ms.sourcegitcommit: be5dcc7005447d6139e39d86211c7ec4cd5dd907
+ms.openlocfilehash: 1ca436a2617e32e285715e4fffd622dc7a571ca1
+ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "58639585"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58702171"
 ---
 # <a name="customize-the-search-results-page"></a>自定义搜索结果页面
 
@@ -27,9 +27,9 @@ ms.locfileid: "58639585"
 
 ## <a name="about-search-verticals"></a>关于垂直搜索
 
-在结果页的顶部有一行Microsoft 搜索选项卡。 这些是垂直搜索。 垂直搜索只显示某种类型或特定内容集的结果。 例如 **，Files** 或 **News**。 默认情况下，Microsoft 搜索显示"全部"、"人员 **"、"文件**"、"**网站**"和"新闻 **"。**  
+在结果页的顶部有一行Microsoft 搜索选项卡。 这些是垂直搜索。 垂直搜索只显示某种类型或特定内容集的结果。 例如 **，Files** 或 **News**。 默认情况下，Microsoft 搜索显示"全部"、"人员 **"、"文件**"、"**网站**"和"**新闻"。**  
 
-您可以添加与您的组织相关的垂直搜索。 它们将显示在"结果Microsoft 搜索页上，SharePoint、Office和必应。 例如，您可以根据每个部门需要的信息类型为与营销相关的内容创建一个垂直目录，为销售创建另一个垂直目录。 您可以添加垂直线来显示仅来自通过连接器编制索引的内容的结果。
+您可以添加与您的组织相关的垂直搜索。 它们将显示在Microsoft 搜索、SharePoint和Office结果必应。 例如，您可以根据每个部门需要的信息类型为与营销相关的内容创建一个垂直目录，为销售创建另一个垂直目录。 您可以添加垂直线来显示仅来自通过连接器编制索引的内容的结果。
 
 您可以在两个级别创建垂直和结果类型：
 
@@ -84,7 +84,7 @@ ms.locfileid: "58639585"
 
 1. 在 [SharePoint](https://sharepoint.com/)垂直搜索的网站中，转到 **"设置"。**
 2. 选择 **"网站信息**"，然后选择"**查看所有网站设置"。**
-3. 找到 **"Microsoft 搜索"** 部分，然后为此 **网站集选择"Microsoft 搜索配置网站集"。**
+3. 找到 **"Microsoft 搜索"** 部分，然后为此网站集选择 **"Microsoft 搜索配置网站集"。**
 4. 在导航窗格中，转到" **自定义体验**"，然后选择" **垂直"** 选项卡。
 5. 若要添加垂直，请选择"添加 **"。** 或者，若要编辑垂直方向，请从列表中选择它。
 
@@ -111,7 +111,7 @@ ms.locfileid: "58639585"
   
 ### <a name="create-a-result-type-at-the-organization-level"></a>在组织级别创建结果类型
 
-1. 在 ["Microsoft 365 管理中心"](https://admin.microsoft.com)中，转到"[**结果类型"。**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/resulttypes)
+1. 在 ["Microsoft 365 管理中心](https://admin.microsoft.com)中，转到"[**结果类型"。**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/resulttypes)
 2. 若要添加结果类型，请选择"添加 **"。** 若要编辑结果类型，请从相关列表中选择结果类型。
 
 ### <a name="create-a-result-type-at-the-site-level"></a>在网站级别创建结果类型
@@ -127,7 +127,7 @@ ms.locfileid: "58639585"
 启用垂直方向后，将延迟几小时才能查看它。 但是，您可以追加到 SharePoint 中的 URL Office `cacheClear=true` 查看垂直方向。 For 必应， append `&features=uncachedVerticals` to `Work vertical URL` to view the vertical immediately.
 
 > [!NOTE]
-> 从移动 Web 浏览器查看时，SharePoint (和Office垂直 https://sharepoint.com/) 线不可见。 [](https://office.com)
+> 从移动 Web 浏览器查看时，SharePoint (Office https://sharepoint.com/) 垂直线不可见。 [](https://office.com)
 
 ## <a name="profile-query-variables"></a>配置文件查询变量
 

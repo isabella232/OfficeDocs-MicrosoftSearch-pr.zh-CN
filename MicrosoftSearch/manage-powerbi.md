@@ -6,19 +6,19 @@ manager: jeffkizn
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 ms.assetid: c0c814d0-f7e4-444e-b18e-09beb45c9322
 description: 管理Power BI数据在搜索结果中的显示方式
-ms.openlocfilehash: 951b1849cd3c9f60e93c98bde189eef85680b372
-ms.sourcegitcommit: e5d56d6ce1cd285c5af3e0472ce169cb34883017
+ms.openlocfilehash: 14b294fcec7d9c7cb3e1951414ab8795fd2cace7
+ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/23/2021
-ms.locfileid: "58470254"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58702000"
 ---
 # <a name="manage-power-bi-answers"></a>管理Power BI答案
 
@@ -59,7 +59,7 @@ Power BI为组织启用结果。 你的Power BI管理员可随时禁用它们。
 
 **答：** 是的。 Power BI默认为搜索启用Microsoft 搜索。 租户管理员无需首次设置此功能。
 
-**问：Power BI组或用户启用或禁用搜索功能吗？**
+**问：Power BI组或用户启用还是禁用搜索功能？**
 
 **答：** 目前，只能为整个组织启用或禁用它。
 
@@ -67,7 +67,7 @@ Power BI为组织启用结果。 你的Power BI管理员可随时禁用它们。
 
 **答：** 不。 搜索结果Power BI页将显示一条消息，通知用户当前不适用于其组织。
 
-**问：如果我没有Power BI许可证，我是否会看到搜索结果Power BI页面？**
+**问：如果我没有Power BI，我是否会看到搜索结果Power BI页面？**
 
 **答：** 不。 如果搜索用户没有Power BI许可证，Power BI搜索结果页面将不会显示在Microsoft 搜索中。
 

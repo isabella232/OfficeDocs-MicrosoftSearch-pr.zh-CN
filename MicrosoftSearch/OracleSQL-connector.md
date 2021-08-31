@@ -7,19 +7,19 @@ audience: Admin
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-ms.localizationpriority: medium
+localization_priority: Normal
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 ROBOTS: NoIndex
 description: 为 Microsoft 搜索 设置 Oracle SQL Graph 连接器。
-ms.openlocfilehash: 804bee89f8529630df5741f68b9f112c69307b4f
-ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
+ms.openlocfilehash: 1fe45fa6f92b16290148ef72282418c41942a3c7
+ms.sourcegitcommit: e5d56d6ce1cd285c5af3e0472ce169cb34883017
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58701423"
+ms.lasthandoff: 08/23/2021
+ms.locfileid: "58470011"
 ---
 <!---Previous ms.author:vivg --->
 
@@ -87,7 +87,7 @@ Oracle SQL Graph 连接器允许组织发现本地 Oracle 数据库中的数据�
 
 ### <a name="supported-data-types"></a>支持的数据类型
 
-下表汇总了 Oracle 连接器支持的数据类型SQL类型。 该表还汇总了受支持数据类型索引索引SQL 数据类型。 若要了解有关 Microsoft 连接器Graph索引支持的数据类型的信息，请参阅有关属性[资源类型的文档](/graph/api/resources/property?preserve-view=true&view=graph-rest-beta#properties)。
+下表汇总了 Oracle 连接器支持的SQL类型。 该表还汇总了受支持数据类型索引索引SQL 数据类型。 若要了解有关 Microsoft 连接器Graph索引支持的数据类型的信息，请参阅有关属性[资源类型的文档](/graph/api/resources/property?preserve-view=true&view=graph-rest-beta#properties)。
 
 | 类别 | 源数据类型 | 索引数据类型 |
 | ------------ | ------------ | ------------ |

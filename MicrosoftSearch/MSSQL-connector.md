@@ -7,18 +7,18 @@ audience: Admin
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-ms.localizationpriority: medium
+localization_priority: Normal
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 description: 设置 Azure SQL 和 Microsoft SQL Graph 连接器Microsoft 搜索。
-ms.openlocfilehash: ae953d55de4a4f5e8afc32cc6b55f6e0b32e2811
-ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
+ms.openlocfilehash: a60c8a038790bb4a08189c48675d315b06a6e0f7
+ms.sourcegitcommit: e5d56d6ce1cd285c5af3e0472ce169cb34883017
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58701432"
+ms.lasthandoff: 08/23/2021
+ms.locfileid: "58470002"
 ---
 <!---Previous ms.author: vivg --->
 
@@ -127,7 +127,7 @@ instructions.-->
 | ------------ | ------------ | ------------ |
 | 日期和时间 | date <br> datetime <br> datetime2 <br> smalldatetime | datetime |
 | 精确数字 | bigint <br> int <br> smallint <br> tinyint | int64 |
-| 精确数字 | bit | boolean |
+| 精确数字 | bit | 布尔 |
 | 近似数值 | float <br> real | double |
 | 字符串 | char <br> varchar <br> text | string |
 | Unicode 字符字符串 | nchar <br> nvarchar <br> ntext | string |
@@ -144,7 +144,7 @@ instructions.-->
 - `WHERE (CreatedDateTime > @watermark)`. 使用保留的关键字 引用水印列名称 `@watermark` 。 如果水印列的排序顺序为升序，请使用 `>` ;否则，请使用 `<` 。
 - `ORDER BY CreatedDateTime ASC`. 按水印列的升序或降序排序。
 
-在下图所示的配置中，是 `CreatedDateTime` 选定的水印列。 若要获取第一批行，请指定数据类型列的行号。 在这种情况下，数据类型为 `DateTime` 。
+在下图所示的配置中，是 `CreatedDateTime` 选定的水印列。 若要提取第一批行，请数据类型列的行号。 在这种情况下，数据类型为 `DateTime` 。
 
 ![水印列配置。](media/MSSQL-watermark.png)
 
@@ -160,11 +160,11 @@ instructions.-->
 
 选择 **"管理权限** "以选择各种访问控制 (ACL) 指定访问控制机制的列。 选择在完全爬网或查询中指定的SQL名称。
 
-每个 ACL 列应都是一个多值列。 这些多个 ID 值可以通过分隔符（如分号 (;) 、逗号 (、) 等）分隔。 需要在值分隔符字段中指定 **此分隔** 符。
+每个 ACL 列应都是一个多值列。 这些多个 ID 值可以使用分隔符分隔，如分号 (;) 、逗号 (、) 等。 需要在值分隔符字段中指定 **此分隔** 符。
 
 支持将以下 ID 类型用作 ACL：
 
-- **用户主体名称 (UPN) ：** 用户主体名称 (UPN) 是电子邮件地址格式的系统用户的名称。 UPN (例如：john.doe@domain.com) 由用户名 (登录名) 、分隔符 (@ 符号) 和域名 (UPN 后缀) 组成。
+- **用户主体名称 (UPN) ：** 用户主体名称 (UPN) 是电子邮件地址格式的系统用户的名称。 UPN (例如：john.doe@domain.com) 由用户名 (logon name) 、separator (the @ symbol) 和 domain name (UPN suffix) 组成。
 - **Azure Active Directory (AAD) ID：** 在 Azure AD 中，每个用户或组都有类似于"e0d3ad3d-0000-1111-2222-3c5f5c52ab9b"的对象 ID。
 - **Active Directory (AD) 安全 ID：在本地 AD** 设置中，每个用户和组都有一个不可变的唯一安全标识符，类似于"S-1-5-21-3878594291-2115959936-132693609-65242"。
 
@@ -220,7 +220,7 @@ To learn more about how to create your verticals and MRTs, see [Search results p
 | 配置步骤 | 错误消息 | 可能 (原因)  |
 | ------------ | ------------ | ------------ |
 | 完全爬网 | `Error from database server: A transport level error has occurred when receiving results from the server.` | 由于网络问题，导致出现此错误。 建议使用 Microsoft 网络监视器检查网络日志 [，](https://www.microsoft.com/download/details.aspx?id=4865) 并联系 Microsoft 客户支持。 |
-| 完全爬网 | `Column column_name returned from full crawl SQL query contains non-alphanumeric character` | SELECT 子句的列名称中不允许 (非字母数字字符，如) 下划线字符。 使用别名重命名列并删除非字母数字 (示例 - SELECT column_name AS columnName) 。 |
+| 完全爬网 | `Column column_name returned from full crawl SQL query contains non-alphanumeric character` | SELECT 子句的列名称中不允许 (非字母数字) 如下划线字符。 使用别名重命名列并删除非字母数字 (示例 - SELECT column_name AS columnName) 。 |
 
 ## <a name="limitations"></a>限制
 

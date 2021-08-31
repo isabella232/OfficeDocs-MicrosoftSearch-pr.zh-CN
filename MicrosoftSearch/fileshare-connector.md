@@ -7,19 +7,19 @@ audience: Admin
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 ROBOTS: NoIndex
-description: 设置文件共享Graph连接器Microsoft 搜索
-ms.openlocfilehash: b91f10704b536ecc3a62c492ef23ba8745c4dcf8
-ms.sourcegitcommit: e5d56d6ce1cd285c5af3e0472ce169cb34883017
+description: 为Graph设置文件共享Microsoft 搜索
+ms.openlocfilehash: 874b522cb54288b531cbbc63e12f232a8a68939e
+ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/23/2021
-ms.locfileid: "58469948"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58702144"
 ---
 <!---Previous ms.author: rusamai --->
 
@@ -58,7 +58,7 @@ ms.locfileid: "58469948"
 
 ## <a name="step-3-configure-the-connection-settings"></a>步骤 3：配置连接设置
 
-在 **"连接数据源"** 页上，选择"文件共享"并提供名称、连接 ID 和说明。 下一页，提供文件共享的路径并选择之前安装的连接器Graph代理。 输入 Microsoft [Windows用户帐户的](https://microsoft.com/windows)凭据，该帐户具有对文件共享中所有文件的读取访问权限。
+在 **"连接数据源"** 页上，选择"文件共享"并提供名称、连接 ID 和说明。 下一页，提供文件共享的路径并选择之前安装的连接器Graph代理。 输入对文件共享中Windows文件具有读取访问权限的[Microsoft](https://microsoft.com/windows)用户帐户凭据。
 
 ### <a name="preserve-last-access-time"></a>保留上一次访问时间
 
@@ -76,7 +76,7 @@ ms.locfileid: "58469948"
 
 #### <a name="full-network-path-of-filefolder-or-regular-expression-to-limit-indexing"></a>用于限制索引的文件/文件夹或正则表达式的完整网络路径 
 
-在网络路径中，使用转义字符 () \\ 在特殊字符（如 ）之前 \\ 。 示例：对于路径 \\ \\ CONTOSO \\ FILE \\ SHAREDFOLDER，正确的输入方式为 \\ \\ \\ \\ CONTOSO \\ \\ FILE \\ \\ SHAREDFOLDER
+在网络路径中，使用转义字符 () \\ 字符（如 ）之前 \\ 。 示例：对于路径 \\ \\ CONTOSO \\ FILE \\ SHAREDFOLDER，正确的输入方式为 \\ \\ \\ \\ CONTOSO \\ \\ FILE \\ \\ SHAREDFOLDER
 
 可以在此处找到用于编写正则表达式 [的规则](https://docs.microsoft.com/dotnet/standard/base-types/regular-expression-language-quick-reference)
 

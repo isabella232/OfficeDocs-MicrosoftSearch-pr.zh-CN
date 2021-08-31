@@ -6,19 +6,19 @@ manager: jeffkizn
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 ms.assetid: c0c814d0-f7e4-444e-b18e-09beb45c9322
 description: 创建和更新书签以及批量编辑书签结果的方法Microsoft 搜索
-ms.openlocfilehash: 67833ba563f8f4081cc6291db968542ba32df79f
-ms.sourcegitcommit: e5d56d6ce1cd285c5af3e0472ce169cb34883017
+ms.openlocfilehash: a08bef9ccc56d395fe6570bacc856653ff3a1563
+ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/23/2021
-ms.locfileid: "58470236"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58702054"
 ---
 # <a name="manage-bookmarks"></a>管理书签
 
@@ -48,9 +48,9 @@ In the [Microsoft 365 管理中心，](https://admin.microsoft.com/)go to [Bookm
 
 ### <a name="add-bookmarks"></a>添加书签
 
-搜索管理员和编辑人员可以在网站中添加书签Microsoft 365 管理中心发布书签或将其保存到草稿。 发布书签可立即刷新搜索索引，使其可立即被用户发现。 您还可以通过指定发布书签的日期和时间来计划书签。
+搜索管理员和编辑人员可以在网站中添加书签Microsoft 365 管理中心并发布书签或将其保存到草稿。 发布书签可立即刷新搜索索引，使其可立即被用户发现。 您还可以通过指定发布书签的日期和时间来计划书签。
 
-- **已发布**：组织的用户可以通过以下方式使用书签Microsoft 搜索。
+- **已发布**：组织用户可以通过以下方式使用书签Microsoft 搜索。
 - **草稿**：保存为草稿的书签对用户不可用。 如果你或其他利益干系人想要在发布书签之前查看或更新书签，请使用此状态。
 - **计划**：将在指定日期和时间发布的书签。
 
@@ -58,13 +58,13 @@ In the [Microsoft 365 管理中心，](https://admin.microsoft.com/)go to [Bookm
 
 ### <a name="import-sharepoint-results"></a>导入SharePoint结果
 
-如果组织在 SharePoint 中设置升级结果，可以将租户的升级结果中的标题、URL 和说明导入 Microsoft 搜索并为用户提供导入的内容。 在大多数情况下，导入SharePoint结果只需几分钟。 如果要导入大量结果，最多可能需要 48 小时。 这是一种快速填充搜索结果并为用户提供更高效的简单方法。 我们建议使用来自升级SharePoint作为参考，了解如何命名和创建相关搜索结果。
+如果组织在 SharePoint 中设置了升级结果，可以将租户的升级结果中的标题、URL 和说明导入 Microsoft 搜索 并为用户提供导入的内容。 在大多数情况下，导入SharePoint结果只需几分钟。 如果要导入大量结果，最多可能需要 48 小时。 这是一种快速填充搜索结果并为用户提供更高效的简单方法。 我们建议使用来自升级SharePoint作为参考，了解如何命名和创建相关搜索结果。
 
 ### <a name="add-default-and-suggested-bookmarks"></a>添加默认书签和推荐书签
 
 我们包含了一些用户可能会发现有用的默认建议书签，包括 HR、权益、IT 支持、密码管理等的书签。 查看、更新和发布这些建议的书签，以向用户提供高质量的结果。
 
-你的用户还可以建议书签，以便使用 Microsoft 搜索 中的反馈链接查看添加的书签。 他们的建议将显示为建议的书签。
+你的用户还可以建议书签，以便使用用户反馈链接查看Microsoft 搜索。 他们的建议将显示为建议的书签。
 
 ### <a name="import-bookmarks"></a>导入书签
 
@@ -122,9 +122,9 @@ In the [Microsoft 365 管理中心，](https://admin.microsoft.com/)go to [Bookm
 
 ## <a name="frequently-asked-questions"></a>常见问题解答
 
-**问：书签发布后在Microsoft 搜索中可见需要多久？**
+**问：书签发布后，在Microsoft 搜索中可见需要多久？**
 
-**答：** 书签在发布后立即Microsoft 搜索中可用。
+**答：** 发布后立即在Microsoft 搜索中提供书签。
 
 **问：建议书签显示需要多久？**
 
@@ -152,7 +152,7 @@ In the [Microsoft 365 管理中心，](https://admin.microsoft.com/)go to [Bookm
 
 **问：如果未对添加到建议列表的建议书签执行任何操作，会发生什么情况？**
 
-**答**：为了避免建议列表中出现大量书签，建议书签 (所有者 = SYSTEM) 将在 180 天后清除。
+**答**：为了避免建议列表中的大量书签，建议 (所有者 = SYSTEM) 将在 180 天后清除。
 
 **问：在哪里可以找到 Power App 的应用 ID？**
 

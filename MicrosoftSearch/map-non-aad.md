@@ -6,18 +6,18 @@ manager: jameslau
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-ms.localizationpriority: medium
+localization_priority: Normal
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 description: 如何映射非 AAD 标识的步骤
-ms.openlocfilehash: e90db3bb8d20a0389ddbf2d2845bf91843513404
-ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
+ms.openlocfilehash: bece23677f07f10d40471fb6ec27c2d96e7018fb
+ms.sourcegitcommit: e5d56d6ce1cd285c5af3e0472ce169cb34883017
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58701955"
+ms.lasthandoff: 08/23/2021
+ms.locfileid: "58470302"
 ---
 # <a name="map-your-non-azure-ad-identities"></a>映射非 Azure AD 标识  
 
@@ -38,9 +38,9 @@ ms.locfileid: "58701955"
 
 | Azure AD 属性    | 定义           | 示例         |
 | :------------------- | :------------------- |:--------------- |
-| 用户主体名称 (UPN)  | UPN 包含一个 UPN 前缀 (一个用户帐户) 一个 UPN 后缀 (DNS 域名) 。 前缀使用"@"符号与后缀联接。 | us1@contoso.onmicrosoft.com |
+| 用户主体名称 (UPN)  | UPN 包含一个 UPN 前缀 (一个用户帐户) 一个 UPN 后缀 (一个 DNS 域名) 。 前缀使用"@"符号与后缀联接。 | us1@contoso.onmicrosoft.com |
 | Azure AD ID                 | 给定用户的 Azure AD ID 是用户的唯一 GUID。                 | 58006c96-9e6e-45ea-8c88-4a56851eefad            |
-| Active Directory 安全 ID (SID)                   | SID (安全) 标识符是 Active Directory 用来将对象标识为安全主体的唯一标识符。                  | S-1-5-21-453406510-812318184-4183662089             |
+| Active Directory 安全 ID (SID)                   | SID (安全标识符) 是 Active Directory 用来将对象标识为安全主体的唯一标识符。                  | S-1-5-21-453406510-812318184-4183662089             |
 
 ### <a name="2-select-non-azure-ad-user-properties-to-map"></a>2. 选择要映射的非 Azure AD 用户属性
 

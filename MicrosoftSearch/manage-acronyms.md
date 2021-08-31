@@ -6,24 +6,24 @@ manager: jeffkizn
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 description: 创建和更新首字母缩略词在Microsoft 搜索
-ms.openlocfilehash: 3b0f87fb252c3e88160f1b3753aad09b1e3f5083
-ms.sourcegitcommit: e5d56d6ce1cd285c5af3e0472ce169cb34883017
+ms.openlocfilehash: b7b3272ba98bbce7d43562811389df0a35e9f7a2
+ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/23/2021
-ms.locfileid: "58470245"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58702063"
 ---
 # <a name="manage-acronyms-answers-in-microsoft-search"></a>在"管理"中管理首字母Microsoft 搜索
 
 用户经常遇到他们组织或团队使用的不熟悉的缩写词和缩写。 对于从一个团队移动到另一个团队、与内部合作伙伴团队合作或对组织而言是新人，特定于组织或团队的术语可能是新术语。
 
-组织并不总是有一个有关其标准术语的参考。 缺少单一引用使查找这些首字母缩写词的定义变得困难。 Microsoft 搜索首字母缩略词解决该问题。
+组织并不总是有一个有关其标准术语的参考。 缺少单一引用使查找这些首字母缩写词的定义变得困难。 Microsoft 搜索首字母缩略词解决了此问题。
 
 ## <a name="what-users-experience"></a>用户体验
 
@@ -112,9 +112,9 @@ Microsoft 搜索确保只有具有文档访问权限和权限的用户才能看�
 
 **问：用户在搜索时能否只输入缩写词？**
 
-**答：** 在必应，用户现在只需搜索首字母缩写词，就可以找到首字母缩写词答案，而不再需要关键字。 将阶段性地为其他Microsoft 搜索启用此相同体验。
+**答：** 在必应，用户现在只需搜索一个缩略词，就可以找到首字母缩写词答案，而不再需要关键字。 将阶段性地为其他Microsoft 搜索启用此相同体验。
 
-**问：管理员策展的首字母缩略词在发布后在Microsoft 搜索需要多久才能显示？**
+**问：管理员策展的首字母缩略词在发布后在Microsoft 搜索中可见需要多久？**
 
 **答：** 添加到 Published 状态中的缩写词最多需要一天的时间，Microsoft 搜索。
 

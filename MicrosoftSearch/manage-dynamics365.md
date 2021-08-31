@@ -6,14 +6,14 @@ manager: kellis
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 管理 Dynamics 365 内容在搜索结果中的显示方式
-ms.openlocfilehash: ff7b1d86716233910ba6c1ba3141fbe13beb5a98
-ms.sourcegitcommit: e5d56d6ce1cd285c5af3e0472ce169cb34883017
+ms.openlocfilehash: 8a87e4026937ba01132c10815dc2f91d27da79c9
+ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/23/2021
-ms.locfileid: "58470227"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58702027"
 ---
 # <a name="dynamics-365-federation-search-preview"></a>Dynamics 365 联合搜索 (预览) 
 
