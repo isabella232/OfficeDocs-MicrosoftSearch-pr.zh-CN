@@ -1,0 +1,116 @@
+- name: Microsoft 搜索计划
+  items:
+    - name: 概述
+      href: overview-microsoft-search.md
+    - name: 设置
+      href: setup-microsoft-search.md
+    - name: 常见问题解答
+      href: faqs.md
+- name: 获取见解
+  items:
+    - name: 查看使用情况报告
+      href: usage-reports.md
+    - name: 管理反馈
+      href: manage-feedback.md
+- name: 提供解答
+  items:
+    - name: 规划内容
+      href: plan-your-content.md
+    - name: 首字母缩略词
+      href: manage-acronyms.md
+    - name: 书签
+      href: manage-bookmarks.md
+    - name: 平面图
+      href: manage-floorplans.md
+    - name: 位置
+      href: manage-locations.md
+    - name: Power BI
+      href: manage-powerbi.md
+    - name: 问答
+      href: manage-qas.md
+- name: 数据源
+  items:
+    - name: Graph 连接器
+      items:
+        - name: 概述
+          href: connectors-overview.md
+        - name: 连接器库
+          href: connectors-gallery.md
+        - name: Microsoft 的设置连接器
+          items:
+            - name: 设置概述
+              href: configure-connector.md
+            - name: 设置图形连接器代理
+              href: graph-connector-agent.md
+            - name: 映射非 Azure AD 身份标识
+              href: map-non-aad.md
+            - name: 映射 Azure AD 身份标识
+              href: map-aad.md
+            - name: 连接器专用信息
+              items:
+                - name: Azure Data Lake Storage Gen2
+                  href: azure-data-lake-connector.md
+                - name: Azure DevOps （预览版）
+                  href: azure-devops-connector.md
+                - name: Azure SQL 和 Microsoft SQL Server
+                  href: MSSQL-connector.md
+                - name: 企业网站
+                  href: enterprise-web-connector.md
+                - name: 文件共享
+                  href: fileshare-connector.md
+                - name: MediaWiki
+                  href: mediawiki-connector.md
+                - name: Oracle SQL
+                  href: OracleSQL-connector.md
+                - name: Salesforce
+                  href: salesforce-connector.md
+                - name: ServiceNow
+                  href: servicenow-connector.md
+        - name: 管理连接
+          items:
+            - name: 监视连接
+              href: manage-connector.md
+            - name: 查看连接详细信息和错误
+              href: connector-details-errors.md
+        - name: 授权
+          href: licensing.md
+        - name: 使用条款
+          href: terms-of-use.md
+    - name: 联盟连接器
+      items:
+        - name: Dynamics 365
+          href: manage-dynamics365.md
+- name: 自定义和配置
+  items:
+    - name: 管理垂直领域和结果类型
+      href: customize-search-page.md
+    - name: 管理搜索结果布局
+      href: customize-results-layout.md
+    - name: 管理结果群集
+      href: result-cluster.md
+    - name: 管理筛选器
+      href: custom-filters.md
+    - name: SharePoint 中的 Microsoft 搜索
+      items:
+        - name: 概述
+          href: get-started-search-in-sharepoint-online.md
+        - name: 创建自定义搜索结果页面
+          href: create-search-results-pages.md
+        - name: 管理搜索框设置
+          href: manage-spo-search-box.md
+        - name: 在经典页面上使用Microsoft搜索
+          href: manage-classic-spo-pages.md
+    - name: Microsoft 必应搜索
+      items:
+        - name: 安全和隐私
+          href: security-for-search.md
+        - name: 将搜索框添加到 Intranet 站点
+          href: add-a-search-box-to-your-intranet-site.md
+        - name: 将 Microsoft Edge 设为默认浏览器
+          href: /deployedge/edge-default-browser
+        - name: 将必应设置为默认搜索引擎
+          href: set-default-search-engine.md
+        - name: 将 Bing.com 设置为默认主页
+          href: set-default-homepage.md
+        - name: 用户采用指南
+          href: user-adoption-guide.md
