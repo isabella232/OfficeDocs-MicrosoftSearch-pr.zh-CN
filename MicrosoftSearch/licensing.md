@@ -12,19 +12,19 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: Microsoft 连接器公共预览版Graph许可证要求和Microsoft 搜索
-ms.openlocfilehash: df91bb0ae68dd86d61855eed6d70a09ed0986800
-ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
+description: Microsoft 连接器公共预览版Graph Microsoft 连接器的许可证要求和Microsoft 搜索
+ms.openlocfilehash: b62187f0618405bdd691f923437b7b1e0edea1f9
+ms.sourcegitcommit: 134749c0f3a10f63d667f86dca55656b020b920f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58702081"
+ms.lasthandoff: 09/07/2021
+ms.locfileid: "58923149"
 ---
 <!---Previous ms.author: rusamai --->
 
 # <a name="license-requirements-and-pricing"></a>许可证要求和定价
 
-本文适用于想要了解如何为组织购买更多 Graph 连接器配额的全局管理员或帐单管理员。
+本文适用于想要了解如何为组织购买更多 Graph连接器配额的全局管理员或帐单管理员。
 
 任何有效的 **Microsoft 365或Office 365** 许可证都允许您查看搜索结果中连接器的数据。
 
@@ -38,7 +38,7 @@ ms.locfileid: "58702081"
 
 ## <a name="entitlement-built-into-microsoft-365-or-office-365-e5-licenses"></a>内置于许可证Microsoft 365或Office 365 E5权利
 
-以下许可证包含对 500 个项目的索引配额权利，这些配额计入从连接器中从 Graph内容的组织配额：
+以下许可证包含对 500 个项目的索引配额权利，这些配额计入组织从连接器中Graph内容的配额：
 
 * Microsoft 365 E5或Office 365 E5
 * [Microsoft Viva 主题](https://www.microsoft.com/microsoft-viva/topics?activetab=pivot:overviewtab)
@@ -57,7 +57,7 @@ ms.locfileid: "58702081"
 4. 选择 **"购买** "，然后完成订单首选项。
 5. 选择 **"现在签出"。**
 
-## <a name="microsoft-graph-connectors-now-available-with-microsoft-viva-topics-trial"></a>Microsoft Graph 连接器现在适用于 Microsoft Viva 主题试用版
+## <a name="microsoft-graph-connectors-now-available-with-microsoft-viva-topics-trial"></a>Microsoft Graph 连接器现在可用于Microsoft Viva主题试用版
  新的 Viva 主题试用版允许你在开发和/或生产环境中评估 Microsoft Graph 连接器和 Viva 主题。 除了访问 Viva 主题外，它还提供有限的连接器容量。
 
 有两个选项可浏览Graph主题Microsoft Viva连接器：
@@ -66,7 +66,8 @@ ms.locfileid: "58702081"
 
      访问[Microsoft Viva主题](https://www.microsoft.com/microsoft-viva/topics?activetab=pivot:overviewtab)，然后选择免费试用选项。
 
-2. 请与 Microsoft 帐户经理联系，以请求试用版索引容量的促销代码Microsoft Viva主题试用版。 使用 **促销代码，** 可以在六个月内为 50 个用户获取访问权限。
+2. 与 Microsoft 客户经理联系，请求试用版索引容量的促销代码Microsoft Viva主题试用。 使用 **促销代码，** 可以在六个月内为 50 个用户获取访问权限。
 
 > [!NOTE]
 > 目前，Microsoft Graph 连接器仅支持总索引配额多达 700 万个项目，其中包括任何捆绑到 Microsoft 365 或 Office 365 E5 配额。 该平台将在未来支持更高的限制。 如果你有任何问题，请联系 Microsoft 支持人员或你的 Microsoft 帐户经理。
+> 预览连接器不计入配额，在连接器全面可用后，它将开始计算总索引配额。
