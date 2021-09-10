@@ -14,11 +14,11 @@ search.appverid:
 - MOE150
 description: On-prem Agent
 ms.openlocfilehash: 9994b84c8db05b6b269edb6f5b6f463ab8da1529
-ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
+ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58702135"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "58973415"
 ---
 # <a name="microsoft-graph-connector-agent"></a>Microsoft Graph 连接器代理
 
@@ -36,7 +36,7 @@ ms.locfileid: "58702135"
 * 16 GB RAM，2 GB 磁盘空间
 * 通过 443 对数据源和 Internet 的网络访问
 
-安装代理后，如果组织的代理服务器或防火墙阻止与未知域的通信，请将以下这些域添加到允许列表中。
+安装代理后，如果组织的代理服务器或防火墙阻止与未知域的通信，请将以下域添加到允许列表中。
 
 1. *.servicebus.windows.net
 2. *.events.data.microsoft.com
@@ -115,7 +115,7 @@ Export-Certificate -Cert $certificatePath -FilePath ($filePath + '.cer')
 Export-PfxCertificate -Cert $certificatePath -FilePath ($filePath + '.pfx') -Password $securePassword
 ```
 
-##### <a name="step-2-upload-the-certificate-in-the-azure-portal"></a>步骤 2：Upload Azure 门户中的证书
+##### <a name="step-2-upload-the-certificate-in-the-azure-portal"></a>步骤 2：Upload Azure 门户中注册证书
 
 1. 打开应用程序，然后从左窗格导航到"证书和机密"部分。
 
@@ -151,7 +151,7 @@ Export-PfxCertificate -Cert $certificatePath -FilePath ($filePath + '.pfx') -Pas
 
 ### <a name="installation-failure"></a>安装失败
 
-如果安装失败，请运行以下代码检查安装日志：msiexec /i "< path to msi >\GcaInstaller.msi" /L*V "< destination path >\install.log"。 如果错误不可解决，请通过日志 MicrosoftGraphConnectorsFeedback@service.microsoft.com 支持。
+如果安装失败，请通过运行检查安装日志：msiexec /i "< path to msi >\GcaInstaller.msi" /L*V "< destination path >\install.log"。 如果错误不可解决，请通过日志 MicrosoftGraphConnectorsFeedback@service.microsoft.com 支持。
 
 ### <a name="registration-failure"></a>注册失败
 

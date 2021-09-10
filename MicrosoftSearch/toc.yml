@@ -4,6 +4,8 @@
       href: overview-microsoft-search.md
     - name: 设置
       href: setup-microsoft-search.md
+    - name: 管理对文件和网站的访问
+      href: manage-access-files-sites.md
     - name: 常见问题解答
       href: faqs.md
 - name: 获取见解
@@ -54,6 +56,10 @@
                   href: azure-devops-connector.md
                 - name: Azure SQL 和 Microsoft SQL Server
                   href: MSSQL-connector.md
+                - name: 'Confluence 云 (预览) '
+                  href: confluence-cloud-connector.md
+                - name: 'Jira Cloud (preview) '
+                  href: jira-connector.md
                 - name: 企业网站
                   href: enterprise-web-connector.md
                 - name: 文件共享
@@ -64,8 +70,10 @@
                   href: OracleSQL-connector.md
                 - name: Salesforce
                   href: salesforce-connector.md
-                - name: ServiceNow
-                  href: servicenow-connector.md
+                - name: 'ServiceNow 目录 (预览) '
+                  href: servicenow-catalog-connector.md
+                - name: ServiceNow 知识
+                  href: servicenow-knowledge-connector.md
         - name: 管理连接
           items:
             - name: 监视连接

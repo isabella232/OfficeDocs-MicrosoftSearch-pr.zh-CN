@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 针对 Graph 连接器的设置概述
-ms.openlocfilehash: 3b8ae9068b445e09f2df95fb5b29feb5ec3af74b
-ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
+ms.openlocfilehash: 95a2640652bd1289962c888be4ba771629806a6b
+ms.sourcegitcommit: 3e069fd920b5fcdfe97a0261930447e9e87d9013
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58701873"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "58973442"
 ---
 <!-- Previous ms.author: monaray -->
 
@@ -46,24 +46,24 @@ ms.locfileid: "58701873"
 * [后续步骤](#next-steps)
 
 > [!NOTE]
-> Microsoft 的所有连接器的安装过程Graph，但不完全相同。 **除了阅读本文之外，还请务必阅读数据源的连接器特定信息。**  
+> Microsoft 的所有连接器的安装Graph类似，但不完全相同。 **除了阅读本文之外，还请务必阅读数据源的连接器特定信息。**  
 
 <!---## Before you get started-->
 
 <!---Insert "Before you get started" recommendations for this data source-->
 
-## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>步骤 1：在Graph连接器中添加Microsoft 365 管理中心
+## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>步骤 1：在Graph中添加Microsoft 365 管理中心
 
 完成以下步骤以配置任何 Microsoft 构建Graph连接器：
 
-1. 在登录管理员帐户时[，Microsoft 365 管理中心。](https://admin.microsoft.com)
+1. 在登录管理员帐户时[Microsoft 365 管理中心。](https://admin.microsoft.com)
 
 2. 在导航窗格中，**选择**"设置"，然后选择"搜索&**智能"。** 选择" [数据源"选项卡](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/Connectors)。
 
 3. 选择 **"+** 添加"，然后从可用选项的菜单中选择你选择的数据源。
 
    > [!div class="mx-imgBorder"]
-   > ![可用的数据源包括：ADLS Gen2、Enterprise 网站、Microsoft SQL 服务器、Azure SQL、Oracle SQL 数据库、ServiceNow、文件共享、Azure DevOps 和 MediaWiki。](media/add-connector.png)
+   > ![可用的数据源包括：ADLS Gen2、Enterprise 网站、Microsoft SQL 服务器、Azure SQL、Oracle SQL 数据库、ServiceNow 知识库、ServiceNow 目录、文件共享、Azure DevOps 和 MediaWiki。](media/add-connector.png)
 
 > [!NOTE]
 > 最多可以向每个租户添加 10 Graph连接。
@@ -97,13 +97,13 @@ ServiceNow 查询可用于先筛选数据，然后再由数据Microsoft 搜索;�
 
 一些连接器（如[Microsoft SQL](MSSQL-connector.md) [和 Azure Data Lake 存储 Gen2）](azure-data-lake-connector.md)在本机Azure Active Directory ([Azure AD) ](/azure/active-directory/) ACL。
 
-其他连接器（如[ServiceNow、Azure DevOps](servicenow-connector.md)和[](azure-devops-connector.md)[Salesforce）](salesforce-connector.md)支持同步非 Azure AD 用户和组。  
+其他连接器（如[ServiceNow 知识库](servicenow-knowledge-connector.md)[、ServiceNow](servicenow-catalog-connector.md)目录[、Azure DevOps](azure-devops-connector.md)和[Salesforce）](salesforce-connector.md)支持同步非 Azure AD 用户和组。  
 
 选择"每个人"可让组织中的每个人查看来自此数据源的搜索结果。
 
 ## <a name="step-6-assign-property-labels"></a>步骤 6：分配属性标签
 
-可以在"分配属性标签"页上将语义标签分配给源属性。 标签是 Microsoft 提供的已知标记，可提供语义含义。 它们允许 Microsoft 将连接器数据集成到Microsoft 365体验，如增强的搜索、人员卡片、智能发现等。  
+可以在"分配属性标签"页上将语义标签分配给源属性。 标签是 Microsoft 提供的已知标记，可提供语义含义。 它们允许 Microsoft 将连接器数据集成到增强Microsoft 365、人员卡片、智能发现等体验中。  
 
 下表列出了当前支持的标签及其说明。  
 
@@ -129,7 +129,7 @@ ServiceNow 查询可用于先筛选数据，然后再由数据Microsoft 搜索;�
 
 ### <a name="content-property"></a>Content 属性
 
-建议从选项的下拉菜单中选择" **内容** 属性"，或保留默认值（如果存在）。 此属性用于内容全文索引编制、搜索结果页面代码段生成、结果 [群集参与、](result-cluster.md) 语言检测、HTML/文本支持、排名和相关性以及查询整理。
+建议从选项的下拉菜单中选择" **内容** 属性"，或保留默认值（如果存在）。 此属性用于内容全文索引、搜索结果页面代码段生成、结果 [群集参与、](result-cluster.md) 语言检测、HTML/文本支持、排名和相关性以及查询整理。
 
 如果选择内容属性，则创建结果类型时，可以选择使用系统生成的属性 **ResultSnippet。** [](customize-results-layout.md) 此属性充当查询时从 content 属性生成的动态代码段的占位符。 如果在结果类型中使用此属性，将在搜索结果中生成代码段。
 
@@ -141,12 +141,12 @@ ServiceNow 查询可用于先筛选数据，然后再由数据Microsoft 搜索;�
 
 您可以设置搜索架构属性来控制每个源属性的搜索功能。 搜索架构可帮助确定搜索结果页面上显示哪些结果，以及最终用户可以查看和访问的信息。
 
-搜索架构属性包括查询、**搜索、****检索和** 优化 **的选项**。 下表列出了 Microsoft 连接器支持的每个Graph并解释了它们的功能。
+搜索架构属性包括查询、**搜索、****检索和** 优化 **的选项**。 下表列出了 Microsoft 连接器支持的每个Graph并解释了其功能。
 
 搜索架构属性 | 函数 | 示例
 --- | --- | ---
 SEARCH | 使属性的文本内容可搜索。 属性内容包含在全文索引中。 | 如果属性为 **title**，则查询Enterprise返回包含单词 **Enterprise文本** 或标题中的结果。
-QUERY | 通过查询来搜索特定属性的匹配项。 然后，可以在查询中以编程方式或详细方式指定属性名称。 |  如果可以查询 **Title** 属性，则支持查询 **Title： Enterprise。**
+QUERY | 通过查询来搜索特定属性的匹配项。 然后，可以在查询中以编程方式或详细方式指定属性名称。 |  如果可以查询 **Title** 属性，则支持查询 **Title：Enterprise。**
 检索 | 结果类型中只能使用可检索属性，并显示在搜索结果中。 |
 优化 | 精简选项可以像在结果页Microsoft 搜索一样。 | 如果在连接设置 [过程中](custom-filters.md) 标记了精简属性，则贵组织的用户可以在搜索结果页中按 **URL** 进行筛选
 
@@ -208,7 +208,7 @@ QUERY | 通过查询来搜索特定属性的匹配项。 然后，可以在查�
 
 ## <a name="limitations"></a>限制
 <!---Insert limitations for this data source-->
-若要了解适用于所有数据源的限制，请参阅 Microsoft Graph[概述](connectors-overview.md)文章。
+若要了解适用于所有数据源的限制，请参阅 Microsoft Graph[概述文章](connectors-overview.md)。
 
 请参阅数据源的连接器特定信息，了解该特定连接器是否Graph限制。
 

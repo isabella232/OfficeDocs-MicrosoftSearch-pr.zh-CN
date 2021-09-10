@@ -7,41 +7,41 @@ audience: Admin
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 description: 设置 Azure SQL 和 Microsoft SQL Graph 连接器Microsoft 搜索。
-ms.openlocfilehash: a60c8a038790bb4a08189c48675d315b06a6e0f7
-ms.sourcegitcommit: e5d56d6ce1cd285c5af3e0472ce169cb34883017
+ms.openlocfilehash: ae953d55de4a4f5e8afc32cc6b55f6e0b32e2811
+ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/23/2021
-ms.locfileid: "58470002"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "58973439"
 ---
 <!---Previous ms.author: vivg --->
 
 # <a name="azure-sql-and-microsoft-sql-server-graph-connectors"></a>Azure SQL 和 Microsoft SQL Server Graph 连接器
 
-借助 Microsoft SQL Server 或 Azure SQL Graph 连接器，你的组织可以发现本地 SQL Server 数据库或托管在云中的 Azure SQL 实例中的数据库的数据并编制索引。
+借助 Microsoft SQL Server 或 Azure SQL Graph 连接器，组织可以发现本地 SQL Server 数据库或托管在云中的 Azure SQL 实例中的数据库的数据并编制索引。
 该Graph连接器将指定内容索引到Microsoft 搜索。 若要使索引与源数据保持最新，它支持定期完全爬网和增量爬网。 使用这些SQL连接器，还可以限制某些用户对搜索结果的访问。
 
 > [!NOTE]
-> 阅读 [**Setup your Graph connector**](configure-connector.md)一文，了解 Graph连接器的一般设置说明。
+> 阅读 [**Setup your Graph connector**](configure-connector.md)一文，了解 Graph 连接器的一般设置说明。
 
-本文适用于配置、运行和监视 Azure SQL 和 Microsoft SQL 服务器Graph连接器。 它补充了常规设置过程，并显示了仅适用于 Azure SQL 和 Microsoft SQL 服务器Graph说明。 本文还包括有关 Microsoft [](#limitations) SQL 和 Azure SQL连接器的限制的信息。
+本文适用于配置、运行和监视 Azure SQL 和 Microsoft SQL 服务器Graph连接器。 它补充了常规设置过程，并显示了仅适用于 Azure SQL 和 Microsoft SQL 服务器Graph说明。 本文还包括有关 Microsoft [](#limitations) SQL 和 Azure SQL 连接器的限制的信息。
 
 ## <a name="before-you-get-started"></a>在开始使用之前
 
-### <a name="install-the-graph-connector-agent-required-for-on-premises-microsoft-sql-server-connector-only"></a>仅Graph本地 (连接器所需的 Microsoft SQL Server 代理) 
+### <a name="install-the-graph-connector-agent-required-for-on-premises-microsoft-sql-server-connector-only"></a>仅Graph内部部署 (连接器所需的 Microsoft SQL Server 代理) 
 
-若要访问本地第三方数据，必须安装并配置 Graph 连接器代理。 有关详细信息[，请参阅](graph-connector-agent.md)Graph连接器代理。
+若要访问本地第三方数据，必须安装和配置 Graph 连接器代理。 有关详细信息[，请参阅Graph](graph-connector-agent.md)连接器代理。
 
 >[!NOTE]
 >如果在配置 Microsoft SQL Server Graph 连接器时使用 Windows 身份验证，则尝试登录的用户需要具有安装 Graph 连接器代理的计算机的交互式登录权限。 请参阅有关 [登录策略管理的文档](/windows/security/threat-protection/security-policy-settings/allow-log-on-locally#policy-management) 以检查登录权限。
 
-## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>步骤 1：在Graph中添加Microsoft 365 管理中心
+## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>步骤 1：在Graph连接器中添加Microsoft 365 管理中心
 
 按照常规 [设置说明操作](./configure-connector.md)。
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup 
@@ -57,9 +57,9 @@ instructions.-->
 
 ### <a name="register-an-app-for-azure-sql-connector-only"></a>仅为 Azure (连接器SQL应用) 
 
-对于 Azure SQL 连接器，必须在 Azure Active Directory 注册应用，Microsoft 搜索访问数据进行索引。 若要了解有关注册应用的信息，请参阅 Microsoft Graph注册应用[的文档](/graph/auth-register-app-v2)。
+对于 Azure SQL 连接器，必须在 Azure Active Directory 注册应用，Microsoft 搜索访问用于索引的数据。 若要了解有关注册应用的信息，请参阅 Microsoft Graph注册应用[的文档](/graph/auth-register-app-v2)。
 
-完成应用注册并记下应用名称、 (客户端) ID 和租户 ID 后，需要生成一 [个新的客户端密码](/azure/healthcare-apis/register-confidential-azure-ad-client-app#application-secret)。 客户端密码将只显示一次。 请记住，&安全存储客户端密码。 在客户端 ID 和客户端密码中配置新连接时，Microsoft 搜索。
+完成应用注册并记下应用名称、应用程序 (客户端) ID 和租户 ID 后，需要生成一 [个新的客户端密码](/azure/healthcare-apis/register-confidential-azure-ad-client-app#application-secret)。 客户端密码将只显示一次。 请记住，&安全存储客户端密码。 在客户端 ID 和客户端密码中配置新连接时，Microsoft 搜索。
 
 若要将注册的应用添加到Azure SQL 数据库，你需要：
 
@@ -73,13 +73,13 @@ instructions.-->
 
 ### <a name="connection-settings"></a>连接设置
 
-若要将Microsoft SQL Server连接器连接到数据源，您必须配置数据库服务器爬网的连接器和本地代理。 然后，您可以使用所需的身份验证方法连接到数据库。
+若要将Microsoft SQL Server连接器连接到数据源，必须配置要数据库服务器的连接器和本地代理。 然后，您可以使用所需的身份验证方法连接到数据库。
 
 > [!NOTE]
-> - 您的数据库必须SQL Server版本 2008 或更高版本，Microsoft SQL Server连接器才能连接。
-> - Azure SQL 图形连接器仅允许从与 Microsoft 365 相同的租户中的 Azure SQL 实例进行[](/azure/active-directory/develop/quickstart-create-new-tenant)Microsoft 365。 不支持跨租户数据流。
+> - 您的数据库必须SQL Server 2008 或更高版本，Microsoft SQL Server连接器才能连接。
+> - Azure SQL图形连接器仅允许从与 Microsoft 365 相同的租户中的 Azure SQL 实例进行Microsoft 365。 [](/azure/active-directory/develop/quickstart-create-new-tenant) 不支持跨租户数据流。
 
-对于 Azure SQL 连接器，只需指定要连接到的服务器名称或 IP 地址。 Azure SQL 连接器仅Azure Active Directory OIDC (OIDC) 打开 ID 连接以连接到数据库。
+对于 Azure SQL 连接器，只需指定要连接到的服务器名称或 IP 地址。 Azure SQL 连接器仅Azure Active Directory打开 ID (OIDC) 身份验证连接到数据库。
 
 为了增加安全性，你可以为 Azure 服务器或数据库SQL Server IP 防火墙规则。 若要了解有关设置 IP 防火墙规则的信息，请参阅有关 [IP 防火墙规则的文档](/azure/azure-sql/database/firewall-configure)。 在防火墙设置中添加以下客户端 IP 范围。
 
@@ -89,7 +89,7 @@ instructions.-->
 | EUR | 20.54.41.208/30, 51.105.159.88/30 |
 | APC | 52.139.188.212/30, 20.43.146.44/30 |
 
-若要搜索数据库内容，必须在配置连接器SQL指定查询。 这些SQL查询需要命名要编制索引的所有数据库列 (即源属性) ，包括获取所有列需要执行的任何 SQL 联接。 若要限制对搜索结果的访问，您必须在配置连接器时 (在) 查询SQL访问控制列表和 ACL。
+若要搜索数据库内容，必须在配置连接器SQL指定查询。 这些SQL查询需要命名要索引的所有数据库列 (即源属性) ，包括获取所有列需要执行的任何 SQL 联接。 若要限制对搜索结果的访问，必须在配置连接器时 (在) 查询SQL访问控制列表和 ACL。
 
 ## <a name="step-3a-full-crawl-required"></a>步骤 3a：必需 (完全) 
 
@@ -121,7 +121,7 @@ instructions.-->
 
 ### <a name="supported-data-types"></a>支持的数据类型
 
-下表总结了 MS SQL 和 Azure SQL 连接器中支持SQL数据类型。 该表还汇总了受支持数据类型索引索引SQL 数据类型。 若要了解有关 Microsoft 连接器Graph索引支持的数据类型的信息，请参阅有关属性[资源类型的文档](/graph/api/resources/property?preserve-view=true&view=graph-rest-beta#properties)。
+下表总结了 MS SQL 和 Azure SQL 连接器中支持SQL数据类型。 该表还汇总了数据类型索引索引SQL 数据类型。 若要了解有关 Microsoft 连接器Graph索引支持的数据类型的信息，请参阅有关属性[资源类型的文档](/graph/api/resources/property?preserve-view=true&view=graph-rest-beta#properties)。
 
 | 类别 | 源数据类型 | 索引数据类型 |
 | ------------ | ------------ | ------------ |
@@ -144,7 +144,7 @@ instructions.-->
 - `WHERE (CreatedDateTime > @watermark)`. 使用保留的关键字 引用水印列名称 `@watermark` 。 如果水印列的排序顺序为升序，请使用 `>` ;否则，请使用 `<` 。
 - `ORDER BY CreatedDateTime ASC`. 按水印列的升序或降序排序。
 
-在下图所示的配置中，是 `CreatedDateTime` 选定的水印列。 若要提取第一批行，请数据类型列的行号。 在这种情况下，数据类型为 `DateTime` 。
+在下图所示的配置中，是 `CreatedDateTime` 选定的水印列。 若要获取第一批行，请数据类型列的行号。 在这种情况下，数据类型为 `DateTime` 。
 
 ![水印列配置。](media/MSSQL-watermark.png)
 
@@ -158,9 +158,9 @@ instructions.-->
 
 ### <a name="full-crawl-manage-search-permissions"></a>完全爬网：管理搜索权限
 
-选择 **"管理权限** "以选择各种访问控制 (ACL) 指定访问控制机制的列。 选择在完全爬网或查询中指定的SQL名称。
+选择 **"管理权限** "以选择各种访问控制 (ACL) 指定访问控制机制的列。 Select the column name you specified in the full crawl SQL query.
 
-每个 ACL 列应都是一个多值列。 这些多个 ID 值可以使用分隔符分隔，如分号 (;) 、逗号 (、) 等。 需要在值分隔符字段中指定 **此分隔** 符。
+每个 ACL 列应都是一个多值列。 这些多个 ID 值可以通过分隔符（如分号 (;) 、逗号 (、) 等）分隔。 需要在值分隔符字段中指定 **此分隔** 符。
 
 支持将以下 ID 类型用作 ACL：
 
@@ -220,13 +220,13 @@ To learn more about how to create your verticals and MRTs, see [Search results p
 | 配置步骤 | 错误消息 | 可能 (原因)  |
 | ------------ | ------------ | ------------ |
 | 完全爬网 | `Error from database server: A transport level error has occurred when receiving results from the server.` | 由于网络问题，导致出现此错误。 建议使用 Microsoft 网络监视器检查网络日志 [，](https://www.microsoft.com/download/details.aspx?id=4865) 并联系 Microsoft 客户支持。 |
-| 完全爬网 | `Column column_name returned from full crawl SQL query contains non-alphanumeric character` | SELECT 子句的列名称中不允许 (非字母数字) 如下划线字符。 使用别名重命名列并删除非字母数字 (示例 - SELECT column_name AS columnName) 。 |
+| 完全爬网 | `Column column_name returned from full crawl SQL query contains non-alphanumeric character` | SELECT 子句的列名称中不允许 (非字母数字字符，) 下划线字符等。 使用别名重命名列并删除示例中的非字母数字 (- SELECT column_name AS columnName) 。 |
 
 ## <a name="limitations"></a>限制
 
 预览SQL连接器有以下限制：
 
-- Microsoft SQL Server连接器：本地数据库必须运行 2008 SQL Server更高版本。
-- 托管 Azure Microsoft 365 数据库 (的 Azure SQL 订阅) 必须位于同一Azure Active Directory。
+- Microsoft SQL Server连接器：本地数据库必须运行 SQL Server 2008 或更高版本。
+- 托管 Azure Microsoft 365 数据库 (的 SQL 订阅) Azure 订阅和 Azure Azure Active Directory。
 - ACL 仅支持使用用户主体名称 (UPN) 、Azure Active Directory (Azure AD) 或 Active Directory 安全性。
 - 不支持对数据库列内的丰富内容编制索引。 此类内容的示例包括作为数据库列内的链接存在的 HTML、JSON、XML、blob 和文档分析。

@@ -12,13 +12,13 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: 设置 Azure Data Lake 存储 Gen2 Graph连接器Microsoft 搜索
+description: 为 存储 设置 Azure Data Lake Graph Gen2 Microsoft 搜索
 ms.openlocfilehash: f60de4252e514f84bc92daf4ea65c535cf40a13d
-ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
+ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58701396"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "58973410"
 ---
 <!---Previous ms.author: monaray --->
 
@@ -27,11 +27,11 @@ ms.locfileid: "58701396"
 Azure Data Lake 存储 Gen2 Graph 连接器允许贵组织的用户搜索[存储在 Azure Blob 存储](/azure/storage/blobs/storage-blobs-introduction)和 Azure Data Lake Gen [2](/azure/storage/blobs/data-lake-storage-introduction)存储帐户的文件。
 
 > [!NOTE]
-> 阅读 [**Setup your Graph connector**](configure-connector.md)一文，了解 Graph连接器的一般设置说明。
+> 阅读 [**Setup your Graph connector**](configure-connector.md)一文，了解 Graph 连接器的一般设置说明。
 
 本文适用于配置、运行和监视 Azure Data Lake 存储 Gen2 连接器的任何人。 它补充了常规设置过程，并显示了仅适用于 Azure Data Lake 存储 Gen2 连接器的说明。 本文还包括有关 [限制的信息](#limitations)。
 
-在文章中，我们将 Azure 存储用作[Azure Blob](/azure/storage/blobs/storage-blobs-introduction)存储 和[Azure Data Lake Gen 2](/azure/storage/blobs/data-lake-storage-introduction)项目的通用存储。
+在文章中，我们将 Azure 存储用作[Azure Blob](/azure/storage/blobs/storage-blobs-introduction)存储 和 Azure Data [Lake Gen 2](/azure/storage/blobs/data-lake-storage-introduction)项目的通用存储。
 
 ## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>步骤 1：在Graph连接器中添加Microsoft 365 管理中心
 
@@ -47,20 +47,20 @@ Azure Data Lake 存储 Gen2 Graph 连接器允许贵组织的用户搜索[存储
 
 输入主存储连接字符串。 需要此字符串才能访问存储帐户。 若要查找连接字符串，请转到[Azure](https://ms.portal.azure.com/#home)门户并导航到相关帐户的密钥Azure 存储部分。
 
-如果您不希望在主存储连接字符串 (中提供 **AccountKey**) ，请授予以下角色对 Graph 连接器服务的访问权限：
+如果您不希望在主存储连接字符串 (中提供 **AccountKey**) 参数，请授予以下角色对 Graph 连接器服务的访问权限：
 
 * 存储Blob 数据读取器
 * 存储队列数据参与者
 * 存储Blob Delegator
 
-导航到帐户 **的**"访问控制"Azure 存储，然后按照其中的说明授予对以下应用的访问权限：
+导航到 **您的** Azure 存储 帐户的"访问控制"选项卡，然后按照其中的说明授予对以下应用的访问权限：
 
 * **第一方应用** ID：56c1da01-2129-48f7-9355-af6d59d42766
 * **第一方应用名称：Graph** 连接器服务
 
 ### <a name="storage-account-and-queue-notifications-optional"></a>存储帐户和队列通知 (可选) 
 
-将来可能会添加对在 Graph 连接器服务中实时处理更改的支持。 在这种情况下，我们将监视Azure 存储中存储的变更通知。 你需要使用与帐户帐户相同的帐户创建Azure 存储队列。
+将来可能会添加对在 Graph 连接器服务中实时处理更改的支持。 在这种情况下，我们将监视存储在Azure 存储更改通知的情况。 你需要使用与帐户帐户相同的帐户创建Azure 存储队列。
 
 创建队列后，请转到队列页面上的" **事件** "选项卡以配置 **事件订阅**。 选择队列将接收的所有 Blob 事件，将队列连接到Azure 存储帐户。
 
@@ -78,11 +78,11 @@ Azure Data Lake 存储 Gen2 Graph 连接器允许贵组织的用户搜索[存储
 
 你可以选择从[Azure Data Lake Gen 2](/azure/storage/blobs/data-lake-storage-introduction) (帐户) 访问控制列表存储 ACL。 设置这些搜索权限后，将基于登录用户的权限对搜索内容进行[Azure Active Directory。](/azure/active-directory/) 或者，可以选择使存储帐户中编制索引的所有内容对组织中的每个人可见。 在这种情况下，组织中的每个人都可以访问存储帐户中的所有数据。
 
-Azure Data Lake 存储 Gen2 Graph 连接器支持对"任何人"或"仅有权访问此数据源的人"可见的 **搜索权限**。 对于组织中有权访问每个项目的用户，搜索结果中出现的已编制索引的数据可能可见。
+Azure Data Lake 存储 Gen2 Graph 连接器支持对"任何人"或"仅有权访问此数据源的人"**可见的搜索权限**。 对于组织中有权访问每个项目的用户，搜索结果中出现的已编制索引的数据可能可见。
 
 ### <a name="azure-blob-storage"></a>Azure Blob 存储
 
-对于与[Azure Blob 存储](/azure/storage/blobs/storage-blobs-introduction)的连接，从配置源索引的所有内容对组织中的每个人都可见。 Azure Blob 服务不支持 Blob 级别的访问控制存储。
+对于与[Azure Blob 存储](/azure/storage/blobs/storage-blobs-introduction)的连接，从已配置源索引的所有内容对组织中的每个人都可见。 Azure Blob 服务不支持 Blob 级别的访问控制存储。
 
 ## <a name="step-7-set-the-refresh-schedule"></a>步骤 7：设置刷新计划
 

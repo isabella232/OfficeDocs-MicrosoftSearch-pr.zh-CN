@@ -13,27 +13,27 @@ search.appverid:
 - MOE150
 description: 添加垂直搜索并自定义搜索结果
 ms.openlocfilehash: 1ca436a2617e32e285715e4fffd622dc7a571ca1
-ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
+ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58702171"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "58973422"
 ---
 # <a name="customize-the-search-results-page"></a>自定义搜索结果页面
 
-可以创建垂直 *搜索* 和结果类型，以自定义用户在 Microsoft [SharePoint、Microsoft Office](https://office.com)和 必应 中 [](https://sharepoint.com/)搜索时Microsoft 搜索 [搜索结果](https://bing.com)。 通过垂直方向，用户可以更轻松地找到他们有权查看的信息。
+您可以创建垂直 *搜索* 和结果类型，以自定义用户在 Microsoft [SharePoint、Microsoft Office](https://sharepoint.com/)和 必应 中搜索时Microsoft 搜索 [看到的必应。](https://bing.com) [](https://office.com) 通过垂直方向，用户可以更轻松地找到他们有权查看的信息。
 
 例如，您可以为市场营销部门用户的第三方软件中的营销分析数据创建垂直搜索。 还可以定义结果类型并为此数据自定义布局。
 
 ## <a name="about-search-verticals"></a>关于垂直搜索
 
-在结果页的顶部有一行Microsoft 搜索选项卡。 这些是垂直搜索。 垂直搜索只显示某种类型或特定内容集的结果。 例如 **，Files** 或 **News**。 默认情况下，Microsoft 搜索显示"全部"、"人员 **"、"文件**"、"**网站**"和"**新闻"。**  
+在结果页的顶部有一行Microsoft 搜索选项卡。 这些是垂直搜索。 垂直搜索只显示某种类型或特定内容集的结果。 例如 **，Files** 或 **News**。 默认情况下，Microsoft 搜索显示"全部"、"人员 **"、"文件****"、"网站**"和"新闻 **"。**  
 
-您可以添加与您的组织相关的垂直搜索。 它们将显示在Microsoft 搜索、SharePoint和Office结果必应。 例如，您可以根据每个部门需要的信息类型为与营销相关的内容创建一个垂直目录，为销售创建另一个垂直目录。 您可以添加垂直线来显示仅来自通过连接器编制索引的内容的结果。
+您可以添加与您的组织相关的垂直搜索。 它们将显示在"结果Microsoft 搜索页上，SharePoint、Office和必应。 例如，您可以根据每个部门需要的信息类型为与营销相关的内容创建一个垂直目录，为销售创建另一个垂直目录。 您可以添加垂直线来显示仅来自通过连接器编制索引的内容的结果。
 
 您可以在两个级别创建垂直和结果类型：
 
-- **组织级别**– 当用户从 SharePoint 起始页、Office 或 必应 搜索时，在 [](https://sharepoint.com/)组织级别创建的垂直 [搜索将显示在搜索结果必应。](https://bing.com) [](https://office.com)
+- **组织级别**– 当用户从 SharePoint 起始页、Office 或 必应 搜索时，在 [](https://sharepoint.com/)组织级别创建的垂直 [搜索将显示在搜索结果页面上](https://bing.com)。 [](https://office.com)
 - **网站** 级别 – 例如，您可能希望允许客户服务员工直接从其部门的网站搜索严重性 *1* SharePoint事件。
 
 ### <a name="multiple-connections-in-a-vertical"></a>垂直连接中的多个连接
@@ -62,7 +62,7 @@ ms.locfileid: "58702171"
 
 1. 创建垂直。 在此步骤中，定义要搜索的内容的垂直名称、内容源和范围。
 2. 定义此垂直方向的结果。  
-3. 启用垂直 (从垂直) 显示垂直列表。
+3. 启用垂直 (垂直列表) 显示垂直列表。
 
 ## <a name="step-1-create-the-search-vertical"></a>步骤 1：创建垂直搜索
 
@@ -71,11 +71,11 @@ ms.locfileid: "58702171"
 >[!Note]
 >垂直线处于禁用状态。 您可以启用它们使其可查看。
 
-您可以使用一组有限的关键字查询语言 [ (KQL) ](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference) 缩小范围。  (本文稍后将介绍您可以使用的属性。) 我们建议您将自定义文本关键字和属性限制与布尔运算符一同使用。 KQL 还 [支持配置文件查询变量](#profile-query-variables) 对垂直方向的结果进行微调。
+您可以使用一组有限的关键字查询语言 [ (KQL ](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)) 范围。  (本文稍后将介绍您可以使用的属性。) 我们建议您将自定义文本关键字和属性限制与布尔运算符一同使用。 KQL 还 [支持配置文件查询变量](#profile-query-variables) 对垂直方向的结果进行微调。
 
 ### <a name="create-a-vertical-at-the-organization-level"></a>在组织级别创建垂直
 
-若要在家庭Microsoft 搜索、SharePoint或Office创建必应垂直搜索，请按照以下步骤操作：
+若要在家庭Microsoft 搜索、SharePoint或Office必应创建垂直搜索，请按照以下步骤操作：
 
 1. 在 ["Microsoft 365 管理中心](https://admin.microsoft.com)中，转到 [**"垂直"。**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/verticals)
 2. 选择 **"添加** "开始。  
@@ -84,7 +84,7 @@ ms.locfileid: "58702171"
 
 1. 在 [SharePoint](https://sharepoint.com/)垂直搜索的网站中，转到 **"设置"。**
 2. 选择 **"网站信息**"，然后选择"**查看所有网站设置"。**
-3. 找到 **"Microsoft 搜索"** 部分，然后为此网站集选择 **"Microsoft 搜索配置网站集"。**
+3. 找到 **"Microsoft 搜索"** 部分，然后为此 **网站集选择"Microsoft 搜索配置网站集"。**
 4. 在导航窗格中，转到" **自定义体验**"，然后选择" **垂直"** 选项卡。
 5. 若要添加垂直，请选择"添加 **"。** 或者，若要编辑垂直方向，请从列表中选择它。
 
@@ -111,7 +111,7 @@ ms.locfileid: "58702171"
   
 ### <a name="create-a-result-type-at-the-organization-level"></a>在组织级别创建结果类型
 
-1. 在 ["Microsoft 365 管理中心](https://admin.microsoft.com)中，转到"[**结果类型"。**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/resulttypes)
+1. 在 ["Microsoft 365 管理中心"](https://admin.microsoft.com)中，转到"[**结果类型"。**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/resulttypes)
 2. 若要添加结果类型，请选择"添加 **"。** 若要编辑结果类型，请从相关列表中选择结果类型。
 
 ### <a name="create-a-result-type-at-the-site-level"></a>在网站级别创建结果类型
@@ -124,10 +124,10 @@ ms.locfileid: "58702171"
 
 ## <a name="step-3-view-the-vertical-after-its-enabled"></a>步骤 3：启用后查看垂直方向
 
-启用垂直方向后，将延迟几小时才能查看它。 但是，您可以追加到 SharePoint 中的 URL Office `cacheClear=true` 查看垂直方向。 For 必应， append `&features=uncachedVerticals` to `Work vertical URL` to view the vertical immediately.
+启用垂直方向后，将延迟几小时才能查看它。 但是，你可以追加到 SharePoint `cacheClear=true` Office查看垂直方向。 For 必应， append `&features=uncachedVerticals` to `Work vertical URL` to view the vertical immediately.
 
 > [!NOTE]
-> 从移动 Web 浏览器查看时，SharePoint (Office https://sharepoint.com/) 垂直线不可见。 [](https://office.com)
+> 从移动 Web 浏览器查看时，SharePoint (和Office垂直 https://sharepoint.com/) 线不可见。 [](https://office.com)
 
 ## <a name="profile-query-variables"></a>配置文件查询变量
 
@@ -177,7 +177,7 @@ ms.locfileid: "58702171"
 ] 
 ```
 
-- 查询将 `MyProperty: {Profile.emails.address}` 解析为 *MyProperty："Megan.Bowen@contoso.com"。*  
+- 查询 `MyProperty: {Profile.emails.address}` 将解析为 *MyProperty："Megan.Bowen@contoso.com"。*  
 
 - 若要解析 address 属性的所有值，请使用多值扩展语法。 查询将解析为 `{|MyProperty:{Profile.emails.address}}` *( (MyProperty："Megan.Bowen@contoso \. com")* 或 *(MyProperty： "meganb@hotmail \. com")* or  *(MyProperty："meganb@outlook \. com") )*。
 

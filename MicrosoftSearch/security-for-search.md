@@ -13,19 +13,19 @@ search.appverid:
 - MOE150
 description: 保护公司数据和最终用户，同时向授权用户提供信息，Microsoft 搜索必应
 ms.openlocfilehash: bf3629b2508c705d19e3b7b772c6f3672063a6f1
-ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
+ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58701855"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "58973431"
 ---
 # <a name="security-and-privacy-for-microsoft-search-in-bing"></a>安全与隐私Microsoft 搜索必应
 
-通过增强的隐私和安全措施，Microsoft 搜索必应帮助保护用户和工作场所数据。
+通过增强的隐私和安全措施，Microsoft 搜索必应帮助保护用户和工作区数据。
 
 ## <a name="secure-by-default"></a>默认处于保护状态
 
-Microsoft 搜索请求必应 HTTPS 进行。 连接经过端到端加密，增强了安全性。
+Microsoft 搜索请求必应 HTTPS 进行。 连接进行端到端加密，以增强安全性。
   
 ## <a name="authentication-and-authorization-with-azure-active-directory"></a>Azure Active Directory 身份验证和授权
 
@@ -35,24 +35,24 @@ Microsoft 搜索中必应身份验证绑定到Azure Active Directory。 当用�
 
 ## <a name="single-sign-on"></a>单一登录
 
-如果用户已在其他服务（如 Outlook 或 SharePoint）中使用工作或学校帐户进行身份验证，当他们在同一浏览器中转到 必应 时，将自动登录到同一工作或学校帐户。 此外，当用户退出工作或学校帐户时，他们将自动从同一浏览器中的其他Microsoft Office登录。
+如果用户已在其他服务（如 Outlook 或 SharePoint）中通过工作或学校帐户的身份验证，则当他们在同一浏览器中转到 必应 时，将自动登录到同一工作或学校帐户。 此外，当用户退出工作或学校帐户时，他们将自动从同一浏览器中的其他Microsoft Office登录。
   
 ## <a name="communicates-with-the-microsoft-cloud-from-the-browser"></a>通过浏览器与 Microsoft 云通信
 
-当用户使用工作或学校帐户登录时，必应将必要的客户端库下载到浏览器以启用Microsoft 搜索结果。 然后，当用户搜索时，浏览器内代码将调用Office 365云以获得工作结果。 为此，Microsoft 搜索使用根据 SSAE 18 SOC2 类型 1 的控制目标运营的专用 API。 这意味着，与在 必应 Office 365 Core Online Services 中处理工作结果本身相比，工作结果和工作数据不会通过比工作结果本身更严格的数据处理控制目标Office 365流。
+当用户使用工作或学校帐户登录时，必应将必要的客户端库下载到浏览器以启用Microsoft 搜索结果。 然后，当他们进行搜索时，浏览器内代码会调用Office 365云以获得工作结果。 为此，Microsoft 搜索使用根据 SSAE 18 SOC2 类型 1 的控制目标运营的专用 API。 这意味着，与在 Office 365 Core Online Services 中处理工作结果本身相比，工作结果和工作数据不会经过比工作结果本身更严格的数据处理控制必应系统。
   
 ## <a name="permissions"></a>权限
 
 从 SharePoint 和 OneDrive for Business 等 Office 365 工作负载检索的工作结果在源上进行安全调整。用户不能查看无法通过 Office 365 查看和访问的 Word 文档或 PowerPoint 演示文稿等资源。他们只能在 SharePoint 中看到自己的文件以及作者显式或隐式（例如通过组成员身份）与之共享的文件。
 
-## <a name="microsoft-search-in-bing-protects-workplace-searches"></a>Microsoft 搜索必应工作区搜索
+## <a name="microsoft-search-in-bing-protects-workplace-searches"></a>Microsoft 搜索中必应工作区搜索
 
-当用户在搜索查询中输入搜索Microsoft 搜索，必应两个同时搜索请求：
+当用户在搜索查询中输入搜索查询Microsoft 搜索，必应两个同时搜索请求：
 
 - 对组织内部资源的搜索。
 - 从 必应.com 单独搜索公共结果。
 
-由于工作区搜索可能很敏感，Microsoft 搜索实施了一组信任措施，用于描述如何处理对来自 必应.com 的公共结果的单独搜索。
+由于工作区搜索可能很敏感，Microsoft 搜索实施了一组信任措施，用于描述如何处理从 必应.com 单独搜索公共结果。
 
 ### <a name="logging"></a>日志记录
 

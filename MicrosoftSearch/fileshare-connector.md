@@ -15,11 +15,11 @@ search.appverid:
 ROBOTS: NoIndex
 description: 为Graph设置文件共享Microsoft 搜索
 ms.openlocfilehash: 874b522cb54288b531cbbc63e12f232a8a68939e
-ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
+ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58702144"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "58973427"
 ---
 <!---Previous ms.author: rusamai --->
 
@@ -28,13 +28,13 @@ ms.locfileid: "58702144"
 文件共享Graph连接器允许贵组织的用户搜索本地Windows文件共享。
 
 > [!NOTE]
-> 阅读 [**setup for your Graph connector**](configure-connector.md)一文，了解常规 Graph 连接器安装过程。
+> 阅读 [**Setup for your Graph connector**](configure-connector.md)一文，了解 Graph 连接器的一般设置过程。
 
 ## <a name="before-you-get-started"></a>在开始使用之前
 
 ### <a name="install-the-graph-connector-agent"></a>安装 Graph 连接器代理
 
-若要为Windows索引，必须安装并注册连接器Graph代理。 有关详细信息[，请参阅](graph-connector-agent.md)Graph连接器代理。  
+若要为Windows索引，必须安装并注册 Graph 连接器代理。 有关详细信息[，请参阅Graph](graph-connector-agent.md)连接器代理。  
 
 ### <a name="content-requirements"></a>内容要求
 
@@ -58,7 +58,7 @@ ms.locfileid: "58702144"
 
 ## <a name="step-3-configure-the-connection-settings"></a>步骤 3：配置连接设置
 
-在 **"连接数据源"** 页上，选择"文件共享"并提供名称、连接 ID 和说明。 下一页，提供文件共享的路径并选择之前安装的连接器Graph代理。 输入对文件共享中Windows文件具有读取访问权限的[Microsoft](https://microsoft.com/windows)用户帐户凭据。
+在 **"连接数据源"** 页上，选择"文件共享"并提供名称、连接 ID 和说明。 下一页，提供文件共享的路径并选择之前安装的连接器Graph代理。 输入对文件共享中[所有Windows](https://microsoft.com/windows)具有读取访问权限的 Microsoft 用户帐户的凭据。
 
 ### <a name="preserve-last-access-time"></a>保留上一次访问时间
 
@@ -86,7 +86,7 @@ ms.locfileid: "58702144"
 
 ## <a name="step-5-manage-search-permissions"></a>步骤 5：管理搜索权限
 
-您可以通过在"管理搜索权限"页中选择所需选项，来限制基于"共享访问控制列表"或"新建技术文件系统 (NTFS) 访问控制列表"搜索任何 **文件的权限。** 这些访问控制列表中提供的用户帐户和组必须由 Active Directory (AD) 。 如果要将任何其他系统用于用户帐户管理，可以选择"每个人"选项，这将允许用户搜索所有文件，而没有任何访问限制。 但是，当用户尝试打开文件时，将应用在源上设置的访问控制。
+您可以通过在"管理搜索权限"页中选择所需选项，来限制搜索基于"共享访问控制列表"或"新技术文件系统 (NTFS) 访问控制列表"的任何 **文件的权限。** 这些访问控制列表中提供的用户帐户和组必须由 Active Directory (AD) 。 如果要将任何其他系统用于用户帐户管理，可以选择"每个人"选项，这将允许用户搜索所有文件，而没有任何访问限制。 但是，当用户尝试打开文件时，将应用在源上设置的访问控制。
 
 请注意，默认情况下，当在网络共享文件夹时，Windows 会为共享 ACL 中的"每个人"提供"读取"权限。 通过扩展名，如果在"管理搜索权限"中选择"共享 **ACL"，** 用户将能够搜索所有文件。 如果要限制访问，请删除文件共享中"任何人"的"读取"访问权限，并仅向所需的用户和组提供访问权限。 然后，连接器读取这些访问限制，并应用这些限制进行搜索。
 

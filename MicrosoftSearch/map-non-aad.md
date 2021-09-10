@@ -6,24 +6,24 @@ manager: jameslau
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 description: 如何映射非 AAD 标识的步骤
-ms.openlocfilehash: bece23677f07f10d40471fb6ec27c2d96e7018fb
-ms.sourcegitcommit: e5d56d6ce1cd285c5af3e0472ce169cb34883017
+ms.openlocfilehash: f433da10347ef59acf7675ec65da8acbd7f0f347
+ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/23/2021
-ms.locfileid: "58470302"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "58973379"
 ---
 # <a name="map-your-non-azure-ad-identities"></a>映射非 Azure AD 标识  
 
-本文将引导你完成将非 Azure AD 标识映射到 Azure AD 标识的步骤，以便访问控制列表 (ACL) 中具有非 Azure AD 标识的用户可以查看范围为他们的连接器搜索结果。
+本文将引导你完成将非 Azure AD 标识映射到 Azure AD 标识的步骤，以便访问控制列表 (ACL) 具有非 Azure AD 标识的用户可以查看范围为他们的连接器搜索结果。
 
-这些步骤仅与由 Microsoft 设置 [ServiceNow](servicenow-connector.md) 或 [Salesforce](salesforce-connector.md) 连接器的搜索管理员相关，搜索管理员具有"仅有权访问此数据源的用户"和标识类型"非 AAD"的搜索权限。
+这些步骤仅与搜索管理员相关，搜索管理员通过 Microsoft 设置[Confluence 云](confluence-cloud-connector.md)[、ServiceNow 知识](servicenow-knowledge-connector.md)[、ServiceNow 目录](servicenow-catalog-connector.md)或[Salesforce](salesforce-connector.md)连接器，具有"仅有权访问此数据源的用户"和标识类型"非 AAD"的搜索权限。
 
 >[!NOTE]
 >如果要设置 Salesforce 连接器，在搜索权限屏幕上选择"仅有权访问此数据源和标识类型 **AAD** 的用户"，请参阅映射 [Azure AD](map-aad.md)标识一文，了解如何映射 Azure AD 标识的步骤。  
@@ -38,15 +38,15 @@ ms.locfileid: "58470302"
 
 | Azure AD 属性    | 定义           | 示例         |
 | :------------------- | :------------------- |:--------------- |
-| 用户主体名称 (UPN)  | UPN 包含一个 UPN 前缀 (一个用户帐户) 一个 UPN 后缀 (一个 DNS 域名) 。 前缀使用"@"符号与后缀联接。 | us1@contoso.onmicrosoft.com |
+| 用户主体名称 (UPN)  | UPN 包含一个 UPN 前缀 (用户帐户名) 一个 UPN 后缀 (DNS 域名) 。 前缀使用"@"符号与后缀联接。 | us1@contoso.onmicrosoft.com |
 | Azure AD ID                 | 给定用户的 Azure AD ID 是用户的唯一 GUID。                 | 58006c96-9e6e-45ea-8c88-4a56851eefad            |
-| Active Directory 安全 ID (SID)                   | SID (安全标识符) 是 Active Directory 用来将对象标识为安全主体的唯一标识符。                  | S-1-5-21-453406510-812318184-4183662089             |
+| Active Directory 安全 ID (SID)                   | SID (安全) 标识符是 Active Directory 用来将对象标识为安全主体的唯一标识符。                  | S-1-5-21-453406510-812318184-4183662089             |
 
 ### <a name="2-select-non-azure-ad-user-properties-to-map"></a>2. 选择要映射的非 Azure AD 用户属性
 
-可以选择从数据源提取的非 Azure AD 属性以应用正则表达式。 若要了解有关在数据源中查找这些属性位置的信息，请参阅 [ServiceNow](servicenow-connector.md) 和 [Salesforce](salesforce-connector.md) 页面。  
+可以选择从数据源提取的非 Azure AD 属性以应用正则表达式。 若要了解有关在数据源中查找这些属性位置的信息，请参阅[Confluence](confluence-cloud-connector.md)Cloud、ServiceNow [Knowledge、ServiceNow Catalog](servicenow-catalog-connector.md)和[Salesforce](salesforce-connector.md)页面。 [](servicenow-knowledge-connector.md)  
 
-你可以从下拉列表中选择非 Azure AD 用户属性，并提供要应用于这些用户属性值的正则表达式。 若要了解有关正则表达式的更多信息，请参阅 [正则表达式参考]( https://docs.microsoft.com/dotnet/standard/base-types/regular-expression-language-quick-reference)。  
+你可以从下拉列表中选择非 Azure AD 用户属性，并提供要应用于这些用户属性值的正则表达式。
 
 下面是应用于示例字符串的正则表达式及其输出的一些示例： 
 
@@ -90,4 +90,4 @@ ms.locfileid: "58470302"
 
 - 转换当前仅支持针对非 AAD 用户属性的基于正则表达式的表达式。
 
-- 只有 3 个 Azure AD 标识，你可以选择映射到 (UPN、Azure AD ID 和 AD SID) 。
+- 只有 3 个 Azure AD 标识你可以选择映射到 (UPN、Azure AD ID 和 AD SID) 。

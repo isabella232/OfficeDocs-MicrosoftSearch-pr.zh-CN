@@ -13,23 +13,23 @@ search.appverid:
 - MOE150
 description: 创建书签、位置和问答项目，让用户轻松查找组织的内容。
 ms.openlocfilehash: 77b6507c7643e6cf2176f37a9a2cf0def1c640ba
-ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
+ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58702072"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "58973633"
 ---
 # <a name="make-content-easy-to-find"></a>使内容易于查找
 
 Microsoft 搜索可帮助用户查找相关内容。 它是一种搜索你的 Intranet 和 Web 内容的安全方式。 这种跨 Web 和组织的集成只能从 Microsoft 获得。 利用 Microsoft 搜索，搜索管理员可以通过对组织的了解，使用户能够轻松查找相关内容。 
 
 ## <a name="components-that-find-content"></a>查找内容的组件
-在Microsoft 搜索中，管理员创建[书签](manage-bookmarks.md)[、PowerApps、Q](integrate-powerapps.md) [&A](manage-qas.md)和[位置](manage-locations.md)，使内容更易于查找。 每个搜索组件都包括标题、URL 和一组触发关键字。
+在Microsoft 搜索中，管理员创建[书签](manage-bookmarks.md)[、PowerApps、Q](integrate-powerapps.md)&[A](manage-qas.md)和[位置](manage-locations.md)，使内容更易于查找。 每个搜索组件都包括标题、URL 和一组触发关键字。
 
 ## <a name="bookmarks"></a>书签
 只需几个 [步骤，](manage-bookmarks.md) 就可以创建书签。 每个书签都包括标题、URL 和一组触发关键字。 一个书签可以具有多个关键字，多个书签可以共享同一个关键字。 但保留的关键字无法共享。 创建或修改书签时，搜索索引将刷新，并且用户可以立即使用书签。
 
-如果组织已 **升级在** SharePoint [中设置](http://sharepoint.com/)的结果，可以将这些结果导入Microsoft 搜索。 使用升级的结果，您可以快速填充搜索结果，使内容可供用户使用，Microsoft 搜索设置后就使其更有效。 我们建议你使用 SharePoint 中的升级结果作为参考，以了解如何命名和创建相关的搜索结果。 
+如果组织已 **升级在** SharePoint [中设置](http://sharepoint.com/)的结果，可以将这些结果导入Microsoft 搜索。 使用升级的结果，您可以快速填充搜索结果，使内容可供用户使用，并Microsoft 搜索设置后使其更高效。 我们建议你使用 SharePoint 中的升级结果作为参考，以了解如何命名和创建相关的搜索结果。 
 
 ### <a name="add-or-edit-bookmarks-by-using-browser-extensions"></a>使用浏览器扩展添加或编辑书签
 搜索管理员可以使用浏览器扩展轻松创建搜索内容。 若要将网站添加为书签，请安装浏览器扩展。 然后转到该网站，并添加为书签。 若要了解更多信息，请参阅 [管理书签](manage-bookmarks.md)。
@@ -58,7 +58,7 @@ Microsoft 搜索可帮助用户查找相关内容。 它是一种搜索你的 In
 
 ## <a name="qa"></a>问答
 
-创建[问答&创建](manage-qas.md)[书签一样](manage-bookmarks.md)。 使用问答&，你可以为用户提供问题的答案，而不是仅提供网页链接。 您可以使用可用工具以格式文本格式回答。 如果书签和问答&同一关键字，则首先显示书签结果。 与书签一样，&A 索引的问答在添加或更改问答后立即&刷新。 
+创建[问答&创建](manage-qas.md)[书签](manage-bookmarks.md)。 使用问答&，你可以为用户提供问题的答案，而不只是指向网页的链接。 您可以使用可用工具以格式文本格式回答。 如果书签和问答&同一关键字，则首先显示书签结果。 与书签一样，&A 索引的问答在添加或更改问答后立即&刷新。 
 
 ### <a name="supported-html-tags"></a>受支持的 HTML 标记
 
@@ -90,7 +90,7 @@ Microsoft 搜索可帮助用户查找相关内容。 它是一种搜索你的 In
 
 [借助位置](manage-locations.md)，用户可以查找地址并找到组织的大楼。 **位置功能** 为办公室、校园和建筑物提供了准确的位置，以及路线和导航。 为了获得最佳结果，管理员需要将组织的所有重要位置添加到Microsoft 搜索。 与 [Bookmarks](manage-bookmarks.md) 和 [Q&A](manage-qas.md)不同，Locations 索引不会立即刷新。 新位置或已更改的位置可能需要几个小时才能显示在搜索结果中。
 
-## <a name="get-started"></a>入门
+## <a name="get-started"></a>开始行动
 若要了解用户需要的信息，并轻松发现该信息，请尝试以下一些方法：
 
 - 使用 Intranet 搜索日志，来确定获得最多流量的网站和页面。
@@ -125,7 +125,7 @@ Microsoft 搜索可帮助用户查找相关内容。 它是一种搜索你的 In
 1. 在你添加或编辑信息时，预览将随之自动更新。
 
 ### <a name="bulk-add-or-edit-components"></a>批量添加或编辑组件
-借助 **导入** 和 **导出功能**，搜索管理员可以批量创建或编辑书签、问答 [](manage-bookmarks.md)&[A](manage-qas.md)和 [位置](manage-locations.md)。 当管理员希望添加或编辑多个组件时，此功能非常有用。 
+借助 **导入** 和 **导出功能**，搜索管理员可以批量创建或编辑书签、问答 [](manage-bookmarks.md)[&A](manage-qas.md)和 [位置](manage-locations.md)。 当管理员希望添加或编辑多个组件时，此功能非常有用。 
 
 导入和导出功能提供以下功能：
 - **批量添加**。 在组件的模板文件中添加详细信息，然后导入它。
@@ -143,7 +143,7 @@ Microsoft 搜索可帮助用户查找相关内容。 它是一种搜索你的 In
 
 ### <a name="template-guidelines"></a>模板指南
 在使用模板文件时，请注意以下指南和限制：
-- 从不编辑以下字段中的数据 *：Id、Last* *Modified* 和 *Last Modified By*。
+- 从不编辑以下字段中的数据 *：Id、Last* *Modified* 和 *Last Modified By。*
 - 如果包含现有 *书签的 ID，* 则它将替换为导入文件中的信息。
 - 如果现有文件中存在标题或 URL 相同的书签，则使用导入文件中的信息更新书签。
 - 模板文件中并非所有字段都是必需的，并且所需字段因书签状态而异。
@@ -155,7 +155,7 @@ Microsoft 搜索可帮助用户查找相关内容。 它是一种搜索你的 In
 
 ### <a name="prevent-import-errors"></a>防止导入错误
 
-如果任何必需数据缺失或无效，则会显示一条错误消息。 A 日志文件 generates with more information about the rows and columns to be corrected. 进行必要的编辑，然后再次尝试导入该文件。 在解决所有错误之前，无法导入或保存任何书签。
+如果任何必需数据缺失或无效，则会显示一条错误消息。 一日志文件会生成一个包含要更正的行和列的更多信息。 进行必要的编辑，然后再次尝试导入该文件。 在解决所有错误之前，无法导入或保存任何书签。
 
 若要防止错误，请确保导入文件的格式正确，并满足以下要求：
 - 导入模板中包含标题行和所有列。
@@ -172,7 +172,7 @@ Microsoft 搜索可帮助用户查找相关内容。 它是一种搜索你的 In
 1. **哪些搜索词可以找到您标识的信息？** 请参阅组织的任何现有术语，以及相关变体、首字母缩略词、主题和主题。
 1. **人们使用哪些变体或词来讨论此信息？** 请支持团队提供这些关键字。
 
-例如，如果您创建一个链接到用于提交休假请求的工具的结果，则关键字 **vacation** 和 submit vacation **请求** 是很好的可包含选项。 您组织的用户可能还搜索休假相关信息以及 **休假****或休假。** 若要让用户更轻松地查找相关内容，请添加这些关键字和其他关键字（如提交 **假日请求** 和 **请求休假**）。
+例如，如果您创建一个链接到用于提交休假请求的工具的结果，则关键字 **vacation** 和 submit vacation **请求** 是很好的可包含选项。 您组织的用户可能还搜索休假相关信息以及 **休假****或休假**。 若要让用户更轻松地查找相关内容，请添加这些关键字和其他关键字（如提交 **假日请求** 和 **请求休假**）。
 
 ### <a name="reserved-keywords"></a>保留关键字
  保留关键字是用于触发结果的唯一词条或短语。 与其他关键字不同，保留的关键字仅与一个结果相关联。 请慎用保留关键字，以便 Microsoft 搜索能够基于使用情况进行学习。
@@ -205,17 +205,17 @@ Microsoft 搜索可帮助用户查找相关内容。 它是一种搜索你的 In
 - 修复或删除损坏和无效的 URL。
 - 删除不再相关的&或问答。
 - 检查工具、网站名称或团队名称更改。
-- 请考虑书签或问答&是否足够权威或需要更明确的说明。
+- 请考虑书签或 Q&A 是否足够权威或是否需要更明确的说明。
 
 ## <a name="get-insights-about-bookmarks-qa-and-locations"></a>获取有关书签、问答&和位置的见解
 
-Microsoft 搜索显示已发布、计划[或&](manage-qas.md)书签[](manage-bookmarks.md)、问答和位置数。 [](manage-locations.md) 仪表板[Insights](./usage-reports.md)按状态显示书签&问答和位置总计：
+Microsoft 搜索显示已发布、计划[或&书签](manage-qas.md)、问答和位置数。 [](manage-bookmarks.md) [](manage-locations.md) 仪表板[Insights](./usage-reports.md)按状态显示书签&问答和位置总计：
 
 - **已发布：** 向用户推出的已发布结果数。
 - **已计划：** 发布管道中的已计划结果数。
 - **已建议：** 来自用户的建议数。
 
-建议的 [书签](manage-bookmarks.md)、&[A](manage-qas.md)和 [位置](manage-locations.md) 是衡量内容差距的良好指标。 它们可帮助你了解用户查找但找不到内容。 此数据可能指示你需要创建多个书签、问答&位置。 或者，您可能需要使用更好的关键字、保留的关键字和搜索字符串来更新现有内容，使内容更可发现。
+建议的 [书签](manage-bookmarks.md)、&[A](manage-qas.md)和 [位置](manage-locations.md) 是内容差距的良好指标。 它们可帮助你了解用户查找但找不到内容。 此数据可能指示你需要创建多个书签、问答&A 或位置。 或者，您可能需要使用更好的关键字、保留的关键字和搜索字符串来更新现有内容，使内容更可发现。
 
 ### <a name="review-top-search-queries"></a>查看热门搜索查询
 

@@ -14,11 +14,11 @@ search.appverid:
 ms.assetid: c0c814d0-f7e4-444e-b18e-09beb45c9322
 description: 创建和更新书签以及批量编辑书签结果的方法Microsoft 搜索
 ms.openlocfilehash: a08bef9ccc56d395fe6570bacc856653ff3a1563
-ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
+ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58702054"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "58973634"
 ---
 # <a name="manage-bookmarks"></a>管理书签
 
@@ -50,7 +50,7 @@ In the [Microsoft 365 管理中心，](https://admin.microsoft.com/)go to [Bookm
 
 搜索管理员和编辑人员可以在网站中添加书签Microsoft 365 管理中心并发布书签或将其保存到草稿。 发布书签可立即刷新搜索索引，使其可立即被用户发现。 您还可以通过指定发布书签的日期和时间来计划书签。
 
-- **已发布**：组织用户可以通过以下方式使用书签Microsoft 搜索。
+- **已发布**：组织的用户可以通过以下方式使用书签Microsoft 搜索。
 - **草稿**：保存为草稿的书签对用户不可用。 如果你或其他利益干系人想要在发布书签之前查看或更新书签，请使用此状态。
 - **计划**：将在指定日期和时间发布的书签。
 
@@ -58,7 +58,7 @@ In the [Microsoft 365 管理中心，](https://admin.microsoft.com/)go to [Bookm
 
 ### <a name="import-sharepoint-results"></a>导入SharePoint结果
 
-如果组织在 SharePoint 中设置了升级结果，可以将租户的升级结果中的标题、URL 和说明导入 Microsoft 搜索 并为用户提供导入的内容。 在大多数情况下，导入SharePoint结果只需几分钟。 如果要导入大量结果，最多可能需要 48 小时。 这是一种快速填充搜索结果并为用户提供更高效的简单方法。 我们建议使用来自升级SharePoint作为参考，了解如何命名和创建相关搜索结果。
+如果组织在 SharePoint 中设置了升级结果，可以将租户的升级结果中的标题、URL 和说明导入 Microsoft 搜索 并为用户提供导入的内容。 在大多数情况下，导入SharePoint结果只需几分钟。 如果要导入大量结果，最多可能需要 48 小时。 这是一种快速填充搜索结果并为用户提供更高效的简单方法。 我们建议使用来自 SharePoint 升级的结果作为参考，以了解如何命名和创建相关搜索结果。
 
 ### <a name="add-default-and-suggested-bookmarks"></a>添加默认书签和推荐书签
 
@@ -97,7 +97,7 @@ In the [Microsoft 365 管理中心，](https://admin.microsoft.com/)go to [Bookm
 
 防止书签到书签重复错误：
 
-- 不要对不同的书签使用重复的 URL。 如果将一个 URL 分配给另一个书签，并且您尝试从导入文件再次添加它，则您将看到一个错误。 这也适用于其他类型的答案的重复 URL。
+- 不要将重复的 URL 用于不同的书签。 如果将一个 URL 分配给另一个书签，并且您尝试从导入文件再次添加它，则您将看到一个错误。 这也适用于其他类型的答案的重复 URL。
 - 更新现有书签时，请使用 *书签 ID* 列。 您可以更新现有书签的其他任何属性，如关键字或说明，但应确保书签 *ID* 位于导入文件的适当列中。 如果存在 *书签 ID，* 它不会被视为新增功能，也不会被处理为错误。
 
 ### <a name="publish-or-review-recommended-bookmarks"></a>发布或查看推荐的书签
@@ -122,13 +122,13 @@ In the [Microsoft 365 管理中心，](https://admin.microsoft.com/)go to [Bookm
 
 ## <a name="frequently-asked-questions"></a>常见问题解答
 
-**问：书签发布后，在Microsoft 搜索中可见需要多久？**
+**问：书签发布后在Microsoft 搜索中可见需要多久？**
 
 **答：** 发布后立即在Microsoft 搜索中提供书签。
 
 **问：建议书签显示需要多久？**
 
-**答：** 如果同时启用了推荐书签和自动Microsoft 搜索，则建议书签将只显示在网站中。 在初始评估期间，建议引擎将评估SharePoint流量以确定合适的书签，然后自动发布它们。 发布后，它们将立即在Microsoft 搜索。
+**答：** 如果同时启用了推荐书签Microsoft 搜索自动发布，则建议书签将只显示在网站中。 在初始评估期间，建议引擎将评估SharePoint流量以确定合适的书签，然后自动发布它们。 发布后，它们将立即在Microsoft 搜索。
 
 **问：删除的书签从结果中删除需要Microsoft 搜索？**
 
@@ -152,7 +152,7 @@ In the [Microsoft 365 管理中心，](https://admin.microsoft.com/)go to [Bookm
 
 **问：如果未对添加到建议列表的建议书签执行任何操作，会发生什么情况？**
 
-**答**：为了避免建议列表中的大量书签，建议 (所有者 = SYSTEM) 将在 180 天后清除。
+**答**：为了避免建议列表中出现大量书签，建议 (= SYSTEM) 将在 180 天后清除。
 
 **问：在哪里可以找到 Power App 的应用 ID？**
 

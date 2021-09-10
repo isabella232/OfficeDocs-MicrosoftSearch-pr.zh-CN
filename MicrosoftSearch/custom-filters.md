@@ -13,11 +13,11 @@ search.appverid:
 - MOE150
 description: 管理用于 SERP 的筛选器
 ms.openlocfilehash: c614d4b60c746f2e18fdb3352281891ea5134373
-ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
+ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58702190"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "58973381"
 ---
 # <a name="manage-filters"></a>管理筛选器
 
@@ -33,7 +33,7 @@ ms.locfileid: "58702190"
 
 ## <a name="out-of-the-box-filters"></a>开箱后筛选器
 
-默认情况下，"全部"、"文件"、图像和"新闻"等垂直搜索中提供开箱即用筛选器。 在"All"和"File"垂直方向上，可以看到 FileType 属性上的"文件类型"筛选器，LastModifiedTime 属性上的"Last modified"筛选器。 这些筛选器在 SharePoint 主页、Office.com、SharePoint 网站和工作垂直必应。
+默认情况下，"全部"、"文件"、图像和"新闻"等垂直搜索中提供开箱即用筛选器。 在"All"和"File"垂直方向上，可以看到 FileType 属性上的"文件类型"筛选器，LastModifiedTime 属性上的"Last modified"筛选器。 这些筛选器在 SharePoint 主页、Office.com、SharePoint 网站和工作纵向必应。
 
 ## <a name="custom-filters"></a>自定义筛选器
 
@@ -51,7 +51,7 @@ ms.locfileid: "58702190"
 
 ## <a name="create-sharepoint-site-level-filters"></a>创建SharePoint级别筛选器
 
-1. 在 [SharePoint管理中心](https://sharepoint.com/)中，转到"设置"。
+1. 在 [SharePoint中心中](https://sharepoint.com/)，转到"设置"。
 2. 查找"Microsoft 搜索"部分，然后选择"为此 **Microsoft 搜索配置网站集"。**
 3. 在导航窗格中，转到"自定义体验"，然后选择" **垂直"。**
 4. 选择您首选的垂直方向以创建筛选器，然后单击"编辑 **"。**
@@ -74,6 +74,6 @@ ms.locfileid: "58702190"
 - 筛选器可以针对 Text 和 DateTime 属性进行配置。
 - 您总共只能有 50 个筛选器。
 - 无法调整开箱即用筛选器的顺序。
-- 内容不支持筛选器OneDrive筛选器。 与搜索结果对应的筛选器值OneDrive不会显示在筛选器上。
+- 内容不支持筛选器OneDrive筛选器。 与搜索结果对应的筛选器值OneDrive内容不会显示在筛选器上。
 - 自定义筛选器值将显示来自内容SharePoint而不是 One Drive 内容的选项。例如，如果为"Author"创建自定义筛选器，并且 SharePoint 内容仅包含来自作者"Amy"的结果，并且 OneDrive 内容仅包含来自名为"John"的作者的结果，则"作者"自定义筛选器将显示"Amy"作为唯一选项。
 - 为内容显示的SharePoint值将应用于OneDrive内容。

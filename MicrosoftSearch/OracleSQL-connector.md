@@ -7,19 +7,19 @@ audience: Admin
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 ROBOTS: NoIndex
 description: 为 Microsoft 搜索 设置 Oracle SQL Graph 连接器。
-ms.openlocfilehash: 1fe45fa6f92b16290148ef72282418c41942a3c7
-ms.sourcegitcommit: e5d56d6ce1cd285c5af3e0472ce169cb34883017
+ms.openlocfilehash: 804bee89f8529630df5741f68b9f112c69307b4f
+ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/23/2021
-ms.locfileid: "58470011"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "58973430"
 ---
 <!---Previous ms.author:vivg --->
 
@@ -36,9 +36,9 @@ Oracle SQL Graph 连接器允许组织发现本地 Oracle 数据库中的数据�
 
 ### <a name="install-the-graph-connector-agent"></a>安装 Graph 连接器代理
 
-若要访问本地第三方数据，必须安装并配置 Graph 连接器代理。 有关详细信息[，请参阅](graph-connector-agent.md)Graph连接器代理。  
+若要访问本地第三方数据，必须安装和配置 Graph 连接器代理。 有关详细信息[，](graph-connector-agent.md)请参阅Graph连接器代理。  
 
-## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>步骤 1：在Graph连接器中添加Microsoft 365 管理中心
+## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>步骤 1：在Graph中添加Microsoft 365 管理中心
 
 按照常规 [设置说明操作](./configure-connector.md)。
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup instructions.-->
@@ -52,12 +52,12 @@ Oracle SQL Graph 连接器允许组织发现本地 Oracle 数据库中的数据�
 
 若要将 Oracle SQL连接器连接到数据源，必须配置要数据库服务器的连接器和本地 Graph 连接器代理。 然后，您可以使用所需的身份验证方法连接到数据库。
 
-对于 Oracle SQL 连接器，您需要指定主机名、端口和服务 (数据库) 名称以及首选的身份验证方法、用户名和密码。
+对于 Oracle SQL 连接器，需要指定主机名、端口和服务 (数据库) 名称以及首选的身份验证方法、用户名和密码。
 
 > [!NOTE]
 > 您的数据库必须运行 Oracle 数据库版本 11g 或更高版本，连接器才能连接。 连接器支持托管在 Windows、Linux 和 Azure VM 平台上的 Oracle 数据库。
 
-若要搜索数据库内容，必须在配置连接器SQL指定查询。 这些SQL查询需要命名要索引的所有数据库列 (即源属性) ，包括获取所有列需要执行的任何 SQL 联接。 若要限制对搜索结果的访问，必须在配置连接器 (指定) 查询SQL访问控制列表和 ACL。
+若要搜索数据库内容，必须在配置连接器SQL指定查询。 这些SQL查询需要命名要索引的所有数据库列 (即源属性) ，包括获取所有列需要执行的任何 SQL 联接。 若要限制对搜索结果的访问，必须在配置连接器时 (在) 查询SQL访问控制列表和 ACL。
 
 ## <a name="step-3a-full-crawl-required"></a>步骤 3a：必需 (完全) 
 
@@ -94,9 +94,9 @@ Oracle SQL Graph 连接器允许组织发现本地 Oracle 数据库中的数据�
 | 数字数据类型 | NUMBER (p，0)  | int64 (p <= 18)  <br> p (18 >的 double)  |
 | 浮点数数据类型 | NUMBER (p，s)  <br> FLOAT (p)  | double |
 | 日期数据类型 | DATE <br> TIMESTAMP <br> TIMESTAMP (n)  | datetime |
-| 字符数据类型 | CHAR (n)  <br> VARCHAR <br> VARCHAR2 <br> LONG <br> 一些 <br> NCLOB | string |
+| 字符数据类型 | CHAR (n)  <br> VARCHAR <br> VARCHAR2 <br> LONG <br> 一些 <br> NCLOB | 字符串 |
 | Unicode 字符数据类型 | NCHAR <br> NVARCHAR | string |
-| RowID 数据类型 | ROWID <br> UROWID | string |
+| RowID 数据类型 | ROWID <br> UROWID | 字符串 |
 
 对于当前数据类型不支持的其他任何字段，需要将列显式强制转换到受支持的数据类型。
 
@@ -113,7 +113,7 @@ Oracle SQL Graph 连接器允许组织发现本地 Oracle 数据库中的数据�
 
 ![水印列配置。](media/MSSQL-watermark.png)
 
-第一个查询使用"CreatedDateTime > January 1， 1753 00：00：00" 获取前 **N** (个行的最小值 DateTime 数据类型) 。 获取第一个批次后，如果行按升序排序，批处理中返回的最高级别值将另存为 `CreatedDateTime` 检查点。 例如，2019 年 3 月 1 日 03：00：00。 然后，使用查询中的"CreatedDateTime > 2019 年 3 月 1 日 03：00：00"提取下一批 **N** 行。
+第一个查询使用"CreatedDateTime > January 1， 1753 00：00：00" 获取前 **N** (个行，最小值为 DateTime 数据类型) 。 获取第一个批次后，如果行按升序排序，批处理中返回的最高级别值将另存为 `CreatedDateTime` 检查点。 例如，2019 年 3 月 1 日 03：00：00。 然后，使用查询中的"CreatedDateTime > 2019 年 3 月 1 日 03：00：00"获取下一批 **N** 行。
 
 ### <a name="skipping-soft-deleted-rows-optional"></a>跳过软删除的行 (可选) 
 
@@ -123,13 +123,13 @@ Oracle SQL Graph 连接器允许组织发现本地 Oracle 数据库中的数据�
 
 ### <a name="full-crawl-manage-search-permissions"></a>完全爬网：管理搜索权限
 
-选择 **"管理权限** "以选择各种访问控制 (ACL) 指定访问控制机制的列。 Select the column name you specified in the full crawl SQL query.
+选择 **"管理权限** "以选择各种访问控制 (ACL) 指定访问控制机制的 ACL 列。 选择在完全爬网或查询中指定的SQL名称。
 
 每个 ACL 列应都是一个多值列。 这些多个 ID 值可以使用分隔符分隔，如分号 (;) 、逗号 (、) 等。 需要在值分隔符字段中指定 **此分隔** 符。
 
 支持将以下 ID 类型用作 ACL：
 
-* **用户主体名称 (UPN) ：** 用户主体名称 (UPN) 是电子邮件地址格式的系统用户的名称。 UPN (例如：john.doe@domain.com) 由用户名 (logon name) 、separator (the @ symbol) 和 domain name (UPN suffix) 组成。
+* **用户主体名称 (UPN) ：** 用户主体名称 (UPN) 是电子邮件地址格式的系统用户的名称。 UPN (例如：john.doe@domain.com) 由用户名 (登录名) 、 (@ 符号) 和域名 (UPN 后缀) 组成。
 * **Azure Active Directory (AAD) ID：** 在 Azure AD 中，每个用户或组都有类似于"e0d3ad3d-0000-1111-2222-3c5f5c52ab9b"的对象 ID。
 * **Active Directory (AD) 安全 ID：在本地 AD** 设置中，每个用户和组都有一个不可变的唯一安全标识符，类似于"S-1-5-21-3878594291-2115959936-132693609-65242"。
 
@@ -161,7 +161,7 @@ Oracle SQL Graph 连接器允许组织发现本地 Oracle 数据库中的数据�
 
 Oracle SQL 连接器支持完全爬网和增量爬网的刷新计划。 我们建议您同时设置这两者。
 
-完全爬网计划将查找以前同步到 Microsoft 搜索 索引的已删除行和从同步筛选器中移动的任何行。 首次连接到数据库时，将运行完全爬网以同步从完全爬网查询检索到的所有行。 若要同步新行并进行更新，您需要计划增量爬网。
+完全爬网计划将查找以前同步到 Microsoft 搜索 索引的已删除行以及从同步筛选器中移动的任何行。 首次连接到数据库时，将运行完全爬网以同步从完全爬网查询检索到的所有行。 若要同步新行并进行更新，您需要计划增量爬网。
 
 ## <a name="step-8-review-connection"></a>步骤 8：查看连接
 
@@ -182,7 +182,7 @@ To learn more about how to create your verticals and MRTs, see [Search results p
 | ------------ | ------------ | ------------ |
 | 数据库设置 | 来自连接数据库服务器：连接请求已过 | 主机名无效 <br> 主机不可到达 |
 | 数据库设置 | 错误来自数据库服务器：ORA-12541：TNS：无侦听器 | 无效的端口 |
-| 数据库设置 | 来自 数据库服务器 的错误：ORA-12514：TNS：侦听器当前不知道连接器描述符中请求的服务 | 无效的服务 (数据库) 名称 |
+| 数据库设置 | 来自连接器数据库服务器的错误：ORA-12514：TNS：侦听器当前不知道连接器描述符中请求的服务 | 无效的服务 (数据库) 名称 |
 | 数据库设置 | 错误数据库服务器：用户''登录 `user` 失败。 | 用户名或密码无效 |
 
 ## <a name="limitations"></a>限制

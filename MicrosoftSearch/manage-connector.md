@@ -14,11 +14,11 @@ search.appverid:
 - MOE150
 description: 管理 Microsoft Graph Connectors for Microsoft 搜索。
 ms.openlocfilehash: dd82114ff6aa651b57ce1941685840906ecf7318
-ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
+ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58702045"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "58973423"
 ---
 # <a name="monitor-your-connections"></a>监视连接
 
@@ -26,20 +26,20 @@ ms.locfileid: "58702045"
 
 ## <a name="connection-operations"></a>连接操作
 
-导航到"连接器["选项卡](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/Connectors)中的"Microsoft 365 管理中心"。 [](https://admin.microsoft.com)
+导航到"[连接器"选项卡](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/Connectors)中的["Microsoft 365 管理中心"。](https://admin.microsoft.com)
 
-对于每个连接器类型，Microsoft 365 管理中心支持[](https://admin.microsoft.com)下表中所示的操作：
+对于每个连接器类型[，Microsoft 365 管理中心支持](https://admin.microsoft.com)下表中所示的操作：
 
 Operation | Microsoft 的图表连接器 | 合作伙伴或Graph连接器
 --- | --- | ---
-添加连接 | ：heavy_check_mark： ([请参阅安装程序概述) ](configure-connector.md) | ：x： (请参阅你的合作伙伴或自定义的连接器管理员 UX) 
+添加连接 | ：heavy_check_mark： (请参阅 [安装程序概述](configure-connector.md))  | ：x： (请参阅你的合作伙伴或自定义的连接器管理员 UX) 
 删除连接 | :heavy_check_mark: | :heavy_check_mark:
-编辑已发布的连接 | ：heavy_check_mark： 名称和说明<br></br> ：heavy_check_mark：连接设置<br></br> ：heavy_check_mark：属性标签<br></br> ：heavy_check_mark： 架构<br></br> ：heavy_check_mark：刷新计划<br></br> | ：heavy_check_mark： Name<br></br> ：heavy_check_mark： 说明
+编辑已发布的连接 | ：heavy_check_mark：名称和说明<br></br> ：heavy_check_mark： 连接设置<br></br> ：heavy_check_mark：属性标签<br></br> ：heavy_check_mark： 架构<br></br> ：heavy_check_mark：刷新计划<br></br> | ：heavy_check_mark： Name<br></br> ：heavy_check_mark： 说明
 编辑草稿连接 | :heavy_check_mark: | :x:
 
 ## <a name="monitor-your-connection-state"></a>监视连接状态
 
-创建连接后，已处理项目的数量会显示在"连接器"选项卡 **上的"Microsoft 搜索** 页上。 初始完全爬网成功完成后，将显示定期增量爬网的进度。 此页面提供有关连接器日常操作的信息以及日志和错误历史记录的概述。
+创建连接后，已处理项目的数量会显示在"连接器"选项卡上的"Microsoft 搜索 **页上。** 初始完全爬网成功完成后，将显示定期增量爬网的进度。 此页面提供有关连接器日常操作的信息以及日志和错误历史记录的概述。
 
 对于每个连接，"状态 **"** 列中会显示五种状态：
 
@@ -65,7 +65,7 @@ Operation | Microsoft 的图表连接器 | 合作伙伴或Graph连接器
 --- | --- 
 一般 | 0-79%
 高 | 80-89%
-关键 | 90%-99%
+严重 | 90%-99%
 完整 | 100%
 
 还将随每个连接显示已编制索引的项目数。 每个连接编制索引的项目数将影响组织可用的总配额。

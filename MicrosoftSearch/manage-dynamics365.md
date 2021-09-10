@@ -9,11 +9,11 @@ ms.service: mssearch
 ms.localizationpriority: medium
 description: 管理 Dynamics 365 内容在搜索结果中的显示方式
 ms.openlocfilehash: 8a87e4026937ba01132c10815dc2f91d27da79c9
-ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
+ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58702027"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "58973620"
 ---
 # <a name="dynamics-365-federation-search-preview"></a>Dynamics 365 联合搜索 (预览) 
 
@@ -25,7 +25,7 @@ ms.locfileid: "58702027"
 * 无法离开系统边界的数据
 * 存储在你的组织不希望在云上编制索引的敏感数据
 
-通过联合搜索连接访问的数据不会在Microsoft 搜索。 此外，使用 Microsoft 的内置连接器可轻松设置联合搜索连接。 我们的 Dynamics 365 连接器目前处于预览阶段。 如果你对加入预览版感兴趣，请通过 以下版本[aka.ms/D365FederationSearchPreview。](https://aka.ms/D365FederationSearchPreview) 有关发布时间框架，请参阅Microsoft 搜索[路线图](https://www.microsoft.com/microsoft-365/roadmap?filters=Microsoft%20Search)。
+通过联合搜索连接访问的数据在索引中Microsoft 搜索。 此外，使用 Microsoft 的内置连接器可轻松设置联合搜索连接。 我们的 Dynamics 365 连接器目前处于预览阶段。 如果你对加入预览版感兴趣，请通过 以下版本[aka.ms/D365FederationSearchPreview。](https://aka.ms/D365FederationSearchPreview) 有关发布时间框架，请参阅Microsoft 搜索[路线图](https://www.microsoft.com/microsoft-365/roadmap?filters=Microsoft%20Search)。
 
 ## <a name="dynamics-365-federation-connector"></a>Dynamics 365 联合连接器
 
@@ -41,7 +41,7 @@ Microsoft Dynamics 365 是一系列智能业务应用程序，设计用于企业
 
 Dynamics 365 答案将显示在所有 Microsoft 搜索 画布的搜索结果中，包括 SharePoint Online、必应 和 Office。
 
-:::image type="content" alt-text="SharePoint、必应 和 Office 上的 Dynamics 365 答案的屏幕截图" source="media/dynamics365/dynamics365-answer.png" lightbox="media/dynamics365/dynamics365-answer.png":::
+:::image type="content" alt-text="SharePoint、必应 和 Office 上的 Dynamics 365 Office" source="media/dynamics365/dynamics365-answer.png" lightbox="media/dynamics365/dynamics365-answer.png":::
 
 从答案中，使用"更多 Dynamics 365 结果"链接可以轻松查看更多 **Dynamics 365** 搜索结果。 它将用户带进专用 Dynamics 365 结果页，该页面包含更多与查询相关的结果。
 
@@ -83,7 +83,7 @@ Dynamics 365 答案将显示在所有 Microsoft 搜索 画布的搜索结果中�
 
 通过此简单配置，您可以为组织人员启用 Dynamics 365 联合搜索体验。
 
-1. 在["Microsoft 365 管理中心"](https://admin.microsoft.com)中，转到["数据源"。](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/connectors)
+1. 在["Microsoft 365 管理中心](https://admin.microsoft.com)中，转到"[数据源"。](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/connectors)
 
 2. 在"Microsoft 应用和服务"部分中的"Microsoft Dynamics 365"下，选择"管理"以打开 Microsoft Dynamics 365 面板。 
 

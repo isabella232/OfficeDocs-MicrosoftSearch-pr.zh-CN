@@ -11,17 +11,17 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: 建筑物中的Microsoft 搜索功能可帮助用户在建筑物内查找人员、办公室和其他建筑物。
+description: 网站中的Microsoft 搜索功能可帮助用户在建筑物内查找人员、办公室和其他建筑物。
 ms.openlocfilehash: beeef26cc7413da654cc3ab01d92aa6cdc74e5cb
-ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
+ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58702018"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "58973631"
 ---
 # <a name="manage-floor-plans"></a>管理平面图
 
-会议室中的 **Microsoft 搜索** 帮助用户在建筑物内查找用户和会议室。 平面图回答以下问题：
+会议室 **中的Microsoft 搜索** 帮助用户在建筑物内查找用户和会议室。 平面图回答以下问题：
 
 - Allan Deyoung 的办公室在哪里？
 - 2 楼 3 楼
@@ -29,7 +29,7 @@ ms.locfileid: "58702018"
 
 ## <a name="add-floor-plans"></a>添加平面图
 
-按照以下步骤在"设置"中设置 **Microsoft 搜索。**
+请按照以下步骤在"设置"中设置 **Microsoft 搜索。**
 
 ### <a name="step-1-determine-your-building-codes"></a>步骤 1：确定生成代码
 
@@ -51,7 +51,7 @@ ms.locfileid: "58702018"
 
 用户的办公地点是建筑物代码和房间标签的组合。 例如，如果建筑物代码为 *2，* 会议室标签为 *1173，* 则办公地点为 *2/1173*。
 
-为组织中添加或更新每个用户的办公地点。 可以更改用户个人资料中的办公地点[Microsoft 365 管理中心](https://admin.microsoft.com)也可以在本地 Active Directory 中更改，以同步到Azure Active Directory。 *PhysicalDeliveryOfficeName* 是用于办公室位置的字段。 如果房间标签不包括楼层号，请参阅常见问题解答获取提示。
+为组织中添加或更新每个用户的办公地点。 您可以在 Office 2016 中[](https://admin.microsoft.com)更改用户配置文件上的Microsoft 365 管理中心也可以在本地 Active Directory 中更改以同步到Azure Active Directory。 *PhysicalDeliveryOfficeName* 是用于办公室位置的字段。 如果房间标签不包括楼层号，请参阅常见问题解答获取提示。
 
 本示例中，Allan 办公室位于 2 号楼 1 的 1173 室。
 ![floorplans-userlestview.png。](media/floorplans-userlistview.png)
@@ -67,7 +67,7 @@ ms.locfileid: "58702018"
 
 ### <a name="step-5-add-building-locations"></a>步骤 5：添加建筑物位置
 
-平面图 [使用位置](manage-locations.md) 来定义建筑物。 在 ["Microsoft 365 管理中心"](https://admin.microsoft.com)中，转到 [**"位置"，**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/locations)然后选择"添加 **"。** 输入大楼的名称、地址和关键字。 根据需要添加多个建筑。
+平面图 [使用位置](manage-locations.md) 来定义建筑物。 在 ["Microsoft 365 管理中心](https://admin.microsoft.com)中，转到 [**"位置"，**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/locations)然后选择"添加 **"。** 输入大楼的名称、地址和关键字。 根据需要添加多个建筑。
 
 ![floorplans-locations.png。](media/floorplans-locations.png)
 
@@ -94,7 +94,7 @@ ms.locfileid: "58702018"
 8. 在查看屏幕上，重复步骤 6 以确保映射正确。
 9.  (可选) 查看并标识所有上载的平面图的位置模式，然后选择下一 **步**。
 10. 在查看屏幕上，重复步骤 6 以确保映射正确。
-11. 准备好后，选择 **"发布**"，使平面 **Microsoft 搜索。**
+11. 准备好后，选择 **"发布"** 以在""中 **提供Microsoft 搜索。**
 
 > [!NOTE]
 > **需要 48 小时才能发布平面图。** 之后，用户将在搜索同事办公室时看到类似于下面的平面图结果。
@@ -117,12 +117,12 @@ ms.locfileid: "58702018"
 
 |**步骤**|**错误消息**|**类型**|**操作**|
 |:-----|:-----|:-----|:-----|
-|Upload平面图|无法读取 CC_1.dwg。 请重新上载或删除平面图。|Error|请尝试再次上载文件。 如果不起作用，请删除文件并重试。|
-|Upload平面图|有两个名为 CC_1.dwg 的文件。 请删除其中一个，或者使用另一个名称重新上载。|Error|如果文件名不正确，请通过添加 floor 或 wing 信息使文件名是唯一的，然后再次上载该文件。 如果你意外添加了同一个文件两次，只需将其删除。|
-|Upload平面图|未找到任何数据。|Error|请检查你的文件以确保该文件正确无误，然后再次上传或删除它。|
+|Upload平面图|无法读取 CC_1.dwg。 请重新上载或删除平面图。|错误|请尝试再次上载文件。 如果不起作用，请删除文件并重试。|
+|Upload平面图|有两个名为 CC_1.dwg 的文件。 请删除其中一个，或者使用另一个名称重新上载。|错误|如果文件名不正确，请通过添加 floor 或 wing 信息使文件名是唯一的，然后再次上载该文件。 如果你意外添加了同一个文件两次，只需将其删除。|
+|Upload平面图|未找到任何数据。|错误|请检查你的文件以确保该文件正确无误，然后再次上传或删除它。|
 |Upload平面图|此文件中缺少外部引用。 上载 CC_1_furniture.dwg 或删除此文件。|警告|Upload外部引用文件或删除。|
 |Upload平面图|无法读取 DWG 文件中房间号或标签。 请删除此文件。|警告|请检查您的 DWG 文件以确保包含数据，然后删除该文件，然后重试。|
-|链接办公室位置|未在 office Azure Active Directory。 在设置楼层Azure Active Directory之前，向用户添加位置数据。|Error|[更新用户配置文件上的办公室位置](#step-3-update-office-locations-on-user-profiles) |
+|链接办公室位置|未在 Azure Active Directory 中发现任何办公Azure Active Directory。 在设置平面Azure Active Directory之前，将位置数据添加到其他位置。|错误|[更新用户配置文件上的办公室位置](#step-3-update-office-locations-on-user-profiles) |
 
 ## <a name="frequently-asked-questions"></a>常见问题解答
 
@@ -140,7 +140,7 @@ ms.locfileid: "58702018"
 
 **问：** 如何出于测试目的创建或编辑 DWG 文件？
 
-**答：** 在 Microsoft Visio、Autodesk AutoCAD 或其他任何 DWG 编辑器中创建 DWG 文件。 请确保文件中标记了 10 个或多个会议室。
+**答：** 在 Microsoft Visio、Autodesk AutoCAD或其他任何 DWG 编辑器中创建 DWG 文件。 请确保文件中标记了 10 个或多个会议室。
 
 **问：** DWG 文件中文本标签的最佳格式是什么？
 
@@ -162,7 +162,7 @@ ms.locfileid: "58702018"
 
 **问：** 我能否使用不包含楼层号的 DWG 文件？
 
-**答：** 是的，可以。 在用户的 Azure Active Directory 配置文件中更新办公地点时，请包含房间编号作为房间编号的一部分，即使 DWG 文件中缺少该楼层号。 上载文件后，将显示"指定位置模式"屏幕，你可以指示这两个值。
+**答：** 是的，可以。 在用户的 Azure Active Directory 配置文件中更新办公地点时，请包含楼层作为房间号的一部分，即使 DWG 文件中缺少该楼层。 上载文件后，将显示"指定位置模式"屏幕，你可以指示这两个值。
 
 例如，包含房间号但没有楼层的 DWG 文件可能类似于：
 

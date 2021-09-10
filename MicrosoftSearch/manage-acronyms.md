@@ -13,17 +13,17 @@ search.appverid:
 - MOE150
 description: 创建和更新首字母缩略词在Microsoft 搜索
 ms.openlocfilehash: b7b3272ba98bbce7d43562811389df0a35e9f7a2
-ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
+ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58702063"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "58973629"
 ---
-# <a name="manage-acronyms-answers-in-microsoft-search"></a>在"管理"中管理首字母Microsoft 搜索
+# <a name="manage-acronyms-answers-in-microsoft-search"></a>在"管理"中管理Microsoft 搜索
 
 用户经常遇到他们组织或团队使用的不熟悉的缩写词和缩写。 对于从一个团队移动到另一个团队、与内部合作伙伴团队合作或对组织而言是新人，特定于组织或团队的术语可能是新术语。
 
-组织并不总是有一个有关其标准术语的参考。 缺少单一引用使查找这些首字母缩写词的定义变得困难。 Microsoft 搜索首字母缩略词解决了此问题。
+组织并不总是有一个有关其标准术语的参考。 缺少单一引用使查找这些首字母缩写词的定义变得困难。 Microsoft 搜索首字母缩略词解决该问题。
 
 ## <a name="what-users-experience"></a>用户体验
 
@@ -45,7 +45,7 @@ Microsoft 搜索用户可以使用 必应、SharePoint、Office 365、Outlook �
 
 ## <a name="set-up-acronyms-answers"></a>设置首字母缩写词答案
 
-In the [Microsoft 365 管理中心](https://admin.microsoft.com)， go to [**Acronyms**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/acronyms)， and then select **Add acronym**.
+在 ["Microsoft 365 管理中心](https://admin.microsoft.com)中，转到 [**"首字母缩**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/acronyms)略词"，然后选择"**添加首字母缩写词"。**
 
 Microsoft 搜索查询两个数据源，以提供用户搜索的首字母缩略词答案：
 
@@ -61,9 +61,9 @@ Microsoft 搜索查询两个数据源，以提供用户搜索的首字母缩略�
 > [!NOTE]
 > 添加到 Published 状态中的缩写词最多需要一天的时间，Microsoft 搜索。
 
-**草稿状态**。 如果要在使首字母缩写词在"草稿"中可用Microsoft 搜索，可以在"草稿"状态中添加缩写词。 "草稿"状态中的缩写词不会显示在搜索结果中。 您需要将缩写词移动到"已发布"状态，使其出现在搜索结果中。
+**草稿状态**。 如果要在将缩写词用于"草稿"Microsoft 搜索，可以在"草稿"状态中添加缩写词。 "草稿"状态中的缩写词不会显示在搜索结果中。 您需要将缩写词移动到"已发布"状态，使其出现在搜索结果中。
 
-**已排除状态**。 如果要防止首字母缩略词出现在Microsoft 搜索，请使用排除首字母缩略词来添加它。  若要阻止排除首字母缩略词，需要删除已排除的首字母缩写词并添加它或验证它是否位于已发布列表中。
+**已排除状态**。 如果要防止首字母缩略词出现在Microsoft 搜索，请使用排除首字母缩略词进行添加。  若要阻止排除首字母缩略词，需要删除已排除的首字母缩写词并添加它或验证它是否位于已发布列表中。
 
 可以单独添加首字母缩写词，或在 CSV 文件中批量导入它们。 Upload包含下表中所示字段的 CSV 文件：
 
@@ -85,11 +85,11 @@ Microsoft 搜索查询两个数据源，以提供用户搜索的首字母缩略�
 
 - **草稿**。 将缩写词添加到"草稿"状态。
 - **已发布**。 将缩写词添加到 Published 状态，使其在Microsoft 搜索。
-- **已排除**。 将缩写词添加到"已排除"状态，并阻止其显示在Microsoft 搜索。
+- **已排除**。 将缩写词添加到"已排除"状态，并阻止它显示在Microsoft 搜索。
 
 ### <a name="system-curated-acronyms"></a>系统缩略词
 
-对于管理员来说，将组织中使用的所有缩写词添加到"答案"可能是一个挑战。 此功能可以找到搜索管理员甚至都不知道的缩写词。 为此，Microsoft 搜索发现和选择这些源中的首字母缩写词：
+对于管理员来说，将组织中使用的所有缩写词添加到"答案"可能是一个挑战。 此功能可以找到搜索管理员甚至都不知道的缩写词。 为此，Microsoft 搜索发现并组织这些源中的缩略词：
 
 - 用户的电子邮件
 - 文档[](https://products.office.com/sharepoint/collaboration)[SharePoint、Microsoft OneDrive]( https://onedrive.live.com/about/)[和](https://www.onenote.com/)Microsoft OneNote
@@ -112,9 +112,9 @@ Microsoft 搜索确保只有具有文档访问权限和权限的用户才能看�
 
 **问：用户在搜索时能否只输入缩写词？**
 
-**答：** 在必应，用户现在只需搜索一个缩略词，就可以找到首字母缩写词答案，而不再需要关键字。 将阶段性地为其他Microsoft 搜索启用此相同体验。
+**答：** 在必应，用户现在只需搜索首字母缩略词，就可以找到首字母缩写词答案，而不再需要关键字。 此相同体验将分阶段为其他Microsoft 搜索入口点启用。
 
-**问：管理员策展的首字母缩略词在发布后在Microsoft 搜索中可见需要多久？**
+**问：管理员策展的首字母缩略词在发布后在Microsoft 搜索需要多久才能显示？**
 
 **答：** 添加到 Published 状态中的缩写词最多需要一天的时间，Microsoft 搜索。
 
@@ -141,4 +141,4 @@ Microsoft 搜索确保只有具有文档访问权限和权限的用户才能看�
 **问：如果我的组织不想显示系统特用首字母缩略词，该做什么？能否在搜索结果中停止显示此类型的首字母缩写词？**
 
 **答：** 若要在搜索结果中关闭显示系统创建的首字母缩写词，请按照联系商业产品支持人员中的说明创建客户支持 [票证](/microsoft-365/admin/contact-support-for-business-products)。
-创建支持票证后，系统创建的首字母缩写词最多需要 48 小时才能停止显示在搜索结果中。
+创建支持票证后，系统创建的首字母缩略词最多需要 48 小时才能停止显示在搜索结果中。

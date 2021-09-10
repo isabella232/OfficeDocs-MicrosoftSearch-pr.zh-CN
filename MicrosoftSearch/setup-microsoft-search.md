@@ -13,15 +13,15 @@ search.appverid:
 - MOE150
 description: 首次设置 Microsoft 搜索。
 ms.openlocfilehash: b1ddc3c32036b1fe3b86d38926bec86f626736f4
-ms.sourcegitcommit: cc9d743bcf5e998720ce9cd6eefb4061d913dc65
+ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58701459"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "58973440"
 ---
 # <a name="set-up-microsoft-search"></a>设置 Microsoft 搜索
 
-Microsoft 搜索提供了一个用户友好界面，可帮助用户查找文件和文档、内部网站和业务工具、人员与组、位置和方向、对话和答案等信息。 它通过安全访问所有数据源（包括电子邮件、文件、SharePoint文件、OneDrive内容和其他共享资源）来实现此目标。 使用 Microsoft 搜索 必应还可以从 Internet 获取搜索结果。
+Microsoft 搜索提供了一个用户友好界面，可帮助用户查找文件和文档、内部网站和业务工具、人员与组、位置和方向、对话和答案等信息。 它通过安全访问所有数据源（包括电子邮件、文件、SharePoint文件、OneDrive内容和其他共享资源）来实现此目标。 通过Microsoft 搜索必应还可以从 Internet 获取搜索结果。
 
 若要了解有关 Microsoft 搜索功能的详细信息，请参阅 [Microsoft 搜索概述](overview-microsoft-search.md)。
 
@@ -48,7 +48,7 @@ Microsoft 搜索提供了一个用户友好界面，可帮助用户查找文件�
 
 ## <a name="step-2-create-answers"></a>步骤 2：创建答案
 
-Microsoft 搜索为管理员提供了可用于为其用户构建强大搜索体验的工具。 在Microsoft 搜索中，管理员可以创建三种不同的搜索内容，以提供更好的搜索体验并提高内容的"可查找性"：
+Microsoft 搜索为管理员提供了可用于为其用户构建强大搜索体验的工具。 在Microsoft 搜索，管理员可以创建三种不同的搜索内容，以提供更好的搜索体验并提高内容的"可查找性"：
 
 书签是最常用的答案类型。 它们将用户查询的最佳结果提升为搜索结果的顶部，并让用户轻松找到他们正在寻找的内容。
 可供所有人使用的信息性内容;例如，有关公司的信息、Windows和Office应用的帮助等。组织中人员通常在日常工作中搜索的内容。 与工作相关的常见搜索包括员工福利、时间和费用报告、提交采购订单以及从 IT 服务获取帮助。

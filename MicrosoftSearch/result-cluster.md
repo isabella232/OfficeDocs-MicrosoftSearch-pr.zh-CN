@@ -6,24 +6,24 @@ manager: jeffkizn
 ms.audience: Admin
 ms.topic: article
 ms.service: mssearch
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 description: 连接器结果群集体验的详细信息
-ms.openlocfilehash: cfb7df9046074fd5126ca0ccc59e24ac4eef8a92
-ms.sourcegitcommit: e5d56d6ce1cd285c5af3e0472ce169cb34883017
+ms.openlocfilehash: f815c52681a7fc2027b587be980b5e9125e04917
+ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/23/2021
-ms.locfileid: "58470320"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "58973419"
 ---
 # <a name="graph-connectors-result-cluster"></a>Graph连接器结果群集
 
 ## <a name="overview-of-the-graph-connectors-result-cluster"></a>连接器Graph群集概述  
 
-借助 Graph 连接器结果群集，企业可以在默认视图中搜索来自第三方数据源的内容，即 SharePoint、Office.com和 必应 中的 Microsoft 搜索 中的"全部"选项卡。
+使用 Graph 连接器结果群集，企业可以在默认视图中搜索来自第三方数据源的内容，即 SharePoint、Office.com 和 必应 中的 Microsoft 搜索 中的"所有"选项卡。 
 
 结果群集可帮助用户在一个地方发现所有第三方内容。 结果群集中显示的结果根据垂直搜索配置分组在一起。
 
@@ -56,6 +56,6 @@ ms.locfileid: "58470320"
 
 1. 转到 **设置** 网站中的SharePoint
 2. 转到"**网站信息** > **""查看所有网站设置"。**
-3. 转到"Microsoft 搜索"部分，然后选择"为此 **Microsoft 搜索配置网站集"。**
+3. 转到"Microsoft 搜索"部分，然后选择"**为此Microsoft 搜索配置网站集"。**
 4. 在导航窗格中，转到"自定义 **体验"，** 然后选择"**垂直"。**
 5. 选择"**全部"** 垂直，然后启用"**隐藏连接器结果"。**
