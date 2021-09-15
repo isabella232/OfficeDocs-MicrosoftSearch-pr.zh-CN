@@ -14,11 +14,11 @@ search.appverid:
 ms.assetid: c020bd72-9906-4dfd-bc77-57287f5927ce
 description: 了解如何使用 Microsoft 搜索将必应设置为公司的默认主页。
 ms.openlocfilehash: 745e4a81e4b53ff88b612cd19295cb89dc041ddc
-ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
+ms.sourcegitcommit: ca5ee826ba4f4bb9b9baabc9ae8a130011c2a3d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "58973626"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59375806"
 ---
 # <a name="make-bingcom-the-default-home-page"></a>将 Bing.com 设置为默认主页
 

@@ -14,11 +14,11 @@ search.appverid:
 ms.assetid: c0c814d0-f7e4-444e-b18e-09beb45c9322
 description: 管理Power BI数据在搜索结果中的显示方式
 ms.openlocfilehash: 14b294fcec7d9c7cb3e1951414ab8795fd2cace7
-ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
+ms.sourcegitcommit: ca5ee826ba4f4bb9b9baabc9ae8a130011c2a3d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "58973630"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59334468"
 ---
 # <a name="manage-power-bi-answers"></a>管理Power BI答案
 
@@ -31,7 +31,7 @@ ms.locfileid: "58973630"
 
 ## <a name="what-users-experience"></a>用户体验
 
-Microsoft 搜索用户可以通过Power BI搜索框、Windows、SharePoint、Office 365和必应来查找必应。 用户可以使用如下所示的查询搜索报告和仪表板：
+Microsoft 搜索用户可以通过Power BI搜索框、Windows、SharePoint、Office 365 和 必应 来查找必应。 用户可以使用如下所示的查询搜索报告和仪表板：
 
 * Power BI关于`<topic>`
 * Power BI for`<topic>`
@@ -40,13 +40,13 @@ Microsoft 搜索用户可以通过Power BI搜索框、Windows、SharePoint、Off
 * `<topic>`Power BI指标或Power BI指标`<topic>`
 * `<topic>`Power BI记分卡或Power BI记分卡`<topic>`
 
-将以上示例中的内容替换为要查找的信息（如销售、使用情况、容量 `<topic>` 、2021、Q1 等）以查看 Power BI。
+将以上示例中的内容替换为要查找的信息（如销售、使用情况、容量 `<topic>` 、2021、Q1 等）以查看来自 Power BI。
 
 :::image type="content" source="media/powerbi-answers/powerbi-serp.png" alt-text="带自动解答和垂直Power BI SERP 的屏幕截图。" border="true":::
 
 ## <a name="turn-power-bi-search-on-or-off"></a>打开Power BI或关闭搜索
 
-Power BI默认为组织启用结果。 你的Power BI管理员随时都可以禁用它们。 在"Power BI管理门户"中，转到"租户设置"，并禁用"使用全局 **搜索搜索Power BI** 设置。 若要了解更多信息，请参阅[管理Power BI管理门户。](/power-bi/admin/service-admin-portal#use-global-search-for-power-bi-preview)
+Power BI为组织启用结果。 你的Power BI管理员可随时禁用它们。 在"Power BI管理门户"中，转到"租户设置"并禁用"使用全局 **搜索搜索Power BI** 设置。 若要了解更多信息，请参阅[管理Power BI管理门户。](/power-bi/admin/service-admin-portal#use-global-search-for-power-bi-preview)
 
 :::image type="content" source="media/powerbi-answers/powerbi-admin.png" alt-text="用于打开或关闭Power BI的设置的屏幕截图。" border="true":::
 
@@ -75,6 +75,6 @@ Power BI默认为组织启用结果。 你的Power BI管理员随时都可以禁
 
 **答：** 不。 Microsoft 搜索将仅Power BI您有权访问的结果。
 
-**问：我能否Power BI搜索结果 (，例如报告类型或报告所有者) ？**
+**问：我能否自定义Power BI搜索结果 (，例如，报告类型或报告所有者) ？**
 
 **答：** 目前，我们不支持自定义搜索结果中Power BI字段。

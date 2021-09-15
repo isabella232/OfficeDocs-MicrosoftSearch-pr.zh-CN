@@ -13,11 +13,11 @@ search.appverid:
 - MOE150
 description: 连接器详细信息和错误
 ms.openlocfilehash: 915723a2a22771e89fdb433b4ddadba76fa91090
-ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
+ms.sourcegitcommit: ca5ee826ba4f4bb9b9baabc9ae8a130011c2a3d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "58973763"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59375774"
 ---
 <!-- markdownlint-disable no-inline-html -->
 
@@ -25,7 +25,7 @@ ms.locfileid: "58973763"
 
 若要访问和管理连接器，必须指定为租户的搜索管理员。 请与租户管理员联系，以预配搜索管理员角色。
 
-导航到"[连接器"选项卡](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/Connectors)中的["Microsoft 365 管理中心"。](https://admin.microsoft.com)
+导航到"连接器["选项卡](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/Connectors)中的"Microsoft 365 管理中心"。 [](https://admin.microsoft.com)
 
 在"连接器"选项卡上单击连接时，可以查看连接详细信息 [和错误](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/Connectors)。  
 
@@ -47,7 +47,7 @@ ms.locfileid: "58973763"
 
 对于" **连接器"选项卡** 上的每个 **活动** 连接器，任何现有爬网错误都显示在" **错误"选项卡** 下。选项卡列出了错误代码、每个代码的计数以及错误日志下载选项。 请参阅下图中的示例。 选择 **错误代码** 以查看错误的详细信息。
 
-![连接器列表，其中选择了连接器，详细信息窗格显示此连接器的 3 个错误。](media/errormonitoring1.png)
+![连接器列表（已选择连接器）和详细信息窗格显示此连接器的 3 个错误。](media/errormonitoring1.png)
 
 若要查看错误的特定详细信息，请选择其错误代码。 将出现一个屏幕，显示错误详细信息和链接。 最新错误显示在顶部。 请参阅下表中的示例。
 
@@ -60,7 +60,7 @@ ms.locfileid: "58973763"
 1000 | 数据源不可用。 检查 Internet 连接或确保连接器仍可访问数据源。 | 如果数据源因网络问题而不可访问，或者数据源本身被删除、移动或重命名，则会发生此错误。 检查提供的数据源详细信息是否仍然有效。
 1001 | 无法更新数据，因为数据源限制连接器。 | 若要取消限制数据源，请检查其缩放限制能否增加或等到一天中流量较少的时间。
 1002 | 无法对数据源进行身份验证。 验证与此数据源关联的凭据是否正确。 | 单击 **"** 编辑"更新身份验证凭据。
-1003 | 与连接器关联的帐户无权访问该项目。 |  确保适当的帐户有权访问要编制索引的项。
+1003 | 与连接器关联的帐户无权访问该项目。 |  确保适当的帐户有权访问要编制索引的项目。
 1004 | 无法访问本地数据网关。 确保网关服务正在运行，并且连接配置中更新了网关详细信息。 | 使用网关检查计算机，打开 Power BI 网关应用程序，并确保网关正在运行。 验证网关是否使用与 Microsoft 搜索相同的管理员帐户，然后确保在连接配置中更新所有网关详细信息。
 1005 | 与此数据源关联的凭据已过期。 续订凭据并更新连接。 | 单击 **"** 编辑"更新身份验证凭据。
 1006 | 网关版本已过期，不再支持此连接器。 你将需要更新网关。 | 请访问[安装本地数据网关](/data-integration/gateway/service-gateway-install)，以在包含网关的计算机上安装 Power BI 网关的最新版本。
@@ -76,7 +76,7 @@ ms.locfileid: "58973763"
 2004 | 索引编制失败，因为项目或文件大小不受支持。 | 有关详细信息，请参阅连接器特定的文档。
 2005 | 索引编制失败，因为 URI 太长。 | 有关详细信息，请参阅连接器特定的文档。
 2006 | 由于映射公式无效或没有具有此属性的 Azure AD 用户，用户映射失败。 | 请尝试使用不同的映射公式删除和重新创建连接。 
-2007 | 此项目不会显示在Microsoft 搜索，因为某些没有查看此项权限的用户或组无法编制索引。 | 
+2007 | 此项目不会显示在Microsoft 搜索，因为无法对无权查看此项目的一些用户或组编制索引。 | 
 2008 | 连接不能具有成员数超过 50，000 的非 Azure AD 组。 | 尝试从组中删除用户，或者尝试从组中删除包含该组的 ACLed 项，然后重新创建连接。
 2009 | 由于大量请求，非 Azure AD 组索引暂时暂停。 当系统处理完这些请求后，索引将恢复。 请稍后重新查看。 | 
 2010 | 由于 Microsoft 进行了更新，此连接不再有效。 请删除连接并创建一个新连接。 | 请删除连接并创建一个新连接。

@@ -12,24 +12,24 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: 设置 ServiceNow 目录Graph连接器以用于Microsoft 搜索
+description: 为 Graph 设置 ServiceNow 目录Microsoft 搜索
 ms.openlocfilehash: c46388a086f563eec36dbd7e5492d8065b1ae296
-ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
+ms.sourcegitcommit: ca5ee826ba4f4bb9b9baabc9ae8a130011c2a3d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "58973378"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59375810"
 ---
 <!---Previous ms.author: kam1 --->
 
 # <a name="servicenow-catalog-graph-connector-preview"></a>ServiceNow 目录Graph连接器 (预览) 
 
-使用 Microsoft Graph Connector for ServiceNow，组织可以[](https://www.servicenow.com/products/it-service-automation-applications/service-catalog.html)服务对所有用户可见的目录项，或受组织中用户条件权限限制的目录项。 从 ServiceNow 配置连接器并索引内容后，最终用户可以从任何客户端搜索这些Microsoft 搜索项。
+使用 Microsoft Graph Connector for ServiceNow，组织[](https://www.servicenow.com/products/it-service-automation-applications/service-catalog.html)可以服务对所有用户可见的目录项，或者使用组织中用户条件权限受限的目录项。 从 ServiceNow 配置连接器并索引内容后，最终用户可以从任何客户端搜索这些Microsoft 搜索项。
 
 >[!NOTE]
 >ServiceNow 目录Graph连接器预览版。 如果希望提前访问试用，请使用此表单 [<b> 进行注册 </b>](https://forms.office.com/r/QyYwQQY2EX)。  
 
-本文适用于配置Microsoft 365运行和监视 ServiceNow 目录连接器的任何Graph用户。 它补充了设置连接器文章中提供的Graph[说明](configure-connector.md)。 如果尚未这样做，请阅读整个设置 Graph 连接器一文，了解常规安装过程。
+本文适用于配置Microsoft 365运行和监视 ServiceNow 目录连接器的任何Graph用户。 它补充了设置连接器文章中提供的Graph[说明](configure-connector.md)。 如果尚未这样做，请阅读整个设置 Graph 连接器一文，了解常规设置过程。
 
 下面列出了安装过程的每一步以及一条说明，指示您应该遵循常规设置说明或仅适用于 ServiceNow Graph 连接器的其他说明，包括有关疑难解答和限制[的信息。](#limitations) [](#troubleshooting)
 
@@ -43,12 +43,12 @@ ms.locfileid: "58973378"
 ## <a name="step-3-connection-settings"></a>步骤 3：连接设置
 若要连接到 ServiceNow 数据，你需要组织的 **ServiceNow 实例 URL**。 组织的 ServiceNow 实例 URL 通常 https:// **&lt; 组织域>.service-now.com**。 
 
-除了此 URL 外，还需要一个服务帐户来设置与 ServiceNow 的连接，以及允许 Microsoft 搜索 根据刷新计划定期更新目录项。 该服务帐户将需要对以下 **ServiceNow** 表记录的读取权限，以成功对各种实体进行爬网。
+除了此 URL 外，还需要一个服务帐户来设置与 ServiceNow 的连接，并允许 Microsoft 搜索 根据刷新计划定期更新目录项。 该服务帐户将需要对以下 **ServiceNow** 表记录的读取权限，以成功对各种实体进行爬网。
 
-功能 | 需要读取访问权限的表 | 说明
+功能 | 需要读取访问权限的表 | 描述
 --- | --- | ---
 对可供所有人访问的目录项 <em>编制索引</em> | sc_cat_item | 用于爬网目录项
-索引和支持用户条件权限 | sc_cat_item_user_criteria_mtom | Who此目录项
+索引和支持用户条件权限 | sc_cat_item_user_criteria_mtom | Who访问此目录项
 | | sc_cat_item_user_criteria_no_mtom | Who无法访问此目录项
 | | sys_user | 读取用户表
 | | sys_user_has_role | 读取用户的角色信息
@@ -77,7 +77,7 @@ ms.locfileid: "58973378"
 
 下表提供了有关如何填写终结点创建表单的指导：
 
-字段 | 说明 | 建议值 
+字段 | 描述 | 建议值 
 --- | --- | ---
 名称 | 标识需要 OAuth 访问的应用程序的唯一值。 | Microsoft 搜索
 客户端 ID | 应用程序的只读自动生成的唯一 ID。 实例在请求访问令牌时使用客户端 ID。 | 不适用
@@ -85,7 +85,7 @@ ms.locfileid: "58973378"
 重定向 URL | 授权服务器重定向到的必需回调 URL。 | https://gcs.office.com/v1.0/admin/oauth/callback
 徽标 URL | 包含应用程序徽标的图像的 URL。 | 不适用
 活动 | 选中此复选框可以使应用程序注册表处于活动状态。 | 设置为活动
-刷新令牌有效期 | 刷新令牌有效的秒数。 默认情况下，刷新令牌在 100 天后过期 (8，640，000 秒) 。 | 31，536，000 (一年) 
+刷新令牌有效期 | 刷新令牌有效的秒数。 默认情况下，刷新令牌在 100 天后过期 (8，640，000 秒) 。 | 31，536，000 (年 1) 
 访问令牌有效期 | 访问令牌有效的秒数。 | 43，200 (12 小时) 
 
 输入客户端 ID 和客户端密码以连接到实例。 连接后，使用 ServiceNow 帐户凭据对爬网权限进行身份验证。 该帐户应至少具有 **目录** 角色。 参考步骤 [3：连接](#step-3-connection-settings) 设置开头的表，该表格提供对更多 ServiceNow 表记录和索引用户条件权限的读取访问权限。
@@ -96,7 +96,7 @@ ms.locfileid: "58973378"
 
 ### <a name="step-331-register-a-new-application-in-azure-active-directory"></a>步骤 3.3.1：在 Azure Active Directory
 
-若要了解如何在应用程序中注册新Azure Active Directory，请参阅[注册应用程序](/azure/active-directory/develop/quickstart-register-app#register-an-application)。 选择单个租户组织目录。 不需要重定向 URI。 注册后，记下应用程序客户端 (ID) Directory (租户) ID。
+若要了解如何在应用程序中注册新Azure Active Directory，请参阅[注册应用程序](/azure/active-directory/develop/quickstart-register-app#register-an-application)。 选择单个租户组织目录。 不需要重定向 URI。 注册后，记下应用程序 (客户端) ID 和目录 (租户) ID。
 
 ### <a name="step-332-create-a-client-secret"></a>步骤 3.3.2：创建客户端密码
 
@@ -108,7 +108,7 @@ ms.locfileid: "58973378"
 
 1. 运行 PowerShell。
 
-2. 使用Azure PowerShell安装服务器。
+2. 使用Azure PowerShell命令安装安装程序。
 
    ```powershell
    Install-Module -Name Az -AllowClobber -Scope CurrentUser
@@ -125,11 +125,11 @@ ms.locfileid: "58973378"
    ```powershell
    Get-AzADServicePrincipal -ApplicationId "Application-ID"
    ```
-   将"Application-ID"替换为"Application (client) ID (，) 步骤 3.a 中注册的应用程序的引号。 请注意 PowerShell 输出中的 ID 对象的值。 它是服务主体 ID。
+   将"Application-ID"替换为 Application (client) ID (，而不) 步骤 3.a 中注册的应用程序的引号。 请注意 PowerShell 输出中的 ID 对象的值。 它是服务主体 ID。
 
 现在，你已拥有 Azure 门户中需要的所有信息。 下表提供了信息的快速摘要。
 
-属性 | 说明 
+属性 | 描述 
 --- | ---
 租户 ID (的目录 ID)  | 步骤 3.a Azure Active Directory租户的唯一 ID。
 客户端 ID (应用程序 ID)  | 步骤 3.a 中注册的应用程序的唯一 ID。
@@ -144,7 +144,7 @@ ServiceNow 实例需要以下配置：
 
 2. 下表提供了有关如何填写 OIDC 提供程序注册表单的指导
 
-   字段 | 说明 | 建议值
+   字段 | 描述 | 建议值
    --- | --- | ---
    名称 | 标识 OAuth OIDC 实体的唯一名称。 | Azure AD
    客户端 ID | 第三方 OAuth OIDC 服务器中注册的应用程序的客户端 ID。 实例在请求访问令牌时使用客户端 ID。 | 步骤 3.a (应用程序) 客户端客户端 ID
@@ -164,7 +164,7 @@ ServiceNow 实例需要以下配置：
    应用程序 | 全球
    用户声明 | sub
    用户字段 | 用户 ID
-   启用 JTI 声明验证 | 禁用
+   启用 JTI 声明验证 | Disabled
 
 5. 选择"提交并更新 OAuth OIDC 实体"表单。
 
@@ -243,7 +243,7 @@ ServiceNow Graph连接器在其最新版本中具有以下限制：
 ## <a name="troubleshooting"></a>疑难解答
 发布连接后，自定义结果页后，可以在管理中心的"数据源 **"选项卡下** 查看 [状态](https://admin.microsoft.com)。 若要了解如何进行更新和删除，请参阅 [管理连接器](manage-connector.md)。
 在下面可以找到常见问题的疑难解答步骤。
-### <a name="1-unable-to-login-due-to-single-sign-on-enabled-servicenow-instance"></a>1. 无法登录，因为启用了单一Sign-On ServiceNow 实例
+### <a name="1-unable-to-login-due-to-single-sign-on-enabled-servicenow-instance"></a>1. 无法登录，因为启用了单Sign-On ServiceNow 实例
 
 如果组织已启用单一Sign-On (SSO) ServiceNow，则使用服务帐户登录时可能遇到问题。 可以通过添加到 ServiceNow 实例 URL<em> `login.do` </em>来显示基于用户名和密码的登录名。 示例。 `https://<your-organization-domain>.service-now.com./login.do` 
 
@@ -253,7 +253,7 @@ ServiceNow Graph连接器在其最新版本中具有以下限制：
 如果在连接状态中发现禁止响应或未授权响应，请检查服务帐户是否具有对步骤 [3：](#step-3-connection-settings)连接设置 中提到的表所需的访问权限。 请检查表中的所有列是否具有读取权限。
 
 #### <a name="22-check-if-servicenow-instance-behind-firewall"></a>2.2. 检查防火墙后的 ServiceNow 实例
-Graph如果连接器位于网络防火墙后面，则可能无法访问 ServiceNow 实例。 您需要明确允许访问 Graph 连接器服务。 您可以在下表中查找 Graph 连接器服务的公用 IP 地址范围。 根据租户区域，将其添加到 ServiceNow 实例网络允许列表。
+Graph如果连接器位于网络防火墙后面，则它可能无法访问 ServiceNow 实例。 您需要明确允许访问 Graph 连接器服务。 您可以在下表中查找 Graph 连接器服务的公用 IP 地址范围。 根据租户区域，将其添加到 ServiceNow 实例网络允许列表。
 
  环境 | 区域 | 范围
 --- | --- | ---

@@ -13,11 +13,11 @@ search.appverid:
 - MOE150
 description: 创建和更新首字母缩略词在Microsoft 搜索
 ms.openlocfilehash: b7b3272ba98bbce7d43562811389df0a35e9f7a2
-ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
+ms.sourcegitcommit: ca5ee826ba4f4bb9b9baabc9ae8a130011c2a3d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "58973629"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59375652"
 ---
 # <a name="manage-acronyms-answers-in-microsoft-search"></a>在"管理"中管理Microsoft 搜索
 
@@ -27,7 +27,7 @@ ms.locfileid: "58973629"
 
 ## <a name="what-users-experience"></a>用户体验
 
-Microsoft 搜索用户可以使用 必应、SharePoint、Office 365、Outlook 网页版、Outlook Mobile (Android [](https://products.office.com/sharepoint/collaboration)) 和[](https://Office.com)Teams Mobile (iOS 和 Android) 中的首字母缩略词获取定义。 [](https://Bing.com) 在 **"搜索** "框中，用户输入类似以下示例的查询：
+Microsoft 搜索用户可以使用 必应、SharePoint、Office 365、Outlook 网页版、Outlook Mobile (Android [](https://products.office.com/sharepoint/collaboration)) 以及[Teams](https://Bing.com)Mobile (iOS 和 Android) 中的首字母缩略词获取定义。 [](https://Office.com) 在 **"搜索** "框中，用户输入类似以下示例的查询：
 
 - *什么是* DNN
 - *定义* DNN
@@ -45,16 +45,16 @@ Microsoft 搜索用户可以使用 必应、SharePoint、Office 365、Outlook �
 
 ## <a name="set-up-acronyms-answers"></a>设置首字母缩写词答案
 
-在 ["Microsoft 365 管理中心](https://admin.microsoft.com)中，转到 [**"首字母缩**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/acronyms)略词"，然后选择"**添加首字母缩写词"。**
+在 ["Microsoft 365 管理中心"](https://admin.microsoft.com)中，转到 [**"首字母缩**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/acronyms)略词"，然后选择"**添加首字母缩写词"。**
 
-Microsoft 搜索查询两个数据源，以提供用户搜索的首字母缩略词答案：
+Microsoft 搜索查询两个数据源，以提供用户搜索的首字母缩写词答案：
 
 1. **管理员所策展**。 由管理中心中的 IT [管理员提供](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/acronyms)。
-2. **System-curated**. 通过Microsoft 搜索用户的电子邮件和文档以及组织中公开可用的数据进行发现。
+2. **System-curated**. 通过Microsoft 搜索用户的电子邮件和文档以及组织中公开可用的数据发现。
 
 ### <a name="set-up-admin-curated-acronyms"></a>设置管理员策展的首字母缩写词
 
-搜索管理员可以在管理中心的"首字母缩略词"[](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/acronyms)选项卡上Microsoft 搜索[首字母缩写词](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch)。 可以将任何内部站点或存储库中的首字母缩写词添加到管理中心。 这些首字母缩写词可以添加到 **已发布或****草稿** 状态：
+搜索管理员可以在管理中心的"首字母缩略词"[选项卡](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/acronyms)上Microsoft 搜索[首字母缩写词](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch)。 可以将任何内部站点或存储库中的首字母缩写词添加到管理中心。 这些首字母缩写词可以添加到 **已发布或****草稿** 状态：
 
 **已发布状态**。 组织的用户可以通过以下方式使用缩写Microsoft 搜索。
 
@@ -63,11 +63,11 @@ Microsoft 搜索查询两个数据源，以提供用户搜索的首字母缩略�
 
 **草稿状态**。 如果要在将缩写词用于"草稿"Microsoft 搜索，可以在"草稿"状态中添加缩写词。 "草稿"状态中的缩写词不会显示在搜索结果中。 您需要将缩写词移动到"已发布"状态，使其出现在搜索结果中。
 
-**已排除状态**。 如果要防止首字母缩略词出现在Microsoft 搜索，请使用排除首字母缩略词进行添加。  若要阻止排除首字母缩略词，需要删除已排除的首字母缩写词并添加它或验证它是否位于已发布列表中。
+**已排除状态**。 如果要防止首字母缩略词出现在Microsoft 搜索，请使用排除首字母缩略词来添加它。  若要阻止排除首字母缩略词，需要删除已排除的首字母缩写词并添加它或验证它是否位于已发布列表中。
 
 可以单独添加首字母缩写词，或在 CSV 文件中批量导入它们。 Upload包含下表中所示字段的 CSV 文件：
 
-| 首字母缩写 (强制)  | 代表 (强制)  | URL | 说明  | 州 (强制)  | 上次修改时间 | 上次修改者 | Id |
+| 首字母缩写 (强制)  | 代表 (强制)  | URL | 描述  | 州 (强制)  | 上次修改时间 | 上次修改者 | Id |
 | --------- | --------- | --------- | ---------- | --------- |--------- |--------- |--------- |
 | *XXX* | *拼写出缩写* | *Source* |  | *已发布、草稿或已排除* |  |  |  |
 
@@ -84,12 +84,12 @@ Microsoft 搜索查询两个数据源，以提供用户搜索的首字母缩略�
 **状态**。 此字段可以使用两个值：
 
 - **草稿**。 将缩写词添加到"草稿"状态。
-- **已发布**。 将缩写词添加到 Published 状态，使其在Microsoft 搜索。
+- **已发布**。 将缩写词添加到 Published 状态，使其在"发布Microsoft 搜索。
 - **已排除**。 将缩写词添加到"已排除"状态，并阻止它显示在Microsoft 搜索。
 
 ### <a name="system-curated-acronyms"></a>系统缩略词
 
-对于管理员来说，将组织中使用的所有缩写词添加到"答案"可能是一个挑战。 此功能可以找到搜索管理员甚至都不知道的缩写词。 为此，Microsoft 搜索发现并组织这些源中的缩略词：
+对于管理员来说，将组织中使用的所有缩写词添加到"答案"可能是一个挑战。 此功能可以找到搜索管理员甚至都不知道的缩写词。 为此，Microsoft 搜索发现和选择这些源中的首字母缩写词：
 
 - 用户的电子邮件
 - 文档[](https://products.office.com/sharepoint/collaboration)[SharePoint、Microsoft OneDrive]( https://onedrive.live.com/about/)[和](https://www.onenote.com/)Microsoft OneNote
@@ -108,25 +108,25 @@ Microsoft 搜索确保只有具有文档访问权限和权限的用户才能看�
 
 **问：用户如何触发首字母缩写词答案？**
 
-**答：** 若要获取缩写词答案，用户必须在 [必应、SharePoint、Office 365、Outlook 网页版、Outlook](https://bing.com)Mobile ([](https://products.office.com/sharepoint/collaboration)Android) [](https://Office.com)或 Teams Mobile (iOS 和 Android) 搜索框中输入特定 **查询模式。**
+**答：** 若要获取首字母缩写词答案，用户必须在 [必应、SharePoint、Office 365、Outlook 网页版、Outlook](https://bing.com)Mobile [](https://products.office.com/sharepoint/collaboration) (Android [](https://Office.com)) 或 Teams Mobile (iOS 和 Android) 搜索框中输入特定查询 **模式**。
 
 **问：用户在搜索时能否只输入缩写词？**
 
-**答：** 在必应，用户现在只需搜索首字母缩略词，就可以找到首字母缩写词答案，而不再需要关键字。 此相同体验将分阶段为其他Microsoft 搜索入口点启用。
+**答：** 在必应，用户现在只需搜索首字母缩略词就可以找到首字母缩写词答案，而不再需要关键字。 此相同体验将分阶段为其他Microsoft 搜索入口点启用。
 
-**问：管理员策展的首字母缩略词在发布后在Microsoft 搜索需要多久才能显示？**
+**问：管理员策展的首字母缩略词在发布后Microsoft 搜索需要多久？**
 
 **答：** 添加到 Published 状态中的缩写词最多需要一天的时间，Microsoft 搜索。
 
 **问：接收或发送新电子邮件或文档后，系统选择缩写词需要多久显示？**
 
-**答：** 新电子邮件或文档中的首字母缩写词最多需要 7 天时间显示在Microsoft 搜索结果中。
+**答：** 新电子邮件或文档中找到的首字母缩写词最多需要 7 天时间显示在Microsoft 搜索结果中。
 
 **问：如果首字母缩写词被排除并发布，会发生什么情况？**
 
 **答：** 排除的首字母缩略词将赋予优先级，并阻止已发布的首字母缩略词出现在搜索结果中。 它不会删除或移除已发布的缩写词。
 
-**问：首字母缩写词从结果中排除需要Microsoft 搜索？**
+**问：首字母缩略词从结果中排除需要Microsoft 搜索？**
 
 **答：** 排除的首字母缩写词最多需要一天的时间停止显示在搜索结果中。
 

@@ -13,15 +13,15 @@ search.appverid:
 - MOE150
 description: 如何映射 AAD 标识的步骤
 ms.openlocfilehash: d0292d77b3a0936ed60682b8388de1bb82ac43bb
-ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
+ms.sourcegitcommit: ca5ee826ba4f4bb9b9baabc9ae8a130011c2a3d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "58973380"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59334463"
 ---
 # <a name="map-your-azure-ad-identities"></a>映射 Azure AD 标识   
 
-本文将指导你完成将 Azure AD 标识映射到数据源 (非 Azure AD 标识) 的唯一标识符的步骤，以便访问控制列表 (ACL) 中具有非 Azure AD 标识的用户可以查看作用域为他们的连接器搜索结果。
+本文将引导你完成将 Azure AD 标识映射到数据源 (非 Azure AD 标识) 以便访问控制列表 (ACL) 中具有非 Azure AD 标识的用户可以查看作用域为他们的连接器搜索结果的步骤。
 
 这些步骤仅与搜索管理员相关，搜索管理员使用"仅有权访问此数据源的用户"和标识类型"AAD"的搜索权限由 Microsoft 设置 [Salesforce](salesforce-connector.md) 连接器。 以下步骤将演练如何将 Azure AD 用户属性映射到用户的 **联合身份验证 ID。**
 

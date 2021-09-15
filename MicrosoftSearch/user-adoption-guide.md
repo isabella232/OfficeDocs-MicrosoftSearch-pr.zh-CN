@@ -14,11 +14,11 @@ search.appverid:
 ms.assetid: 9e8c9323-4ff9-42dd-8052-2bc9e0d6d0e7
 description: 了解帮助你成功向组织Microsoft 搜索的方法和流程
 ms.openlocfilehash: 1e33e17da92070eb4a887b4d5130a4c47b7cfe37
-ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
+ms.sourcegitcommit: ca5ee826ba4f4bb9b9baabc9ae8a130011c2a3d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "58973770"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59375778"
 ---
 # <a name="user-adoption-guide"></a>用户采用指南
 
@@ -40,7 +40,7 @@ ms.locfileid: "58973770"
 |企业所有者  <br/> |确定产品和用户方案。  <br/> 确定部门和组织的成功指标。  <br/> |任何  <br/> |
 |变更管理团队  <br/> |确保产品价值易于理解。  <br/> 创建推出计划。  <br/> |IT  <br/> |
 |支持者  <br/> |将产品推广给同行和团队。  <br/> |任何 (员工)   <br/> |
-|搜索管理员  <br/> |确定用户采用核心团队成员。  <br/> 管理Microsoft 搜索，包括体验的外观和持续管理。  <br/> 推动讨论以显示活动Microsoft 搜索。  <br/> |IT  <br/> |
+|搜索管理员  <br/> |确定用户采用核心团队成员。  <br/> 管理Microsoft 搜索，包括体验的外观和持续管理。  <br/> 推动讨论以显示项目Microsoft 搜索。  <br/> |IT  <br/> |
 |Editors  <br/> |在管理中心 Microsoft 365[内容](https://admin.microsoft.com)。  <br/> |IT/Any  <br/> |
    
 ## <a name="stage-2-scenarios"></a>第 2 阶段：方案
@@ -71,7 +71,7 @@ ms.locfileid: "58973770"
     
 2. **用法：** 你可以利用 Insights 仪表板数据，包括每日和每月活动用户 (DAU 和 MAU) 、获取最多视图的内容类型和热门搜索关键字，以测量一段时间的使用情况。 有关详细信息，请参阅Microsoft 搜索 Insights[报告](./usage-reports.md)。
     
-3. **用户满意度：** 使用从调查和用户焦点组收集的数据来确定基线。 NSAT (的) 和 NPS (净推动分数) 也可以提供有用的度量。 无论使用哪种方法，都保持一致，以便你可以查看随着时间的推移的影响。 
+3. **用户满意度：** 使用从调查和用户焦点组收集的数据来确定基线。 NSAT (的) 净推动者分数 (NPS) 也可以提供有用的度量。 无论使用哪种方法，都保持一致，以便你可以查看随着时间的推移的影响。 
     
 4. **其他度量：** 将历史和/或当前数据用于支持请求以及搜索所花的时间。 
     
@@ -81,27 +81,27 @@ ms.locfileid: "58973770"
   
 ### <a name="product-and-content-readiness"></a>产品和内容就绪情况
   
-管理员直接影响最终用户的搜索体验，并确定Microsoft 搜索组织的外观。 这包括选择要向用户显示的结果类型。 这些结果可能包括指向文档、网站、人员、组、位置、对话和其他工作区资源的链接（也称为书签）。
+管理员直接影响最终用户的搜索体验，并确定Microsoft 搜索查找组织。 这包括选择要向用户显示的结果类型。 这些结果可能包括指向文档、网站、人员、组、位置、对话和其他工作区资源的链接（也称为书签）。
   
 有关详细信息，请参阅设置[Microsoft 搜索。](setup-microsoft-search.md)
   
-编辑人员是帮助管理书签和问答&领域的行业专家。 编辑器应创建解决您之前确定的用户方案的内容。
+编辑人员是帮助管理书签和问答&他们的专业知识领域的行业专家。 编辑器应创建解决您之前确定的用户方案的内容。
   
 有关详细信息，请参阅 [规划内容](plan-your-content.md)。
   
 ### <a name="signing-in"></a>登录
   
-Microsoft 搜索用户必须使用工作[必应](https://Bing.com)学校帐户登录。 若要使用户尽可能无缝登录：
+Microsoft 搜索用户必须使用工作[必应或学校](https://Bing.com)帐户登录。 若要使用户尽可能无缝登录：
   
 - 若要确保[Azure Active Directory](/azure/active-directory/)配置，请让一些用户尝试登录。 有关详细信息，请参阅测试 [单一登录](test-single-sign-on.md)。
     
-- 将公司管理的设备的浏览器默认设置设置为必应。 有关详细信息，请参阅设置 [默认浏览器](/deployedge/edge-default-browser)。
+- 将公司管理的设备的浏览器默认值设置为必应。 有关详细信息，请参阅设置 [默认浏览器](/deployedge/edge-default-browser)。
     
-- 通过组策略为[Microsoft Edge](https://www.microsoft.com/windows/microsoft-edge) [和 Google Chrome](https://www.google.com)用户部署搜索扩展。 有关详细信息，请参阅Microsoft 搜索[概述](overview-microsoft-search.md)。
+- 通过组策略为[Microsoft Edge](https://www.microsoft.com/windows/microsoft-edge) Google [Chrome](https://www.google.com)用户部署搜索扩展。 有关详细信息，请参阅Microsoft 搜索[概述](overview-microsoft-search.md)。
     
 ### <a name="draft-communications"></a>草稿通信
   
-使用实际方案告诉用户有关Microsoft 搜索以及它如何帮助他们节省时间。 变更管理团队可帮助制定推出策略，并为最终用户准备准备资料和市场活动。
+使用实际方案告知用户有关Microsoft 搜索以及它如何帮助他们节省时间。 变更管理团队可帮助制定推出策略，并为最终用户准备准备资料和市场活动。
   
 开始为组织规划通信和事件：
   
@@ -151,7 +151,7 @@ Microsoft 搜索用户必须使用工作[必应](https://Bing.com)学校帐户�
     
 - 工作结果有用吗？
     
-- 有关内容的通信Microsoft 搜索清楚明了吗？
+- 有关内容的通信Microsoft 搜索清楚易懂吗？
     
 此时是开始衡量阶段 2 中确定的指标的有效性的一个很好时间。
   
@@ -167,7 +167,7 @@ Microsoft 搜索用户必须使用工作[必应](https://Bing.com)学校帐户�
   
 ### <a name="generate-awareness"></a>生成感知
   
-为贵组织建立对Microsoft 搜索：
+在组织中为组织建立对Microsoft 搜索：
   
 - 登记试点用户以提供对等协助和专业知识。
     
@@ -183,7 +183,7 @@ Microsoft 搜索用户必须使用工作[必应](https://Bing.com)学校帐户�
   
 通过倾听用户的意见并处理他们的反馈，支持用户并让他们知道你的关心。
   
-使用见解仪表板查看产品和内容的表现。 利用此信息更新书签、Q&As 和其他通信。 这还将帮助你：
+使用见解仪表板查看产品和内容的表现。 利用此信息更新书签、问答&通信。 这还将帮助你：
   
 - 提高内容质量：查看标题、说明和 URL、优化关键字、删除过时的信息以及添加新信息。
     

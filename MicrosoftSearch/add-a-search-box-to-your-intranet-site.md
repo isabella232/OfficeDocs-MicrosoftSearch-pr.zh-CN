@@ -13,19 +13,19 @@ search.appverid:
 - MOE150
 ms.assetid: f980b90f-95e2-4b66-8b21-69f601ff4b50
 ROBOTS: NoIndex
-description: 通过将一个搜索框添加到 Intranet 站点或页面，Microsoft 搜索相关搜索建议并更快地查找工作结果。
+description: 通过将一个搜索框添加到 Intranet 站点或Microsoft 搜索，更快地获取相关搜索建议并查找工作结果。
 ms.openlocfilehash: d9f730eee98291d64e1f860c67be3eb7aa52a4a8
-ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
+ms.sourcegitcommit: ca5ee826ba4f4bb9b9baabc9ae8a130011c2a3d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "58973766"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59375654"
 ---
 # <a name="add-a-search-box-to-your-intranet-site"></a>将搜索框添加到 Intranet 站点
 
 若要为用户提供轻松访问您组织的结果，Microsoft 搜索搜索框中必应 Intranet 站点或页面。 以下为一些优势：
 
-- Web 门户或 intranet SharePoint上的搜索框提供了一个熟悉、受信任的入口点以开始搜索
+- Web 门户或 Intranet SharePoint上的搜索框提供了一个熟悉、受信任的入口点以开始搜索
 - 支持所有主要 Web 浏览器，包括 Google Chrome 和 Microsoft Edge
 - 仅显示来自组织的搜索建议，从不包括 Web 建议
 - 将用户Microsoft 搜索工作必应，其中不包括广告和 Web 结果
@@ -112,7 +112,7 @@ ms.locfileid: "58973766"
 
 对于自定义垂直方向，使用 URL 末尾的哈希。 您可以通过从 必应 上的工作页进行搜索、单击垂直标签，以及复制数字符号 (#) 。
 
-:::image type="content" alt-text="显示自定义演示文稿垂直结果和 URL Microsoft 搜索必应显示工作结果页面的屏幕截图。" source="media/custom-vertical-esb.png" lightbox="media/custom-vertical-esb.png":::
+:::image type="content" alt-text="显示自定义演示文稿垂直结果和 URL Microsoft 搜索必应工作结果页面的屏幕截图。" source="media/custom-vertical-esb.png" lightbox="media/custom-vertical-esb.png":::
 
 ## <a name="use-an-iframe-to-embed-a-search-box"></a>使用 iFrame 嵌入搜索框
 

@@ -13,11 +13,11 @@ search.appverid:
 - MOE150
 description: 保护公司数据和最终用户，同时向授权用户提供信息，Microsoft 搜索必应
 ms.openlocfilehash: bf3629b2508c705d19e3b7b772c6f3672063a6f1
-ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
+ms.sourcegitcommit: ca5ee826ba4f4bb9b9baabc9ae8a130011c2a3d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "58973431"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59375814"
 ---
 # <a name="security-and-privacy-for-microsoft-search-in-bing"></a>安全与隐私Microsoft 搜索必应
 
@@ -25,7 +25,7 @@ ms.locfileid: "58973431"
 
 ## <a name="secure-by-default"></a>默认处于保护状态
 
-Microsoft 搜索请求必应 HTTPS 进行。 连接进行端到端加密，以增强安全性。
+Microsoft 搜索请求必应 HTTPS 进行。 连接经过端到端加密，增强了安全性。
   
 ## <a name="authentication-and-authorization-with-azure-active-directory"></a>Azure Active Directory 身份验证和授权
 
@@ -39,15 +39,15 @@ Microsoft 搜索中必应身份验证绑定到Azure Active Directory。 当用�
   
 ## <a name="communicates-with-the-microsoft-cloud-from-the-browser"></a>通过浏览器与 Microsoft 云通信
 
-当用户使用工作或学校帐户登录时，必应将必要的客户端库下载到浏览器以启用Microsoft 搜索结果。 然后，当他们进行搜索时，浏览器内代码会调用Office 365云以获得工作结果。 为此，Microsoft 搜索使用根据 SSAE 18 SOC2 类型 1 的控制目标运营的专用 API。 这意味着，与在 Office 365 Core Online Services 中处理工作结果本身相比，工作结果和工作数据不会经过比工作结果本身更严格的数据处理控制必应系统。
+当用户使用工作或学校帐户登录时，必应将必要的客户端库下载到浏览器以启用Microsoft 搜索结果。 然后，当他们进行搜索时，浏览器内代码将Office 365云获取工作结果。 为此，Microsoft 搜索根据 SSAE 18 SOC2 类型 1 的控制目标运行专用 API。 这意味着工作结果和工作数据不会通过 必应 系统，这些系统所遵守的数据处理控制目标比在 Office 365 Core Online Services 中处理时工作结果本身要严格。
   
 ## <a name="permissions"></a>权限
 
 从 SharePoint 和 OneDrive for Business 等 Office 365 工作负载检索的工作结果在源上进行安全调整。用户不能查看无法通过 Office 365 查看和访问的 Word 文档或 PowerPoint 演示文稿等资源。他们只能在 SharePoint 中看到自己的文件以及作者显式或隐式（例如通过组成员身份）与之共享的文件。
 
-## <a name="microsoft-search-in-bing-protects-workplace-searches"></a>Microsoft 搜索中必应工作区搜索
+## <a name="microsoft-search-in-bing-protects-workplace-searches"></a>Microsoft 搜索必应工作区搜索
 
-当用户在搜索查询中输入搜索查询Microsoft 搜索，必应两个同时搜索请求：
+当用户在搜索查询中输入搜索Microsoft 搜索，必应两个同时搜索请求：
 
 - 对组织内部资源的搜索。
 - 从 必应.com 单独搜索公共结果。
@@ -56,7 +56,7 @@ Microsoft 搜索中必应身份验证绑定到Azure Active Directory。 当用�
 
 ### <a name="logging"></a>日志记录
 
-- 与必应流量中Microsoft 搜索的所有 必应.com 搜索日志必应工作区标识相关联。
+- 所有必应.com 搜索日志与Microsoft 搜索流量必应工作区标识相关联。
 - 如果满足一组限制或频率阈值，这使我们能够确定查询并非特定于特定组织，则查询将按隐私声明的搜索和人工智能部分所述[处理。](https://privacy.microsoft.com/privacystatement) 例如，此类查询将用于对公共功能（如自动建议或相关搜索）进行建模和训练。
 - 不满足限制或频率阈值的查询将与公共的非 Microsoft 搜索流量分开存储。
 
@@ -68,4 +68,4 @@ Microsoft 搜索中必应身份验证绑定到Azure Active Directory。 当用�
 
 [2018](https://blogs.microsoft.com/on-the-issues/2018/05/21/microsofts-commitment-to-gdpr-privacy-and-putting-customers-in-control-of-their-own-data/)年 5 月 21 日，Microsoft 的博客文章反映了我们对 GDPR 合规性的承诺，以及 Microsoft 如何帮助企业和组织履行自己的 GDPR 合规性义务。 可以在 Microsoft 信任中心常见问题解答 [中找到其他详细信息](https://www.microsoft.com/trustcenter/privacy/gdpr/gdpr-faqs)。
 
-Microsoft 搜索客户的内部资源和返回的结果执行的查询被视为客户数据，因此也符合信任中心常见问题解答中第 28 条中列出的处理者[承诺](https://www.microsoft.com/trustcenter/privacy/gdpr/gdpr-faqs)。 对于来自公共Microsoft 搜索的必应，Microsoft 作为数据控制者遵守其 GDPR 义务。
+Microsoft 搜索客户的内部资源和返回的结果执行的查询被视为客户数据，因此也符合信任中心常见问题解答中第 28 条中列出的处理者[承诺](https://www.microsoft.com/trustcenter/privacy/gdpr/gdpr-faqs)。 对于来自公共Microsoft 搜索的查询必应，Microsoft 作为数据控制者遵守其 GDPR 义务。

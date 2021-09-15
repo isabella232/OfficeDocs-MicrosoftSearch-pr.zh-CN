@@ -14,11 +14,11 @@ search.appverid:
 - MOE150
 description: 设置 ServiceNow 知识库Graph连接器Microsoft 搜索
 ms.openlocfilehash: 8052571124a74dfa92e5cd81deceee044081ecc1
-ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
+ms.sourcegitcommit: ca5ee826ba4f4bb9b9baabc9ae8a130011c2a3d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "58973382"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59375807"
 ---
 <!---Previous ms.author: kam1 --->
 
@@ -27,13 +27,13 @@ ms.locfileid: "58973382"
 
 借助 Microsoft Graph Connector for ServiceNow，组织可以索引对所有用户可见的知识库文章，或对组织中具有用户条件权限受限的知识库文章编制索引。 从 ServiceNow 配置连接器并索引内容后，最终用户可以从任何客户端搜索Microsoft 搜索文章。  
 
-您还可以参考以下[视频，](https://www.youtube.com/watch?v=TVSkJpk1RiE)了解有关连接器Graph管理搜索权限的功能。
+您还可以参考以下[视频，](https://www.youtube.com/watch?v=TVSkJpk1RiE)了解有关 Graph 连接器管理搜索权限的功能。
 
 [![Managing Search Permissions in Microsoft Graph Connector for ServiceNow.](https://img.youtube.com/vi/TVSkJpk1RiE/hqdefault.jpg)](https://www.youtube.com/watch?v=TVSkJpk1RiE)
 
-本文适用于配置Microsoft 365运行和监视 ServiceNow 知识库连接器Graph用户。 它补充了设置连接器文章中提供的Graph[说明](configure-connector.md)。 如果尚未这样做，请阅读整个设置 Graph 连接器一文，了解常规设置过程。
+本文适用于配置Microsoft 365运行和监视 ServiceNow 知识库连接器的管理员Graph用户。 它补充了设置连接器文章中提供的Graph[说明](configure-connector.md)。 如果尚未这样做，请阅读整个设置 Graph 连接器一文，了解常规设置过程。
 
-下面列出了安装过程的每一步以及一条说明，指示你应遵循常规设置说明或仅适用于 ServiceNow Graph 连接器的其他说明，包括有关疑难解答和限制[的信息](#limitations)。 [](#troubleshooting)  
+下面列出了安装过程的每一步以及一条说明，指示您应该遵循常规设置说明或仅适用于 ServiceNow Graph 连接器的其他说明，包括有关疑难解答和限制[的信息。](#limitations) [](#troubleshooting)  
 
 ## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>步骤 1：在Graph中添加一个Microsoft 365 管理中心。
 按照常规 [设置说明操作](./configure-connector.md)。
@@ -81,7 +81,7 @@ ms.locfileid: "58973382"
 
 下表提供了有关如何填写终结点创建表单的指导：
 
-字段 | 说明 | 建议值 
+字段 | 描述 | 建议值 
 --- | --- | ---
 名称 | 标识需要 OAuth 访问的应用程序的唯一值。 | Microsoft 搜索
 客户端 ID | 应用程序的只读自动生成的唯一 ID。 实例在请求访问令牌时使用客户端 ID。 | 不适用
@@ -89,7 +89,7 @@ ms.locfileid: "58973382"
 重定向 URL | 授权服务器重定向到的必需回调 URL。 | https://gcs.office.com/v1.0/admin/oauth/callback
 徽标 URL | 包含应用程序徽标的图像的 URL。 | 不适用
 活动 | 选中此复选框可以使应用程序注册表处于活动状态。 | 设置为活动
-刷新令牌有效期 | 刷新令牌有效的秒数。 默认情况下，刷新令牌在 100 天后过期 (8，640，000 秒) 。 | 31，536，000 (一年) 
+刷新令牌有效期 | 刷新令牌有效的秒数。 默认情况下，刷新令牌在 100 天后过期 (8，640，000 秒) 。 | 31，536，000 (年 1) 
 访问令牌有效期 | 访问令牌有效的秒数。 | 43，200 (12 小时) 
 
 输入客户端 ID 和客户端密码以连接到实例。 连接后，使用 ServiceNow 帐户凭据对爬网权限进行身份验证。 帐户应至少具有 **知识** 角色。 参考步骤 [3：连接](#step-3-connection-settings) 设置开头的表，该表格提供对更多 ServiceNow 表记录和索引用户条件权限的读取访问权限。
@@ -133,11 +133,11 @@ ms.locfileid: "58973382"
 
 现在，你已拥有 Azure 门户中需要的所有信息。 下表提供了信息的快速摘要。
 
-属性 | 说明 
+属性 | 描述 
 --- | ---
 租户 ID (的目录 ID)  | 步骤 3.a Azure Active Directory租户的唯一 ID。
-应用程序 ID (客户端 ID)  | 步骤 3.a 中注册的应用程序的唯一 ID。
-客户端密码 | 应用程序密钥从步骤 3.b (开始) 。 请像处理密码一样处理它。
+客户端 ID (应用程序 ID)  | 步骤 3.a 中注册的应用程序的唯一 ID。
+客户端密码 | 应用程序的密钥从步骤 3.b (开始) 。 请像处理密码一样处理它。
 服务主体 ID | 作为服务运行的应用程序的标识。  (步骤 3.c) 
 
 ### <a name="step-334-register-servicenow-application"></a>步骤 3.3.4：注册 ServiceNow 应用程序
@@ -146,12 +146,12 @@ ServiceNow 实例需要以下配置：
 
 1. 注册新的 OAuth OIDC 实体。 若要了解，请参阅 [创建 OAuth OIDC 提供程序](https://docs.servicenow.com/bundle/orlando-platform-administration/page/administer/security/task/add-OIDC-entity.html)。
 
-2. 下表提供了有关如何填写 OIDC 提供程序注册表单的指南
+2. 下表提供了有关如何填写 OIDC 提供程序注册表单的指导
 
-   字段 | 说明 | 建议值
+   字段 | 描述 | 建议值
    --- | --- | ---
    名称 | 标识 OAuth OIDC 实体的唯一名称。 | Azure AD
-   客户端 ID | 第三方 OAuth OIDC 服务器中注册的应用程序的客户端 ID。 实例在请求访问令牌时使用客户端 ID。 | 步骤 3 (客户端) ID
+   客户端 ID | 第三方 OAuth OIDC 服务器中注册的应用程序的客户端 ID。 实例在请求访问令牌时使用客户端 ID。 | 步骤 3.a (应用程序) 客户端客户端 ID
    客户端密码 | 第三方 OAuth OIDC 服务器中注册的应用程序的客户端密码。 | 步骤 3.b 中的客户端密码
 
    所有其他值都可以为默认值。
@@ -168,7 +168,7 @@ ServiceNow 实例需要以下配置：
    应用程序 | 全球
    用户声明 | sub
    用户字段 | 用户 ID
-   启用 JTI 声明验证 | 禁用
+   启用 JTI 声明验证 | Disabled
 
 5. 选择"提交并更新 OAuth OIDC 实体"表单。
 
@@ -189,7 +189,7 @@ ServiceNow 实例需要以下配置：
 
 访问使用 ServiceNow 主体 ID 作为用户 ID 创建的 ServiceNow 帐户，并分配知识角色。 可以在此处找到将角色分配给 ServiceNow 帐户的说明，将角色 [分配给用户](https://docs.servicenow.com/bundle/paris-platform-administration/page/administer/users-and-groups/task/t_AssignARoleToAUser.html)。 参考步骤 [3：连接](#step-3-connection-settings) 设置开头的表，该表格提供对更多 ServiceNow 表记录和索引用户条件权限的读取访问权限。
 
-使用管理中心配置向导中步骤 3.a)  (中的客户端 ID (和管理中心配置向导步骤 3.b) 中的客户端密码 (向使用 Azure AD OpenID 连接 的 ServiceNow 实例进行身份验证。
+使用管理中心配置向导中步骤 3.a) 中的客户端 ID (和步骤 3.b) 中的客户端密码 (，使用 Azure AD OpenID 连接 向 ServiceNow 实例进行身份验证。
 
 ## <a name="step-4-select-properties-and-filter-data"></a>步骤 4：选择属性和筛选数据
 
@@ -203,7 +203,7 @@ ServiceNow 实例需要以下配置：
 
 ServiceNow 连接器支持对"任何人"或"仅有权访问此数据源的人"**可见的搜索权限**。 索引数据显示在搜索结果中，并且对组织中所有用户或分别可通过用户条件权限访问它们的用户可见。 如果未使用用户条件启用知识库文章，则它将出现在组织中所有人的搜索结果中。
 
-ServiceNow Graph 连接器支持不带高级脚本的默认用户条件权限。 当连接器遇到具有高级脚本的用户条件时，使用该用户条件的所有数据将不会显示在搜索结果中。
+ServiceNow Graph 连接器支持默认用户条件权限，而无需高级脚本。 当连接器遇到具有高级脚本的用户条件时，使用该用户条件的所有数据将不会显示在搜索结果中。
 
 如果选择"**仅有权访问** 此数据源的用户"，则需要进一步选择 ServiceNow 实例是否具有 Azure Active Directory (AAD) 已设置用户或非 AAD 用户。
 
@@ -257,7 +257,7 @@ ServiceNow 知识库Graph连接器在其最新版本中具有以下限制：
 如果在连接状态中发现禁止响应或未授权响应，请检查服务帐户是否具有对步骤 [3：](#step-3-connection-settings)连接设置 中提到的表所需的访问权限。 请检查表中的所有列是否具有读取权限。
 
 #### <a name="22-check-if-servicenow-instance-behind-firewall"></a>2.2. 检查防火墙后的 ServiceNow 实例
-Graph如果连接器位于网络防火墙后面，则它可能无法访问 ServiceNow 实例。 您需要明确允许访问 Graph 连接器服务。 您可以在下表中查找 Graph 连接器服务的公用 IP 地址范围。 根据租户区域，将其添加到 ServiceNow 实例网络允许列表。
+Graph如果连接器位于网络防火墙后面，则可能无法访问 ServiceNow 实例。 您需要明确允许访问 Graph 连接器服务。 您可以在下表中查找 Graph 连接器服务的公用 IP 地址范围。 根据租户区域，将其添加到 ServiceNow 实例网络允许列表。
 
 **环境** | **Region** | **Range**
 --- | --- | ---

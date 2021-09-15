@@ -13,17 +13,17 @@ search.appverid:
 - MOE150
 description: 连接器结果群集体验的详细信息
 ms.openlocfilehash: f815c52681a7fc2027b587be980b5e9125e04917
-ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
+ms.sourcegitcommit: ca5ee826ba4f4bb9b9baabc9ae8a130011c2a3d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "58973419"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59375819"
 ---
 # <a name="graph-connectors-result-cluster"></a>Graph连接器结果群集
 
 ## <a name="overview-of-the-graph-connectors-result-cluster"></a>连接器Graph群集概述  
 
-使用 Graph 连接器结果群集，企业可以在默认视图中搜索来自第三方数据源的内容，即 SharePoint、Office.com 和 必应 中的 Microsoft 搜索 中的"所有"选项卡。 
+使用 Graph 连接器结果群集，企业可以在默认视图中搜索来自第三方数据源的内容，即 SharePoint、Office.com和 必应 Microsoft 搜索 中的"所有"选项卡。
 
 结果群集可帮助用户在一个地方发现所有第三方内容。 结果群集中显示的结果根据垂直搜索配置分组在一起。
 
@@ -49,13 +49,13 @@ ms.locfileid: "58973419"
 
 如果要禁用它，请按照以下步骤在组织级别关闭体验：
 
-1. 在 ["Microsoft 365 管理中心](https://admin.microsoft.com)中，转到 [**"垂直"。**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/verticals)
+1. In the [Microsoft 365 管理中心，](https://admin.microsoft.com)go to [**Verticals**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/verticals).
 1. 选择"**全部"** 垂直，然后启用"**隐藏连接器结果"。**
 
 请按照以下步骤在网站级别关闭SharePoint体验：
 
 1. 转到 **设置** 网站中的SharePoint
 2. 转到"**网站信息** > **""查看所有网站设置"。**
-3. 转到"Microsoft 搜索"部分，然后选择"**为此Microsoft 搜索配置网站集"。**
+3. 转到"Microsoft 搜索"部分，然后选择"为此 **Microsoft 搜索配置网站集"。**
 4. 在导航窗格中，转到"自定义 **体验"，** 然后选择"**垂直"。**
 5. 选择"**全部"** 垂直，然后启用"**隐藏连接器结果"。**

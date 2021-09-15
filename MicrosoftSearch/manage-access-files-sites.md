@@ -1,5 +1,5 @@
 ---
-title: 管理对文件和网站的访问
+title: 管理对文件和网站的访问权限
 ms.author: dawholl
 author: dawholl
 manager: kellis
@@ -13,13 +13,13 @@ search.appverid:
 - MOE150
 description: 概述管理员如何确保在其组织中正确限制对网站和文件的访问权限。
 ms.openlocfilehash: c19442e1d89ddfe65a772213a8b0225ca680d699
-ms.sourcegitcommit: 3e069fd920b5fcdfe97a0261930447e9e87d9013
+ms.sourcegitcommit: ca5ee826ba4f4bb9b9baabc9ae8a130011c2a3d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "58973775"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59375650"
 ---
-# <a name="manage-access-to-files-and-sites"></a>管理对文件和网站的访问
+# <a name="manage-access-to-files-and-sites"></a>管理对文件和网站的访问权限
 
 并非每个文件或网站都应该可供您组织中的每个人使用。 管理员和用户可以使用可最好地解决其特定问题的解决方案管理对敏感或机密信息的访问。 如果没有足够的访问控制不一致地应用，则可能会导致我们称其为"过度共享"。 通过更轻松地查找在组织中共享的信息，可能会无意中使用非正确限制访问具有不正确限制的文件Microsoft 搜索。
 
@@ -54,7 +54,7 @@ ms.locfileid: "58973775"
 
 ### <a name="sites-and-files-between-groups"></a>组之间的网站和文件
 
-若要限制组之间的文件和网站共享，例如，由营销团队管理机密项目的财务团队，您可以定义和实施信息屏障策略。 这些障碍还会阻止通信和协作在Microsoft Teams、SharePoint和OneDrive。 有关详细信息，请参阅[了解Microsoft 365。](/microsoft-365/compliance/information-barriers)
+若要限制组之间的文件和网站共享，例如，由营销团队管理机密项目的财务团队，您可以定义和实施信息屏障策略。 这些障碍还会阻止通信和协作在Microsoft Teams、SharePoint和OneDrive。 有关详细信息，请参阅了解 Microsoft 365 中[的信息障碍](/microsoft-365/compliance/information-barriers)。
 
 ## <a name="get-access-insights"></a>获取访问见解
 

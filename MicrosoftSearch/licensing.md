@@ -12,19 +12,19 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: Microsoft 连接器公共预览版Graph许可证要求和Microsoft 搜索
+description: Microsoft Graph 连接器公共预览版的许可要求和Microsoft 搜索
 ms.openlocfilehash: b62187f0618405bdd691f923437b7b1e0edea1f9
-ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
+ms.sourcegitcommit: ca5ee826ba4f4bb9b9baabc9ae8a130011c2a3d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "58973406"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59375663"
 ---
 <!---Previous ms.author: rusamai --->
 
 # <a name="license-requirements-and-pricing"></a>许可证要求和定价
 
-本文适用于想要了解如何为组织购买更多 Graph 连接器配额的全局管理员或帐单管理员。
+本文适用于想要了解如何为组织购买更多 Graph连接器配额的全局管理员或帐单管理员。
 
 任何有效的 **Microsoft 365或Office 365** 许可证都允许您查看搜索结果中连接器的数据。
 
@@ -38,9 +38,9 @@ ms.locfileid: "58973406"
 
 ## <a name="entitlement-built-into-microsoft-365-or-office-365-e5-licenses"></a>内置于许可证Microsoft 365或Office 365 E5权利
 
-以下许可证包括对 500 个项目的索引配额权利，这些配额计入从连接器中从组织Graph配额：
+以下许可证包含对 500 个项目的索引配额的权利，这些配额计入组织从连接器中Graph内容的配额：
 
-* Microsoft 365 E5或Office 365 E5
+* Microsoft 365 E5 或 Office 365 E5
 * [Microsoft Viva 主题](https://www.microsoft.com/microsoft-viva/topics?activetab=pivot:overviewtab)
 
 例如，如果你的组织有 100 Microsoft 365 E5许可证，则你的组织有 100 x 500 = 50，000 个项目，Graph连接器索引配额。
@@ -64,10 +64,10 @@ ms.locfileid: "58973406"
 
 1. **启动免费试用版**，在一个月内获取 25 个用户的访问权限。
 
-     访问[Microsoft Viva主题](https://www.microsoft.com/microsoft-viva/topics?activetab=pivot:overviewtab)并选择免费试用选项。
+     访问[Microsoft Viva主题](https://www.microsoft.com/microsoft-viva/topics?activetab=pivot:overviewtab)，然后选择免费试用选项。
 
-2. 与 Microsoft 帐户经理联系，请求试用索引容量的促销代码，Microsoft Viva主题试用。 使用 **促销代码，** 可以在六个月内为 50 个用户获取访问权限。
+2. 请与 Microsoft 帐户经理联系，以请求试用版索引容量的促销代码Microsoft Viva主题试用版。 使用 **促销代码，** 可以在六个月内为 50 个用户获取访问权限。
 
 > [!NOTE]
-> 目前，Microsoft Graph 连接器仅支持总索引配额多达 700 万个项目，其中包括任何捆绑到 Microsoft 365 或 Office 365 E5 许可证的内置配额。 该平台将在未来支持更高的限制。 如果你有任何问题，请联系 Microsoft 支持人员或你的 Microsoft 帐户经理。
+> 目前，Microsoft Graph 连接器仅支持总索引配额多达 700 万个项目，其中包括任何捆绑到 Microsoft 365 或 Office 365 E5 配额。 该平台将在未来支持更高的限制。 如果你有任何问题，请联系 Microsoft 支持人员或你的 Microsoft 帐户经理。
 > 预览连接器不计入配额，在连接器全面可用后，它将开始计算总索引配额。

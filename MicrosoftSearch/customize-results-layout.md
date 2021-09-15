@@ -13,11 +13,11 @@ search.appverid:
 - MOE150
 description: 使用自适应卡片，创建用于查看自定义搜索结果的布局
 ms.openlocfilehash: 44808d1dba8d765ba67fcd0c3dcf6f186a0b774c
-ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
+ms.sourcegitcommit: ca5ee826ba4f4bb9b9baabc9ae8a130011c2a3d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "58973407"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59375682"
 ---
 <!-- markdownlint-disable no-hard-tabs -->
 # <a name="create-a-layout-to-customize-search-results"></a>创建布局以自定义搜索结果

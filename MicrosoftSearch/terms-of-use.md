@@ -13,18 +13,18 @@ search.appverid:
 - MOE150
 description: Microsoft Graph 连接器公共预览版的法律条款和条件Microsoft 搜索
 ms.openlocfilehash: 5230048ad0eb52353621dbfcecc74fd8f4d2f0a6
-ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
+ms.sourcegitcommit: ca5ee826ba4f4bb9b9baabc9ae8a130011c2a3d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "58973434"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59375782"
 ---
 <!---Previous ms.author: anfowler --->
 
 # <a name="microsoft-graph-connectors-terms-of-use"></a>Microsoft Graph连接器：使用条款
 
-使用 Microsoft Graph 连接器可能受第三方条款和条件限制。 Microsoft 不是你与第三方 () 方。 有关第三方条款或服务的任何疑问或问题应定向到第三方。 你负责将数据索引编制到你的 Microsoft 365 租户，作为数据的数据控制者。
+Microsoft Graph 连接器的使用可能受第三方条款和条件限制。 Microsoft 不是你与第三方 () 方。 有关第三方条款或服务的任何疑问或问题应定向到第三方。 你负责将数据索引编制到你的 Microsoft 365 租户，作为数据的数据控制者。
 
-在索引到你的租户之前，Microsoft 不做出有关第三方数据的表示、担保Microsoft 365保证。  Microsoft 对于在编制第三方数据索引期间可能会发生的错误不承担任何责任。  你同意"根据情况"提供来自第三方提供商的任何数据，并且根据你的配置提供与索引有关。 出于联机服务条款、隐私声明和 Microsoft 的其他数据义务Microsoft 365租户中的索引数据将被视为"客户[](http://www.microsoftvolumelicensing.com/Downloader.aspx?documenttype=OST&lang=English)数据"。 [](https://privacy.microsoft.com/privacystatement)
+在索引到你的租户之前，Microsoft 不做出有关第三方数据的表示、担保Microsoft 365保证。  Microsoft 对于在编制第三方数据索引期间可能会发生的错误不承担任何责任。  你同意"根据情况"提供来自第三方提供商的任何数据，并且根据你的配置提供与索引有关。 出于联机服务条款、隐私声明和 Microsoft 的其他数据义务Microsoft 365租户中的索引数据将被视为"客户数据[](http://www.microsoftvolumelicensing.com/Downloader.aspx?documenttype=OST&lang=English)"。 [](https://privacy.microsoft.com/privacystatement)
 
 有关我们如何使用客户数据在Microsoft 365，请参阅[联机服务条款](http://www.microsoftvolumelicensing.com/Downloader.aspx?documenttype=OST&lang=English)和[隐私声明](https://privacy.microsoft.com/privacystatement)。 您还可以访问我们的信任中心，了解有关 Microsoft 对数据保护和隐私的承诺 [的更多信息](https://www.microsoft.com/trust-center)。

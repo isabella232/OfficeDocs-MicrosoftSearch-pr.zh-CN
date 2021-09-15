@@ -13,15 +13,15 @@ search.appverid:
 - MOE150
 description: 如何映射非 AAD 标识的步骤
 ms.openlocfilehash: f433da10347ef59acf7675ec65da8acbd7f0f347
-ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
+ms.sourcegitcommit: ca5ee826ba4f4bb9b9baabc9ae8a130011c2a3d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "58973379"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59334461"
 ---
 # <a name="map-your-non-azure-ad-identities"></a>映射非 Azure AD 标识  
 
-本文将引导你完成将非 Azure AD 标识映射到 Azure AD 标识的步骤，以便访问控制列表 (ACL) 具有非 Azure AD 标识的用户可以查看范围为他们的连接器搜索结果。
+本文将引导你完成将非 Azure AD 标识映射到 Azure AD 标识的步骤，以便访问控制列表 (ACL) 中具有非 Azure AD 标识的用户可以查看范围为他们的连接器搜索结果。
 
 这些步骤仅与搜索管理员相关，搜索管理员通过 Microsoft 设置[Confluence 云](confluence-cloud-connector.md)[、ServiceNow 知识](servicenow-knowledge-connector.md)[、ServiceNow 目录](servicenow-catalog-connector.md)或[Salesforce](salesforce-connector.md)连接器，具有"仅有权访问此数据源的用户"和标识类型"非 AAD"的搜索权限。
 
@@ -38,7 +38,7 @@ ms.locfileid: "58973379"
 
 | Azure AD 属性    | 定义           | 示例         |
 | :------------------- | :------------------- |:--------------- |
-| 用户主体名称 (UPN)  | UPN 包含一个 UPN 前缀 (用户帐户名) 一个 UPN 后缀 (DNS 域名) 。 前缀使用"@"符号与后缀联接。 | us1@contoso.onmicrosoft.com |
+| 用户主体名称 (UPN)  | UPN 包含一个 UPN 前缀 (一个用户帐户) 一个 UPN 后缀 (一个 DNS 域名) 。 前缀使用"@"符号与后缀联接。 | us1@contoso.onmicrosoft.com |
 | Azure AD ID                 | 给定用户的 Azure AD ID 是用户的唯一 GUID。                 | 58006c96-9e6e-45ea-8c88-4a56851eefad            |
 | Active Directory 安全 ID (SID)                   | SID (安全) 标识符是 Active Directory 用来将对象标识为安全主体的唯一标识符。                  | S-1-5-21-453406510-812318184-4183662089             |
 

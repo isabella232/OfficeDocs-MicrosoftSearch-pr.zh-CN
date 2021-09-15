@@ -14,15 +14,15 @@ search.appverid:
 - MOE150
 description: 设置适用于 Graph 的 Atlassian Jira Microsoft 搜索
 ms.openlocfilehash: 0b4b1dc0ed1f9e9d3ca57f98dc3878f63e68d510
-ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
+ms.sourcegitcommit: ca5ee826ba4f4bb9b9baabc9ae8a130011c2a3d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "58973755"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59375664"
 ---
 # <a name="atlassian-jira-graph-connector-preview"></a>Atlassian Jira Graph 连接器 (预览) 
 
-通过 Atlassian Jira Graph连接器，组织可以索引 Jira 问题。 配置连接器并索引 Jira 站点中的内容后，最终用户可以在该站点中搜索Microsoft 搜索。
+通过 Atlassian Jira Graph连接器，组织可以索引 Jira 问题。 从 Jira 站点配置连接器并索引内容后，最终用户可以在该站点中搜索Microsoft 搜索。
 
 > [!NOTE]
 > 阅读 [**Graph 连接器的**](configure-connector.md)安装程序一文，了解 Graph 连接器的一般设置说明。
@@ -35,7 +35,7 @@ ms.locfileid: "58973755"
 ## <a name="before-you-get-started"></a>在开始使用之前
 你必须是组织的 M365 租户的管理员以及组织的 Jira 网站的管理员。
 
-## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>步骤 1：在Graph连接器中添加Microsoft 365 管理中心
+## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>步骤 1：在Graph中添加连接器Microsoft 365 管理中心
 按照常规 [设置说明操作](./configure-connector.md)。
 
 ## <a name="step-2-name-the-connection"></a>步骤 2：命名连接
@@ -63,7 +63,7 @@ ms.locfileid: "58973755"
 
 ### <a name="step-3a-configure-data-select-projects"></a>步骤 3a：配置数据：选择项目
 
-你可以选择连接以仅索引整个 Jira 站点或特定项目。
+你可以选择连接以只为整个 Jira 站点或特定项目编制索引。
 
 * 如果选择为整个 Jira 网站编制索引，网站中所有项目中的 Jira 问题都将编制索引。 创建新项目和问题后，将在下一次爬网过程中对这些项目和问题编制索引。
 * 如果选择单个项目，则只会对这些项目中的 Jira 问题编制索引。
@@ -73,7 +73,7 @@ ms.locfileid: "58973755"
 * 指定 **JQL**。 这将仅根据所提供的 JQL 查询语言和 JQL 查询语言对筛选后返回的 Jira (编制) 。 若要了解有关使用 JQL 的信息，请参阅有关使用 Jira 查询语言的高级搜索的 Atlassian [支持文档](https://support.atlassian.com/jira-service-management-cloud/docs/use-advanced-search-with-jira-query-language-jql/)
 
 > [!TIP]
-> 您可以使用 JQL 筛选器仅对特定 Jira 问题类型编制索引，在 Bug、改进 (使用 *" issueType) "*
+> 您可以使用 JQL 筛选器仅对特定 Jira 问题类型编制索引，在 Bug、改进 (使用 *" issueType*) "
 
 ### <a name="step-3b-configure-data-select-properties"></a>步骤 3b：配置数据：选择属性
 
@@ -82,17 +82,17 @@ ms.locfileid: "58973755"
 Atlassian Jira Graph连接器可以索引默认问题字段和自定义创建的问题字段。
 
 > [!NOTE]
-> 如果所选的自定义已创建字段在一些 Jira 问题类型中不存在 () ，则该字段将被作为 *NULL* (空) 。
+> 如果所选的自定义创建字段未存在于 (中) ，则该字段将作为 *NULL* (空) 。
 
 ## <a name="step-4-manage-search-permissions"></a>步骤 4：管理搜索权限
 
-Atlassian Jira Graph 连接器支持对  **"** 任何人"或"仅有权访问此数据源的人"**可见的搜索权限**。 如果选择" **任何人"，** 则索引数据将显示在所有用户的搜索结果中。 如果您选择"仅有权访问此数据源的用户 **"，** 则索引数据将显示在具有访问权限的用户的搜索结果中。 在 Atlassian Jira 中，使用包含网站级别组和项目角色的项目权限方案定义安全权限。 也可使用问题级别权限方案定义问题级别安全性。
+Atlassian Jira Graph 连接器支持对"任何人"或  ****"仅有权访问此数据源的人"**可见的搜索权限**。 如果选择" **任何人"，** 则索引数据将显示在所有用户的搜索结果中。 如果您选择"仅有权访问此数据源的用户 **"，** 则索引数据将显示在具有访问权限的用户的搜索结果中。 在 Atlassian Jira 中，使用包含网站级别组和项目角色的项目权限方案定义安全权限。 也可使用问题级别权限方案定义问题级别安全性。
 
-如果选择"**仅有权访问** 此数据源的用户"，则需要进一步选择你的 Jira 站点是否Azure Active Directory (AAD) 已预配用户或非 AAD 用户。
+如果选择"**仅有权访问** 此数据源的用户"，则需要进一步选择你的 Jira 站点是否Azure Active Directory (AAD) 用户或非 AAD 用户。
 
 若要确定适合贵组织的选项：
 
-1. 如果 **Jira 用户** 的电子邮件 ID 与 AAD中用户的 UserPrincipalName (UPN) ，请选择 AAD 选项。
+1. 如果 **Jira** 用户的电子邮件 ID 与 AAD中用户的 UserPrincipalName (UPN) ，请选择 AAD 选项。
 2. 如果 Jira 用户的电子邮件 ID 与 **AAD** 中用户的 UserPrincipalName (UPN) ，请选择"非 AAD"选项。 
 
 >[!NOTE]

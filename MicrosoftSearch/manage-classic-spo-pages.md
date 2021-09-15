@@ -13,11 +13,11 @@ search.appverid:
 - MOE150
 description: 在经典Microsoft 搜索页面上使用SharePoint
 ms.openlocfilehash: 5b9c40da63ccf3b28cf2d61282763d3d4f62f867
-ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
+ms.sourcegitcommit: ca5ee826ba4f4bb9b9baabc9ae8a130011c2a3d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "58973762"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59375649"
 ---
 # <a name="classic-pages-and-microsoft-search"></a>经典页面和Microsoft 搜索
 
@@ -36,7 +36,7 @@ SharePoint网站之前创建的网站使用经典搜索框和经典搜索结果�
 * 默认结果源上没有网站或网站集的自定义结果类型。
 * 使用下面所述的 *SearchBoxInNavBar* 设置不会选择退出站点或网站集。
 
-切换到 Microsoft 搜索 后，网站中的经典页面将开始在套件导航栏中显示搜索框，并从页面中删除经典搜索框。 然后，当用户搜索词时，结果将显示为使用新式搜索体验的 Microsoft 搜索。
+切换到 Microsoft 搜索后，网站中的经典页面将开始在套件导航栏中显示搜索框，并从页面中删除经典搜索框。 然后，当用户搜索术语时，结果将显示为使用新式搜索体验的 Microsoft 搜索。
 
 ## <a name="staying-with-the-classic-search-experience"></a>保持经典搜索体验
 
@@ -67,7 +67,7 @@ Set-PnPSearchSettings -Scope Site -SearchBoxInNavBar ModernOnly
 
 ## <a name="opting-into-microsoft-search"></a>选择加入Microsoft 搜索
 
-对于不符合上面列出的条件的网站，或者对于选择保持经典体验的网站集中的特定网站，可以手动启用Microsoft 搜索体验。
+对于不符合上述条件的网站，或选择保持经典体验的网站集中的特定网站，可以手动启用Microsoft 搜索体验。
 
 若要更改特定网站的此设置，可以使用此命令：
 
@@ -84,4 +84,4 @@ Set-PnPSearchSettings -Scope Site -SearchBoxInNavBar AllPages
 ```
 
 > [!NOTE]
-> 只能 Microsoft 搜索为包含"STS"、"CMSPUBLISHING"、"BLANKINTERNET"和"GROUP") 的团队网站或发布网站 (模板 ID 手动启用) 。
+> 只能 Microsoft 搜索为包含"STS"、"CMSPUBLISHING"、"BLANKINTERNET"和"GROUP" (的团队网站或发布网站模板 id 手动启用) 。

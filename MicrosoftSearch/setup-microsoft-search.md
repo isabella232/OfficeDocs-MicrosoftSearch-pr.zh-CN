@@ -13,21 +13,21 @@ search.appverid:
 - MOE150
 description: 首次设置 Microsoft 搜索。
 ms.openlocfilehash: b1ddc3c32036b1fe3b86d38926bec86f626736f4
-ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
+ms.sourcegitcommit: ca5ee826ba4f4bb9b9baabc9ae8a130011c2a3d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "58973440"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59375786"
 ---
 # <a name="set-up-microsoft-search"></a>设置 Microsoft 搜索
 
-Microsoft 搜索提供了一个用户友好界面，可帮助用户查找文件和文档、内部网站和业务工具、人员与组、位置和方向、对话和答案等信息。 它通过安全访问所有数据源（包括电子邮件、文件、SharePoint文件、OneDrive内容和其他共享资源）来实现此目标。 通过Microsoft 搜索必应还可以从 Internet 获取搜索结果。
+Microsoft 搜索提供了一个用户友好界面，可帮助用户查找文件和文档、内部网站和业务工具、人员与组、位置和方向、对话和答案等信息。 它通过安全访问所有数据源（包括电子邮件、文件、SharePoint文件、OneDrive内容和其他共享资源）来实现此目标。 使用 Microsoft 搜索 必应还可以从 Internet 获取搜索结果。
 
 若要了解有关 Microsoft 搜索功能的详细信息，请参阅 [Microsoft 搜索概述](overview-microsoft-search.md)。
 
 ## <a name="get-started"></a>入门
 
-作为 Microsoft 365 的一部分，Microsoft 搜索将在默认情况下为所有支持它的 Microsoft 应用打开。 不需要任何设置，但您可以通过一些基本管理任务Microsoft 搜索整体体验。
+作为 Microsoft 365 的一部分，Microsoft 搜索将在默认情况下为所有支持它的 Microsoft 应用打开。 无需进行设置，但您可以通过一些基本管理任务Microsoft 搜索整体管理体验。
 
 在 Microsoft 365 管理中心管理 Microsoft 搜索。
 
@@ -48,7 +48,7 @@ Microsoft 搜索提供了一个用户友好界面，可帮助用户查找文件�
 
 ## <a name="step-2-create-answers"></a>步骤 2：创建答案
 
-Microsoft 搜索为管理员提供了可用于为其用户构建强大搜索体验的工具。 在Microsoft 搜索，管理员可以创建三种不同的搜索内容，以提供更好的搜索体验并提高内容的"可查找性"：
+Microsoft 搜索为管理员提供了可用于为其用户构建强大搜索体验的工具。 在Microsoft 搜索中，管理员可以创建三种不同的搜索内容，以提供更好的搜索体验并提高内容的"可查找性"：
 
 书签是最常用的答案类型。 它们将用户查询的最佳结果提升为搜索结果的顶部，并让用户轻松找到他们正在寻找的内容。
 可供所有人使用的信息性内容;例如，有关公司的信息、Windows和Office应用的帮助等。组织中人员通常在日常工作中搜索的内容。 与工作相关的常见搜索包括员工福利、时间和费用报告、提交采购订单以及从 IT 服务获取帮助。
@@ -57,7 +57,7 @@ Microsoft 搜索为管理员提供了可用于为其用户构建强大搜索体�
 
 ## <a name="next-steps"></a>后续步骤
 
-若要详细了解用户如何使用Microsoft 搜索，请参阅以下文章：
+若要详细了解用户如何使用 Microsoft 搜索，请参阅以下文章：
 
 - [了解在 Office 中需要 Microsoft 搜索做什么](https://support.office.com/article/find-what-you-need-with-microsoft-search-in-office-2457d4d8-48a8-4ad4-ab89-5a0657aa8446)
 - [Office 365 培训中心](https://support.office.com/office-training-center)

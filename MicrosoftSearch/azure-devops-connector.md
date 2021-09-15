@@ -14,11 +14,11 @@ search.appverid:
 - MOE150
 description: 设置Azure DevOps Graph连接器Microsoft 搜索
 ms.openlocfilehash: fcf381a92ef397f900b300ca667fa80067a6672a
-ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
+ms.sourcegitcommit: ca5ee826ba4f4bb9b9baabc9ae8a130011c2a3d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "58973411"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59375659"
 ---
 <!---Previous ms.author: shgrover --->
 
@@ -32,13 +32,13 @@ ms.locfileid: "58973411"
 本文适用于配置、运行和监视 Azure DevOps Graph 连接器。 它补充了常规安装过程，并显示了仅适用于 Azure DevOps Graph 连接器的说明。
 
 >[!IMPORTANT]
->the Azure DevOps connector supports only the Azure DevOps cloud service. Azure DevOps Server连接器不支持 TFS 2019、TFS 2018、TFS 2017、TFS 2015 和 TFS 2013。
+>Azure DevOps连接器仅支持 Azure DevOps 云服务。 Azure DevOps Server连接器不支持 TFS 2019、TFS 2018、TFS 2017、TFS 2015 和 TFS 2013。
 
 <!---## Before you get started-->
 
 <!---Insert "Before you get started" recommendations for this data source-->
 
-## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>步骤 1：在Graph连接器中添加Microsoft 365 管理中心
+## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>步骤 1：在Graph中添加连接器Microsoft 365 管理中心
 
 按照常规 [设置说明操作](./configure-connector.md)。
 <!---If the above phrase does not apply, delete it and insert specific details for your data source that are different from general setup 
@@ -52,7 +52,7 @@ instructions.-->
 
 ## <a name="step-3-configure-the-connection-settings"></a>步骤 3：配置连接设置
 
-若要连接到您的 Azure DevOps实例，您需要您的 Azure DevOps名称、其应用程序[](/azure/devops/organizations/accounts/create-organization)ID 和客户端密码进行 OAuth 身份验证。
+若要连接到您的 Azure DevOps实例，您需要您的 Azure DevOps 名称、其应用程序[](/azure/devops/organizations/accounts/create-organization)ID 和客户端密码进行 OAuth 身份验证。
 
 ### <a name="register-an-app"></a>注册应用
 
@@ -60,11 +60,11 @@ instructions.-->
 
 下表提供了有关如何填写应用程序注册表单的指导：
 
-必需字段 | 说明 | 建议值
+必需字段 | 描述 | 建议值
 --- | --- | ---
 | 公司名称         | 公司的名称。 | 使用适当的值   |
 | 应用程序名称     | 标识要授权的应用程序的唯一值。    | Microsoft 搜索     |
-| 应用程序网站  | 在连接器设置期间请求访问您的 Azure DevOps 实例的应用程序的 URL。  (必需) 。  | https://<span>gcs.office。</span>com/
+| 应用程序网站  | 在连接器设置期间将请求访问 Azure DevOps实例的应用程序的 URL。  (必需) 。  | https://<span>gcs.office。</span>com/
 | 授权回调 URL        | 授权服务器重定向到的必需回调 URL。 | https://<span>gcs.office。</span>com/v1.0/admin/oauth/callback|
 | 授权范围 | 应用程序的访问范围 | 选择以下范围：Identity (read) 、Work Items (read) 、Variable Groups (read) 、Project and team (read) 、Graph (read) 、Analytics (read) |
 
@@ -74,11 +74,11 @@ instructions.-->
 使用上述详细信息注册应用时，你可获取将用于配置连接器的应用 **ID** 和客户端密码。
 
 >[!NOTE]
->若要撤销对在 Azure DevOps 中注册的任何应用的访问权限，请转到 Azure DevOps 实例的右上方的"用户设置"。 选择"配置文件"，然后在侧窗格的"安全性"部分选择"授权"。 将鼠标悬停在授权 OAuth 应用上方，即可看到应用详细信息右上角的"撤销"按钮。
+>若要撤销对在 Azure DevOps 中注册的任何应用的访问权限，请转到应用程序实例右上方的用户Azure DevOps设置。 选择"配置文件"，然后在侧窗格的"安全性"部分选择"授权"。 将鼠标悬停在授权 OAuth 应用上方，即可看到应用详细信息右上角的"撤销"按钮。
 
 ### <a name="connection-settings"></a>连接设置
 
-向 Microsoft 搜索应用Azure DevOps，可以完成连接设置步骤。 输入组织名称、应用 ID 和客户端密码。
+向 Microsoft 搜索 应用Azure DevOps，可以完成连接设置步骤。 输入组织名称、应用 ID 和客户端密码。
 
 ![连接应用程序设置。](media/ADO_Connection_settings_2.png)
 
@@ -98,7 +98,7 @@ instructions.-->
 
 ## <a name="step-4-manage-search-permissions"></a>步骤 4：管理搜索权限
 
-the Azure DevOps connector supports search permissions visible to  **Only people with access to this data source** or **Everyone**. 如果选择"仅有权访问此数据源的用户"，则基于对 Azure DevOps 中组织、Project 或区域路径级别的用户的权限，索引数据将显示在搜索结果中。 如果选择" **任何人"，** 则索引数据将显示在所有用户的搜索结果中。
+the Azure DevOps connector supports search permissions visible to  **Only people with access to this data source** or **Everyone**. 如果您选择"仅具有此数据源访问权限的用户"，索引数据将显示在搜索结果中，这些用户基于对 Azure DevOps 中的组织、Project 或区域路径级别的用户或组的权限来访问它们。 如果选择" **任何人"，** 则索引数据将显示在所有用户的搜索结果中。
 
 ## <a name="step-5-assign-property-labels"></a>步骤 5：分配属性标签
 
@@ -119,7 +119,7 @@ the Azure DevOps connector supports search permissions visible to  **Only peop
 
 >[!TIP]
 >**默认结果类型**
->* 连接器[Azure DevOps连接器发布](./customize-search-page.md#step-2-create-result-types)后自动注册结果类型。 结果类型使用基于步骤 3[](./customize-results-layout.md)中选定的字段的动态生成的结果布局。 
+>* 连接器Azure DevOps连接器发布[后自动](./customize-search-page.md#step-2-create-result-types)注册结果类型。 结果类型使用基于步骤 3[](./customize-results-layout.md)中选定的字段的动态生成的结果布局。 
 >* 可以通过导航到"结果类型"中的"结果类型"来管理 [](https://admin.microsoft.com)[**Microsoft 365 管理中心。**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/resulttypes) 默认结果类型将命名为 `ConnectionId` "Default"。 例如，如果你的连接 ID 是 `AzureDevOps` ，结果布局将命名为："AzureDevOpsDefault"
 >* 此外，还可以选择创建您自己的结果类型（如果需要）。
 

@@ -14,17 +14,17 @@ search.appverid:
 - MOE150
 description: 设置 Confluence 云Graph连接器Microsoft 搜索
 ms.openlocfilehash: baf6139257c8bf8e40bc997e2a408efb4fc2549f
-ms.sourcegitcommit: bb99601a7bd0f16dde7b271de516465d134e5bac
+ms.sourcegitcommit: ca5ee826ba4f4bb9b9baabc9ae8a130011c2a3d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "58973377"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59375770"
 ---
 <!---Previous ms.author: kam1 --->
 
 # <a name="confluence-cloud-graph-connector-preview"></a>Confluence Cloud Graph Connector (Preview) 
 
-Confluence 云Graph连接器允许组织对 Confluence 内容编制索引。 配置来自 Confluence 网站的连接器和索引数据后，最终用户可以在网站中搜索Microsoft 搜索。
+Confluence 云Graph连接器允许组织对 Confluence 内容编制索引。 配置 Confluence 网站中的连接器和索引数据后，最终用户可以在网站中搜索Microsoft 搜索。
 
 >[!NOTE]
 >Confluence 云Graph连接器预览版。 如果希望提前访问试用，请使用此表单 [<b> 进行注册 </b>](https://forms.office.com/r/duLxv8Nf8U)。  
@@ -37,14 +37,14 @@ Confluence 云Graph连接器允许组织对 Confluence 内容编制索引。 配
 ## <a name="before-you-get-started"></a>在开始使用之前
 你必须是组织的 M365 租户的管理员以及组织的 Confluence 网站的管理员。
 
-## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>步骤 1：在Graph连接器中添加Microsoft 365 管理中心
+## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>步骤 1：在Graph中添加连接器Microsoft 365 管理中心
 按照常规 [设置说明操作](./configure-connector.md)。
 
 ## <a name="step-2-name-the-connection"></a>步骤 2：命名连接
 按照常规 [设置说明操作](./configure-connector.md)。
 
 ## <a name="step-3-configure-the-connection-settings"></a>步骤 3：配置连接设置
-若要连接到 Confluence 网站，请使用您的网站 URL。 Confluence 云站点 URL 通常类似于 *https：//<organization_name>.atlassian.net/*。 可以选择"基本身份验证"或"OAuth 2.0" (推荐) 向 Confluence 网站进行身份验证。
+若要连接到 Confluence 网站，请使用您的网站 URL。 Confluence 云站点 URL 通常类似于 *https：//<organization_name>.atlassian.net/*。 可以选择基本身份验证或 OAuth 2.0 (推荐) 向 Confluence 网站进行身份验证。
 
 ### <a name="basic-auth"></a>基本身份验证
 输入帐户的用户名 (电子邮件 ID) API 令牌，以使用基本身份验证进行身份验证。若要了解有关生成 API 令牌的信息，请参阅 Atlassian 的文档，了解如何管理 [您的 Atlassian](https://support.atlassian.com/atlassian-account/docs/manage-api-tokens-for-your-atlassian-account/)帐户的 API 令牌。
@@ -73,11 +73,11 @@ Confluence 云Graph连接器允许组织对 Confluence 内容编制索引。 配
 
 ## <a name="step-5-manage-search-permissions"></a>步骤 5：管理搜索权限
 
-Confluence 云Graph连接器支持对"任何人"或"仅  **** 有权访问此 **数据源的人"可见的搜索权限**。 如果选择" **任何人"，** 则索引数据将显示在所有用户的搜索结果中。 如果您选择"仅有权访问此数据源的用户 **"，** 则索引数据将显示在具有访问权限的用户的搜索结果中。
+Confluence 云Graph连接器支持对"任何人"或"仅  **** 对此数据源具有访问权限的人 **"可见的搜索权限**。 如果选择" **任何人"，** 则索引数据将显示在所有用户的搜索结果中。 如果您选择"仅有权访问此数据源的用户 **"，** 则索引数据将显示在具有访问权限的用户的搜索结果中。
 
 在 Confluence 云中，使用空间权限和页面限制定义用户和组的安全权限。 Confluence 云Graph连接器将应用空间权限（如果没有页面限制）。 如果存在页面级别限制，则优先于空间权限。
 
-如果您选择"**仅有权访问** 此数据源的用户"，则需要进一步选择您的 Confluence 网站是否Azure Active Directory (AAD) 已设置用户或非 AAD 用户。
+如果选择"**仅有权访问** 此数据源的用户"，则需要进一步选择您的 Confluence 网站是否Azure Active Directory (AAD) 用户或非 AAD 用户。
 
 若要确定适合贵组织的选项：
 
