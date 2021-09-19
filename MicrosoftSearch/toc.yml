@@ -80,7 +80,7 @@
               href: manage-connector.md
             - name: 查看连接详细信息和错误
               href: connector-details-errors.md
-        - name: 授权
+        - name: 颁发许可
           href: licensing.md
         - name: 使用条款
           href: terms-of-use.md
@@ -114,6 +114,8 @@
           href: security-for-search.md
         - name: 将搜索框添加到 Intranet 站点
           href: add-a-search-box-to-your-intranet-site.md
+        - name: '选择学校或工作搜索体验 (预览) '
+          href: select-work-school-search-experience.md
         - name: 将 Microsoft Edge 设为默认浏览器
           href: /deployedge/edge-default-browser
         - name: 将必应设置为默认搜索引擎
