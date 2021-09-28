@@ -7,30 +7,28 @@ ms.topic: article
 ms.service: mssearch
 audience: Admin
 ms.audience: Admin
-ms.date: 07/02/2021
+ms.date: 09/24/2021
 ms.localizationpriority: medium
 search.appverid:
 - BFB160
 - MET150
 - MOE150
 description: 查看Microsoft 搜索使用情况报告
-ms.openlocfilehash: 9de48331efbc956ee7d980b919d9bd2f025fc8aa
-ms.sourcegitcommit: ca5ee826ba4f4bb9b9baabc9ae8a130011c2a3d0
+ms.openlocfilehash: 3f6b35ddbd08d4c709ce8b8b9125caa1a6517bae
+ms.sourcegitcommit: df898c1616c7c89e819cf2900a08a319af12f8cc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59375783"
+ms.lasthandoff: 09/27/2021
+ms.locfileid: "59940645"
 ---
 # <a name="microsoft-search-usage-reports"></a>Microsoft 搜索使用率报告
 
-利用搜索使用率报告，您可以更好地了解搜索在组织中如何运行。 从这些报告生成的见解将帮助您使内容易于查找，[](./make-content-easy-to-find.md)并采取措施，使搜索成为更有用且更令人愉悦的体验。
+利用搜索使用率报告，您可以更好地了解搜索在组织中如何运行。 从这些报告生成的见解将有助于你采取一些操作，以便为用户提供更有用和令人愉悦的搜索体验。
 
 > [!IMPORTANT]
 > Microsoft 搜索使用情况报告当前处于预览阶段
 
-此[Microsoft 搜索使用情况](https://admin.microsoft.com/Adminportal/Home?#/MicrosoftSearch/insights)报告包括从 SharePoint Home、Office.com 和 必应 搜索框中执行的搜索Microsoft 搜索图表和表。 你可以查看过去 31 天、每天或上一年每月的数据。 这些报告刚刚推出，因此需要一段时间来累算历史数据。
-
-此页面的早期版本包含仅针对 Microsoft 搜索.com 上必应搜索必应数据。 该数据现已集成到这些报告;你仍然可以通过单击页面底部的链接来查看旧页面，必应热门查询和印象 **分布**。 此链接和旧页面将很快删除。
+该[Microsoft 搜索使用情况](https://admin.microsoft.com/Adminportal/Home?#/MicrosoftSearch/insights)报告包括从 SharePoint Home、Office.com 和 必应 搜索框中执行的搜索Microsoft 搜索图表和必应表。 你可以查看过去 31 天、每天或上一年每月的数据。 这些报告刚刚推出，因此需要一段时间来累算历史数据。
 
 > [!div class="mx-imgBorder"]
 > ![搜索使用率报告仪表板。](media/usage-reports/usage_reports_v2.png)
@@ -51,9 +49,7 @@ ms.locfileid: "59375783"
 
 当您导航到使用率报告页面时，所有报告都可供查看。 可以使用日期筛选器来选取要查看的特定日期或月份。
 
-下载报告将允许您从更广泛的时间范围查看报告。 单击下载箭头并选择过去 **31 天** 或 **过去 12 个月**。 报告下载为Excel电子表格。 如果选择了过去 31 天，电子表格将每天具有一个单独选项卡。 过去 12 个月的下载每月都有一个选项卡。
-
-若要查看必应热门查询和印象分布报告，请单击页面上的链接。
+下载报告将允许您从更广泛的时间范围查看报告。 单击下载箭头并选择过去 **31 天** 或 **过去 12 个月**。 报告以电子表格Excel下载。 如果选择了过去 31 天，电子表格将每天具有一个单独选项卡。 过去 12 个月的下载每月都有一个选项卡。
 
 ## <a name="frequently-asked-questions"></a>常见问题解答
 
@@ -63,7 +59,7 @@ ms.locfileid: "59375783"
 
 顶部、弃用和失败的查询表显示您选择的第一天或当月的结果。
 
-**我何时会看到过去 7 天、过去 30 天的聚合数据，等等...就像必应热门查询报告一样？**
+**我何时会看到过去 7 天、过去 30 天等汇总数据...？**
 
 我们正在考虑这种类型的聚合，并针对这些报告的未来版本简化数据范围筛选。
 
@@ -73,4 +69,4 @@ ms.locfileid: "59375783"
 
 **即将对使用率报告进行哪些其他筛选？**
 
-我们正在研究其他筛选器，这些筛选器有助于在更精细的组织级别了解搜索使用情况。 例如，您将能够查看特定地理位置或部门的查询量。
+我们正在研究更多筛选器，这些筛选器有助于在更精细的组织级别了解搜索使用情况。 例如，您将能够查看特定地理位置或部门的查询量。
