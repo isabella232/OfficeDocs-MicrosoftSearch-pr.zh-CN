@@ -80,7 +80,7 @@
               href: manage-connector.md
             - name: 查看连接详细信息和错误
               href: connector-details-errors.md
-        - name: 颁发许可
+        - name: 授权
           href: licensing.md
         - name: 使用条款
           href: terms-of-use.md
@@ -110,6 +110,8 @@
           href: manage-classic-spo-pages.md
     - name: Microsoft 必应搜索
       items:
+        - name: 概述
+          href: overview-microsoft-search-bing.md
         - name: 安全和隐私
           href: security-for-search.md
         - name: 将搜索框添加到 Intranet 站点
