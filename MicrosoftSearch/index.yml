@@ -53,13 +53,13 @@ additionalContent:
               url: manage-locations.md
             - text: 管理Power BI
               url: manage-powerbi.md
-            - text: 管理问答&问题
+            - text: 管理问答&问答
               url: manage-qas.md
         - title: 管理数据源
           links:
             - text: Graph连接器概述
               url: connectors-overview.md
-            - text: Setup Graph Connectors
+            - text: 安装程序Graph连接器
               url: configure-connector.md
             - text: 联合连接器管理
               url: manage-dynamics365.md
@@ -78,4 +78,4 @@ additionalContent:
             - text: 了解Microsoft 搜索中SharePoint
               url: get-started-search-in-sharepoint-online.md
             - text: 了解Microsoft 搜索中必应
-              url: security-for-search.md
+              url: overview-microsoft-search-bing.md
