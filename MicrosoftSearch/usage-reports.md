@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 查看Microsoft 搜索使用情况报告
-ms.openlocfilehash: 3f6b35ddbd08d4c709ce8b8b9125caa1a6517bae
-ms.sourcegitcommit: df898c1616c7c89e819cf2900a08a319af12f8cc
+ms.openlocfilehash: 1f2afa6e2c7691aa3284ae017913827761981529
+ms.sourcegitcommit: ca6f0488b842e7fc0d98c7b84b2b8bc5817d3e7b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/27/2021
-ms.locfileid: "59940645"
+ms.lasthandoff: 10/07/2021
+ms.locfileid: "60224864"
 ---
 # <a name="microsoft-search-usage-reports"></a>Microsoft 搜索使用率报告
 
@@ -28,7 +28,7 @@ ms.locfileid: "59940645"
 > [!IMPORTANT]
 > Microsoft 搜索使用情况报告当前处于预览阶段
 
-该[Microsoft 搜索使用情况](https://admin.microsoft.com/Adminportal/Home?#/MicrosoftSearch/insights)报告包括从 SharePoint Home、Office.com 和 必应 搜索框中执行的搜索Microsoft 搜索图表和必应表。 你可以查看过去 31 天、每天或上一年每月的数据。 这些报告刚刚推出，因此需要一段时间来累算历史数据。
+Microsoft 搜索[使用情况](https://admin.microsoft.com/Adminportal/Home?#/MicrosoftSearch/insights)报告包括从 SharePoint Home (网站执行的搜索生成的图形和表，URL 以 必应 搜索框中的 /SharePoint.aspx) 、Office.com 和 Microsoft 搜索 结尾。 你可以查看过去 31 天、每天或上一年每月的数据。 这些报告刚刚推出，因此需要一段时间来累算历史数据。
 
 > [!div class="mx-imgBorder"]
 > ![搜索使用率报告仪表板。](media/usage-reports/usage_reports_v2.png)
@@ -63,7 +63,7 @@ ms.locfileid: "59940645"
 
 我们正在考虑这种类型的聚合，并针对这些报告的未来版本简化数据范围筛选。
 
-**为什么我看不到按不同应用和源 (使用情况) ？**
+**为什么我无法按不同应用和源 (使用情况) ？**
 
 目前，无法按源进行筛选。 报告将组合来自 SharePoint Home 和 Office.com 的搜索。 我们的下一版本将包括源筛选，以便你可以查看特定于每个应用程序的指标。
 
