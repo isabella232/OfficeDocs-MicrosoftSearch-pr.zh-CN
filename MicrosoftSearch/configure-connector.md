@@ -13,20 +13,20 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 针对 Graph 连接器的设置概述
-ms.openlocfilehash: 95a2640652bd1289962c888be4ba771629806a6b
-ms.sourcegitcommit: ca5ee826ba4f4bb9b9baabc9ae8a130011c2a3d0
+ms.openlocfilehash: f3e622abbc54103a47a06c587a1d20190639504c
+ms.sourcegitcommit: 02d4f91210d992da080fd39d5b60f8cf30d8f0b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59375662"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "60238436"
 ---
 <!-- Previous ms.author: monaray -->
 
 <!-- markdownlint-disable no-trailing-punctuation -->
 
-# <a name="setup-overview-for-graph-connectors-by-microsoft"></a>Microsoft 针对 Graph 连接器的设置概述 
+# <a name="setup-overview-for-graph-connectors-by-microsoft"></a>Microsoft 针对 Graph 连接器的设置概述
 
-本文介绍 Microsoft 在 Microsoft 365 管理中心 中设置 Graph 连接器[所需的基本Microsoft 365 管理中心。](https://admin.microsoft.com)  基本流程包括以下步骤:  
+本文介绍 Microsoft 在 Microsoft 365 管理中心 中设置 Graph **连接器所需的**[基本Microsoft 365 管理中心。](https://admin.microsoft.com) 基本流程包括以下步骤:  
 <!---Add links to each section in the doc--->
 
 1. [在 Microsoft 365 管理中心内添加 Graph 连接器。](#step-1-add-a-graph-connector-in-the-microsoft-365-admin-center)
@@ -52,11 +52,11 @@ ms.locfileid: "59375662"
 
 <!---Insert "Before you get started" recommendations for this data source-->
 
-## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>步骤 1：在Graph中添加连接器Microsoft 365 管理中心
+## <a name="step-1-add-a-graph-connector-in-the-microsoft-365-admin-center"></a>步骤 1：在Graph中添加Microsoft 365 管理中心
 
 完成以下步骤以配置任何 Microsoft 构建Graph连接器：
 
-1. 在登录管理员帐户时[Microsoft 365 管理中心。](https://admin.microsoft.com)
+1. 在 "帐户" 中[Microsoft 365 管理中心。](https://admin.microsoft.com)
 
 2. 在导航窗格中，**选择**"设置"，然后选择"搜索&**智能"。** 选择" [数据源"选项卡](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/Connectors)。
 
@@ -73,7 +73,7 @@ ms.locfileid: "59375662"
 指定以下属性：
 
 * Name（必选）
-* 连接 ID (是必需的) 
+* 连接 ID (必需) 
 * 说明 (可选) 
 * 选中复选框 (必需) 
 
@@ -87,9 +87,9 @@ ms.locfileid: "59375662"
 
 ## <a name="step-4-select-properties"></a>步骤 4：选择属性
 
-可以选择由索引编制索引Microsoft 搜索。 
+可以选择由索引编制索引Microsoft 搜索。
 
-ServiceNow 查询可用于先筛选数据，然后再由数据Microsoft 搜索;这可让你更加控制可搜索的数据。 若要了解有关 ServiceNow 查询的更多信息，请参阅 [了解 ServiceNow 查询](https://go.microsoft.com/fwlink/?linkid=2151447)。 
+ServiceNow 查询可用于先筛选数据，然后再由数据Microsoft 搜索;这可让你更加控制可搜索的数据。 若要了解有关 ServiceNow 查询的更多信息，请参阅 [了解 ServiceNow 查询](https://go.microsoft.com/fwlink/?linkid=2151447)。
 
 ## <a name="step-5-manage-search-permissions"></a>步骤 5：管理搜索权限
 
@@ -97,7 +97,7 @@ ServiceNow 查询可用于先筛选数据，然后再由数据Microsoft 搜索;�
 
 一些连接器（如[Microsoft SQL](MSSQL-connector.md) [和 Azure Data Lake 存储 Gen2）](azure-data-lake-connector.md)在本机Azure Active Directory ([Azure AD) ](/azure/active-directory/) ACL。
 
-其他连接器（如[ServiceNow](servicenow-knowledge-connector.md) [Knowledge、ServiceNow](servicenow-catalog-connector.md) [Catalog、Azure DevOps](azure-devops-connector.md)和[Salesforce）](salesforce-connector.md)支持同步非 Azure AD 用户和组。  
+其他连接器（如[ServiceNow 知识库](servicenow-knowledge-connector.md)[、ServiceNow 目录](servicenow-catalog-connector.md)[、Azure DevOps](azure-devops-connector.md)和[Salesforce）](salesforce-connector.md)支持同步非 Azure AD 用户和组。  
 
 选择"每个人"可让组织中的每个人查看来自此数据源的搜索结果。
 
@@ -141,19 +141,18 @@ ServiceNow 查询可用于先筛选数据，然后再由数据Microsoft 搜索;�
 
 您可以设置搜索架构属性来控制每个源属性的搜索功能。 搜索架构可帮助确定搜索结果页面上显示哪些结果，以及最终用户可以查看和访问的信息。
 
-搜索架构属性包括查询、**搜索、****检索和** 优化 **的选项**。 下表列出了 Microsoft 连接器支持的每个Graph并解释了其功能。
+搜索架构属性包括查询、**搜索、****检索和** 优化 **的选项**。 下表列出了 Microsoft 连接器支持的每个Graph并解释了它们的功能。
 
 搜索架构属性 | 函数 | 示例
 --- | --- | ---
-SEARCH | 使属性的文本内容可搜索。 属性内容包含在全文索引中。 | 如果属性为 **title**，则查询 **Enterprise返回任何** 文本或标题 **Enterprise** 单词的解答。
+SEARCH | 使属性的文本内容可搜索。 属性内容包含在全文索引中。 | 如果属性为 **title**，则查询Enterprise返回包含单词 **Enterprise文本** 或标题中的答案。
 QUERY | 通过查询来搜索特定属性的匹配项。 然后，可以在查询中以编程方式或详细方式指定属性名称。 |  如果可以查询 **Title** 属性，则支持查询 **Title： Enterprise。**
 检索 | 结果类型中只能使用可检索属性，并显示在搜索结果中。 |
-优化 | 精简选项可以像在结果页Microsoft 搜索一样。 | 如果在连接设置 [过程中](custom-filters.md) 标记了精简属性，则贵组织的用户可以在搜索结果页中按 **URL** 进行筛选
+优化 | 精简选项可在结果页Microsoft 搜索使用。 | 如果在连接设置 [过程中](custom-filters.md) 标记了精简属性，则贵组织的用户可以在搜索结果页中按 **URL** 进行筛选
 
 对于除文件共享连接器之外的所有连接器，必须手动设置自定义类型。 若要激活每个字段的搜索功能，您需要映射到属性列表的搜索架构。 连接向导根据选择的源属性集自动选择搜索架构。 您可以通过选中搜索架构页中每个属性和属性的复选框来修改此架构。
 
-> [!div class="mx-imgBorder"]
-> ![连接器的架构可以通过添加或删除查询、搜索和检索功能来自定义。](media/manageschema.png)
+:::image type="content" alt-text="连接器的架构可以通过添加或删除查询、搜索和检索功能来自定义。" source="media/manageschema.png" lightbox="media/manageschema.png":::
 
 ### <a name="restrictions-and-recommendations-for-search-schema-settings"></a>搜索架构设置的限制和建议
 
@@ -161,7 +160,7 @@ QUERY | 通过查询来搜索特定属性的匹配项。 然后，可以在查�
 
 * 当使用 content 属性呈现搜索结果时，会发生 **重大** 性能问题。 例如 **，ServiceNow** 知识库文章的文本 [](https://www.servicenow.com)内容字段。
 
-* 只有标记为可检索的属性才能呈现在搜索结果中，并可用于在 MRT 中 (新式) 。
+* 只有标记为可检索的属性才能呈现在搜索结果中，并可用于在 MRT (新式) 。
 
 * 只能将字符串属性标记为可搜索。
 
@@ -201,7 +200,7 @@ QUERY | 通过查询来搜索特定属性的匹配项。 然后，可以在查�
 
 ## <a name="troubleshooting"></a>疑难解答
 <!---Insert troubleshooting recommendations for this data source-->
-读取数据源的连接器特定信息。 
+读取数据源的连接器特定信息。
 
 > [!NOTE]
 > 此时，并非所有特定于连接器的文章都包括疑难解答建议。
@@ -214,4 +213,4 @@ QUERY | 通过查询来搜索特定属性的匹配项。 然后，可以在查�
 
 ## <a name="next-steps"></a>后续步骤
 
-发布连接后，需要自定义搜索结果页面。 若要了解如何自定义搜索结果，请参阅自定义 [搜索结果页面](customize-search-page.md)。
+发布连接后，您需要使用垂直和结果类型自定义搜索结果页面。 若要了解如何自定义搜索结果，请查看如何 [管理垂直](manage-verticals.md) 和 [结果类型](manage-result-types.md)。

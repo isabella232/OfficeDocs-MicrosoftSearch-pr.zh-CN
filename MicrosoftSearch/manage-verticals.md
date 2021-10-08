@@ -11,14 +11,13 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-ROBOTS: NOINDEX
 description: 管理结果页面上的垂直搜索
-ms.openlocfilehash: 89887b6ce5391d2473692504efa3c0eb35407b48
-ms.sourcegitcommit: 967a02ee932f8a6cee70cfd78bb0c8b1b78d07c4
+ms.openlocfilehash: 0396c1f67b22a77a39f78aa1f058ee4b2019a39c
+ms.sourcegitcommit: 02d4f91210d992da080fd39d5b60f8cf30d8f0b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/05/2021
-ms.locfileid: "60127758"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "60238400"
 ---
 # <a name="manage-search-verticals"></a>管理垂直搜索
 
@@ -26,7 +25,7 @@ ms.locfileid: "60127758"
 
 您可以在两个级别管理垂直方向：
 
-- **组织级别**– 当用户从搜索结果页的 [SharePoint](https://sharepoint.com/)起始页、Microsoft Office 和 Microsoft 搜索 搜索时，搜索结果页面上 [](https://office.com)会显示必应 [](https://bing.com)
+- **组织级别**– 当用户从用户的 SharePoint 起始页、Microsoft Office 和 Microsoft 搜索 [](https://sharepoint.com/)中搜索时，搜索结果页面上会显示 [](https://office.com)组织级别的 [垂直必应](https://bing.com)
 - **网站级别**– 当用户在搜索结果页上搜索网站时，网站级别的垂直SharePoint显示。 例如，您可能希望允许客户服务员工直接从其部门的网站搜索严重性 1 SharePoint事件。
 
 ## <a name="understanding-search-verticals"></a>了解垂直搜索
@@ -35,17 +34,17 @@ Microsoft 搜索有两种类型的垂直线，即开箱即用和自定义垂直�
 
 其他配置选项在自定义垂直方向提供，可用于为用户创建最佳体验。
 
-您可以添加与您的组织相关的垂直搜索。 例如，您可以根据每个部门需要的信息类型为与营销相关的内容创建一个垂直目录，为销售创建另一个垂直目录。 可以添加垂直线以显示由 Graph 连接器编制索引的内容[](connectors-overview.md)的结果，但不能为驻留在 SharePoint 中的内容创建SharePoint。
+您可以添加与您的组织相关的垂直搜索。 例如，您可以根据每个部门需要的信息类型为与营销相关的内容创建一个垂直目录，为销售创建另一个垂直目录。 可以添加垂直线以显示由 Graph[连接器](connectors-overview.md)编制索引的内容的结果，但不能为驻留在 SharePoint 中的内容创建SharePoint。
 
 ## <a name="create-search-verticals"></a>创建垂直搜索
 
 垂直管理体验由向导驱动，指导您完成定义要搜索的内容的垂直名称、内容源和范围的步骤。 您可以使用一组有限的关键字查询语言 [ (KQL ](#keyword-query-language-kql)) 定义给定内容源的垂直搜索范围。
 
-以下是在 Microsoft 搜索、SharePoint 或 Office 中创建自定义垂直 [必应。](https://bing.com/) [](https://sharepoint.com/) [](https://office.com/)  
+以下是在 Microsoft 搜索、SharePoint、Office 或 必应 中创建自定义 [垂直必应。](https://bing.com/) [](https://sharepoint.com/) [](https://office.com/)  
 
 ### <a name="manage-organization-level-verticals"></a>管理组织级别的垂直
 
-1. 在Microsoft 365 管理中心 [中](https://admin.microsoft.com)，转到 [**"自定义"**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/verticals)部分中的"垂直 **"** 页面。
+1. In the [Microsoft 365 管理中心，](https://admin.microsoft.com)go to the [**Verticals**](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/verticals) page in the **Customization** section.
 1. 单击 **"添加** "创建新的垂直方向。
 1. 完成配置步骤后，你可以查看并保存垂直方向。  
 
@@ -53,14 +52,14 @@ Microsoft 搜索有两种类型的垂直线，即开箱即用和自定义垂直�
 
 1. 在SharePoint垂直管理的网站中，单击齿轮打开设置面板。
 1. 选择 **"网站信息**"，然后选择"**查看所有网站设置"。**  
-1. 查找"Microsoft 搜索"部分，然后选择" **配置搜索设置"。**
+1. 查找"Microsoft 搜索"部分，然后选择"配置 **搜索设置"。**
 1. 在导航窗格中，转到"自定义体验"，然后选择"**垂直"。**
 1. 单击 **"添加** "创建新的垂直方向。
 1. 设置配置后，你可以查看并保存垂直方向。  
 
 ## <a name="view-the-vertical-in-search-results"></a>查看搜索结果中的垂直方向
 
-若要[在垂直搜索](manage-result-types.md)页面上Graph连接器结果，需要搜索结果布局。 在确保存在适当的结果布局时，可以启用垂直搜索。 启用垂直搜索后，将延迟几小时才能查看它。 可以将 cacheClear=true 追加到 SharePoint 中的 URL，Office查看垂直方向。 在必应中，将&features=uncachedVerticals 追加到工作垂直 URL 以立即查看垂直方向。
+若要[在垂直搜索](manage-result-types.md)页面上Graph连接器结果，需要搜索结果布局。 在确保存在适当的结果布局时，可以启用垂直搜索。 启用垂直搜索后，将延迟几小时才能查看它。 可以将 cacheClear=true 追加到 SharePoint 中的 URL，Office查看垂直方向。 在必应中，&features=uncachedVerticals 追加到工作垂直 URL 以立即查看垂直方向。
 
 > [!NOTE]
 > 从移动 Web 浏览器查看时，SharePoint和Office垂直[](https://office.com)线不可见。 [](https://sharepoint.com/)
@@ -82,14 +81,14 @@ Microsoft 搜索有两种类型的垂直线，即开箱即用和自定义垂直�
 
 ### <a name="keyword-query-language-kql"></a>关键字查询语言 (KQL)
 
-可以将查询添加到垂直查询，以缩小使用关键字查询语言 [ (KQL ](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference) (垂直搜索上显示的结果)  (有限的) 。 此页面列出了可用的属性。 建议您将自由文本关键字和属性限制与布尔运算符一起用于创建 KQL。 不支持动态排名运算符（如 XRANK、邻近运算符和字词）。
+可以将查询添加到垂直搜索，以缩小使用关键字查询语言 [ (KQL ](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference) (垂直搜索上显示的结果)  (有限的) 。 此页面列出了可用的属性。 建议您将自由文本关键字和属性限制与布尔运算符一起用于创建 KQL。 不支持动态排名运算符（如 XRANK、邻近运算符和字词）。
 
 下面是一些查询示例。
 
 |应用场景         | 查询   |  
 | --------- | ------ |
 |从存档网站排除结果           |NOT (path：http//contoso.sharepoint.com/archive OR path：http//contoso.sharepoint.com/CompanyArchive) |
-| 基于文件类型属性排除结果 | Not (FileType：htm) |  
+| 基于文件类型属性排除结果 | NOT (FileType：htm) |  
 
 #### <a name="profile-query-variables"></a>配置文件查询变量
 
